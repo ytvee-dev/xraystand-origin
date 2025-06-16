@@ -1,0 +1,18 @@
+.content-info-card {
+    overflow: auto;
+
+    width: var(--card-max-w, 270px);
+    max-height: var(-card-max-h, 350px);
+
+    transition: var(--transition-duration, .35s);
+    padding: 16px;
+    box-shadow: var(--card-box-shadow, 0 2px 1px -1px rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.14));
+}
+
+.content-info-card .card-title {
+    margin-bottom: 20px;
+}
+
+.content-info-card .card-content {
+    padding-left: 20px;
+}

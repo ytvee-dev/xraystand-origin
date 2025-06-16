@@ -1,0 +1,81 @@
+{
+    "firstPage": {
+        "firstSection": {
+            "contentListData": [
+                "firstPage/roadUser1",
+                "firstPage/roadUser2",
+                "firstPage/roadUser3",
+                "firstPage/roadUser4"
+            ],
+            "globalData": []
+        },
+        "secondSection": {
+            "contentListData": [],
+            "globalData": [
+                "firstPage/trafficLight"
+            ]
+        },
+        "thirdSection": {
+            "contentListData": [
+                "firstPage/transitionRules1",
+                "firstPage/transitionRules2",
+                "firstPage/transitionRules3",
+                "firstPage/transitionRules4"
+            ],
+            "globalData": []
+        },
+        "fourthSection": {
+            "contentListData": [],
+            "globalData": [
+                "firstPage/cyclistsScooters"
+            ]
+        },
+        "fifthSection": {
+            "contentListData": [
+                "firstPage/dangerousTransitionError1",
+                "firstPage/dangerousTransitionError2",
+                "firstPage/dangerousTransitionError3",
+                "firstPage/dangerousTransitionError4"
+            ],
+            "globalData": []
+        },
+        "sixthSection": {
+            "contentListData": [
+                "firstPage/roadSign1",
+                "firstPage/roadSign2",
+                "firstPage/roadSign3",
+                "firstPage/roadSign4",
+                "firstPage/roadSign5"
+            ],
+            "globalData": []
+        },
+        "seventhSection": {
+            "contentListData": [
+                "firstPage/objectsOfTrafficControllerGestures1",
+                "firstPage/objectsOfTrafficControllerGestures2"
+            ],
+            "globalData": [
+                "firstPage/pointsman"
+            ]
+        },
+        "eighthSection": {
+            "contentListData": [
+                "firstPage/safetyAtSchoolAndInTheYard1",
+                "firstPage/safetyAtSchoolAndInTheYard2",
+                "firstPage/safetyAtSchoolAndInTheYard3",
+                "firstPage/safetyAtSchoolAndInTheYard4"
+            ],
+            "globalData": []
+        },
+        "ninthSection": {
+            "contentListData": [
+                "firstPage/remember1",
+                "firstPage/remember2",
+                "firstPage/remember3",
+                "firstPage/remember4",
+                "firstPage/remember5"
+            ],
+            "globalData": []
+        }
+    }
+}
