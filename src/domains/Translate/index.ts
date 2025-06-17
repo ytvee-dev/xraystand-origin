@@ -54,7 +54,7 @@ export const localesControlRecord: Record<Languages, IControlTranslationResource
 };
 
 export const enum PageIds {
-    FIRST_PAGE = "firstPage",
+    TRAFFIC_LAWS_PAGE = "trafficLawsPage",
 };
 
 export const enum PageSectionIds {

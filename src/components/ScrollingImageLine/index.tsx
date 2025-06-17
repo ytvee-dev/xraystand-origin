@@ -4,13 +4,11 @@ import "./style.css";
 
 export interface IScrollingImageLineProps {
     imageSrc: string;
-    height?: string;
     imageWidth?: string;
     direction?: ScrollingImageLineDirections;
     scrollMultiplier?: number;
 }
 
-const DEFAULT_ANIMATION_HEIGHT: string = "100px";
 const SCROLLING_IMAGE_TO_LEFT_DIRECTION_SUFFIX: string = "Left";
 
 const OBSERVER_OPTIONS: IntersectionObserverInit = {
@@ -40,7 +38,6 @@ const getScrollingImageSrcToLeftDirection = (imageSrc: string): string => {
 
 const ScrollingImageLine = ({
     imageSrc,
-    height = DEFAULT_ANIMATION_HEIGHT,
     direction = ScrollingImageLineDirections.RIGHT,
     scrollMultiplier = 1,
 }: IScrollingImageLineProps): ReactElement => {
@@ -112,7 +109,6 @@ const ScrollingImageLine = ({
         <div
             ref={scrollingImageContainerRef}
             className={`scroll-animated-image-container ${direction}`}
-            style={{ height }}
         >
             <img
                 ref={scrollingImageRef}

@@ -1,79 +1,79 @@
 {
-    "firstPage": {
+    "trafficLawsPage": {
         "firstSection": {
             "contentListData": [
-                "firstPage/roadUser1",
-                "firstPage/roadUser2",
-                "firstPage/roadUser3",
-                "firstPage/roadUser4"
+                "trafficLawsPage/roadUser1",
+                "trafficLawsPage/roadUser2",
+                "trafficLawsPage/roadUser3",
+                "trafficLawsPage/roadUser4"
             ],
             "globalData": []
         },
         "secondSection": {
             "contentListData": [],
             "globalData": [
-                "firstPage/trafficLight"
+                "trafficLawsPage/trafficLight"
             ]
         },
         "thirdSection": {
             "contentListData": [
-                "firstPage/transitionRules1",
-                "firstPage/transitionRules2",
-                "firstPage/transitionRules3",
-                "firstPage/transitionRules4"
+                "trafficLawsPage/transitionRules1",
+                "trafficLawsPage/transitionRules2",
+                "trafficLawsPage/transitionRules3",
+                "trafficLawsPage/transitionRules4"
             ],
             "globalData": []
         },
         "fourthSection": {
             "contentListData": [],
             "globalData": [
-                "firstPage/cyclistsScooters"
+                "trafficLawsPage/cyclistsScooters"
             ]
         },
         "fifthSection": {
             "contentListData": [
-                "firstPage/dangerousTransitionError1",
-                "firstPage/dangerousTransitionError2",
-                "firstPage/dangerousTransitionError3",
-                "firstPage/dangerousTransitionError4"
+                "trafficLawsPage/dangerousTransitionError1",
+                "trafficLawsPage/dangerousTransitionError2",
+                "trafficLawsPage/dangerousTransitionError3",
+                "trafficLawsPage/dangerousTransitionError4"
             ],
             "globalData": []
         },
         "sixthSection": {
             "contentListData": [
-                "firstPage/roadSign1",
-                "firstPage/roadSign2",
-                "firstPage/roadSign3",
-                "firstPage/roadSign4",
-                "firstPage/roadSign5"
+                "trafficLawsPage/roadSign1",
+                "trafficLawsPage/roadSign2",
+                "trafficLawsPage/roadSign3",
+                "trafficLawsPage/roadSign4",
+                "trafficLawsPage/roadSign5"
             ],
             "globalData": []
         },
         "seventhSection": {
             "contentListData": [
-                "firstPage/objectsOfTrafficControllerGestures1",
-                "firstPage/objectsOfTrafficControllerGestures2"
+                "trafficLawsPage/objectsOfTrafficControllerGestures1",
+                "trafficLawsPage/objectsOfTrafficControllerGestures2"
             ],
             "globalData": [
-                "firstPage/pointsman"
+                "trafficLawsPage/pointsman"
             ]
         },
         "eighthSection": {
             "contentListData": [
-                "firstPage/safetyAtSchoolAndInTheYard1",
-                "firstPage/safetyAtSchoolAndInTheYard2",
-                "firstPage/safetyAtSchoolAndInTheYard3",
-                "firstPage/safetyAtSchoolAndInTheYard4"
+                "trafficLawsPage/safetyAtSchoolAndInTheYard1",
+                "trafficLawsPage/safetyAtSchoolAndInTheYard2",
+                "trafficLawsPage/safetyAtSchoolAndInTheYard3",
+                "trafficLawsPage/safetyAtSchoolAndInTheYard4"
             ],
             "globalData": []
         },
         "ninthSection": {
             "contentListData": [
-                "firstPage/remember1",
-                "firstPage/remember2",
-                "firstPage/remember3",
-                "firstPage/remember4",
-                "firstPage/remember5"
+                "trafficLawsPage/remember1",
+                "trafficLawsPage/remember2",
+                "trafficLawsPage/remember3",
+                "trafficLawsPage/remember4",
+                "trafficLawsPage/remember5"
             ],
             "globalData": []
         }

@@ -27,18 +27,23 @@ const ContentSection = ({
     const itemsCenterClassname: string = !itemsCenter
         ? ""
         : SECTION_ITEMS_CENTER_CLASSNAME;
+
     return (
-        <div className={`content-section ${colorType} ${itemsCenterClassname}`}>
+        <div
+            className={`content-section ${colorType} ${itemsCenterClassname}`}
+        >
             <h1 className="title title-text">{textData.title}</h1>
             {textData.description && (
                 <h3 className="description common-text">
                     {textData.description}
                 </h3>
             )}
-            <div className="content">{children}</div>
-            {textData.notificationLabel && (
-                <ContentSectionAlert label={textData.notificationLabel} />
-            )}
+            <div className="content">
+                {children}
+                {textData.notificationLabel && (
+                    <ContentSectionAlert label={textData.notificationLabel} />
+                )}
+            </div>
         </div>
     );
 };

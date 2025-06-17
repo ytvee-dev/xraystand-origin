@@ -1,15 +1,16 @@
-import FirstPage from "@pages/First";
+import HomePage from "@pages/Home";
 import NotFoundPage from "@pages/NotFound";
-import { Navigate, type RouteObject } from "react-router";
+import TrafficsLawsPage from "@pages/TrafficsLaws";
+import { type RouteObject } from "react-router";
 
 const paths = {
     HOME: {
         id: "home",
         path: "/",
     },
-    FIRST_PAGE: {
-        id: "firstPage",
-        path: "/firstPage",
+    TRAFFIC_LAWS_PAGE: {
+        id: "trafficLawsPage",
+        path: "/traffic-laws",
     },
     NOT_FOUND: {
         id: "notFound",
@@ -20,11 +21,11 @@ const paths = {
 const routes: RouteObject[] = [
     {
         ...paths.HOME,
-        element: <Navigate to={paths.FIRST_PAGE.path} />,
+        element: <HomePage />,
     },
     {
-        ...paths.FIRST_PAGE,
-        element: <FirstPage />,
+        ...paths.TRAFFIC_LAWS_PAGE,
+        element: <TrafficsLawsPage />,
     },
     {
         ...paths.NOT_FOUND,

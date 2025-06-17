@@ -20,6 +20,7 @@ export const enum SvgSpriteIds {
 export const enum ContentSectionColorTypes {
     PRIMARY = "primary",
     SECONDARY = "secondary",
+    SECONDARY_HALF = "secondary-half",
 }
 
 export const enum ContentCardStyleTypes {
@@ -59,9 +60,8 @@ export const contentCardClassnamesRecord: Record<
     },
 };
 
-export const enum ContentImagesMaxWidths {
-    ANIMATED_CAR = "360px",
-    DEFAULT = "564px",
+export const enum ContentMaximumWidths {
+    SECTION = "564px",
 };
 
 export const enum ScrollingImageLineDirections {

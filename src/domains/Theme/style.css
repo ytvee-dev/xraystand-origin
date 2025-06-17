@@ -2,6 +2,8 @@
     --modal-window-blur: blur(3px);
     --header-height: 70px;
     --page-padding-x: 144px;
+    --page-mobile-padding-x: 20px;
+    --section-container-secondary-half-bg: #FAFAFB;
     --section-container-secondary-bg: #FFFFFF;
     --section-container-primary-bg: #289FF5;
     --primary-text-color: #289FF5;
@@ -18,7 +20,7 @@
     --small-card-max-h: 300px;
     --card-image-container-h: 270px;
     --card-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
-    --card-hover-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    --card-hover-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.22);
     --transition-duration: .35s;
 }
 
@@ -79,9 +81,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
 body {
@@ -90,7 +89,7 @@ body {
 
 .intro {
     width: 100%;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,10 +99,24 @@ body {
 .multiple-section {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 
     gap: 24px;
+}
+
+.multiple-section .content-section {
+    max-width: 564px;
+
+    padding: 44px 0;
+}
+
+.content-image {
+    max-width: 564px;
+}
+
+.block-tablet-only {
+    width: 100%;
 }
 
 .section-container {
@@ -116,7 +129,7 @@ body {
 
 .content-cards-list {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
     gap: var(--cards-list-gap);
 }
@@ -203,4 +216,50 @@ body {
 
 .text-color-secondary-control {
     color: var(--secondary-control-text-color);
+}
+
+@media (max-width: 1000px) {
+    .content-section .content {
+        padding: 10px;
+        
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .content-section {
+        padding: 44px var(--page-mobile-padding-x);
+        align-items: center;
+    }
+
+    .multiple-section .content-section {
+        padding: 44px var(--page-mobile-padding-x);
+    }
+
+    .content-section .title,
+    .content-section .instruction,
+    .content-section .description {
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-image {
+        max-width: 300px;
+    }
+
+    .application-header {
+        padding: 0 var(--page-mobile-padding-x);
+    }
+
+    .block-tablet-only {
+        display: none;
+    }
+
+    .scroll-animated-image-container {
+        height: 123px;
+    }
+
+    .title-text {
+        font-size: 30px;
+    }
 }
