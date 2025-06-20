@@ -221,7 +221,6 @@ body {
 @media (max-width: 1000px) {
     .content-section .content {
         padding: 10px;
-        
         overflow-x: auto;
     }
 }
