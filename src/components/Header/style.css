@@ -1,0 +1,8 @@
+.application-header {
+    width: 100%;
+
+    padding: 0 var(--page-padding-x, 144px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

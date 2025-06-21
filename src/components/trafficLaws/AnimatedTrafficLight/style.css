@@ -1,0 +1,243 @@
+.animated-traffic-light {
+    padding: 40px 0 40px 20px;
+    width: 100%;
+    max-width: 564px;
+    max-height: 564px;
+}
+
+.animated-traffic-light-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.traffic-light-background-image-wrapper {
+    max-width: 492px;
+    width: 100%;
+}
+
+.traffic-light-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.traffic-light-container > .traffic-light-off-image-wrapper,
+.tl-turned-on > .traffic-light-on-image-wrapper {
+    max-height: 163px;
+    width: 100%;
+    position: relative;
+}
+
+.text-assembly {
+    max-width: 153px;
+    position: absolute;
+    right: 85px;
+    bottom: 41px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.red-light-on > .text-assembly {
+    -webkit-animation: smoothPulseRed 2s ease-in-out infinite;
+    animation: smoothPulseRed 2s ease-in-out infinite;
+}
+.red-light-on > .text-assembly::selection,
+.red-light-off > .text-assembly::selection {
+    background-color: #d2563d;
+}
+
+.yellow-light-on > .text-assembly {
+    -webkit-animation: smoothPulseYellow 2s ease-in-out infinite;
+    animation: smoothPulseYellow 2s ease-in-out infinite;
+}
+.yellow-light-on > .text-assembly::selection,
+.yellow-light-off > .text-assembly::selection {
+    background-color: #F3D064;
+}
+
+.green-light-on > .text-assembly {
+    -webkit-animation: smoothPulseGreen 2s ease-in-out infinite;
+    animation: smoothPulseGreen 2s ease-in-out infinite;
+}
+.green-light-on > .text-assembly::selection,
+.green-light-off > .text-assembly::selection {
+    background-color: #89dac4;
+}
+
+@-webkit-keyframes smoothPulseRed {
+    0%, 100% {
+        text-shadow: 0 0 25px rgba(226, 114, 92, 0.8), 0 0 15px rgba(255, 137, 131, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 8px rgba(226, 114, 92, 0.9), 0 0 5px rgba(255, 137, 131, 0.7);
+    }
+}
+@keyframes smoothPulseRed {
+    0%, 100% {
+        text-shadow: 0 0 25px rgba(226, 114, 92, 0.8), 0 0 15px rgba(255, 137, 131, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 8px rgba(226, 114, 92, 0.9), 0 0 5px rgba(255, 137, 131, 0.7);
+    }
+}
+
+@-webkit-keyframes smoothPulseYellow {
+    0%, 100% {
+        text-shadow: 0 0 25px rgba(255, 220, 123, 0.8), 0 0 15px rgba(243, 208, 100, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 8px rgba(255, 220, 123, 0.9), 0 0 5px rgba(243, 208, 100, 0.7);
+    }
+}
+@keyframes smoothPulseYellow {
+    0%, 100% {
+        text-shadow: 0 0 25px rgba(255, 220, 123, 0.8), 0 0 15px rgba(243, 208, 100, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 8px rgba(255, 220, 123, 0.9), 0 0 5px rgba(243, 208, 100, 0.7);
+    }
+}
+
+@-webkit-keyframes smoothPulseGreen {
+    0%, 100% {
+        text-shadow: 0 0 25px rgba(137, 218, 196, 0.8), 0 0 15px rgba(154, 237, 211, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 8px rgba(137, 218, 196, 0.9), 0 0 5px rgba(154, 237, 211, 0.7);
+    }
+}
+@keyframes smoothPulseGreen {
+    0%, 100% {
+        text-shadow: 0 0 25px rgba(137, 218, 196, 0.8), 0 0 15px rgba(154, 237, 211, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 8px rgba(137, 218, 196, 0.9), 0 0 5px rgba(154, 237, 211, 0.7);
+    }
+}
+
+.tl-turned-on {
+    position: absolute;
+    top: -2px;
+    left: 10px;
+}
+
+.red-light-on,
+.yellow-light-on,
+.green-light-on {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.yellow-light-on svg,
+.yellow-light-on use {
+    width: 100%;
+}
+
+.red-light-off,
+.yellow-light-off,
+.green-light-off {
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+@-webkit-keyframes colorPulse {
+    0%, 100% { -webkit-filter: blur(0px); filter: blur(0px); }
+}
+@keyframes colorPulse {
+    0%, 100% { -webkit-filter: blur(0px); filter: blur(0px); }
+}
+
+@media screen and (max-width: 670px) {
+    .animated-traffic-light {
+        padding: 0;
+    }
+    .animated-traffic-light-wrapper {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .traffic-light-container,
+    .tl-turned-on {
+        width: auto;
+    }
+    .traffic-light-container > .traffic-light-off-image-wrapper {
+        max-width: 270px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .traffic-light-container {
+        left: 5%;
+    }
+}
+@media screen and (max-width: 540px) {
+    .traffic-light-background-image-wrapper,
+    .traffic-light-on-image-wrapper {
+        min-width: 320px;
+        max-width: 320px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .traffic-light-container {
+        left: 17%;
+    }
+    .traffic-light-on-image-wrapper:nth-of-type(1) { top: 4px; }
+    .traffic-light-on-image-wrapper:nth-of-type(2) { top: -8px; }
+    .traffic-light-on-image-wrapper:nth-of-type(3) { top: -19px; }
+    .traffic-light-on-image-wrapper span {
+        top: 40px;
+        right: 50px;
+        max-width: 92px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .traffic-light-background-image-wrapper {
+        min-width: 325px;
+        max-width: 325px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .tl-turned-on {
+        width: 100%;
+        height: 100%;
+    }
+    .traffic-light-container {
+        top: 6px;
+        left: 10%;
+    }
+}
+@media screen and (max-width: 430px) {
+    .traffic-light-container {
+        left: 3%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .traffic-light-container {
+        left: -18px;
+    }
+}

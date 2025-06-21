@@ -1,0 +1,37 @@
+import ContentImageCard from "@components/ContentImageCard";
+import type { IImageCardResources } from "@domains/Translate";
+import { ContentCardStyleTypes } from "@utils/constants";
+import { type ReactElement } from "react";
+import "./style.css";
+
+export interface IContentImageCardsListProps {
+    cardsTextData: IImageCardResources[];
+    imageIdData: string[];
+    styleType?: ContentCardStyleTypes;
+    isSmallCards?: boolean;
+}
+
+const ContentCardsList = ({
+    cardsTextData,
+    imageIdData,
+}: IContentImageCardsListProps): ReactElement => {
+    return (
+        <div className="content-cards-list">
+            {cardsTextData.map(
+                (cardData: IImageCardResources, index: number) => (
+                    <div className="content-cards-list-card-wrapper" key={index}>
+                        <ContentImageCard
+                            imageId={imageIdData[index]}
+                            title={cardData.label}
+                            label={cardData.label && cardData.label}
+                            linkText={cardData.linkText && cardData.linkText}
+                            action={cardData.action && cardData.action}
+                        />
+                    </div>
+                )
+            )}
+        </div>
+    );
+};
+
+export default ContentCardsList;
