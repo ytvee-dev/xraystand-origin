@@ -1,8 +1,5 @@
 .footer::selection,
-.footer *::selection {
-    background-color: var(--default-footer-text-color-white);
-    color: var(--section-container-primary-bg);
-}
+.footer *::selection,
 .footer::-moz-selection,
 .footer *::-moz-selection {
     background-color: var(--default-footer-text-color-white);
@@ -20,7 +17,7 @@
 }
 
 .footer {
-    padding: 80px 20px 40px 20px;
+    padding: 80px 20px 40px;
     background: var(--default-footer-background-color-dark);
 }
 
@@ -37,16 +34,19 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
 
-    gap: 20px;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+
+    gap: 20px;
 }
 
 .footer-logo-container svg {
     width: 172px;
     height: 81px;
+
     -webkit-transition: stroke 0.2s ease-in-out;
     -moz-transition: stroke 0.2s ease-in-out;
+    -o-transition: stroke 0.2s ease-in-out;
     transition: stroke 0.2s ease-in-out;
 }
 
@@ -88,8 +88,10 @@
 
 .footer-links-container p {
     cursor: pointer;
+
     -webkit-transition: opacity 0.2s ease-in-out;
     -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
 }
 
@@ -122,6 +124,7 @@
     height: 43px;
 
     -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
     -ms-transform: translateY(10px);
     transform: translateY(10px);
 
@@ -129,6 +132,7 @@
 
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
@@ -136,6 +140,7 @@
     opacity: 0.8;
 
     -webkit-transform: translateY(12px);
+    -moz-transform: translateY(12px);
     -ms-transform: translateY(12px);
     transform: translateY(12px);
 }
@@ -148,7 +153,7 @@
 
 @media screen and (max-width: 1000px) {
     .footer {
-        padding: 80px 20px 40px 20px;
+        padding: 80px 20px 40px;
     }
 }
 
@@ -179,6 +184,7 @@
 
     .footer-labels-container {
         gap: 15px;
+
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }

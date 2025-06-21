@@ -6,3 +6,21 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media screen and (max-width: 1000px) {
+    .application-header {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .application-header {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .application-header {
+        padding: 0 10px;
+    }
+}
