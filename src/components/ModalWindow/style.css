@@ -1,0 +1,40 @@
+.modal-window-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow: hidden;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: var(--modal-window-blur, blur(3px));
+    backdrop-filter: var(--modal-window-blur, blur(3px));
+}
+
+.modal-window-wrapper .modal {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
