@@ -1,0 +1,77 @@
+.large-card {
+    height: 100%;
+    max-width: 564px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    gap: 36px;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.large-card-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    gap: 36px;
+}
+
+.large-card-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #289FF5;
+}
+
+.large-card-header h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.large-card-body {
+    width: 100%;
+    display: flex;
+}
+
+@media screen and (max-width: 1190px) {
+    .large-card {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .large-card {
+        max-width: 800px;
+        gap: 24px;
+    }
+
+    .large-card-header h1,
+    .large-card-header h3 {
+        text-align: center;
+    }
+    .large-card-header h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .large-card {
+        padding: 0 20px;
+    }
+}

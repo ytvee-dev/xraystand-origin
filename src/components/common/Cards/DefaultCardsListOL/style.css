@@ -1,0 +1,29 @@
+.default-cards-list {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    padding: 5px;
+    overflow: auto;
+}
+
+.list-default-card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-grow: 2;
+    border-radius: 4px;
+}
+
+.card-wrapper-size-small {
+    min-width: 198px;
+}
+
+.card-wrapper-size-normal {
+    min-width: 258px;
+}
+
+@media (max-width: 800px) {
+    .default-cards-list {
+        gap: 24px;
+        padding: 5px 20px 10px 5px;
+    }
+}

@@ -1,0 +1,206 @@
+img {
+    user-select: none;
+}
+
+.footer::selection,
+.footer *::selection {
+    background-color: var(--default-footer-text-color-white);
+    color: var(--section-container-primary-bg);
+}
+
+.footer::-moz-selection,
+.footer *::-moz-selection {
+    background-color: var(--default-footer-text-color-white);
+    color: var(--section-container-primary-bg);
+}
+
+.footer * {
+    font-family: var(--technical-font);
+}
+
+.footer-links-container,
+.footer-contacts-container p,
+.footer-information-container,
+.footer-copyright {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.footer {
+    padding: 80px 20px 40px;
+    background: var(--default-footer-background-color-dark);
+}
+
+.footer-content-wrapper,
+.footer-labels-container {
+    max-width: 1380px;
+    margin: auto;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+
+    gap: 20px;
+}
+
+.footer-logo-container svg {
+    width: 172px;
+    height: 81px;
+
+    -webkit-transition: stroke 0.2s ease-in-out;
+    -moz-transition: stroke 0.2s ease-in-out;
+    -o-transition: stroke 0.2s ease-in-out;
+    transition: stroke 0.2s ease-in-out;
+}
+
+.footer-logo-container:hover svg {
+    stroke: var(--section-container-primary-bg);
+}
+
+.footer-information-container {
+    max-width: 445px;
+}
+
+.footer-description-container,
+.footer-copyright,
+.footer-contacts-container span {
+    color: #ffffff;
+    color: var(--default-footer-text-color-grey);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer-links-container,
+.footer-contacts-container p {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer-links-container {
+    padding: 10px 0;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-links-container p {
+    cursor: pointer;
+
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.footer-links-container p:hover {
+    opacity: 0.75;
+}
+
+.footer-contacts-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.footer-divider {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    border: 1px solid var(--default-footer-divider-color-grey);
+}
+
+.footer-made-by {
+    width: 80px;
+    height: 43px;
+
+    /*-webkit-transform: translateY(10px);*/
+    /*-moz-transform: translateY(10px);*/
+    /*-ms-transform: translateY(10px);*/
+    /*transform: translateY(10px);*/
+
+    opacity: 1;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-made-by:hover {
+    opacity: 0.8;
+
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    transform: translateY(4px);
+}
+
+.footer-made-by img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        padding: 80px 20px 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer-content-wrapper {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        gap: 20px;
+
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .footer-divider {
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+
+    .footer-contacts-container {
+        text-align: center;
+    }
+
+    .footer-labels-container {
+        gap: 15px;
+
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}

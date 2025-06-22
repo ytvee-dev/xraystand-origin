@@ -1,0 +1,28 @@
+import { type ReactElement } from "react";
+import "./style.css"
+
+export interface MyModalWindowProps {
+    children: ReactElement;
+    modalHeader: string;
+}
+
+const FlexibleModal = ({ children, modalHeader }: MyModalWindowProps): ReactElement => {
+    return (
+        <div className="modal-window-container">
+            <div className="modal-window">
+                <div className="modal-header">
+                    <h5 className="modal-title">{modalHeader}</h5>
+                </div>
+                <div className="modal-body">
+                    {children}
+                </div>
+                <div className="modal-footer">
+                    <button type="button" className="btn-close-modal" >Закрыть</button>
+                </div>
+            </div>
+            
+        </div>
+    );
+};
+
+export default FlexibleModal;

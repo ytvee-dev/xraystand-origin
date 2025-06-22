@@ -10,7 +10,7 @@ export interface IDefaultLayoutProps {
 
 const DefaultLayout = ({ children }: IDefaultLayoutProps): ReactElement => {
     return (
-        <div className="default-layout" style={{ scrollbarWidth: "thin" }}>
+        <div className="default-layout">
             <Header/>
             <main>{ children }</main>
             <DefaultDarkFooter meta={trafficLawsFooterMeta}/>

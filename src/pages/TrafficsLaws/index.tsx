@@ -1,59 +1,32 @@
 import { type ReactElement } from "react";
 import DefaultLayout from "@layout/Default";
-import ContentSection from "@components/ContentSection";
-import usePageTranslation from "@hooks/usePageTranslation";
-import ContentCardsList from "@components/ContentCardsList";
-import ContentSectionAlert from "@components/ContentSectionAlert";
-import usePageImagesIds from "@hooks/usePageImagesIds";
-import {
-    PageIds,
-    PageSectionIds,
-    type IImageCardResources, type IPageSectionResources,
-} from "@domains/Translate";
-import "./style.css";
+import FirstSection from "@pages/TrafficsLaws/Sections/FirstSection";
+import SecondSection from "@pages/TrafficsLaws/Sections/SecondSection";
+import ThirdSection from "@pages/TrafficsLaws/Sections/ThirdSection";
+import FourthSection from "@pages/TrafficsLaws/Sections/FourthSection";
+import FifthSection from "@pages/TrafficsLaws/Sections/FifthSection";
+import SixthSection from "@pages/TrafficsLaws/Sections/SixthSection";
+import SeventhSection from "@pages/TrafficsLaws/Sections/SeventhSection";
+import EighthSection from "@pages/TrafficsLaws/Sections/EighthSection";
+import NinthSection from "@pages/TrafficsLaws/Sections/NinthSection";
 import CoverSection from "@components/trafficLaws/CoverSection";
-import AnimatedCarCard from "@components/trafficLaws/AnimatedCarCard";
-import AnimatedLargeCard, {type IDescription} from "@components/trafficLaws/AnimatedLargeCard";
-import AnimatedTrafficLight from "@components/trafficLaws/AnimatedTrafficLight";
+import "./style.css";
 
 const TrafficsLawsPage = (): ReactElement => {
-    const { textTranslation } = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
-    const { pageImageIdData } = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
-
-    const alertText: string = textTranslation[PageSectionIds.FIRST_SECTION].notificationLabel || "";
-    const secondSectionMeta: IPageSectionResources = textTranslation["secondSection"];
-    const secondSectionDescription: IDescription = {
-        subtitle: secondSectionMeta.subtitle!, content: secondSectionMeta.content! as string[]
-    }
-
     return (
         <DefaultLayout>
-            <main className="traffics-laws-page">
+            <div className="traffics-laws-page">
                 <CoverSection/>
-                <ContentSection textData={textTranslation["firstSection"]}>
-                    <div className={"background-cards-container"}>
-                        <ContentCardsList
-                            cardsTextData={textTranslation["firstSection"]["content"] as IImageCardResources[]}
-                            imageIdData={pageImageIdData.firstSection.contentListData}
-                        />
-                    </div>
-                    <div className="content-section-alert-wrapper">
-                        <ContentSectionAlert label={alertText}/>
-                    </div>
-                </ContentSection>
-                <ContentSection>
-                    <div className="adaptive-content-container">
-                        <AnimatedLargeCard
-                            title={textTranslation["secondSection"].title}
-                            description={secondSectionDescription}
-                            notificationLabel={textTranslation["secondSection"].notificationLabel}
-                        >
-                            <AnimatedCarCard />
-                        </AnimatedLargeCard>
-                        <AnimatedTrafficLight />
-                    </div>
-                </ContentSection>
-            </main>
+                <FirstSection />
+                <SecondSection />
+                <ThirdSection />
+                <FourthSection />
+                <FifthSection />
+                <SixthSection />
+                <SeventhSection />
+                <EighthSection />
+                <NinthSection />
+            </div>
         </DefaultLayout>
     );
 };

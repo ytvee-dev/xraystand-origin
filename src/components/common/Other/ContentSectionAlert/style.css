@@ -1,0 +1,10 @@
+.content-section-alert {
+    width: 100%;
+    border: 1px solid #EFE4D3;
+    text-align: start;
+}
+
+.content-section-alert *::selection {
+    background-color: #c38936;
+    color: white;
+}

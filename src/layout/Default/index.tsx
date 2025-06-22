@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
-import Header from "@components/Header";
-import DefaultDarkFooter from "@components/Footers/DefaultDarkFooter";
+import Header from "@components/common/Header";
+import DefaultDarkFooter from "@components/common/Footers/DefaultDarkFooter";
 import "./style.css";
 import {trafficLawsFooterMeta} from "@layout/Default/meta.ts";
 

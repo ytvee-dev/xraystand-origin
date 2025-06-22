@@ -1,5 +1,5 @@
 import { type ReactElement } from "react";
-import ContentSectionAlert from "@components/ContentSectionAlert";
+import ContentSectionAlert from "@components/common/Other/ContentSectionAlert";
 import "./style.css";
 
 export interface IDescription {

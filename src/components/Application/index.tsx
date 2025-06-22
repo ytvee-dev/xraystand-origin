@@ -1,6 +1,6 @@
 import { type ReactElement } from "react";
 import ApplicationRouter from "@router/index";
-import { BrowserRouter as RouterProvider } from "react-router";
+import { BrowserRouter as RouterProvider } from "react-router-dom";
 import "@domains/Theme/style.css";
 
 const Application = (): ReactElement => {

@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 100;
+    src: url("/assets/fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 200;
+    src: url("/assets/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/assets/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+
+
 :root {
     --modal-window-blur: blur(3px);
     --header-height: 70px;
@@ -19,6 +54,7 @@
 
     --common-opacity-text-color: rgba(0, 0, 0, 0.87);
     --common-second-opacity-text-color: rgba(0, 0, 0, 0.6);
+
     --cards-list-gap: 24px;
     --card-max-w: 270px;
     --card-max-h: 350px;
@@ -27,61 +63,13 @@
     --card-image-container-h: 270px;
     --card-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
     --card-hover-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.22);
-    --transition-duration: .35s;
+    --transition-duration: 0.35s;
+
+    --title-font: "Ubuntu", sans-serif;
+    --text-font: "Roboto", sans-serif;;
+    --technical-font: "Montserrat", sans-serif;;
 }
 
-
-@font-face {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 100;
-    src: url("/assets/fonts/Ubuntu/Ubuntu-Light.ttf");
-}
-
-@font-face {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 200;
-    src: url("/assets/fonts/Ubuntu/Ubuntu-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    src: url("/assets/fonts/Ubuntu/Ubuntu-Medium.ttf");
-}
-
-@font-face {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    src: url("/assets/fonts/Ubuntu/Ubuntu-Bold.ttf");
-}
-
-/* @font-face {
-    font-family: "Ubuntu";
-    font-weight: 100;
-    font-style: italic;
-    src: url("/assets/fonts/Ubuntu/Ubuntu-LightItalic.ttf");
-    }
-
-    @font-face {
-        font-family: "Ubuntu";
-        font-weight: 200;
-        font-style: italic;
-        src: url("/assets/fonts/Ubuntu/Ubuntu-Italic.ttf");
-        }
-
-        @font-face {
-            font-family: "Ubuntu";
-            font-weight: 400;
-            font-style: italic;
-            src: url("/assets/fonts/Ubuntu/Ubuntu-MediumItalic.ttf");
-            }
-
-            @font-face {
-                font-family: "Ubuntu";
-    font-weight: 700;
-    font-style: italic;
-    src: url("/assets/fonts/Ubuntu/Ubuntu-BoldItalic.ttf");
-} */
 
 *,
 *::before,
@@ -90,195 +78,56 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scrollbar-width: thin;
+
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -ms-overflow-style: none;
 }
-
 html, body {
     width: 100%;
     height: 100%;
 }
 
 body {
-    font-family: "Ubuntu", sans-serif;
+    background-color: #fff;
+    color: var(--common-text-color);
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2, h4 {
+    margin: 0;
+    padding: 0;
+    font-family: var(--title-font);
+}
+
+a, p, div,
+li, ul, ol, h3 {
+    font-family: var(--text-font);
 }
 
 a, p {
     text-decoration: none;
     margin: 0;
     padding: 0;
+    color: inherit;
 }
 
-/*.intro {*/
-/*    width: 100%;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
 
-/*.multiple-section {*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    !* align-items: center; *!*/
-/*    justify-content: center;*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
 
-/*    gap: 24px;*/
-/*}*/
-
-/*.multiple-section .content-section {*/
-/*    max-width: 564px;*/
-
-/*    padding: 44px 0;*/
-/*}*/
-
-/*.content-image {*/
-/*    max-width: 564px;*/
-/*}*/
-
-/*.block-tablet-only {*/
-/*    width: 100%;*/
-/*}*/
-
-/*.section-container-primary {*/
-/*    background-color: var(--section-container-primary-bg);*/
-/*}*/
-
-/*.content-cards-list {*/
-/*    display: flex;*/
-/*    !* flex-wrap: wrap; *!*/
-
-/*    gap: var(--cards-list-gap);*/
-/*}*/
-
-/*.content-image-card.hover-reactive:hover,*/
-/*.content-info-card.hover-reactive:hover {*/
-/*    box-shadow: var(--card-hover-box-shadow, 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22));*/
-/*}*/
-
-/*.content-image-container {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.title-text {*/
-/*    font-weight: 700;*/
-/*    font-size: 48px;*/
-/*    line-height: 100%;*/
-/*    letter-spacing: 0.25px;*/
-/*}*/
-
-/*.title-underline-text {*/
-/*    font-weight: 400;*/
-/*    font-size: 60px;*/
-/*    line-height: 120%;*/
-/*    letter-spacing: -0.5px;*/
-/*}*/
-
-/*.common-big-text {*/
-/*    font-weight: 200;*/
-/*    font-size: 24px;*/
-/*    line-height: 133%;*/
-/*    letter-spacing: 0px;*/
-/*}*/
-
-/*.common-text,*/
-/*.MuiAlert-root.common-text {*/
-/*    font-weight: 100;*/
-/*    font-size: 1rem;*/
-/*    line-height: 150%;*/
-/*    letter-spacing: 0.15px;*/
-/*}*/
-
-/*.card-description-text {*/
-/*    font-weight: 700;*/
-/*    font-size: 1.25rem;*/
-/*    line-height: 160%;*/
-/*    letter-spacing: 0.15px;*/
-/*}*/
-
-/*.secondary-control-text,*/
-/*.MuiButton-root.secondary-control-text {*/
-/*    font-weight: 700;*/
-/*    font-size: 0.75rem;*/
-/*    line-height: 166%;*/
-/*    letter-spacing: 0.4px;*/
-/*    vertical-align: middle;*/
-/*}*/
-
-/*.text-color-primary {*/
-/*    color: var(--primary-text-color);*/
-/*}*/
-
-/*.text-color-secondary {*/
-/*    color: var(--secondary-text-color);*/
-/*}*/
-
-/*.text-color-secondary-opacity {*/
-/*    color: var(--secondary-opacity-text-color);*/
-/*}*/
-
-/*.text-color-common {*/
-/*    color: var(--common-text-color);*/
-/*}*/
-
-/*.text-color-common-opacity {*/
-/*    color: var(--common-opacity-text-color);*/
-/*}*/
-
-/*.text-color-common-second-opacity {*/
-/*    color: var(--common-second-opacity-text-color);*/
-/*}*/
-
-/*.text-color-secondary-control {*/
-/*    color: var(--secondary-control-text-color);*/
-/*}*/
-
-/*@media (max-width: 1000px) {*/
-/*    .content-section .content {*/
-/*        padding: 10px;*/
-/*        */
-/*        overflow-x: auto;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 800px) {*/
-/*    .content-section {*/
-/*        padding: 44px var(--page-mobile-padding-x);*/
-/*        align-items: center;*/
-/*    }*/
-
-/*    .multiple-section .content-section {*/
-/*        padding: 44px var(--page-mobile-padding-x);*/
-/*    }*/
-
-/*    .content-section .title,*/
-/*    .content-section .instruction,*/
-/*    .content-section .description {*/
-/*        align-items: center;*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    .content-image {*/
-/*        max-width: 300px;*/
-/*    }*/
-
-/*    .application-header {*/
-/*        padding: 0 var(--page-mobile-padding-x);*/
-/*    }*/
-
-/*    .block-tablet-only {*/
-/*        display: none;*/
-/*    }*/
-
-/*    .scroll-animated-image-container {*/
-/*        height: 123px;*/
-/*    }*/
-
-/*    .title-text {*/
-/*        font-size: 30px;*/
-/*    }*/
-/*}*/

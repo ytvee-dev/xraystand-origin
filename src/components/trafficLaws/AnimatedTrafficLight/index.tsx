@@ -1,5 +1,8 @@
 import {type ReactElement, useEffect, useState} from "react";
-import {trafficLightsMobilePaths, trafficLightsPaths} from "@components/trafficLaws/AnimatedTrafficLight/meta.ts";
+import {
+    trafficLightsPaths as trafficLightsMobilePaths,
+    trafficLightsPaths
+} from "@components/trafficLaws/AnimatedTrafficLight/meta.ts";
 import "./style.css";
 
 const AnimatedTrafficLight = (): ReactElement => {

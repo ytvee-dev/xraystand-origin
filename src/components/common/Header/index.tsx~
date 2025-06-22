@@ -1,0 +1,15 @@
+import Logo from "@components/common/Other/Logo";
+import LanguageSwitcher from "@components/common/Other/LanguageSwitcher";
+import { type ReactElement } from "react";
+import "./style.css";
+
+const Header = (): ReactElement => {
+    return (
+        <header className="application-header">
+            <Logo />
+            <LanguageSwitcher />
+        </header>
+    );
+};
+
+export default Header;

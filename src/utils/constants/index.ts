@@ -15,6 +15,7 @@ export const contentImageSrcSuffix: string = ".png";
 export const enum SvgSpriteIds {
     LOGO = "logo",
     CONTENT_SECTION_NOTIFICATION_ICON = "contentSectionNotificationIcon",
+    WARNING = "warningIcon",
 }
 
 export const enum ContentSectionColorTypes {

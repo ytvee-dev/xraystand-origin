@@ -1,5 +1,8 @@
 import {type ReactElement, useEffect, useState} from "react";
-import {trafficLightsMobilePaths, trafficLightsPaths} from "@components/trafficLaws/AnimatedTrafficLight/meta.ts";
+import {
+    trafficLightsMobilePaths,
+    trafficLightsPaths
+} from "@components/trafficLaws/AnimatedTrafficLight/meta.ts";
 import "./style.css";
 
 const AnimatedTrafficLight = (): ReactElement => {
@@ -82,8 +85,6 @@ const AnimatedTrafficLight = (): ReactElement => {
                             />}
                             <span className="text-assembly">Зелёный — можно идти</span>
                         </div>
-
-
                     </div>
                 </div>
             </div>
