@@ -26,34 +26,34 @@ const AnimatedTrafficLight = (): ReactElement => {
                         <img src={trafficLightsPaths.green.off}/>
 
                     </div>
-                    <div className="tl-turned-on">
-                        <div
-                            className={`traffic-light-on-image-wrapper red-light-${redLightHovered ? "on" : "off"}`}
-                            onMouseEnter={() => setRedLightHovered(true)}
-                            onMouseLeave={() => setRedLightHovered(false)}
-                        >
-                            <img src={trafficLightsPaths.red.on}/>
-                            <span className="text-assembly">Красный — стой</span>
-                        </div>
+                    {/*<div className="tl-turned-on">*/}
+                    {/*    <div*/}
+                    {/*        className={`traffic-light-on-image-wrapper red-light-${redLightHovered ? "on" : "off"}`}*/}
+                    {/*        onMouseEnter={() => setRedLightHovered(true)}*/}
+                    {/*        onMouseLeave={() => setRedLightHovered(false)}*/}
+                    {/*    >*/}
+                    {/*        <img src={trafficLightsPaths.red.on}/>*/}
+                    {/*        <span className="text-assembly">Красный — стой</span>*/}
+                    {/*    </div>*/}
 
-                        <div
-                            className={`traffic-light-on-image-wrapper yellow-light-${yellowLightHovered ? "on" : "off"}`}
-                            onMouseEnter={() => setYellowLightHovered(true)}
-                            onMouseLeave={() => setYellowLightHovered(false)}
-                        >
-                            <img src={trafficLightsPaths.yellow.on}/>
-                            <span className="text-assembly">Желтый — приготовься</span>
-                        </div>
+                    {/*    <div*/}
+                    {/*        className={`traffic-light-on-image-wrapper yellow-light-${yellowLightHovered ? "on" : "off"}`}*/}
+                    {/*        onMouseEnter={() => setYellowLightHovered(true)}*/}
+                    {/*        onMouseLeave={() => setYellowLightHovered(false)}*/}
+                    {/*    >*/}
+                    {/*        <img src={trafficLightsPaths.yellow.on}/>*/}
+                    {/*        <span className="text-assembly">Желтый — приготовься</span>*/}
+                    {/*    </div>*/}
 
-                        <div
-                            className={`traffic-light-on-image-wrapper green-light-${greenLightHovered ? "on" : "off"}`}
-                            onMouseEnter={() => setGreenLightHovered(true)}
-                            onMouseLeave={() => setGreenLightHovered(false)}
-                        >
-                            <img src={trafficLightsPaths.green.on}/>
-                            <span className="text-assembly">Зелёный — можно идти</span>
-                        </div>
-                    </div>
+                    {/*    <div*/}
+                    {/*        className={`traffic-light-on-image-wrapper green-light-${greenLightHovered ? "on" : "off"}`}*/}
+                    {/*        onMouseEnter={() => setGreenLightHovered(true)}*/}
+                    {/*        onMouseLeave={() => setGreenLightHovered(false)}*/}
+                    {/*    >*/}
+                    {/*        <img src={trafficLightsPaths.green.on}/>*/}
+                    {/*        <span className="text-assembly">Зелёный — можно идти</span>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </div>
