@@ -1,13 +1,13 @@
-import {type ReactElement, useState} from "react";
+import {type ReactElement} from "react";
 import {
     trafficLightsPaths
 } from "@components/trafficLaws/AnimatedTrafficLight2/meta.ts";
 import "./style.css";
 
 const AnimatedTrafficLight = (): ReactElement => {
-    const [redLightHovered, setRedLightHovered] = useState(false);
-    const [yellowLightHovered, setYellowLightHovered] = useState(false);
-    const [greenLightHovered, setGreenLightHovered] = useState(false);
+    // const [redLightHovered, setRedLightHovered] = useState(false);
+    // const [yellowLightHovered, setYellowLightHovered] = useState(false);
+    // const [greenLightHovered, setGreenLightHovered] = useState(false);
 
     return (
         <div className="animated-traffic-light">
