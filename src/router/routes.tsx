@@ -3,7 +3,7 @@ import NotFoundPage from "@pages/NotFound";
 import TrafficsLawsPage from "@pages/TrafficsLaws";
 import InProgress from "@pages/InProgress";
 import { type RouteObject } from "react-router";
-import Chemistry from "@pages/Chemistry";
+// import Chemistry from "@pages/Chemistry";
 
 const paths = {
     HOME: {
