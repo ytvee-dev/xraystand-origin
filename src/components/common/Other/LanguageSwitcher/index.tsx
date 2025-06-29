@@ -32,7 +32,8 @@ const LanguageSwitcher = (): ReactElement => {
 
         const selectedLanguage: Languages = !event.target.checked
             ? Languages.RUSSIAN
-            : Languages.KAZAKH;
+            : Languages.RUSSIAN
+            // : Languages.KAZAKH;
 
         dispatch(setLocale(selectedLanguage));
         localStorage.setItem(LocalStorageKeys.LOCALE, selectedLanguage);
@@ -44,7 +45,7 @@ const LanguageSwitcher = (): ReactElement => {
     return (
         <div>
             <Switch
-                // onChange={handleSwitchLanguage}
+                onChange={handleSwitchLanguage}
                 defaultChecked={isDefaultChecked}
             />
             {currentLocaleLabel}
