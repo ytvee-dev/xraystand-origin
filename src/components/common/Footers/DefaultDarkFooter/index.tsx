@@ -13,7 +13,7 @@ const Footer = ({meta}: IDefaultDarkFooterProps): ReactElement => {
         <footer className="footer">
             <div className="footer-content-wrapper">
                 <div className="footer-logo-container">
-                    <svg><use href={meta.logoPath}/></svg>
+                    <svg><use href={meta.logoPath + "footerLogo"}/></svg>
                 </div>
                 <div className="footer-information-container">
                     <div className="footer-description-container">{content.description}</div>

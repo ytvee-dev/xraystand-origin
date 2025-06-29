@@ -22,7 +22,6 @@
     max-width: 1200px;
     width: 100%;
     margin: auto;
-    overflow: auto;
 
     display: flex;
     justify-content: center;
@@ -73,6 +72,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .background-cards-container {
+        flex-wrap: wrap;
+    }
+
     .adaptive-content-container {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;

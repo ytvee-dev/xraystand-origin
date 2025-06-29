@@ -44,7 +44,7 @@ const LanguageSwitcher = (): ReactElement => {
     return (
         <div>
             <Switch
-                onChange={handleSwitchLanguage}
+                // onChange={handleSwitchLanguage}
                 defaultChecked={isDefaultChecked}
             />
             {currentLocaleLabel}

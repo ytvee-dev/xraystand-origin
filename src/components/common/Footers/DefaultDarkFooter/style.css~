@@ -29,6 +29,7 @@ img {
 }
 
 .footer {
+    position: fixed;
     padding: 80px 20px 40px;
     background: var(--default-footer-background-color-dark);
 }
@@ -137,11 +138,6 @@ img {
 .footer-made-by {
     width: 80px;
     height: 43px;
-
-    /*-webkit-transform: translateY(10px);*/
-    /*-moz-transform: translateY(10px);*/
-    /*-ms-transform: translateY(10px);*/
-    /*transform: translateY(10px);*/
 
     opacity: 1;
 

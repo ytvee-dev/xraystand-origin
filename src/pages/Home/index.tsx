@@ -6,7 +6,10 @@ const HomePage = (): ReactElement => {
     return(
         <div className="home-page">
             <h1>Home Page</h1>
-            <Link to={"/traffic-laws"}>Traffic Laws</Link>
+            <p><Link to={"/traffic-laws"}>Правила дорожного движения</Link></p>
+            <p><Link to={"/chemistry"}>Химия</Link></p>
+            <p><Link to={"/ruslit"}>Русская литература</Link></p>
+            <p><Link to={"/kazakhadibiet"}>Казахская литература</Link></p>
         </div>
     );
 };

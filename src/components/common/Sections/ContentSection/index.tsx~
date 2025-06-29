@@ -14,11 +14,13 @@ export interface IContentSectionTextData {
 
 export interface IContentSectionProps {
     textData?: IContentSectionTextData;
+    subTitleSize?: string,
     children?: ReactNode;
 }
 
 const ContentSection = ({
     textData,
+    subTitleSize="16px",
     children,
 }: IContentSectionProps): ReactElement => {
     const colorScheme = textData?.colorScheme ?? {
@@ -31,13 +33,19 @@ const ContentSection = ({
             className={"content-section"}
             style={{
                 backgroundColor: colorScheme.background,
-                color: colorScheme.text,
             }}
         >
             {textData && (
                 <div className="content-section-text-container">
-                    <h1 className="content-section-title">{textData.title}</h1>
-                    <h3 className="content-section-description">
+                    <h1
+                        className="content-section-title"
+                        style={{
+                            color: colorScheme.text,
+                        }}
+                    >
+                        {textData.title}
+                    </h1>
+                    <h3 className="content-section-description" style={{ fontSize: subTitleSize }}>
                         {textData.description}
                     </h3>
                 </div>

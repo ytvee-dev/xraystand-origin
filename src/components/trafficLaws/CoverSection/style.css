@@ -1,0 +1,80 @@
+.traffic-laws-cover-section {
+    height: 660px;
+}
+
+.scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #4A8EBF 0%, #A5D0EF 100%);
+}
+.layer {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat-x;
+    background-size: contain;
+    will-change: transform;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.layer[data-speed="90"] {
+    animation: moveRoad 90s linear infinite;
+    min-width: 600px;
+    max-width: 1200px;
+}
+.layer[data-speed="30"] {
+    animation: moveHouses 30s linear infinite;
+    transition: all 1s ease-in-out;
+}
+.layer[data-speed="5"] {
+    animation: moveRoad 5s linear infinite;
+}
+.houses {
+    bottom: 50px;
+    height: 50%;
+}
+.road {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    width: 200%;
+    height: 30%;
+    background-repeat: repeat-x;
+    background-size: contain;
+    will-change: transform;
+    animation-name: moveRoad;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.car {
+    min-width: 258px;
+    max-width: 362px;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.car img {
+    width: 100%;
+}
+
+@keyframes moveClouds {
+    from { transform: translateX(-50%); transition: all 1s ease-in-out; }
+    to   { transform: translateX(0); transition: all 1s ease-in-out; }
+}
+@keyframes moveHouses {
+    from { transform: translateX(-50%); transition: all 1s ease-in-out; }
+    to   { transform: translateX(0); transition: all 1s ease-in-out; }
+}
+@keyframes moveRoad {
+    from { transform: translateX(-50%); transition: all 1s ease-in-out; }
+    to   { transform: translateX(0); transition: all 1s ease-in-out; }
+}

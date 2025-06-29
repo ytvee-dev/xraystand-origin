@@ -1,21 +1,10 @@
-import {type ReactElement, useEffect, useState} from "react";
+import {type ReactElement, useEffect, useRef, useState} from "react";
 import {contentAnimationsSrcPrefix, contentImageSrcSuffix} from "@utils/constants";
 import "./style.css";
 
 const AnimatedCarCard = (): ReactElement => {
     const [scrollProgress, setScrollProgress] = useState(0);
-    const [lastScrollY, setLastScrollY] = useState(0);
-    const [isTablet, setIsTablet] = useState(window.innerWidth < 600);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsTablet(window.innerWidth > 800 && window.innerWidth <= 1000);
-        };
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    })
+    const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         let animationFrameId: number;
@@ -23,16 +12,12 @@ const AnimatedCarCard = (): ReactElement => {
         const handleScroll = () => {
             cancelAnimationFrame(animationFrameId);
             animationFrameId = requestAnimationFrame(() => {
-                const carDistance = isTablet ? 1400 : 600;
-                const currentScrollY = window.scrollY < carDistance ? window.scrollY : carDistance;
-
-                setLastScrollY(currentScrollY);
-
                 const windowHeight = window.innerHeight;
                 const documentHeight = document.documentElement.scrollHeight;
                 const maxScroll = documentHeight - windowHeight;
-
-                setScrollProgress(Math.min(currentScrollY / maxScroll, 1));
+                const currentScroll = window.scrollY;
+                const progress = Math.min(Math.max(currentScroll / maxScroll, 0), 1);
+                setScrollProgress(Math.min(Math.max(progress, 0.107), 0.207));
             });
         };
 
@@ -41,19 +26,21 @@ const AnimatedCarCard = (): ReactElement => {
             cancelAnimationFrame(animationFrameId);
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [lastScrollY]);
+    }, []);
 
-    const carPosition = `${scrollProgress * 100}%`;
+    const MIN_OFFSET = -25;
+    const MAX_OFFSET = 150;
+    const leftPercent = MIN_OFFSET + scrollProgress * (MAX_OFFSET);
 
     return (
-        <div className="animated-car-card">
+        <div className="animated-car-card" ref={containerRef}>
             <div className="animated-car-wrapper">
                 <img
                     className="animated-car-image"
                     src={`${contentAnimationsSrcPrefix}animatedSmallCar${contentImageSrcSuffix}`}
                     alt="animated car"
                     style={{
-                        left: carPosition,
+                        transform: `translateX(${leftPercent}%)`,
                     }}
                 />
             </div>

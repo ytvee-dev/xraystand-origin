@@ -1,9 +1,34 @@
 import { type ReactElement } from "react";
+import road from "@assets/images/trafficLawsPage/coverSection/road.png";
+import carPng from "@assets/images/trafficLawsPage/coverSection/car.png";
+import cloudsImg from "@assets/images/trafficLawsPage/coverSection/clouds.png";
+import housesImg from "@assets/images/trafficLawsPage/coverSection/houses.png";
+import "./style.css";
 
 const CoverSection = (): ReactElement => {
     return (
         <section className="traffic-laws-cover-section">
-            cover
+            <div className={"scene"}>
+                <div
+                    className={`${"layer"} ${"houses"}`}
+                    style={{backgroundImage: `url(${housesImg})`}}
+                    data-speed="30"
+                />
+                <div
+                    className={"layer"}
+                    style={{backgroundImage: `url(${cloudsImg})`}}
+                    data-speed="90"
+                />
+
+                <div
+                    className={`${"layer"} ${"road"}`}
+                    style={{backgroundImage: `url(${road})`}}
+                    data-speed="5"
+                />
+                <div className={"car"}>
+                    <img src={carPng} alt="Car"/>
+                </div>
+            </div>
         </section>
     );
 };

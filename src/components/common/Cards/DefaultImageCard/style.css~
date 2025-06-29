@@ -34,6 +34,9 @@
     height: 198px;
 }
 
+.image-size-small img {
+}
+
 .default-image-card-image-container img {
     max-width: 238px;
     max-height: 174px;
@@ -74,7 +77,8 @@
 
 .default-image-card-description-container button {
     justify-content: flex-start;
-    margin-top: 16px;
+    padding: 8px 5px;
+    margin-top: 8px;
     margin-left: -5px;
 }
 

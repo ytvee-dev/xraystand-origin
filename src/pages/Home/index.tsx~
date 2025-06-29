@@ -1,0 +1,17 @@
+import { type ReactElement } from "react";
+import {Link} from "react-router";
+
+const HomePage = (): ReactElement => {
+
+    return(
+        <div className="home-page">
+            <h1>Home Page</h1>
+            <Link to={"/traffic-laws"}>Правила дорожного движения</Link>
+            <Link to={"/chemistry"}>Химия</Link>
+            <Link to={"/ruslit"}>Русская литература</Link>
+            <Link to={"/kazakhadibiet"}>Казахская литература</Link>
+        </div>
+    );
+};
+
+export default HomePage;

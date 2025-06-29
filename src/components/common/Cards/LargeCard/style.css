@@ -69,3 +69,9 @@
         font-size: 30px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .large-card-header {
+        padding: 0 20px;
+    }
+}

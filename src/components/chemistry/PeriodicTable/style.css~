@@ -1,0 +1,239 @@
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+}
+
+.table {
+    max-width: 1200px;
+}
+
+.empty-cell {
+    height: 40px;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.cells {
+    padding: 1px;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(18, auto);
+    grid-template-columns: repeat(10, auto);
+    grid-gap: 1px;
+    max-width: 1200px;
+    max-height: 640px;
+}
+
+.cell {
+    box-sizing: border-box;
+    padding: 4px;
+    width: 64px;
+    height: 64px;
+    display: grid;
+    border-radius: 4px;
+    border: 1px solid;
+    user-select: none;
+    transition: opacity 0.5s ease;
+
+    color: #FFFFFF;
+}
+
+.cell:hover {
+    border-style: solid;
+    opacity: 0.8;
+    transition: none;
+}
+
+.cell .number {
+    font-size: 8px;
+}
+
+.cell .symbol {
+    font-family: "Ubuntu";
+    font-size: 20px;
+    text-align: center;
+}
+
+.cell .name {
+    font-size: 8px;
+    text-align: center;
+}
+
+.cell .atomic-mass {
+    font-size: 6px;
+    text-align: right;
+    /*color: #181818;*/
+}
+
+.cell[data-category="Актиноид"] {
+    background-color: #7FB5AE;
+    border-color: #7FB5AE;
+}
+
+.cell[data-category="Галоген"] {
+    background-color: #FF9595;
+    border-color: #FF9595;
+}
+
+.cell[data-category="Инертный газ"] {
+    background-color: #DAA2E0;
+    border-color: #DAA2E0;
+}
+
+.cell[data-category="Лантаноид"] {
+    background-color: #A1DCCC;
+    border-color: #A1DCCC;
+}
+
+.cell[data-category="Неметалл"] {
+    background-color: #A7D04A;
+    border-color: #A7D04A;
+}
+
+.cell[data-category="Переходный металл"] {
+    background-color: #99C0E5;
+    border-color: #99C0E5;
+}
+
+.cell[data-category="Полуметалл"] {
+    background-color: #5AC0E8;
+    border-color: #5AC0E8;
+}
+
+.cell[data-category="Постпереходный металл"] {
+    background-color: #75A1E4;
+    border-color: #75A1E4;
+}
+
+.cell[data-category="Радиоактивный металл"] {
+    background-color: #5AC0E8;
+    border-color: #5AC0E8;
+}
+
+.cell[data-category="Щелочноземельный металл"] {
+    background-color: #FEB149;
+    border-color: #FEB149;
+}
+
+.cell[data-category="Щелочной металл"] {
+    background-color: #FD6863;
+    border-color: #FD6863;
+}
+
+.categories {
+    position: absolute;
+    top: 32px;
+    left: 197px;
+    max-width: 590px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category-group {
+    width: 180px;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.category-group > span {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.category-group > span,
+.category-group > span * {
+    cursor: pointer;
+}
+
+.category-group > span > label {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    user-select: none;
+}
+
+.category-group > span > input[type="checkbox"]:checked,
+.category-group > span > input[type="checkbox"]:not(:checked) {
+    position: relative;
+    left: -9999px;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.category-group > span > input[type="checkbox"]:checked + label:before,
+.category-group > span > input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 1.3s ease;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: all 1.3s ease;
+}
+
+input[type="checkbox"]:not(:checked) + label:after { opacity: 0; }
+input[type="checkbox"]:checked + label:after { opacity: 1; }
+
+/* Turn off state of the checkbox */
+
+.category-group > span > input[name="Актиноид"]:checked + label:before,
+.category-group > span > input[name="Актиноид"]:not(:checked) + label:before { border-color: #7FB5AE; }
+.category-group > span > input[name="Галоген"]:checked + label:before,
+.category-group > span > input[name="Галоген"]:not(:checked) + label:before { border-color: #FF9595; }
+.category-group > span > input[name="Инертный газ"]:checked + label:before,
+.category-group > span > input[name="Инертный газ"]:not(:checked) + label:before { border-color: #DAA2E0; }
+.category-group > span > input[name="Лантаноид"]:checked + label:before,
+.category-group > span > input[name="Лантаноид"]:not(:checked) + label:before { border-color: #A1DCCC; }
+.category-group > span > input[name="Неметалл"]:checked + label:before,
+.category-group > span > input[name="Неметалл"]:not(:checked) + label:before { border-color: #A7D04A; }
+.category-group > span > input[name="Переходный металл"]:checked + label:before,
+.category-group > span > input[name="Переходный металл"]:not(:checked) + label:before { border-color: #99C0E5; }
+.category-group > span > input[name="Полуметалл"]:checked + label:before,
+.category-group > span > input[name="Полуметалл"]:not(:checked) + label:before { border-color: #5AC0E8; }
+.category-group > span > input[name="Постпереходный металл"]:checked + label:before,
+.category-group > span > input[name="Постпереходный металл"]:not(:checked) + label:before { border-color: #75A1E4; }
+.category-group > span > input[name="Радиоактивный металл"]:checked + label:before,
+.category-group > span > input[name="Радиоактивный металл"]:not(:checked) + label:before { border-color: #5AC0E8; }
+.category-group > span > input[name="Щелочноземельный металл"]:checked + label:before,
+.category-group > span > input[name="Щелочноземельный металл"]:not(:checked) + label:before { border-color: #FEB149; }
+.category-group > span > input[name="Щелочной металл"]:checked + label:before,
+.category-group > span > input[name="Щелочной металл"]:not(:checked) + label:before { border-color: #FD6863; }
+
+/* Turn on state of the checkbox */
+
+.category-group > span > input[name="Актиноид"]:checked + label:after { border-color: #7FB5AE; background-color: #7FB5AE; }
+.category-group > span > input[name="Галоген"]:checked + label:after { border-color: #FF9595; background-color: #FF9595; }
+.category-group > span > input[name="Инертный газ"]:checked + label:after { border-color: #DAA2E0; background-color: #DAA2E0; }
+.category-group > span > input[name="Лантаноид"]:checked + label:after { border-color: #A1DCCC; background-color: #A1DCCC; }
+.category-group > span > input[name="Неметалл"]:checked + label:after { border-color: #A7D04A; background-color: #A7D04A; }
+.category-group > span > input[name="Переходный металл"]:checked + label:after { border-color: #99C0E5; background-color: #99C0E5; }
+.category-group > span > input[name="Полуметалл"]:checked + label:after { border-color: #5AC0E8; background-color: #5AC0E8; }
+.category-group > span > input[name="Постпереходный металл"]:checked + label:after { border-color: #75A1E4; background-color: #75A1E4; }
+.category-group > span > input[name="Радиоактивный металл"]:checked + label:after { border-color: #5AC0E8; background-color: #5AC0E8; }
+.category-group > span > input[name="Щелочноземельный металл"]:checked + label:after { border-color: #FEB149; background-color: #FEB149; }
+.category-group > span > input[name="Щелочной металл"]:checked + label:after { border-color: #FD6863; background-color: #FD6863; }

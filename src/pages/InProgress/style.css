@@ -1,0 +1,83 @@
+.in-progress-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.in-progress-container svg {
+    width: 100%;
+    height: 50vh;
+}
+
+.bigCircle1Shadow,
+.bigCircle1 {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: spin 12s linear infinite;
+}
+
+.testCircleShadow,
+.testCircle {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: reverseSpin 8s linear infinite;
+}
+
+.smallLightCircleShadow,
+.smallLightCircle {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: reverseSpin 5s linear infinite;
+}
+
+.smallDarkCircleShadow,
+.smallDarkCircle {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: reverseSpin 4s linear infinite;
+}
+
+.contentCircleShadow,
+.contentCircle {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: spin 10s linear infinite;
+}
+
+.darkCircleShadow,
+.darkCircle {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: spin 6s linear infinite;
+}
+
+@media screen and (max-width: 800px) {
+    .in-progress-container {
+        padding: 16px 24px;
+    }
+
+    .in-progress-container svg {
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reverseSpin {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

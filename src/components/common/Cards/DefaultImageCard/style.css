@@ -34,6 +34,10 @@
     height: 198px;
 }
 
+.image-size-small img {
+    padding: 10px;
+}
+
 .default-image-card-image-container img {
     max-width: 238px;
     max-height: 174px;

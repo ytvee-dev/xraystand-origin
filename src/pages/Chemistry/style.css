@@ -1,0 +1,66 @@
+.custom-chemistry-content-section::-moz-selection {
+    color: var(--default-footer-text-color-white);
+    background-color: var(--section-container-primary-bg);
+}
+.custom-chemistry-content-section::selection {
+    color: var(--default-footer-text-color-white);
+    background-color: var(--section-container-primary-bg);
+}
+.custom-chemistry-content-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 44px 0;
+}
+.custom-chemistry-content-section > * + * {
+    margin-top: 16px;
+}
+.custom-chemistry-content-section-text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.custom-chemistry-content-section-text-container > * + * {
+    margin-top: 36px;
+}
+.custom-chemistry-content-section-title {
+    font-weight: 700;
+    font-size: 48px;
+    color: #289FF5;
+}
+.custom-chemistry-content-section-description {
+    max-width: 800px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+@media (max-width: 1308px) {
+    /*.periodic-table-container {*/
+        /*background-color: red;*/
+    /*}*/
+}

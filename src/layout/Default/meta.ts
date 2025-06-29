@@ -7,7 +7,7 @@ export interface IDefaultDarkFooterMeta {
 };
 
 export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
-    logoPath: `./assets/icons/logo/trafficLawsLargeLogo.svg`,
+    logoPath: `./assets/images/sprite.svg#`,
     contacts: {
         email: "info@xraystand.kz",
         phone: "+7 (7172) 73-50-50",

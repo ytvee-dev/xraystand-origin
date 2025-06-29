@@ -7,7 +7,7 @@ import {
     PageIds,
     type IPageSectionResources,
 } from "@domains/Translate";
-import AnimatedTrafficLight2 from "@components/trafficLaws/AnimatedTrafficLight2";
+import AnimatedTrafficLight from "@components/trafficLaws/AnimatedTrafficLight";
 
 const SecondSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
@@ -25,7 +25,7 @@ const SecondSection = (): ReactElement | null => {
                 >
                     <AnimatedCarCard/>
                 </AnimatedLargeCard>
-                <AnimatedTrafficLight2/>
+                <AnimatedTrafficLight/>
             </div>
         </ContentSection>
     );
