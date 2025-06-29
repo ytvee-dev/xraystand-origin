@@ -1,7 +1,13 @@
 .in-progress-container {
     height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 24px;
 }
@@ -12,44 +18,65 @@
 }
 
 .bigCircle1Shadow,
-.bigCircle1 {
+.bigCircle1,
+.testCircleShadow,
+.testCircle,
+.smallLightCircleShadow,
+.smallLightCircle,
+.smallDarkCircleShadow,
+.smallDarkCircle,
+.contentCircleShadow,
+.contentCircle,
+.darkCircleShadow,
+.darkCircle {
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
+    -webkit-transform-box: fill-box;
+    -moz-transform-box: fill-box;
     transform-box: fill-box;
+    transform-box: fill-box;
+}
+
+.bigCircle1Shadow,
+.bigCircle1 {
+    -webkit-animation: spin 12s linear infinite;
+    -moz-animation: spin 12s linear infinite;
     animation: spin 12s linear infinite;
 }
 
 .testCircleShadow,
 .testCircle {
-    transform-origin: 50% 50%;
-    transform-box: fill-box;
+    -webkit-animation: reverseSpin 8s linear infinite;
+    -moz-animation: reverseSpin 8s linear infinite;
     animation: reverseSpin 8s linear infinite;
 }
 
 .smallLightCircleShadow,
 .smallLightCircle {
-    transform-origin: 50% 50%;
-    transform-box: fill-box;
+    -webkit-animation: reverseSpin 5s linear infinite;
+    -moz-animation: reverseSpin 5s linear infinite;
     animation: reverseSpin 5s linear infinite;
 }
 
 .smallDarkCircleShadow,
 .smallDarkCircle {
-    transform-origin: 50% 50%;
-    transform-box: fill-box;
+    -webkit-animation: reverseSpin 4s linear infinite;
+    -moz-animation: reverseSpin 4s linear infinite;
     animation: reverseSpin 4s linear infinite;
 }
 
 .contentCircleShadow,
 .contentCircle {
-    transform-origin: 50% 50%;
-    transform-box: fill-box;
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
     animation: spin 10s linear infinite;
 }
 
 .darkCircleShadow,
 .darkCircle {
-    transform-origin: 50% 50%;
-    transform-box: fill-box;
+    -webkit-animation: spin 6s linear infinite;
+    -moz-animation: spin 6s linear infinite;
     animation: spin 6s linear infinite;
 }
 
@@ -64,20 +91,28 @@
     }
 }
 
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+    to   { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
 }
 
+@-webkit-keyframes reverseSpin {
+    from { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+    to   { -webkit-transform: rotate(0deg);   transform: rotate(0deg); }
+}
+@-moz-keyframes reverseSpin {
+    from { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+    to   { -moz-transform: rotate(0deg);   transform: rotate(0deg); }
+}
 @keyframes reverseSpin {
-    from {
-        transform: rotate(360deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
+    from { transform: rotate(360deg); }
+    to   { transform: rotate(0deg); }
 }
