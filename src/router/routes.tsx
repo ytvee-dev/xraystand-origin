@@ -22,8 +22,8 @@ const paths = {
         id: "rusLitPage",
         path: "/ruslit",
     },
-    KAZAKH_ADIBIET: {
-        id: "kazakhAdibietPage",
+    KAZAKH_ADЕBIET: {
+        id: "kazakhAdеbietPage",
         path: "/kazakhadibiet",
     },
     NOT_FOUND: {
@@ -50,7 +50,7 @@ const routes: RouteObject[] = [
         element: <InProgress />,
     },
     {
-        ...paths.KAZAKH_ADIBIET,
+        ...paths.KAZAKH_ADЕBIET,
         element: <InProgress />,
     },
     {
