@@ -1,0 +1,39 @@
+.chemistry-modal-content,
+.element-information-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.chemistry-modal-content,
+.element-information-container {
+    gap: 20px;
+}
+
+.element-information-field {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.element-information-field span {
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.element-information-field-name {
+    width: 208px;
+}
+
+.element-information-field-value {
+    max-width: 300px;
+    word-break: break-word;
+    color: #00000080;
+}
+
+@media (max-width: 800px) {
+    .element-information-field {
+        flex-direction: column;
+    }
+}

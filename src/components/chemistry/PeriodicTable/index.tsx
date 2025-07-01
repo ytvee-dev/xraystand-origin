@@ -1,40 +1,11 @@
 import type {FC} from "react";
 import {type ChangeEvent, type ReactElement, useState} from "react";
-import elements from "@components/chemistry/PeriodicTable/elements.json";
-import type {CategoryState, CellProps, ElementJson} from "@components/chemistry/PeriodicTable/types.ts";
+import type {CategoryState, ElementJson} from "@components/chemistry/PeriodicTable/types.ts";
+import ElementCell from "@components/chemistry/ElementCell";
+import {useDispatch} from "react-redux";
+import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
+import elements from "@components/chemistry/elements.json";
 import "./style.css";
-
-export const Cell: FC<CellProps> = ({
-    number,
-    name,
-    symbol,
-    category,
-    xpos,
-    ypos,
-    atomic_mass,
-    visible,
-}) => (
-    <div
-        key={number}
-        // number === 0 if line need to be empty
-        className={`${number !== 0 ? "cell" : "empty-cell"}`}
-        data-category={category}
-        style={{
-            gridRowStart: ypos,
-            gridColumnStart: xpos,
-            backgroundColor: !visible ? "transparent" : "",
-            transition: "background-color 0.3s ease-in-out",
-            cursor: visible ? "pointer" : "auto",
-        }}
-        onClick={visible ? () => console.log(`${symbol} ${name} clicked`) : undefined}
-    >
-        {/* number === 0 if line need to be empty */}
-        <span className="number">{number !== 0 && number}</span>
-        <span className="symbol">{symbol}</span>
-        <span className="name">{name}</span>
-        <span className="atomic-mass">{atomic_mass}</span>
-    </div>
-);
 
 const makeInitialCategories = (): CategoryState =>
     elements.reduce<CategoryState>(
@@ -47,27 +18,22 @@ const makeInitialCategories = (): CategoryState =>
 
 const PeriodicTable: FC = (): ReactElement => {
     const [state, setState] = useState<CategoryState>(makeInitialCategories);
+    const dispatch = useDispatch();
 
     const Categories: FC = (): ReactElement => {
-        // todo: need to refactor
         let groupedCategories = [];
         const categoriesMatrix = [];
 
         for (const category in state) {
-            // console.log("category", category)
             groupedCategories.push(category)
             if (groupedCategories.length === 2) {
                 categoriesMatrix.push(groupedCategories);
                 groupedCategories = [];
             }
         }
-
         if (!categoriesMatrix.length) {
             return <></>;
         }
-
-        // todo: need to add a memo
-        // console.log("RE-RENDER", categoriesMatrix)
 
         return (
             <div className="categories">
@@ -98,13 +64,23 @@ const PeriodicTable: FC = (): ReactElement => {
             (e: ChangeEvent<HTMLInputElement>) =>
                 setState(prev => ({...prev, [category]: e.target.checked}));
 
+    const handleClick = (el: ElementJson) => {
+        dispatch(selectElement(el));
+        dispatch(setIsModalOpened(true));
+    };
+
     return (
         <div className="table-wrapper">
             <div className="table">
                 <div className="cells">
-                    <Categories />
+                    <Categories/>
                     {elements.map((el: ElementJson) => (
-                        <Cell key={el.number} {...el} visible={state[el.category]}/>
+                        <ElementCell
+                            key={el.number}
+                            {...el}
+                            visible={state[el.category]}
+                            action={() => handleClick(el)}
+                        />
                     ))}
                 </div>
             </div>

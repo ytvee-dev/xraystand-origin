@@ -1,27 +1,35 @@
-import { type ReactElement } from "react";
+import {type ReactElement, type ReactNode} from "react";
+import Button from '@mui/material/Button';
+import DialogTitle from '@mui/material/DialogTitle';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
 import "./style.css"
 
-export interface MyModalWindowProps {
-    children: ReactElement;
-    modalHeader: string;
+export interface IFlexibleModal {
+    modalHeader?: string;
+    isModalOpened: boolean;
+    closeAction: () => void;
+    children: ReactElement | ReactNode;
 }
 
-const FlexibleModal = ({ children, modalHeader }: MyModalWindowProps): ReactElement => {
+const FlexibleModal = ({children, modalHeader, isModalOpened, closeAction}: IFlexibleModal): ReactElement => {
+    const handleClose = () => {
+        closeAction();
+    };
+
     return (
-        <div className="modal-window-container">
-            <div className="modal-window">
-                <div className="modal-header">
-                    <h4 className="modal-title">{modalHeader}</h4>
-                </div>
-                <div className="modal-body">
-                    {children}
-                </div>
-                <div className="modal-footer">
-                    <button type="button" className="btn-close-modal" >Закрыть</button>
-                </div>
-            </div>
-            
-        </div>
+        <Dialog
+            open={isModalOpened}
+            keepMounted
+            onClose={handleClose}
+        >
+            {modalHeader && <DialogTitle>{modalHeader}</DialogTitle>}
+            <DialogContent>{children}</DialogContent>
+            <DialogActions>
+                <Button onClick={handleClose}>Закрыть</Button>
+            </DialogActions>
+        </Dialog>
     );
 };
 

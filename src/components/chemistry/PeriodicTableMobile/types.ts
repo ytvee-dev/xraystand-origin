@@ -1,10 +1,8 @@
-import {type TElementCellVariantKey} from "@components/chemistry/ElementCell/types";
-
 export interface ElementJson {
-    name?: string,
-    symbol?: string,
-    number?: string | number,
-    atomic_mass?: string,
+    name: string,
+    symbol: string,
+    number: string | number,
+    atomic_mass: string,
     category: string,
     color?: string,
     phase: string,
@@ -13,9 +11,9 @@ export interface ElementJson {
     density: string,
     applying: string,
     fact: string,
-    period?: string | number,
-    xpos?: string | number,
-    ypos?: string | number,
+    period: string | number,
+    xpos: string | number,
+    ypos: string | number,
 }
 
 export interface CellProps
@@ -29,9 +27,7 @@ export interface CellProps
         | "xpos"
         | "ypos"
     > {
-    variant?: TElementCellVariantKey;
-    visible?: boolean;
-    action?: () => void,
+    visible: boolean;
 }
 
 export type CategoryState = Record<ElementJson["category"], boolean>;

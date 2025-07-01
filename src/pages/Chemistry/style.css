@@ -59,8 +59,12 @@
 }
 
 
-@media (max-width: 1308px) {
-    /*.periodic-table-container {*/
-        /*background-color: red;*/
-    /*}*/
+@media (max-width: 720px) {
+    .custom-chemistry-content-section-title {
+        font-size: 30px;
+    }
+
+    .custom-chemistry-content-section-description {
+        font-size: 18px;
+    }
 }

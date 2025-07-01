@@ -1,4 +1,4 @@
-import { type ReactElement, type MouseEvent } from "react";
+import { type ReactElement, type MouseEvent, type TouchEvent } from "react";
 import {
     trafficLightsConfig,
     type ITrafficLightConfig,
@@ -6,11 +6,19 @@ import {
 import "./style.css";
 
 const AnimatedTrafficLight = (): ReactElement => {
-    const handleMouseEnter = (event: MouseEvent<HTMLDivElement>): void => {
+    const handleLightEnter = (event: MouseEvent<HTMLDivElement>): void => {
         event.currentTarget.classList.add("active");
     };
 
-    const handleMouseLeave = (event: MouseEvent<HTMLDivElement>): void => {
+    const handleLightLeave = (event: MouseEvent<HTMLDivElement>): void => {
+        event.currentTarget.classList.remove("active");
+    };
+
+    const handleLightTouchStart = (event: TouchEvent<HTMLDivElement>): void => {
+        event.currentTarget.classList.add("active");
+    };
+
+    const handleLightTouchEnd = (event: TouchEvent<HTMLDivElement>): void => {
         event.currentTarget.classList.remove("active");
     };
 
@@ -29,8 +37,10 @@ const AnimatedTrafficLight = (): ReactElement => {
                                 />
                                 <div
                                     className="hovered-block"
-                                    onMouseEnter={handleMouseEnter}
-                                    onMouseLeave={handleMouseLeave}
+                                    onMouseEnter={handleLightEnter}
+                                    onMouseLeave={handleLightLeave}
+                                    onTouchStart={handleLightTouchStart}
+                                    onTouchEnd={handleLightTouchEnd}
                                 >
                                     <img
                                         src={trafficLightConfig.imageLightOnSrc}

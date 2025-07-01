@@ -12,7 +12,6 @@ interface ICardProps {
 }
 
 export function getCardProps(item: TContentItem): ICardProps | null {
-    console.log("ITEM IS", item)
     if (typeof item === "string") {
         return { title: item };
     }

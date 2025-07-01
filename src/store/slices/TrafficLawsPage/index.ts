@@ -1,11 +1,11 @@
 import { type PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
 
-interface ILocaleState {
+interface IPageState {
     isModalOpened: boolean;
 }
 
-const initialState: ILocaleState = {
+const initialState: IPageState = {
     isModalOpened: false,
 };
 

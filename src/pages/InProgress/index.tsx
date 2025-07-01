@@ -21,7 +21,7 @@ const InProgress = (): ReactElement => {
         <DefaultLayout>
             <ContentSection textData={textContent}>
                 <div className="in-progress-container">
-                    <svg>
+                    <svg className="animated-svg">
                         <use
                             href={`./assets/images/sprite.svg#${
                                 screenWidth > 800 ? 
