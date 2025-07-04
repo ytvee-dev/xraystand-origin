@@ -6,17 +6,21 @@ import DefaultCardsListOL from "@components/common/Cards/DefaultCardsListOL";
 import usePageTranslation from "@hooks/usePageTranslation";
 import usePageImagesIds from "@hooks/usePageImagesIds";
 import {
+    type IPageResources,
     PageIds,
 } from "@domains/Translate";
 
 const FifthSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
+    const translation = textTranslation as IPageResources;
     const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
+
+    if (!translation.FIFTH_SECTION) return null;
 
     return (
         <ContentSection textData={{
-            title: textTranslation["fifthSection"]["title"],
-            description: textTranslation["fifthSection"]["description"],
+            title: translation.FIFTH_SECTION["title"],
+            description: translation.FIFTH_SECTION["description"],
             colorScheme: {
                 background: "#FFFFFF",
                 text: "#289FF5",
@@ -24,12 +28,12 @@ const FifthSection = (): ReactElement | null => {
         }}>
             <div className={"background-cards-container"}>
                 <DefaultCardsListOL
-                    content={textTranslation["fifthSection"]["content"] as TContentItem[]}
-                    imageIdData={pageImageIdData.fifthSection.contentListData}
+                    content={translation.FIFTH_SECTION["content"] as TContentItem[]}
+                    imageIdData={pageImageIdData?.fifthSection?.contentListData ?? []}
                 />
             </div>
             <div className="content-section-alert-wrapper">
-                <ContentSectionAlert label={textTranslation["thirdSection"].notificationLabel as string}/>
+                <ContentSectionAlert label={translation.THIRD_SECTION.notificationLabel as string}/>
             </div>
         </ContentSection>
     );

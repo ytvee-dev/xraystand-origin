@@ -152,6 +152,29 @@ input[type="checkbox"]:checked + label:after {
 .category-group > span > input[name="Щелочной металл"]:checked + label:before,
 .category-group > span > input[name="Щелочной металл"]:not(:checked) + label:before { border-color: #FD6863; }
 
+.category-group > span > input[name="актиноид"]:checked + label:before,
+.category-group > span > input[name="актиноид"]:not(:checked) + label:before { border-color: #7FB5AE; }
+.category-group > span > input[name="галоген"]:checked + label:before,
+.category-group > span > input[name="галоген"]:not(:checked) + label:before { border-color: #FF9595; }
+.category-group > span > input[name="инертті газ"]:checked + label:before,
+.category-group > span > input[name="инертті газ"]:not(:checked) + label:before { border-color: #DAA2E0; }
+.category-group > span > input[name="лантоид"]:checked + label:before,
+.category-group > span > input[name="лантоид"]:not(:checked) + label:before { border-color: #A1DCCC; }
+.category-group > span > input[name="бейметалл"]:checked + label:before,
+.category-group > span > input[name="бейметалл"]:not(:checked) + label:before { border-color: #A7D04A; }
+.category-group > span > input[name="өтпелі металл"]:checked + label:before,
+.category-group > span > input[name="өтпелі металл"]:not(:checked) + label:before { border-color: #99C0E5; }
+.category-group > span > input[name="жартылай металл"]:checked + label:before,
+.category-group > span > input[name="жартылай металл"]:not(:checked) + label:before { border-color: #5AC0E8; }
+.category-group > span > input[name="өтпелі металлдерден кейінгі металл"]:checked + label:before,
+.category-group > span > input[name="өтпелі металлдерден кейінгі металл"]:not(:checked) + label:before { border-color: #75A1E4; }
+.category-group > span > input[name="радиоактивті металл"]:checked + label:before,
+.category-group > span > input[name="радиоактивті металл"]:not(:checked) + label:before { border-color: #5AC0E8; }
+.category-group > span > input[name="сілтілік-жер металлдары"]:checked + label:before,
+.category-group > span > input[name="сілтілік-жер металлдары"]:not(:checked) + label:before { border-color: #FEB149; }
+.category-group > span > input[name="сілтілік металл"]:checked + label:before,
+.category-group > span > input[name="сілтілік металл"]:not(:checked) + label:before { border-color: #FD6863; }
+
 /* Turn on state of the checkbox */
 
 .category-group > span > input[name="Актиноид"]:checked + label:after { border-color: #7FB5AE; background-color: #7FB5AE; }
@@ -165,3 +188,15 @@ input[type="checkbox"]:checked + label:after {
 .category-group > span > input[name="Радиоактивный металл"]:checked + label:after { border-color: #5AC0E8; background-color: #5AC0E8; }
 .category-group > span > input[name="Щелочноземельный металл"]:checked + label:after { border-color: #FEB149; background-color: #FEB149; }
 .category-group > span > input[name="Щелочной металл"]:checked + label:after { border-color: #FD6863; background-color: #FD6863; }
+
+.category-group > span > input[name="актиноид"]:checked + label:after { border-color: #7FB5AE; background-color: #7FB5AE; }
+.category-group > span > input[name="галоген"]:checked + label:after { border-color: #FF9595; background-color: #FF9595; }
+.category-group > span > input[name="инертті газ"]:checked + label:after { border-color: #DAA2E0; background-color: #DAA2E0; }
+.category-group > span > input[name="лантоид"]:checked + label:after { border-color: #A1DCCC; background-color: #A1DCCC; }
+.category-group > span > input[name="бейметалл"]:checked + label:after { border-color: #A7D04A; background-color: #A7D04A; }
+.category-group > span > input[name="өтпелі металл"]:checked + label:after { border-color: #99C0E5; background-color: #99C0E5; }
+.category-group > span > input[name="жартылай металл"]:checked + label:after { border-color: #5AC0E8; background-color: #5AC0E8; }
+.category-group > span > input[name="өтпелі металлдерден кейінгі металл"]:checked + label:after { border-color: #75A1E4; background-color: #75A1E4; }
+.category-group > span > input[name="радиоактивті металл"]:checked + label:after { border-color: #5AC0E8; background-color: #5AC0E8; }
+.category-group > span > input[name="сілтілік-жер металлдары"]:checked + label:after { border-color: #FEB149; background-color: #FEB149; }
+.category-group > span > input[name="сілтілік металл"]:checked + label:after { border-color: #FD6863; background-color: #FD6863; }

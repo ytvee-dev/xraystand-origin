@@ -18,7 +18,7 @@ const InProgress = (): ReactElement => {
     const screenWidth = useWindowWidth();
 
     return (
-        <DefaultLayout>
+        <DefaultLayout disabled={true}>
             <ContentSection textData={textContent}>
                 <div className="in-progress-container">
                     <svg className="animated-svg">

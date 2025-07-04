@@ -6,21 +6,25 @@ import DefaultCardsListOL from "@components/common/Cards/DefaultCardsListOL";
 import SquareImageViewer from "@components/common/Other/SquareImageViewer";
 import usePageTranslation from "@hooks/usePageTranslation";
 import {
+    type IPageResources,
     PageIds,
 } from "@domains/Translate";
 
 const FourthSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
+    const translation = textTranslation as IPageResources;
+
+    if (!translation.FOURTH_SECTION) return null;
 
     return (
         <TwoColumnSection
             leftColumn={
                 <LargeCard
-                    title={textTranslation["fourthSection"].title}
-                    description={textTranslation["fourthSection"].description}
-                    notificationLabel={textTranslation["fourthSection"].notificationLabel}
+                    title={translation.FOURTH_SECTION.title}
+                    description={translation.FOURTH_SECTION.description}
+                    notificationLabel={translation.FOURTH_SECTION.notificationLabel}
                 >
-                    <DefaultCardsListOL content={textTranslation["fourthSection"]["content"] as TContentItem[]}/>
+                    <DefaultCardsListOL content={translation.FOURTH_SECTION["content"] as TContentItem[]}/>
                 </LargeCard>
             }
             rightColumn={

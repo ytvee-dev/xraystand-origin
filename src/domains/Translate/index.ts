@@ -2,7 +2,8 @@ import rusTextLocale from "@locales/text/rus.json"
 import kazTextLocale from "@locales/text/kaz.json"
 import rusControlLocale from "@locales/control/rus.json"
 import kazControlLocale from "@locales/control/kaz.json"
-import type { IListItemProps } from "@utils/constants";
+import type {IListItemProps} from "@utils/constants";
+import type {IChemistryPageResources, TElementsInfo} from "@pages/Chemistry/types.ts";
 
 export interface IInfoCardResources {
     title: string;
@@ -21,7 +22,7 @@ export interface IPageSectionResources {
     [PageSectionItemsIds.TITLE]: string;
     [PageSectionItemsIds.SUBTITLE]?: string;
     [PageSectionItemsIds.DESCRIPTION]?: string;
-    [PageSectionItemsIds.CONTENT]: IImageCardResources[] | IInfoCardResources[] | IInfoCardResources | string[];
+    [PageSectionItemsIds.CONTENT]?: IImageCardResources[] | IInfoCardResources[] | IInfoCardResources | string[];
     [PageSectionItemsIds.NOTIFICATION_LABEL]?: string;
 };
 
@@ -30,7 +31,7 @@ export interface IPageResources {
 };
 
 export interface ITextTranslationResources {
-    [key: string]: IPageResources;
+    [key: string]: IPageResources | TElementsInfo | IChemistryPageResources;
 };
 
 export const enum Languages {
@@ -39,8 +40,8 @@ export const enum Languages {
 };
 
 export const languageSwitcherOptions: IListItemProps[] = [
-    { label: "RU", value: Languages.RUSSIAN },
-    { label: "KZ", value: Languages.KAZAKH },
+    {label: "RU", value: Languages.RUSSIAN},
+    {label: "KZ", value: Languages.KAZAKH},
 ];
 
 export const localesTextRecord: Record<Languages, ITextTranslationResources> = {
@@ -59,6 +60,9 @@ export const localesControlRecord: Record<Languages, IControlTranslationResource
 
 export const enum PageIds {
     TRAFFIC_LAWS_PAGE = "trafficLawsPage",
+    CHEMISTRY_PAGE = "chemistryPage",
+    RUSLIT_PAGE = "ruslitPage",
+    KAZAKH_ADEBIET_PAGE = "kazakhadebietPage",
 };
 
 export const enum PageSectionIds {

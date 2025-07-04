@@ -1,9 +1,9 @@
 import type {FC} from "react";
-import type {CellProps} from "@components/chemistry/PeriodicTable/types.ts";
+import type {ICellProps} from "@pages/Chemistry/types.ts";
 import {VARIANT} from "@components/chemistry/ElementCell/meta.ts";
 import "./style.css";
 
-export const ElementCell: FC<CellProps> = ({
+export const ElementCell: FC<ICellProps> = ({
     variant="DESKTOP",
     number,
     name,

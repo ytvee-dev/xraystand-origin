@@ -7,12 +7,16 @@ import SquareImageViewer from "@components/common/Other/SquareImageViewer";
 import usePageTranslation from "@hooks/usePageTranslation";
 import usePageImagesIds from "@hooks/usePageImagesIds";
 import {
+    type IPageResources,
     PageIds,
 } from "@domains/Translate";
 
 const SeventhSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
+    const translation = textTranslation as IPageResources;
     const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
+
+    if (!translation.SEVENTH_SECTION) return null;
 
     return (
         <TwoColumnSection
@@ -21,13 +25,13 @@ const SeventhSection = (): ReactElement | null => {
             }
             rightColumn={
                 <LargeCard
-                    title={textTranslation["seventhSection"].title}
-                    description={textTranslation["seventhSection"].description}
-                    notificationLabel={textTranslation["seventhSection"].notificationLabel}
+                    title={translation.SEVENTH_SECTION.title}
+                    description={translation.SEVENTH_SECTION.description}
+                    notificationLabel={translation.SEVENTH_SECTION.notificationLabel}
                 >
                     <DefaultCardsListOL
-                        content={textTranslation["seventhSection"]["content"] as TContentItem[]}
-                        imageIdData={pageImageIdData.seventhSection.contentListData}
+                        content={translation.SEVENTH_SECTION["content"] as TContentItem[]}
+                        imageIdData={pageImageIdData?.seventhSection?.contentListData ?? []}
                         isCardsClickable={true}
                         smallImageSizes={true}
                     />

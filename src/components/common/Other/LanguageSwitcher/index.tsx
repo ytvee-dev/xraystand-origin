@@ -1,9 +1,9 @@
-import { Languages, languageSwitcherOptions } from "@domains/Translate";
-import { type ChangeEvent, type ReactElement } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setLocale } from "@store/slices/Locale";
-import type { TRootState } from "@store/index";
-import { Switch } from "@mui/material";
+import {Languages, languageSwitcherOptions} from "@domains/Translate";
+import {type ChangeEvent, type ReactElement} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {setLocale} from "@store/slices/Locale";
+import type {TRootState} from "@store/index";
+import {Switch} from "@mui/material";
 import {
     LocalStorageKeys,
     type IListItemProps,
@@ -28,12 +28,11 @@ const LanguageSwitcher = (): ReactElement => {
     );
 
     const handleSwitchLanguage = (event: ChangeEvent<HTMLInputElement>) => {
-        console.log(event.target.checked);
+        console.log("handleSwitchLanguage:", event.target.checked);
 
         const selectedLanguage: Languages = !event.target.checked
             ? Languages.RUSSIAN
-            : Languages.RUSSIAN
-            // : Languages.KAZAKH;
+            : Languages.KAZAKH;
 
         dispatch(setLocale(selectedLanguage));
         localStorage.setItem(LocalStorageKeys.LOCALE, selectedLanguage);
@@ -43,10 +42,10 @@ const LanguageSwitcher = (): ReactElement => {
     const currentLocaleLabel: string = getLocaleLabelByValue(currentLocale);
 
     return (
-        <div>
+        <div style={{userSelect: "none"}}>
             <Switch
+                checked={isDefaultChecked}
                 onChange={handleSwitchLanguage}
-                defaultChecked={isDefaultChecked}
             />
             {currentLocaleLabel}
         </div>

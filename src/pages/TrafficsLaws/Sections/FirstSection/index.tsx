@@ -6,25 +6,27 @@ import DefaultCardsListOL from "@components/common/Cards/DefaultCardsListOL";
 import usePageTranslation from "@hooks/usePageTranslation";
 import usePageImagesIds from "@hooks/usePageImagesIds";
 import {
+    type IPageResources,
     PageIds,
     PageSectionIds,
 } from "@domains/Translate";
 
 const FirstSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
+    const translation = textTranslation as IPageResources;
     const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
 
     return (
-        <ContentSection textData={textTranslation["firstSection"]}>
+        <ContentSection textData={translation.FIRST_SECTION}>
             <div className={"background-cards-container"}>
                 <DefaultCardsListOL
-                    content={textTranslation["firstSection"]["content"] as TContentItem[]}
-                    imageIdData={pageImageIdData.firstSection.contentListData}
+                    content={translation[PageSectionIds.FIRST_SECTION]["content"] as TContentItem[]}
+                    imageIdData={pageImageIdData?.firstSection.contentListData}
                     backgroundCardsColor={"#289FF5"}
                 />
             </div>
             <div className="content-section-alert-wrapper">
-                <ContentSectionAlert label={textTranslation[PageSectionIds.FIRST_SECTION].notificationLabel as string}/>
+                <ContentSectionAlert label={translation[PageSectionIds.FIRST_SECTION].notificationLabel as string}/>
             </div>
         </ContentSection>
     );

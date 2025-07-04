@@ -5,13 +5,14 @@ import AnimatedLargeCard, {type IDescription} from "@components/trafficLaws/Anim
 import usePageTranslation from "@hooks/usePageTranslation";
 import {
     PageIds,
-    type IPageSectionResources,
+    type IPageSectionResources, type IPageResources, PageSectionIds,
 } from "@domains/Translate";
 import AnimatedTrafficLight from "@components/trafficLaws/AnimatedTrafficLight";
 
 const SecondSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
-    const secondSectionMeta: IPageSectionResources = textTranslation["secondSection"];
+    const translation = textTranslation as IPageResources;
+    const secondSectionMeta: IPageSectionResources = translation[PageSectionIds.SECOND_SECTION];
     const secondSectionDescription: IDescription = {
         subtitle: secondSectionMeta.subtitle!, content: secondSectionMeta.content! as string[]
     }
@@ -19,9 +20,9 @@ const SecondSection = (): ReactElement | null => {
         <ContentSection>
             <div className="adaptive-content-container">
                 <AnimatedLargeCard
-                    title={textTranslation["secondSection"].title}
+                    title={translation[PageSectionIds.SECOND_SECTION].title}
                     description={secondSectionDescription}
-                    notificationLabel={textTranslation["secondSection"].notificationLabel}
+                    notificationLabel={translation[PageSectionIds.SECOND_SECTION].notificationLabel}
                 >
                     <AnimatedCarCard/>
                 </AnimatedLargeCard>

@@ -1,21 +1,22 @@
 import {useSelector} from "react-redux";
 import type {FC, ReactNode} from "react";
 import type {TRootState} from "@store/index.ts";
-import type {ElementJson} from "@components/chemistry/PeriodicTable/types.ts";
+import type {IElementJson} from "@pages/Chemistry/types.ts";
 import ElementCell from "@components/chemistry/ElementCell";
-import {contentFieldsRu} from "@components/chemistry/ChemistryModalContent/meta.ts";
+import {contentFieldsKz, contentFieldsRu} from "@components/chemistry/ChemistryModalContent/meta.ts";
 import "./style.css";
 
 const ChemistryModalContent: FC = (): ReactNode => {
+    const locale = useSelector((state: TRootState) => state.locale.locale);
     const elementInformation = useSelector(
         (state: TRootState) => state.chemistry.elementInformation
-    ) as ElementJson | null;
+    ) as IElementJson | null;
 
     if (!elementInformation) {
         return <></>;
     }
 
-    const fields: (keyof ElementJson)[] = [
+    const fields: (keyof IElementJson)[] = [
         "number",
         "atomic_mass",
         "category",
@@ -45,7 +46,7 @@ const ChemistryModalContent: FC = (): ReactNode => {
                     return (
                         <div key={fieldKey} className="element-information-field">
                             <span className="element-information-field-name">
-                                {contentFieldsRu[fieldKey] || fieldKey}:
+                                {locale === "ru" ? contentFieldsRu[fieldKey] : contentFieldsKz[fieldKey]}:
                             </span>
                             <span className="element-information-field-value">
                                 {value}

@@ -30,8 +30,8 @@ const AnimatedTrafficLight = (): ReactElement => {
                 </div>
                 <div className="traffic-light-container">
                     {trafficLightsConfig.trafficLights.map(
-                        (trafficLightConfig: ITrafficLightConfig) => (
-                            <div className="traffic-light-image-wrapper">
+                        (trafficLightConfig: ITrafficLightConfig, index: number) => (
+                            <div key={index} className="traffic-light-image-wrapper">
                                 <img
                                     src={trafficLightConfig.imageLightOffSrc}
                                 />

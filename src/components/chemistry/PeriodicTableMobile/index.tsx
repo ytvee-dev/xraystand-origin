@@ -1,13 +1,14 @@
-import type {FC} from "react";
-import {type ReactElement} from "react";
-import type {ElementJson} from "@components/chemistry/PeriodicTable/types.ts";
-import ElementCell from "@components/chemistry/ElementCell";
-import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
 import {useDispatch} from "react-redux";
-import elements from "@components/chemistry/elements.json";
+import {type ReactElement, type FC} from "react";
+import type {IElementJson} from "@pages/Chemistry/types.ts";
+import type {IChemistryPageResources, TElementsInfo} from "@pages/Chemistry/types.ts";
+import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
+import usePageTranslation from "@hooks/usePageTranslation.ts";
+import ElementCell from "@components/chemistry/ElementCell";
+import {PageIds} from "@domains/Translate";
 import "./style.css";
 
-const groupElementsByPeriod = (elements: ElementJson[]): Record<number, ElementJson[]> => {
+const groupElementsByPeriod = (elements: TElementsInfo): Record<number, TElementsInfo> => {
     return elements.reduce((acc, el) => {
         const period = Number(el.period);
         if (!period) return acc;
@@ -17,15 +18,17 @@ const groupElementsByPeriod = (elements: ElementJson[]): Record<number, ElementJ
         }
         acc[period].push(el);
         return acc;
-    }, {} as Record<number, ElementJson[]>);
+    }, {} as Record<number, TElementsInfo>);
 };
 
 const PeriodicTableMobile: FC = (): ReactElement => {
+    const {textTranslation} = usePageTranslation(PageIds.CHEMISTRY_PAGE);
+    const { elements } = textTranslation as IChemistryPageResources;
     const grouped = groupElementsByPeriod(elements);
     const sortedPeriods = Object.keys(grouped).map(Number).sort((a, b) => a - b);
     const dispatch = useDispatch();
 
-    const handleClick = (el: ElementJson) => {
+    const handleClick = (el: IElementJson) => {
         dispatch(selectElement(el));
         dispatch(setIsModalOpened(true));
     };

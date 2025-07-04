@@ -30,60 +30,29 @@ COMMON STYLES
     transition: none;
 }
 
-.cell[data-category="Актиноид"] {
-    background-color: #7FB5AE;
-    border-color: #7FB5AE;
-}
+.cell[data-category="Актиноид"] { background-color: #7FB5AE;    border-color: #7FB5AE; }
+.cell[data-category="Галоген"] { background-color: #FF9595;    border-color: #FF9595; }
+.cell[data-category="Инертный газ"] { background-color: #DAA2E0;    border-color: #DAA2E0; }
+.cell[data-category="Лантаноид"] { background-color: #A1DCCC;    border-color: #A1DCCC; }
+.cell[data-category="Неметалл"] { background-color: #A7D04A;    border-color: #A7D04A; }
+.cell[data-category="Переходный металл"] { background-color: #99C0E5;    border-color: #99C0E5; }
+.cell[data-category="Полуметалл"] { background-color: #5AC0E8;    border-color: #5AC0E8; }
+.cell[data-category="Постпереходный металл"] { background-color: #75A1E4;    border-color: #75A1E4; }
+.cell[data-category="Радиоактивный металл"] { background-color: #5AC0E8;    border-color: #5AC0E8; }
+.cell[data-category="Щелочноземельный металл"] { background-color: #FEB149;    border-color: #FEB149; }
+.cell[data-category="Щелочной металл"] { background-color: #FD6863;    border-color: #FD6863; }
 
-.cell[data-category="Галоген"] {
-    background-color: #FF9595;
-    border-color: #FF9595;
-}
-
-.cell[data-category="Инертный газ"] {
-    background-color: #DAA2E0;
-    border-color: #DAA2E0;
-}
-
-.cell[data-category="Лантаноид"] {
-    background-color: #A1DCCC;
-    border-color: #A1DCCC;
-}
-
-.cell[data-category="Неметалл"] {
-    background-color: #A7D04A;
-    border-color: #A7D04A;
-}
-
-.cell[data-category="Переходный металл"] {
-    background-color: #99C0E5;
-    border-color: #99C0E5;
-}
-
-.cell[data-category="Полуметалл"] {
-    background-color: #5AC0E8;
-    border-color: #5AC0E8;
-}
-
-.cell[data-category="Постпереходный металл"] {
-    background-color: #75A1E4;
-    border-color: #75A1E4;
-}
-
-.cell[data-category="Радиоактивный металл"] {
-    background-color: #5AC0E8;
-    border-color: #5AC0E8;
-}
-
-.cell[data-category="Щелочноземельный металл"] {
-    background-color: #FEB149;
-    border-color: #FEB149;
-}
-
-.cell[data-category="Щелочной металл"] {
-    background-color: #FD6863;
-    border-color: #FD6863;
-}
+.cell[data-category="актиноид"] { background-color: #7FB5AE; border-color: #7FB5AE; }
+.cell[data-category="галоген"] { background-color: #FF9595; border-color: #FF9595; }
+.cell[data-category="инертті газ"] { background-color: #DAA2E0; border-color: #DAA2E0; }
+.cell[data-category="лантоид"] { background-color: #A1DCCC; border-color: #A1DCCC; }
+.cell[data-category="бейметалл"] { background-color: #A7D04A; border-color: #A7D04A; }
+.cell[data-category="өтпелі металл"] { background-color: #99C0E5; border-color: #99C0E5; }
+.cell[data-category="жартылай металл"] { background-color: #5AC0E8; border-color: #5AC0E8; }
+.cell[data-category="өтпелі металлдерден кейінгі металл"] { background-color: #75A1E4; border-color: #75A1E4; }
+.cell[data-category="радиоактивті металл"] { background-color: #5AC0E8; border-color: #5AC0E8; }
+.cell[data-category="сілтілік-жер металлдары"] { background-color: #FEB149; border-color: #FEB149; }
+.cell[data-category="сілтілік металл"] { background-color: #FD6863; border-color: #FD6863; }
 
 /*
 ================================
@@ -171,8 +140,7 @@ MODAL VARIANT
 
 .modal-cell {
     padding: 8px 14px;
-    margin: auto;
-    max-width: 256px;
+    margin: auto;    max-width: 256px;
     min-height: 256px;
 }
 

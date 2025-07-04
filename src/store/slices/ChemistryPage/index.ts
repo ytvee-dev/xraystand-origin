@@ -1,10 +1,10 @@
 import { type PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
-import type {ElementJson} from "@components/chemistry/PeriodicTable/types.ts";
+import type {IElementJson} from "@pages/Chemistry/types.ts";
 
 interface IPageState {
     isModalOpened: boolean;
-    elementInformation: ElementJson | null;
+    elementInformation: IElementJson | null;
 }
 
 const initialState: IPageState = {
@@ -19,7 +19,7 @@ const chemistrySlice = createSlice({
         setIsModalOpened: (state, action: PayloadAction<boolean>) => {
             state.isModalOpened = action.payload;
         },
-        selectElement: (state, action: PayloadAction<ElementJson>) => {
+        selectElement: (state, action: PayloadAction<IElementJson>) => {
             state.elementInformation = action.payload;
         },
     },

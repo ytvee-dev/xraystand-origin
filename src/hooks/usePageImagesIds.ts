@@ -7,11 +7,17 @@ export interface ISectionImageIdData {
 }
 
 const usePageImagesIds = (pageId: PageIds) => {
+    if (pageId in imageIdData) {
+        return {
+            pageImageIdData: imageIdData[pageId as keyof typeof imageIdData] as Record<
+                PageSectionIds,
+                ISectionImageIdData
+            >,
+        };
+    }
+
     return {
-        pageImageIdData: imageIdData[pageId] as Record<
-            PageSectionIds,
-            ISectionImageIdData
-        >,
+        pageImageIdData: undefined,
     };
 };
 

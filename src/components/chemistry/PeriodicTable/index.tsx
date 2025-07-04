@@ -1,24 +1,27 @@
-import type {FC} from "react";
-import {type ChangeEvent, type ReactElement, useState} from "react";
-import type {CategoryState, ElementJson} from "@components/chemistry/PeriodicTable/types.ts";
-import ElementCell from "@components/chemistry/ElementCell";
+import {type ChangeEvent, type ReactElement, useState, type FC} from "react";
 import {useDispatch} from "react-redux";
 import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
-import elements from "@components/chemistry/elements.json";
+import type {TCategoryState, IElementJson, IChemistryPageResources} from "@pages/Chemistry/types.ts";
+import ElementCell from "@components/chemistry/ElementCell";
+import type {TElementsInfo} from "@pages/Chemistry/types.ts";
+import usePageTranslation from "@hooks/usePageTranslation.ts";
+import {PageIds} from "@domains/Translate";
 import "./style.css";
 
-const makeInitialCategories = (): CategoryState =>
-    elements.reduce<CategoryState>(
-        (acc: CategoryState, {category}) => {
-            acc[category as keyof CategoryState] = true;
+const makeInitialCategories = (elements: TElementsInfo): TCategoryState =>
+    elements.reduce<TCategoryState>(
+        (acc: TCategoryState, {category}) => {
+            acc[category as keyof TCategoryState] = true;
             return acc;
         },
-        {} as CategoryState,
+        {} as TCategoryState,
     );
 
 const PeriodicTable: FC = (): ReactElement => {
-    const [state, setState] = useState<CategoryState>(makeInitialCategories);
     const dispatch = useDispatch();
+    const {textTranslation} = usePageTranslation(PageIds.CHEMISTRY_PAGE);
+    const { elements } = textTranslation as IChemistryPageResources;
+    const [state, setState] = useState<TCategoryState>(makeInitialCategories(elements));
 
     const Categories: FC = (): ReactElement => {
         let groupedCategories = [];
@@ -60,11 +63,11 @@ const PeriodicTable: FC = (): ReactElement => {
     }
 
     const toggle =
-        (category: keyof CategoryState) =>
+        (category: keyof TCategoryState) =>
             (e: ChangeEvent<HTMLInputElement>) =>
                 setState(prev => ({...prev, [category]: e.target.checked}));
 
-    const handleClick = (el: ElementJson) => {
+    const handleClick = (el: IElementJson) => {
         dispatch(selectElement(el));
         dispatch(setIsModalOpened(true));
     };
@@ -74,7 +77,7 @@ const PeriodicTable: FC = (): ReactElement => {
             <div className="table">
                 <div className="cells">
                     <Categories/>
-                    {elements.map((el: ElementJson) => (
+                    {elements.map((el: IElementJson) => (
                         <ElementCell
                             key={el.number}
                             {...el}
