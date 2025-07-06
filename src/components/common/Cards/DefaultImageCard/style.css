@@ -43,6 +43,7 @@
     max-width: 238px;
     max-height: 174px;
     user-select: none;
+    object-fit: contain;
 }
 
 .default-image-card-description-container {
