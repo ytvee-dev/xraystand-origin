@@ -15,12 +15,12 @@ const FifthSection = (): ReactElement | null => {
     const translation = textTranslation as IPageResources;
     const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
 
-    if (!translation.FIFTH_SECTION) return null;
+    if (!translation.fifthSection) return null;
 
     return (
         <ContentSection textData={{
-            title: translation.FIFTH_SECTION["title"],
-            description: translation.FIFTH_SECTION["description"],
+            title: translation.fifthSection["title"],
+            description: translation.fifthSection["description"],
             colorScheme: {
                 background: "#FFFFFF",
                 text: "#289FF5",
@@ -28,12 +28,12 @@ const FifthSection = (): ReactElement | null => {
         }}>
             <div className={"background-cards-container"}>
                 <DefaultCardsListOL
-                    content={translation.FIFTH_SECTION["content"] as TContentItem[]}
+                    content={translation.fifthSection["content"] as TContentItem[]}
                     imageIdData={pageImageIdData?.fifthSection?.contentListData ?? []}
                 />
             </div>
             <div className="content-section-alert-wrapper">
-                <ContentSectionAlert label={translation.THIRD_SECTION.notificationLabel as string}/>
+                <ContentSectionAlert label={translation.fifthSection.notificationLabel as string}/>
             </div>
         </ContentSection>
     );

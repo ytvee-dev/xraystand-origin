@@ -14,11 +14,11 @@ const SixthSection = (): ReactElement | null => {
     const translation = textTranslation as IPageResources;
     const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
 
-    if (!translation.SIXTH_SECTION) return null;
+    if (!translation.sixthSection) return null;
 
     return (
         <ContentSection textData={{
-            title: translation.SIXTH_SECTION["title"],
+            title: translation.sixthSection["title"],
             colorScheme: {
                 background: "#FFFFFF",
                 text: "#289FF5",
@@ -26,7 +26,7 @@ const SixthSection = (): ReactElement | null => {
         }}>
             <div className={"background-cards-container"}>
                 <DefaultCardsListOL
-                    content={translation.SIXTH_SECTION["content"] as TContentItem[]}
+                    content={translation.sixthSection["content"] as TContentItem[]}
                     imageIdData={pageImageIdData?.sixthSection?.contentListData ?? []}
                     isCardsClickable={true}
                     smallImageSizes={true}

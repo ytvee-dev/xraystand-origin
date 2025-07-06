@@ -39,6 +39,7 @@
 }
 
 .default-image-card-image-container img {
+    width: 100%;
     max-width: 238px;
     max-height: 174px;
     user-select: none;

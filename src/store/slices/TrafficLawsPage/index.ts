@@ -1,24 +1,25 @@
 import { type PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
+import type {TContentItem} from "@utils/types/trafficLawsTypes";
 
 interface IPageState {
-    isModalOpened: boolean;
+    modalContentName: TContentItem;
 }
 
 const initialState: IPageState = {
-    isModalOpened: false,
+    modalContentName: "",
 };
 
-const trafficLawsSliceSlice = createSlice({
+const trafficLawsSlice = createSlice({
     name: "trafficLaws",
     initialState,
     reducers: {
-        setIsModalOpened: (state, action: PayloadAction<boolean>) => {
-            state.isModalOpened = action.payload;
+        setModalContentName: (state, action: PayloadAction<TContentItem>) => {
+            state.modalContentName = action.payload;
         },
     },
 });
 
-export const { setIsModalOpened } = trafficLawsSliceSlice.actions;
+export const { setModalContentName } = trafficLawsSlice.actions;
 
-export default trafficLawsSliceSlice.reducer;
+export default trafficLawsSlice.reducer;

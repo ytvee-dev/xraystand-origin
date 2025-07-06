@@ -14,11 +14,11 @@ const EighthSection = (): ReactElement | null => {
     const translation = textTranslation as IPageResources;
     const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
 
-    if (!translation.EIGHTH_SECTION) return null;
+    if (!translation.eighthSection) return null;
 
     return (
         <ContentSection textData={{
-            title: translation.EIGHTH_SECTION["title"],
+            title: translation.eighthSection["title"],
             colorScheme: {
                 background: "#289FF5",
                 text: "#FFFFFF",
@@ -26,7 +26,7 @@ const EighthSection = (): ReactElement | null => {
         }}>
             <div className={"background-cards-container"}>
                 <DefaultCardsListOL
-                    content={translation.EIGHTH_SECTION["content"] as TContentItem[]}
+                    content={translation.eighthSection["content"] as TContentItem[]}
                     imageIdData={pageImageIdData?.eighthSection?.contentListData ?? []}
                 />
             </div>

@@ -1,7 +1,10 @@
 import {type ReactElement, useEffect, useState} from "react";
+import type {TContentItem} from "@utils/types/trafficLawsTypes";
 import {getCardProps} from "@components/common/Cards/DefaultCardsListOL/meta.ts";
 import DefaultImageCard from "@components/common/Cards/DefaultImageCard";
-import type {TContentItem} from "@utils/types/trafficLawsTypes";
+import {useDispatch} from "react-redux";
+import {setModalContentName} from "@store/slices/TrafficLawsPage";
+import {setIsModalOpened} from "@store/slices/Application";
 import "./style.css";
 
 export interface IContentCardsContainerProps {
@@ -22,11 +25,14 @@ const DefaultCardsListOL = ({
     backgroundCardsColor = DEFAULT_BACKGROUND_COLOR,
 }: IContentCardsContainerProps): ReactElement => {
     const [width, setWidth] = useState<number>(window.innerWidth);
+    const dispatch = useDispatch();
 
     const modalAction = (item : TContentItem) => {
         console.log("-");
         console.log("MODAL ACTION");
         console.log("", item);
+        dispatch(setModalContentName(item));
+        dispatch(setIsModalOpened(true));
         console.log("MODAL ACTION");
         console.log("-");
     }

@@ -14,17 +14,17 @@ const FourthSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
     const translation = textTranslation as IPageResources;
 
-    if (!translation.FOURTH_SECTION) return null;
+    if (!translation.fourthSection) return null;
 
     return (
         <TwoColumnSection
             leftColumn={
                 <LargeCard
-                    title={translation.FOURTH_SECTION.title}
-                    description={translation.FOURTH_SECTION.description}
-                    notificationLabel={translation.FOURTH_SECTION.notificationLabel}
+                    title={translation.fourthSection.title}
+                    description={translation.fourthSection.description}
+                    notificationLabel={translation.fourthSection.notificationLabel}
                 >
-                    <DefaultCardsListOL content={translation.FOURTH_SECTION["content"] as TContentItem[]}/>
+                    <DefaultCardsListOL content={translation.fourthSection["content"] as TContentItem[]}/>
                 </LargeCard>
             }
             rightColumn={

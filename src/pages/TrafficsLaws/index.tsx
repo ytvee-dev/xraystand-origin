@@ -1,4 +1,8 @@
 import { type ReactElement } from "react";
+import type {TRootState} from "@store/index.ts";
+import type {TContentItem} from "@utils/types/trafficLawsTypes";
+import {useDispatch, useSelector} from "react-redux";
+import {setIsModalOpened} from "@store/slices/Application";
 import DefaultLayout from "@layout/Default";
 import FirstSection from "@pages/TrafficsLaws/Sections/FirstSection";
 import SecondSection from "@pages/TrafficsLaws/Sections/SecondSection";
@@ -10,20 +14,44 @@ import SeventhSection from "@pages/TrafficsLaws/Sections/SeventhSection";
 import EighthSection from "@pages/TrafficsLaws/Sections/EighthSection";
 import NinthSection from "@pages/TrafficsLaws/Sections/NinthSection";
 import CoverSection from "@components/trafficLaws/CoverSection";
+import FlexibleModal from "@components/common/Modal/FlexibleModal";
 import "./style.css";
 
 const TrafficsLawsPage = (): ReactElement => {
+    const dispatch = useDispatch();
+    const isModalOpened: boolean = useSelector((state: TRootState) => state.application.isModalOpened);
+    const modalContentName: TContentItem = useSelector((state: TRootState) => state.trafficLaws.modalContentName);
+
+    const closeModal = () => {
+        dispatch(setIsModalOpened(false));
+    };
+
     return (
         <DefaultLayout>
             <div className="traffics-laws-page">
+                <FlexibleModal
+                    isModalOpened={isModalOpened}
+                    closeAction={closeModal}
+                >
+                    {isModalOpened && (
+                        <div>
+                            <p>{modalContentName.label}</p>
+                            <div>
+                                {modalContentName.additionalInfo.pointsTextList.map((item: any) => (
+                                    <p>{item}</p>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                </FlexibleModal>
                 <CoverSection/>
-                <FirstSection />
-                <SecondSection />
-                <ThirdSection />
-                <FourthSection />
-                <FifthSection />
-                <SixthSection />
-                <SeventhSection />
+                <FirstSection/>
+                <SecondSection/>
+                <ThirdSection/>
+                <FourthSection/>
+                <FifthSection/>
+                <SixthSection/>
+                <SeventhSection/>
                 <EighthSection />
                 <NinthSection />
             </div>

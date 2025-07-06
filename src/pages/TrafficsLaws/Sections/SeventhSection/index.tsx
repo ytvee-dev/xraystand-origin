@@ -16,7 +16,7 @@ const SeventhSection = (): ReactElement | null => {
     const translation = textTranslation as IPageResources;
     const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
 
-    if (!translation.SEVENTH_SECTION) return null;
+    if (!translation.seventhSection) return null;
 
     return (
         <TwoColumnSection
@@ -25,12 +25,12 @@ const SeventhSection = (): ReactElement | null => {
             }
             rightColumn={
                 <LargeCard
-                    title={translation.SEVENTH_SECTION.title}
-                    description={translation.SEVENTH_SECTION.description}
-                    notificationLabel={translation.SEVENTH_SECTION.notificationLabel}
+                    title={translation.seventhSection.title}
+                    description={translation.seventhSection.description}
+                    notificationLabel={translation.seventhSection.notificationLabel}
                 >
                     <DefaultCardsListOL
-                        content={translation.SEVENTH_SECTION["content"] as TContentItem[]}
+                        content={translation.seventhSection["content"] as TContentItem[]}
                         imageIdData={pageImageIdData?.seventhSection?.contentListData ?? []}
                         isCardsClickable={true}
                         smallImageSizes={true}
