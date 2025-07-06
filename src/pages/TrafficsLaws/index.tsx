@@ -1,6 +1,6 @@
 import { type ReactElement } from "react";
 import type {TRootState} from "@store/index.ts";
-import type {TContentItem} from "@utils/types/trafficLawsTypes";
+import type {IContentLabel, TContentItem} from "@utils/types/trafficLawsTypes";
 import {useDispatch, useSelector} from "react-redux";
 import {setIsModalOpened} from "@store/slices/Application";
 import DefaultLayout from "@layout/Default";
@@ -20,7 +20,8 @@ import "./style.css";
 const TrafficsLawsPage = (): ReactElement => {
     const dispatch = useDispatch();
     const isModalOpened: boolean = useSelector((state: TRootState) => state.application.isModalOpened);
-    const modalContentName: TContentItem = useSelector((state: TRootState) => state.trafficLaws.modalContentName);
+    const modalContentName: TContentItem =
+        useSelector((state: TRootState) => state.trafficLaws.modalContentName) as IContentLabel;
 
     const closeModal = () => {
         dispatch(setIsModalOpened(false));
@@ -37,7 +38,7 @@ const TrafficsLawsPage = (): ReactElement => {
                         <div>
                             <p>{modalContentName.label}</p>
                             <div>
-                                {modalContentName.additionalInfo.pointsTextList.map((item: any) => (
+                                {modalContentName.additionalInfo?.pointsTextList.map((item: string) => (
                                     <p>{item}</p>
                                 ))}
                             </div>

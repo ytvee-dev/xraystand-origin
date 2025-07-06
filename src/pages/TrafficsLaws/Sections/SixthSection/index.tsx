@@ -5,13 +5,13 @@ import DefaultCardsListOL from "@components/common/Cards/DefaultCardsListOL";
 import usePageTranslation from "@hooks/usePageTranslation";
 import usePageImagesIds from "@hooks/usePageImagesIds";
 import {
-    type IPageResources,
+    type ITrafficLawsPageResources,
     PageIds,
 } from "@domains/Translate";
 
 const SixthSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
-    const translation = textTranslation as IPageResources;
+    const translation = textTranslation as ITrafficLawsPageResources;
     const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
 
     if (!translation.sixthSection) return null;

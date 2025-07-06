@@ -5,13 +5,13 @@ import AnimatedLargeCard, {type IDescription} from "@components/trafficLaws/Anim
 import usePageTranslation from "@hooks/usePageTranslation";
 import {
     PageIds,
-    type IPageSectionResources, type IPageResources, PageSectionIds,
+    type IPageSectionResources, type ITrafficLawsPageResources, PageSectionIds,
 } from "@domains/Translate";
 import AnimatedTrafficLight from "@components/trafficLaws/AnimatedTrafficLight";
 
 const SecondSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
-    const translation = textTranslation as IPageResources;
+    const translation = textTranslation as ITrafficLawsPageResources;
     const secondSectionMeta: IPageSectionResources = translation[PageSectionIds.SECOND_SECTION];
     const secondSectionDescription: IDescription = {
         subtitle: secondSectionMeta.subtitle!, content: secondSectionMeta.content! as string[]

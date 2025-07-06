@@ -7,13 +7,13 @@ import SquareImageViewer from "@components/common/Other/SquareImageViewer";
 import usePageTranslation from "@hooks/usePageTranslation";
 import usePageImagesIds from "@hooks/usePageImagesIds";
 import {
-    type IPageResources,
+    type ITrafficLawsPageResources,
     PageIds,
 } from "@domains/Translate";
 
 const SeventhSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
-    const translation = textTranslation as IPageResources;
+    const translation = textTranslation as ITrafficLawsPageResources;
     const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
 
     if (!translation.seventhSection) return null;

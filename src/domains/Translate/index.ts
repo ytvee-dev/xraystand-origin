@@ -22,16 +22,16 @@ export interface IPageSectionResources {
     [PageSectionItemsIds.TITLE]: string;
     [PageSectionItemsIds.SUBTITLE]?: string;
     [PageSectionItemsIds.DESCRIPTION]?: string;
-    [PageSectionItemsIds.CONTENT]?: IImageCardResources[] | IInfoCardResources[] | IInfoCardResources | string[];
+    [PageSectionItemsIds.CONTENT]?: IImageCardResources[] | IInfoCardResources[] | IInfoCardResources | string[] | string;
     [PageSectionItemsIds.NOTIFICATION_LABEL]?: string;
 };
 
-export interface IPageResources {
+export interface ITrafficLawsPageResources {
     [key: string]: IPageSectionResources;
 };
 
 export interface ITextTranslationResources {
-    [key: string]: IPageResources | TElementsInfo | IChemistryPageResources;
+    [key: string]: ITrafficLawsPageResources | TElementsInfo | IChemistryPageResources;
 };
 
 export const enum Languages {

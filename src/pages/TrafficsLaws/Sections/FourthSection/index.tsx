@@ -6,13 +6,13 @@ import DefaultCardsListOL from "@components/common/Cards/DefaultCardsListOL";
 import SquareImageViewer from "@components/common/Other/SquareImageViewer";
 import usePageTranslation from "@hooks/usePageTranslation";
 import {
-    type IPageResources,
+    type ITrafficLawsPageResources,
     PageIds,
 } from "@domains/Translate";
 
 const FourthSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
-    const translation = textTranslation as IPageResources;
+    const translation = textTranslation as ITrafficLawsPageResources;
 
     if (!translation.fourthSection) return null;
 
