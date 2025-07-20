@@ -1,0 +1,20 @@
+flexible-alert-wrapper,
+.flexible-alert {
+    min-width: 100%;
+    text-align: start;
+}
+
+.alert-warning-beige {
+    border: 1px solid #EFE4D3;
+}
+
+.alert-warning-beige *::selection {
+    background-color: #c38936;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .flexible-alert-wrapper{
+        padding: 0 20px;
+    }
+}
