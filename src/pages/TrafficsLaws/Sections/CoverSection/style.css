@@ -144,6 +144,10 @@
     .houses {
         bottom: 12%;
     }
+
+    .layer[data-speed="10"] {
+        animation: mobileMoveClouds 20s linear infinite;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -171,13 +175,24 @@
     width: 100%;
 }
 
-@keyframes moveClouds {
+@keyframes mobileMoveClouds {
     from {
         transform: translateX(-100%);
         transition: all 1s ease-in-out;
     }
     to {
         transform: translateX(100%);
+        transition: all 1s ease-in-out;
+    }
+}
+
+@keyframes moveClouds {
+    from {
+        transform: translateX(-100%);
+        transition: all 1s ease-in-out;
+    }
+    to {
+        transform: translateX(200%);
         transition: all 1s ease-in-out;
     }
 }
