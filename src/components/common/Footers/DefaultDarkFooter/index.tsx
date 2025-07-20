@@ -1,11 +1,9 @@
 import {type ReactElement} from "react";
-import type {IDefaultDarkFooterMeta} from "@layout/Default/meta.ts";
-import {content} from "@components/common/Footers/DefaultDarkFooter/meta.ts";
-
+import type {IDefaultDarkFooterContent} from "@components/common/Footers/DefaultDarkFooter/meta.ts";
 import "./style.css";
 
 interface IDefaultDarkFooterProps {
-    meta: IDefaultDarkFooterMeta;
+    meta: IDefaultDarkFooterContent;
 }
 
 const Footer = ({meta}: IDefaultDarkFooterProps): ReactElement => {
@@ -16,10 +14,10 @@ const Footer = ({meta}: IDefaultDarkFooterProps): ReactElement => {
                     <svg><use href={meta.logoPath + "footerLogo"}/></svg>
                 </div>
                 <div className="footer-information-container">
-                    <div className="footer-description-container">{content.description}</div>
+                    <div className="footer-description-container">{meta.content.description}</div>
                     <div className="footer-links-container">
-                        <p>{content.buttonsText.support}</p>
-                        <p>{content.buttonsText.privacy}</p>
+                        <p>{meta.content.buttonsText.support}</p>
+                        <p>{meta.content.buttonsText.privacy}</p>
                     </div>
                 </div>
                 <div className="footer-contacts-container">
@@ -31,9 +29,9 @@ const Footer = ({meta}: IDefaultDarkFooterProps): ReactElement => {
             <div className="footer-divider"></div>
             <div className="footer-labels-container">
                 <div className="footer-copyright">{meta.copyright}</div>
-                <a href={content.madeBy.link} target="_blank">
+                <a href={meta.content.madeBy.link} target="_blank">
                     <div className="footer-made-by">
-                        <img src={content.madeBy.imagePath}/>
+                        <img src={meta.content.madeBy.imagePath}/>
                     </div>
                 </a>
             </div>

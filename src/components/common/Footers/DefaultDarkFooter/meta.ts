@@ -1,15 +1,28 @@
-import madeBySrc from "@assets/images/madeby.png";
+export interface IContacts {
+    email: string,
+    phone: string
+};
 
-export const content = {
-    description: "Данный продукт защищён авторским правом в соответствии " +
-                "с Законом об авторском праве и смежных правах РК. Информация " +
-                "носит ознакомительный характер.",
+export interface IDefaultDarkFooterContentInfo {
+    description: string;
     buttonsText: {
-        support: "Техподдержка",
-        privacy: "Политика конфиденциальности",
+        support: string,
+        privacy: string,
     },
     madeBy: {
-        link: "https://info.ytvee.com/service",
-        imagePath: madeBySrc,
+        link: string,
+        imagePath: string,
     },
+};
+
+export interface IDefaultDarkFooterContent {
+    logoPath: string,
+    contacts: IContacts,
+    copyright: string,
+    content: IDefaultDarkFooterContentInfo,
+};
+
+export interface IDefaultDarkFooterMeta {
+    ru: IDefaultDarkFooterContent,
+    kz: IDefaultDarkFooterContent,
 };

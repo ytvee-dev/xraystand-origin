@@ -71,6 +71,22 @@
     gap: 24px;
 }
 
+.tl-modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tl-modal-content {
+    padding: 24px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 @media screen and (max-width: 1000px) {
     .background-cards-container {
         flex-wrap: wrap;
@@ -95,5 +111,9 @@
 
     .content-section-alert-wrapper {
         padding: 0 20px;
+    }
+
+    .tl-modal-content {
+        padding: 4px 4px 0 4px;
     }
 }

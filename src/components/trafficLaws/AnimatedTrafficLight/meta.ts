@@ -2,7 +2,8 @@ export interface ITrafficLightConfig {
     imageLightOnSrc: string;
     imageLightOffSrc: string;
     color: string;
-    activeLabel: string;
+    activeLabelRu: string;
+    activeLabelkz: string;
 }
 
 export interface ITrafficLightsConfig {
@@ -20,7 +21,8 @@ export const trafficLightsConfig: ITrafficLightsConfig = {
             imageLightOffSrc:
                 "./assets/images/trafficLawsPage/secondSection/trafficLight/redOff.png",
             color: "red",
-            activeLabel: "Красный — стой",
+            activeLabelRu: "Красный — стой",
+            activeLabelkz: "Қызыл — тоқта.",
         },
         {
             imageLightOnSrc:
@@ -28,7 +30,8 @@ export const trafficLightsConfig: ITrafficLightsConfig = {
             imageLightOffSrc:
                 "./assets/images/trafficLawsPage/secondSection/trafficLight/yellowOff.png",
             color: "yellow",
-            activeLabel: "Жёлтый — приготовься",
+            activeLabelRu: "Жёлтый — приготовься",
+            activeLabelkz: "Сары — дайындал.",
         },
         {
             imageLightOnSrc:
@@ -36,7 +39,8 @@ export const trafficLightsConfig: ITrafficLightsConfig = {
             imageLightOffSrc:
                 "./assets/images/trafficLawsPage/secondSection/trafficLight/greenOff.png",
             color: "green",
-            activeLabel: "Зелёный — можно идти",
+            activeLabelRu: "Зелёный — можно идти",
+            activeLabelkz: "Жасыл — өтуге болады.",
         },
     ],
 };

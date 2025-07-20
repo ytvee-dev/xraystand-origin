@@ -1,11 +1,14 @@
 import { type ReactElement, type MouseEvent, type TouchEvent } from "react";
-import {
-    trafficLightsConfig,
-    type ITrafficLightConfig,
-} from "@components/trafficLaws/AnimatedTrafficLight/meta.ts";
+import { trafficLightsConfig, type ITrafficLightConfig } from "@components/trafficLaws/AnimatedTrafficLight/meta.ts";
 import "./style.css";
+import {useSelector} from "react-redux";
+import type {TRootState} from "@store/index.ts";
 
 const AnimatedTrafficLight = (): ReactElement => {
+    const currentLocale = useSelector(
+        (state: TRootState) => state.locale.locale
+    );
+
     const handleLightEnter = (event: MouseEvent<HTMLDivElement>): void => {
         event.currentTarget.classList.add("active");
     };
@@ -48,7 +51,7 @@ const AnimatedTrafficLight = (): ReactElement => {
                                     <span
                                         className={`text-assembly ${trafficLightConfig.color}`}
                                     >
-                                        {trafficLightConfig.activeLabel}
+                                        {currentLocale === 'ru' ? trafficLightConfig.activeLabelRu : trafficLightConfig.activeLabelkz}
                                     </span>
                                 </div>
                             </div>

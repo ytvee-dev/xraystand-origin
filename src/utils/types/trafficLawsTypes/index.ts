@@ -5,6 +5,7 @@ export interface IContentTitleOnly {
 export type IContentPlainText = string;
 
 export interface IContentLabel {
+    title?: string;
     label: string;
     additionalInfo?: {
         title: string;

@@ -23,9 +23,10 @@
     max-width: 320px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1220px) {
     .default-cards-list {
         flex-wrap: wrap;
+        justify-content: center;
         gap: 24px;
         padding: 5px 20px;
     }

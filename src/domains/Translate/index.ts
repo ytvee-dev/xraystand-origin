@@ -36,7 +36,7 @@ export interface ITextTranslationResources {
 
 export const enum Languages {
     RUSSIAN = "ru",
-    KAZAKH = "kk",
+    KAZAKH = "kz",
 };
 
 export const languageSwitcherOptions: IListItemProps[] = [
