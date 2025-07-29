@@ -1,8 +1,9 @@
 import { type ReactElement } from "react";
 import ApplicationRouter from "@router/index";
 import { BrowserRouter as RouterProvider } from "react-router-dom";
-import "@domains/Theme/style.css";
 import ScrollColorManager from "@utils/ScrollbarManager.tsx";
+import "@domains/Theme/style.css";
+import 'prismjs/themes/prism-okaidia.css';
 
 const Application = (): ReactElement => {
     return (
