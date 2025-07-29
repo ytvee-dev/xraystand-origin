@@ -1,0 +1,73 @@
+.kza-cover-section {
+    min-height: 390px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var(--dark-section-subtitle-color);
+    padding-bottom: 140px;
+}
+
+.kza-cover-section > img {
+    width: 100%;
+    height: 100%;
+}
+
+.kza-cover-text-content {
+    max-width: 1200px;
+    padding: 0 20px 40px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-inline: auto;
+}
+
+.kza-cover-text-content * {
+    width: 100%;
+}
+
+.kza-cover-text-content h1 {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--light-section-title-color);
+}
+
+.kza-cover-text-content h2 {
+    font-family: "Ubuntu";
+    font-weight: 200;
+    font-size: 48px;
+    color: var(--light-section-title-color);
+}
+
+.kza-cover-text-content p {
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 870px) {
+    .kza-cover-text-content {
+        top: 57%;
+        height: 20%;
+    }
+    .kza-cover-text-content h1 {
+        font-size: 30px;
+    }
+
+    .kza-cover-text-content h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .kza-cover-text-content {
+        top: 45%;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .kza-cover-text-content {
+        top: 35%;
+        height: 30%;
+    }
+}

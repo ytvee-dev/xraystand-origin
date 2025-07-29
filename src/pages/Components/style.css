@@ -1,0 +1,50 @@
+.components-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.components-side-bar {
+    width: 200px;
+    height: 100%;
+    background-color: #99d3bd;
+    overflow-y: scroll;
+
+    padding: 24px;
+}
+
+.components-side-bar-item {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.components-side-bar-item:hover {
+    color: #8A2F17;
+}
+
+.components-content {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.components-content-mobile-wrapper,
+.components-content-desktop-wrapper {
+    width: 100%;
+    padding: 50px;
+    display: block;
+    box-sizing: border-box;
+    background-color: #fff0cc;
+}
+
+.components-content-mobile-wrapper {
+    border-radius: 10px;
+    max-width: 420px;
+}
