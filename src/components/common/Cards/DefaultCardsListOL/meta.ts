@@ -30,6 +30,12 @@ export function getCardProps(item: TContentItem): ICardProps | null {
                 additionalInfo: item.additionalInfo,
             };
         }
+        if ("title" in item) {
+            return {
+                title: item.title,
+                label: item.label,
+            };
+        }
         return {
             label: item.label,
         };

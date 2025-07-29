@@ -21,7 +21,7 @@ const DefaultLayout = ({ disabled, strictLanguage, children }: IDefaultLayoutPro
 
     return (
         <div className={`default-layout ${disabled ? "disabled" : ""}`}>
-            <Header singleLanguage={false}/>
+            <Header singleLanguage={strictLanguage ? true : false}/>
             <main>{ children }</main>
             <DefaultDarkFooter meta={
                 language === 'ru' ?

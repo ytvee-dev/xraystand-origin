@@ -1,11 +1,13 @@
 import HomePage from "@pages/Home";
 import NotFoundPage from "@pages/NotFound";
 import TrafficsLawsPage from "@pages/TrafficsLaws";
+import KazakhAdebiet from "@pages/KazakhAdebiet";
 import InProgress from "@pages/InProgress";
 import { type RouteObject } from "react-router";
 import Chemistry from "@pages/Chemistry";
+import ComponentsPage from "@pages/Components";
 
-const paths = {
+export const paths = {
     HOME: {
         id: "home",
         path: "/",
@@ -30,6 +32,10 @@ const paths = {
         id: "notFound",
         path: "*",
     },
+    COMPONENTS: {
+        id: "components",
+        path: "/components",
+    },
 };
 
 const routes: RouteObject[] = [
@@ -51,11 +57,15 @@ const routes: RouteObject[] = [
     },
     {
         ...paths.KAZAKH_ADEBIET,
-        element: <InProgress />,
+        element: <KazakhAdebiet />,
     },
     {
         ...paths.NOT_FOUND,
         element: <NotFoundPage />,
+    },
+    {
+        ...paths.COMPONENTS,
+        element: <ComponentsPage />,
     },
 ];
 
