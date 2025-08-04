@@ -1,15 +1,17 @@
 import DSCard from "@components/common/Cards/DSCard";
+import DSInformationCard from "@components/common/Cards/DSInformationCard";
 import DSNotification from "@components/common/DSNotification";
 import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
+import DSContentBlock from "@components/common/DSContentBlock";
 
 import DocDSCard from "@components/common/Cards/DSCard/DocDSCard.mdx";
-import DocDSInforamtionCard from "@components/common/Cards/DSInforamtionCard/DocDSInforamtionCard.mdx";
+import DocDSInformationCard from "@components/common/Cards/DSInformationCard/DocDSInformationCard.mdx";
 import DocDSNotification from "@components/common/DSNotification/DocDSNotification.mdx";
 import DocDSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper/DocDSCardsWrapper.mdx";
+import DocDSContentBlock from "@components/common/DSContentBlock/DocDSContentBlock.mdx";
 
 
 import {defaultDSCardSX, templateDSCardNames} from "@components/common/Cards/cardsMeta.tsx";
-import DSInforamtionCard from "@components/common/Cards/DSInforamtionCard";
 
 
 export const componentsLibrary = [
@@ -32,13 +34,28 @@ export const componentsLibrary = [
         documentation: <></>,
     },
     {
-        name: "Content Card",
-        category: "Cards",
-        component: <>Content Card</>,
+        name: "Content Block",
+        category: "Containers",
+        component: <DSContentBlock><span>Empty content</span></DSContentBlock>,
         variants: {
-            default: <>Content Card</>,
+            default: (
+                <DSContentBlock
+                    title={"Title"}
+                    description={"description"}
+                    notificationLabel={"notificationLabel"}
+                    colorScheme={{
+                        titleColor: "#289FF5",
+                        subtitleColor: "black",
+                        descriptionColor: "black",
+                        notificationBackgroundColor: "beige",
+                        notificationTextColor: "black",
+                    }}
+                >
+                    <span>Default content</span>
+                </DSContentBlock>
+            ),
         },
-        documentation: <></>,
+        documentation: <DocDSContentBlock />,
     },
     {
         name: "Card",
@@ -61,9 +78,9 @@ export const componentsLibrary = [
     {
         name: "Info Card",
         category: "Cards",
-        component: <DSInforamtionCard/>,
+        component: <DSInformationCard/>,
         variants: {
-            default: <DSInforamtionCard
+            default: <DSInformationCard
                         title="Заголовок"
                         liOptions={["Card option 1", "Card option 2", "Card option 3"]}
                         action={() => alert("click")}
@@ -72,7 +89,7 @@ export const componentsLibrary = [
                         sxText={defaultDSCardSX}
                     />,
         },
-        documentation: <DocDSInforamtionCard />,
+        documentation: <DocDSInformationCard />,
     },
     {
         name: "Notification",
