@@ -1,10 +1,8 @@
-import {type ReactElement, type ReactNode, useState} from "react";
+import {type FC, type ReactElement, type ReactNode, useState} from "react";
 import { MDXProvider } from '@mdx-js/react';
 import Switch from '@mui/material/Switch';
 import {componentsLibrary} from "@pages/Components/meta.tsx";
 import {mdxComponents} from "@utils/mdxComponents.tsx";
-import FlexibleModal from "@components/common/Modal/FlexibleModal";
-import DocDSCard from "@components/common/Cards/DSCard/DocDSCard.mdx";
 import "./style.css";
 
 interface IComponentData {
@@ -14,8 +12,42 @@ interface IComponentData {
     variants: {
         default: ReactNode | ReactElement;
     },
-    documentation: Function;
+    documentation: ReactNode | ReactElement;
 }
+
+interface SubComponentProp {
+    children: ReactNode;
+}
+
+
+
+const Documentation: FC<SubComponentProp> = ({ children }): ReactElement => {
+    return (
+        <div>
+            <article className="markdown-body">
+                <MDXProvider components={mdxComponents}>
+                    {children}
+                </MDXProvider>
+            </article>
+        </div>
+    );
+};
+
+// const MobileScreens: FC<SubComponentProp> = ({ children }): ReactElement => {
+//     const screenSizes = ["1199", "991", "767", "414", "375", "360", "320"];
+//
+//     return (
+//         <div className="components-content-mobile-wrapper">
+//             {screenSizes.map((size) => (
+//                 <div className={`components-content-mobile-screen-${size}`}>
+//                     <h3>{size}px</h3>
+//                     {children}
+//                 </div>
+//             ))}
+//         </div>
+//     );
+// }
+
 
 
 const ComponentsPage = (): ReactElement => {
@@ -32,46 +64,6 @@ const ComponentsPage = (): ReactElement => {
         console.log(currentComponent)
     };
 
-    const Documentation = (): ReactElement => {
-        return (
-            <div>
-                <article className="markdown-body">
-                    <MDXProvider components={mdxComponents}>
-                        {currentComponent.documentation}
-                    </MDXProvider>
-                </article>
-            </div>
-        );
-    };
-
-    const MobileScreens = (): ReactElement => {
-        return (
-            <div className="components-content-mobile-wrapper">
-                <div className="components-content-mobile-screen-1199">
-                    <h3>992px - 1199px</h3>
-                    {currentComponent.variants.default}</div>
-                <div className="components-content-mobile-screen-991">
-                    <h3>768px - 991px. </h3>
-                    {currentComponent.variants.default}</div>
-                <div className="components-content-mobile-screen-767">
-                    <h3>576px - 767px</h3>
-                    {currentComponent.variants.default}</div>
-                <div className="components-content-mobile-screen-414">
-                    <h3>414px</h3>
-                    {currentComponent.variants.default}</div>
-                <div className="components-content-mobile-screen-375">
-                    <h3>375px</h3>
-                    {currentComponent.variants.default}</div>
-                <div className="components-content-mobile-screen-360">
-                    <h3>360px</h3>
-                    {currentComponent.variants.default}</div>
-                <div className="components-content-mobile-screen-320">
-                    <h3>320px</h3>
-                    {currentComponent.variants.default}</div>
-            </div>
-        );
-    }
-
     return (
         <div className="components-page">
             <div className="components-side-bar">
@@ -85,26 +77,33 @@ const ComponentsPage = (): ReactElement => {
                         key={item.name}
                         className="components-side-bar-item"
                         onClick={() => handleClick(index)}
+                        style={{textDecoration: currentComponent.name === item.name ? "underline" : "none"}}
                     >
                         {item.name}
                     </div>
                 ))}
             </div>
+
             <div className="components-content">
+
                 {showDoc && (
-                    <Documentation/>
+                    <Documentation children={currentComponent.documentation} />
                 )}
 
                 {!showDoc && (
                     <div className="components-content-child">
                         <h2>Without props</h2>
-                        <div className="components-content-desktop-wrapper">{currentComponent.component}</div>
+                        <div className="components-content-desktop-wrapper">
+                            {currentComponent.component}
+                        </div>
 
                         <h2>Desktop</h2>
-                        <div className="components-content-desktop-wrapper">{currentComponent.variants.default}</div>
+                        <div className="components-content-desktop-wrapper">
+                            {currentComponent.variants.default}
+                        </div>
 
-                        <h2>Tablet & Mobile</h2>
-                        <MobileScreens/>
+                        {/*<h2>Tablet & Mobile</h2>*/}
+                        {/*<MobileScreens children={currentComponent.variants.default} />*/}
                     </div>
                 )}
             </div>

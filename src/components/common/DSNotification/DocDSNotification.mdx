@@ -1,0 +1,92 @@
+# DSNotification Component Documentation
+
+`DSNotification` — универсальный компонент уведомления на базе Material‑UI, который позволяет гибко настраивать внешний вид предупреждений и информационных сообщений.
+
+## Импорт
+
+```tsx
+import DSNotification from '@components/common/Notifications/DSNotification';
+```
+
+```ts
+export type TNotificationTypes = "warning" | "info";
+
+export enum NotificationBackgroundColors {
+  beige = "#FEFCF3",
+  lightSand = "#EBCD91",
+};
+
+export enum NotificationTypes {
+  warning = "warning",
+  info = "info",
+};
+
+export const DEFAULT_ICON_SIZE = "19px";
+```
+
+---
+
+## Props
+
+| Свойство | Тип | По умолчанию | Описание |
+| --- | --- | --- | --- |
+| `label` | `string` | `""` | Текст уведомления. Может быть любой `ReactNode`. |
+| `type` | `"warning" \| "info"` | `"warning"` | Тип уведомления (визуальная схема). |
+| `backgroundColor` | `string` | `"#FEFCF3"` | Цвет фона (CSS‑значение). |
+| `textColor` | `string` | `"black"` | Цвет текста. |
+| `borderColor` | `string` | `"#EBCD91"` | Цвет рамки. Если не указан, используется `backgroundColor`. |
+| `iconName` | `string` | `"warningIcon"` | ID иконки в `<SpriteIcon />`. |
+| `iconSize` | `string` | `"19px"` | Размер иконки. |
+| `fullWidth` | `boolean` | `false` | Растягивать компонент на 100% ширины родителя. |
+
+---
+
+## Пример использования
+
+```tsx
+import React from 'react';
+import DSNotification from '@components/common/Notifications/DSNotification';
+
+const Example = () => (
+  <>
+    <DSNotification
+      label="Не удалось сохранить изменения. Попробуйте ещё раз."
+      type="warning"
+      backgroundColor="#FFF4E5"
+      textColor="#663C00"
+      borderColor="#FFB547"
+      iconName="alertTriangle"
+      iconSize="22px"
+      fullWidth
+    />
+
+    <DSNotification
+      label="Изменения успешно сохранены!"
+      type="info"
+      backgroundColor="#E8F5E9"
+      textColor="#1B5E20"
+      iconName="checkCircle"
+    />
+  </>
+);
+
+export default Example;
+```
+
+---
+
+## Рекомендации по стилизации
+
+1. **Цвета**
+Используйте константы `NotificationBackgroundColors` для согласованности, либо передавайте свои значения `backgroundColor`, `textColor`, `borderColor`.
+
+2. **Типы уведомлений**
+Enum `NotificationTypes` поможет избежать опечаток и поддерживать расширяемость.
+
+3. **Ширина**
+Включите `fullWidth`, когда уведомление должно занимать всю ширину контейнера (например, в модальных окнах).
+
+4. **Иконки**
+Все иконки подключаются через `<SpriteIcon />`; достаточно указать `iconName` и (при необходимости) `iconSize`.
+
+---

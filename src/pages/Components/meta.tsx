@@ -1,9 +1,14 @@
-import { MDXProvider } from '@mdx-js/react';
-import {mdxComponents} from "@utils/mdxComponents.tsx";
-
 import DSCard from "@components/common/Cards/DSCard";
+import DSNotification from "@components/common/DSNotification";
+import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
+
 import DocDSCard from "@components/common/Cards/DSCard/DocDSCard.mdx";
+import DocDSNotification from "@components/common/DSNotification/DocDSNotification.mdx";
+// import DocDSCardsWrapper from "@components/common/Wrappers/DSCardsWrapper/DocDSCardsWrapper.mdx";
+import DocDSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper/DocDSCardsWrapper.mdx";
+
 import {defaultDSCardSX, templateDSCardNames} from "@components/common/Cards/cardsMeta.tsx";
+
 
 export const componentsLibrary = [
     {
@@ -63,11 +68,20 @@ export const componentsLibrary = [
     {
         name: "Notification",
         category: "Alerts",
-        component: <>Notification alert</>,
+        component: <DSNotification />,
         variants: {
-            default: <>Notification alert</>,
+            default: <DSNotification
+                        label="Notification label"
+                        type="warning"
+                        backgroundColor="#FEFCF3"
+                        textColor="black"
+                        borderColor="#EBCD91"
+                        iconName="warningIcon"
+                        iconSize="19px"
+                        fullWidth
+                    />,
         },
-        documentation: <></>,
+        documentation: <DocDSNotification />,
     },
     {
         name: "Scrollable Modal",
@@ -90,11 +104,43 @@ export const componentsLibrary = [
     {
         name: "Card List",
         category: "Lists",
-        component: <>Card List</>,
+        component: (<DSCardsWrapper>
+            {Array.from({length: 3}).map((_, i) => (
+                <DSCard
+                    key={i}
+                    imageName={templateDSCardNames[0]}
+                    title="Card title"
+                    label="Card label"
+                    linkedText="Linked text"
+                    action={() => alert("click")}
+                    backgroundColor="#FFFFFF"
+                    width="270px"
+                    sxText={defaultDSCardSX}
+                />
+            ))}
+        </DSCardsWrapper>),
         variants: {
-            default: <>Card List</>,
+            default: (<DSCardsWrapper
+                screenMaxWidth={1000}
+                maxHeight="500px"
+                cardsGap="16px"
+            >
+                {Array.from({length: 5}).map((_, i) => (
+                    <DSCard
+                        key={i}
+                        imageName={templateDSCardNames[0]}
+                        title="Card title"
+                        label="Card label"
+                        linkedText="Linked text"
+                        action={() => alert("click")}
+                        backgroundColor="#FFFFFF"
+                        width="270px"
+                        sxText={defaultDSCardSX}
+                    />
+                ))}
+            </DSCardsWrapper>),
         },
-        documentation: <></>,
+        documentation: <DocDSCardsWrapper />,
     },
     {
         name: "Cover Section",
