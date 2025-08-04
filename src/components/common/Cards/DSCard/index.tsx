@@ -27,7 +27,13 @@ const DSCard = ({
     const imagePath = dsCardImagePathPrefix + imageName;
 
     return (
-        <Card sx={{minWidth: minWidth, maxWidth: maxWidth, width: "100%", backgroundColor: backgroundColor}}>
+        <Card className={'ds-card'} sx={{
+            minWidth: minWidth,
+            maxWidth: maxWidth,
+            width: "100%",
+            backgroundColor: backgroundColor,
+            display: "flex",
+        }}>
             <CardActionArea onClick={action} sx={{height: "100%"}}>
 
                 {imageName && (
@@ -44,7 +50,6 @@ const DSCard = ({
                 )}
 
                 <CardContent>
-
                     {title && (
                         <Typography
                             gutterBottom variant="h5"
