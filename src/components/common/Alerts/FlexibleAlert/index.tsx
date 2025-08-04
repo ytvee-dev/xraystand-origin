@@ -4,12 +4,13 @@ import SpriteIcon from "@components/common/Other/SpriteIcon";
 import {SvgSpriteIds} from "@utils/constants";
 import "./style.css";
 
-export type TBackgroundColors = "beige" | "lightSand";
+export type TBackgroundColors = "beige" | "lightSand" | "sand";
 export type TAlertTypes = "warning-beige";
 
 export enum AlertBackgroundColors {
     beige = "#FEFCF3",
-    lightSand = "#EBCD91",
+    lightSand = "#EFE4D3",
+    sand = "#EBCD91",
 };
 
 export interface IFlexibleAlertProps {

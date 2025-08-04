@@ -1,7 +1,7 @@
 import {type ReactElement} from "react";
 import DefaultLayout from "@layout/Default";
 import ContentSectionAlert from "@components/common/Other/ContentSectionAlert";
-import ContentSection from "@components/common/Sections/ContentSection";
+import ContentSection from "@components/common/Sections/DSContentSection";
 import useWindowWidth from "@hooks/useScreenWidth.ts";
 import "./style.css";
 

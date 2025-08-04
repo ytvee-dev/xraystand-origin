@@ -12,7 +12,7 @@ export interface DSContentBlockColorScheme {
     titleColor?: string;
     subtitleColor?: string;
     descriptionColor?: string;
-    notificationBackgroundColor?: TBackgroundColors;
+    notificationBackgroundColor?: TBackgroundColors | string;
     notificationTextColor?: string;
 }
 

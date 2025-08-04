@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
 import type {TContentItem} from "@utils/types/trafficLawsTypes";
-import ContentSection from "@components/common/Sections/ContentSection";
+import ContentSection from "@components/common/Sections/DSContentSection";
 import DefaultCardsListOL from "@components/common/Cards/DefaultCardsListOL";
 import usePageTranslation from "@hooks/usePageTranslation";
 import usePageImagesIds from "@hooks/usePageImagesIds";

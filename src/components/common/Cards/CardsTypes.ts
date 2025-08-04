@@ -17,7 +17,9 @@ export interface IContentImageCardProps {
     linkedText?: string;
     action?: () => void;
     backgroundColor?: string;
-    width?: string; // XXpx | 100%
+    minWidth?: string; // XXpx | 100%
+    maxWidth?: string; // XXpx | 100%
+    imageHeight?: string; // XXpx | 100%
     sxText?: IDefaultCardSxText;
 }
 
@@ -27,6 +29,7 @@ export interface IContentImageCardProps {
 export interface IInformationCardSxContent {
     minHeight?: number | string;
     minWidth?: number | string;
+    maxWidth?: number | string;
     listPadding?: number | string;
 };
 

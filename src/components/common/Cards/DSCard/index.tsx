@@ -16,22 +16,24 @@ const DSCard = ({
     title = "",
     label = "",
     linkedText = "",
-    action = () => alert("click"),
+    action = () => {},
     backgroundColor = "#FFFFFF",
-    width = "270px", // XXpx | 100%
+    minWidth = "270px", // XXpx | 100%
+    maxWidth = "270px", // XXpx | 100%
+    imageHeight = "150px",
     sxText = defaultDSCardSX,
 }: IContentImageCardProps): ReactElement => {
 
     const imagePath = dsCardImagePathPrefix + imageName;
 
     return (
-        <Card sx={{maxWidth: width, backgroundColor: backgroundColor}}>
-            <CardActionArea onClick={action}>
+        <Card sx={{minWidth: minWidth, maxWidth: maxWidth, width: "100%", backgroundColor: backgroundColor}}>
+            <CardActionArea onClick={action} sx={{height: "100%"}}>
 
                 {imageName && (
                     <CardMedia
                         component="img"
-                        height={width}
+                        height={imageHeight}
                         image={imagePath}
                         alt={imageName}
                         sx={{
@@ -47,7 +49,7 @@ const DSCard = ({
                         <Typography
                             gutterBottom variant="h5"
                             component="h5"
-                            sx={{color: sxText.titleColor}}
+                            sx={{color: sxText.titleColor, fontWeight: sxText.fontWeight}}
                         >{title}</Typography>
                     )}
 

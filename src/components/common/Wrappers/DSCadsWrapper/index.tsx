@@ -6,6 +6,7 @@ import "./style.css";
 
 const DSCardsWrapper = ({
     screenMaxWidth = 1000,
+    wrapperMaxWidth = "500px",
     maxHeight = "",
     cardsGap = "16px",
     overflow = "none",
@@ -18,6 +19,7 @@ const DSCardsWrapper = ({
         <div
             className="ds-cards-wrapper"
             style={{
+                maxWidth: wrapperMaxWidth,
                 gap: cardsGap,
                 flexWrap: isWrap || (screenWidth < screenMaxWidth) ? "wrap" : "nowrap",
                 justifyContent: screenWidth < screenMaxWidth ? "center" : "space-between",

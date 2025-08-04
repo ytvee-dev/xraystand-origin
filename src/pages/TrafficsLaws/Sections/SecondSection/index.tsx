@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import ContentSection from "@components/common/Sections/ContentSection";
+import ContentSection from "@components/common/Sections/DSContentSection";
 import AnimatedCarCard from "@components/trafficLaws/AnimatedCarCard";
 import AnimatedLargeCard, {type IDescription} from "@components/trafficLaws/AnimatedLargeCard";
 import usePageTranslation from "@hooks/usePageTranslation";

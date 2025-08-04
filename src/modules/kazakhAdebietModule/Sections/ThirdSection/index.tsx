@@ -1,9 +1,9 @@
-import {type ReactElement} from "react";
-import type {TContentItem} from "@utils/types/trafficLawsTypes";
-
-import DefaultCardsListOL from "@components/common/Cards/DefaultCardsListOL";
-import ContentSectionAlert from "@components/common/Other/ContentSectionAlert";
-import ContentSection from "@components/common/Sections/ContentSection";
+// @ts-ignore
+import React, {type ReactElement} from "react";
+import ContentSection from "@components/common/Sections/DSContentSection";
+import DSNotification from "@components/common/DSNotification";
+import DSCard from "@components/common/Cards/DSCard";
+import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
 
 import * as content from "@modules/kazakhAdebietModule/locales/kaz.json";
 import * as paths from "@modules/kazakhAdebietModule/locales/paths.json";
@@ -20,20 +20,37 @@ const SecondSection = (): ReactElement => {
                     text: "#8A2F17",
                 }
             }}>
-                <div className={"background-cards-container"}>
-                    <DefaultCardsListOL
-                        content={content.thirdSection["content"].slice(0, 4) as TContentItem[]}
-                        imageIdData={paths.people.slice(0, 4) ?? []}
-                    />
-                </div>
-                <div className={"background-cards-container"}>
-                    <DefaultCardsListOL
-                        content={content.thirdSection["content"].slice(4, 9) as TContentItem[]}
-                        imageIdData={paths.people.slice(4, 9) ?? []}
-                    />
-                </div>
+                {Array.from({length: 2}).map((_, i: number) => (
+                    <DSCardsWrapper
+                        key={i}
+                        screenMaxWidth={1000}
+                        cardsGap="24px"
+                        wrapperMaxWidth={1200}
+                    >
+                        {content.thirdSection["content"].slice(i * 4, i * 4 + 4).map((card, indx) => (
+                            <DSCard
+                                key={indx}
+                                imageName={paths.people[i * 4 + indx]}
+                                title={card.title}
+                                label={card.label}
+                                backgroundColor="#FAFAFA"
+                                minWidth="97px"
+                                maxWidth="317px"
+                                imageHeight="200px"
+                                sxText={{
+                                    imgObjectFit: 'contain',
+                                    imgPadding: '16px',
+                                    titleColor: '#333333',
+                                    labelColor: '#555555',
+                                    linkColor: '#FF5722',
+                                    fontWeight: 500,
+                                }}
+                            />
+                        ))}
+                    </DSCardsWrapper>
+                ))}
                 <div className="content-section-alert-wrapper">
-                    <ContentSectionAlert label={content.thirdSection.notificationLabel as string}/>
+                    <DSNotification label={content.thirdSection.notificationLabel as string} />
                 </div>
             </ContentSection>
         </section>

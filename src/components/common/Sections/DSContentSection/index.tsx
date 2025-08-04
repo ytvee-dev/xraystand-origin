@@ -1,4 +1,4 @@
-import { type ReactElement, type ReactNode } from "react";
+import {type ReactElement, type ReactNode} from "react";
 import "./style.css";
 
 export interface IContentSectionTextData {
@@ -33,21 +33,25 @@ const ContentSection = ({
                 backgroundColor: colorScheme.background,
             }}
         >
-            {textData && (
-                <div className="content-section-text-container">
+
+            <div className="content-section-text-container">
+                {textData?.title && (
                     <h1
                         className="content-section-title"
                         style={{
                             color: colorScheme.text,
                         }}
-                    >
-                        {textData.title}
+                    >{textData.title}
                     </h1>
+                )}
+
+                {textData?.description && (
                     <h3 className="content-section-description">
                         {textData.description}
                     </h3>
-                </div>
-            )}
+                )}
+            </div>
+
             <div className="content-section-content-container">
                 {children && children}
             </div>

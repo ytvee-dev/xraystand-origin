@@ -32,6 +32,7 @@ const DSInforamtionCard = ({
                     sx={{
                         minHeight: sxContent?.minHeight,
                         minWidth: sxContent?.minWidth,
+                        maxWidth: sxContent?.maxWidth,
                     }}
                 >
 
