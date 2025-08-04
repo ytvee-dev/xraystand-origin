@@ -10,7 +10,6 @@ import DocDSNotification from "@components/common/DSNotification/DocDSNotificati
 import DocDSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper/DocDSCardsWrapper.mdx";
 import DocDSContentBlock from "@components/common/DSContentBlock/DocDSContentBlock.mdx";
 
-
 import {defaultDSCardSX, templateDSCardNames} from "@components/common/Cards/cardsMeta.tsx";
 
 
@@ -69,7 +68,7 @@ export const componentsLibrary = [
                         linkedText="Linked text"
                         action={() => alert("click")}
                         backgroundColor="#FFFFFF"
-                        width="270px"
+                        minWidth="270px"
                         sxText={defaultDSCardSX}
                     />,
         },
@@ -130,7 +129,7 @@ export const componentsLibrary = [
     {
         name: "Card List",
         category: "Lists",
-        component: (<DSCardsWrapper>
+        component: (<DSCardsWrapper wrapperMaxWidth={"1200px"} >
                         {Array.from({length: 3}).map((_, i) => (
                             <DSCard
                                 key={i}
@@ -140,7 +139,7 @@ export const componentsLibrary = [
                                 linkedText="Linked text"
                                 action={() => alert("click")}
                                 backgroundColor="#FFFFFF"
-                                width="270px"
+                                minWidth="270px"
                                 sxText={defaultDSCardSX}
                             />
                         ))}
@@ -162,7 +161,7 @@ export const componentsLibrary = [
                                     linkedText="Linked text"
                                     action={() => alert("click")}
                                     backgroundColor="#FFFFFF"
-                                    width="270px"
+                                    minWidth="270px"
                                     sxText={defaultDSCardSX}
                                 />
                             ))}

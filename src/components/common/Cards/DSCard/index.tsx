@@ -32,7 +32,6 @@ const DSCard = ({
             maxWidth: maxWidth,
             width: "100%",
             backgroundColor: backgroundColor,
-            display: "flex",
         }}>
             <CardActionArea onClick={action} sx={{height: "100%"}}>
 

@@ -4,7 +4,7 @@ export const dsCardImagePathPrefixTemplate = './public/assets/ds-system/cards/';
 export const dsCardImagePathPrefix = './public/assets/images/';
 
 export const templateDSCardNames: string[] = [
-    "ds-card-1.jpg",
+    "ds-system/cards/ds-card-1.jpg",
     "ds-card-2.png",
     "ds-card-3.png",
     "ds-card-4.png",
