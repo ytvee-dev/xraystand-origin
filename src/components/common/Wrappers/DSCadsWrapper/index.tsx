@@ -8,6 +8,8 @@ const DSCardsWrapper = ({
     screenMaxWidth = 1000,
     maxHeight = "",
     cardsGap = "16px",
+    overflow = "none",
+    isWrap = false,
     children,
 }: IDSCardsWrapper): ReactElement => {
     const screenWidth = useScreenWidth();
@@ -17,9 +19,10 @@ const DSCardsWrapper = ({
             className="ds-cards-wrapper"
             style={{
                 gap: cardsGap,
-                flexWrap: screenWidth < screenMaxWidth ? "wrap" : "nowrap",
+                flexWrap: isWrap || (screenWidth < screenMaxWidth) ? "wrap" : "nowrap",
                 justifyContent: screenWidth < screenMaxWidth ? "center" : "space-between",
                 maxHeight: maxHeight ? maxHeight : "",
+                overflow: overflow,
             }}
         >
             {children}
