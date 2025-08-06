@@ -12,6 +12,7 @@ export interface IFlexibleAlertProps {
     borderColor?: string;
     iconName?: string;
     iconSize?: string;
+    iconColor?: string;
     fullWidth?: boolean;
 }
 
@@ -35,6 +36,7 @@ const DSNotification = ({
     borderColor=NotificationBackgroundColors.lightSand,
     iconName="warningIcon",
     iconSize=DEFAULT_ICON_SIZE,
+    iconColor="#BD7D22",
     fullWidth=false,
 }: IFlexibleAlertProps): ReactElement => {
     const dsBorderColor = borderColor ? borderColor : backgroundColor;
@@ -54,7 +56,7 @@ const DSNotification = ({
                     color: textColor,
                     width: fullWidth ? "100%" : "auto",
             }}
-                icon={<SpriteIcon iconId={iconName} size={iconSize}/>}
+                icon={<SpriteIcon iconId={iconName} size={iconSize} color={iconColor}/>}
             >{label}
             </Alert>
         </div>

@@ -1,3 +1,17 @@
-.kza-first-section {
+.ruslit-first-section {
     display: block;
+}
+
+.ruslit-content-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+@media screen and (max-width: 768px) {
+    .ruslit-content-container {
+        gap: 24px;
+        padding: 16px;
+    }
 }
