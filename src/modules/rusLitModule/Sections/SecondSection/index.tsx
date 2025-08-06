@@ -12,7 +12,7 @@ const rusLitTextColors: DSContentBlockColorScheme = {
 }
 
 const SecondSection = (): ReactElement => {
-    const prefix = "./assets/images/";
+    const prefix = "./public/assets/images/";
 
     return (
         <section className="ruslit-second-section">
