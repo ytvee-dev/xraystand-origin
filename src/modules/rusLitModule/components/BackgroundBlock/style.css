@@ -17,4 +17,9 @@
     .ruslit-content-section-content-container {
         text-align: center;
     }
+
+    .ruslit-content-section-cards-title {
+        font-size: 30px !important;
+        font-weight: 500;
+    }
 }

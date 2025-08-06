@@ -9,7 +9,7 @@ import "./style.css";
 const RusLit = (): ReactElement => {
     return (
         <DefaultLayout strictLanguage='ru'>
-            <div className="kazakh-adebiet-page" >
+            <div className="ruslit-page" >
                 <CoverSection />
                 <FirstSection />
                 <SecondSection />

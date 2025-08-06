@@ -13,7 +13,7 @@ const rusLitTextColors: DSContentBlockColorScheme = {
 const SecondSection = (): ReactElement => {
 
     return (
-        <section className="ruslit-third-section">
+        <section className="ruslit-second-section">
             <div className="ruslit-content-section-text-container">
                 <h1
                     className="ruslit-content-section-title"
