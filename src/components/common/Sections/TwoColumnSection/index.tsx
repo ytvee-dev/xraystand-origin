@@ -7,9 +7,9 @@ export interface IContentSectionProps {
 }
 
 const TwoColumnSection = ({
-                              leftColumn,
-                              rightColumn
-                          }: IContentSectionProps): ReactElement => {
+  leftColumn,
+  rightColumn
+}: IContentSectionProps): ReactElement => {
     return (
         <section className="two-column-section">
             <div className="columns-container">

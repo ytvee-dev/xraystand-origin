@@ -30,6 +30,17 @@ const modalPolicemanImagesPaths: Record<string, string[]> = {
         "trafficLawsPage/modal/policemanHandUp",
         "trafficLawsPage/modal/policemanHandStop",
     ],
+    "Реттеушінің қимылдары": [
+        "trafficLawsPage/modal/policemanHandUp",
+        "trafficLawsPage/modal/policemanHandStop",
+        "trafficLawsPage/modal/policemanHandsSide"
+    ],
+    "Көлік жүргізушілерге": [
+        "trafficLawsPage/modal/policemanHandsSide",
+        "trafficLawsPage/modal/policemanInProfile",
+        "trafficLawsPage/modal/policemanHandUp",
+        "trafficLawsPage/modal/policemanHandStop",
+    ],
 };
 
 const signsImagesPaths: Record<string, string[]> = {
@@ -42,10 +53,15 @@ const signsImagesPaths: Record<string, string[]> = {
     "Приоритета": [
         "trafficLawsPage/modal/",
     ],
-    "": [
+    "Предписывающие": [
         "trafficLawsPage/modal/",
     ],
-
+    "Запрещающие": [
+        "trafficLawsPage/modal/",
+    ],
+    "Предупреждающие": [
+        "trafficLawsPage/modal/",
+    ],
 };
 
 const TrafficsLawsPage = (): ReactElement => {
@@ -56,7 +72,6 @@ const TrafficsLawsPage = (): ReactElement => {
     const [modalTitle, setModalTitle] = useState<string>(
         modalContentName.title || "none"
     );
-    console.log(modalContentName)
 
     const splitString = (str: string): string[] => {
         const i = str.indexOf("—");

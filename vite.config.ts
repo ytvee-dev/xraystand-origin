@@ -1,13 +1,29 @@
+// vite.config.ts
 import path from "path";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
+import mdx from '@mdx-js/rollup';
+import remarkGfm from "remark-gfm";
+import remarkPrism from 'remark-prism';
 
-// https://vite.dev/config/
 export default defineConfig({
-    plugins: [react()],
+    plugins: [
+        {
+            ...mdx({
+                remarkPlugins: [remarkGfm, remarkPrism],
+                rehypePlugins: [],
+            }),
+            enforce: 'pre'
+        },
+        react({
+            include: [/\.[jt]sx?$/, /\.mdx?$/]
+        })
+    ],
     resolve: {
+        extensions: ['.js', '.ts', '.jsx', '.tsx', '.md', '.mdx'],
         alias: {
             "@assets": path.resolve(__dirname, "./public/assets"),
+            "@modules": path.resolve(__dirname, "./src/modules"),
             "@components": path.resolve(__dirname, "./src/components"),
             "@pages": path.resolve(__dirname, "./src/pages"),
             "@router": path.resolve(__dirname, "./src/router"),

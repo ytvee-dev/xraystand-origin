@@ -1,0 +1,34 @@
+# DocDSInforamtionCard
+
+## Пример использования
+
+```tsx
+import React from 'react';
+import DSCard from '@components/common/Cards/DSCard';
+
+const Example = () => {
+  const handleClick = () => console.log('Карточка нажата');
+
+  return (
+    <DSInforamtionCard
+        title="Заголовок"
+        liOptions={["Card option 1", "Card option 2", "Card option 3"]}
+        action={() => alert("click")}
+        backgroundColor="#FFFFFF"
+        width="270px"
+        sxText={
+            titleColor={"rgba(0,0,0,1)"}
+            labelColor={"rgba(0,0,0,0.6)"}
+            linkColor={"#3870C9"}
+            imgObjectFit={"none"}
+            imgPadding={"0"}
+            fontWeight={500}
+            titleFontSize={"32px"}
+            labelFontSize={"16px"}
+        }
+    />
+  );
+};
+
+export default Example;
+```

@@ -1,0 +1,31 @@
+# DocDSInforamtionCard
+
+## Пример использования
+
+```tsx
+import React from 'react';
+import DSContentBlock from '@components/common/DSContentBlock';
+
+const Example = () => {
+  const handleClick = () => console.log('Карточка нажата');
+
+  return (
+    <DSContentBlock
+        title={"Title"}
+        description={"description"}
+        notificationLabel={"notificationLabel"}
+        colorScheme={{
+            titleColor: "#289FF5",
+            subtitleColor: "black",
+            descriptionColor: "black",
+            notificationBackgroundColor: "beige",
+            notificationTextColor: "black",
+        }}
+    >
+        <span>Default content</span>
+    </DSContentBlock>
+  );
+};
+
+export default Example;
+```

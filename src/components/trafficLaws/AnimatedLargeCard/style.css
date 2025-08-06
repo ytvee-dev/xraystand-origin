@@ -1,7 +1,5 @@
+.animated-car-card-header,
 .animated-large-card {
-    height: 100%;
-    max-width: 564px;
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9,6 +7,11 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+
+.animated-large-card {
+    height: 100%;
+    max-width: 564px;
 
     gap: 36px;
 
@@ -21,14 +24,6 @@
 }
 
 .animated-car-card-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-
     gap: 36px;
 }
 

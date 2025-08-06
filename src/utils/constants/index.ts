@@ -12,6 +12,8 @@ export const contentImageSrcPrefix: string = "./assets/images/";
 export const contentAnimationsSrcPrefix: string = "./assets/images/animations/";
 export const contentImageSrcSuffix: string = ".png";
 
+export const contentDSCardsSrcPrefix: string = "./public/assets/images/ds-system/cards/";
+
 export const enum SvgSpriteIds {
     LOGO = "logo",
     CONTENT_SECTION_NOTIFICATION_ICON = "contentSectionNotificationIcon",

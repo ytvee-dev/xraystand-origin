@@ -16,3 +16,9 @@
     display: block;
     user-select: none;
 }
+
+@media (max-width: 800px) {
+    .square-image-wrapper {
+        padding: 10px;
+    }
+}

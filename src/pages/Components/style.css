@@ -1,0 +1,128 @@
+.components-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.components-side-bar {
+    min-width: 250px;
+    height: 100%;
+    background-color: #99d3bd;
+    overflow-y: scroll;
+
+    padding: 24px;
+}
+
+.components-side-bar-item {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.components-side-bar-item:hover {
+    color: #8A2F17;
+}
+
+.components-content-switcher {
+    margin: 0 auto;
+    width: 170px;
+    padding: 10px;
+    border: 2px solid forestgreen;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.components-content {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    overflow-y: scroll;
+}
+
+.components-content-child {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.components-content-desktop-wrapper {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #fff0cc;
+}
+
+.components-content-desktop-wrapper,
+.components-content-mobile-wrapper > div {
+    align-items: center;
+}
+
+.components-content-mobile-wrapper {
+    border-radius: 10px;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.components-content-mobile-wrapper h3 {
+    padding: 10px;
+}
+
+/* ========================== */
+/* SCREEN SIZES */
+/* ========================== */
+
+.components-content-mobile-screen-1199,
+.components-content-mobile-screen-991,
+.components-content-mobile-screen-767,
+.components-content-mobile-screen-414,
+.components-content-mobile-screen-375,
+.components-content-mobile-screen-360,
+.components-content-mobile-screen-320 {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 2px solid #e0c759;
+    border-radius: 10px;
+}
+
+.components-content-mobile-screen-1199 {
+    width: 1199px;
+}
+
+.components-content-mobile-screen-991 {
+    width: 991px;
+}
+
+.components-content-mobile-screen-767 {
+    width: 767px;
+}
+
+.components-content-mobile-screen-414 {
+    width: 414px;
+}
+
+.components-content-mobile-screen-375 {
+    width: 375px;
+}
+
+.components-content-mobile-screen-360 {
+    width: 360px;
+}
+
+.components-content-mobile-screen-320 {
+    width: 320px;
+}

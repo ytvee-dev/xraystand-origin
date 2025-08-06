@@ -25,6 +25,7 @@
     "baseUrl": ".",
     "paths": {
       "@assets/*": ["public/assets/*"],
+      "@modules/*": ["src/modules/*"],
       "@components/*": ["src/components/*"],
       "@pages/*": ["src/pages/*"],
       "@router/*": ["src/router/*"],
@@ -36,6 +37,7 @@
       "@hooks/*": ["src/hooks/*"],
       "@data/*": ["src/data/*"]
     },
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src", "vite.config.ts"]
+  "include": ["src", "vite.config.ts", "src/**/*.d.ts"]
 }

@@ -46,6 +46,7 @@
 }
 
 .content-section-alert-wrapper {
+    padding: 0 24px;
     max-width: 1200px;
     min-width: 100px;
     margin: auto;

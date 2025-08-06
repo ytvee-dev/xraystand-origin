@@ -4,12 +4,13 @@ import SpriteIcon from "@components/common/Other/SpriteIcon";
 import {SvgSpriteIds} from "@utils/constants";
 import "./style.css";
 
-export type TBackgroundColors = "beige";
-export type TAlertTypes = "warning-beige"; // сюда добавлять другими типами алертов
+export type TBackgroundColors = "beige" | "lightSand" | "sand";
+export type TAlertTypes = "warning-beige";
 
-// здесь можно расширять цвета
 export enum AlertBackgroundColors {
     beige = "#FEFCF3",
+    lightSand = "#EFE4D3",
+    sand = "#EBCD91",
 };
 
 export interface IFlexibleAlertProps {
@@ -18,7 +19,6 @@ export interface IFlexibleAlertProps {
     backgroundColor: TBackgroundColors;
 }
 
-// alertTypes расширяется в соответствии с TAlertTypes
 export const alertTypes: Record<string, TAlertTypes> = {
     warningBeige: "warning-beige",
 };
