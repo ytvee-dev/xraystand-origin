@@ -4,14 +4,14 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import mdx from '@mdx-js/rollup';
 import remarkGfm from "remark-gfm";
-import remarkPrism from 'remark-prism';
+import rehypePrism from 'rehype-prism-plus';
 
 export default defineConfig({
     plugins: [
         {
             ...mdx({
-                remarkPlugins: [remarkGfm, remarkPrism],
-                rehypePlugins: [],
+                remarkPlugins: [remarkGfm],
+                rehypePlugins: [rehypePrism],
             }),
             enforce: 'pre'
         },
