@@ -20,7 +20,7 @@
 
 .ruslit-cover-text-content {
     position: absolute;
-    bottom: 40px;
+    bottom: 25%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -46,6 +46,12 @@
     font-size: 18px;
     font-style: italic;
     font-weight: 500;
+}
+
+@media screen and (max-width: 1440px) {
+    .ruslit-cover-text-content {
+        bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 1200px) {

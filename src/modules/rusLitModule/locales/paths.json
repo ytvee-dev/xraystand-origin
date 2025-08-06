@@ -1,8 +1,8 @@
 {
   "backgrounds": {
-    "cover": "ruslit/coverBg.png",
-    "names": "ruslit/namesBg.png",
-    "centres": "ruslit/centresBg.png"
+    "cover": "ruslit/backgrounds/coverBg.png",
+    "names": "ruslit/backgrounds/namesBg.png",
+    "centres": "ruslit/backgrounds/centresBg.png"
   },
   "cards": [
     "ruslit/cards/oldLitra.png",
