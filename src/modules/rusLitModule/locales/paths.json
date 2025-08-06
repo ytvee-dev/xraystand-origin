@@ -1,46 +1,46 @@
 {
   "backgrounds": {
-    "cover": "ruslit/backgrounds/coverBg.png",
-    "names": "ruslit/backgrounds/namesBg.png",
-    "centres": "ruslit/backgrounds/centresBg.png"
+    "cover": "rusLit/backgrounds/coverBg.png",
+    "names": "rusLit/backgrounds/namesBg.png",
+    "centres": "rusLit/backgrounds/centresBg.png"
   },
   "cards": [
-    "ruslit/cards/oldLitra.png",
-    "ruslit/cards/svetska.png",
-    "ruslit/cards/goldCentre.png",
-    "ruslit/cards/silverCentre.png",
-    "ruslit/cards/litra.png"
+    "rusLit/cards/oldLitra.png",
+    "rusLit/cards/svetska.png",
+    "rusLit/cards/goldCentre.png",
+    "rusLit/cards/silverCentre.png",
+    "rusLit/cards/litra.png"
   ],
   "people": {
     "old": [
-      "ruslit/people/monk.png",
-      "ruslit/people/michael.png",
-      "ruslit/people/gavriil.png",
-      "ruslit/people/denis.png",
-      "ruslit/people/nikolay.png"
+      "rusLit/people/monk.png",
+      "rusLit/people/michael.png",
+      "rusLit/people/gavriil.png",
+      "rusLit/people/denis.png",
+      "rusLit/people/nikolay.png"
     ],
     "gold": [
-      "ruslit/people/pushkin.png",
-      "ruslit/people/lermontov.png",
-      "ruslit/people/gogol.png",
-      "ruslit/people/tolstoy.png",
-      "ruslit/people/chehov.png",
-      "ruslit/people/dostoevskiy.png"
+      "rusLit/people/pushkin.png",
+      "rusLit/people/lermontov.png",
+      "rusLit/people/gogol.png",
+      "rusLit/people/tolstoy.png",
+      "rusLit/people/chehov.png",
+      "rusLit/people/dostoevskiy.png"
     ],
     "silver": [
-      "ruslit/people/block.png",
-      "ruslit/people/ahmatova.png",
-      "ruslit/people/cvetaeva.png",
-      "ruslit/people/mayakovskiy.png"
+      "rusLit/people/block.png",
+      "rusLit/people/ahmatova.png",
+      "rusLit/people/cvetaeva.png",
+      "rusLit/people/mayakovskiy.png"
     ],
     "sssr": [
-      "ruslit/people/bulgakov.png",
-      "ruslit/people/sholohov.png",
-      "ruslit/people/tvardovskiy.png",
-      "ruslit/people/solzhenicin.png"
+      "rusLit/people/bulgakov.png",
+      "rusLit/people/sholohov.png",
+      "rusLit/people/tvardovskiy.png",
+      "rusLit/people/solzhenicin.png"
     ]
   },
   "images": {
-    "genres": "ruslit/backgrounds/centresBg.png"
+    "genres": "rusLit/backgrounds/centresBg.png"
   }
 }
