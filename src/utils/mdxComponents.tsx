@@ -1,12 +1,12 @@
 import React from 'react';
 import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
-import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
-import tsx from 'react-syntax-highlighter/dist/esm/languages/prism/typescript';
+// import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
+// import tsx from 'react-syntax-highlighter/dist/esm/languages/prism/typescript';
 import './style.css';
 
-SyntaxHighlighter.registerLanguage('jsx', jsx);
-SyntaxHighlighter.registerLanguage('javascript', jsx);
-SyntaxHighlighter.registerLanguage('typescript', tsx);
+// SyntaxHighlighter.registerLanguage('jsx', jsx);
+// SyntaxHighlighter.registerLanguage('javascript', jsx);
+// SyntaxHighlighter.registerLanguage('typescript', tsx);
 
 export const mdxComponents = {
     h1: ({ children }: { children: React.ReactNode }) => (
