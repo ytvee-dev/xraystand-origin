@@ -9,3 +9,7 @@
 .ruslit-third-section .MuiPaper-root {
     min-width: 100%;
 }
+
+.ruslit-third-section h3 {
+    text-align: left;
+}

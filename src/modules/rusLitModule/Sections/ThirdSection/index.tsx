@@ -1,17 +1,13 @@
 import {type ReactElement} from "react";
-import ContentSection from "@components/common/Sections/DSContentSection";
-import DSNotification from "@components/common/DSNotification";
-import DSCard from "@components/common/Cards/DSCard";
-import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
+import useScreenWidth from "@hooks/useScreenWidth.ts";
+import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
+import DSContentBlock from "@components/common/DSContentBlock";
+import SquareImageViewer from "@components/common/Other/SquareImageViewer";
+import DSInformationCard from "@components/common/Cards/DSInformationCard";
 
 import * as content from "@modules/rusLitModule/locales/rus.json";
 import * as paths from "@modules/rusLitModule/locales/paths.json";
 import "./style.css";
-import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
-import DSContentBlock from "@components/common/DSContentBlock";
-import SquareImageViewer from "@components/common/Other/SquareImageViewer";
-import useScreenWidth from "@hooks/useScreenWidth.ts";
-import DSInforamtionCard from "@components/common/Cards/DSInformationCard";
 
 const notificationColorScheme = {
     titleColor: "#FEFCF3",
@@ -36,7 +32,7 @@ const SecondSection = (): ReactElement => {
                         notificationLabel={content.sixthSection.notificationLabel}
                         colorScheme={notificationColorScheme}
                     >
-                        <DSInforamtionCard
+                        <DSInformationCard
                             title={content.sixthSection.content[0].title}
                             liOptions={content.sixthSection.content[0].pointsTextList}
                             backgroundColor={"#FEFCF3"}
@@ -53,7 +49,7 @@ const SecondSection = (): ReactElement => {
                     <SquareImageViewer
                         path={imagePrefix + paths.images.genres}
                         width={575}
-                        height={575}
+                        height={510}
                         objectFit="cover"
                         imagePadding={screenWidth > 800 ? 0 : "20px"}
                     />
