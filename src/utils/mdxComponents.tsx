@@ -1,9 +1,7 @@
 import React from 'react';
-import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
 import tsx from 'react-syntax-highlighter/dist/esm/languages/prism/typescript';
-import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
-
 import './style.css';
 
 SyntaxHighlighter.registerLanguage('jsx', jsx);
@@ -33,13 +31,11 @@ export const mdxComponents = {
     ),
 
     code: ({
-               node,
                inline,
                className,
                children,
                ...props
            }: {
-        node?: any;
         inline?: boolean;
         className?: string;
         children: React.ReactNode;
@@ -47,7 +43,7 @@ export const mdxComponents = {
         const match = /language-(\w+)/.exec(className || '');
         return !inline && match ? (
             <SyntaxHighlighter
-                style={oneDark}
+                // style={oneDark}
                 language={match[1]}
                 PreTag="div"
                 className="doc-pre"
