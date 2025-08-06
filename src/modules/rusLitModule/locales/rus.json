@@ -23,14 +23,15 @@
         "title": "Советская литература"
       }
     ],
+    "notificationLabel": "Не перебегай, не отвлекайся, не спеши.",
     "colorScheme": {
       "background": "#871A16",
       "text": "#FFFFFF"
-    },
-    "notificationLabel": "Не перебегай, не отвлекайся, не спеши."
+    }
   },
   "secondSection": {
     "title": "Великие имена",
+    "subTitle": "Древнерусская литература XVIII века",
     "description": "Писатели, сыгравшие ключевую роль в истории русской литературы: от монаха-летописца до мастеров слова эпохи Просвещения.",
     "content": [
       {
@@ -54,10 +55,15 @@
         "label": "1766–1826"
       }
     ],
-    "notificationLabel": ""
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "#",
+      "text": "#"
+    }
   },
   "thirdSection": {
     "title": "",
+    "subTitle": "Золотой век",
     "description": "",
     "content": [
       {
@@ -85,10 +91,15 @@
         "label": "1821–1881"
       }
     ],
-    "notificationLabel": ""
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "#",
+      "text": "#"
+    }
   },
   "fourthSection": {
     "title": "",
+    "subTitle": "Серебряный век",
     "description": "",
     "content": [
       {
@@ -108,10 +119,15 @@
         "label": "1893–1930"
       }
     ],
-    "notificationLabel": ""
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "#",
+      "text": "#"
+    }
   },
   "fifthSection": {
     "title": "",
+    "subTitle": "Советский период",
     "description": "",
     "content": [
       {
@@ -131,7 +147,11 @@
         "label": "1918–2008"
       }
     ],
-    "notificationLabel": "«Каждый автор из “Золотого века” вёл дневники — полезный источник для изучения эпохи и языка»."
+    "notificationLabel": "«Каждый автор из “Золотого века” вёл дневники — полезный источник для изучения эпохи и языка».",
+    "colorScheme": {
+      "background": "#",
+      "text": "#"
+    }
   },
   "sixthSection": {
     "title": "Вехи и жанры",
@@ -150,6 +170,10 @@
         ]
       }
     ],
-    "notificationLabel": "Поэма — “Қорқыт”», «Очерк — публицистика Алтынсарина"
+    "notificationLabel": "Поэма — “Қорқыт”», «Очерк — публицистика Алтынсарина",
+    "colorScheme": {
+      "background": "#",
+      "text": "#"
+    }
   }
 }

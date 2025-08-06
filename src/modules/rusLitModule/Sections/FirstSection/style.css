@@ -9,6 +9,12 @@
     gap: 36px;
 }
 
+@media screen and (max-width: 1200px) {
+    .ruslit-content-container {
+        padding: 0 16px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .ruslit-content-container {
         gap: 24px;

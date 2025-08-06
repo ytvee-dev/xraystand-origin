@@ -22,7 +22,7 @@ const DSCardsWrapper = ({
                 maxWidth: wrapperMaxWidth,
                 gap: cardsGap,
                 flexWrap: isWrap || (screenWidth < screenMaxWidth) ? "wrap" : "nowrap",
-                justifyContent: screenWidth < screenMaxWidth ? "center" : "space-between",
+                justifyContent: isWrap ? "flex-start" : screenWidth < screenMaxWidth ? "center" : "space-between",
                 maxHeight: maxHeight ? maxHeight : "",
                 overflow: overflow,
             }}
