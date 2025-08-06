@@ -19,7 +19,7 @@ const notificationColorScheme = {
 }
 
 const SecondSection = (): ReactElement => {
-    const imagePrefix = "./public/assets/images/";
+    const imagePrefix = "./assets/images/";
     const screenWidth = useScreenWidth();
 
     return (
