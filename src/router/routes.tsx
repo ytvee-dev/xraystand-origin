@@ -2,10 +2,11 @@ import HomePage from "@pages/Home";
 import NotFoundPage from "@pages/NotFound";
 import TrafficsLawsPage from "@pages/TrafficsLaws";
 import KazakhAdebiet from "@pages/KazakhAdebiet";
-import InProgress from "@pages/InProgress";
+// import InProgress from "@pages/InProgress";
 import { type RouteObject } from "react-router";
 import Chemistry from "@pages/Chemistry";
 import ComponentsPage from "@pages/Components";
+import RusLit from "@pages/RusLit";
 
 export const paths = {
     HOME: {
@@ -53,7 +54,7 @@ const routes: RouteObject[] = [
     },
     {
         ...paths.RUS_LIT,
-        element: <InProgress />,
+        element: <RusLit />,
     },
     {
         ...paths.KAZAKH_ADEBIET,

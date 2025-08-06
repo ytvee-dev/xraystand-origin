@@ -1,0 +1,46 @@
+{
+  "backgrounds": {
+    "cover": "ruslit/coverBg.png",
+    "names": "ruslit/namesBg.png",
+    "centres": "ruslit/centresBg.png"
+  },
+  "cards": [
+    "ruslit/cards/oldLitra.png",
+    "ruslit/cards/svetska.png",
+    "ruslit/cards/goldCentre.png",
+    "ruslit/cards/silverCentre.png",
+    "ruslit/cards/litra.png"
+  ],
+  "people": {
+    "old": [
+      "ruslit/people/monk.png",
+      "ruslit/people/michael.png",
+      "ruslit/people/gavriil.png",
+      "ruslit/people/denis.png",
+      "ruslit/people/nikolay.png"
+    ],
+    "gold": [
+      "ruslit/people/pushkin.png",
+      "ruslit/people/lermontov.png",
+      "ruslit/people/gogol.png",
+      "ruslit/people/tolstoy.png",
+      "ruslit/people/chehov.png",
+      "ruslit/people/dostoevskiy.png"
+    ],
+    "silver": [
+      "ruslit/people/block.png",
+      "ruslit/people/ahmatova.png",
+      "ruslit/people/cvetaeva.png",
+      "ruslit/people/mayakovskiy.png"
+    ],
+    "sssr": [
+      "ruslit/people/bulgakov.png",
+      "ruslit/people/sholohov.png",
+      "ruslit/people/tvardovskiy.png",
+      "ruslit/people/solzhenicin.png"
+    ]
+  },
+  "images": {
+    "genres": "ruslit/genres.png"
+  }
+}
