@@ -48,6 +48,7 @@ const SecondSection = (): ReactElement => {
                 cards={content.fifthSection.content}
                 cardsWidth={"300px"}
                 era="sssr"
+                notificationText={content.fifthSection.notificationLabel}
             />
 
         </section>

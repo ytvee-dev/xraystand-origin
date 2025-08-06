@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import DSNotification, {type IFlexibleAlertProps} from "@components/common/DSNotification";
+import DSNotification from "@components/common/DSNotification";
 import useScreenWidth from "@hooks/useScreenWidth.ts";
 import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
 import DSCard from "@components/common/Cards/DSCard";
@@ -15,16 +15,16 @@ interface IBackgroundBlockProps {
     cardsWidth?: string;
     isCardsWrap?: boolean;
     era?: "old" | "gold" | "silver" | "sssr";
-    notification?: IFlexibleAlertProps | null;
+    notificationText?: string | null;
 }
 
 const BackgroundBlock = ({
-    subtitle="",
-    cards=[],
+    subtitle = "",
+    cards = [],
     cardsWidth = "210px",
     isCardsWrap = false,
     era = "old",
-    notification=null,
+    notificationText = null,
 }: IBackgroundBlockProps): ReactElement => {
     const screenWidth = useScreenWidth();
 
@@ -59,17 +59,29 @@ const BackgroundBlock = ({
                     />
                 ))}
 
-                {notification && (
+                {screenWidth < 910 && notificationText && (
                     <div style={{maxWidth: 1200}}>
                         <DSNotification
-                            label={"content.firstSection.notificationLabel as string"}
+                            label={notificationText}
                             backgroundColor={"#FFE9E9"}
                             iconColor={"#871A16"}
                             fullWidth={true}
                         />
                     </div>
                 )}
+
             </DSCardsWrapper>
+
+            {screenWidth >= 910 && notificationText && (
+                <div style={{maxWidth: 1200}}>
+                    <DSNotification
+                        label={notificationText}
+                        backgroundColor={"#FFE9E9"}
+                        iconColor={"#871A16"}
+                        fullWidth={true}
+                    />
+                </div>
+            )}
         </div>
     );
 };

@@ -13,7 +13,7 @@ const RusLit = (): ReactElement => {
                 <CoverSection />
                 <FirstSection />
                 <SecondSection />
-                {/*<ThirdSection />*/}
+                <ThirdSection />
             </div>
         </DefaultLayout>
     );
