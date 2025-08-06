@@ -13,7 +13,9 @@ export interface DSContentBlockColorScheme {
     subtitleColor?: string;
     descriptionColor?: string;
     notificationBackgroundColor?: TBackgroundColors | string;
+    notificationBorderColor?: TBackgroundColors | string;
     notificationTextColor?: string;
+    notificationIconColor?: string;
 }
 
 export interface DSContentBlockProps {
@@ -29,7 +31,9 @@ const defaultColorScheme: DSContentBlockColorScheme = {
     subtitleColor: "black",
     descriptionColor: "black",
     notificationBackgroundColor: "beige",
+    notificationBorderColor: "#EBCD91",
     notificationTextColor: "black",
+    notificationIconColor: "#EBCD91",
 };
 
 const DSContentBlock = ({
@@ -54,11 +58,12 @@ const DSContentBlock = ({
             <DSNotification
                 label={notificationLabel}
                 type="warning"
-                backgroundColor={colorScheme.notificationBackgroundColor!}
-                textColor="black"
-                borderColor="#EBCD91"
+                backgroundColor={colorScheme?.notificationBackgroundColor!}
+                textColor={colorScheme?.notificationTextColor}
+                borderColor={colorScheme?.notificationBorderColor}
                 iconName="warningIcon"
                 iconSize="19px"
+                iconColor={colorScheme?.notificationIconColor}
                 fullWidth
             />
         </div>

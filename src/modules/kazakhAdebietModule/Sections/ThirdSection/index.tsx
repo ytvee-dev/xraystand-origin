@@ -36,10 +36,10 @@ const SecondSection = (): ReactElement => {
                                 backgroundColor="#FAFAFA"
                                 minWidth="97px"
                                 maxWidth="317px"
-                                imageHeight="200px"
+                                imageHeight="286px"
                                 sxText={{
                                     imgObjectFit: 'contain',
-                                    imgPadding: '16px',
+                                    imgPadding: '12px',
                                     titleColor: '#333333',
                                     labelColor: '#555555',
                                     linkColor: '#FF5722',

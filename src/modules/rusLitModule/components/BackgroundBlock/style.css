@@ -1,0 +1,25 @@
+.ruslit-content-section-content-container {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+@media screen and (max-width: 1200px) {
+    .ruslit-content-section-content-container {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .ruslit-content-section-content-container {
+        text-align: center;
+    }
+
+    .ruslit-content-section-cards-title {
+        font-size: 30px !important;
+        font-weight: 500;
+    }
+}
