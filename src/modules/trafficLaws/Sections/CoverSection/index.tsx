@@ -1,15 +1,20 @@
 import { type ReactElement } from "react";
-import road from "@assets/images/trafficLawsPage/coverSection/road.png";
-import carPng from "@assets/images/trafficLawsPage/coverSection/car.png";
-import cloudsImg from "@assets/images/trafficLawsPage/coverSection/clouds.png";
+import type {TRootState} from "@store/index.ts";
+import {Languages} from "@domains/Translate";
+import {useSelector} from "react-redux";
+import road from "../../../../../public/assets/images/trafficLawsPage/coverSection/road.png";
+import carPng from "../../../../../public/assets/images/trafficLawsPage/coverSection/car.png";
+import cloudsImg from "../../../../../public/assets/images/trafficLawsPage/coverSection/clouds.png";
 import housesImg from "@assets/images/trafficLawsPage/coverSection/houses.png";
+import * as textContentKz from "@modules/trafficLaws/locales/kaz.json";
+import * as textContentRu from "@modules/trafficLaws/locales/rus.json";
 import "./style.css";
-import usePageTranslation from "@hooks/usePageTranslation.ts";
-import {type ITrafficLawsPageResources, PageIds} from "@domains/Translate";
 
 const CoverSection = (): ReactElement => {
-    const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
-    const translation = textTranslation as ITrafficLawsPageResources;
+    const currentLocale: Languages = useSelector(
+        (state: TRootState) => state.locale.locale
+    );
+    const translation = currentLocale === "kz" ? textContentKz : textContentRu;
 
     return (
         <section className="traffic-laws-cover-section">

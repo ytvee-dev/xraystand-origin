@@ -1,13 +1,13 @@
 import {type ReactElement} from "react";
 import ContentSection from "@components/common/Sections/DSContentSection";
-import AnimatedCarCard from "@components/trafficLaws/AnimatedCarCard";
-import AnimatedLargeCard, {type IDescription} from "@components/trafficLaws/AnimatedLargeCard";
+import AnimatedCarCard from "@modules/trafficLaws/components/AnimatedCarCard";
+import AnimatedLargeCard, {type IDescription} from "@modules/trafficLaws/components/AnimatedLargeCard";
 import usePageTranslation from "@hooks/usePageTranslation";
 import {
     PageIds,
     type IPageSectionResources, type ITrafficLawsPageResources, PageSectionIds,
 } from "@domains/Translate";
-import AnimatedTrafficLight from "@components/trafficLaws/AnimatedTrafficLight";
+import AnimatedTrafficLight from "@modules/trafficLaws/components/AnimatedTrafficLight";
 
 const SecondSection = (): ReactElement | null => {
     const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
