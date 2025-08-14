@@ -1,11 +1,13 @@
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {type ReactElement, type FC} from "react";
+import type {TRootState} from "@store/index.ts";
 import type {IElementJson} from "@pages/Chemistry/types.ts";
-import type {IChemistryPageResources, TElementsInfo} from "@pages/Chemistry/types.ts";
+import type { TElementsInfo} from "@pages/Chemistry/types.ts";
 import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
-import usePageTranslation from "@hooks/usePageTranslation.ts";
 import ElementCell from "@modules/chemistry/components/ElementCell";
-import {PageIds} from "@domains/Translate";
+import {Languages} from "@domains/Translate";
+import * as contentKZ from "@modules/chemistry/locales/kaz.json";
+import * as contentRU from "@modules/chemistry/locales/rus.json";
 import "./style.css";
 
 const groupElementsByPeriod = (elements: TElementsInfo): Record<number, TElementsInfo> => {
@@ -22,8 +24,11 @@ const groupElementsByPeriod = (elements: TElementsInfo): Record<number, TElement
 };
 
 const PeriodicTableMobile: FC = (): ReactElement => {
-    const {textTranslation} = usePageTranslation(PageIds.CHEMISTRY_PAGE);
-    const { elements } = textTranslation as IChemistryPageResources;
+    const currentLocale: Languages = useSelector(
+        (state: TRootState) => state.locale.locale
+    );
+
+    const { elements } = currentLocale === "kz" ? contentKZ : contentRU;
     const grouped = groupElementsByPeriod(elements);
     const sortedPeriods = Object.keys(grouped).map(Number).sort((a, b) => a - b);
     const dispatch = useDispatch();

@@ -1,12 +1,14 @@
 import {type ChangeEvent, type ReactElement, useState, type FC} from "react";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
-import type {TCategoryState, IElementJson, IChemistryPageResources} from "@pages/Chemistry/types.ts";
+import type {TCategoryState, IElementJson} from "@pages/Chemistry/types.ts";
 import ElementCell from "@modules/chemistry/components/ElementCell";
 import type {TElementsInfo} from "@pages/Chemistry/types.ts";
-import usePageTranslation from "@hooks/usePageTranslation.ts";
-import {PageIds} from "@domains/Translate";
+import {Languages} from "@domains/Translate";
 import "./style.css";
+import type {TRootState} from "@store/index.ts";
+import * as contentKZ from "@modules/chemistry/locales/kaz.json";
+import * as contentRU from "@modules/chemistry/locales/rus.json";
 
 const makeInitialCategories = (elements: TElementsInfo): TCategoryState =>
     elements.reduce<TCategoryState>(
@@ -19,8 +21,11 @@ const makeInitialCategories = (elements: TElementsInfo): TCategoryState =>
 
 const PeriodicTable: FC = (): ReactElement => {
     const dispatch = useDispatch();
-    const {textTranslation} = usePageTranslation(PageIds.CHEMISTRY_PAGE);
-    const { elements } = textTranslation as IChemistryPageResources;
+    const currentLocale: Languages = useSelector(
+        (state: TRootState) => state.locale.locale
+    );
+
+    const { elements } = currentLocale === "kz" ? contentKZ : contentRU;
     const [state, setState] = useState<TCategoryState>(makeInitialCategories(elements));
 
     const Categories: FC = (): ReactElement => {
