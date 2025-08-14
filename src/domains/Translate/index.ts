@@ -1,7 +1,5 @@
 import rusTextLocale from "@locales/text/rus.json"
 import kazTextLocale from "@locales/text/kaz.json"
-import rusControlLocale from "@locales/control/rus.json"
-import kazControlLocale from "@locales/control/kaz.json"
 import type {IListItemProps} from "@utils/constants";
 import type {IChemistryPageResources, TElementsInfo} from "@pages/Chemistry/types.ts";
 
@@ -53,9 +51,9 @@ export interface IControlTranslationResources {
     contentCardAdditionalInfo: string;
 };
 
-export const localesControlRecord: Record<Languages, IControlTranslationResources> = {
-    [Languages.RUSSIAN]: rusControlLocale,
-    [Languages.KAZAKH]: kazControlLocale,
+export const localesControlRecord: Record<Languages, string> = {
+    [Languages.RUSSIAN]: "rusControlLocale",
+    [Languages.KAZAKH]: "kazControlLocale",
 };
 
 export const enum PageIds {
