@@ -4,16 +4,18 @@ import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
 import LargeCard from "@components/common/Cards/LargeCard";
 import DefaultCardsListOL from "@components/common/Cards/DefaultCardsListOL";
 import SquareImageViewer from "@components/common/Other/SquareImageViewer";
-import usePageTranslation from "@hooks/usePageTranslation";
 import usePageImagesIds from "@hooks/usePageImagesIds";
-import {
-    type ITrafficLawsPageResources,
-    PageIds,
-} from "@domains/Translate";
+import {Languages, PageIds} from "@domains/Translate";
+import {useSelector} from "react-redux";
+import type {TRootState} from "@store/index.ts";
+import * as textContentKz from "@modules/trafficLaws/locales/kaz.json";
+import * as textContentRu from "@modules/trafficLaws/locales/rus.json";
 
 const SeventhSection = (): ReactElement | null => {
-    const {textTranslation} = usePageTranslation(PageIds.TRAFFIC_LAWS_PAGE);
-    const translation = textTranslation as ITrafficLawsPageResources;
+    const currentLocale: Languages = useSelector(
+        (state: TRootState) => state.locale.locale
+    );
+    const translation = currentLocale === "kz" ? textContentKz : textContentRu;
     const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
 
     if (!translation.seventhSection) return null;

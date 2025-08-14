@@ -1,5 +1,5 @@
 import { type ReactElement } from "react";
-import ContentSectionAlert from "@components/common/Other/ContentSectionAlert";
+import DSNotification from "@components/common/DSNotification";
 import "./style.css";
 
 export interface IDescription {
@@ -35,7 +35,7 @@ const AnimatedLargeCard = ({
             </div>
             <div className="animated-car-card-body">{children}</div>
             <div className="content-section-alert-wrapper">
-                <ContentSectionAlert label={notificationLabel}/>
+                <DSNotification label={notificationLabel} />
             </div>
         </div>
     );

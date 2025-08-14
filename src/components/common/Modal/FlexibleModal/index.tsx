@@ -5,6 +5,9 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import "./style.css"
+import {Languages} from "@domains/Translate";
+import {useSelector} from "react-redux";
+import type {TRootState} from "@store/index.ts";
 
 export interface IFlexibleModal {
     modalHeader?: string;
@@ -14,6 +17,10 @@ export interface IFlexibleModal {
 }
 
 const FlexibleModal = ({children, modalHeader, isModalOpened, closeAction}: IFlexibleModal): ReactElement => {
+    const currentLocale: Languages = useSelector(
+        (state: TRootState) => state.locale.locale
+    );
+
     const handleClose = () => {
         closeAction();
     };
@@ -27,7 +34,9 @@ const FlexibleModal = ({children, modalHeader, isModalOpened, closeAction}: IFle
             {modalHeader && <DialogTitle>{modalHeader}</DialogTitle>}
             <DialogContent>{children}</DialogContent>
             <DialogActions>
-                <Button onClick={handleClose}>Закрыть</Button>
+                <Button onClick={handleClose}>
+                    {currentLocale === "kz" ? "Жабу" : "Закрыть"}
+                </Button>
             </DialogActions>
         </Dialog>
     );

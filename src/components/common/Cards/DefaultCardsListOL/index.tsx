@@ -2,11 +2,13 @@ import {type ReactElement} from "react";
 import type {TContentItem} from "@utils/types/trafficLawsTypes";
 import {getCardProps} from "@components/common/Cards/DefaultCardsListOL/meta.ts";
 import DefaultImageCard from "@components/common/Cards/DefaultImageCard";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {setModalContentName} from "@store/slices/TrafficLawsPage";
 import {setIsModalOpened} from "@store/slices/Application";
 import useWindowWidth from "@hooks/useScreenWidth.ts";
 import "./style.css";
+import {Languages} from "@domains/Translate";
+import type {TRootState} from "@store/index.ts";
 
 export interface IContentCardsContainerProps {
     content: TContentItem[];
@@ -27,15 +29,13 @@ const DefaultCardsListOL = ({
 }: IContentCardsContainerProps): ReactElement => {
     const dispatch = useDispatch();
     const screenWidth = useWindowWidth();
+    const currentLocale: Languages = useSelector(
+        (state: TRootState) => state.locale.locale
+    );
 
     const modalAction = (item: TContentItem) => {
-        console.log("-");
-        console.log("MODAL ACTION");
-        console.log("", item);
         dispatch(setModalContentName(item));
         dispatch(setIsModalOpened(true));
-        console.log("MODAL ACTION");
-        console.log("-");
     }
 
     return (
@@ -54,7 +54,10 @@ const DefaultCardsListOL = ({
                             backgroundColor={backgroundCardsColor}
                             action={isCardsClickable ? () => modalAction(item) : () => {
                             }}
-                            linkText={isCardsClickable ? "посмотреть ещё" : ""}
+                            linkText={
+                                isCardsClickable && currentLocale == "ru" ? "посмотреть ещё" :
+                                    isCardsClickable && currentLocale == "kz" ? "Қосымша қарау" : ""
+                            }
                         />
                     </div>
                 );

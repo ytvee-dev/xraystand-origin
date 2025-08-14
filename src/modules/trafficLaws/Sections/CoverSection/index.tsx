@@ -18,7 +18,12 @@ const CoverSection = (): ReactElement => {
 
     return (
         <section className="traffic-laws-cover-section">
-            <div className="traffic-laws-cover-text-content">
+            <div
+                className="traffic-laws-cover-text-content"
+                style={{
+                    maxWidth: currentLocale === "ru" ? "634px" : "840px"
+                }}
+            >
                 <h1>{translation.coverSection["title"]}</h1>
                 <h2>{translation.coverSection["description"]}</h2>
                 <h3>{translation.coverSection["content"] as string}</h3>
