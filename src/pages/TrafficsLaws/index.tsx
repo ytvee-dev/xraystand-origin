@@ -1,4 +1,4 @@
-import {type ReactElement, useEffect, useState} from "react";
+import {type ReactElement} from "react";
 import type {TRootState} from "@store/index.ts";
 import type {IContentLabel, TContentItem} from "@utils/types/trafficLawsTypes";
 import {useDispatch, useSelector} from "react-redux";
@@ -45,33 +45,74 @@ const modalPolicemanImagesPaths: Record<string, string[]> = {
 
 const signsImagesPaths: Record<string, string[]> = {
     "Информационные": [
-        "trafficLawsPage/modal/zebra",
-        "trafficLawsPage/modal/stopPlace",
-        "trafficLawsPage/modal/stop",
-        "trafficLawsPage/modal/stop",
+        "trafficLawsPage/modal/signs/toptop",
+        "trafficLawsPage/modal/signs/bus",
+        "trafficLawsPage/modal/signs/plus",
     ],
     "Приоритета": [
-        "trafficLawsPage/modal/",
+        "trafficLawsPage/modal/signs/romb",
+        "trafficLawsPage/modal/signs/triangle",
+        "trafficLawsPage/modal/signs/stop",
     ],
     "Предписывающие": [
-        "trafficLawsPage/modal/",
+        "trafficLawsPage/modal/signs/up",
+        "trafficLawsPage/modal/signs/human",
+        "trafficLawsPage/modal/signs/bibicycle",
+        "trafficLawsPage/modal/signs/down",
     ],
     "Запрещающие": [
-        "trafficLawsPage/modal/",
+        "trafficLawsPage/modal/signs/nopeople",
+        "trafficLawsPage/modal/signs/kirpich",
+        "trafficLawsPage/modal/signs/nobicycle",
+        "trafficLawsPage/modal/signs/nofast",
     ],
     "Предупреждающие": [
-        "trafficLawsPage/modal/",
+        "trafficLawsPage/modal/signs/child",
+        "trafficLawsPage/modal/signs/zebra",
+        "trafficLawsPage/modal/signs/bicycle",
+        "trafficLawsPage/modal/signs/train",
+        "trafficLawsPage/modal/signs/dangerous",
     ],
+
+    "Ақпараттық белгілер": [
+        "trafficLawsPage/modal/signs/toptop",
+        "trafficLawsPage/modal/signs/bus",
+        "trafficLawsPage/modal/signs/plus",
+    ],
+    "Басымдық белгілері": [
+        "trafficLawsPage/modal/signs/romb",
+        "trafficLawsPage/modal/signs/triangle",
+        "trafficLawsPage/modal/signs/stop",
+    ],
+    "Нұсқаушы белгілер": [
+        "trafficLawsPage/modal/signs/up",
+        "trafficLawsPage/modal/signs/human",
+        "trafficLawsPage/modal/signs/bibicycle",
+        "trafficLawsPage/modal/signs/down",
+    ],
+    "Тыйым салатын белгілер": [
+        "trafficLawsPage/modal/signs/nopeople",
+        "trafficLawsPage/modal/signs/kirpich",
+        "trafficLawsPage/modal/signs/nobicycle",
+        "trafficLawsPage/modal/signs/nofast",
+    ],
+    "Ескерту белгілері": [
+        "trafficLawsPage/modal/signs/child",
+        "trafficLawsPage/modal/signs/zebra",
+        "trafficLawsPage/modal/signs/bicycle",
+        "trafficLawsPage/modal/signs/train",
+        "trafficLawsPage/modal/signs/dangerous",
+    ],
+
 };
 
 const TrafficsLawsPage = (): ReactElement => {
     const dispatch = useDispatch();
+
     const isModalOpened: boolean = useSelector((state: TRootState) => state.application.isModalOpened);
     const modalContentName: TContentItem =
         useSelector((state: TRootState) => state.trafficLaws.modalContentName) as IContentLabel;
-    const [modalTitle, setModalTitle] = useState<string>(
-        modalContentName.title || "none"
-    );
+    const title = modalContentName?.title || "";
 
     const splitString = (str: string): string[] => {
         const i = str.indexOf("—");
@@ -86,6 +127,7 @@ const TrafficsLawsPage = (): ReactElement => {
             <div className="tl-modal-content">
                 {modalContentName.additionalInfo?.pointsTextList.map((item: string, index: number) => (
                     <DefaultImageCard
+                        key={index}
                         imageId={modalPolicemanImagesPaths[modalContentName.title!][index]}
                         title={splitString(modalContentName.additionalInfo?.pointsTextList[index] as string)[0]}
                         label={splitString(item as string)[1]}
@@ -100,7 +142,8 @@ const TrafficsLawsPage = (): ReactElement => {
             <div className="tl-modal-content">
                 {modalContentName.additionalInfo?.pointsTextList.map((_item: string, index: number) => (
                     <DefaultImageCard
-                        imageId={modalPolicemanImagesPaths[modalContentName.title!][index]}
+                        key={index}
+                        imageId={signsImagesPaths[modalContentName.title!][index]}
                         title={modalContentName.additionalInfo?.pointsTextList[index]}
                     />
                 ))}
@@ -111,11 +154,6 @@ const TrafficsLawsPage = (): ReactElement => {
     const closeModal = () => {
         dispatch(setIsModalOpened(false));
     };
-
-    useEffect(() => {
-        const title = modalContentName?.title || "";
-        setModalTitle(title);
-    }, [isModalOpened])
 
     return (
         <DefaultLayout>
@@ -128,8 +166,8 @@ const TrafficsLawsPage = (): ReactElement => {
                         <div>
                             <p className="tl-modal-title">{modalContentName.title}</p>
                             <div className="tl-modal-content">
-                                {modalTitle in modalPolicemanImagesPaths && <PoliceManModalContent/>}
-                                {modalTitle in signsImagesPaths && <SignModalContent/>}
+                                {title in modalPolicemanImagesPaths && <PoliceManModalContent/>}
+                                {title in signsImagesPaths && <SignModalContent/>}
                             </div>
                         </div>
                     )}
