@@ -2,7 +2,7 @@ import {type ChangeEvent, type ReactElement, useState, type FC} from "react";
 import {useDispatch} from "react-redux";
 import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
 import type {TCategoryState, IElementJson, IChemistryPageResources} from "@pages/Chemistry/types.ts";
-import ElementCell from "@components/chemistry/ElementCell";
+import ElementCell from "@modules/chemistry/components/ElementCell";
 import type {TElementsInfo} from "@pages/Chemistry/types.ts";
 import usePageTranslation from "@hooks/usePageTranslation.ts";
 import {PageIds} from "@domains/Translate";

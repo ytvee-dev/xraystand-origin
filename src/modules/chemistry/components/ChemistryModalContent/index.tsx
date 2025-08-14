@@ -2,8 +2,8 @@ import {useSelector} from "react-redux";
 import type {FC, ReactNode} from "react";
 import type {TRootState} from "@store/index.ts";
 import type {IElementJson} from "@pages/Chemistry/types.ts";
-import ElementCell from "@components/chemistry/ElementCell";
-import {contentFieldsKz, contentFieldsRu} from "@components/chemistry/ChemistryModalContent/meta.ts";
+import ElementCell from "@modules/chemistry/components/ElementCell";
+import {contentFieldsKz, contentFieldsRu} from "@modules/chemistry/components/ChemistryModalContent/meta.ts";
 import "./style.css";
 
 const ChemistryModalContent: FC = (): ReactNode => {

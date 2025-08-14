@@ -1,6 +1,6 @@
 import type {FC} from "react";
 import type {ICellProps} from "@pages/Chemistry/types.ts";
-import {VARIANT} from "@components/chemistry/ElementCell/meta.ts";
+import {VARIANT} from "@modules/chemistry/components/ElementCell/meta.ts";
 import "./style.css";
 
 export const ElementCell: FC<ICellProps> = ({

@@ -4,7 +4,7 @@ import type {IElementJson} from "@pages/Chemistry/types.ts";
 import type {IChemistryPageResources, TElementsInfo} from "@pages/Chemistry/types.ts";
 import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
 import usePageTranslation from "@hooks/usePageTranslation.ts";
-import ElementCell from "@components/chemistry/ElementCell";
+import ElementCell from "@modules/chemistry/components/ElementCell";
 import {PageIds} from "@domains/Translate";
 import "./style.css";
 
