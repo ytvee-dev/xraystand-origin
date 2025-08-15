@@ -31,6 +31,14 @@ const DefaultLayout = ({ disabled, strictLanguage, children }: IDefaultLayoutPro
                         trafficLawsFooterMeta.ru :
                         trafficLawsFooterMeta.kz
                 }
+                sx={{
+                  backgroundColor: "#FFA726",
+                  boldTextColor: "#000000",
+                  textColor: "rgba(0,0,0,0.4)",
+                  copyrightColor: "#FFFFFF66",
+                  logoColorMode: "dark",
+                  madeByColorMode: "dark",
+                }}
             />
         </div>
     );

@@ -1,5 +1,6 @@
-import madeBySrc from "@assets/images/madeby.png";
-import type {IDefaultDarkFooterMeta} from "@components/common/Footers/DefaultDarkFooter/meta.ts";
+import madeBySrcLight from "@assets/images/madeByLight.png";
+import madeBySrcDark from "@assets/images/madeByDark.png";
+import type {IDefaultDarkFooterMeta} from "@components/common/Footers/StrictFooter/types.ts";
 
 export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
     ru: {
@@ -18,8 +19,11 @@ export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
                 privacy: "Политика конфиденциальности",
             },
             madeBy: {
-                link: "https://info.ytvee.com/service",
-                imagePath: madeBySrc,
+                link: "https://ytvee.com/service",
+                imagePath: {
+                    light: madeBySrcLight,
+                    dark: madeBySrcDark,
+                },
             },
         }
     },
@@ -39,8 +43,11 @@ export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
                 privacy: "Құпиялық саясаты",
             },
             madeBy: {
-                link: "https://info.ytvee.com/service",
-                imagePath: madeBySrc,
+                link: "https://ytvee.com/service",
+                imagePath: {
+                    light: madeBySrcLight,
+                    dark: madeBySrcDark,
+                },
             },
         }
     },

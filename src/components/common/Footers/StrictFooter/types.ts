@@ -11,11 +11,14 @@ export interface IDefaultDarkFooterContentInfo {
     },
     madeBy: {
         link: string,
-        imagePath: string,
+        imagePath: {
+            light: string,
+            dark: string,
+        },
     },
 };
 
-export interface IDefaultDarkFooterContent {
+export interface IStrictFooterContent {
     logoPath: string,
     contacts: IContacts,
     copyright: string,
@@ -23,6 +26,6 @@ export interface IDefaultDarkFooterContent {
 };
 
 export interface IDefaultDarkFooterMeta {
-    ru: IDefaultDarkFooterContent,
-    kz: IDefaultDarkFooterContent,
+    ru: IStrictFooterContent,
+    kz: IStrictFooterContent,
 };
