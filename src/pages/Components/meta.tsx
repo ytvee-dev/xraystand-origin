@@ -14,6 +14,13 @@ import {defaultDSCardSX, templateDSCardNames} from "@components/common/Cards/car
 import {defaultFooterSX, FooterPlayground, strictFooterMeta} from "@pages/Components/stories/footer";
 import Footer from "@components/common/Footers/StrictFooter";
 
+import {
+    ContentBlockPlayground,
+    defaultContentBlockColorScheme,
+    defaultContentBlockProps,
+} from "@pages/Components/stories/ContentBlock";
+
+
 
 export const componentsLibrary = [
     {
@@ -37,22 +44,16 @@ export const componentsLibrary = [
     {
         name: "Content Block",
         category: "Containers",
-        component: <DSContentBlock><span>Empty content</span></DSContentBlock>,
+        component: <ContentBlockPlayground />,
         variants: {
             default: (
                 <DSContentBlock
-                    title={"Title"}
-                    description={"description"}
-                    notificationLabel={"notificationLabel"}
-                    colorScheme={{
-                        titleColor: "#289FF5",
-                        subtitleColor: "black",
-                        descriptionColor: "black",
-                        notificationBackgroundColor: "beige",
-                        notificationTextColor: "black",
-                    }}
+                    title={defaultContentBlockProps.title}
+                    description={defaultContentBlockProps.description}
+                    notificationLabel={defaultContentBlockProps.notificationLabel}
+                    colorScheme={defaultContentBlockColorScheme}
                 >
-                    <span>Default content</span>
+                    {defaultContentBlockProps.children}
                 </DSContentBlock>
             ),
         },
