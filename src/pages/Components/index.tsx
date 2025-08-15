@@ -33,23 +33,6 @@ const Documentation: FC<SubComponentProp> = ({ children }): ReactElement => {
     );
 };
 
-// const MobileScreens: FC<SubComponentProp> = ({ children }): ReactElement => {
-//     const screenSizes = ["1199", "991", "767", "414", "375", "360", "320"];
-//
-//     return (
-//         <div className="components-content-mobile-wrapper">
-//             {screenSizes.map((size) => (
-//                 <div className={`components-content-mobile-screen-${size}`}>
-//                     <h3>{size}px</h3>
-//                     {children}
-//                 </div>
-//             ))}
-//         </div>
-//     );
-// }
-
-
-
 const ComponentsPage = (): ReactElement => {
     const [currentComponent, setCurrentComponent] = useState<IComponentData>(componentsLibrary[0]);
     const [showDoc, setShowDoc] = useState<boolean>(false);
@@ -92,18 +75,15 @@ const ComponentsPage = (): ReactElement => {
 
                 {!showDoc && (
                     <div className="components-content-child">
-                        <h2>Without props</h2>
+                        <h2>Playground</h2>
                         <div className="components-content-desktop-wrapper">
                             {currentComponent.component}
                         </div>
 
-                        <h2>Desktop</h2>
+                        <h2>Desktop view</h2>
                         <div className="components-content-desktop-wrapper">
                             {currentComponent.variants.default}
                         </div>
-
-                        {/*<h2>Tablet & Mobile</h2>*/}
-                        {/*<MobileScreens children={currentComponent.variants.default} />*/}
                     </div>
                 )}
             </div>

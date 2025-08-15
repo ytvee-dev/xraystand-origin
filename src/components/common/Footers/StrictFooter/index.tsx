@@ -62,7 +62,7 @@ const Footer = ({meta, sx = {
             <div className="footer-labels-container">
                 <div
                     className="footer-copyright"
-                    style={{color: sx?.textColor}}
+                    style={{color: sx?.copyrightColor}}
                 >{meta.copyright}</div>
                 <a href={meta.content.madeBy.link} target="_blank">
                     <div className="footer-made-by">

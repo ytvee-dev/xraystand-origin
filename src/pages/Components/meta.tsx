@@ -11,15 +11,17 @@ import DocDSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper/DocDSCa
 import DocDSContentBlock from "@components/common/DSContentBlock/DocDSContentBlock.mdx";
 
 import {defaultDSCardSX, templateDSCardNames} from "@components/common/Cards/cardsMeta.tsx";
+import {defaultFooterSX, FooterPlayground, strictFooterMeta} from "@pages/Components/stories/footer";
+import Footer from "@components/common/Footers/StrictFooter";
 
 
 export const componentsLibrary = [
     {
         name: "Stand Footer",
         category: "Footers",
-        component: <>Stand Footer</>,
+        component: <FooterPlayground />,
         variants: {
-            default: <>Stand Footer</>,
+            default: <Footer meta={strictFooterMeta} sx={defaultFooterSX} />,
         },
         documentation: <></>,
     },
