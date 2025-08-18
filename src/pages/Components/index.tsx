@@ -19,8 +19,6 @@ interface SubComponentProp {
     children: ReactNode;
 }
 
-
-
 const Documentation: FC<SubComponentProp> = ({ children }): ReactElement => {
     return (
         <div>
