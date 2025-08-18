@@ -33,6 +33,8 @@ import {
 import LargeCard from "@components/common/Cards/LargeCard";
 import {DSNotificationPlayground} from "@pages/Components/stories/Notification";
 import {FlexibleModalPlayground} from "@pages/Components/stories/FlexibleModal";
+import {ContentSectionPlayground, defaultContentSectionProps} from "@pages/Components/stories/ContentSection";
+import ContentSection from "@components/common/Sections/DSContentSection";
 
 export const componentsLibrary = [
     {
@@ -240,20 +242,15 @@ export const componentsLibrary = [
         documentation: <DocDSCardsWrapper />,
     },
     {
-        name: "Cover Section",
+        name: "Content Section",
         category: "Sections",
-        component: <>Cover Section</>,
+        component: <ContentSectionPlayground />,
         variants: {
-            default: <>Cover Section</>,
-        },
-        documentation: <></>,
-    },
-    {
-        name: "CardsList Section",
-        category: "Sections",
-        component: <>CardsList Section</>,
-        variants: {
-            default: <>CardsList Section</>,
+            default: (
+                <ContentSection textData={defaultContentSectionProps.textData}>
+                    {defaultContentSectionProps.children}
+                </ContentSection>
+            ),
         },
         documentation: <></>,
     },
