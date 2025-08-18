@@ -20,7 +20,8 @@ import {
     defaultContentBlockProps,
 } from "@pages/Components/stories/ContentBlock";
 
-
+import Header from "@components/common/Header";
+import { HeaderPlayground } from "@pages/Components/stories/Header";
 
 export const componentsLibrary = [
     {
@@ -35,9 +36,9 @@ export const componentsLibrary = [
     {
         name: "Stand Header",
         category: "Headers",
-        component: <>Stand Header</>,
+        component: <HeaderPlayground />,
         variants: {
-            default: <>Stand Header</>,
+            default: <Header singleLanguage={false} />,
         },
         documentation: <></>,
     },
@@ -64,32 +65,36 @@ export const componentsLibrary = [
         category: "Cards",
         component: <DSCard />,
         variants: {
-            default: <DSCard
-                        imageName={templateDSCardNames[0]}
-                        title="Card title"
-                        label="Card label"
-                        linkedText="Linked text"
-                        action={() => alert("click")}
-                        backgroundColor="#FFFFFF"
-                        minWidth="270px"
-                        sxText={defaultDSCardSX}
-                    />,
+            default: (
+                <DSCard
+                    imageName={templateDSCardNames[0]}
+                    title="Card title"
+                    label="Card label"
+                    linkedText="Linked text"
+                    action={() => alert("click")}
+                    backgroundColor="#FFFFFF"
+                    minWidth="270px"
+                    sxText={defaultDSCardSX}
+                />
+            ),
         },
         documentation: <DocDSCard />,
     },
     {
         name: "Info Card",
         category: "Cards",
-        component: <DSInformationCard/>,
+        component: <DSInformationCard />,
         variants: {
-            default: <DSInformationCard
-                        title="Заголовок"
-                        liOptions={["Card option 1", "Card option 2", "Card option 3"]}
-                        action={() => alert("click")}
-                        backgroundColor="#FFFFFF"
-                        width="270px"
-                        sxText={defaultDSCardSX}
-                    />,
+            default: (
+                <DSInformationCard
+                    title="Заголовок"
+                    liOptions={["Card option 1", "Card option 2", "Card option 3"]}
+                    action={() => alert("click")}
+                    backgroundColor="#FFFFFF"
+                    width="270px"
+                    sxText={defaultDSCardSX}
+                />
+            ),
         },
         documentation: <DocDSInformationCard />,
     },
@@ -98,16 +103,18 @@ export const componentsLibrary = [
         category: "Alerts",
         component: <DSNotification />,
         variants: {
-            default: <DSNotification
-                        label="Notification label"
-                        type="warning"
-                        backgroundColor="#FEFCF3"
-                        textColor="black"
-                        borderColor="#EBCD91"
-                        iconName="warningIcon"
-                        iconSize="19px"
-                        fullWidth
-                    />,
+            default: (
+                <DSNotification
+                    label="Notification label"
+                    type="warning"
+                    backgroundColor="#FEFCF3"
+                    textColor="black"
+                    borderColor="#EBCD91"
+                    iconName="warningIcon"
+                    iconSize="19px"
+                    fullWidth
+                />
+            ),
         },
         documentation: <DocDSNotification />,
     },
@@ -132,43 +139,47 @@ export const componentsLibrary = [
     {
         name: "Card List",
         category: "Lists",
-        component: (<DSCardsWrapper wrapperMaxWidth={"1200px"} >
-                        {Array.from({length: 3}).map((_, i) => (
-                            <DSCard
-                                key={i}
-                                imageName={templateDSCardNames[0]}
-                                title="Card title"
-                                label="Card label"
-                                linkedText="Linked text"
-                                action={() => alert("click")}
-                                backgroundColor="#FFFFFF"
-                                minWidth="270px"
-                                sxText={defaultDSCardSX}
-                            />
-                        ))}
-                    </DSCardsWrapper>),
+        component: (
+            <DSCardsWrapper wrapperMaxWidth={"1200px"}>
+                {Array.from({ length: 3 }).map((_, i) => (
+                    <DSCard
+                        key={i}
+                        imageName={templateDSCardNames[0]}
+                        title="Card title"
+                        label="Card label"
+                        linkedText="Linked text"
+                        action={() => alert("click")}
+                        backgroundColor="#FFFFFF"
+                        minWidth="270px"
+                        sxText={defaultDSCardSX}
+                    />
+                ))}
+            </DSCardsWrapper>
+        ),
         variants: {
-            default: (<DSCardsWrapper
-                            screenMaxWidth={1000}
-                            maxHeight="500px"
-                            cardsGap="16px"
-                            overflow="auto"
-                            isWrap={false}
-                        >
-                            {Array.from({length: 5}).map((_, i) => (
-                                <DSCard
-                                    key={i}
-                                    imageName={templateDSCardNames[0]}
-                                    title="Card title"
-                                    label="Card label"
-                                    linkedText="Linked text"
-                                    action={() => alert("click")}
-                                    backgroundColor="#FFFFFF"
-                                    minWidth="270px"
-                                    sxText={defaultDSCardSX}
-                                />
-                            ))}
-                        </DSCardsWrapper>),
+            default: (
+                <DSCardsWrapper
+                    screenMaxWidth={1000}
+                    maxHeight="500px"
+                    cardsGap="16px"
+                    overflow="auto"
+                    isWrap={false}
+                >
+                    {Array.from({ length: 5 }).map((_, i) => (
+                        <DSCard
+                            key={i}
+                            imageName={templateDSCardNames[0]}
+                            title="Card title"
+                            label="Card label"
+                            linkedText="Linked text"
+                            action={() => alert("click")}
+                            backgroundColor="#FFFFFF"
+                            minWidth="270px"
+                            sxText={defaultDSCardSX}
+                        />
+                    ))}
+                </DSCardsWrapper>
+            ),
         },
         documentation: <DocDSCardsWrapper />,
     },
@@ -199,5 +210,4 @@ export const componentsLibrary = [
         },
         documentation: <></>,
     },
-
 ];
