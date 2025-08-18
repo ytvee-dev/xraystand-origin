@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
-import FlexibleAlert, {type TBackgroundColors} from "@components/common/Alerts/FlexibleAlert";
-import {alertTypes} from "@components/common/Alerts/FlexibleAlert";
+import {type TBackgroundColors} from "@components/common/Alerts/FlexibleAlert";
+import DSNotification from "@components/common/DSNotification";
 import "./style.css";
 
 export interface ILargeCardDescription {
@@ -22,6 +22,7 @@ export interface ILargeCardColorScheme {
     descriptionColor?: string;
     notificationBackgroundColor?: TBackgroundColors;
     notificationTextColor?: string;
+    notificationIconColor?: string;
 }
 
 const defaultColorScheme: ILargeCardColorScheme = {
@@ -30,6 +31,7 @@ const defaultColorScheme: ILargeCardColorScheme = {
     descriptionColor: "black",
     notificationBackgroundColor: "beige",
     notificationTextColor: "black",
+    notificationIconColor: "beige",
 }
 
 const LargeCard = ({
@@ -49,8 +51,13 @@ const LargeCard = ({
                 <h3 style={{color: colorScheme.subtitleColor}}>{isSubtitle(description) ? description.subtitle : description}</h3>
             </div>
             <div className="large-card-body">{children && children}</div>
-            <FlexibleAlert label={notificationLabel} type={alertTypes.warningBeige}
-                           backgroundColor={colorScheme.notificationBackgroundColor!}/>
+            <DSNotification
+                label={notificationLabel}
+                backgroundColor={colorScheme.notificationBackgroundColor}
+                textColor={colorScheme?.notificationTextColor}
+                iconColor={colorScheme?.notificationIconColor}
+                fullWidth={true}
+            />
         </div>
     );
 };

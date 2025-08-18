@@ -25,6 +25,12 @@ import { HeaderPlayground } from "@pages/Components/stories/Header";
 import { DSCardPlayground, defaultDSCardProps } from "@pages/Components/stories/Card";
 import {DSCardsWrapperPlayground, defaultDSCardsWrapperProps} from "@pages/Components/stories/CardsWrapper";
 import {DSInformationCardPlayground, defaultDSInformationCardProps} from "@pages/Components/stories/InformationCard";
+import {
+    defaultLargeCardColorScheme,
+    defaultLargeCardProps,
+    LargeCardPlayground
+} from "@pages/Components/stories/LargeCard";
+import LargeCard from "@components/common/Cards/LargeCard";
 
 export const componentsLibrary = [
     {
@@ -104,6 +110,24 @@ export const componentsLibrary = [
             ),
         },
         documentation: <DocDSInformationCard />,
+    },
+    {
+        name: "Large Card",
+        category: "Cards",
+        component: <LargeCardPlayground />,
+        variants: {
+            default: (
+                <LargeCard
+                    title={defaultLargeCardProps.title}
+                    description={defaultLargeCardProps.description}
+                    notificationLabel={defaultLargeCardProps.notificationLabel}
+                    colorScheme={defaultLargeCardColorScheme}
+                >
+                    {defaultLargeCardProps.children}
+                </LargeCard>
+            ),
+        },
+        documentation: <></>,
     },
     {
         name: "Notification",
