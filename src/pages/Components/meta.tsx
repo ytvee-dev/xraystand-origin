@@ -35,6 +35,7 @@ import {DSNotificationPlayground} from "@pages/Components/stories/Notification";
 import {FlexibleModalPlayground} from "@pages/Components/stories/FlexibleModal";
 import {ContentSectionPlayground, defaultContentSectionProps} from "@pages/Components/stories/ContentSection";
 import ContentSection from "@components/common/Sections/DSContentSection";
+import {TwoColumnSectionPlayground} from "@pages/Components/stories/TwoColumnSection";
 
 export const componentsLibrary = [
     {
@@ -257,9 +258,9 @@ export const componentsLibrary = [
     {
         name: "TwoCols Section",
         category: "Sections",
-        component: <>TwoCols Section</>,
+        component: <TwoColumnSectionPlayground />,
         variants: {
-            default: <>TwoCols Section</>,
+            default: <TwoColumnSectionPlayground />,
         },
         documentation: <></>,
     },
