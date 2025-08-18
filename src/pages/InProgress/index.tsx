@@ -1,8 +1,8 @@
 import {type ReactElement} from "react";
 import DefaultLayout from "@layout/Default";
-import ContentSectionAlert from "@components/common/Other/ContentSectionAlert";
 import ContentSection from "@components/common/Sections/DSContentSection";
 import useWindowWidth from "@hooks/useScreenWidth.ts";
+import DSNotification from "@components/common/DSNotification";
 import "./style.css";
 
 const textContent = {
@@ -31,7 +31,7 @@ const InProgress = (): ReactElement => {
                     </svg>
                 </div>
                 <div className="content-section-alert-wrapper">
-                    <ContentSectionAlert label={textContent.alertText}/>
+                    <DSNotification label={textContent.alertText} />
                 </div>
             </ContentSection>
 

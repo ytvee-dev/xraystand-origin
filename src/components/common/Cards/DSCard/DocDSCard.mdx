@@ -1,90 +1,58 @@
-# DSCard Component Documentation
+# Component: DSCard
 
-`DSCard` — это универсальная карточка на базе Material‑UI, которая может отображать изображение, заголовок, подпись и кнопку‑ссылку.
-
-## Импорт
-
-```tsx
-import DSCard from '@components/common/Cards/DSCard';
-```
-
-```ts
-export const dsCardImagePathPrefix = '/static/images/cards/';
-export const defaultDSCardSX = {
-  imgObjectFit: 'cover',
-  imgPadding: 0,
-  titleColor: '#000',
-  labelColor: '#666',
-  linkColor: '#1976d2',
-};
-```
+## Overview
+Карточка с изображением, заголовком, подписью и опциональной ссылкой-кнопкой. Построена на базе MUI (`Card`, `CardMedia`, `CardContent`, `CardActions`) и предназначена для отображения короткого контента в сетках/списках.
 
 ---
 
 ## Props
 
-| Свойство          | Тип                               | По умолчанию           | Описание                                                                                                                                                                                                                                                   |
-| ----------------- | --------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `imageName`       | `string`                          | `""`                   | Имя файла картинки. Если пустая строка, изображение не показывается.                                                                                                                                                                                       |
-| `title`           | `string`                          | `""`                   | Заголовок карточки. Если пустая строка, заголовок не отображается.                                                                                                                                                                                         |
-| `label`           | `string`                          | `""`                   | Подпись/описание под заголовком.                                                                                                                                                                                                                           |
-| `linkedText`      | `string`                          | `""`                   | Текст кнопки‑ссылки. Если пустая строка, кнопка не отображается.                                                                                                                                                                                           |
-| `action`          | `() => void`                      | `() => alert('click')` | Обработчик клика по всей карточке и кнопке.                                                                                                                                                                                                                |
-| `backgroundColor` | `string`                          | `"#FFFFFF"`            | Цвет фона карточки (любое валидное CSS‑значение).                                                                                                                                                                                                          |
-| `width`           | `string`                          | `"270px"`              | Максимальная ширина карточки (`XXpx` или `100%`).                                                                                                                                                                                                          |
-| `sxText`          | `Partial<typeof defaultDSCardSX>` | `defaultDSCardSX`      | Объект стилей для текста и изображения:<br />- `imgObjectFit` — `object-fit` для `<img />`<br />- `imgPadding` — отступ вокруг изображения<br />- `titleColor` — цвет заголовка<br />- `labelColor` — цвет подписи<br />- `linkColor` — цвет текста кнопки |
+| Prop               | Type                                  | Default      | Description |
+|--------------------|---------------------------------------|--------------|-------------|
+| `imageName`        | `string`                              | `""`         | Имя файла изображения. Склеивается с `dsCardImagePathPrefix` для получения `src`. Если пусто — блок изображения скрыт. |
+| `title`            | `string`                              | `""`         | Заголовок карточки. |
+| `label`            | `string`                              | `""`         | Подпись/краткое описание. |
+| `linkedText`       | `string`                              | `""`         | Текст кнопки-ссылки внизу карточки. Если пусто — `CardActions` не рендерится. |
+| `action`           | `() => void`                          | `() => {}`   | Обработчик клика для всей карточки (через `CardActionArea`) и кнопки-ссылки. |
+| `backgroundColor`  | `string`                              | `"#FFFFFF"`  | Цвет фона карточки. |
+| `minWidth`         | `string`                              | `"270px"`    | Минимальная ширина карточки. Поддерживает значения вида `XXpx` или `100%`. |
+| `maxWidth`         | `string`                              | `"270px"`    | Максимальная ширина карточки. Поддерживает значения вида `XXpx` или `100%`. |
+| `imageHeight`      | `string`                              | `"150px"`    | Высота блока изображения. |
+| `sxText`           | `{ titleColor?: string; labelColor?: string; linkColor?: string; fontWeight?: number; imgObjectFit?: CSSProperties["objectFit"]; imgPadding?: string; }` | `defaultDSCardSX` | Набор стилистических настроек для текста и изображения. |
+
+**Внутренние зависимости:**
+- `dsCardImagePathPrefix` — префикс пути к изображению.
+- `defaultDSCardSX` — дефолтные стили шрифтов/картинки (цвета, `fontWeight`, `object-fit`, `padding`).
 
 ---
 
-## Пример использования
+## Usage
 
 ```tsx
-import React from 'react';
-import DSCard from '@components/common/Cards/DSCard';
+import DSCard from "@components/common/Cards/DSCard";
+import { defaultDSCardSX } from "@components/common/Cards/cardsMeta";
 
-const Example = () => {
-  const handleClick = () => console.log('Карточка нажата');
-
+export default function Example() {
   return (
     <DSCard
-      imageName="product123.png"
-      title="Новый продукт"
-      label="Описание продукта и его особенности"
-      linkedText="Узнать подробнее"
-      action={handleClick}
-      backgroundColor="#FAFAFA"
-      width="300px"
+      imageName="example.png"
+      title="Card title"
+      label="Short description"
+      linkedText="Learn more"
+      action={() => console.log("card click")}
+      backgroundColor="#FFFFFF"
+      minWidth="270px"
+      maxWidth="320px"
+      imageHeight="160px"
       sxText={{
-        imgObjectFit: 'contain',
-        imgPadding: '8px',
-        titleColor: '#333333',
-        labelColor: '#555555',
-        linkColor: '#FF5722',
+        ...defaultDSCardSX,
+        titleColor: "#111",
+        labelColor: "#666",
+        linkColor: "#0A66C2",
+        fontWeight: 600,
+        imgObjectFit: "cover",
+        imgPadding: "0",
       }}
     />
   );
-};
-
-export default Example;
-```
-
----
-
-## Рекомендации по стилизации
-
-1. **Изображение**
-
-* По умолчанию высота изображения равна ширине: `height={width}`.
-* Для сохранения пропорций используйте `sxText.imgObjectFit: 'contain'` или другое.
-
-2. **Ширина**
-
-* Фиксированная (`"270px"`, `"300px"`) или адаптивная (`"100%"`).
-
-3. **Цвета текста**
-
-* Переопределяйте через `sxText`, остальные значения подтянутся из `defaultDSCardSX`.
-
-4. **Обработчики**
-
-* И карточка, и кнопка используют один `action`. Для разных действий нужно менять код компонента.
+}

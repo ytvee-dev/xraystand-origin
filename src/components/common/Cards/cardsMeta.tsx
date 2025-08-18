@@ -24,6 +24,6 @@ export const defaultDSCardSX: IDefaultCardSxText = {
 export const defaultDSInformationCardSX = {
     minHeight: "auto",
     minWidth: "auto",
-    listPadding: 17,
+    listPadding: "17px",
 };
 

@@ -4,10 +4,12 @@ import type {TContentItem} from "@utils/types/trafficLawsTypes";
 
 interface IPageState {
     modalContentName: TContentItem;
+    isModalOpened: boolean;
 }
 
 const initialState: IPageState = {
     modalContentName: "",
+    isModalOpened: false,
 };
 
 const trafficLawsSlice = createSlice({

@@ -1,16 +1,17 @@
 import {type ReactElement} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import type {IChemistryPageResources, IContentSectionProps, ITextContent} from "@pages/Chemistry/types.ts";
-import {PageIds} from "@domains/Translate";
+import type {IContentSectionProps, ITextContent} from "@pages/Chemistry/types.ts";
+import {Languages} from "@domains/Translate";
 import type {TRootState} from "@store/index.ts";
 import {setIsModalOpened} from "@store/slices/ChemistryPage";
-import usePageTranslation from "@hooks/usePageTranslation.ts";
 import useWindowWidth from "@hooks/useScreenWidth.ts";
 import DefaultLayout from "@layout/Default";
-import PeriodicTable from "@components/chemistry/PeriodicTable";
-import PeriodicTableMobile from "@components/chemistry/PeriodicTableMobile";
+import PeriodicTable from "@modules/chemistry/components/PeriodicTable";
+import PeriodicTableMobile from "@modules/chemistry/components/PeriodicTableMobile";
 import FlexibleModal from "@components/common/Modal/FlexibleModal";
-import ChemistryModalContent from "@components/chemistry/ChemistryModalContent";
+import ChemistryModalContent from "@modules/chemistry/components/ChemistryModalContent";
+import * as contentKZ from "@modules/chemistry/locales/kaz.json";
+import * as contentRU from "@modules/chemistry/locales/rus.json";
 import "./style.css";
 
 const Chemistry = (): ReactElement => {
@@ -18,8 +19,11 @@ const Chemistry = (): ReactElement => {
     const dispatch = useDispatch();
     const isElementModalOpened: boolean = useSelector((state: TRootState) => state.chemistry.isModalOpened);
 
-    const {textTranslation} = usePageTranslation(PageIds.CHEMISTRY_PAGE);
-    const sectionMeta: IChemistryPageResources = textTranslation as IChemistryPageResources;
+    const currentLocale: Languages = useSelector(
+        (state: TRootState) => state.locale.locale
+    );
+
+    const sectionMeta = currentLocale === "kz" ? contentKZ : contentRU;
     const sectionMetaTranslation: ITextContent = sectionMeta.section;
 
     const CustomContentSection = ({title, subtitle, children}: IContentSectionProps) => {

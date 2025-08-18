@@ -133,15 +133,14 @@ a, p {
     border-radius: 2px;
 }
 
-
-html.pdd ::-webkit-scrollbar-track  * {
-    background-color: #273dae;
+::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
 }
 
-html.pdd ::-webkit-scrollbar-thumb {
-    background-color: #289FF5;
+::-webkit-scrollbar-thumb {
+    background-color: #cbcbcb;
 }
 
-html.pdd ::-webkit-scrollbar-thumb:hover  * {
-    background-color: #ae2732;
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b0b0b0;
 }

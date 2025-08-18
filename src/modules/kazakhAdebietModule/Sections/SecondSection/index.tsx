@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import SquareImageViewer from "@components/common/Other/SquareImageViewer";
+import SquareImageViewer from "@modules/trafficLaws/components/SquareImageViewer";
 import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
 import DSContentBlock, {type DSContentBlockColorScheme} from "@components/common/DSContentBlock";
 import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";

@@ -2,8 +2,8 @@ import {type ReactElement} from "react";
 import type {TRootState} from "@store/index.ts";
 import type {Languages} from "@domains/Translate";
 import Header from "@components/common/Header";
-import DefaultDarkFooter from "@components/common/Footers/DefaultDarkFooter";
-import {trafficLawsFooterMeta} from "@components/common/Footers/DefaultDarkFooter/content.ts";
+import StrictFooter from "@components/common/Footers/StrictFooter";
+import {trafficLawsFooterMeta} from "@components/common/Footers/StrictFooter/content.ts";
 import {useSelector} from "react-redux";
 import "./style.css";
 
@@ -22,12 +22,16 @@ const DefaultLayout = ({ disabled, strictLanguage, children }: IDefaultLayoutPro
     return (
         <div className={`default-layout ${disabled ? "disabled" : ""}`}>
             <Header singleLanguage={strictLanguage ? true : false}/>
-            <main>{ children }</main>
-            <DefaultDarkFooter meta={
-                language === 'ru' ?
-                    trafficLawsFooterMeta.ru :
-                    trafficLawsFooterMeta.kz
-            }/>
+
+            <main>{children}</main>
+
+            <StrictFooter
+                meta={
+                    language === 'ru' ?
+                        trafficLawsFooterMeta.ru :
+                        trafficLawsFooterMeta.kz
+                }
+            />
         </div>
     );
 };
