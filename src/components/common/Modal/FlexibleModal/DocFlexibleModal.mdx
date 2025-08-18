@@ -1,0 +1,52 @@
+# Component: FlexibleModal
+
+## Overview
+`FlexibleModal` — это универсальный модальный компонент на базе Material UI, который поддерживает динамический заголовок, локализацию кнопки закрытия и кастомный контент.
+Может использоваться для отображения форм, уведомлений и диалоговых окон.
+
+---
+
+## Props
+
+### `modalHeader?`
+Тип: `string`
+Опциональный заголовок модального окна. Если не указан — шапка не отображается.
+
+### `isModalOpened`
+Тип: `boolean` (**обязательный**)
+Определяет состояние модального окна:
+- `true` — модальное окно открыто.
+- `false` — модальное окно закрыто.
+
+### `closeAction`
+Тип: `() => void` (**обязательный**)
+Функция, вызываемая при закрытии модального окна (например, для управления состоянием в Redux или `useState`).
+
+### `children`
+Тип: `ReactElement | ReactNode` (**обязательный**)
+Содержимое модального окна. Может включать текст, форму, кнопки или любой JSX.
+
+---
+
+## Usage
+
+```tsx
+import {useState} from "react";
+import FlexibleModal from "@components/common/FlexibleModal";
+
+export default function Example() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <button onClick={() => setIsOpen(true)}>Открыть модалку</button>
+      <FlexibleModal
+        modalHeader="Пример модального окна"
+        isModalOpened={isOpen}
+        closeAction={() => setIsOpen(false)}
+      >
+        <p>Контент модального окна</p>
+      </FlexibleModal>
+    </>
+  );
+}

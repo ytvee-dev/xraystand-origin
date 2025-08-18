@@ -1,31 +1,57 @@
-# DocDSInforamtionCard
+# Component: DSContentBlock
 
-## Пример использования
+## Overview
+`DSContentBlock` — это универсальный компонент-блок для отображения информации с заголовком, описанием, контентом и встроенным уведомлением внизу. Подходит для секций документации, лендингов или интерфейсов, где нужно выделить важные данные с контекстным предупреждением или подсказкой.
+
+---
+
+## Props
+
+| Prop                | Type                                                                 | Default              | Description |
+|---------------------|----------------------------------------------------------------------|----------------------|-------------|
+| `title`             | `string`                                                            | `""`                 | Заголовок блока. |
+| `description`       | `string \| { subtitle: string; content: string[] }`                 | `""`                 | Описание блока. Может быть строкой или объектом с подзаголовком и массивом содержимого. |
+| `children`          | `ReactElement \| ReactNode \| null`                                 | `null`               | Дополнительный контент внутри блока. |
+| `notificationLabel` | `string`                                                            | `""`                 | Текст уведомления, отображаемого внизу блока. |
+| `colorScheme`       | `DSContentBlockColorScheme`                                         | `defaultColorScheme` | Цветовая схема заголовка, описания и уведомления. |
+
+---
+
+## Color Scheme (DSContentBlockColorScheme)
+
+| Key                           | Type     | Default   | Description |
+|-------------------------------|----------|-----------|-------------|
+| `titleColor`                  | `string` | `#289FF5` | Цвет заголовка. |
+| `subtitleColor`               | `string` | `black`   | Цвет подзаголовка. |
+| `descriptionColor`            | `string` | `black`   | Цвет описания. |
+| `notificationBackgroundColor` | `string` | `beige`   | Цвет фона уведомления. |
+| `notificationBorderColor`     | `string` | `#EBCD91` | Цвет рамки уведомления. |
+| `notificationTextColor`       | `string` | `black`   | Цвет текста уведомления. |
+| `notificationIconColor`       | `string` | `#EBCD91` | Цвет иконки уведомления. |
+
+---
+
+## Usage
 
 ```tsx
-import React from 'react';
-import DSContentBlock from '@components/common/DSContentBlock';
+import DSContentBlock from "@components/common/DSContentBlock";
 
-const Example = () => {
-  const handleClick = () => console.log('Карточка нажата');
-
+export default function Example() {
   return (
     <DSContentBlock
-        title={"Title"}
-        description={"description"}
-        notificationLabel={"notificationLabel"}
-        colorScheme={{
-            titleColor: "#289FF5",
-            subtitleColor: "black",
-            descriptionColor: "black",
-            notificationBackgroundColor: "beige",
-            notificationTextColor: "black",
-        }}
+      title="Важное обновление"
+      description="Новая версия доступна для загрузки"
+      notificationLabel="Обязательно обновите клиент"
+      colorScheme={{
+        titleColor: "#222",
+        subtitleColor: "#555",
+        notificationBackgroundColor: "#FFF3CD",
+        notificationBorderColor: "#FFA500",
+        notificationTextColor: "#000",
+        notificationIconColor: "#FFA500",
+      }}
     >
-        <span>Default content</span>
+      <p>Поддержка старой версии будет отключена 30 сентября.</p>
     </DSContentBlock>
   );
-};
-
-export default Example;
-```
+}

@@ -5,7 +5,6 @@ import LargeCard, {
     type ILargeCardColorScheme,
 } from "@components/common/Cards/LargeCard";
 import { fieldWrap, box, grid } from "@pages/Components/stories/footer";
-import type {TBackgroundColors} from "@components/common/Alerts/FlexibleAlert";
 
 export const defaultLargeCardColorScheme: ILargeCardColorScheme = {
     titleColor: "#289FF5",
@@ -50,7 +49,7 @@ export function LargeCardPlayground() {
     );
     const [scheme, setScheme] = useState<ILargeCardColorScheme>({
         ...defaultLargeCardColorScheme,
-        notificationBackgroundColor: defaultLargeCardColorScheme.notificationBackgroundColor as TBackgroundColors,
+        notificationBackgroundColor: defaultLargeCardColorScheme.notificationBackgroundColor as string,
     });
 
     const description: string | ILargeCardDescription =
