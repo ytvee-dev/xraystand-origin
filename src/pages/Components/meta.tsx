@@ -23,6 +23,7 @@ import {
 import Header from "@components/common/Header";
 import { HeaderPlayground } from "@pages/Components/stories/Header";
 import { DSCardPlayground, defaultDSCardProps } from "@pages/Components/stories/Card";
+import {DSCardsWrapperPlayground, defaultDSCardsWrapperProps} from "@pages/Components/stories/CardsWrapper";
 
 export const componentsLibrary = [
     {
@@ -131,13 +132,36 @@ export const componentsLibrary = [
         documentation: <></>,
     },
     {
-        name: "Image Wrapper",
+        name: "Cards Wrapper",
         category: "Wrappers",
-        component: <>Image Wrapper</>,
+        component: <DSCardsWrapperPlayground />,
         variants: {
-            default: <>Image Wrapper</>,
+            default: (
+                <DSCardsWrapper
+                    screenMaxWidth={defaultDSCardsWrapperProps.screenMaxWidth}
+                    wrapperMaxWidth={defaultDSCardsWrapperProps.wrapperMaxWidth}
+                    maxHeight={defaultDSCardsWrapperProps.maxHeight}
+                    cardsGap={defaultDSCardsWrapperProps.cardsGap}
+                    overflow={defaultDSCardsWrapperProps.overflow}
+                    isWrap={defaultDSCardsWrapperProps.isWrap}
+                >
+                    {Array.from({ length: defaultDSCardsWrapperProps.cardsCount }).map((_, i) => (
+                        <DSCard
+                            key={i}
+                            imageName={templateDSCardNames[0]}
+                            title={`Card ${i + 1}`}
+                            label="Card label"
+                            linkedText="More"
+                            action={() => alert(`Card ${i + 1}`)}
+                            backgroundColor="#FFFFFF"
+                            minWidth="270px"
+                            sxText={defaultDSCardSX}
+                        />
+                    ))}
+                </DSCardsWrapper>
+            ),
         },
-        documentation: <></>,
+        documentation: <DocDSCardsWrapper />,
     },
     {
         name: "Card List",
