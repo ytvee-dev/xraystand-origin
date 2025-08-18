@@ -1,5 +1,4 @@
 import {type ReactElement} from "react";
-import {type TBackgroundColors} from "@components/common/Alerts/FlexibleAlert";
 import DSNotification from "@components/common/DSNotification";
 import "./style.css";
 
@@ -20,7 +19,7 @@ export interface ILargeCardColorScheme {
     titleColor?: string,
     subtitleColor?: string;
     descriptionColor?: string;
-    notificationBackgroundColor?: TBackgroundColors;
+    notificationBackgroundColor?: string;
     notificationTextColor?: string;
     notificationIconColor?: string;
 }

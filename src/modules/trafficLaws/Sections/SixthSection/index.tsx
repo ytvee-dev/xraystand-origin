@@ -1,7 +1,7 @@
 import {type ReactElement} from "react";
 import type {TContentItem} from "@utils/types/trafficLawsTypes";
 import ContentSection from "@components/common/Sections/DSContentSection";
-import DefaultCardsListOL from "@components/common/Cards/DefaultCardsListOL";
+import DefaultCardsListOL from "@modules/trafficLaws/components/DefaultCardsListOL";
 import usePageImagesIds from "@hooks/usePageImagesIds";
 import {Languages, PageIds} from "@domains/Translate";
 import {useSelector} from "react-redux";

@@ -42,7 +42,6 @@ const ComponentsPage = (): ReactElement => {
 
     const handleClick = (index: number): void => {
         setCurrentComponent(componentsLibrary[index]);
-        console.log(currentComponent)
     };
 
     return (

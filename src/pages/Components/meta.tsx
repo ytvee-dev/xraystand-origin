@@ -1,41 +1,42 @@
+// ========== COMMON COMPONENTS ==========
+import Header from "@components/common/Header";
+import Footer from "@components/common/Footers/StrictFooter";
+
 import DSCard from "@components/common/Cards/DSCard";
 import DSInformationCard from "@components/common/Cards/DSInformationCard";
+import LargeCard from "@components/common/Cards/LargeCard";
 import DSNotification from "@components/common/DSNotification";
 import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
 import DSContentBlock from "@components/common/DSContentBlock";
+import ContentSection from "@components/common/Sections/DSContentSection";
 
+// ========== DOCS ==========
 import DocDSCard from "@components/common/Cards/DSCard/DocDSCard.mdx";
 import DocDSInformationCard from "@components/common/Cards/DSInformationCard/DocDSInformationCard.mdx";
 import DocDSNotification from "@components/common/DSNotification/DocDSNotification.mdx";
 import DocDSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper/DocDSCardsWrapper.mdx";
 import DocDSContentBlock from "@components/common/DSContentBlock/DocDSContentBlock.mdx";
 
-import {defaultDSCardSX, templateDSCardNames} from "@components/common/Cards/cardsMeta.tsx";
-import {defaultFooterSX, FooterPlayground, strictFooterMeta} from "@pages/Components/stories/footer";
-import Footer from "@components/common/Footers/StrictFooter";
+// ========== META / CONFIG ==========
+import { defaultDSCardSX, templateDSCardNames } from "@components/common/Cards/cardsMeta.tsx";
+import { defaultFooterSX, FooterPlayground, strictFooterMeta } from "@pages/Components/stories/footer";
 
-import {
-    ContentBlockPlayground,
-    defaultContentBlockColorScheme,
-    defaultContentBlockProps,
-} from "@pages/Components/stories/ContentBlock";
-
-import Header from "@components/common/Header";
+// ========== PLAYGROUNDS ==========
 import { HeaderPlayground } from "@pages/Components/stories/Header";
 import { DSCardPlayground, defaultDSCardProps } from "@pages/Components/stories/Card";
-import {DSCardsWrapperPlayground, defaultDSCardsWrapperProps} from "@pages/Components/stories/CardsWrapper";
-import {DSInformationCardPlayground, defaultDSInformationCardProps} from "@pages/Components/stories/InformationCard";
+import { DSInformationCardPlayground, defaultDSInformationCardProps } from "@pages/Components/stories/InformationCard";
+import { LargeCardPlayground, defaultLargeCardProps, defaultLargeCardColorScheme } from "@pages/Components/stories/LargeCard";
+import { DSNotificationPlayground } from "@pages/Components/stories/Notification";
+import { DSCardsWrapperPlayground, defaultDSCardsWrapperProps } from "@pages/Components/stories/CardsWrapper";
 import {
-    defaultLargeCardColorScheme,
-    defaultLargeCardProps,
-    LargeCardPlayground
-} from "@pages/Components/stories/LargeCard";
-import LargeCard from "@components/common/Cards/LargeCard";
-import {DSNotificationPlayground} from "@pages/Components/stories/Notification";
-import {FlexibleModalPlayground} from "@pages/Components/stories/FlexibleModal";
-import {ContentSectionPlayground, defaultContentSectionProps} from "@pages/Components/stories/ContentSection";
-import ContentSection from "@components/common/Sections/DSContentSection";
-import {TwoColumnSectionPlayground} from "@pages/Components/stories/TwoColumnSection";
+    ContentBlockPlayground,
+    defaultContentBlockProps,
+    defaultContentBlockColorScheme,
+} from "@pages/Components/stories/ContentBlock";
+import { FlexibleModalPlayground } from "@pages/Components/stories/FlexibleModal";
+import { ContentSectionPlayground, defaultContentSectionProps } from "@pages/Components/stories/ContentSection";
+import { TwoColumnSectionPlayground } from "@pages/Components/stories/TwoColumnSection";
+
 
 export const componentsLibrary = [
     {

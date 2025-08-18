@@ -1,5 +1,4 @@
 import {type ReactElement, type ReactNode} from "react";
-import {type TBackgroundColors} from "@components/common/Alerts/FlexibleAlert";
 import DSNotification from "@components/common/DSNotification";
 import "./style.css";
 
@@ -12,8 +11,8 @@ export interface DSContentBlockColorScheme {
     titleColor?: string;
     subtitleColor?: string;
     descriptionColor?: string;
-    notificationBackgroundColor?: TBackgroundColors | string;
-    notificationBorderColor?: TBackgroundColors | string;
+    notificationBackgroundColor?: string;
+    notificationBorderColor?: string;
     notificationTextColor?: string;
     notificationIconColor?: string;
 }

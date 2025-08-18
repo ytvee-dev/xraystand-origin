@@ -15,7 +15,7 @@ import EighthSection from "@modules/trafficLaws/Sections/EighthSection";
 import NinthSection from "@modules/trafficLaws/Sections/NinthSection";
 import CoverSection from "@modules/trafficLaws/Sections/CoverSection";
 import FlexibleModal from "@components/common/Modal/FlexibleModal";
-import DefaultImageCard from "@components/common/Cards/DefaultImageCard";
+import DefaultImageCard from "@modules/trafficLaws/components/DefaultImageCard";
 import "./style.css";
 
 const modalPolicemanImagesPaths: Record<string, string[]> = {

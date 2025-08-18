@@ -1,14 +1,14 @@
 import {type ReactElement} from "react";
 import type {TContentItem} from "@utils/types/trafficLawsTypes";
-import {getCardProps} from "@components/common/Cards/DefaultCardsListOL/meta.ts";
-import DefaultImageCard from "@components/common/Cards/DefaultImageCard";
+import {getCardProps} from "@modules/trafficLaws/components/DefaultCardsListOL/meta.ts";
+import DefaultImageCard from "@modules/trafficLaws/components/DefaultImageCard";
 import {useDispatch, useSelector} from "react-redux";
 import {setModalContentName} from "@store/slices/TrafficLawsPage";
 import {setIsModalOpened} from "@store/slices/Application";
 import useWindowWidth from "@hooks/useScreenWidth.ts";
-import "./style.css";
 import {Languages} from "@domains/Translate";
 import type {TRootState} from "@store/index.ts";
+import "./style.css";
 
 export interface IContentCardsContainerProps {
     content: TContentItem[];
