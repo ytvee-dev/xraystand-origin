@@ -31,6 +31,7 @@ import {
     LargeCardPlayground
 } from "@pages/Components/stories/LargeCard";
 import LargeCard from "@components/common/Cards/LargeCard";
+import {DSNotificationPlayground} from "@pages/Components/stories/Notification";
 
 export const componentsLibrary = [
     {
@@ -132,7 +133,7 @@ export const componentsLibrary = [
     {
         name: "Notification",
         category: "Alerts",
-        component: <DSNotification />,
+        component: <DSNotificationPlayground />,
         variants: {
             default: (
                 <DSNotification
