@@ -22,6 +22,7 @@ import {
 
 import Header from "@components/common/Header";
 import { HeaderPlayground } from "@pages/Components/stories/Header";
+import { DSCardPlayground, defaultDSCardProps } from "@pages/Components/stories/Card";
 
 export const componentsLibrary = [
     {
@@ -63,17 +64,19 @@ export const componentsLibrary = [
     {
         name: "Card",
         category: "Cards",
-        component: <DSCard />,
+        component: <DSCardPlayground />,
         variants: {
             default: (
                 <DSCard
                     imageName={templateDSCardNames[0]}
-                    title="Card title"
-                    label="Card label"
-                    linkedText="Linked text"
-                    action={() => alert("click")}
-                    backgroundColor="#FFFFFF"
-                    minWidth="270px"
+                    title={defaultDSCardProps.title}
+                    label={defaultDSCardProps.label}
+                    linkedText={defaultDSCardProps.linkedText}
+                    action={defaultDSCardProps.action}
+                    backgroundColor={defaultDSCardProps.backgroundColor}
+                    minWidth={defaultDSCardProps.minWidth}
+                    maxWidth={defaultDSCardProps.maxWidth}
+                    imageHeight={defaultDSCardProps.imageHeight}
                     sxText={defaultDSCardSX}
                 />
             ),
