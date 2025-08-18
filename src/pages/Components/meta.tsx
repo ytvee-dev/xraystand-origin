@@ -32,6 +32,7 @@ import {
 } from "@pages/Components/stories/LargeCard";
 import LargeCard from "@components/common/Cards/LargeCard";
 import {DSNotificationPlayground} from "@pages/Components/stories/Notification";
+import {FlexibleModalPlayground} from "@pages/Components/stories/FlexibleModal";
 
 export const componentsLibrary = [
     {
@@ -153,7 +154,7 @@ export const componentsLibrary = [
     {
         name: "Scrollable Modal",
         category: "Modals",
-        component: <>Scrollable Modal</>,
+        component: <FlexibleModalPlayground />,
         variants: {
             default: <>Scrollable Modal</>,
         },
