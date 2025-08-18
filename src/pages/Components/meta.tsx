@@ -24,6 +24,7 @@ import Header from "@components/common/Header";
 import { HeaderPlayground } from "@pages/Components/stories/Header";
 import { DSCardPlayground, defaultDSCardProps } from "@pages/Components/stories/Card";
 import {DSCardsWrapperPlayground, defaultDSCardsWrapperProps} from "@pages/Components/stories/CardsWrapper";
+import {DSInformationCardPlayground, defaultDSInformationCardProps} from "@pages/Components/stories/InformationCard";
 
 export const componentsLibrary = [
     {
@@ -87,16 +88,18 @@ export const componentsLibrary = [
     {
         name: "Info Card",
         category: "Cards",
-        component: <DSInformationCard />,
+        component: <DSInformationCardPlayground />,
         variants: {
             default: (
                 <DSInformationCard
-                    title="Заголовок"
-                    liOptions={["Card option 1", "Card option 2", "Card option 3"]}
-                    action={() => alert("click")}
-                    backgroundColor="#FFFFFF"
-                    width="270px"
-                    sxText={defaultDSCardSX}
+                    marker={defaultDSInformationCardProps.marker}
+                    title={defaultDSInformationCardProps.title}
+                    liOptions={defaultDSInformationCardProps.liOptions}
+                    action={defaultDSInformationCardProps.action}
+                    backgroundColor={defaultDSInformationCardProps.backgroundColor}
+                    width={defaultDSInformationCardProps.width}
+                    sxText={defaultDSInformationCardProps.sxText}
+                    sxContent={defaultDSInformationCardProps.sxContent}
                 />
             ),
         },
