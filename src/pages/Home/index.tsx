@@ -10,6 +10,10 @@ const HomePage = (): ReactElement => {
             <p><Link to={"/chemistry"}>Химия</Link></p>
             <p><Link to={"/ruslit"}>Русская литература</Link></p>
             <p><Link to={"/kazakhadebiet"}>Казахская литература</Link></p>
+            <p><Link to={"/mathematics"}>Математика</Link></p>
+            <p><Link to={"/nutrition"}>Правильное питание</Link></p>
+            <p><Link to={"/safetyPrecautions"}>Техника безопасности в кабинетах</Link></p>
+
             <p><Link to={"/components"}>Компоненты</Link></p>
         </div>
     );

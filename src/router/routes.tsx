@@ -1,12 +1,15 @@
+import { type RouteObject } from "react-router";
 import HomePage from "@pages/Home";
 import NotFoundPage from "@pages/NotFound";
 import TrafficsLawsPage from "@pages/TrafficsLaws";
 import KazakhAdebiet from "@pages/KazakhAdebiet";
-// import InProgress from "@pages/InProgress";
-import { type RouteObject } from "react-router";
+import InProgress from "@pages/InProgress";
 import Chemistry from "@pages/Chemistry";
 import ComponentsPage from "@pages/Components";
 import RusLit from "@pages/RusLit";
+import Nutrition from "@pages/Nutrition";
+// import Mathematics from "@pages/Mathematics";
+// import SafetyPrecautions from "@pages/SafetyPrecautions";
 
 export const paths = {
     HOME: {
@@ -28,6 +31,18 @@ export const paths = {
     KAZAKH_ADEBIET: {
         id: "kazakhAdebietPage",
         path: "/kazakhadebiet",
+    },
+    MATH: {
+        id: "mathPage",
+        path: "/mathematics",
+    },
+    NUTRITION: {
+        id: "nutritionPage",
+        path: "/nutrition",
+    },
+    SAFETY_PRECAUTIONS: {
+        id: "SafetyPrecautionsPage",
+        path: "/safetyPrecautions",
     },
     NOT_FOUND: {
         id: "notFound",
@@ -60,6 +75,21 @@ const routes: RouteObject[] = [
         ...paths.KAZAKH_ADEBIET,
         element: <KazakhAdebiet />,
     },
+    {
+        ...paths.MATH,
+        // element: <Mathematics />,
+        element: <InProgress />,
+    },
+    {
+        ...paths.NUTRITION,
+        element: <Nutrition />,
+    },
+    {
+        ...paths.SAFETY_PRECAUTIONS,
+        // element: <SafetyPrecautions />,
+        element: <InProgress />,
+    },
+
     {
         ...paths.NOT_FOUND,
         element: <NotFoundPage />,
