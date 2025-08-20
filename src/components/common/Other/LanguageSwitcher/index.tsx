@@ -1,5 +1,5 @@
 import {Languages, languageSwitcherOptions} from "@domains/Translate";
-import {type ChangeEvent, type ReactElement} from "react";
+import {type ChangeEvent} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {setLocale} from "@store/slices/Locale";
 import type {TRootState} from "@store/index";
@@ -8,6 +8,10 @@ import {
     LocalStorageKeys,
     type IListItemProps,
 } from "@utils/constants";
+
+interface ILanguageSwitcherProps {
+    color?: string;
+};
 
 const getLocaleLabelByValue = (selectedValue: string): string => {
     const currentLocaleOption: IListItemProps | undefined =
@@ -20,7 +24,7 @@ const getLocaleLabelByValue = (selectedValue: string): string => {
         : currentLocaleOption.label;
 };
 
-const LanguageSwitcher = (): ReactElement => {
+const LanguageSwitcher: React.FC<ILanguageSwitcherProps> = ({color=''}: ILanguageSwitcherProps) => {
     const dispatch = useDispatch();
 
     const currentLocale = useSelector(
@@ -41,11 +45,29 @@ const LanguageSwitcher = (): ReactElement => {
     const isDefaultChecked: boolean = currentLocale === Languages.KAZAKH;
     const currentLocaleLabel: string = getLocaleLabelByValue(currentLocale);
 
+    const styleSX = {
+        "& .MuiSwitch-switchBase": {
+            color: color as string,
+        },
+        "& .MuiSwitch-switchBase.Mui-checked": {
+            color: color as string,
+            "& + .MuiSwitch-track": {
+                backgroundColor: color as string,
+                opacity: 0.5,
+            },
+        },
+        "& .MuiSwitch-track": {
+            backgroundColor: color as string,
+            opacity: 0.3,
+        },
+    };
+
     return (
         <div style={{userSelect: "none"}}>
             <Switch
                 checked={isDefaultChecked}
                 onChange={handleSwitchLanguage}
+                sx={styleSX}
             />
             {currentLocaleLabel}
         </div>

@@ -1,0 +1,38 @@
+.centered-header-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.centered-header-wrapper header {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .centered-application-header {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .centered-application-header {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .centered-application-header-center * {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .centered-application-header {
+        padding: 0 10px;
+    }
+}
