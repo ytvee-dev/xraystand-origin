@@ -24,7 +24,6 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({disabled, strictLangua
     return (
         <div className={`default-layout ${disabled ? "disabled" : ""}`}>
             <CenteredHeader
-                singleLanguage={strictLanguage ? true : false}
                 logo={logo || null}
                 navigation={navigation || null}
             />

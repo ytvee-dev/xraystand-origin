@@ -156,7 +156,7 @@ const TrafficsLawsPage = (): ReactElement => {
     };
 
     return (
-        <DefaultLayout>
+        <DefaultLayout langSwitchColor={'#249FF5'}>
             <div className="traffics-laws-page">
                 <FlexibleModal
                     isModalOpened={isModalOpened}
