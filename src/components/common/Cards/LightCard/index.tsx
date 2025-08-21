@@ -22,6 +22,7 @@ const LightCard = ({
     minWidth = "270px", // XXpx | 100%
     maxWidth = "270px", // XXpx | 100%
     imageHeight = "150px",
+    justifyContent = "flex-start",
     sxText = defaultDSCardSX,
 }: IContentImageCardProps): ReactElement => {
 
@@ -34,7 +35,7 @@ const LightCard = ({
             width: "100%",
             backgroundColor: backgroundColor,
         }}>
-            <CardActionArea onClick={action} sx={{height: "100%"}}>
+            <CardActionArea onClick={action} sx={{height: "100%", justifyContent: justifyContent}}>
 
                 {imageName && (
                     <CardMedia

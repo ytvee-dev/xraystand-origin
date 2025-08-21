@@ -1,11 +1,10 @@
 .light-card {
-    border-radius: 12px;
+    border-radius: 12px !important;
 }
 
 .light-card > button {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .light-card:active,

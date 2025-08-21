@@ -5,11 +5,10 @@
     "centres": "rusLit/backgrounds/centresBg.png"
   },
   "cards": [
-    "rusLit/cards/oldLitra.png",
-    "rusLit/cards/svetska.png",
-    "rusLit/cards/goldCentre.png",
-    "rusLit/cards/silverCentre.png",
-    "rusLit/cards/litra.png"
+    "nutrition/cards/card1.png",
+    "nutrition/cards/card2.png",
+    "nutrition/cards/card3.png",
+    "nutrition/cards/card4.png"
   ],
   "people": {
     "old": [
