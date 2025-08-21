@@ -1,8 +1,8 @@
 {
   "backgrounds": {
-    "cover": "rusLit/backgrounds/coverBg.png",
-    "names": "rusLit/backgrounds/namesBg.png",
-    "centres": "rusLit/backgrounds/centresBg.png"
+    "cover": "nutrition/backgrounds/bg0.png",
+    "firstSection": "nutrition/backgrounds/bg1.png",
+    "secondSection": "nutrition/backgrounds/bg2.png"
   },
   "cards": [
     "nutrition/cards/card1.png",
@@ -10,36 +10,7 @@
     "nutrition/cards/card3.png",
     "nutrition/cards/card4.png"
   ],
-  "people": {
-    "old": [
-      "rusLit/people/monk.png",
-      "rusLit/people/michael.png",
-      "rusLit/people/gavriil.png",
-      "rusLit/people/denis.png",
-      "rusLit/people/nikolay.png"
-    ],
-    "gold": [
-      "rusLit/people/pushkin.png",
-      "rusLit/people/lermontov.png",
-      "rusLit/people/gogol.png",
-      "rusLit/people/tolstoy.png",
-      "rusLit/people/chehov.png",
-      "rusLit/people/dostoevskiy.png"
-    ],
-    "silver": [
-      "rusLit/people/block.png",
-      "rusLit/people/ahmatova.png",
-      "rusLit/people/cvetaeva.png",
-      "rusLit/people/mayakovskiy.png"
-    ],
-    "sssr": [
-      "rusLit/people/bulgakov.png",
-      "rusLit/people/sholohov.png",
-      "rusLit/people/tvardovskiy.png",
-      "rusLit/people/solzhenicin.png"
-    ]
-  },
   "images": {
-    "genres": "rusLit/backgrounds/centresBg.png"
+    "plate": "rusLit/backgrounds/centresBg.png"
   }
 }

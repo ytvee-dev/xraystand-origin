@@ -1,14 +1,17 @@
-import {type ReactElement} from "react";
-
+import React, {type ReactElement} from "react";
+import type {FirstSection as TFirstSection} from "@modules/nutrition/types";
 import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
 import BgContentSection from "@components/common/Sections/BgContentSection";
 import LightCard from "@components/common/Cards/LightCard";
-
-import * as content from "@modules/nutrition/locales/rus.json";
 import * as paths from "@modules/nutrition/locales/paths.json";
+import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
 
-const FirstSection = (): ReactElement => {
-    const backgroundImage = "./public/assets/images/nutrition/backgrounds/bg1.png";
+interface FirstSectionProps {
+    content: { firstSection: TFirstSection };
+}
+
+const FirstSection: React.FC<FirstSectionProps> = ({content}: FirstSectionProps): ReactElement => {
+    const backgroundImage = dsCardImagePathPrefix + paths.backgrounds.firstSection;
 
     return (
         <BgContentSection

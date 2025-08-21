@@ -1,13 +1,12 @@
 import {type ReactElement} from "react";
 import type {TRootState} from "@store/index.ts";
+import type {NutritionLocale} from "@modules/nutrition/types";
 import {useSelector} from "react-redux";
-
 import BrightnessLayout from "@layout/Brightness";
 import NutritionLogo from "@modules/nutrition/components/NutritionLogo";
 import NutritionNav from "@modules/nutrition/components/NutritionNav";
 import FirstSection from "@modules/nutrition/Sections/FirstSection";
 import TitleHeroSection from "@components/common/Sections/TitleHeroSection";
-
 import {Languages} from "@domains/Translate";
 import * as contentRu from "@modules/nutrition/locales/rus.json";
 import * as contentKz from "@modules/nutrition/locales/kaz.json";
@@ -19,8 +18,7 @@ const Nutrition = (): ReactElement => {
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale
     );
-
-    const content = currentLocale === 'ru' ? contentRu : contentKz;
+    const content: NutritionLocale = currentLocale === 'ru' ? contentRu : contentKz;
 
     return (
         <BrightnessLayout
@@ -41,7 +39,7 @@ const Nutrition = (): ReactElement => {
                     labelFontSize: "20px",
                 }}
             />
-            <FirstSection/>
+            <FirstSection content={content} />
         </BrightnessLayout>
     );
 };
