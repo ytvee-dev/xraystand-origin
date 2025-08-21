@@ -10,10 +10,11 @@ import "./style.css";
 export interface IDefaultLayoutProps {
     disabled?: boolean;
     strictLanguage?: "ru" | "kz";
+    langSwitchColor?: string;
     children: ReactElement;
 }
 
-const DefaultLayout = ({ disabled, strictLanguage, children }: IDefaultLayoutProps): ReactElement => {
+const DefaultLayout = ({ disabled, strictLanguage, children, langSwitchColor='' }: IDefaultLayoutProps): ReactElement => {
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale
     );
@@ -21,7 +22,7 @@ const DefaultLayout = ({ disabled, strictLanguage, children }: IDefaultLayoutPro
 
     return (
         <div className={`default-layout ${disabled ? "disabled" : ""}`}>
-            <Header singleLanguage={strictLanguage ? true : false}/>
+            <Header singleLanguage={strictLanguage ? true : false} langSwitchColor={langSwitchColor}/>
 
             <main>{children}</main>
 

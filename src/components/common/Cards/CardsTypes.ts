@@ -1,11 +1,15 @@
 export interface IDefaultCardSxText {
+    fontFamily?: string;
     titleColor?: string;
+    subTitleColor?: string;
     labelColor?: string;
     linkColor?: string;
     imgObjectFit?: string;
     imgPadding?: string;
+    titleFontWeight?: number | string;
     fontWeight?: number | string;
     titleFontSize?: number | string;
+    subTitleFontSize?: number | string;
     labelFontSize?: number | string;
 
 };
@@ -13,6 +17,7 @@ export interface IDefaultCardSxText {
 export interface IContentImageCardProps {
     imageName?: string;
     title?: string;
+    subTitle?: string;
     label?: string;
     linkedText?: string;
     action?: () => void;
@@ -20,11 +25,9 @@ export interface IContentImageCardProps {
     minWidth?: string; // XXpx | 100%
     maxWidth?: string; // XXpx | 100%
     imageHeight?: string; // XXpx | 100%
+    justifyContent?: string; // flex-start | flex-end | space-between
     sxText?: IDefaultCardSxText;
 }
-
-
-
 
 export interface IInformationCardSxContent {
     minHeight?: number | string;

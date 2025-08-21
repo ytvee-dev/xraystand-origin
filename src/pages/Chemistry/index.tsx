@@ -49,7 +49,7 @@ const Chemistry = (): ReactElement => {
     };
 
     return (
-        <DefaultLayout>
+        <DefaultLayout langSwitchColor={'#249FF5'}>
             <CustomContentSection {...sectionMetaTranslation}>
                 <FlexibleModal
                     isModalOpened={isElementModalOpened}

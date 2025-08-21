@@ -1,0 +1,33 @@
+# Component: TwoColumnSection
+
+## Overview
+`TwoColumnSection` — это секционный компонент с двухколоночной структурой.
+Используется для отображения контента, разделенного на **левую** и **правую** части (например, текст и изображение, форма и описание, список и карточки).
+
+---
+
+## Props
+
+### `leftColumn`
+Тип: `ReactNode` **(обязателен)**
+Содержимое левой колонки. Это может быть текст, изображения, карточки или любой JSX-элемент.
+
+### `rightColumn`
+Тип: `ReactNode` **(обязателен)**
+Содержимое правой колонки. Аналогично, принимает любой JSX-элемент.
+
+---
+
+## Usage
+
+```tsx
+import TwoColumnSection from "@components/common/TwoColumnSection";
+
+export default function Example() {
+  return (
+    <TwoColumnSection
+      leftColumn={<div><h2>Левая колонка</h2><p>Описание секции</p></div>}
+      rightColumn={<img src="/assets/example.jpg" alt="Пример" />}
+    />
+  );
+}
