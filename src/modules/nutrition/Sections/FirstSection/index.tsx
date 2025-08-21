@@ -1,11 +1,11 @@
 import {type ReactElement} from "react";
 
-import "./style.css";
-import * as content from "@modules/nutrition/locales/rus.json";
 import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
-import * as paths from "@modules/nutrition/locales/paths.json";
 import BgContentSection from "@components/common/Sections/BgContentSection";
 import LightCard from "@components/common/Cards/LightCard";
+
+import * as content from "@modules/nutrition/locales/rus.json";
+import * as paths from "@modules/nutrition/locales/paths.json";
 
 const FirstSection = (): ReactElement => {
     const backgroundImage = "./public/assets/images/nutrition/backgrounds/bg1.png";

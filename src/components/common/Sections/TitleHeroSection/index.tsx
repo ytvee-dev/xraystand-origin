@@ -1,7 +1,7 @@
 import React, {type ReactElement} from "react";
-import "./style.css";
 import type {IDefaultCardSxText} from "@components/common/Cards/CardsTypes.ts";
 import {defaultSectionSX} from "@components/common/Sections/meta.tsx";
+import "./style.css";
 
 export interface ITitleHeroSectionProps {
     title?: string;
