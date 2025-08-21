@@ -29,9 +29,6 @@ export interface IContentImageCardProps {
     sxText?: IDefaultCardSxText;
 }
 
-
-
-
 export interface IInformationCardSxContent {
     minHeight?: number | string;
     minWidth?: number | string;

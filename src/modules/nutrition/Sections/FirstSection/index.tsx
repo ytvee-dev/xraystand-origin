@@ -8,11 +8,13 @@ import BgContentSection from "@components/common/Sections/BgContentSection";
 import LightCard from "@components/common/Cards/LightCard";
 
 const FirstSection = (): ReactElement => {
+    const backgroundImage = "./public/assets/images/nutrition/backgrounds/bg1.png";
+
     return (
         <BgContentSection
             textData={content.firstSection}
             sectionName={'nutrition-first-section'}
-            backgroundImage={'./public/assets/images/nutrition/backgrounds/bg3.png'}
+            backgroundImage={backgroundImage}
             strictHeight={true}
         >
             <DSCardsWrapper
