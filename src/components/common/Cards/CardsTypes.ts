@@ -1,11 +1,13 @@
 export interface IDefaultCardSxText {
     titleColor?: string;
+    subTitleColor?: string;
     labelColor?: string;
     linkColor?: string;
     imgObjectFit?: string;
     imgPadding?: string;
     fontWeight?: number | string;
     titleFontSize?: number | string;
+    subTitleFontSize?: number | string;
     labelFontSize?: number | string;
 
 };
@@ -13,6 +15,7 @@ export interface IDefaultCardSxText {
 export interface IContentImageCardProps {
     imageName?: string;
     title?: string;
+    subTitle?: string;
     label?: string;
     linkedText?: string;
     action?: () => void;

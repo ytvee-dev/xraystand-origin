@@ -1,0 +1,15 @@
+.light-card {
+    border-radius: 12px;
+}
+
+.light-card > button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.light-card:active,
+.light-card:hover {
+    transform: translateY(-4px);
+    transition: all 0.2s ease-out;
+}
