@@ -1,5 +1,3 @@
-// @modules/nutrition/types.ts
-
 export interface ColorScheme {
     background: string;
     text: string;
