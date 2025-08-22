@@ -7,6 +7,8 @@ import NutritionLogo from "@modules/nutrition/components/NutritionLogo";
 import NutritionNav from "@modules/nutrition/components/NutritionNav";
 import FirstSection from "@modules/nutrition/Sections/FirstSection";
 import TitleHeroSection from "@components/common/Sections/TitleHeroSection";
+import SecondSection from "@modules/nutrition/Sections/SecondSection";
+import ThirdSection from "@modules/nutrition/Sections/ThirdSection";
 import {Languages} from "@domains/Translate";
 import * as contentRu from "@modules/nutrition/locales/rus.json";
 import * as contentKz from "@modules/nutrition/locales/kaz.json";
@@ -40,6 +42,8 @@ const Nutrition = (): ReactElement => {
                 }}
             />
             <FirstSection content={content} />
+            <SecondSection content={content} />
+            <ThirdSection content={content} />
         </BrightnessLayout>
     );
 };
