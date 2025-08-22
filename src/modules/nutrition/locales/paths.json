@@ -2,13 +2,16 @@
   "backgrounds": {
     "cover": "nutrition/backgrounds/bg0.png",
     "firstSection": "nutrition/backgrounds/bg1.png",
-    "secondSection": "nutrition/backgrounds/bg2.png"
+    "secondSection": "nutrition/backgrounds/bg2.png",
+    "thirdSection": "nutrition/backgrounds/bg3.png"
   },
   "cards": [
     "nutrition/cards/card1.png",
     "nutrition/cards/card2.png",
     "nutrition/cards/card3.png",
-    "nutrition/cards/card4.png"
+    "nutrition/cards/card4.png",
+    "nutrition/cards/card5.png",
+    "nutrition/cards/card6.png"
   ],
   "images": {
     "plate": "rusLit/backgrounds/centresBg.png"
