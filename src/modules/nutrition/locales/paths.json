@@ -3,7 +3,9 @@
     "cover": "nutrition/backgrounds/bg0.png",
     "firstSection": "nutrition/backgrounds/bg1.png",
     "secondSection": "nutrition/backgrounds/bg2.png",
-    "thirdSection": "nutrition/backgrounds/bg3.png"
+    "thirdSection": "nutrition/backgrounds/bg3.png",
+    "fourthSection": "nutrition/backgrounds/bg3.png",
+    "fifthSection": "nutrition/backgrounds/bg4.png"
   },
   "cards": [
     "nutrition/cards/card1.png",

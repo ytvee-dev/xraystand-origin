@@ -1,11 +1,9 @@
 import React, {type ReactElement} from "react";
 import type {SecondSection as TSecondSection} from "@modules/nutrition/types";
-// import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
-import BgContentSection from "@components/common/Sections/BgContentSection";
-// import LightCard from "@components/common/Cards/LightCard";
-import * as paths from "@modules/nutrition/locales/paths.json";
-import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
 import CirclePlate from "@modules/nutrition/components/CirclePlate";
+import BgContentSection from "@components/common/Sections/BgContentSection";
+import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
+import * as paths from "@modules/nutrition/locales/paths.json";
 import "./style.css";
 
 interface SecondSectionProps {
