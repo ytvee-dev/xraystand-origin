@@ -5,6 +5,7 @@ import BgContentSection from "@components/common/Sections/BgContentSection";
 import LightCard from "@components/common/Cards/LightCard";
 import * as paths from "@modules/nutrition/locales/paths.json";
 import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
+import "./style.css";
 
 interface FirstSectionProps {
     content: { firstSection: TFirstSection };

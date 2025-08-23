@@ -5,6 +5,8 @@ import BgContentSection from "@components/common/Sections/BgContentSection";
 // import LightCard from "@components/common/Cards/LightCard";
 import * as paths from "@modules/nutrition/locales/paths.json";
 import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
+import CirclePlate from "@modules/nutrition/components/CirclePlate";
+import "./style.css";
 
 interface SecondSectionProps {
     content: { secondSection: TSecondSection };
@@ -20,6 +22,7 @@ const SecondSection: React.FC<SecondSectionProps> = ({content}: SecondSectionPro
             backgroundImage={backgroundImage}
             strictHeight={true}
         >
+            <CirclePlate content={content.secondSection.content} />
         </BgContentSection>
     );
 };

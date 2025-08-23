@@ -24,12 +24,13 @@ const LightCard = ({
     imageHeight = "150px",
     justifyContent = "flex-start",
     sxText = defaultDSCardSX,
+    classes='',
 }: IContentImageCardProps): ReactElement => {
 
     const imagePath = dsCardImagePathPrefix + imageName;
 
     return (
-        <Card className={'light-card'} sx={{
+        <Card className={`light-card ${classes}`} sx={{
             minWidth: minWidth,
             maxWidth: maxWidth,
             width: "100%",

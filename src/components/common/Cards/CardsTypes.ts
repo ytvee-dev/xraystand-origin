@@ -41,6 +41,7 @@ export interface IContentImageCardProps {
     imageHeight?: string; // XXpx | 100%
     justifyContent?: string; // flex-start | flex-end | space-between
     sxText?: IDefaultCardSxText;
+    classes?: string;
 }
 
 export interface INestedCardProps {

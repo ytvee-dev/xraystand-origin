@@ -14,6 +14,6 @@
     "nutrition/cards/card6.png"
   ],
   "images": {
-    "plate": "rusLit/backgrounds/centresBg.png"
+    "plate": "nutrition/plate.png"
   }
 }
