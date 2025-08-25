@@ -1,4 +1,4 @@
-import {type ReactElement} from "react";
+import React, {type ReactElement} from "react";
 import type {TRootState} from "@store/index.ts";
 import type {NutritionLocale} from "@modules/nutrition/types";
 import {useSelector} from "react-redux";
@@ -9,15 +9,16 @@ import FirstSection from "@modules/nutrition/Sections/FirstSection";
 import TitleHeroSection from "@components/common/Sections/TitleHeroSection";
 import SecondSection from "@modules/nutrition/Sections/SecondSection";
 import ThirdSection from "@modules/nutrition/Sections/ThirdSection";
+import FourthSection from "@modules/nutrition/Sections/FourthSection";
+import FifthSection from "@modules/nutrition/Sections/FifthSection";
 import {Languages} from "@domains/Translate";
 import * as contentRu from "@modules/nutrition/locales/rus.json";
 import * as contentKz from "@modules/nutrition/locales/kaz.json";
 import "./style.css";
-import FourthSection from "@modules/nutrition/Sections/FourthSection";
 
 const heroSectionBgColor = "linear-gradient(90deg, rgba(168, 224, 99, 0.8) 0%, rgba(86, 171, 47, 0.8) 100%), linear-gradient(90deg, rgba(245, 245, 245, 1) 0%, rgba(212, 212, 212, 1) 100%)";
 
-const Nutrition = (): ReactElement => {
+const Nutrition: React.FC = (): ReactElement => {
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale
     );
@@ -46,6 +47,7 @@ const Nutrition = (): ReactElement => {
             <SecondSection content={content} />
             <ThirdSection content={content} />
             <FourthSection content={content} />
+            <FifthSection content={content} />
         </BrightnessLayout>
     );
 };

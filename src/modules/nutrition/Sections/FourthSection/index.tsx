@@ -1,12 +1,11 @@
 import React, {type ReactElement} from "react";
 import type {FourthSection as TFourthSection} from "@modules/nutrition/types";
-// import useScreenWidth from "@hooks/useScreenWidth.ts";
 import BgContentSection from "@components/common/Sections/BgContentSection";
 import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
+import IconTextItem from "@components/common/Other/IconTextItem";
 import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
 import * as paths from "@modules/nutrition/locales/paths.json";
 import "./style.css";
-import IconTextItem from "@components/common/Other/IconTextItem";
 
 interface FourthSectionProps {
     content: { fourthSection: TFourthSection };
@@ -21,7 +20,6 @@ const FourthSection: React.FC<FourthSectionProps> = ({content}: FourthSectionPro
         "eggs",
         "water",
     ];
-    // const screenWidth = useScreenWidth();
 
     return (
         <BgContentSection
