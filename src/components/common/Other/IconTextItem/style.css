@@ -1,0 +1,46 @@
+.icon-text-item h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.icon-text-item {
+    max-width: 560px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+
+.icon-text-item h3,
+.icon-text-item span {
+    font-family: Roboto;
+}
+
+.icon-text-item h3 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.icon-text-item span {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.icon-text-item img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.icon-text-item-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .icon-text-item {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+

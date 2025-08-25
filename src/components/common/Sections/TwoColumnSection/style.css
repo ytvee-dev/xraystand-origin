@@ -22,7 +22,7 @@
     align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 687px) {
     .columns-container {
         justify-content: center;
         flex-wrap: wrap;

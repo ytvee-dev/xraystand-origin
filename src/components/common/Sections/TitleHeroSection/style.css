@@ -7,16 +7,26 @@
 }
 
 .title-hero-section {
+    padding-top: 8%;
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     height: 600px;
+}
+
+.title-hero-section img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .title-hero-text {
     max-width: 650px;
     padding: 0 14px;
     text-align: center;
+    z-index: 10;
 }
 
 .title-hero-text p {

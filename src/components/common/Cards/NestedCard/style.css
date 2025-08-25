@@ -1,0 +1,48 @@
+.nested-card h1,
+.nested-card h2,
+.nested-card h3,
+.nested-card h4,
+.nested-card h5,
+.nested-card p {
+    padding: 0;
+    margin: 0;
+}
+
+.nested-card {
+    border-radius: 12px !important;
+}
+
+/*.nested-card > button {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+.nested-card-box:active,
+.nested-card-box:hover,
+.nested-card:active,
+.nested-card:hover {
+    transform: translateY(-4px);
+    transition: all 0.2s ease-out;
+}
+
+.nested-cards-container {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nested-card-box {
+    padding: 8px;
+    background-color: #75A1E4;
+    border-radius: 8px;
+    font-family: Roboto;
+}
+
+.nested-card-box h5 {
+    padding-bottom: 10px;
+}
+
+.nested-card-box p {
+    font-size: 12px;
+}

@@ -1,4 +1,4 @@
-import type {IDefaultCardSxText} from "@components/common/Cards/CardsTypes.ts";
+import type {IDefaultCardSxText, INestedCardSx} from "@components/common/Cards/CardsTypes.ts";
 
 export const dsCardImagePathPrefixTemplate = './public/assets/ds-system/cards/';
 export const dsCardImagePathPrefix = './assets/images/';
@@ -15,6 +15,19 @@ export const defaultDSCardSX: IDefaultCardSxText = {
     subTitleColor: "rgba(0,0,0,1)",
     labelColor: "rgba(0,0,0,0.6)",
     linkColor: "#3870C9",
+    imgObjectFit: "none",
+    imgPadding: "0",
+    fontWeight: 500,
+    titleFontSize: "32px",
+    subTitleFontSize: "26px",
+    labelFontSize: "16px",
+};
+
+export const nestedDSCardSX: INestedCardSx = {
+    titleColor: "rgba(0,0,0,1)",
+    subTitleColor: "rgba(0,0,0,1)",
+    labelColor: "rgba(0,0,0,0.6)",
+    backgroundColor: "grey",
     imgObjectFit: "none",
     imgPadding: "0",
     fontWeight: 500,
