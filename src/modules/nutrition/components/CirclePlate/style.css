@@ -4,6 +4,7 @@
 }
 
 .circle-plate {
+    width: 100%;
     padding: 16px;
     position: relative;
     max-width: 656px;
@@ -86,7 +87,7 @@
 .description-blocks {
     position: absolute;
     top: 0;
-    width: 100%;
+    left: 10%;
     height: 100%;
 }
 
