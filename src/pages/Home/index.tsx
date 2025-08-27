@@ -15,15 +15,15 @@ const HomePage = (): ReactElement => {
                     <p><Link to={"/chemistry"}>Химия</Link></p>
                     <p><Link to={"/ruslit"}>Русская литература</Link></p>
                     <p><Link to={"/kazakhadebiet"}>Казахская литература</Link></p>
-                    <p><Link to={"/nutrition"}>Правильное питание</Link></p>
+                    <p><Link to={"/healthyfood"}>Правильное питание</Link></p>
 
                 </div>
 
                 <div className="unfinished">
                     <h2>В процессе</h2>
-                    <p><Link to={"/mathematics"}>Математика</Link></p>
-                    <p><Link to={"/safetyPrecautions"}>Техника безопасности в кабинетах</Link></p>
-                    <p><Link to={"/kazMusic"}>Музыка (каз нац инструменты)</Link></p>
+                    <p><Link to={"/math"}>Математика</Link></p>
+                    <p><Link to={"/classroomsafety"}>Техника безопасности в кабинетах</Link></p>
+                    <p><Link to={"/kazmusicinstr"}>Музыка (каз нац инструменты)</Link></p>
                 </div>
 
                 <div className="other">

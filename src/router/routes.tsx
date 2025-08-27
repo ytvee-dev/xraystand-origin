@@ -10,6 +10,7 @@ import RusLit from "@pages/RusLit";
 import Nutrition from "@pages/Nutrition";
 // import Mathematics from "@pages/Mathematics";
 // import SafetyPrecautions from "@pages/SafetyPrecautions";
+// import KazMusic from "@pages/KazMusic";
 
 export const paths = {
     HOME: {
@@ -34,19 +35,19 @@ export const paths = {
     },
     MATH: {
         id: "mathPage",
-        path: "/mathematics",
+        path: "/math",
     },
     NUTRITION: {
         id: "nutritionPage",
-        path: "/nutrition",
+        path: "/healthyfood",
     },
     SAFETY_PRECAUTIONS: {
         id: "safetyPrecautionsPage",
-        path: "/safetyPrecautions",
+        path: "/classroomsafety",
     },
     KAZ_MUSIC: {
         id: "kazMusic",
-        path: "/kazMusic",
+        path: "/kazmusicinstr",
     },
     NOT_FOUND: {
         id: "notFound",
