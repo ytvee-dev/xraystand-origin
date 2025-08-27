@@ -16,6 +16,11 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({content}: ThirdSectionProps)
     const backgroundImage = dsCardImagePathPrefix + paths.backgrounds.thirdSection;
     const screenWidth = useScreenWidth();
 
+    const [leftItems, rightItems] = React.useMemo(() => {
+        const items = content.thirdSection.content ?? [];
+        return [items.slice(0, 5), items.slice(5)];
+    }, [content.thirdSection.content]);
+
     return (
         <BgContentSection
             textData={content.thirdSection}
@@ -28,7 +33,7 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({content}: ThirdSectionProps)
                     <NestedCard
                         imageName={paths.cards[4]}
                         title={'Полезные продукты'}
-                        nestedCards={content.thirdSection.content.splice(0,5)}
+                        nestedCards={leftItems}
                         minWidth={'361px'}
                         maxWidth={'568px'}
                         imageHeight={screenWidth < 768 ? '188px' : '316px'}
@@ -49,7 +54,7 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({content}: ThirdSectionProps)
                     <NestedCard
                         imageName={paths.cards[4]}
                         title={'Нежелательные продукты'}
-                        nestedCards={content.thirdSection.content}
+                        nestedCards={rightItems}
                         minWidth={'361px'}
                         maxWidth={'568px'}
                         imageHeight={screenWidth < 768 ? '188px' : '316px'}

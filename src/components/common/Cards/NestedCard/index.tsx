@@ -63,8 +63,9 @@ const NestedCard = ({
 
                     {nestedCards && (
                         <div className="nested-cards-container">
-                            {nestedCards.map((nestedCard) => (
+                            {nestedCards.map((nestedCard, indx: number) => (
                                 <div
+                                    key={`${nestedCard.title}-${indx}`}
                                     className="nested-card-box"
                                     style={{
                                         fontFamily: sxNestedCards.fontFamily,
