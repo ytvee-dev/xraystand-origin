@@ -2,3 +2,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+@media (max-width: 800px) {
+    .nutrition-first-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

@@ -9,7 +9,7 @@ title-label-item p {
 }
 
 .title-label-item * {
-    font-family: Montserrat;
+    font-family: var(--technical-font);
 }
 
 .title-label-item h3 {
@@ -39,5 +39,5 @@ title-label-item p {
 
 .background-label-item-info *,
 .background-label-item-error * {
-    font-family: Montserrat;
+    font-family: var(--text-font);
 }

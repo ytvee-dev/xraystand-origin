@@ -1,8 +1,9 @@
 .centered-header-wrapper {
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 200;
 }
 
 .centered-header-wrapper header {
@@ -32,6 +33,11 @@
 }
 
 @media screen and (max-width: 600px) {
+    .centered-header-wrapper header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
     .centered-application-header {
         padding: 0 20px;
     }

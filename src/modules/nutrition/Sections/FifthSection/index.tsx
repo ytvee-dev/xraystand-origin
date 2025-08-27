@@ -1,8 +1,9 @@
 import React, {type ReactElement} from "react";
 import type {FifthSection as TFifthSection} from "@modules/nutrition/types";
+import useScreenWidth from "@hooks/useScreenWidth.ts";
 
 import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineItem, {timelineItemClasses} from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
@@ -24,6 +25,8 @@ interface FifthSectionProps {
 
 const NutritionTimeline: React.FC<FifthSectionProps> = ({content}: FifthSectionProps): ReactElement => {
 
+    const screenWidth = useScreenWidth();
+
     const TitleLabel = ({title, label}: { title: string, label: string }) => (
         <div className='title-label-item'>
             <h3>{title}</h3>
@@ -41,23 +44,140 @@ const NutritionTimeline: React.FC<FifthSectionProps> = ({content}: FifthSectionP
         </div>
     );
 
+    // DESKTOP VERSION
+    if (screenWidth > 768) {
+        return (
+            <Timeline position="alternate">
+                <TimelineItem>
+                    <TimelineOppositeContent>
+                        <TitleLabel
+                            title={content.fifthSection.content[0].title}
+                            label={content.fifthSection.content[0].label}
+                        />
+                    </TimelineOppositeContent>
+                    <TimelineSeparator>
+                        <TimelineConnector/>
+                        <TimelineDot color="success">
+                            <EggAltIcon/>
+                        </TimelineDot>
+                        <TimelineConnector/>
+                    </TimelineSeparator>
+                    <TimelineContent sx={{py: '12px', px: 2}}>
+                        <BackgroundLabel
+                            label={content.fifthSection.content[1].label}
+                        />
+                    </TimelineContent>
+                </TimelineItem>
+
+                <TimelineItem>
+                    <TimelineOppositeContent>
+                        <TitleLabel
+                            title={content.fifthSection.content[2].title}
+                            label={content.fifthSection.content[2].label}
+                        />
+                    </TimelineOppositeContent>
+                    <TimelineSeparator>
+                        <TimelineConnector/>
+                        <TimelineDot color="success">
+                            <RiceBowlIcon/>
+                        </TimelineDot>
+                        <TimelineConnector/>
+                    </TimelineSeparator>
+                    <TimelineContent sx={{py: '12px', px: 2, justifyContent: 'flex-end'}}>
+                        <BackgroundLabel
+                            label={content.fifthSection.content[3].label}
+                            sx={{marginLeft: 'auto'}}
+                        />
+                    </TimelineContent>
+                </TimelineItem>
+
+                <TimelineItem>
+                    <TimelineOppositeContent>
+                        <TitleLabel
+                            title={content.fifthSection.content[4].title}
+                            label={content.fifthSection.content[4].label}
+                        />
+                    </TimelineOppositeContent>
+                    <TimelineSeparator>
+                        <TimelineConnector/>
+                        <TimelineDot color="success">
+                            <RamenDiningIcon/>
+                        </TimelineDot>
+                        <TimelineConnector/>
+                    </TimelineSeparator>
+                    <TimelineContent sx={{py: '12px', px: 2}}>
+                        <BackgroundLabel
+                            label={content.fifthSection.content[5].label}
+                        />
+                    </TimelineContent>
+                </TimelineItem>
+
+                <TimelineItem>
+                    <TimelineOppositeContent>
+                        <TitleLabel
+                            title={content.fifthSection.content[6].title}
+                            label={content.fifthSection.content[6].label}
+                        />
+                    </TimelineOppositeContent>
+                    <TimelineSeparator>
+                        <TimelineConnector/>
+                        <TimelineDot color="success">
+                            <EmojiFoodBeverageIcon/>
+                        </TimelineDot>
+                        <TimelineConnector/>
+                    </TimelineSeparator>
+                    <TimelineContent sx={{py: '12px', px: 2, justifyContent: 'flex-end'}}>
+                        <BackgroundLabel
+                            label={content.fifthSection.content[7].label}
+                            sx={{marginLeft: 'auto'}}
+                        />
+                    </TimelineContent>
+                </TimelineItem>
+
+                <TimelineItem>
+                    <TimelineOppositeContent>
+                        <TitleLabel
+                            title={content.fifthSection.content[8].title}
+                            label={content.fifthSection.content[8].label}
+                        />
+                    </TimelineOppositeContent>
+                    <TimelineSeparator>
+                        <TimelineConnector/>
+                        <TimelineDot color="success">
+                            <DinnerDiningIcon/>
+                        </TimelineDot>
+                        <TimelineConnector/>
+                    </TimelineSeparator>
+                    <TimelineContent sx={{py: '12px', px: 2}}>
+                        <BackgroundLabel
+                            label={content.fifthSection.content[9].label}
+                            type='error'
+                        />
+                    </TimelineContent>
+                </TimelineItem>
+            </Timeline>
+        );
+    }
+
+    // MOBILE VERSION
     return (
-        <Timeline position="alternate">
+        <Timeline
+            sx={{
+                [`& .${timelineItemClasses.root}:before`]: {
+                    flex: 0,
+                    padding: '0 0 0 10px',
+                },
+            }}
+        >
             <TimelineItem>
-                <TimelineOppositeContent>
-                    <TitleLabel
-                        title={content.fifthSection.content[0].title}
-                        label={content.fifthSection.content[0].label}
-                    />
-                </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineConnector/>
                     <TimelineDot color="success">
                         <EggAltIcon/>
                     </TimelineDot>
                     <TimelineConnector/>
                 </TimelineSeparator>
-                <TimelineContent sx={{py: '12px', px: 2}}>
+                <TimelineContent>
+                    <h3 style={{paddingTop: 10, paddingBottom: 20}}>{content.fifthSection.content[0].title}</h3>
                     <BackgroundLabel
                         label={content.fifthSection.content[1].label}
                     />
@@ -65,42 +185,29 @@ const NutritionTimeline: React.FC<FifthSectionProps> = ({content}: FifthSectionP
             </TimelineItem>
 
             <TimelineItem>
-                <TimelineOppositeContent>
-                    <TitleLabel
-                        title={content.fifthSection.content[2].title}
-                        label={content.fifthSection.content[2].label}
-                    />
-                </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineConnector/>
                     <TimelineDot color="success">
                         <RiceBowlIcon/>
                     </TimelineDot>
                     <TimelineConnector/>
                 </TimelineSeparator>
-                <TimelineContent sx={{py: '12px', px: 2, justifyContent: 'flex-end'}}>
+                <TimelineContent>
+                    <h3 style={{paddingTop: 10, paddingBottom: 20}}>{content.fifthSection.content[2].title}</h3>
                     <BackgroundLabel
                         label={content.fifthSection.content[3].label}
-                        sx={{marginLeft: 'auto'}}
                     />
                 </TimelineContent>
             </TimelineItem>
 
             <TimelineItem>
-                <TimelineOppositeContent>
-                    <TitleLabel
-                        title={content.fifthSection.content[4].title}
-                        label={content.fifthSection.content[4].label}
-                    />
-                </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineConnector/>
                     <TimelineDot color="success">
                         <RamenDiningIcon/>
                     </TimelineDot>
                     <TimelineConnector/>
                 </TimelineSeparator>
-                <TimelineContent sx={{py: '12px', px: 2}}>
+                <TimelineContent>
+                    <h3 style={{paddingTop: 10, paddingBottom: 20}}>{content.fifthSection.content[4].title}</h3>
                     <BackgroundLabel
                         label={content.fifthSection.content[5].label}
                     />
@@ -108,50 +215,38 @@ const NutritionTimeline: React.FC<FifthSectionProps> = ({content}: FifthSectionP
             </TimelineItem>
 
             <TimelineItem>
-                <TimelineOppositeContent>
-                    <TitleLabel
-                        title={content.fifthSection.content[6].title}
-                        label={content.fifthSection.content[6].label}
-                    />
-                </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineConnector/>
                     <TimelineDot color="success">
                         <EmojiFoodBeverageIcon/>
                     </TimelineDot>
                     <TimelineConnector/>
                 </TimelineSeparator>
-                <TimelineContent sx={{py: '12px', px: 2, justifyContent: 'flex-end'}}>
+                <TimelineContent>
+                    <h3 style={{paddingTop: 10, paddingBottom: 20}}>{content.fifthSection.content[6].title}</h3>
                     <BackgroundLabel
                         label={content.fifthSection.content[7].label}
-                        sx={{marginLeft: 'auto'}}
                     />
                 </TimelineContent>
             </TimelineItem>
 
             <TimelineItem>
-                <TimelineOppositeContent>
-                    <TitleLabel
-                        title={content.fifthSection.content[8].title}
-                        label={content.fifthSection.content[8].label}
-                    />
-                </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineConnector/>
                     <TimelineDot color="success">
                         <DinnerDiningIcon/>
                     </TimelineDot>
                     <TimelineConnector/>
                 </TimelineSeparator>
-                <TimelineContent sx={{py: '12px', px: 2}}>
+                <TimelineContent>
+                    <h3 style={{paddingTop: 10, paddingBottom: 20}}>{content.fifthSection.content[8].title}</h3>
                     <BackgroundLabel
                         label={content.fifthSection.content[9].label}
-                        type='error'
                     />
                 </TimelineContent>
             </TimelineItem>
+
         </Timeline>
     );
+
 };
 
 const FifthSection: React.FC<FifthSectionProps> = ({content}: FifthSectionProps): ReactElement => {

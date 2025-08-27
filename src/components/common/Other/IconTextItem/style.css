@@ -13,7 +13,7 @@
 
 .icon-text-item h3,
 .icon-text-item span {
-    font-family: Roboto;
+    font-family: var(--text-font);
 }
 
 .icon-text-item h3 {
@@ -41,6 +41,14 @@
     .icon-text-item {
         flex-direction: column;
         gap: 16px;
+    }
+
+    .icon-text-item-text-wrapper {
+        padding: 0 4%;
+    }
+
+    .icon-text-item-text-wrapper h3 {
+        padding-bottom: 10px;
     }
 }
 

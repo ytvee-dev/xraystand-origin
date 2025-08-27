@@ -41,8 +41,12 @@ export const paths = {
         path: "/nutrition",
     },
     SAFETY_PRECAUTIONS: {
-        id: "SafetyPrecautionsPage",
+        id: "safetyPrecautionsPage",
         path: "/safetyPrecautions",
+    },
+    KAZ_MUSIC: {
+        id: "kazMusic",
+        path: "/kazMusic",
     },
     NOT_FOUND: {
         id: "notFound",
@@ -87,6 +91,11 @@ const routes: RouteObject[] = [
     {
         ...paths.SAFETY_PRECAUTIONS,
         // element: <SafetyPrecautions />,
+        element: <InProgress />,
+    },
+    {
+        ...paths.KAZ_MUSIC,
+        // element: <KazMusic />,
         element: <InProgress />,
     },
 

@@ -31,6 +31,7 @@
 .bg-content-section-description {
     font-weight: 400;
     font-size: 16px;
+    font-family: var(--text-font);
 }
 
 .bg-content-section-content-container {
@@ -38,6 +39,10 @@
     display: flex;
     flex-direction: column;
     gap: 36px;
+}
+
+.bg-content-section-title {
+    font-family: var(--title-font);
 }
 
 @media (max-width: 800px) {

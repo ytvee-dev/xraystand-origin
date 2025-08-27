@@ -13,9 +13,17 @@ export interface IDefaultLayoutProps {
     children: ReactElement | ReactNode;
     logo?: ReactElement | null;
     navigation?: ReactElement | null;
+    stickyHeader?: boolean;
 }
 
-const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({disabled, strictLanguage, children, logo, navigation}: IDefaultLayoutProps) => {
+const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
+    disabled,
+    strictLanguage,
+    children,
+    logo,
+    navigation,
+    stickyHeader=false,
+}: IDefaultLayoutProps) => {
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale
     );
@@ -26,6 +34,7 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({disabled, strictLangua
             <CenteredHeader
                 logo={logo || null}
                 navigation={navigation || null}
+                stickyHeader={stickyHeader}
             />
 
             <main>{children}</main>
