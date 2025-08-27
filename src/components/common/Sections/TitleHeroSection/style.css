@@ -11,7 +11,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    height: 900px;
     overflow: hidden;
 }
 
@@ -26,6 +25,7 @@
 }
 
 .title-hero-text {
+    margin-bottom: 350px;
     max-width: 650px;
     padding: 0 14px;
     text-align: center;
@@ -42,5 +42,13 @@
 @media screen and (max-width: 1190px) {
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+    .title-hero-text {
+        margin-bottom: 200px;
+    }
+
+    .title-hero-text p {
+        margin: auto;
+        max-width: 300px;
+    }
 }

@@ -23,6 +23,7 @@ const HomePage = (): ReactElement => {
                     <h2>В процессе</h2>
                     <p><Link to={"/mathematics"}>Математика</Link></p>
                     <p><Link to={"/safetyPrecautions"}>Техника безопасности в кабинетах</Link></p>
+                    <p><Link to={"/kazMusic"}>Музыка (каз нац инструменты)</Link></p>
                 </div>
 
                 <div className="other">

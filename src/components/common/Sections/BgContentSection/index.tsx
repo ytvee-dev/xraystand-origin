@@ -1,6 +1,7 @@
 import {type ReactElement, type ReactNode} from "react";
 import type {IDefaultCardSxText} from "@components/common/Cards/CardsTypes.ts";
-import {defaultSectionSX} from "@components/common/Sections/meta.tsx";
+import useScreenWidth from "@hooks/useScreenWidth.ts";
+import {defaultMobileSectionSX, defaultSectionSX} from "@components/common/Sections/meta.tsx";
 import "./style.css";
 
 export interface IContentSectionTextData {
@@ -35,6 +36,7 @@ const BgContentSection = ({
         background: "#FFFFFF",
         text: "#000000",
     };
+    const screenWidth = useScreenWidth();
 
     return (
         <section
@@ -54,7 +56,7 @@ const BgContentSection = ({
                         style={{
                             color: colorScheme.text,
                             fontFamily: sxText?.fontFamily,
-                            fontSize: sxText?.titleFontSize,
+                            fontSize: screenWidth > 768 ? sxText?.titleFontSize : defaultMobileSectionSX.titleFontSize,
                             fontWeight: sxText?.titleFontWeight,
                         }}
                     >{textData.title}
@@ -67,7 +69,7 @@ const BgContentSection = ({
                         style={{
                             color: sxText?.subTitleColor,
                             fontFamily: sxText?.fontFamily,
-                            fontSize: sxText?.labelFontSize,
+                            fontSize: screenWidth > 768 ? sxText?.labelFontSize : defaultMobileSectionSX.labelFontSize,
                             fontWeight: sxText?.fontWeight,
                         }}
                     >

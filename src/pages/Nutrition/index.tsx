@@ -2,6 +2,7 @@ import React, {type ReactElement} from "react";
 import type {TRootState} from "@store/index.ts";
 import type {NutritionLocale} from "@modules/nutrition/types";
 import {useSelector} from "react-redux";
+import useScreenWidth from "@hooks/useScreenWidth.ts";
 import BrightnessLayout from "@layout/Brightness";
 import NutritionLogo from "@modules/nutrition/components/NutritionLogo";
 import NutritionNav from "@modules/nutrition/components/NutritionNav";
@@ -19,6 +20,7 @@ import "./style.css";
 const heroSectionBgColor = "linear-gradient(90deg, rgba(168, 224, 99, 0.8) 0%, rgba(86, 171, 47, 0.8) 100%), linear-gradient(90deg, rgba(245, 245, 245, 1) 0%, rgba(212, 212, 212, 1) 100%)";
 
 const Nutrition: React.FC = (): ReactElement => {
+    const screenWidth = useScreenWidth();
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale
     );
@@ -39,8 +41,8 @@ const Nutrition: React.FC = (): ReactElement => {
                     labelColor: "#404040",
                     titleFontWeight: 400,
                     fontWeight: 300,
-                    titleFontSize: "60px",
-                    labelFontSize: "20px",
+                    titleFontSize: screenWidth > 768 ? "60px" : "52px",
+                    labelFontSize: screenWidth > 768 ? "16px" : "20px",
                 }}
             />
             <FirstSection content={content} />

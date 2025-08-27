@@ -1,3 +1,14 @@
+@keyframes fade {
+    from {
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+    to {
+        opacity: 1;
+        transition: all 1s ease-in-out;
+    }
+}
+
 .circle-plate-wrapper {
     width: 100%;
     position: relative;
@@ -85,15 +96,22 @@
 }
 
 .description-blocks {
+    margin: 0 auto;
+    max-width: 1200px;
     position: absolute;
     top: 0;
-    left: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
+
 }
 
 .description-block {
     position: absolute;
     z-index: 10;
+    animation: fade 0.3s ease-in-out;
+    opacity: 1;
 }
 
 .description-block * {
@@ -150,3 +168,21 @@
 .block-top-left * {
     opacity: 1;
 }
+
+
+/*********************/
+/* MOBILE VERSION */
+/*********************/
+
+.mobile-circle-plate-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mobile-description-blocks {
+    display: flex;
+    justify-content: center;
+}
+

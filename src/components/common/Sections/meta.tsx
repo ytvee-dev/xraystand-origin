@@ -12,3 +12,9 @@ export const defaultSectionSX: IDefaultCardSxText = {
     subTitleFontSize: "26px",
     labelFontSize: "16px",
 };
+
+export const defaultMobileSectionSX: IDefaultCardSxText = {
+    titleFontSize: "35px",
+    subTitleFontSize: "16px",
+    labelFontSize: "16px",
+};

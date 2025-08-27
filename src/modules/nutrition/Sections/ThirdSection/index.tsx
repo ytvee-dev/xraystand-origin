@@ -6,6 +6,7 @@ import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
 import NestedCard from "@components/common/Cards/NestedCard";
 import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
 import * as paths from "@modules/nutrition/locales/paths.json";
+import "./style.css";
 
 interface ThirdSectionProps {
     content: { thirdSection: TThirdSection };
