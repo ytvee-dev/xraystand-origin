@@ -1,8 +1,9 @@
 .centered-header-wrapper {
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 200;
 }
 
 .centered-header-wrapper header {

@@ -41,7 +41,7 @@ const FirstSection: React.FC<FirstSectionProps> = ({content}: FirstSectionProps)
                             imgObjectFit: 'cover',
                             titleColor: '#1D1B20',
                             labelColor: '#49454F',
-                            fontWeight: 400,
+                            fontWeight: 600,
                             titleFontSize: '16px',
                             subTitleFontSize: '14px',
                             labelFontSize: '14px',

@@ -26,7 +26,7 @@
 }
 
 .traffic-laws-cover-text-content h1 {
-    font-family: Ubuntu;
+    font-family: var(--title-font);
     font-weight: 700;
     font-size: 60px;
     line-height: 100%;
@@ -39,7 +39,7 @@
 .traffic-laws-cover-text-content h2 {
     margin-top: 12px;
     margin-bottom: 30px;
-    font-family: Ubuntu;
+    font-family: var(--title-font);
     font-weight: 200;
     font-size: 60px;
     line-height: 120%;
@@ -50,7 +50,7 @@
 
 .traffic-laws-cover-text-content h3 {
     max-width: 564px;
-    font-family: Roboto;
+    font-family: var(--text-font);
     font-weight: 400;
     font-size: 24px;
     line-height: 133%;

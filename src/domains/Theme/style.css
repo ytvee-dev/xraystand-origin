@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 @font-face {
     font-family: "Ubuntu";
@@ -66,8 +67,8 @@
     --transition-duration: 0.35s;
 
     --title-font: "Ubuntu", sans-serif;
-    --text-font: "Roboto", sans-serif;;
-    --technical-font: "Montserrat", sans-serif;;
+    --text-font: "Roboto", sans-serif;
+    --technical-font: "Montserrat", sans-serif;
 }
 
 
@@ -87,6 +88,7 @@
 
 html {
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -143,4 +145,9 @@ a, p {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #b0b0b0;
+}
+
+.nutrition-section * {
+    --title-font: "Nunito Sans", sans-serif;
+    --text-font: "Nunito Sans", sans-serif;
 }

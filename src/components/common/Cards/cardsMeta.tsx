@@ -17,7 +17,7 @@ export const defaultDSCardSX: IDefaultCardSxText = {
     linkColor: "#3870C9",
     imgObjectFit: "none",
     imgPadding: "0",
-    fontWeight: 500,
+    fontWeight: 600,
     titleFontSize: "32px",
     subTitleFontSize: "26px",
     labelFontSize: "16px",
