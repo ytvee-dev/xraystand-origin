@@ -37,7 +37,7 @@ const FourthSection: React.FC<FourthSectionProps> = ({content}: FourthSectionPro
                     <div className={'nutrition-fourth-section-items'}>
                         {itemsIcons.map((item) => (
                             <IconTextItem
-                                iconName={`${dsCardImagePathPrefix}nutrition/icons/${item}.png`}
+                                iconName={`${dsCardImagePathPrefix}nutrition/icons/${item}.avif`}
                                 iconType={'png'}
                                 title={content.fourthSection.title}
                                 text={content.fourthSection.description}

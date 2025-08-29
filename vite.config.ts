@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 import mdx from '@mdx-js/rollup';
 import remarkGfm from "remark-gfm";
 import rehypePrism from 'rehype-prism-plus';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 export default defineConfig({
     plugins: [
@@ -17,6 +18,12 @@ export default defineConfig({
         },
         react({
             include: [/\.[jt]sx?$/, /\.mdx?$/]
+        }),
+        visualizer({
+            filename: 'dist/stats.html',
+            open: true,
+            gzipSize: true,
+            brotliSize: true
         })
     ],
     resolve: {
@@ -36,4 +43,15 @@ export default defineConfig({
             "@data": path.resolve(__dirname, "./src/data"),
         },
     },
+    build: {
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    react: ['react', 'react-dom'],
+                    mui: ['@mui/material', '@mui/system', '@emotion/react', '@emotion/styled'],
+                    highlight: ['react-syntax-highlighter', 'highlight.js'],
+                }
+            }
+        }
+    }
 });

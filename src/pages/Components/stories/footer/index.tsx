@@ -1,8 +1,8 @@
 import { useState } from "react";
 import type { IStrictFooterContent } from "@components/common/Footers/StrictFooter/types";
 import Footer from "@components/common/Footers/StrictFooter";
-import madeBySrcLight from "@assets/images/madeByLight.png";
-import madeBySrcDark from "@assets/images/madeByDark.png";
+import madeBySrcLight from "@assets/images/madeByLight.avif";
+import madeBySrcDark from "@assets/images/madeByDark.avif";
 
 export const defaultFooterSX = {
     backgroundColor: "#181818",

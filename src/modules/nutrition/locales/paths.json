@@ -1,21 +1,21 @@
 {
   "backgrounds": {
-    "cover": "nutrition/backgrounds/bg0.png",
-    "firstSection": "nutrition/backgrounds/bg1.png",
-    "secondSection": "nutrition/backgrounds/bg2.png",
-    "thirdSection": "nutrition/backgrounds/bg3.png",
-    "fourthSection": "nutrition/backgrounds/bg3.png",
-    "fifthSection": "nutrition/backgrounds/bg4.png"
+    "cover": "nutrition/backgrounds/bg0.avif",
+    "firstSection": "nutrition/backgrounds/bg1.avif",
+    "secondSection": "nutrition/backgrounds/bg2.avif",
+    "thirdSection": "nutrition/backgrounds/bg3.avif",
+    "fourthSection": "nutrition/backgrounds/bg3.avif",
+    "fifthSection": "nutrition/backgrounds/bg4.avif"
   },
   "cards": [
-    "nutrition/cards/card1.png",
-    "nutrition/cards/card2.png",
-    "nutrition/cards/card3.png",
-    "nutrition/cards/card4.png",
-    "nutrition/cards/card5.png",
-    "nutrition/cards/card6.png"
+    "nutrition/cards/card1.avif",
+    "nutrition/cards/card2.avif",
+    "nutrition/cards/card3.avif",
+    "nutrition/cards/card4.avif",
+    "nutrition/cards/card5.avif",
+    "nutrition/cards/card6.avif"
   ],
   "images": {
-    "plate": "nutrition/plate.png"
+    "plate": "nutrition/plate.avif"
   }
 }

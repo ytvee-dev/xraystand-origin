@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
-import coverImg from '@assets/images/kazakhAdebiet/cover.png';
-import coverMobile from '@assets/images/kazakhAdebiet/coverMobile.png';
+import coverImg from '@assets/images/kazakhAdebiet/cover.avif';
+import coverMobile from '@assets/images/kazakhAdebiet/coverMobile.avif';
 import * as sectionContent from '@modules/kazakhAdebietModule/locales/kaz.json';
 import "./style.css";
 import useWindowWidth from "@hooks/useScreenWidth.ts";

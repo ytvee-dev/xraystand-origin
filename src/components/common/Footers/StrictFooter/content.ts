@@ -1,5 +1,5 @@
-import madeBySrcLight from "@assets/images/madeByLight.png";
-import madeBySrcDark from "@assets/images/madeByDark.png";
+import madeBySrcLight from "@assets/images/madeByLight.avif";
+import madeBySrcDark from "@assets/images/madeByDark.avif";
 import type {IDefaultDarkFooterMeta} from "@components/common/Footers/StrictFooter/types.ts";
 
 export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {

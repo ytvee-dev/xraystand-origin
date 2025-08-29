@@ -23,7 +23,7 @@ const SeventhSection = (): ReactElement | null => {
     return (
         <TwoColumnSection
             leftColumn={
-                <SquareImageViewer path={"/assets/images/trafficLawsPage/pointsman.png"} width={564}/>
+                <SquareImageViewer path={"/assets/images/trafficLawsPage/pointsman.avif"} width={564}/>
             }
             rightColumn={
                 <LargeCard

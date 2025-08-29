@@ -93,7 +93,7 @@ export function DSCardPlayground(): ReactElement {
                     <label>Image name</label>
                     <input
                         type="text"
-                        placeholder="my-image.png"
+                        placeholder="my-image.avif"
                         value={imageName}
                         onChange={(e) => setImageName(e.target.value)}
                     />

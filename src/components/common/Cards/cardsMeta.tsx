@@ -5,9 +5,9 @@ export const dsCardImagePathPrefix = './assets/images/';
 
 export const templateDSCardNames: string[] = [
     "ds-system/cards/ds-card-1.jpg",
-    "ds-card-2.png",
-    "ds-card-3.png",
-    "ds-card-4.png",
+    "ds-card-2.avif",
+    "ds-card-3.avif",
+    "ds-card-4.avif",
 ];
 
 export const defaultDSCardSX: IDefaultCardSxText = {
