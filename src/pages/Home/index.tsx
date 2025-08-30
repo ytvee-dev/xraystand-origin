@@ -1,12 +1,15 @@
 import { type ReactElement } from "react";
 import {Link} from "react-router";
 import './style.css';
+import Spinner from "@components/common/Spinner";
 
 const HomePage = (): ReactElement => {
 
     return(
         <div className="home-page">
             <h1>Home Page</h1>
+
+            <Spinner />
 
             <div className="pages-container">
                 <div className="finished">

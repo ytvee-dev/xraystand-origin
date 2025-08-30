@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import coverImg from '@assets/images/rusLit/backgrounds/coverBg.avif';
+import coverImg from '@assets/images/rusLit/backgrounds/coverBg.png';
 import * as sectionContent from '@modules/rusLitModule/locales/rus.json';
 import "./style.css";
 

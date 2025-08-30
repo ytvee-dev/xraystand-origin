@@ -1,0 +1,38 @@
+.spinner-wrapper {
+    /*width: 100%;*/
+    /*height: 90vh;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*svg {*/
+/*    fill: red;*/
+/*    color: red;*/
+/*}*/
+
+/*!*.animated-icon {*!*/
+/*!*    animation: logo-pulse 2.5s ease-in-out infinite;*!*/
+/*!*}*!*/
+
+/*!*!* чтобы было видно и при hover без анимации *!*!*/
+/*!*.sprite-icon {*!*/
+/*!*    transition: color .35s ease;*!*/
+/*!*}*!*/
+
+/*!*@keyframes logo-pulse {*!*/
+/*!*    0%   { color: #3C3C3B; }*!*/
+/*!*    50%  { color: #56AB2F; }*!*/
+/*!*    100% { color: #3C3C3B; }*!*/
+/*!*}*!*/
+
+/*!*!* вариант без currentColor *!*!*/
+/*!*.animated-icon use {*!*/
+/*!*    animation: fill-pulse 2.5s ease-in-out infinite;*!*/
+/*!*}*!*/
+
+/*!*@keyframes fill-pulse {*!*/
+/*!*    0%   { fill: #3C3C3B; }*!*/
+/*!*    50%  { fill: #56AB2F; }*!*/
+/*!*    100% { fill: #3C3C3B; }*!*/
+/*!*}*!*/
