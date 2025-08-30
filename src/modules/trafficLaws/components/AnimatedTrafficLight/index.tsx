@@ -29,15 +29,16 @@ const AnimatedTrafficLight = (): ReactElement => {
         <div className="animated-traffic-light">
             <div className="animated-traffic-light-wrapper">
                 <div className="traffic-light-background-image-wrapper">
-                    <img src={trafficLightsConfig.backgroundImageSrc} />
+                    <img src={trafficLightsConfig.backgroundImageSrc} crossOrigin="anonymous" />
                 </div>
                 <div className="traffic-light-container">
                     {trafficLightsConfig.trafficLights.map(
                         (trafficLightConfig: ITrafficLightConfig, index: number) => (
                             <div key={index} className="traffic-light-image-wrapper">
-                                <img
-                                    src={trafficLightConfig.imageLightOffSrc}
-                                />
+                                  <img
+                                      src={trafficLightConfig.imageLightOffSrc}
+                                      crossOrigin="anonymous"
+                                  />
                                 <div
                                     className="hovered-block"
                                     onMouseEnter={handleLightEnter}
@@ -45,9 +46,10 @@ const AnimatedTrafficLight = (): ReactElement => {
                                     onTouchStart={handleLightTouchStart}
                                     onTouchEnd={handleLightTouchEnd}
                                 >
-                                    <img
-                                        src={trafficLightConfig.imageLightOnSrc}
-                                    />
+                                      <img
+                                          src={trafficLightConfig.imageLightOnSrc}
+                                          crossOrigin="anonymous"
+                                      />
                                     <span
                                         className={`text-assembly ${trafficLightConfig.color}`}
                                     >

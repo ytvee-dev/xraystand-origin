@@ -20,7 +20,7 @@ const IconTextItem: React.FC<IIConTextItemProps> = ({
     return (
         <div className='icon-text-item'>
             {iconType === "svg" && <SpriteIcon iconId={iconName} size={'80px'} color={iconColor} />}
-            {iconType === "png" && <img src={iconName} alt="image" />}
+            {iconType === "png" && <img src={iconName} alt="image" crossOrigin="anonymous" />}
             <div className="icon-text-item-text-wrapper">
                 <h3>{title}</h3>
                 <span>{text}</span>

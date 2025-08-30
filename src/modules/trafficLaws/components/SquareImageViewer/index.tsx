@@ -32,6 +32,7 @@ const SquareImageViewer = ({
                 style={{
                     objectFit: objectFit
                 }}
+                crossOrigin="anonymous"
             />
         </div>
     );

@@ -66,7 +66,7 @@ const Footer = ({meta, sx = {
                 >{meta.copyright}</div>
                 <a href={meta.content.madeBy.link} target="_blank">
                     <div className="footer-made-by">
-                        <img src={madeBySrc}/>
+                        <img src={madeBySrc} crossOrigin="anonymous" />
                     </div>
                 </a>
             </div>

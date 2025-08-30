@@ -37,11 +37,12 @@ const DefaultImageCard = ({
                 className={`default-image-card-image-container image-size-${smallImageSizes ? "small" : "normal"}`}
                 style={{ backgroundColor }}
             >
-                <img
-                    className="content-image-card-image"
-                    src={imagePath}
-                    alt="content image"
-                />
+                  <img
+                      className="content-image-card-image"
+                      src={imagePath}
+                      alt="content image"
+                      crossOrigin="anonymous"
+                  />
             </div>
         );
     };

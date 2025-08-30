@@ -47,9 +47,9 @@ const CoverSection = (): ReactElement => {
                     style={{backgroundImage: `url(${road})`}}
                     data-speed="3"
                 />
-                <div className={"car"}>
-                    <img src={carPng} alt="Car"/>
-                </div>
+                  <div className={"car"}>
+                      <img src={carPng} alt="Car" crossOrigin="anonymous" />
+                  </div>
             </div>
         </section>
     );

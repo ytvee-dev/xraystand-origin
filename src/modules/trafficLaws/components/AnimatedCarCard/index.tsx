@@ -12,6 +12,7 @@ const AnimatedCarCard = (): ReactElement => {
                     className="animated-car-image"
                     src={`${contentAnimationsSrcPrefix}animatedSmallCar${contentImageSrcSuffix}`}
                     alt="animated car"
+                    crossOrigin="anonymous"
                 />
             </div>
         </div>

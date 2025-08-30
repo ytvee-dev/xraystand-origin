@@ -31,7 +31,7 @@ const FourthSection: React.FC<FourthSectionProps> = ({content}: FourthSectionPro
             <div style={{ padding: '0 20px' }}>
                 <TwoColumnSection leftColumn={
                     <div className='nutrition-fourth-section-img-wrapper'>
-                        <img src={plateImage} alt="plate image"/>
+                          <img src={plateImage} alt="plate image" crossOrigin="anonymous" />
                     </div>
                 } rightColumn={
                     <div className={'nutrition-fourth-section-items'}>

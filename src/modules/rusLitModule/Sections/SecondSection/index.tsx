@@ -20,6 +20,7 @@ const SecondSection = (): ReactElement => {
                 <img
                     className="ruslit-first-bg-image"
                     src={prefix + paths.backgrounds.names}
+                    crossOrigin="anonymous"
                 />
                 <div className="ruslit-content-section-text-container">
                     <h1
@@ -42,6 +43,7 @@ const SecondSection = (): ReactElement => {
                 <img
                     className="ruslit-second-bg-image"
                     src={prefix + paths.backgrounds.names}
+                    crossOrigin="anonymous"
                 />
                 <BackgroundBlock
                     subtitle={content.thirdSection.subTitle as string}

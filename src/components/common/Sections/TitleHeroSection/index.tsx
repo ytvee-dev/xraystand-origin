@@ -41,7 +41,7 @@ const TitleHeroSection: React.FC<ITitleHeroSectionProps> = ({
                     }}
                 >{subtitle}</p>
             </div>
-            <img src={heroBackground} alt="background"/>
+            <img src={heroBackground} alt="background" crossOrigin="anonymous" />
         </section>
     );
 };

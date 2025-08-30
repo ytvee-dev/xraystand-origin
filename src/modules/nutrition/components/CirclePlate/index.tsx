@@ -80,7 +80,7 @@ const CirclePlate: React.FC<CirclePlateProps> = ({content}: CirclePlateProps): R
             <div className="circle-plate-wrapper">
                 <div className="circle-plate">
                     <div className="plate">
-                        <img src={backgroundImage} alt="circle plate"/>
+                        <img src={backgroundImage} alt="circle plate" crossOrigin="anonymous" />
                     </div>
                     <div className="circle">
                         <div className="quarters">
@@ -104,7 +104,7 @@ const CirclePlate: React.FC<CirclePlateProps> = ({content}: CirclePlateProps): R
         <div className="mobile-circle-plate-wrapper">
             <div className="circle-plate">
                 <div className="plate">
-                    <img src={backgroundImage} alt="mobile-circle plate"/>
+                    <img src={backgroundImage} alt="mobile-circle plate" crossOrigin="anonymous" />
                 </div>
                 <div className="circle">
                     <div className="quarters">

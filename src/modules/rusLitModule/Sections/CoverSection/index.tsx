@@ -8,7 +8,7 @@ const CoverSection = (): ReactElement => {
     return (
         <section className="ruslit-cover-section">
             <div className="ruslit-cover-section-image-container">
-                <img src={coverImg} alt='cover'/>
+                <img src={coverImg} alt='cover' crossOrigin="anonymous" />
             </div>
 
             <div className="ruslit-cover-text-content">

@@ -46,7 +46,7 @@ const BgContentSection = ({
             }}
         >
             {backgroundImage && (
-                <img src={backgroundImage} alt="bg-image" style={{height: strictHeight ? "100%" : "auto"}} />
+                <img src={backgroundImage} alt="bg-image" style={{height: strictHeight ? "100%" : "auto"}} crossOrigin="anonymous" />
             )}
 
             <div className="bg-content-section-text-container">
