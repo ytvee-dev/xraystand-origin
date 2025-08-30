@@ -1,7 +1,8 @@
 import type {IDefaultCardSxText, INestedCardSx} from "@components/common/Cards/CardsTypes.ts";
+import { R2_BASE_URL } from "@utils/constants";
 
-export const dsCardImagePathPrefixTemplate = './public/assets/ds-system/cards/';
-export const dsCardImagePathPrefix = './assets/images/';
+export const dsCardImagePathPrefixTemplate = `${R2_BASE_URL}assets/ds-system/cards/`;
+export const dsCardImagePathPrefix = `${R2_BASE_URL}assets/images/`;
 
 export const templateDSCardNames: string[] = [
     "ds-system/cards/ds-card-1.jpg",

@@ -1,11 +1,14 @@
 import {type ReactElement} from "react";
-import coverImg from '@assets/images/kazakhAdebiet/cover.avif';
-import coverMobile from '@assets/images/kazakhAdebiet/coverMobile.avif';
+import { R2_BASE_URL } from "@utils/constants";
 import * as sectionContent from '@modules/kazakhAdebietModule/locales/kaz.json';
 import "./style.css";
 import useWindowWidth from "@hooks/useScreenWidth.ts";
 
-const CoverSection = (): ReactElement => {    const screenWidth = useWindowWidth();
+const coverImg = `${R2_BASE_URL}assets/images/kazakhAdebiet/cover.avif`;
+const coverMobile = `${R2_BASE_URL}assets/images/kazakhAdebiet/coverMobile.avif`;
+
+const CoverSection = (): ReactElement => {
+    const screenWidth = useWindowWidth();
 
     return (
         <section className="kza-cover-section">

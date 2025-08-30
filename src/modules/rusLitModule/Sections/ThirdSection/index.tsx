@@ -7,6 +7,7 @@ import DSInformationCard from "@components/common/Cards/DSInformationCard";
 
 import * as content from "@modules/rusLitModule/locales/rus.json";
 import * as paths from "@modules/rusLitModule/locales/paths.json";
+import { R2_BASE_URL } from "@utils/constants";
 import "./style.css";
 
 const notificationColorScheme = {
@@ -19,7 +20,7 @@ const notificationColorScheme = {
 }
 
 const SecondSection = (): ReactElement => {
-    const imagePrefix = "./assets/images/";
+    const imagePrefix = `${R2_BASE_URL}assets/images/`;
     const screenWidth = useScreenWidth();
 
     return (

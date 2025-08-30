@@ -3,6 +3,7 @@ import DefaultLayout from "@layout/Default";
 import ContentSection from "@components/common/Sections/DSContentSection";
 import useWindowWidth from "@hooks/useScreenWidth.ts";
 import DSNotification from "@components/common/DSNotification";
+import { R2_BASE_URL } from "@utils/constants";
 import "./style.css";
 
 const textContent = {
@@ -23,9 +24,9 @@ const InProgress = (): ReactElement => {
                 <div className="in-progress-container">
                     <svg className="animated-svg">
                         <use
-                            href={`./assets/images/sprite.svg#${
-                                screenWidth > 800 ? 
-                                    "inProgressDesktop" : 
+                            href={`${R2_BASE_URL}assets/images/sprite.svg#${
+                                screenWidth > 800 ?
+                                    "inProgressDesktop" :
                                     "inProgressMobile"
                             }`}/>
                     </svg>

@@ -6,6 +6,7 @@ import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
 import DSInformationCard from "@components/common/Cards/DSInformationCard";
 import * as content from "@modules/kazakhAdebietModule/locales/kaz.json";
 import "./style.css";
+import { R2_BASE_URL } from "@utils/constants";
 
 const rightColumnColorScheme: DSContentBlockColorScheme = {
     titleColor: "#EBCD91",
@@ -21,7 +22,10 @@ const SecondSection = (): ReactElement => {
         <section className="kza-second-section">
             <TwoColumnSection
                 leftColumn={
-                    <SquareImageViewer path={"assets/images/kazakhAdebiet/tree.avif"} width={564}/>
+                    <SquareImageViewer
+                        path={`${R2_BASE_URL}assets/images/kazakhAdebiet/tree.avif`}
+                        width={564}
+                    />
                 }
                 rightColumn={
                     <DSContentBlock

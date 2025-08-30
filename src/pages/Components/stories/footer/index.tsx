@@ -1,8 +1,10 @@
 import { useState } from "react";
 import type { IStrictFooterContent } from "@components/common/Footers/StrictFooter/types";
 import Footer from "@components/common/Footers/StrictFooter";
-import madeBySrcLight from "@assets/images/madeByLight.avif";
-import madeBySrcDark from "@assets/images/madeByDark.avif";
+import { R2_BASE_URL } from "@utils/constants";
+
+const madeBySrcLight = `${R2_BASE_URL}assets/images/madeByLight.avif`;
+const madeBySrcDark = `${R2_BASE_URL}assets/images/madeByDark.avif`;
 
 export const defaultFooterSX = {
     backgroundColor: "#181818",
@@ -14,7 +16,7 @@ export const defaultFooterSX = {
 };
 
 export const strictFooterMeta: IStrictFooterContent = {
-    logoPath: `./assets/images/sprite.svg#`,
+    logoPath: `${R2_BASE_URL}assets/images/sprite.svg#`,
     contacts: {
         email: "hello@example.com",
         phone: "+7 (999) 123-45-67",

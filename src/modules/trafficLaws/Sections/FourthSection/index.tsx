@@ -9,6 +9,7 @@ import {useSelector} from "react-redux";
 import type {TRootState} from "@store/index.ts";
 import * as textContentKz from "@modules/trafficLaws/locales/kaz.json";
 import * as textContentRu from "@modules/trafficLaws/locales/rus.json";
+import { R2_BASE_URL } from "@utils/constants";
 
 const FourthSection = (): ReactElement | null => {
     const currentLocale: Languages = useSelector(
@@ -30,7 +31,10 @@ const FourthSection = (): ReactElement | null => {
                 </LargeCard>
             }
             rightColumn={
-                <SquareImageViewer path={"/assets/images/trafficLawsPage/cyclistsScooters.avif"} width={564}/>
+                <SquareImageViewer
+                    path={`${R2_BASE_URL}assets/images/trafficLawsPage/cyclistsScooters.avif`}
+                    width={564}
+                />
             }
         />
     );

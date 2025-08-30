@@ -14,12 +14,15 @@ export const enum LocalStorageKeys {
     LOCALE = "locale",
 }
 
-export const svgSpriteSrcPrefix: string = "./assets/images/sprite.svg#";
-export const contentImageSrcPrefix: string = "./assets/images/";
-export const contentAnimationsSrcPrefix: string = "./assets/images/animations/";
+export const R2_BASE_URL =
+    "https://e1901c8caf5e6cdb708c4ae2a3d0f235.r2.cloudflarestorage.com/xraystand/";
+
+export const svgSpriteSrcPrefix: string = `${R2_BASE_URL}assets/images/sprite.svg#`;
+export const contentImageSrcPrefix: string = `${R2_BASE_URL}assets/images/`;
+export const contentAnimationsSrcPrefix: string = `${R2_BASE_URL}assets/images/animations/`;
 export const contentImageSrcSuffix: string = ".avif";
 
-export const contentDSCardsSrcPrefix: string = "./public/assets/images/ds-system/cards/";
+export const contentDSCardsSrcPrefix: string = `${R2_BASE_URL}assets/images/ds-system/cards/`;
 
 export const enum SvgSpriteIds {
     LOGO = "logo",

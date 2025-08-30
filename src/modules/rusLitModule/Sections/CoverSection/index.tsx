@@ -1,7 +1,9 @@
 import {type ReactElement} from "react";
-import coverImg from '@assets/images/rusLit/backgrounds/coverBg.png';
+import { R2_BASE_URL } from "@utils/constants";
 import * as sectionContent from '@modules/rusLitModule/locales/rus.json';
 import "./style.css";
+
+const coverImg = `${R2_BASE_URL}assets/images/rusLit/backgrounds/coverBg.png`;
 
 const CoverSection = (): ReactElement => {
 

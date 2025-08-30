@@ -1,10 +1,12 @@
-import madeBySrcLight from "@assets/images/madeByLight.avif";
-import madeBySrcDark from "@assets/images/madeByDark.avif";
 import type {IDefaultDarkFooterMeta} from "@components/common/Footers/StrictFooter/types.ts";
+import { R2_BASE_URL } from "@utils/constants";
+
+const madeBySrcLight = `${R2_BASE_URL}assets/images/madeByLight.avif`;
+const madeBySrcDark = `${R2_BASE_URL}assets/images/madeByDark.avif`;
 
 export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
     ru: {
-        logoPath: `./assets/images/sprite.svg#`,
+        logoPath: `${R2_BASE_URL}assets/images/sprite.svg#`,
         contacts: {
             email: "info@xraystand.kz",
             phone: "+7 (7172) 73-50-50",
@@ -28,7 +30,7 @@ export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
         }
     },
     kz: {
-        logoPath: `./assets/images/sprite.svg#`,
+        logoPath: `${R2_BASE_URL}assets/images/sprite.svg#`,
         contacts: {
             email: "info@xraystand.kz",
             phone: "+7 (7172) 73-50-50",

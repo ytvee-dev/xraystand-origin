@@ -2,13 +2,15 @@ import { type ReactElement } from "react";
 import type {TRootState} from "@store/index.ts";
 import {Languages} from "@domains/Translate";
 import {useSelector} from "react-redux";
-import road from "../../../../../public/assets/images/trafficLawsPage/coverSection/road.avif";
-import carPng from "../../../../../public/assets/images/trafficLawsPage/coverSection/car.avif";
-import cloudsImg from "../../../../../public/assets/images/trafficLawsPage/coverSection/clouds.avif";
-import housesImg from "@assets/images/trafficLawsPage/coverSection/houses.avif";
+import { R2_BASE_URL } from "@utils/constants";
 import * as textContentKz from "@modules/trafficLaws/locales/kaz.json";
 import * as textContentRu from "@modules/trafficLaws/locales/rus.json";
 import "./style.css";
+
+const road = `${R2_BASE_URL}assets/images/trafficLawsPage/coverSection/road.avif`;
+const carPng = `${R2_BASE_URL}assets/images/trafficLawsPage/coverSection/car.avif`;
+const cloudsImg = `${R2_BASE_URL}assets/images/trafficLawsPage/coverSection/clouds.avif`;
+const housesImg = `${R2_BASE_URL}assets/images/trafficLawsPage/coverSection/houses.avif`;
 
 const CoverSection = (): ReactElement => {
     const currentLocale: Languages = useSelector(
