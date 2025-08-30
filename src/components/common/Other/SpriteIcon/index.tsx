@@ -13,16 +13,17 @@ const DEFAULT_ICON_SIZE: string = "100px";
 const SpriteIcon = ({
     iconId,
     size = DEFAULT_ICON_SIZE,
-    color = defaultColor
+    color = defaultColor,
 }: ISpriteIconProps): ReactElement => {
     const fullIconId: string = `${svgSpriteSrcPrefix}${iconId}`;
 
     return (
         <svg
-            href={fullIconId}
             width={size}
             height={size}
             color={color}
+            aria-hidden="true"
+            focusable="false"
         >
             <use
                 href={fullIconId}

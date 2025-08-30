@@ -1,19 +1,19 @@
 {
   "cards": [
-    "kazakhAdebiet/cards/yurta.png",
-    "kazakhAdebiet/cards/zhirau.png",
-    "kazakhAdebiet/cards/19Centre.png",
-    "kazakhAdebiet/cards/sssr.png",
-    "kazakhAdebiet/cards/independence.png"
+    "kazakhAdebiet/cards/yurta.avif",
+    "kazakhAdebiet/cards/zhirau.avif",
+    "kazakhAdebiet/cards/19Centre.avif",
+    "kazakhAdebiet/cards/sssr.avif",
+    "kazakhAdebiet/cards/independence.avif"
   ],
   "people": [
-    "kazakhAdebiet/people/ahmet.png",
-    "kazakhAdebiet/people/dulatov.png",
-    "kazakhAdebiet/people/ilyas.png",
-    "kazakhAdebiet/people/magzhan.png",
-    "kazakhAdebiet/people/mailin.png",
-    "kazakhAdebiet/people/saken.png",
-    "kazakhAdebiet/people/shakarim.png",
-    "kazakhAdebiet/people/zhusipbek.png"
+    "kazakhAdebiet/people/ahmet.avif",
+    "kazakhAdebiet/people/dulatov.avif",
+    "kazakhAdebiet/people/ilyas.avif",
+    "kazakhAdebiet/people/magzhan.avif",
+    "kazakhAdebiet/people/mailin.avif",
+    "kazakhAdebiet/people/saken.avif",
+    "kazakhAdebiet/people/shakarim.avif",
+    "kazakhAdebiet/people/zhusipbek.avif"
   ]
 }

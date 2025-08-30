@@ -1,16 +1,19 @@
-import { type RouteObject } from "react-router";
-import HomePage from "@pages/Home";
-import NotFoundPage from "@pages/NotFound";
-import TrafficsLawsPage from "@pages/TrafficsLaws";
-import KazakhAdebiet from "@pages/KazakhAdebiet";
-import InProgress from "@pages/InProgress";
-import Chemistry from "@pages/Chemistry";
-import ComponentsPage from "@pages/Components";
-import RusLit from "@pages/RusLit";
-import Nutrition from "@pages/Nutrition";
-// import Mathematics from "@pages/Mathematics";
-// import SafetyPrecautions from "@pages/SafetyPrecautions";
-// import KazMusic from "@pages/KazMusic";
+import {lazy} from "react";
+import {type RouteObject} from "react-router";
+
+const HomePage = lazy(() => import("@pages/Home"));
+const NotFoundPage = lazy(() => import("@pages/NotFound"));
+const TrafficsLawsPage = lazy(() => import("@pages/TrafficsLaws"));
+const KazakhAdebiet = lazy(() => import("@pages/KazakhAdebiet"));
+const InProgress = lazy(() => import("@pages/InProgress"));
+const Chemistry = lazy(() => import("@pages/Chemistry"));
+const ComponentsPage = lazy(() => import("@pages/Components"));
+const RusLit = lazy(() => import("@pages/RusLit"));
+const Nutrition = lazy(() => import("@pages/Nutrition"));
+const SpinnerDemo = lazy(() => import("@pages/SpinnerDemo"));
+// const Mathematics = lazy(() => import("@pages/Mathematics"));
+// const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
+// const KazMusic = lazy(() => import("@pages/KazMusic"));
 
 export const paths = {
     HOME: {
@@ -56,6 +59,10 @@ export const paths = {
     COMPONENTS: {
         id: "components",
         path: "/components",
+    },
+    SPINNER_DEMO: {
+        id: "spinnerDemo",
+        path: "/spinner",
     },
 };
 
@@ -107,6 +114,10 @@ const routes: RouteObject[] = [
     {
         ...paths.COMPONENTS,
         element: <ComponentsPage />,
+    },
+    {
+        ...paths.SPINNER_DEMO,
+        element: <SpinnerDemo />,
     },
 ];
 

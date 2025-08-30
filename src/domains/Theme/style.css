@@ -1,37 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');*/
 
-@font-face {
-    font-family: "Ubuntu";
-    font-style: normal;
-    font-weight: 100;
-    src: url("/assets/fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: "Ubuntu";*/
+/*    font-style: normal;*/
+/*    font-weight: 100;*/
+/*    src: url("/assets/fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: "Ubuntu";
-    font-style: normal;
-    font-weight: 200;
-    src: url("/assets/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: "Ubuntu";*/
+/*    font-style: normal;*/
+/*    font-weight: 200;*/
+/*    src: url("/assets/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: "Ubuntu";
-    font-style: normal;
-    font-weight: 400;
-    src: url("/assets/fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: "Ubuntu";*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    src: url("/assets/fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: "Ubuntu";
-    font-style: normal;
-    font-weight: 700;
-    src: url("/assets/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: "Ubuntu";*/
+/*    font-style: normal;*/
+/*    font-weight: 700;*/
+/*    src: url("/assets/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");*/
+/*    font-display: swap;*/
+/*}*/
 
 
 :root {
