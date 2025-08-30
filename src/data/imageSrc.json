@@ -77,5 +77,24 @@
             ],
             "globalData": []
         }
+    },
+    "kazakhadebietPage": {
+        "firstSection": {
+            "contentListData": [],
+            "globalData": [
+                "kazakhAdebeit/cover",
+                "kazakhAdebeit/coverMobile"
+            ]
+        },
+        "secondSection": {
+            "contentListData": [],
+            "globalData": [
+                "kazakhAdebeit/tree"
+            ]
+        },
+        "thirdSection": {
+            "contentListData": [],
+            "globalData": []
+        }
     }
 }
