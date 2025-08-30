@@ -1,38 +1,84 @@
 .spinner-wrapper {
-    /*width: 100%;*/
-    /*height: 90vh;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
+    background-color: rgba(20, 20, 20, 0.7);
+    overflow: hidden;
+    backdrop-filter: blur(20px);
 }
 
-/*svg {*/
-/*    fill: red;*/
-/*    color: red;*/
-/*}*/
+.loader-icon {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    color: #141414;
+    z-index: 10;
+    filter: drop-shadow(0 0 10px #ffffff)
+    drop-shadow(0 0 20px #000000)
+    drop-shadow(0 0 40px #05D9E8)
+    drop-shadow(0 0 60px #05D9E8);
+}
 
-/*!*.animated-icon {*!*/
-/*!*    animation: logo-pulse 2.5s ease-in-out infinite;*!*/
-/*!*}*!*/
+.loader {
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid #141414;
+    transform-origin: 50% 50%;
+    transform: perspective(200px) rotateX(66deg);
 
-/*!*!* чтобы было видно и при hover без анимации *!*!*/
-/*!*.sprite-icon {*!*/
-/*!*    transition: color .35s ease;*!*/
-/*!*}*!*/
+    box-shadow: 0 0 15px #05D9E8,
+    0 0 30px #05D9E8,
+    0 0 45px #FF2A6D,
+    0 0 60px #FF2A6D;
+}
 
-/*!*@keyframes logo-pulse {*!*/
-/*!*    0%   { color: #3C3C3B; }*!*/
-/*!*    50%  { color: #56AB2F; }*!*/
-/*!*    100% { color: #3C3C3B; }*!*/
-/*!*}*!*/
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    inset: -7px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 7px solid transparent;
+    animation: spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite,
+    spinner-fade 1.2s linear infinite;
+}
 
-/*!*!* вариант без currentColor *!*!*/
-/*!*.animated-icon use {*!*/
-/*!*    animation: fill-pulse 2.5s ease-in-out infinite;*!*/
-/*!*}*!*/
+.loader:before {
+    border-top-color: #FFB300;
+    box-shadow: 0 0 10px #FFB300,
+    0 0 25px #FFB300,
+    0 0 40px #FF2A6D;
+}
 
-/*!*@keyframes fill-pulse {*!*/
-/*!*    0%   { fill: #3C3C3B; }*!*/
-/*!*    50%  { fill: #56AB2F; }*!*/
-/*!*    100% { fill: #3C3C3B; }*!*/
-/*!*}*!*/
+.loader:after {
+    border-top-color: #05D9E8;
+    animation-delay: 0.4s;
+    box-shadow: 0 0 10px #05D9E8,
+    0 0 25px #05D9E8,
+    0 0 40px #FF2A6D;
+}
+
+@keyframes spinner-spin {
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spinner-fade {
+    25%, 75% { opacity: 0.1 }
+    50% { opacity: 1 }
+}
