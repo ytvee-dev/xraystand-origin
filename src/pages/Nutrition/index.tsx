@@ -1,4 +1,4 @@
-import React, {type ReactElement} from "react";
+import React, {type ReactElement, useEffect} from "react";
 import type {TRootState} from "@store/index.ts";
 import type {NutritionLocale} from "@modules/nutrition/types";
 import {useSelector} from "react-redux";
@@ -15,7 +15,32 @@ import FifthSection from "@modules/nutrition/Sections/FifthSection";
 import {Languages} from "@domains/Translate";
 import * as contentRu from "@modules/nutrition/locales/rus.json";
 import * as contentKz from "@modules/nutrition/locales/kaz.json";
+import usePreloadImages from "@hooks/usePreloadImages.ts";
+import paths from "@modules/nutrition/locales/paths.json";
 import "./style.css";
+
+const R2_BASE_URL: string = import.meta.env.VITE_R2_BASE_URL;
+
+const collectPaths = (data: unknown): string[] => {
+    const result: string[] = [];
+    const traverse = (value: unknown): void => {
+        if (typeof value === "string") {
+            result.push(value);
+        } else if (Array.isArray(value)) {
+            value.forEach(traverse);
+        } else if (value && typeof value === "object") {
+            Object.values(value).forEach(traverse);
+        }
+    };
+    traverse(data);
+    return result;
+};
+
+const nutritionPreloadUrls: string[] = collectPaths(paths).map(
+    (p) => `${R2_BASE_URL}/${p}`
+);
+
+const coverPreloadUrl: string = `${R2_BASE_URL}/${paths.backgrounds.cover}`;
 
 const heroSectionBgColor = "linear-gradient(90deg, rgba(168, 224, 99, 0.8) 0%, rgba(86, 171, 47, 0.8) 100%), linear-gradient(90deg, rgba(245, 245, 245, 1) 0%, rgba(212, 212, 212, 1) 100%)";
 const SECTION_IDS = {
@@ -28,11 +53,23 @@ const SECTION_IDS = {
 } as const;
 
 const Nutrition: React.FC = (): ReactElement => {
+    usePreloadImages(nutritionPreloadUrls);
     const screenWidth = useScreenWidth();
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale
     );
     const content: NutritionLocale = currentLocale === 'ru' ? contentRu : contentKz;
+
+    useEffect(() => {
+        const link = document.createElement("link");
+        link.rel = "preload";
+        link.as = "image";
+        link.href = coverPreloadUrl;
+        document.head.appendChild(link);
+        return () => {
+            document.head.removeChild(link);
+        };
+    }, []);
 
     const scrollTo = (id: string) => {
         const el = document.getElementById(id);

@@ -1,4 +1,7 @@
-import {type ReactElement} from "react";
+import {type ReactElement, useEffect} from "react";
+import usePreloadImages from "@hooks/usePreloadImages.ts";
+import imageSrc from "@data/imageSrc.json";
+import {contentImageSrcSuffix} from "@utils/constants";
 import type {TRootState} from "@store/index.ts";
 import type {IContentLabel, TContentItem} from "@utils/types/trafficLawsTypes";
 import {useDispatch, useSelector} from "react-redux";
@@ -17,6 +20,34 @@ import CoverSection from "@modules/trafficLaws/Sections/CoverSection";
 import FlexibleModal from "@components/common/Modal/FlexibleModal";
 import DefaultImageCard from "@modules/trafficLaws/components/DefaultImageCard";
 import "./style.css";
+
+const R2_BASE_URL: string = import.meta.env.VITE_R2_BASE_URL;
+
+const collectPaths = (data: unknown): string[] => {
+    const result: string[] = [];
+    const traverse = (value: unknown): void => {
+        if (typeof value === "string") {
+            result.push(value);
+        } else if (Array.isArray(value)) {
+            value.forEach(traverse);
+        } else if (value && typeof value === "object") {
+            Object.values(value).forEach(traverse);
+        }
+    };
+    traverse(data);
+    return result;
+};
+
+const trafficLawsPreloadUrls: string[] = collectPaths(imageSrc.trafficLawsPage).map(
+    (p) => `${R2_BASE_URL}/${p}${contentImageSrcSuffix}`
+);
+
+const coverPreloadUrls: string[] = [
+    `${R2_BASE_URL}/trafficLawsPage/coverSection/road.avif`,
+    `${R2_BASE_URL}/trafficLawsPage/coverSection/car.avif`,
+    `${R2_BASE_URL}/trafficLawsPage/coverSection/clouds.avif`,
+    `${R2_BASE_URL}/trafficLawsPage/coverSection/houses.avif`,
+];
 
 const modalPolicemanImagesPaths: Record<string, string[]> = {
     "Для пешеходов": [
@@ -107,6 +138,20 @@ const signsImagesPaths: Record<string, string[]> = {
 };
 
 const TrafficsLawsPage = (): ReactElement => {
+    usePreloadImages(trafficLawsPreloadUrls);
+    useEffect(() => {
+        const links = coverPreloadUrls.map((href) => {
+            const link = document.createElement("link");
+            link.rel = "preload";
+            link.as = "image";
+            link.href = href;
+            document.head.appendChild(link);
+            return link;
+        });
+        return () => {
+            links.forEach((link) => document.head.removeChild(link));
+        };
+    }, []);
     const dispatch = useDispatch();
 
     const isModalOpened: boolean = useSelector((state: TRootState) => state.application.isModalOpened);

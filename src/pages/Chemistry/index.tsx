@@ -1,4 +1,6 @@
 import {type ReactElement} from "react";
+import usePreloadImages from "@hooks/usePreloadImages.ts";
+import paths from "@modules/chemistry/locales/paths.json";
 import {useDispatch, useSelector} from "react-redux";
 import type {IContentSectionProps, ITextContent} from "@pages/Chemistry/types.ts";
 import {Languages} from "@domains/Translate";
@@ -14,7 +16,29 @@ import * as contentKZ from "@modules/chemistry/locales/kaz.json";
 import * as contentRU from "@modules/chemistry/locales/rus.json";
 import "./style.css";
 
+const R2_BASE_URL: string = import.meta.env.VITE_R2_BASE_URL;
+
+const collectPaths = (data: unknown): string[] => {
+    const result: string[] = [];
+    const traverse = (value: unknown): void => {
+        if (typeof value === "string") {
+            result.push(value);
+        } else if (Array.isArray(value)) {
+            value.forEach(traverse);
+        } else if (value && typeof value === "object") {
+            Object.values(value).forEach(traverse);
+        }
+    };
+    traverse(data);
+    return result;
+};
+
+const chemistryPreloadUrls: string[] = collectPaths(paths).map(
+    (p) => `${R2_BASE_URL}/${p}`
+);
+
 const Chemistry = (): ReactElement => {
+    usePreloadImages(chemistryPreloadUrls);
     const windowWidth = useWindowWidth();
     const dispatch = useDispatch();
     const isElementModalOpened: boolean = useSelector((state: TRootState) => state.chemistry.isModalOpened);
