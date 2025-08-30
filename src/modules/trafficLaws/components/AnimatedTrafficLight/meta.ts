@@ -11,33 +11,28 @@ export interface ITrafficLightsConfig {
     trafficLights: ITrafficLightConfig[];
 }
 
+import { getImageUrl } from "@data/cloudinary";
+
 export const trafficLightsConfig: ITrafficLightsConfig = {
-    backgroundImageSrc:
-        "./assets/images/trafficLawsPage/secondSection/tlBackground.avif",
+    backgroundImageSrc: getImageUrl("trafficLawsPage/trafficLight/background"),
     trafficLights: [
         {
-            imageLightOnSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/redOn.avif",
-            imageLightOffSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/redOff.avif",
+            imageLightOnSrc: getImageUrl("trafficLawsPage/trafficLight/redOn"),
+            imageLightOffSrc: getImageUrl("trafficLawsPage/trafficLight/redOff"),
             color: "red",
             activeLabelRu: "Красный — стой",
             activeLabelkz: "Қызыл — тоқта.",
         },
         {
-            imageLightOnSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/yellowOn.avif",
-            imageLightOffSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/yellowOff.avif",
+            imageLightOnSrc: getImageUrl("trafficLawsPage/trafficLight/yellowOn"),
+            imageLightOffSrc: getImageUrl("trafficLawsPage/trafficLight/yellowOff"),
             color: "yellow",
             activeLabelRu: "Жёлтый — приготовься",
             activeLabelkz: "Сары — дайындал.",
         },
         {
-            imageLightOnSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/greenOn.avif",
-            imageLightOffSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/greenOff.avif",
+            imageLightOnSrc: getImageUrl("trafficLawsPage/trafficLight/greenOn"),
+            imageLightOffSrc: getImageUrl("trafficLawsPage/trafficLight/greenOff"),
             color: "green",
             activeLabelRu: "Зелёный — можно идти",
             activeLabelkz: "Жасыл — өтуге болады.",

@@ -12,7 +12,13 @@
         "secondSection": {
             "contentListData": [],
             "globalData": [
-                "trafficLawsPage/trafficLight"
+                "trafficLawsPage/trafficLight/background",
+                "trafficLawsPage/trafficLight/redOn",
+                "trafficLawsPage/trafficLight/redOff",
+                "trafficLawsPage/trafficLight/yellowOn",
+                "trafficLawsPage/trafficLight/yellowOff",
+                "trafficLawsPage/trafficLight/greenOn",
+                "trafficLawsPage/trafficLight/greenOff"
             ]
         },
         "thirdSection": {
