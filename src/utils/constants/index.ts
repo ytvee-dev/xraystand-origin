@@ -84,3 +84,5 @@ export const getNumberRange = (firstValue: number, lastValue: number, step: numb
     return rangeArray;
 };
 
+export const CONTENT_URL='https://res.cloudinary.com/dy6zg8dhs/image/upload/';
+

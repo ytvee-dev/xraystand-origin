@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
-import {defaultDSCardSX, dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
+import {defaultDSCardSX} from "@components/common/Cards/cardsMeta.tsx";
 import "./style.css";
 
 
@@ -24,8 +24,6 @@ const DSCard = ({
     sxText = defaultDSCardSX,
 }: IContentImageCardProps): ReactElement => {
 
-    const imagePath = dsCardImagePathPrefix + imageName;
-
     return (
         <Card className={'ds-card'} sx={{
             minWidth: minWidth,
@@ -39,7 +37,7 @@ const DSCard = ({
                     <CardMedia
                         component="img"
                         height={imageHeight}
-                        image={imagePath}
+                        image={imageName}
                         alt={imageName}
                         sx={{
                             objectFit: sxText.imgObjectFit!,
