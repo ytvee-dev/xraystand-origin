@@ -125,7 +125,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    transform: translateX(43%) !important;
+    max-width: 272px;
+    max-height: 120px;
+    transform: translateX(183%) !important;
     z-index: 10;
 }
 
