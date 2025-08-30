@@ -1,4 +1,8 @@
-import React, {type ReactElement} from "react";
+import React, {type ReactElement, useMemo} from "react";
+import Spinner from "@components/common/Spinner";
+import useImagesPreloader from "@hooks/useImagesPreloader";
+import usePageImagesIds from "@hooks/usePageImagesIds";
+import { PageIds } from "@domains/Translate";
 import type {TRootState} from "@store/index.ts";
 import type {NutritionLocale} from "@modules/nutrition/types";
 import {useSelector} from "react-redux";
@@ -33,6 +37,24 @@ const Nutrition: React.FC = (): ReactElement => {
         (state: TRootState) => state.locale.locale
     );
     const content: NutritionLocale = currentLocale === 'ru' ? contentRu : contentKz;
+
+    const { pageImageIdData } = usePageImagesIds(PageIds.NUTRITION_PAGE);
+    const imageIds = useMemo(() => {
+        if (!pageImageIdData) return [];
+        return Array.from(
+            new Set(
+                Object.values(pageImageIdData).flatMap(section => [
+                    ...section.globalData,
+                    ...section.contentListData,
+                ]),
+            ),
+        );
+    }, [pageImageIdData]);
+    const { isLoaded } = useImagesPreloader(imageIds);
+
+    if (!isLoaded) {
+        return <Spinner />;
+    }
 
     const scrollTo = (id: string) => {
         const el = document.getElementById(id);

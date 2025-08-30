@@ -1,4 +1,8 @@
-import React, {type ReactElement} from "react";
+import React, {type ReactElement, useMemo} from "react";
+import Spinner from "@components/common/Spinner";
+import useImagesPreloader from "@hooks/useImagesPreloader";
+import usePageImagesIds from "@hooks/usePageImagesIds";
+import { PageIds } from "@domains/Translate";
 import type {NutritionLocale} from "@modules/nutrition/types";
 import useScreenWidth from "@hooks/useScreenWidth.ts";
 import BrightnessLayout from "@layout/Brightness";
@@ -6,7 +10,6 @@ import NutritionLogo from "@modules/nutrition/components/NutritionLogo";
 import NutritionNav from "@modules/nutrition/components/NutritionNav";
 import FirstSection from "@modules/nutrition/Sections/FirstSection";
 import TitleHeroSection from "@components/common/Sections/TitleHeroSection";
-import Spinner from "@components/common/Spinner";
 import * as contentRu from "@modules/nutrition/locales/rus.json";
 import "./style.css";
 
@@ -24,6 +27,24 @@ const SpinnerDemo: React.FC = (): ReactElement => {
     const screenWidth = useScreenWidth();
     const content: NutritionLocale = contentRu;
 
+    const { pageImageIdData } = usePageImagesIds(PageIds.SPINNER_DEMO_PAGE);
+    const imageIds = useMemo(() => {
+        if (!pageImageIdData) return [];
+        return Array.from(
+            new Set(
+                Object.values(pageImageIdData).flatMap(section => [
+                    ...section.globalData,
+                    ...section.contentListData,
+                ]),
+            ),
+        );
+    }, [pageImageIdData]);
+    const { isLoaded } = useImagesPreloader(imageIds);
+
+    if (!isLoaded) {
+        return <Spinner />;
+    }
+
 
     return (
         <BrightnessLayout
@@ -31,7 +52,6 @@ const SpinnerDemo: React.FC = (): ReactElement => {
             navigation={<NutritionNav />}
             stickyHeader={true}
         >
-            <Spinner />
             <section id={SECTION_IDS.cover} className="nutrition-section">
                 <TitleHeroSection
                     title={content.coverSection.title}

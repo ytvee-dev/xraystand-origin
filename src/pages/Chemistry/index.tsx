@@ -1,4 +1,8 @@
-import {type ReactElement} from "react";
+import {type ReactElement, useMemo} from "react";
+import Spinner from "@components/common/Spinner";
+import useImagesPreloader from "@hooks/useImagesPreloader";
+import usePageImagesIds from "@hooks/usePageImagesIds";
+import { PageIds } from "@domains/Translate";
 import {useDispatch, useSelector} from "react-redux";
 import type {IContentSectionProps, ITextContent} from "@pages/Chemistry/types.ts";
 import {Languages} from "@domains/Translate";
@@ -22,6 +26,24 @@ const Chemistry = (): ReactElement => {
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale
     );
+
+    const { pageImageIdData } = usePageImagesIds(PageIds.CHEMISTRY_PAGE);
+    const imageIds = useMemo(() => {
+        if (!pageImageIdData) return [];
+        return Array.from(
+            new Set(
+                Object.values(pageImageIdData).flatMap(section => [
+                    ...section.globalData,
+                    ...section.contentListData,
+                ]),
+            ),
+        );
+    }, [pageImageIdData]);
+    const { isLoaded } = useImagesPreloader(imageIds);
+
+    if (!isLoaded) {
+        return <Spinner />;
+    }
 
     const sectionMeta = currentLocale === "kz" ? contentKZ : contentRU;
     const sectionMetaTranslation: ITextContent = sectionMeta.section;

@@ -1,4 +1,8 @@
-import {type ReactElement} from "react";
+import {type ReactElement, useMemo} from "react";
+import Spinner from "@components/common/Spinner";
+import useImagesPreloader from "@hooks/useImagesPreloader";
+import usePageImagesIds from "@hooks/usePageImagesIds";
+import { PageIds } from "@domains/Translate";
 import type {TRootState} from "@store/index.ts";
 import type {IContentLabel, TContentItem} from "@utils/types/trafficLawsTypes";
 import {useDispatch, useSelector} from "react-redux";
@@ -108,11 +112,28 @@ const signsImagesPaths: Record<string, string[]> = {
 
 const TrafficsLawsPage = (): ReactElement => {
     const dispatch = useDispatch();
-
     const isModalOpened: boolean = useSelector((state: TRootState) => state.application.isModalOpened);
     const modalContentName: TContentItem =
         useSelector((state: TRootState) => state.trafficLaws.modalContentName) as IContentLabel;
     const title = modalContentName?.title || "";
+
+    const { pageImageIdData } = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
+    const imageIds = useMemo(() => {
+        if (!pageImageIdData) return [];
+        return Array.from(
+            new Set(
+                Object.values(pageImageIdData).flatMap(section => [
+                    ...section.globalData,
+                    ...section.contentListData,
+                ]),
+            ),
+        );
+    }, [pageImageIdData]);
+    const { isLoaded } = useImagesPreloader(imageIds);
+
+    if (!isLoaded) {
+        return <Spinner />;
+    }
 
     const splitString = (str: string): string[] => {
         const i = str.indexOf("—");

@@ -59,6 +59,14 @@ export const enum PageIds {
     CHEMISTRY_PAGE = "chemistryPage",
     RUSLIT_PAGE = "ruslitPage",
     KAZAKH_ADEBIET_PAGE = "kazakhadebietPage",
+    HOME_PAGE = "homePage",
+    SAFETY_PRECAUTIONS_PAGE = "safetyPrecautionsPage",
+    MATHEMATICS_PAGE = "mathematicsPage",
+    SPINNER_DEMO_PAGE = "spinnerDemoPage",
+    COMPONENTS_PAGE = "componentsPage",
+    IN_PROGRESS_PAGE = "inProgressPage",
+    NUTRITION_PAGE = "nutritionPage",
+    NOT_FOUND_PAGE = "notFoundPage",
 };
 
 export const enum PageSectionIds {
