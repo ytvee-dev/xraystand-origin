@@ -6,8 +6,8 @@ import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
 
 import * as content from "@modules/kazakhAdebietModule/locales/kaz.json";
 import * as paths from "@modules/kazakhAdebietModule/locales/paths.json";
-import "./style.css";
 import {CONTENT_URL} from "@utils/constants";
+import "./style.css";
 
 const SecondSection = (): ReactElement => {
     return (
