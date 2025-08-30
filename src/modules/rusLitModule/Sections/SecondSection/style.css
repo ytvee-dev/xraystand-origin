@@ -1,0 +1,85 @@
+.ruslit-first-bg-image-container,
+.ruslit-second-bg-image-container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    overflow: hidden;
+}
+
+.ruslit-first-bg-image-container {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.ruslit-second-bg-image-container {
+    padding-top: 36px;
+    padding-bottom: 40px;
+}
+
+.ruslit-second-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.ruslit-second-section h1 {
+    font-size: 48px;
+    color: #871A16;
+    padding-bottom: 16px;
+}
+
+.ruslit-second-section h2 {
+    font-family: var(--text-font);
+    color: #871A16;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 754px;
+}
+
+.ruslit-second-section h3 {
+    color: #871A16;
+    font-size: 36px;
+}
+
+.ruslit-content-section-text-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.ruslit-first-bg-image-container > img {
+    position: absolute;
+    width: 100%;
+    min-width: 100px;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    min-height: 250px;
+    filter: opacity(15%);
+}
+
+.ruslit-second-bg-image-container > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    object-fit: cover;
+    min-height: 250px;
+    filter: opacity(15%);
+}
+
+@media (max-width: 800px) {
+    .ruslit-second-section h1,
+    .ruslit-second-section h2
+    .ruslit-second-section h3 {
+        font-size: 30px;
+    }
+}

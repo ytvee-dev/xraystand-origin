@@ -1,0 +1,144 @@
+.spinner-wrapper {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100vh;
+
+    display: flex; justify-content: center; align-items: center;
+    padding: 50px;
+    background-color: rgba(10, 30, 50, 0.7);
+    overflow: hidden;
+
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+
+    background-clip: padding-box;
+    opacity: 1; visibility: visible;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    z-index: 200;
+}
+
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+    .spinner-wrapper { background-color: rgba(10, 30, 50, 0.88); }
+}
+
+.spinner-wrapper.hidden {
+    opacity: 0; visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.loader-icon {
+    position: absolute;
+    top: -10px; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    width: 180px; height: 180px;
+    color: #ffffff;
+    z-index: 10;
+
+    -webkit-filter: drop-shadow(0 0 10px #ffffff)
+    drop-shadow(0 0 20px rgba(0,180,255,0.4))
+    drop-shadow(0 0 40px #00c4d6)
+    drop-shadow(0 0 60px #00c4d6);
+    filter: drop-shadow(0 0 10px #ffffff)
+    drop-shadow(0 0 20px rgba(0,180,255,0.4))
+    drop-shadow(0 0 40px #00c4d6)
+    drop-shadow(0 0 60px #00c4d6);
+
+    will-change: transform, opacity, filter;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@supports not (filter: drop-shadow(0 0 1px #000)) {
+    .loader-icon {
+        box-shadow:
+                0 0 10px 2px #ffffff,
+                0 0 20px 4px rgba(0,180,255,0.4),
+                0 0 40px 6px #00c4d6,
+                0 0 60px 8px #00c4d6;
+    }
+}
+
+.loader {
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 7px solid #0a1e32;
+
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: perspective(200px) rotateX(66deg) translateZ(0);
+    transform: perspective(200px) rotateX(66deg) translateZ(0);
+
+    box-shadow:
+            0 0 15px #00c4d6,
+            0 0 30px #00c4d6,
+            0 0 45px #0080ff,
+            0 0 60px #0080ff;
+
+    will-change: transform, opacity;
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    position: absolute;
+    inset: -7px;
+    top: -7px; right: -7px; bottom: -7px; left: -7px;
+
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 7px solid transparent;
+
+    animation:
+            spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite,
+            spinner-fade 1.2s linear infinite;
+}
+
+.loader::before {
+    border-top-color: #00eaff;
+    box-shadow: 0 0 10px #00eaff, 0 0 25px #00eaff, 0 0 40px #0080ff;
+}
+.loader::after {
+    border-top-color: #00c4d6;
+    animation-delay: 0.4s;
+    box-shadow: 0 0 10px #00c4d6, 0 0 25px #00c4d6, 0 0 40px #0080ff;
+}
+
+@-webkit-keyframes spinner-spin { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+@keyframes spinner-spin        { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+@-webkit-keyframes spinner-fade { 25%,75% { opacity: .1 } 50% { opacity: 1 } }
+@keyframes spinner-fade         { 25%,75% { opacity: .1 } 50% { opacity: 1 } }
+
+@-webkit-keyframes pulse {
+    0%   { transform: scale(1); opacity: 1;
+        filter: drop-shadow(0 0 5px #00c4d6) drop-shadow(0 0 15px #00eaff);}
+    50%  { transform: scale(1.1); opacity: .7;
+        filter: drop-shadow(0 0 15px #0080ff) drop-shadow(0 0 30px #00c4d6);}
+    100% { transform: scale(1); opacity: 1;
+        filter: drop-shadow(0 0 5px #00c4d6) drop-shadow(0 0 15px #00eaff);}
+}
+@keyframes pulse {
+    0%   { transform: scale(1); opacity: 1;
+        filter: drop-shadow(0 0 5px #00c4d6) drop-shadow(0 0 15px #00eaff);}
+    50%  { transform: scale(1.1); opacity: .7;
+        filter: drop-shadow(0 0 15px #0080ff) drop-shadow(0 0 30px #00c4d6);}
+    100% { transform: scale(1); opacity: 1;
+        filter: drop-shadow(0 0 5px #00c4d6) drop-shadow(0 0 15px #00eaff);}
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .loader-icon,
+    .loader::before,
+    .loader::after {
+        animation: none !important;
+    }
+    .spinner-wrapper,
+    .spinner-wrapper.hidden {
+        transition: opacity .25s ease, visibility .25s ease;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "backgrounds": {
+    "cover": "nutrition/backgrounds/bg0.avif",
+    "firstSection": "nutrition/backgrounds/bg1.avif",
+    "secondSection": "nutrition/backgrounds/bg2.avif",
+    "thirdSection": "nutrition/backgrounds/bg3.avif",
+    "fourthSection": "nutrition/backgrounds/bg3.avif",
+    "fifthSection": "nutrition/backgrounds/bg4.avif"
+  },
+  "cards": [
+    "nutrition/cards/card1.avif",
+    "nutrition/cards/card2.avif",
+    "nutrition/cards/card3.avif",
+    "nutrition/cards/card4.avif",
+    "nutrition/cards/card5.avif",
+    "nutrition/cards/card6.avif"
+  ],
+  "images": {
+    "plate": "nutrition/plate.avif"
+  }
+}

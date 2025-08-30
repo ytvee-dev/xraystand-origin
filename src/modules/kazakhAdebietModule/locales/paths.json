@@ -1,0 +1,19 @@
+{
+  "cards": [
+    "kazakhAdebiet/cards/yurta.avif",
+    "kazakhAdebiet/cards/zhirau.avif",
+    "kazakhAdebiet/cards/19Centre.avif",
+    "kazakhAdebiet/cards/sssr.avif",
+    "kazakhAdebiet/cards/independence.avif"
+  ],
+  "people": [
+    "kazakhAdebiet/people/ahmet.avif",
+    "kazakhAdebiet/people/dulatov.avif",
+    "kazakhAdebiet/people/ilyas.avif",
+    "kazakhAdebiet/people/magzhan.avif",
+    "kazakhAdebiet/people/mailin.avif",
+    "kazakhAdebiet/people/saken.avif",
+    "kazakhAdebiet/people/shakarim.avif",
+    "kazakhAdebiet/people/zhusipbek.avif"
+  ]
+}

@@ -1,0 +1,43 @@
+title-label-item h3,
+title-label-item p {
+    margin: 0;
+    padding: 0;
+}
+
+.title-label-item {
+    transform: translateY(40%);
+}
+
+.title-label-item * {
+    font-family: var(--technical-font);
+}
+
+.title-label-item h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title-label-item p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4B5563;
+}
+
+.background-label-item-info {
+    padding: 18px 16px;
+    background-color: #A8E063;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.background-label-item-error {
+    padding: 18px 16px;
+    background-color: #FEE2E2;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.background-label-item-info *,
+.background-label-item-error * {
+    font-family: var(--text-font);
+}

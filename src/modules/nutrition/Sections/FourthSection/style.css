@@ -1,0 +1,42 @@
+.nutrition-fourth-section-img-wrapper {
+    max-width: 600px;
+}
+
+.nutrition-fourth-section-img-wrapper img {
+    width: 100%;
+    animation: spin 25s linear infinite;
+}
+
+.nutrition-fourth-section-items {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .nutrition-fourth-section-img-wrapper {
+        max-width: 250px;
+    }
+
+    .nutrition-fourth-section {
+        padding-bottom: 0;
+    }
+
+    .nutrition-fourth-section-items {
+        align-items: center;
+    }
+
+    .nutrition-fourth-section .two-column-section {
+        padding-top: 10px;
+    }
+
+    .nutrition-fourth-section .columns-container {
+        gap: 40px;
+    }
+}

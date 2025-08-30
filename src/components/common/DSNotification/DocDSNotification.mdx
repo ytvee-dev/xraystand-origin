@@ -1,0 +1,54 @@
+# Component: DSNotification
+
+## Overview
+`DSNotification` — это настраиваемый компонент уведомлений, построенный на основе `@mui/material/Alert` с поддержкой цветовых схем, иконок и вариантов отображения. Используется для вывода сообщений с типами `"warning"` и `"info"`.
+
+---
+
+## Props
+
+| Prop            | Type                           | Default                     | Description |
+|-----------------|--------------------------------|-----------------------------|-------------|
+| `label`         | `string`                      | `""`                        | Текст уведомления. |
+| `type`          | `"warning"` \| `"info"`       | `"warning"`                 | Тип уведомления (`warning` или `info`). |
+| `backgroundColor` | `string`                    | `"#FEFCF3"` (`beige`)       | Цвет фона уведомления. |
+| `textColor`     | `string`                      | `"black"`                   | Цвет текста уведомления. |
+| `borderColor`   | `string`                      | `"#EBCD91"` (`lightSand`)   | Цвет рамки уведомления. Если не задан, совпадает с `backgroundColor`. |
+| `iconName`      | `string`                      | `"warningIcon"`             | Название иконки из `SpriteIcon`. |
+| `iconSize`      | `string`                      | `"19px"`                    | Размер иконки. |
+| `iconColor`     | `string`                      | `"#BD7D22"`                 | Цвет иконки. |
+| `fullWidth`     | `boolean`                     | `false`                     | Растягивает уведомление на всю ширину контейнера. |
+
+---
+
+## Enums
+
+- **NotificationBackgroundColors**
+- `beige = "#FEFCF3"`
+- `lightSand = "#EBCD91"`
+
+- **NotificationTypes**
+- `warning = "warning"`
+- `info = "info"`
+
+---
+
+## Usage
+
+```tsx
+import DSNotification from "@components/common/DSNotification";
+
+export default function Example() {
+  return (
+    <DSNotification
+      label="Это предупреждение"
+      type="warning"
+      backgroundColor="#FFF8E1"
+      borderColor="#FFC107"
+      textColor="#5D4037"
+      iconName="warningIcon"
+      iconColor="#FF9800"
+      fullWidth
+    />
+  );
+}

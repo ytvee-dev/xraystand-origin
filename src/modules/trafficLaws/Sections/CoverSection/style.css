@@ -1,0 +1,219 @@
+.traffic-laws-cover-section {
+    position: relative;
+    height: 660px;
+}
+
+.traffic-laws-cover-text-content {
+    margin-top: 50px;
+    margin-inline: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.traffic-laws-cover-text-content h1,
+.traffic-laws-cover-text-content h2,
+.traffic-laws-cover-text-content h3 {
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+.traffic-laws-cover-text-content h1 {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+    color: white;
+}
+
+
+.traffic-laws-cover-text-content h2 {
+    margin-top: 12px;
+    margin-bottom: 30px;
+    font-family: var(--title-font);
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.traffic-laws-cover-text-content h3 {
+    max-width: 564px;
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #4A8EBF 0%, #A5D0EF 100%);
+}
+
+.layer {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat-x;
+    background-size: contain;
+    will-change: transform;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.layer[data-speed="10"] {
+    top: 50px;
+    animation: moveClouds 20s linear infinite;
+    min-width: 600px;
+    max-width: 1200px;
+    z-index: 2;
+    opacity: 0.75;
+}
+
+.layer[data-speed="50"] {
+    animation: moveHouses 50s linear infinite;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+}
+
+.layer[data-speed="3"] {
+    animation: moveRoad 3s linear infinite;
+    transition: all 1s ease-in-out;
+    z-index: 3;
+}
+
+.houses {
+    bottom: 22%;
+    height: 50%;
+}
+
+.road {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    width: 200%;
+    height: calc(100% - 529px);
+}
+
+.car {
+    min-width: 258px;
+    max-width: 362px;
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 800px) {
+    .traffic-laws-cover-text-content h1 {
+        font-size: 36px;
+    }
+
+    .traffic-laws-cover-text-content h2 {
+        font-size: 36px;
+    }
+
+    .traffic-laws-cover-text-content h3 {
+        font-size: 16px;
+    }
+
+    .road {
+        height: calc(100% - 550px);
+    }
+
+    .houses {
+        bottom: 12%;
+    }
+
+    .layer[data-speed="10"] {
+        animation: mobileMoveClouds 20s linear infinite;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .road {
+        height: calc(100% - 570px);
+    }
+
+    .houses {
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .road {
+        height: calc(100% - 590px);
+    }
+
+    .car {
+        bottom: 5%;
+    }
+}
+
+
+.car img {
+    width: 100%;
+}
+
+@keyframes mobileMoveClouds {
+    from {
+        transform: translateX(-100%);
+        transition: all 1s ease-in-out;
+    }
+    to {
+        transform: translateX(100%);
+        transition: all 1s ease-in-out;
+    }
+}
+
+@keyframes moveClouds {
+    from {
+        transform: translateX(-100%);
+        transition: all 1s ease-in-out;
+    }
+    to {
+        transform: translateX(200%);
+        transition: all 1s ease-in-out;
+    }
+}
+
+@keyframes moveHouses {
+    from {
+        transform: translateX(-50%);
+        transition: all 1s ease-in-out;
+    }
+    to {
+        transform: translateX(0);
+        transition: all 1s ease-in-out;
+    }
+}
+
+@keyframes moveRoad {
+    from {
+        transform: translateX(-50%);
+        transition: all 1s ease-in-out;
+    }
+    to {
+        transform: translateX(0);
+        transition: all 1s ease-in-out;
+    }
+}

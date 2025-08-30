@@ -1,0 +1,15 @@
+.nutrition-logo {
+    white-space: nowrap;
+    font-family: var(--technical-font);
+    font-size: 20px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.nutrition-logo__first-part {
+    color: #111827;
+}
+
+.nutrition-logo__second-part {
+    color: #A4DD60;
+}

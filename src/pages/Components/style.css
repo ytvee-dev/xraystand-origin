@@ -1,0 +1,135 @@
+.components-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #fff;
+    color: #111;
+    font-family: "Inter", sans-serif;
+}
+
+/* ========================== */
+/* SIDEBAR */
+/* ========================== */
+
+.components-side-bar {
+    min-width: 240px;
+    height: 100%;
+    background-color: #fafafa;
+    border-right: 1px solid #e5e5e5;
+    overflow-y: auto;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.components-side-bar-item {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 0;
+    color: #333;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.components-side-bar-item:hover {
+    color: #000;
+    transform: translateX(2px);
+}
+
+/* ========================== */
+/* SWITCHER */
+/* ========================== */
+
+.components-content-switcher {
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background: #fff;
+}
+
+/* ========================== */
+/* CONTENT */
+/* ========================== */
+
+.components-content {
+    flex: 1;
+    padding: 32px;
+    display: flex;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.components-content-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.components-content-child h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+/* ========================== */
+/* WRAPPERS */
+/* ========================== */
+
+.components-content-desktop-wrapper {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #d9d9d9;
+    border-radius: 8px;
+    background: #fdfdfd;
+    box-sizing: border-box;
+}
+
+.components-content-mobile-wrapper {
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 8px;
+}
+
+/* ========================== */
+/* SCREEN SIZES (frames) */
+/* ========================== */
+
+.components-content-mobile-screen-1199,
+.components-content-mobile-screen-991,
+.components-content-mobile-screen-767,
+.components-content-mobile-screen-414,
+.components-content-mobile-screen-375,
+.components-content-mobile-screen-360,
+.components-content-mobile-screen-320 {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.components-content-mobile-screen-1199 { width: 1199px; }
+.components-content-mobile-screen-991  { width: 991px; }
+.components-content-mobile-screen-767  { width: 767px; }
+.components-content-mobile-screen-414  { width: 414px; }
+.components-content-mobile-screen-375  { width: 375px; }
+.components-content-mobile-screen-360  { width: 360px; }
+.components-content-mobile-screen-320  { width: 320px; }

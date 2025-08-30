@@ -1,0 +1,46 @@
+{
+  "backgrounds": {
+    "cover": "rusLit/backgrounds/coverBg.avif",
+    "names": "rusLit/backgrounds/namesBg.avif",
+    "centres": "rusLit/backgrounds/centresBg.avif"
+  },
+  "cards": [
+    "rusLit/cards/oldLitra.avif",
+    "rusLit/cards/svetska.avif",
+    "rusLit/cards/goldCentre.avif",
+    "rusLit/cards/silverCentre.avif",
+    "rusLit/cards/litra.avif"
+  ],
+  "people": {
+    "old": [
+      "rusLit/people/monk.avif",
+      "rusLit/people/michael.avif",
+      "rusLit/people/gavriil.avif",
+      "rusLit/people/denis.avif",
+      "rusLit/people/nikolay.avif"
+    ],
+    "gold": [
+      "rusLit/people/pushkin.avif",
+      "rusLit/people/lermontov.avif",
+      "rusLit/people/gogol.avif",
+      "rusLit/people/tolstoy.avif",
+      "rusLit/people/chehov.avif",
+      "rusLit/people/dostoevskiy.avif"
+    ],
+    "silver": [
+      "rusLit/people/block.avif",
+      "rusLit/people/ahmatova.avif",
+      "rusLit/people/cvetaeva.avif",
+      "rusLit/people/mayakovskiy.avif"
+    ],
+    "sssr": [
+      "rusLit/people/bulgakov.avif",
+      "rusLit/people/sholohov.avif",
+      "rusLit/people/tvardovskiy.avif",
+      "rusLit/people/solzhenicin.avif"
+    ]
+  },
+  "images": {
+    "genres": "rusLit/backgrounds/centresBg.avif"
+  }
+}

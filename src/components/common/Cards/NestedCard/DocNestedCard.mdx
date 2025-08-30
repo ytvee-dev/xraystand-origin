@@ -1,0 +1,58 @@
+# Component: DSCard
+
+## Overview
+Карточка с изображением, заголовком, подписью и опциональной ссылкой-кнопкой. Построена на базе MUI (`Card`, `CardMedia`, `CardContent`, `CardActions`) и предназначена для отображения короткого контента в сетках/списках.
+
+---
+
+## Props
+
+| Prop               | Type                                  | Default      | Description |
+|--------------------|---------------------------------------|--------------|-------------|
+| `imageName`        | `string`                              | `""`         | Имя файла изображения. Склеивается с `dsCardImagePathPrefix` для получения `src`. Если пусто — блок изображения скрыт. |
+| `title`            | `string`                              | `""`         | Заголовок карточки. |
+| `label`            | `string`                              | `""`         | Подпись/краткое описание. |
+| `linkedText`       | `string`                              | `""`         | Текст кнопки-ссылки внизу карточки. Если пусто — `CardActions` не рендерится. |
+| `action`           | `() => void`                          | `() => {}`   | Обработчик клика для всей карточки (через `CardActionArea`) и кнопки-ссылки. |
+| `backgroundColor`  | `string`                              | `"#FFFFFF"`  | Цвет фона карточки. |
+| `minWidth`         | `string`                              | `"270px"`    | Минимальная ширина карточки. Поддерживает значения вида `XXpx` или `100%`. |
+| `maxWidth`         | `string`                              | `"270px"`    | Максимальная ширина карточки. Поддерживает значения вида `XXpx` или `100%`. |
+| `imageHeight`      | `string`                              | `"150px"`    | Высота блока изображения. |
+| `sxText`           | `{ titleColor?: string; labelColor?: string; linkColor?: string; fontWeight?: number; imgObjectFit?: CSSProperties["objectFit"]; imgPadding?: string; }` | `defaultDSCardSX` | Набор стилистических настроек для текста и изображения. |
+
+**Внутренние зависимости:**
+- `dsCardImagePathPrefix` — префикс пути к изображению.
+- `defaultDSCardSX` — дефолтные стили шрифтов/картинки (цвета, `fontWeight`, `object-fit`, `padding`).
+
+---
+
+## Usage
+
+```tsx
+import DSCard from "@components/common/Cards/DSCard";
+import { defaultDSCardSX } from "@components/common/Cards/cardsMeta";
+
+export default function Example() {
+  return (
+    <DSCard
+      imageName="example.avif"
+      title="Card title"
+      label="Short description"
+      linkedText="Learn more"
+      action={() => console.log("card click")}
+      backgroundColor="#FFFFFF"
+      minWidth="270px"
+      maxWidth="320px"
+      imageHeight="160px"
+      sxText={{
+        ...defaultDSCardSX,
+        titleColor: "#111",
+        labelColor: "#666",
+        linkColor: "#0A66C2",
+        fontWeight: 600,
+        imgObjectFit: "cover",
+        imgPadding: "0",
+      }}
+    />
+  );
+}
