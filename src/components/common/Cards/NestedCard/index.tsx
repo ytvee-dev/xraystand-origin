@@ -7,7 +7,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
-import {defaultDSCardSX, dsCardImagePathPrefix, nestedDSCardSX} from "@components/common/Cards/cardsMeta.tsx";
+import {defaultDSCardSX, nestedDSCardSX} from "@components/common/Cards/cardsMeta.tsx";
+import { getImageUrl } from "@utils/constants";
 import "./style.css";
 
 
@@ -26,7 +27,7 @@ const NestedCard = ({
     sxNestedCards = nestedDSCardSX,
 }: INestedCardProps): ReactElement => {
 
-    const imagePath = dsCardImagePathPrefix + imageName;
+    const imagePath = getImageUrl(`/assets/images/${imageName}`);
     const nestedCardTitleColor = sxNestedCards.titleColor;
     const nestedCardLabelColor = sxNestedCards.labelColor;
 

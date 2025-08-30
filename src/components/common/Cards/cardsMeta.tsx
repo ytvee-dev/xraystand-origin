@@ -1,14 +1,12 @@
 import type {IDefaultCardSxText, INestedCardSx} from "@components/common/Cards/CardsTypes.ts";
-
-export const dsCardImagePathPrefixTemplate = './public/assets/ds-system/cards/';
-export const dsCardImagePathPrefix = './assets/images/';
+import { getImageUrl } from "@utils/constants";
 
 export const templateDSCardNames: string[] = [
     "ds-system/cards/ds-card-1.jpg",
     "ds-card-2.avif",
     "ds-card-3.avif",
     "ds-card-4.avif",
-];
+].map((name) => getImageUrl(`/assets/images/${name}`));
 
 export const defaultDSCardSX: IDefaultCardSxText = {
     titleColor: "rgba(0,0,0,1)",

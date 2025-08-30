@@ -1,5 +1,4 @@
-import madeBySrcLight from "@assets/madeByLight.avif";
-import madeBySrcDark from "@assets/madeByDark.avif";
+import { getImageUrl } from "@utils/constants";
 import type {IDefaultDarkFooterMeta} from "@components/common/Footers/StrictFooter/types.ts";
 
 export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
@@ -22,8 +21,8 @@ export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
             madeBy: {
                 link: "https://ytvee.com/service",
                 imagePath: {
-                    light: madeBySrcLight,
-                    dark: madeBySrcDark,
+                    light: getImageUrl("/assets/madeByLight.avif"),
+                    dark: getImageUrl("/assets/madeByDark.avif"),
                 },
             },
         }
@@ -47,8 +46,8 @@ export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
             madeBy: {
                 link: "https://ytvee.com/service",
                 imagePath: {
-                    light: madeBySrcLight,
-                    dark: madeBySrcDark,
+                    light: getImageUrl("/assets/madeByLight.avif"),
+                    dark: getImageUrl("/assets/madeByDark.avif"),
                 },
             },
         }

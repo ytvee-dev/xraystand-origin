@@ -7,12 +7,9 @@ export const enum LocalStorageKeys {
     LOCALE = "locale",
 }
 
-export const svgSpriteSrcPrefix: string = "./assets/icons/sprite.svg#";
-export const contentImageSrcPrefix: string = "./assets/images/";
-export const contentAnimationsSrcPrefix: string = "./assets/images/animations/";
-export const contentImageSrcSuffix: string = ".avif";
+export { getImageUrl } from "../cloudinary";
 
-export const contentDSCardsSrcPrefix: string = "./public/assets/images/ds-system/cards/";
+export const svgSpriteSrcPrefix: string = "./assets/icons/sprite.svg#";
 
 export const enum SvgSpriteIds {
     LOGO = "logo",

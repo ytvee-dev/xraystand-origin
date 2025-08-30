@@ -4,6 +4,7 @@ import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
 import LargeCard from "@components/common/Cards/LargeCard";
 import DefaultCardsListOL from "@modules/trafficLaws/components/DefaultCardsListOL";
 import SquareImageViewer from "@modules/trafficLaws/components/SquareImageViewer";
+import { getImageUrl } from "@utils/constants";
 import {Languages} from "@domains/Translate";
 import {useSelector} from "react-redux";
 import type {TRootState} from "@store/index.ts";
@@ -30,7 +31,7 @@ const FourthSection = (): ReactElement | null => {
                 </LargeCard>
             }
             rightColumn={
-                <SquareImageViewer path={"/assets/images/trafficLawsPage/cyclistsScooters.avif"} width={564}/>
+                <SquareImageViewer path={getImageUrl("trafficLawsPage/cyclistsScooters.avif")} width={564}/>
             }
         />
     );

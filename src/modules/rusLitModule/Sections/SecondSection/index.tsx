@@ -3,6 +3,7 @@ import {type DSContentBlockColorScheme} from "@components/common/DSContentBlock"
 import BackgroundBlock from "@modules/rusLitModule/components/BackgroundBlock";
 import * as content from "@modules/rusLitModule/locales/rus.json";
 import * as paths from "@modules/rusLitModule/locales/paths.json";
+import { getImageUrl } from "@utils/constants";
 import "./style.css";
 
 const rusLitTextColors: DSContentBlockColorScheme = {
@@ -12,14 +13,12 @@ const rusLitTextColors: DSContentBlockColorScheme = {
 }
 
 const SecondSection = (): ReactElement => {
-    const prefix = "./assets/images/";
-
     return (
         <section className="ruslit-second-section">
             <div className="ruslit-first-bg-image-container">
                 <img
                     className="ruslit-first-bg-image"
-                    src={prefix + paths.backgrounds.names}
+                    src={getImageUrl(paths.backgrounds.names)}
                 />
                 <div className="ruslit-content-section-text-container">
                     <h1
@@ -41,7 +40,7 @@ const SecondSection = (): ReactElement => {
             <div className="ruslit-second-bg-image-container">
                 <img
                     className="ruslit-second-bg-image"
-                    src={prefix + paths.backgrounds.names}
+                    src={getImageUrl(paths.backgrounds.names)}
                 />
                 <BackgroundBlock
                     subtitle={content.thirdSection.subTitle as string}

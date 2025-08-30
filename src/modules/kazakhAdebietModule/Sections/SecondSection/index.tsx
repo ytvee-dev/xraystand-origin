@@ -1,5 +1,6 @@
 import {type ReactElement} from "react";
 import SquareImageViewer from "@modules/trafficLaws/components/SquareImageViewer";
+import { getImageUrl } from "@utils/constants";
 import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
 import DSContentBlock, {type DSContentBlockColorScheme} from "@components/common/DSContentBlock";
 import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
@@ -21,7 +22,7 @@ const SecondSection = (): ReactElement => {
         <section className="kza-second-section">
             <TwoColumnSection
                 leftColumn={
-                    <SquareImageViewer path={"assets/images/kazakhAdebiet/tree.avif"} width={564}/>
+                    <SquareImageViewer path={getImageUrl("kazakhAdebiet/tree.avif")} width={564}/>
                 }
                 rightColumn={
                     <DSContentBlock

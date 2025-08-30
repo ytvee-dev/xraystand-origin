@@ -1,9 +1,6 @@
 import { type ReactElement } from "react";
 import Button from '@mui/material/Button';
-import {
-    contentImageSrcPrefix,
-    contentImageSrcSuffix,
-} from "@utils/constants";
+import { getImageUrl } from "@utils/constants";
 import "./style.css";
 
 export interface IContentImageCardProps {
@@ -30,7 +27,7 @@ const DefaultImageCard = ({
 
     const renderImage = (): ReactElement | null => {
         if (!imageId) return null;
-        const imagePath = `${contentImageSrcPrefix}${imageId}${contentImageSrcSuffix}`;
+        const imagePath = getImageUrl(imageId);
 
         return (
             <div

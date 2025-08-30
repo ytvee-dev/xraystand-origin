@@ -2,10 +2,7 @@ import { type ReactElement } from "react";
 import type {TRootState} from "@store/index.ts";
 import {Languages} from "@domains/Translate";
 import {useSelector} from "react-redux";
-import road from "../../../../../public/assets/images/trafficLawsPage/coverSection/road.avif";
-import carPng from "../../../../../public/assets/images/trafficLawsPage/coverSection/car.avif";
-import cloudsImg from "../../../../../public/assets/images/trafficLawsPage/coverSection/clouds.avif";
-import housesImg from "@assets/images/trafficLawsPage/coverSection/houses.avif";
+import { getImageUrl } from "@utils/constants";
 import * as textContentKz from "@modules/trafficLaws/locales/kaz.json";
 import * as textContentRu from "@modules/trafficLaws/locales/rus.json";
 import "./style.css";
@@ -32,23 +29,23 @@ const CoverSection = (): ReactElement => {
             <div className={"scene"}>
                 <div
                     className={`${"layer"} ${"houses"}`}
-                    style={{backgroundImage: `url(${housesImg})`}}
+                    style={{backgroundImage: `url(${getImageUrl("trafficLawsPage/coverSection/houses.avif")})`}}
                     data-speed="50"
                 />
 
                 <div
                     className={"layer"}
-                    style={{backgroundImage: `url(${cloudsImg})`}}
+                    style={{backgroundImage: `url(${getImageUrl("trafficLawsPage/coverSection/clouds.avif")})`}}
                     data-speed="10"
                 />
 
                 <div
                     className={`${"layer"} ${"road"}`}
-                    style={{backgroundImage: `url(${road})`}}
+                    style={{backgroundImage: `url(${getImageUrl("trafficLawsPage/coverSection/road.avif")})`}}
                     data-speed="3"
                 />
                 <div className={"car"}>
-                    <img src={carPng} alt="Car"/>
+                    <img src={getImageUrl("trafficLawsPage/coverSection/car.avif")} alt="Car"/>
                 </div>
             </div>
         </section>

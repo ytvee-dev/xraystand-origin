@@ -1,7 +1,7 @@
 import React, {type ReactElement} from "react";
 import type {IDefaultCardSxText} from "@components/common/Cards/CardsTypes.ts";
 import {defaultSectionSX} from "@components/common/Sections/meta.tsx";
-import heroBackground from "@assets/images/nutrition/backgrounds/hero.svg";
+import { getImageUrl } from "@utils/constants";
 import "./style.css";
 
 export interface ITitleHeroSectionProps {
@@ -41,7 +41,7 @@ const TitleHeroSection: React.FC<ITitleHeroSectionProps> = ({
                     }}
                 >{subtitle}</p>
             </div>
-            <img src={heroBackground} alt="background"/>
+            <img src={getImageUrl("nutrition/backgrounds/hero.svg")} alt="background"/>
         </section>
     );
 };

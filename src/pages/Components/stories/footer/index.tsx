@@ -1,8 +1,7 @@
 import { useState } from "react";
 import type { IStrictFooterContent } from "@components/common/Footers/StrictFooter/types";
 import Footer from "@components/common/Footers/StrictFooter";
-import madeBySrcLight from "@assets/madeByLight.avif";
-import madeBySrcDark from "@assets/madeByDark.avif";
+import { getImageUrl } from "@utils/constants";
 
 export const defaultFooterSX = {
     backgroundColor: "#181818",
@@ -30,8 +29,8 @@ export const strictFooterMeta: IStrictFooterContent = {
         madeBy: {
             link: "https://ytvee.com/service",
             imagePath: {
-                light: madeBySrcLight,
-                dark: madeBySrcDark,
+                light: getImageUrl("/assets/madeByLight.avif"),
+                dark: getImageUrl("/assets/madeByDark.avif"),
             },
         },
     }

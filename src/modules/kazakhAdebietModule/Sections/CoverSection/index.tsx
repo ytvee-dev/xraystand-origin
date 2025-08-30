@@ -1,6 +1,5 @@
 import {type ReactElement} from "react";
-import coverImg from '@assets/images/kazakhAdebiet/cover.avif';
-import coverMobile from '@assets/images/kazakhAdebiet/coverMobile.avif';
+import { getImageUrl } from "@utils/constants";
 import * as sectionContent from '@modules/kazakhAdebietModule/locales/kaz.json';
 import "./style.css";
 import useWindowWidth from "@hooks/useScreenWidth.ts";
@@ -9,8 +8,8 @@ const CoverSection = (): ReactElement => {    const screenWidth = useWindowWidth
 
     return (
         <section className="kza-cover-section">
-            {screenWidth > 870 && <img src={coverImg} alt=''/>}
-            {screenWidth < 870 && <img src={coverMobile} alt=''/>}
+            {screenWidth > 870 && <img src={getImageUrl("kazakhAdebiet/cover.avif")} alt=''/>}
+            {screenWidth < 870 && <img src={getImageUrl("kazakhAdebiet/coverMobile.avif")} alt=''/>}
 
             <div className="kza-cover-text-content">
                 <h1>{sectionContent.coverSection.title}</h1>

@@ -4,6 +4,7 @@ import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
 import DSContentBlock from "@components/common/DSContentBlock";
 import SquareImageViewer from "@modules/trafficLaws/components/SquareImageViewer";
 import DSInformationCard from "@components/common/Cards/DSInformationCard";
+import { getImageUrl } from "@utils/constants";
 
 import * as content from "@modules/rusLitModule/locales/rus.json";
 import * as paths from "@modules/rusLitModule/locales/paths.json";
@@ -19,7 +20,6 @@ const notificationColorScheme = {
 }
 
 const SecondSection = (): ReactElement => {
-    const imagePrefix = "./assets/images/";
     const screenWidth = useScreenWidth();
 
     return (
@@ -47,7 +47,7 @@ const SecondSection = (): ReactElement => {
                 }
                 rightColumn={
                     <SquareImageViewer
-                        path={imagePrefix + paths.images.genres}
+                        path={getImageUrl(paths.images.genres)}
                         width={575}
                         height={510}
                         objectFit="cover"
