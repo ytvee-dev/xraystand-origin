@@ -29,6 +29,7 @@ const HomePage = (): ReactElement => {
                 <div className="other">
                     <h2>Библиотека</h2>
                     <p><Link to={"/components"}>Компоненты</Link></p>
+                    <p><Link to={"/spinner"}>Загрузка</Link></p>
                 </div>
             </div>
         </div>

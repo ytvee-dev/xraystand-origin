@@ -15,6 +15,7 @@
     opacity: 1;
     visibility: visible;
     transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    z-index: 200;
 }
 
 .spinner-wrapper.hidden {

@@ -10,6 +10,7 @@ const Chemistry = lazy(() => import("@pages/Chemistry"));
 const ComponentsPage = lazy(() => import("@pages/Components"));
 const RusLit = lazy(() => import("@pages/RusLit"));
 const Nutrition = lazy(() => import("@pages/Nutrition"));
+const SpinnerDemo = lazy(() => import("@pages/SpinnerDemo"));
 // const Mathematics = lazy(() => import("@pages/Mathematics"));
 // const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
 // const KazMusic = lazy(() => import("@pages/KazMusic"));
@@ -58,6 +59,10 @@ export const paths = {
     COMPONENTS: {
         id: "components",
         path: "/components",
+    },
+    SPINNER_DEMO: {
+        id: "spinnerDemo",
+        path: "/spinner",
     },
 };
 
@@ -109,6 +114,10 @@ const routes: RouteObject[] = [
     {
         ...paths.COMPONENTS,
         element: <ComponentsPage />,
+    },
+    {
+        ...paths.SPINNER_DEMO,
+        element: <SpinnerDemo />,
     },
 ];
 
