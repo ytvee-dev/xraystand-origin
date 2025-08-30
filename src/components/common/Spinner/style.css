@@ -5,7 +5,7 @@
 
     display: flex; justify-content: center; align-items: center;
     padding: 50px;
-    background-color: rgba(20, 20, 20, 0.7);
+    background-color: rgba(10, 30, 50, 0.7);
     overflow: hidden;
 
     -webkit-backdrop-filter: blur(20px);
@@ -18,7 +18,7 @@
 }
 
 @supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
-    .spinner-wrapper { background-color: rgba(20, 20, 20, 0.88); }
+    .spinner-wrapper { background-color: rgba(10, 30, 50, 0.88); }
 }
 
 .spinner-wrapper.hidden {
@@ -35,13 +35,13 @@
     z-index: 10;
 
     -webkit-filter: drop-shadow(0 0 10px #ffffff)
-    drop-shadow(0 0 20px rgba(255,179,0,0.35))
-    drop-shadow(0 0 40px #05D9E8)
-    drop-shadow(0 0 60px #05D9E8);
+    drop-shadow(0 0 20px rgba(0,180,255,0.4))
+    drop-shadow(0 0 40px #00c4d6)
+    drop-shadow(0 0 60px #00c4d6);
     filter: drop-shadow(0 0 10px #ffffff)
-    drop-shadow(0 0 20px rgba(255,179,0,0.35))
-    drop-shadow(0 0 40px #05D9E8)
-    drop-shadow(0 0 60px #05D9E8);
+    drop-shadow(0 0 20px rgba(0,180,255,0.4))
+    drop-shadow(0 0 40px #00c4d6)
+    drop-shadow(0 0 60px #00c4d6);
 
     will-change: transform, opacity, filter;
     -webkit-transform: translateZ(0);
@@ -54,9 +54,9 @@
     .loader-icon {
         box-shadow:
                 0 0 10px 2px #ffffff,
-                0 0 20px 4px rgba(255,179,0,0.35),
-                0 0 40px 6px #05D9E8,
-                0 0 60px 8px #05D9E8;
+                0 0 20px 4px rgba(0,180,255,0.4),
+                0 0 40px 6px #00c4d6,
+                0 0 60px 8px #00c4d6;
     }
 }
 
@@ -66,7 +66,7 @@
     box-sizing: border-box;
     width: 200px; height: 200px;
     border-radius: 50%;
-    border: 7px solid #141414;
+    border: 7px solid #0a1e32;
 
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
@@ -74,10 +74,10 @@
     transform: perspective(200px) rotateX(66deg) translateZ(0);
 
     box-shadow:
-            0 0 15px #05D9E8,
-            0 0 30px #05D9E8,
-            0 0 45px #FF2A6D,
-            0 0 60px #FF2A6D;
+            0 0 15px #00c4d6,
+            0 0 30px #00c4d6,
+            0 0 45px #0080ff,
+            0 0 60px #0080ff;
 
     will-change: transform, opacity;
 }
@@ -99,13 +99,13 @@
 }
 
 .loader::before {
-    border-top-color: #FFB300;
-    box-shadow: 0 0 10px #FFB300, 0 0 25px #FFB300, 0 0 40px #FF2A6D;
+    border-top-color: #00eaff;
+    box-shadow: 0 0 10px #00eaff, 0 0 25px #00eaff, 0 0 40px #0080ff;
 }
 .loader::after {
-    border-top-color: #05D9E8;
+    border-top-color: #00c4d6;
     animation-delay: 0.4s;
-    box-shadow: 0 0 10px #05D9E8, 0 0 25px #05D9E8, 0 0 40px #FF2A6D;
+    box-shadow: 0 0 10px #00c4d6, 0 0 25px #00c4d6, 0 0 40px #0080ff;
 }
 
 @-webkit-keyframes spinner-spin { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
@@ -115,26 +115,20 @@
 @keyframes spinner-fade         { 25%,75% { opacity: .1 } 50% { opacity: 1 } }
 
 @-webkit-keyframes pulse {
-    0%   { -webkit-transform: scale(1); transform: scale(1); opacity: 1;
-        -webkit-filter: drop-shadow(0 0 5px #05D9E8) drop-shadow(0 0 15px #05D9E8);
-        filter: drop-shadow(0 0 5px #05D9E8) drop-shadow(0 0 15px #05D9E8);}
-    50%  { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: .7;
-        -webkit-filter: drop-shadow(0 0 15px #FF2A6D) drop-shadow(0 0 30px #05D9E8);
-        filter: drop-shadow(0 0 15px #FF2A6D) drop-shadow(0 0 30px #05D9E8);}
-    100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1;
-        -webkit-filter: drop-shadow(0 0 5px #05D9E8) drop-shadow(0 0 15px #05D9E8);
-        filter: drop-shadow(0 0 5px #05D9E8) drop-shadow(0 0 15px #05D9E8);}
+    0%   { transform: scale(1); opacity: 1;
+        filter: drop-shadow(0 0 5px #00c4d6) drop-shadow(0 0 15px #00eaff);}
+    50%  { transform: scale(1.1); opacity: .7;
+        filter: drop-shadow(0 0 15px #0080ff) drop-shadow(0 0 30px #00c4d6);}
+    100% { transform: scale(1); opacity: 1;
+        filter: drop-shadow(0 0 5px #00c4d6) drop-shadow(0 0 15px #00eaff);}
 }
 @keyframes pulse {
-    0%   { -webkit-transform: scale(1); transform: scale(1); opacity: 1;
-        -webkit-filter: drop-shadow(0 0 5px #05D9E8) drop-shadow(0 0 15px #05D9E8);
-        filter: drop-shadow(0 0 5px #05D9E8) drop-shadow(0 0 15px #05D9E8);}
-    50%  { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: .7;
-        -webkit-filter: drop-shadow(0 0 15px #FF2A6D) drop-shadow(0 0 30px #05D9E8);
-        filter: drop-shadow(0 0 15px #FF2A6D) drop-shadow(0 0 30px #05D9E8);}
-    100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1;
-        -webkit-filter: drop-shadow(0 0 5px #05D9E8) drop-shadow(0 0 15px #05D9E8);
-        filter: drop-shadow(0 0 5px #05D9E8) drop-shadow(0 0 15px #05D9E8);}
+    0%   { transform: scale(1); opacity: 1;
+        filter: drop-shadow(0 0 5px #00c4d6) drop-shadow(0 0 15px #00eaff);}
+    50%  { transform: scale(1.1); opacity: .7;
+        filter: drop-shadow(0 0 15px #0080ff) drop-shadow(0 0 30px #00c4d6);}
+    100% { transform: scale(1); opacity: 1;
+        filter: drop-shadow(0 0 5px #00c4d6) drop-shadow(0 0 15px #00eaff);}
 }
 
 @media (prefers-reduced-motion: reduce) {
