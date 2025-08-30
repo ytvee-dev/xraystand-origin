@@ -4,6 +4,7 @@ import DSCard from "@components/common/Cards/DSCard";
 import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
 import * as content from "@modules/kazakhAdebietModule/locales/kaz.json";
 import * as paths from "@modules/kazakhAdebietModule/locales/paths.json";
+import {CONTENT_URL} from "@utils/constants";
 import "./style.css";
 
 const FirstSection = (): ReactElement => {
@@ -19,7 +20,7 @@ const FirstSection = (): ReactElement => {
                     {content.firstSection["content"].map((card, indx) => (
                         <DSCard
                             key={indx}
-                            imageName={paths.cards[indx]}
+                            imageName={CONTENT_URL +paths.cards[indx]}
                             title={card.title}
                             backgroundColor="#FAFAFA"
                             minWidth="97px"
