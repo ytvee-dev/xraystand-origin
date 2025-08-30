@@ -1,4 +1,4 @@
-import React, {type ReactElement} from "react";
+import React, {type ReactElement, useEffect, useState} from "react";
 import './style.css';
 
 const Logo: React.FC = (): ReactElement => (
@@ -42,8 +42,16 @@ const Logo: React.FC = (): ReactElement => (
 );
 
 const Spinner = (): ReactElement => {
+    const [hidden, setHidden] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("load", () => {
+            setHidden(true);
+        });
+    }, []);
+
     return (
-        <div className='spinner-wrapper'>
+        <div className={`spinner-wrapper ${hidden ? "hidden" : ""}`}>
             <Logo/>
             <span className="loader"></span>
         </div>
