@@ -16,6 +16,7 @@ export const defaultFooterSX = {
 export const strictFooterMeta: IStrictFooterContent = {
     logoPath: `./assets/icons/sprite.svg#`,
     contacts: {
+        label: "Свяжитесь с нами",
         email: "hello@example.com",
         phone: "+7 (999) 123-45-67",
     },
