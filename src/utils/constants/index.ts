@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 export interface IListItemProps {
     label: string;
     value: string;
@@ -14,7 +7,7 @@ export const enum LocalStorageKeys {
     LOCALE = "locale",
 }
 
-export const svgSpriteSrcPrefix: string = "./assets/images/sprite.svg#";
+export const svgSpriteSrcPrefix: string = "./assets/icons/sprite.svg#";
 export const contentImageSrcPrefix: string = "./assets/images/";
 export const contentAnimationsSrcPrefix: string = "./assets/images/animations/";
 export const contentImageSrcSuffix: string = ".avif";
