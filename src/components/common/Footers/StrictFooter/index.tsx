@@ -53,7 +53,7 @@ const Footer = ({meta, sx = {
                     </div>
                 </div>
                 <div className="footer-contacts-container">
-                    <p style={{color: sx?.boldTextColor}}>Контакты</p>
+                    <p style={{color: sx?.boldTextColor}}>{meta.contacts.label}</p>
                     <span style={{color: sx?.textColor}}>{meta.contacts.email}</span>
                     <span style={{color: sx?.textColor}}>{meta.contacts.phone}</span>
                 </div>

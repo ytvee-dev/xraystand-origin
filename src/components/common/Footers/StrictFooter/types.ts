@@ -1,4 +1,5 @@
 export interface IContacts {
+    label: string,
     email: string,
     phone: string
 };
