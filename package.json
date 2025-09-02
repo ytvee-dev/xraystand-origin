@@ -1,12 +1,12 @@
 {
-  "name": "react-ts",
+  "name": "xRay Stand",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint ../../../../AppData/Local/Temp/Rar$DRa19988.29699.rartemp/xraystand-origin-preload-rollback",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -17,7 +17,6 @@
     "@mui/lab": "^7.0.0-beta.16",
     "@mui/material": "^7.3.1",
     "@reduxjs/toolkit": "^2.8.2",
-    "node": "^22.16.0",
     "prismjs": "^1.30.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

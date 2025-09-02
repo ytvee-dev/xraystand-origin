@@ -1,0 +1,9 @@
+/* TEAM */
+Developer: YTVEE-DEV (Evgeniy Tyan)
+Site: https://ytvee.com
+Twitter: https://twitter.com/ytvee
+GitHub: https://github.com/ytvee-dev
+
+/* SITE */
+Last update: 2025-09-03
+Standards: HTML5, CSS, JS
