@@ -3,10 +3,12 @@ import { createSlice } from "@reduxjs/toolkit";
 
 interface IPageState {
     isModalOpened: boolean;
+    isContentLoaded: boolean;
 }
 
 const initialState: IPageState = {
     isModalOpened: false,
+    isContentLoaded: false,
 };
 
 const applicationSlice = createSlice({
@@ -16,9 +18,12 @@ const applicationSlice = createSlice({
         setIsModalOpened: (state, action: PayloadAction<boolean>) => {
             state.isModalOpened = action.payload;
         },
+        setIsContentLoaded: (state, action: PayloadAction<boolean>) => {
+            state.isContentLoaded = action.payload;
+        },
     },
 });
 
-export const { setIsModalOpened } = applicationSlice.actions;
+export const { setIsModalOpened, setIsContentLoaded } = applicationSlice.actions;
 
 export default applicationSlice.reducer;

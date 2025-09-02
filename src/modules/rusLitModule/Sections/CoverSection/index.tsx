@@ -1,5 +1,6 @@
 import {type ReactElement} from "react";
-import coverImg from '../../../../../public/assets/images/rusLit/backgrounds/coverBg.png';
+import LazyLoadImage from "@components/common/Other/LazyLoadImage";
+import coverImg from '@assets/images/rusLit/backgrounds/coverBg.png';
 import * as sectionContent from '../../locales/rus.json';
 import "./style.css";
 
@@ -8,7 +9,7 @@ const CoverSection = (): ReactElement => {
     return (
         <section className="ruslit-cover-section">
             <div className="ruslit-cover-section-image-container">
-                <img src={coverImg} alt='cover'/>
+                <LazyLoadImage alt={'cover'} src={coverImg} />
             </div>
 
             <div className="ruslit-cover-text-content">

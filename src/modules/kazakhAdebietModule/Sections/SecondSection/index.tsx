@@ -21,7 +21,7 @@ const SecondSection = (): ReactElement => {
         <section className="kza-second-section">
             <TwoColumnSection
                 leftColumn={
-                    <SquareImageViewer path={"assets/images/kazakhAdebiet/tree.avif"} width={564}/>
+                    <SquareImageViewer path={"assets/images/kazakhAdebiet/tree.png"} width={564}/>
                 }
                 rightColumn={
                     <DSContentBlock

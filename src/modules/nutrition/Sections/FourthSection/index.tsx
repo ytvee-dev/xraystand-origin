@@ -1,9 +1,10 @@
 import React, {type ReactElement} from "react";
 import type {FourthSection as TFourthSection} from "../../types";
-import BgContentSection from "../../../../components/common/Sections/BgContentSection";
-import TwoColumnSection from "../../../../components/common/Sections/TwoColumnSection";
-import IconTextItem from "../../../../components/common/Other/IconTextItem";
-import {dsCardImagePathPrefix} from "../../../../components/common/Cards/cardsMeta.tsx";
+import BgContentSection from "@components/common/Sections/BgContentSection";
+import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
+import IconTextItem from "@components/common/Other/IconTextItem";
+import LazyLoadImage from "@components/common/Other/LazyLoadImage";
+import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
 import * as paths from "../../locales/paths.json";
 import "./style.css";
 
@@ -31,7 +32,7 @@ const FourthSection: React.FC<FourthSectionProps> = ({content}: FourthSectionPro
             <div style={{ padding: '0 20px' }}>
                 <TwoColumnSection leftColumn={
                     <div className='nutrition-fourth-section-img-wrapper'>
-                        <img src={plateImage} alt="plate image"/>
+                        <LazyLoadImage src={plateImage} alt="plate image"/>
                     </div>
                 } rightColumn={
                     <div className={'nutrition-fourth-section-items'}>

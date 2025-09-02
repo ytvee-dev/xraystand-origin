@@ -24,7 +24,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    "baseUrl": "../../../../AppData/Local/Temp/Rar$DRa19988.29699.rartemp/xraystand-origin-preload-rollback",
+    "baseUrl": ".",
     "paths": {
       "@assets/*": ["public/assets/*"],
       "@modules/*": ["src/modules/*"],

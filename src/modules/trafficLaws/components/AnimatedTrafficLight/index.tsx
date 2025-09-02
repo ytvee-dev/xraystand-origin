@@ -1,7 +1,8 @@
 import { type ReactElement, type MouseEvent, type TouchEvent } from "react";
 import { trafficLightsConfig, type ITrafficLightConfig } from "./meta.ts";
 import {useSelector} from "react-redux";
-import type {TRootState} from "../../../../store";
+import type {TRootState} from "@store/index.ts";
+import LazyLoadImage from "@components/common/Other/LazyLoadImage";
 import "./style.css";
 
 const AnimatedTrafficLight = (): ReactElement => {
@@ -29,7 +30,7 @@ const AnimatedTrafficLight = (): ReactElement => {
         <div className="animated-traffic-light">
             <div className="animated-traffic-light-wrapper">
                 <div className="traffic-light-background-image-wrapper">
-                    <img src={trafficLightsConfig.backgroundImageSrc} />
+                    <LazyLoadImage src={trafficLightsConfig.backgroundImageSrc} />
                 </div>
                 <div className="traffic-light-container">
                     {trafficLightsConfig.trafficLights.map(

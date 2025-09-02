@@ -7,10 +7,8 @@ const TrafficsLawsPage = lazy(() => import("../pages/TrafficsLaws"));
 const KazakhAdebiet = lazy(() => import("../pages/KazakhAdebiet"));
 const InProgress = lazy(() => import("../pages/InProgress"));
 const Chemistry = lazy(() => import("../pages/Chemistry"));
-const ComponentsPage = lazy(() => import("../pages/Components"));
 const RusLit = lazy(() => import("../pages/RusLit"));
 const Nutrition = lazy(() => import("../pages/Nutrition"));
-const SpinnerDemo = lazy(() => import("../pages/SpinnerDemo"));
 // const Mathematics = lazy(() => import("@pages/Mathematics"));
 // const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
 // const KazMusic = lazy(() => import("@pages/KazMusic"));
@@ -55,14 +53,6 @@ export const paths = {
     NOT_FOUND: {
         id: "notFound",
         path: "*",
-    },
-    COMPONENTS: {
-        id: "components",
-        path: "/components",
-    },
-    SPINNER_DEMO: {
-        id: "spinnerDemo",
-        path: "/spinner",
     },
 };
 
@@ -110,14 +100,6 @@ const routes: RouteObject[] = [
     {
         ...paths.NOT_FOUND,
         element: <NotFoundPage />,
-    },
-    {
-        ...paths.COMPONENTS,
-        element: <ComponentsPage />,
-    },
-    {
-        ...paths.SPINNER_DEMO,
-        element: <SpinnerDemo />,
     },
 ];
 

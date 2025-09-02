@@ -12,6 +12,7 @@ import SecondSection from "../../modules/nutrition/Sections/SecondSection";
 import ThirdSection from "../../modules/nutrition/Sections/ThirdSection";
 import FourthSection from "../../modules/nutrition/Sections/FourthSection";
 import FifthSection from "../../modules/nutrition/Sections/FifthSection";
+import Spinner from "@components/common/Spinner";
 import {Languages} from "../../domains/Translate";
 import * as contentRu from "../../modules/nutrition/locales/rus.json";
 import * as contentKz from "../../modules/nutrition/locales/kaz.json";
@@ -32,6 +33,9 @@ const Nutrition: React.FC = (): ReactElement => {
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale
     );
+    const isContentLoaded: boolean = useSelector(
+        (state: TRootState) => state.application.isContentLoaded
+    );
     const content: NutritionLocale = currentLocale === 'ru' ? contentRu : contentKz;
 
     const scrollTo = (id: string) => {
@@ -46,6 +50,8 @@ const Nutrition: React.FC = (): ReactElement => {
             navigation={<NutritionNav onNavigate={scrollTo}/>}
             stickyHeader={true}
         >
+            {!isContentLoaded && (<Spinner />)}
+
             <section id={SECTION_IDS.cover} className="nutrition-section">
                 <TitleHeroSection
                     title={content.coverSection.title}
