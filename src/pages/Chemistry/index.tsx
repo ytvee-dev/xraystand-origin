@@ -10,6 +10,7 @@ import PeriodicTable from "../../modules/chemistry/components/PeriodicTable";
 import PeriodicTableMobile from "../../modules/chemistry/components/PeriodicTableMobile";
 import FlexibleModal from "../../components/common/Modal/FlexibleModal";
 import ChemistryModalContent from "../../modules/chemistry/components/ChemistryModalContent";
+import Spinner from "@components/common/Spinner";
 import * as contentKZ from "../../modules/chemistry/locales/kaz.json";
 import * as contentRU from "../../modules/chemistry/locales/rus.json";
 import "./style.css";
@@ -21,6 +22,9 @@ const Chemistry = (): ReactElement => {
 
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale
+    );
+    const isContentLoaded: boolean = useSelector(
+        (state: TRootState) => state.application.isContentLoaded
     );
 
     const sectionMeta = currentLocale === "kz" ? contentKZ : contentRU;
@@ -51,6 +55,9 @@ const Chemistry = (): ReactElement => {
     return (
         <DefaultLayout langSwitchColor={'#249FF5'}>
             <CustomContentSection {...sectionMetaTranslation}>
+
+                {!isContentLoaded && (<Spinner />)}
+
                 <FlexibleModal
                     isModalOpened={isElementModalOpened}
                     closeAction={closeModal}

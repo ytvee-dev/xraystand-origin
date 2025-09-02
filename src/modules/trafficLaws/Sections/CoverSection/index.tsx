@@ -1,11 +1,12 @@
 import { type ReactElement } from "react";
-import type {TRootState} from "../../../../store";
-import {Languages} from "../../../../domains/Translate";
+import type {TRootState} from "@store/index.ts";
+import {Languages} from "@domains/Translate";
 import {useSelector} from "react-redux";
-import road from "../../../../../public/assets/images/trafficLawsPage/coverSection/road.avif";
-import carPng from "../../../../../public/assets/images/trafficLawsPage/coverSection/car.avif";
-import cloudsImg from "../../../../../public/assets/images/trafficLawsPage/coverSection/clouds.avif";
-import housesImg from "../../../../../public/assets/images/trafficLawsPage/coverSection/houses.avif";
+import LazyLoadImage from "@components/common/Other/LazyLoadImage";
+import road from "@assets/images/trafficLawsPage/coverSection/road.avif";
+import carPng from "@assets/images/trafficLawsPage/coverSection/car.png";
+import cloudsImg from "@assets/images/trafficLawsPage/coverSection/clouds.png";
+import housesImg from "@assets/images/trafficLawsPage/coverSection/houses.png";
 import * as textContentKz from "../../locales/kaz.json";
 import * as textContentRu from "../../locales/rus.json";
 import "./style.css";
@@ -48,7 +49,7 @@ const CoverSection = (): ReactElement => {
                     data-speed="3"
                 />
                 <div className={"car"}>
-                    <img src={carPng} alt="Car"/>
+                    <LazyLoadImage src={carPng} alt="Car"/>
                 </div>
             </div>
         </section>

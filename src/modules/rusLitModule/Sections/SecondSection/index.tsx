@@ -1,6 +1,7 @@
 import {type ReactElement} from "react";
 import {type DSContentBlockColorScheme} from "../../../../components/common/DSContentBlock";
 import BackgroundBlock from "../../components/BackgroundBlock";
+import LazyLoadImage from "@components/common/Other/LazyLoadImage";
 import * as content from "../../locales/rus.json";
 import * as paths from "../../locales/paths.json";
 import "./style.css";
@@ -17,10 +18,8 @@ const SecondSection = (): ReactElement => {
     return (
         <section className="ruslit-second-section">
             <div className="ruslit-first-bg-image-container">
-                <img
-                    className="ruslit-first-bg-image"
-                    src={prefix + paths.backgrounds.names}
-                />
+                <LazyLoadImage className={'ruslit-first-bg-image'} alt={paths.backgrounds.names}
+                               src={prefix + paths.backgrounds.names}/>
                 <div className="ruslit-content-section-text-container">
                     <h1
                         className="ruslit-content-section-title"
@@ -39,10 +38,8 @@ const SecondSection = (): ReactElement => {
                 />
             </div>
             <div className="ruslit-second-bg-image-container">
-                <img
-                    className="ruslit-second-bg-image"
-                    src={prefix + paths.backgrounds.names}
-                />
+                <LazyLoadImage className={'ruslit-second-bg-image'} alt={paths.backgrounds.names}
+                               src={prefix + paths.backgrounds.names}/>
                 <BackgroundBlock
                     subtitle={content.thirdSection.subTitle as string}
                     cards={content.thirdSection.content}

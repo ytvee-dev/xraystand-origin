@@ -57,7 +57,7 @@ const DSContentBlock = ({
             <DSNotification
                 label={notificationLabel}
                 type="warning"
-                backgroundColor={colorScheme?.notificationBackgroundColor!}
+                backgroundColor={colorScheme?.notificationBackgroundColor}
                 textColor={colorScheme?.notificationTextColor}
                 borderColor={colorScheme?.notificationBorderColor}
                 iconName="warningIcon"

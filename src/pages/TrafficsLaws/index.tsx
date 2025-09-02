@@ -3,19 +3,20 @@ import type {TRootState} from "../../store";
 import type {IContentLabel, TContentItem} from "../../utils/types/trafficLawsTypes";
 import {useDispatch, useSelector} from "react-redux";
 import {setIsModalOpened} from "../../store/slices/Application";
-import DefaultLayout from "../../layout/Default";
-import FirstSection from "../../modules/trafficLaws/Sections/FirstSection";
-import SecondSection from "../../modules/trafficLaws/Sections/SecondSection";
-import ThirdSection from "../../modules/trafficLaws/Sections/ThirdSection";
-import FourthSection from "../../modules/trafficLaws/Sections/FourthSection";
-import FifthSection from "../../modules/trafficLaws/Sections/FifthSection";
-import SixthSection from "../../modules/trafficLaws/Sections/SixthSection";
-import SeventhSection from "../../modules/trafficLaws/Sections/SeventhSection";
-import EighthSection from "../../modules/trafficLaws/Sections/EighthSection";
-import NinthSection from "../../modules/trafficLaws/Sections/NinthSection";
-import CoverSection from "../../modules/trafficLaws/Sections/CoverSection";
-import FlexibleModal from "../../components/common/Modal/FlexibleModal";
-import DefaultImageCard from "../../modules/trafficLaws/components/DefaultImageCard";
+import DefaultLayout from "@layout/Default";
+import FirstSection from "@modules/trafficLaws/Sections/FirstSection";
+import SecondSection from "@modules/trafficLaws/Sections/SecondSection";
+import ThirdSection from "@modules/trafficLaws/Sections/ThirdSection";
+import FourthSection from "@modules/trafficLaws/Sections/FourthSection";
+import FifthSection from "@modules/trafficLaws/Sections/FifthSection";
+import SixthSection from "@modules/trafficLaws/Sections/SixthSection";
+import SeventhSection from "@modules/trafficLaws/Sections/SeventhSection";
+import EighthSection from "@modules/trafficLaws/Sections/EighthSection";
+import NinthSection from "@modules/trafficLaws/Sections/NinthSection";
+import CoverSection from "@modules/trafficLaws/Sections/CoverSection";
+import FlexibleModal from "@components/common/Modal/FlexibleModal";
+import DefaultImageCard from "@modules/trafficLaws/components/DefaultImageCard";
+import Spinner from "@components/common/Spinner";
 import "./style.css";
 
 const modalPolicemanImagesPaths: Record<string, string[]> = {
@@ -108,6 +109,9 @@ const signsImagesPaths: Record<string, string[]> = {
 
 const TrafficsLawsPage = (): ReactElement => {
     const dispatch = useDispatch();
+    const isContentLoaded: boolean = useSelector(
+        (state: TRootState) => state.application.isContentLoaded
+    );
 
     const isModalOpened: boolean = useSelector((state: TRootState) => state.application.isModalOpened);
     const modalContentName: TContentItem =
@@ -158,6 +162,7 @@ const TrafficsLawsPage = (): ReactElement => {
     return (
         <DefaultLayout langSwitchColor={'#249FF5'}>
             <div className="traffics-laws-page">
+                {!isContentLoaded && (<Spinner />)}
                 <FlexibleModal
                     isModalOpened={isModalOpened}
                     closeAction={closeModal}

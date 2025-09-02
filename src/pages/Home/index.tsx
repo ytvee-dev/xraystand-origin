@@ -25,12 +25,6 @@ const HomePage = (): ReactElement => {
                     <p><Link to={"/classroomsafety"}>Техника безопасности в кабинетах</Link></p>
                     <p><Link to={"/kazmusicinstr"}>Музыка (каз нац инструменты)</Link></p>
                 </div>
-
-                <div className="other">
-                    <h2>Библиотека</h2>
-                    <p><Link to={"/components"}>Компоненты</Link></p>
-                    <p><Link to={"/spinner"}>Загрузка</Link></p>
-                </div>
             </div>
         </div>
     );

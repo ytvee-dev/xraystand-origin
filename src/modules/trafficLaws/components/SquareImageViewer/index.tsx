@@ -1,4 +1,5 @@
 import {type ReactElement} from "react";
+import LazyLoadImage from "@components/common/Other/LazyLoadImage";
 import "./style.css";
 
 export interface ISquareImageViewerProps {
@@ -26,9 +27,10 @@ const SquareImageViewer = ({
                 padding: imagePadding,
             }}
         >
-            <img
+            <LazyLoadImage
                 className="square-image"
-                src={path} alt="square image"
+                alt={"square image"}
+                src={path}
                 style={{
                     objectFit: objectFit
                 }}

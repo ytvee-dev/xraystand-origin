@@ -30,7 +30,7 @@ const FourthSection = (): ReactElement | null => {
                 </LargeCard>
             }
             rightColumn={
-                <SquareImageViewer path={"/assets/images/trafficLawsPage/cyclistsScooters.avif"} width={564}/>
+                <SquareImageViewer path={"/assets/images/trafficLawsPage/cyclistsScooters.png"} width={564}/>
             }
         />
     );

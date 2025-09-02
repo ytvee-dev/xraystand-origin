@@ -1,9 +1,10 @@
 import { type ReactElement } from "react";
 import Button from '@mui/material/Button';
+import LazyLoadImage from "@components/common/Other/LazyLoadImage";
 import {
     contentImageSrcPrefix,
     contentImageSrcSuffix,
-} from "../../../../utils/constants";
+} from "@utils/constants";
 import "./style.css";
 
 export interface IContentImageCardProps {
@@ -37,7 +38,7 @@ const DefaultImageCard = ({
                 className={`default-image-card-image-container image-size-${smallImageSizes ? "small" : "normal"}`}
                 style={{ backgroundColor }}
             >
-                <img
+                <LazyLoadImage
                     className="content-image-card-image"
                     src={imagePath}
                     alt="content image"
