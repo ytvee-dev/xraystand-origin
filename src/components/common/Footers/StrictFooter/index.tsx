@@ -1,6 +1,5 @@
 import {type ReactElement} from "react";
 import type {IStrictFooterContent} from "./types.ts";
-import LazyLoadImage from "@components/common/Other/LazyLoadImage";
 import "./style.css";
 
 interface IStrictFooterSX {
@@ -67,7 +66,7 @@ const Footer = ({meta, sx = {
                 >{meta.copyright}</div>
                 <a href={meta.content.madeBy.link} target="_blank">
                     <div className="footer-made-by">
-                        <LazyLoadImage src={madeBySrc}/>
+                        <img src={madeBySrc}/>
                     </div>
                 </a>
             </div>

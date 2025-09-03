@@ -2,20 +2,23 @@ import React, {type ReactElement} from "react";
 import type {TRootState} from "../../store";
 import type {NutritionLocale} from "../../modules/nutrition/types";
 import {useSelector} from "react-redux";
-import useScreenWidth from "../../hooks/useScreenWidth.ts";
-import BrightnessLayout from "../../layout/Brightness";
-import NutritionLogo from "../../modules/nutrition/components/NutritionLogo";
-import NutritionNav from "../../modules/nutrition/components/NutritionNav";
-import FirstSection from "../../modules/nutrition/Sections/FirstSection";
-import TitleHeroSection from "../../components/common/Sections/TitleHeroSection";
-import SecondSection from "../../modules/nutrition/Sections/SecondSection";
-import ThirdSection from "../../modules/nutrition/Sections/ThirdSection";
-import FourthSection from "../../modules/nutrition/Sections/FourthSection";
-import FifthSection from "../../modules/nutrition/Sections/FifthSection";
+import {usePreloadImages} from "@hooks/usePreloadImages.ts";
+import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
+import useScreenWidth from "@hooks/useScreenWidth.ts";
+import BrightnessLayout from "@layout/Brightness";
+import NutritionLogo from "@modules/nutrition/components/NutritionLogo";
+import NutritionNav from "@modules/nutrition/components/NutritionNav";
+import FirstSection from "@modules/nutrition/Sections/FirstSection";
+import TitleHeroSection from "@components/common/Sections/TitleHeroSection";
+import SecondSection from "@modules/nutrition/Sections/SecondSection";
+import ThirdSection from "@modules/nutrition/Sections/ThirdSection";
+import FourthSection from "@modules/nutrition/Sections/FourthSection";
+import FifthSection from "@modules/nutrition/Sections/FifthSection";
 import Spinner from "@components/common/Spinner";
-import {Languages} from "../../domains/Translate";
-import * as contentRu from "../../modules/nutrition/locales/rus.json";
-import * as contentKz from "../../modules/nutrition/locales/kaz.json";
+import {Languages} from "@domains/Translate";
+import * as contentRu from "@modules/nutrition/locales/rus.json";
+import * as contentKz from "@modules/nutrition/locales/kaz.json";
+import * as paths from "@modules/nutrition/locales/paths.json";
 import "./style.css";
 
 const heroSectionBgColor = "linear-gradient(90deg, rgba(168, 224, 99, 0.8) 0%, rgba(86, 171, 47, 0.8) 100%), linear-gradient(90deg, rgba(245, 245, 245, 1) 0%, rgba(212, 212, 212, 1) 100%)";
@@ -29,6 +32,9 @@ const SECTION_IDS = {
 } as const;
 
 const Nutrition: React.FC = (): ReactElement => {
+    const imgUrls = collectFromPathsJson(paths)
+    usePreloadImages(imgUrls);
+
     const screenWidth = useScreenWidth();
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale

@@ -28,7 +28,7 @@ const FirstSection: React.FC<FirstSectionProps> = ({content}: FirstSectionProps)
             >
                 {content.firstSection["content"].map((card, indx) => (
                     <LightCard
-                        key={1}
+                        key={indx}
                         imageName={paths.cards[indx]}
                         title={card.title}
                         subTitle={card.subTitle}

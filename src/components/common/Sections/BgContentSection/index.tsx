@@ -1,7 +1,6 @@
 import {type ReactElement, type ReactNode} from "react";
 import type {IDefaultCardSxText} from "../../Cards/CardsTypes.ts";
 import useScreenWidth from "@hooks/useScreenWidth.ts";
-import LazyLoadImage from "@components/common/Other/LazyLoadImage";
 import {defaultMobileSectionSX, defaultSectionSX} from "../meta.tsx";
 import "./style.css";
 
@@ -47,7 +46,7 @@ const BgContentSection = ({
             }}
         >
             {backgroundImage && (
-                <LazyLoadImage src={backgroundImage} alt="bg-image" style={{height: strictHeight ? "100%" : "auto"}} />
+                <img src={backgroundImage} alt="bg-image" style={{height: strictHeight ? "100%" : "auto"}} />
             )}
 
             <div className="bg-content-section-text-container">

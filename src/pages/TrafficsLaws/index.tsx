@@ -2,7 +2,9 @@ import {type ReactElement} from "react";
 import type {TRootState} from "../../store";
 import type {IContentLabel, TContentItem} from "../../utils/types/trafficLawsTypes";
 import {useDispatch, useSelector} from "react-redux";
-import {setIsModalOpened} from "../../store/slices/Application";
+import {usePreloadImages} from "@hooks/usePreloadImages.ts";
+import {setIsModalOpened} from "@store/slices/Application";
+import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
 import DefaultLayout from "@layout/Default";
 import FirstSection from "@modules/trafficLaws/Sections/FirstSection";
 import SecondSection from "@modules/trafficLaws/Sections/SecondSection";
@@ -17,6 +19,7 @@ import CoverSection from "@modules/trafficLaws/Sections/CoverSection";
 import FlexibleModal from "@components/common/Modal/FlexibleModal";
 import DefaultImageCard from "@modules/trafficLaws/components/DefaultImageCard";
 import Spinner from "@components/common/Spinner";
+import * as paths from '@data/imageSrc.json';
 import "./style.css";
 
 const modalPolicemanImagesPaths: Record<string, string[]> = {
@@ -108,6 +111,9 @@ const signsImagesPaths: Record<string, string[]> = {
 };
 
 const TrafficsLawsPage = (): ReactElement => {
+    const imgUrls = collectFromPathsJson(paths)
+    usePreloadImages(imgUrls);
+
     const dispatch = useDispatch();
     const isContentLoaded: boolean = useSelector(
         (state: TRootState) => state.application.isContentLoaded

@@ -2,7 +2,6 @@ import { type ReactElement } from "react";
 import type {TRootState} from "@store/index.ts";
 import {Languages} from "@domains/Translate";
 import {useSelector} from "react-redux";
-import LazyLoadImage from "@components/common/Other/LazyLoadImage";
 import road from "@assets/images/trafficLawsPage/coverSection/road.avif";
 import carPng from "@assets/images/trafficLawsPage/coverSection/car.png";
 import cloudsImg from "@assets/images/trafficLawsPage/coverSection/clouds.png";
@@ -49,7 +48,7 @@ const CoverSection = (): ReactElement => {
                     data-speed="3"
                 />
                 <div className={"car"}>
-                    <LazyLoadImage src={carPng} alt="Car"/>
+                    <img src={carPng} alt="Car"/>
                 </div>
             </div>
         </section>
