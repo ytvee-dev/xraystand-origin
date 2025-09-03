@@ -2,7 +2,6 @@ import React, {type ReactElement} from "react";
 import type {LabeledItem} from "../../types";
 import useScreenWidth from "@hooks/useScreenWidth.ts";
 import LightCard from "@components/common/Cards/LightCard";
-import LazyLoadImage from "@components/common/Other/LazyLoadImage";
 import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
 import * as paths from "../../locales/paths.json";
 import "./style.css";
@@ -81,7 +80,7 @@ const CirclePlate: React.FC<CirclePlateProps> = ({content}: CirclePlateProps): R
             <div className="circle-plate-wrapper">
                 <div className="circle-plate">
                     <div className="plate">
-                        <LazyLoadImage src={backgroundImage} alt="circle plate"/>
+                        <img src={backgroundImage} alt="circle plate"/>
                     </div>
                     <div className="circle">
                         <div className="quarters">
@@ -105,7 +104,7 @@ const CirclePlate: React.FC<CirclePlateProps> = ({content}: CirclePlateProps): R
         <div className="mobile-circle-plate-wrapper">
             <div className="circle-plate">
                 <div className="plate">
-                    <LazyLoadImage src={backgroundImage} alt="mobile-circle plate"/>
+                    <img src={backgroundImage} alt="mobile-circle plate"/>
                 </div>
                 <div className="circle">
                     <div className="quarters">

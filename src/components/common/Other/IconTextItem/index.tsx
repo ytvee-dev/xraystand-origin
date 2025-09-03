@@ -1,6 +1,5 @@
 import React, {type ReactElement} from "react";
 import SpriteIcon from "../SpriteIcon";
-import LazyLoadImage from "@components/common/Other/LazyLoadImage";
 import "./style.css";
 
 interface IIConTextItemProps {
@@ -21,7 +20,7 @@ const IconTextItem: React.FC<IIConTextItemProps> = ({
     return (
         <div className='icon-text-item'>
             {iconType === "svg" && <SpriteIcon iconId={iconName} size={'80px'} color={iconColor} />}
-            {iconType === "png" && <LazyLoadImage src={iconName} alt="image" />}
+            {iconType === "png" && <img src={iconName} alt="image" />}
             <div className="icon-text-item-text-wrapper">
                 <h3>{title}</h3>
                 <span>{text}</span>

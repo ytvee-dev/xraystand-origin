@@ -1,5 +1,7 @@
-import React, {type ReactElement, useEffect, useState} from "react";
+import React, {type ReactElement} from "react";
 import './style.css';
+import {useSelector} from "react-redux";
+import type {TRootState} from "@store/index.ts";
 
 const Logo: React.FC = (): ReactElement => (
     <svg
@@ -42,18 +44,17 @@ const Logo: React.FC = (): ReactElement => (
 );
 
 const Spinner = (): ReactElement => {
-    const [hidden, setHidden] = useState(false);
-
-    useEffect(() => {
-        window.addEventListener("load", () => {
-            setHidden(true);
-        });
-    }, []);
+    const progress: number = useSelector(
+        (state: TRootState) => state.application.progress
+    );
 
     return (
-        <div className={`spinner-wrapper ${hidden ? "hidden" : ""}`}>
+        <div className={`spinner-wrapper`}>
             <Logo/>
-            <span className="loader"></span>
+            <span className="loader">
+                <span className='percent'>{progress}%</span>
+            </span>
+
         </div>
     );
 };

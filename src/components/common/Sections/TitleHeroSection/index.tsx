@@ -1,6 +1,5 @@
 import React, {type ReactElement} from "react";
 import type {IDefaultCardSxText} from "../../Cards/CardsTypes.ts";
-import LazyLoadImage from "@components/common/Other/LazyLoadImage";
 import {defaultSectionSX} from "../meta.tsx";
 import heroBackground from "@assets/images/nutrition/backgrounds/hero.svg";
 import "./style.css";
@@ -42,7 +41,7 @@ const TitleHeroSection: React.FC<ITitleHeroSectionProps> = ({
                     }}
                 >{subtitle}</p>
             </div>
-            <LazyLoadImage src={heroBackground} alt="background"/>
+            <img src={heroBackground} alt="background"/>
         </section>
     );
 };
