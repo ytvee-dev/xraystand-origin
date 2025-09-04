@@ -9,7 +9,7 @@ const InProgress = lazy(() => import("../pages/InProgress"));
 const Chemistry = lazy(() => import("../pages/Chemistry"));
 const RusLit = lazy(() => import("../pages/RusLit"));
 const Nutrition = lazy(() => import("../pages/Nutrition"));
-// const Mathematics = lazy(() => import("@pages/Mathematics"));
+const Mathematics = lazy(() => import("@pages/Mathematics"));
 // const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
 // const KazMusic = lazy(() => import("@pages/KazMusic"));
 
@@ -79,8 +79,7 @@ const routes: RouteObject[] = [
     },
     {
         ...paths.MATH,
-        // element: <Mathematics />,
-        element: <InProgress />,
+        element: <Mathematics />,
     },
     {
         ...paths.NUTRITION,

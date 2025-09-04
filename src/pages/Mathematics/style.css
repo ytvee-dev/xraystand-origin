@@ -1,0 +1,16 @@
+.math-logo {
+    font-family: var(--technical-font);
+    font-weight: 500;
+    font-size: 20px;
+    user-select: none;
+    color: #FFFFFF;
+}
+
+.math-page {
+    /*height: 300px;*/
+}
+
+.math-section {
+    padding: 90px 24px;
+    background-color: #071A22;
+}

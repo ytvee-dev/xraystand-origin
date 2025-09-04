@@ -1,0 +1,61 @@
+.math-cover-section {
+    margin-top: 95px;
+}
+
+.math-hero-wrapper {
+    margin: auto;
+    max-width: 1200px;
+    position: relative;
+}
+
+.math-hero-background {
+    max-width: 1200px;
+}
+
+.math-hero-background img {
+    width: 100%;
+    transform: scale(2.5);
+}
+
+.math-hero-content {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    bottom: 0;
+    right: 16px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 45px;
+    flex: 1;
+}
+
+.math-hero-text {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.math-hero-text * {
+    color: #FFFFFF;
+    font-family: var(--text-font);
+}
+
+.math-hero-text h1 {
+    font-size: 45px;
+}
+
+.math-hero-text p {
+    font-size: 16px;
+}
+
+.math-hero-image-wrapper {
+    max-width: 430px;
+    max-height: 430px;
+}
+
+.math-hero-image-wrapper img {
+    width: 100%;
+}
