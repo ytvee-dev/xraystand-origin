@@ -14,7 +14,29 @@ export interface IDefaultLayoutProps {
     logo?: ReactElement | null;
     navigation?: ReactElement | null;
     stickyHeader?: boolean;
+    isLanguageSwitcher?: boolean;
+    switcherColor?: string;
+    sx?: IBrightnessLayoutSX;
+    headerBackgroundColor?: string;
 }
+
+export interface IBrightnessLayoutSX {
+    backgroundColor: string;
+    boldTextColor: string;
+    textColor: string;
+    copyrightColor: string;
+    logoColorMode: string;
+    madeByColorMode: string;
+}
+
+const DEFAULT_SX = {
+    backgroundColor: "#FFA726",
+    boldTextColor: "#000000",
+    textColor: "rgba(0,0,0,0.4)",
+    copyrightColor: "#FFFFFF66",
+    logoColorMode: "dark",
+    madeByColorMode: "dark",
+};
 
 const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
     disabled,
@@ -23,6 +45,10 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
     logo,
     navigation,
     stickyHeader=false,
+    isLanguageSwitcher = false,
+    switcherColor,
+    sx=DEFAULT_SX,
+    headerBackgroundColor,
 }: IDefaultLayoutProps) => {
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale
@@ -35,6 +61,9 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
                 logo={logo || null}
                 navigation={navigation || null}
                 stickyHeader={stickyHeader}
+                isLanguageSwitcher={isLanguageSwitcher}
+                switcherColor={switcherColor && switcherColor}
+                backgroundColor={headerBackgroundColor}
             />
 
             <main>{children}</main>
@@ -45,14 +74,7 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
                         trafficLawsFooterMeta.ru :
                         trafficLawsFooterMeta.kz
                 }
-                sx={{
-                    backgroundColor: "#FFA726",
-                    boldTextColor: "#000000",
-                    textColor: "rgba(0,0,0,0.4)",
-                    copyrightColor: "#FFFFFF66",
-                    logoColorMode: "dark",
-                    madeByColorMode: "dark",
-                }}
+                sx={sx}
             />
         </div>
     );

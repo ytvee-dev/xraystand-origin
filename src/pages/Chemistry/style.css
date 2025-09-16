@@ -21,7 +21,7 @@
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    padding: 44px 0;
+    margin: auto;
 }
 .custom-chemistry-content-section > * + * {
     margin-top: 16px;
@@ -58,13 +58,33 @@
     font-size: 24px;
 }
 
+.buttons-group {
+    padding: 20px 15% 24px 15%;
+    min-width: 100%;
+}
+
+.buttons-group button {
+    width: 90%;
+    padding: 8px 26px;
+    font-family: var(--technical-font);
+    font-size: 14px;
+}
 
 @media (max-width: 720px) {
     .custom-chemistry-content-section-title {
         font-size: 30px;
     }
-
     .custom-chemistry-content-section-description {
         font-size: 18px;
     }
+    .buttons-group {
+        padding: 20px 15px 24px 15px;
+        max-width: 100%;
+    }
+    .buttons-group button {
+        padding: 8px 16px !important;
+        font-size: 11px;
+    }
+
 }
+
