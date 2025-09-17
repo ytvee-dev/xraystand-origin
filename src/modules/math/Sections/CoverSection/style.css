@@ -151,7 +151,7 @@ math-hero-image-wrapper:active,
 #heroSm3,
 #heroSm4 {
     transition: all 0.5s ease-in-out;
-    z-index: 999;
+    z-index: 100;
 }
 
 #heroArrowImage-blur,
