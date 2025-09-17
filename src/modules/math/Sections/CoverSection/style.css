@@ -1,5 +1,12 @@
 .math-cover-section {
     margin-top: 95px;
+    position: relative;
+}
+
+@media screen and (min-width: 769px) {
+    .math-cover-section {
+        overflow: hidden;
+    }
 }
 
 .math-hero-wrapper {
@@ -14,7 +21,7 @@
 
 .math-hero-background img {
     width: 100%;
-    transform: scale(2.5);
+    transform: scale(2.7);
 }
 
 .math-hero-content {
@@ -45,6 +52,7 @@
 
 .math-hero-text h1 {
     font-size: 45px;
+    font-weight: 500;
 }
 
 .math-hero-text p {
@@ -52,10 +60,166 @@
 }
 
 .math-hero-image-wrapper {
-    max-width: 430px;
-    max-height: 430px;
+    max-width: 390px;
+    max-height: 390px;
+    z-index: 99;
+}
+
+math-hero-image-wrapper:hover,
+.math-hero-image-wrapper img:hover,
+math-hero-image-wrapper:active,
+.math-hero-image-wrapper img:active {
+    transition: all 1s ease-in-out;
+    transform: rotate(360deg) scale(0.1);
 }
 
 .math-hero-image-wrapper img {
     width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .math-cover-section {
+        margin-top: 0;
+    }
+
+    .math-hero-wrapper {
+        position: relative;
+        padding-top: 70px;
+    }
+
+    .math-hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .math-hero-background img {
+        width: 100%;
+        min-width: 500px;
+        transform: scale(3) translateY(-10%);
+    }
+
+    .math-hero-content {
+        margin: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .math-hero-image-wrapper {
+        width: 100%;
+        height: 100%;
+        max-width: 210px;
+        max-height: 210px;
+    }
+
+    .math-hero-image-wrapper img {
+        width: 100%;
+    }
+
+    .math-hero-text {
+        text-align: center;
+    }
+
+    .math-hero-text h1 {
+        font-weight: 400;
+    }
+
+    #heroSm3 {
+        display: none;
+    }
+
+    #heroSm4 {
+        display: none;
+    }
+}
+
+.math-custom-svg {
+    position: absolute;
+}
+
+#heroArrowImage,
+#heroSm1,
+#heroSm2,
+#heroSm3,
+#heroSm4 {
+    transition: all 0.5s ease-in-out;
+    z-index: 100;
+}
+
+#heroArrowImage-blur,
+#heroArrowImage {
+    top: 70%;
+    left: 35%;
+}
+
+#heroSm1 {
+    top: 7%;
+    right: 8%;
+    opacity: 1;
+}
+
+#heroSm2 {
+    bottom: 7%;
+    right: 16%;
+}
+
+#heroSm3 {
+    bottom: 7%;
+    left: 21%;
+}
+
+#heroSm4 {
+    top: 7%;
+    left: 10%;
+}
+
+#heroArrowImage:hover {
+    filter: blur(316px);
+}
+
+#heroSm1:hover {
+    filter: blur(316px);
+}
+
+#heroSm2:hover {
+    bottom: 8%;
+    right: 15%;
+}
+
+#heroSm3:hover {
+    bottom: 6%;
+    left: 20%;
+}
+
+#heroSm4:hover {
+    top: 6%;
+    left: 9%;
+}
+
+@media screen and (max-width: 1000px) {
+    #heroArrowImage {
+        display: none;
+    }
+
+    #heroSm1 {
+        display: none;
+    }
+
+    #heroSm2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .math-cover-section {
+        padding: 60px 24px 90px 24px !important;
+    }
 }
