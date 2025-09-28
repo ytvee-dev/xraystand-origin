@@ -1,0 +1,19 @@
+.math-second-section {
+    border: 1px solid red;
+}
+
+.math-second-section-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.motion-slider {
+    max-width: 400px;
+}
+
+@media (max-width: 800px) {
+    .motion-slider {
+        max-width: 200px;
+    }
+}
