@@ -38,6 +38,8 @@
     text-align: center;
     z-index: 10;
     position: relative;
+    min-height: auto;
+    padding: 1rem 0;
 }
 
 /* Основной текст логотипа */
