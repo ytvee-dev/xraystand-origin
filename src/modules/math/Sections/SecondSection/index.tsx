@@ -18,6 +18,8 @@ import useScreenWidth from "@hooks/useScreenWidth.ts";
 
 type TCard = { id: string; title: string; subtitle: string; description: string; image: string };
 
+const background = "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000205/spiral_o9f2ps.svg";
+
 const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
     const screenWidth = useScreenWidth();
     const isMobile = screenWidth <= 768;
@@ -42,7 +44,9 @@ const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps
 
     return (
         <section className={className}>
-            <div className='math-second-section-backgorund'></div>
+            <div className='math-second-section-background'>
+                <img src={background} alt={'image'}/>
+            </div>
             <h2>{textContent.secondSection.title}</h2>
             <div className='math-second-section-content-wrapper'>
                 <motion.div
