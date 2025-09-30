@@ -1,7 +1,4 @@
 import React, {type ReactElement} from "react";
-// import {usePreloadImages} from "@hooks/usePreloadImages.ts";
-// import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
-// import * as paths from '@modules/math/locales/paths.json';
 import type {MathSectionProps} from "@modules/math/types";
 
 import "./style.css";
@@ -13,18 +10,6 @@ import * as textContentKz from "@modules/math/locales/kaz.json";
 import * as textContentRu from "@modules/math/locales/rus.json";
 import type {TCard} from "@modules/math/Sections/SecondSection";
 import CubeCard, {type TFlexDirection} from "@modules/math/components/CubeCard";
-
-const leftBgImage = "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000203/left_q5qzyv.svg";
-const rightBgImage = "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000204/right_sklkk4.svg";
-const cardsImages = [
-    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002693/1_h0uixd.png",
-    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002694/2_bdbt6i.png",
-    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002695/3_x3jlci.png",
-    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002695/4_gmz9mh.png",
-    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002688/5_gwwg6c.png",
-    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002688/6_yhfgl8.png",
-    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002689/7_zc7thi.png",
-];
 
 const getFlexDirection = (card: TCard): TFlexDirection => {
     const id: number = Number(card.id.slice(card.id.length-2, -1));
@@ -51,8 +36,8 @@ const FirstSection: React.FC<MathSectionProps> = ({className}: MathSectionProps)
     return (
         <section className={className}>
             <div className='math-first-section-background'>
-                <img src={leftBgImage} alt={'image'}/>
-                <img src={rightBgImage} alt={'image'}/>
+                <img src={paths.svg.left} alt={'image'}/>
+                <img src={paths.svg.right} alt={'image'}/>
             </div>
 
             <div className='math-first-section-content-wrapper'>
@@ -64,7 +49,7 @@ const FirstSection: React.FC<MathSectionProps> = ({className}: MathSectionProps)
                         className='math-types-card'
                         title={card.title}
                         description={card.description}
-                        imagePath={cardsImages[idx]}
+                        imagePath={paths.cubes[idx]}
                         flexDirection={card && getFlexDirection(card)}
                     />
                 ))}

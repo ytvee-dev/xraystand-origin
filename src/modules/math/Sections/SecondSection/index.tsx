@@ -1,7 +1,5 @@
 import React, {type ReactElement, useState} from "react";
 import {useSelector} from "react-redux";
-import {usePreloadImages} from "@hooks/usePreloadImages.ts";
-import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
 import * as paths from '@modules/math/locales/paths.json';
 import * as textContentRu from '@modules/math/locales/rus.json';
 import * as textContentKz from '@modules/math/locales/kaz.json';
@@ -18,8 +16,6 @@ import useScreenWidth from "@hooks/useScreenWidth.ts";
 
 export type TCard = { id: string; title: string; subtitle: string; description: string; image: string };
 
-const background = "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000205/spiral_o9f2ps.svg";
-
 const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
     const screenWidth = useScreenWidth();
     const isMobile = screenWidth <= 768;
@@ -28,24 +24,20 @@ const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps
     const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
     const textContent = currentLocale === Languages.KAZAKH ? textContentKz : textContentRu;
 
-    const cards: TCard[] = paths.cards.map((cardUrl, idx) => {
-        const contentItem = textContent.secondSection.content[idx];
+    const cards: TCard[] = textContent.secondSection.content.map((contentItem, idx) => {
         return {
             id: String(idx + 1),
-            title: contentItem?.title || `Карточка ${idx + 1}`,
-            subtitle: contentItem?.subTitle || "",
-            description: contentItem?.description || "Описание карточки и что-то ещё полезное",
-            image: cardUrl
+            title: contentItem.title,
+            subtitle: contentItem.subTitle,
+            description: contentItem.description,
+            image: paths.cards[idx] || ""
         };
     });
-
-    const imgUrls = collectFromPathsJson(paths);
-    usePreloadImages(imgUrls);
 
     return (
         <section className={className}>
             <div className='math-second-section-background'>
-                <img src={background} alt={'image'}/>
+                <img src={paths.svg.spiral} alt={'image'}/>
             </div>
             <h2>{textContent.secondSection.title}</h2>
             <div className='math-second-section-content-wrapper'>

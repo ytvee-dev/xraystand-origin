@@ -1,9 +1,9 @@
 import React, {type ReactElement} from "react";
-// import type {TRootState} from "@store/index.ts";
+import type {TRootState} from "@store/index.ts";
 
-// import {useSelector} from "react-redux";
-// import {usePreloadImages} from "@hooks/usePreloadImages.ts";
-// import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
+import {useSelector} from "react-redux";
+import {usePreloadImages} from "@hooks/usePreloadImages.ts";
+import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
 
 import BrightnessLayout from "@layout/Brightness";
 
@@ -13,9 +13,9 @@ import SecondSection from "@modules/math/Sections/SecondSection";
 import ThirdSection from "@modules/math/Sections/ThirdSection";
 import FourthSection from "@modules/math/Sections/FourthSection";
 import FifthSection from "@modules/math/Sections/FifthSection";
-// import Spinner from "@components/common/Spinner";
+import Spinner from "@components/common/Spinner";
 
-// import * as paths from '@modules/rusLitModule/locales/paths.json';
+import * as paths from '@modules/math/locales/paths.json';
 import "./style.css";
 
 const pageLayoutSX = {
@@ -34,12 +34,12 @@ const MathLogo = () => {
 }
 
 const Mathematics: React.FC = (): ReactElement => {
-    // const imgUrls = collectFromPathsJson(paths)
-    // usePreloadImages(imgUrls);
+    const imgUrls = collectFromPathsJson(paths);
+    usePreloadImages(imgUrls);
 
-    // const isContentLoaded: boolean = useSelector(
-    //     (state: TRootState) => state.application.isContentLoaded
-    // );
+    const isContentLoaded: boolean = useSelector(
+        (state: TRootState) => state.application.isContentLoaded
+    );
 
     return (
         <BrightnessLayout
@@ -51,7 +51,7 @@ const Mathematics: React.FC = (): ReactElement => {
             headerBackgroundColor={pageLayoutSX.backgroundColor}
         >
             <div className="math-page">
-                {/*{!isContentLoaded && (<Spinner/>)}*/}
+                {!isContentLoaded && (<Spinner/>)}
                 <CoverSection className='math-section math-cover-section'/>
                 <FirstSection className='math-section math-first-section'/>
                 <SecondSection className='math-section math-second-section'/>
