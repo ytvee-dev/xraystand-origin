@@ -1,5 +1,38 @@
 .math-second-section {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    h2 {
+        font-family: Roboto, sans-serif;
+        font-size: 45px;
+        font-weight: 500;
+        color: #FFFFFF;
+        padding-bottom: 64px;
+    }
+
+    .math-second-section-card-text {
+        padding-top: 104px;
+        max-width: 395px;
+
+        h3, p {
+            font-family: Roboto, sans-serif;
+            color: #FFFFFF;
+            letter-spacing: 0.5px !important;
+        }
+
+        h3 {
+            font-size: 32px;
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
 }
 
 .math-second-section-content-wrapper {
@@ -15,5 +48,26 @@
 @media (max-width: 800px) {
     .motion-slider {
         max-width: 200px;
+    }
+
+    h2 {
+        font-size: 36px !important;
+        text-align: center;
+        letter-spacing: -1px;
+    }
+
+    .math-second-section-card-text {
+        padding-top: 88px !important;
+        max-width: 200px !important;
+
+        h3 {
+            font-size: 16px !important;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 12px !important;
+            height: 70px;
+        }
     }
 }

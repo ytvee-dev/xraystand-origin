@@ -6,7 +6,7 @@ import * as paths from '@modules/math/locales/paths.json';
 import * as textContentRu from '@modules/math/locales/rus.json';
 import * as textContentKz from '@modules/math/locales/kaz.json';
 import type {MathSectionProps} from "@modules/math/types";
-import type {TRootState} from "../../../../store";
+import type {TRootState} from "@store/index.ts";
 import {Languages} from "@domains/Translate";
 import {
     motion,
@@ -23,14 +23,10 @@ const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps
     const isMobile = screenWidth <= 768;
     const [index, setIndex] = useState(0);
     
-    // Получаем текущий язык
     const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
-    
-    // Выбираем нужный файл локализации
     const textContent = currentLocale === Languages.KAZAKH ? textContentKz : textContentRu;
     
-    // Создаем карточки с локализованным контентом
-    const items: TCard[] = paths.cards.map((cardUrl, idx) => {
+    const cards: TCard[] = paths.cards.map((cardUrl, idx) => {
         const contentItem = textContent.secondSection.content[idx];
         return {
             id: String(idx + 1),
@@ -41,37 +37,44 @@ const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps
         };
     });
     
-    // Предзагрузка изображений
     const imgUrls = collectFromPathsJson(paths);
     usePreloadImages(imgUrls);
 
     return (
         <section className={className}>
             <div className='math-second-section-backgorund'></div>
+            <h2>{textContent.secondSection.title}</h2>
             <div className='math-second-section-content-wrapper'>
-                <motion.div className='motion-slider' style={{
-                    width: isMobile ? '200px' : '400px', 
-                    height: isMobile ? 150 : 340, 
-                    position: "relative",
-                    margin: '0 auto'
-                }}>
+                <motion.div
+                    className='motion-slider'
+                    style={{
+                        width: isMobile ? '200px' : '400px',
+                        height: isMobile ? 150 : 340,
+                        position: "relative",
+                        margin: '0 auto'
+                    }}>
                     <AnimatePresence initial={false}>
                         <Slider
                             key={index + 1}
                             frontCard={false}
-                            index={(index + 1) % items.length}
-                            card={items[(index + 1) % items.length]}
+                            index={(index + 1) % cards.length}
+                            card={cards[(index + 1) % cards.length]}
                         />
                         <Slider
                             key={index}
                             frontCard={true}
-                            index={index % items.length}
+                            index={index % cards.length}
                             setIndex={setIndex}
                             drag="x"
-                            card={items[index % items.length]}
+                            card={cards[index % cards.length]}
                         />
                     </AnimatePresence>
                 </motion.div>
+
+            </div>
+            <div className='math-second-section-card-text'>
+                <h3>{cards[index] ? cards[index].title : cards[0].title}</h3>
+                <p>{cards[index] ? cards[index].description : cards[0].description}</p>
             </div>
         </section>
     );
