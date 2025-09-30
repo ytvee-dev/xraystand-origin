@@ -9,6 +9,7 @@
 .math-cover-section {
     margin-top: 95px;
     position: relative;
+    padding-bottom: 200px !important;
 }
 
 @media screen and (min-width: 769px) {
@@ -76,9 +77,9 @@
     opacity: 1;
 }
 
-math-hero-image-wrapper:hover,
+.math-hero-image-wrapper:hover,
 .math-hero-image-wrapper img:hover,
-math-hero-image-wrapper:active,
+.math-hero-image-wrapper:active,
 .math-hero-image-wrapper img:active {
     transform: rotate(360deg) scale(0.1);
     opacity: 0;
@@ -168,7 +169,7 @@ math-hero-image-wrapper:active,
 
 #heroArrowImage-blur,
 #heroArrowImage {
-    top: 70%;
+    top: 470px;
     left: 35%;
 }
 

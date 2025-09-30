@@ -16,7 +16,7 @@ import "./style.css";
 import Slider from "@components/common/Other/Slider";
 import useScreenWidth from "@hooks/useScreenWidth.ts";
 
-type TCard = { id: string; title: string; subtitle: string; description: string; image: string };
+export type TCard = { id: string; title: string; subtitle: string; description: string; image: string };
 
 const background = "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000205/spiral_o9f2ps.svg";
 
@@ -24,10 +24,10 @@ const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps
     const screenWidth = useScreenWidth();
     const isMobile = screenWidth <= 768;
     const [index, setIndex] = useState(0);
-    
+
     const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
     const textContent = currentLocale === Languages.KAZAKH ? textContentKz : textContentRu;
-    
+
     const cards: TCard[] = paths.cards.map((cardUrl, idx) => {
         const contentItem = textContent.secondSection.content[idx];
         return {
@@ -38,7 +38,7 @@ const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps
             image: cardUrl
         };
     });
-    
+
     const imgUrls = collectFromPathsJson(paths);
     usePreloadImages(imgUrls);
 

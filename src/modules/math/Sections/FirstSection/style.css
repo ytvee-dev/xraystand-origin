@@ -1,0 +1,63 @@
+.math-first-section {
+    position: relative;
+    overflow: hidden;
+
+    .math-first-section-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+
+        img {
+            max-width: 100%;
+            animation: fading 9s linear infinite;
+
+            &:last-of-type {
+                align-self: flex-end;
+            }
+        }
+    }
+
+    .math-first-section-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
+        h2 {
+            text-align: center;
+            font-family: Roboto, sans-serif;
+            font-size: 45px;
+            font-weight: 500;
+            color: #FFFFFF;
+            padding: 64px 0;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .math-first-section-content-wrapper {
+        padding: 0;
+
+        h2 {
+            font-size: 32px !important;
+            padding: 16px 0 !important;
+        }
+    }
+
+    h2 {
+        padding: 16px 0;
+    }
+}
+
+@keyframes fading {
+    0% { opacity: 0.1; }
+    25% { opacity: 0.5; }
+    50% { opacity: 0.7; }
+    75% { opacity: 0.5; }
+    100%   { opacity: 0.1; }
+}

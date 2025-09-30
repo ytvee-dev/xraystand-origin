@@ -2,6 +2,11 @@ import React, {type ReactElement} from "react";
 import type {MathSectionProps} from "@modules/math/types";
 
 import "./style.css";
+import {Languages} from "@domains/Translate";
+import {useSelector} from "react-redux";
+import type {TRootState} from "@store/index.ts";
+import * as textContentKz from "@modules/math/locales/kaz.json";
+import * as textContentRu from "@modules/math/locales/rus.json";
 
 const image = "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000207/hero_hicgli.png";
 const background = "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000201/herobg_qcztzv.svg";
@@ -13,6 +18,9 @@ const heroSm3 = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000200/h
 const heroSm4 = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000200/Group_y4ixr4.svg';
 
 const CoverSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
+    const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
+    const textContent = currentLocale === Languages.KAZAKH ? textContentKz : textContentRu;
+
 
     return (
         <section className={className}>
@@ -28,12 +36,8 @@ const CoverSection: React.FC<MathSectionProps> = ({className}: MathSectionProps)
                 </div>
                 <div className='math-hero-content'>
                     <div className='math-hero-text'>
-                        <h1>Царица всех наук</h1>
-                        <p>
-                            Курица, рыба, яйца, бобовые, орехи —
-                            помогают росту и восстановлению клеток,
-                            поддерживают мышцы и иммунную систему.
-                        </p>
+                        <h1>{textContent.coverSection.title}</h1>
+                        <p>{textContent.coverSection.description}</p>
                     </div>
                     <div className='math-hero-image-wrapper'>
                         <img src={image} alt={'image'}/>

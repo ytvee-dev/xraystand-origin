@@ -1,0 +1,71 @@
+.math-types-card {
+    margin: auto;
+    max-width: 672px;
+    display: flex;
+    gap: 26px;
+    justify-content: space-between;
+}
+
+.math-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+
+    h3, p {
+        font-family: Roboto, sans-serif;
+        color: #FFFFFF;
+        letter-spacing: 0.5px !important;
+    }
+
+    h3 {
+        font-size: 24px;
+        padding-bottom: 10px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+.math-card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 800px) {
+    .math-types-card {
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .math-card-image {
+
+        img {
+            max-width: 104px;
+            min-width: 70px;
+            width: 100%;
+        }
+    }
+
+    .math-card-text {
+        h3 {
+            font-size: 24px;
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
