@@ -35,6 +35,19 @@
             font-weight: 500;
             color: #FFFFFF;
             padding: 24px 0;
+            text-shadow: 0 4px 8px rgba(39, 105, 165, 0.3);
+            animation: fadeInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 }
