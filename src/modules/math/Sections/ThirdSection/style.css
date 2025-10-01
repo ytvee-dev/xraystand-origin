@@ -1,0 +1,120 @@
+.math-third-section {
+    position: relative;
+    min-height: 900px;
+
+    h2 {
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 45px;
+        font-weight: 500;
+        color: #FFFFFF;
+        padding: 24px 0;
+    }
+
+    .math-hero-background {
+        transform: scale(0.7) translateY(200px);
+        justify-self: center;
+    }
+
+    .math-brain-content {
+        position: absolute;
+        top: 25%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        .math-brain-content-inner {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            max-width: 848px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                z-index: 10;
+                position: relative;
+                filter: drop-shadow(0 20px 40px rgba(39, 105, 165, 0.3)) 
+                        drop-shadow(0 8px 16px rgba(39, 105, 165, 0.2))
+                        drop-shadow(0 4px 8px rgba(39, 105, 165, 0.15));
+                transition: filter 1s ease;
+            }
+
+            img:hover {
+                filter: drop-shadow(0 25px 50px rgba(39, 105, 165, 0.4)) 
+                        drop-shadow(0 12px 24px rgba(39, 105, 165, 0.25))
+                        drop-shadow(0 6px 12px rgba(39, 105, 165, 0.2));
+            }
+
+            .math-brain-dot {
+                width: 47px;
+                height: 47px;
+                border: 5px solid #FFFFFF;
+                background-color: #2769A5;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                z-index: 70;
+
+                &.selected-dot {
+                    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.3);
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .math-brain-content-card {
+            z-index: 100;
+            pointer-events: none; // Чтобы карточка не блокировала клики по точкам
+            
+            .brain-card {
+                pointer-events: auto; // Но сама карточка должна быть кликабельной
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .math-third-section {
+        h2 {
+            font-size: 32px !important;
+            padding: 16px 0 !important;
+        }
+
+        .math-brain-content {
+            .math-brain-content-inner {
+                img {
+                    max-width: 90vw;
+                    filter: drop-shadow(0 15px 30px rgba(39, 105, 165, 0.25)) 
+                            drop-shadow(0 6px 12px rgba(39, 105, 165, 0.15))
+                            drop-shadow(0 3px 6px rgba(39, 105, 165, 0.1));
+                }
+
+                img:hover {
+                    filter: drop-shadow(0 18px 36px rgba(39, 105, 165, 0.3)) 
+                            drop-shadow(0 8px 16px rgba(39, 105, 165, 0.2))
+                            drop-shadow(0 4px 8px rgba(39, 105, 165, 0.15));
+                }
+
+                .math-brain-dot {
+                    width: 25px;
+                    height: 25px;
+                    border: 3px solid #FFFFFF;
+
+                    &.selected-dot {
+                        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.3);
+                    }
+                }
+            }
+        }
+
+        .math-brain-content-card {
+            padding: 24px !important;
+        }
+    }
+}
