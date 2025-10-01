@@ -1,15 +1,14 @@
 import React, {type ReactElement} from "react";
 import type {MathSectionProps} from "@modules/math/types";
-
-import "./style.css";
-import * as paths from "@modules/math/locales/paths.json";
+import type {TCard} from "@modules/math/Sections/SecondSection";
 import {Languages} from "@domains/Translate";
 import {useSelector} from "react-redux";
+import CubeCard, {type TFlexDirection} from "@modules/math/components/CubeCard";
 import type {TRootState} from "@store/index.ts";
 import * as textContentKz from "@modules/math/locales/kaz.json";
+import * as paths from "@modules/math/locales/paths.json";
 import * as textContentRu from "@modules/math/locales/rus.json";
-import type {TCard} from "@modules/math/Sections/SecondSection";
-import CubeCard, {type TFlexDirection} from "@modules/math/components/CubeCard";
+import "./style.css";
 
 const getFlexDirection = (card: TCard): TFlexDirection => {
     const id: number = Number(card.id.slice(card.id.length-2, -1));
