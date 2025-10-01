@@ -1,0 +1,45 @@
+.brain-card {
+    max-width: 550px;
+    padding: 24px 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+}
+
+.brain-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+
+    h3, p {
+        font-family: Roboto, sans-serif;
+        color: #FFFFFF;
+        letter-spacing: 0.5px !important;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 800px) {
+    .brain-card {
+        max-width: 280px;
+    }
+
+    .brain-card-content {
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
