@@ -110,7 +110,7 @@
             .math-brain-content-inner {
                 img {
                     max-width: 90vw;
-                    filter: drop-shadow(0 15px 30px rgba(39, 105, 165, 0.25)) 
+                    filter: drop-shadow(0 15px 30px rgba(39, 105, 165, 0.25))
                             drop-shadow(0 6px 12px rgba(39, 105, 165, 0.15))
                             drop-shadow(0 3px 6px rgba(39, 105, 165, 0.1));
                 }
@@ -141,5 +141,17 @@
     .math-third-section.expanded {
         min-height: 900px;
         transition: all 0.5s ease-in-out;
+    }
+}
+
+@media (max-width: 380px) {
+    .math-third-section {
+        .math-brain-content {
+            .math-brain-content-inner {
+                img {
+                    margin-top: 20px;
+                }
+            }
+        }
     }
 }

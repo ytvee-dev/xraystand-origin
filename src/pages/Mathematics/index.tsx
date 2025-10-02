@@ -57,7 +57,6 @@ const Mathematics: React.FC = (): ReactElement => {
                 <SecondSection className='math-section math-second-section'/>
                 <ThirdSection className='math-section math-third-section'/>
                 <FourthSection className='math-section math-fourth-section'/>
-                <FifthSection className='math-section math-fifth-section'/>
             </div>
         </BrightnessLayout>
     );

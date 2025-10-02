@@ -118,6 +118,9 @@
             position: absolute;
             top: 7%;
             left: 0;
+            right: 0;
+            margin: auto;
+            padding: 0 5px;
             transform: rotate(180deg);
             object-fit: cover;
             opacity: 0.3;
