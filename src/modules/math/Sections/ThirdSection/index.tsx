@@ -1,25 +1,22 @@
 import React, {type ReactElement} from "react";
 import type {MathSectionProps} from "@modules/math/types";
-import paths from "@modules/math/locales/paths.json";
-
-import "./style.css";
-import BrainCard from "@modules/math/components/BrainCard";
-import {Languages} from "@domains/Translate";
-import {useSelector} from "react-redux";
 import type {TRootState} from "@store/index.ts";
+import {useSelector} from "react-redux";
+import BrainCard from "@modules/math/components/BrainCard";
+import useScreenWidth from "@hooks/useScreenWidth.ts";
+import {Languages} from "@domains/Translate";
+import paths from "@modules/math/locales/paths.json";
 import * as textContentKz from "@modules/math/locales/kaz.json";
 import * as textContentRu from "@modules/math/locales/rus.json";
-import useScreenWidth from "@hooks/useScreenWidth.ts";
+import "./style.css";
 
-// Позиции точек относительно изображения мозга (в процентах от размеров изображения)
-// Учитываем, что изображение центрируется и имеет max-width: 848px
 const dotPositions = [
-    { top: '21%', left: '28%' },  // Dot 0 - Top-Left, White Hemisphere
-    { top: '58%', left: '22%' },  // Dot 1 - Mid-Left, White Hemisphere
-    { top: '13%', left: '56%' },  // Dot 2 - Top-Right, Blue Hemisphere (highlighted)
-    { top: '38%', left: '62%' },  // Dot 3 - Mid-Right, Blue Hemisphere
-    { top: '63%', left: '82%' },  // Dot 4 - Lower-Right, Blue Hemisphere
-    { top: '85%', left: '60%' },  // Dot 5 - Bottom-Center-Right, Blue Hemisphere
+    { top: '21%', left: '28%' },
+    { top: '58%', left: '22%' },
+    { top: '13%', left: '56%' },
+    { top: '38%', left: '62%' },
+    { top: '63%', left: '82%' },
+    { top: '85%', left: '60%' },
 ];
 
 const ThirdSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
@@ -38,7 +35,6 @@ const ThirdSection: React.FC<MathSectionProps> = ({className}: MathSectionProps)
         setSelectedDotIndex(index);
     }
 
-    // Функция для расчета позиции карточки относительно точки
     const getCardPosition = (dotIndex: number) => {
         if (isMobile) return ;
 
@@ -46,28 +42,23 @@ const ThirdSection: React.FC<MathSectionProps> = ({className}: MathSectionProps)
         const dotTop = parseFloat(dot.top);
         const dotLeft = parseFloat(dot.left);
         
-        // Определяем оптимальную позицию карточки относительно точки
-        // Карточка должна появляться рядом с точкой, не перекрывая её
-        
-        // Если точка в левой части мозга - карточка справа
         if (dotLeft < 50) {
             return {
                 top: `${dotTop}%`,
-                left: `${Math.min(dotLeft + 20, 85)}%`, // Смещаем вправо от точки, но не выходим за границы
+                left: `${Math.min(dotLeft + 20, 85)}%`,
                 transform: 'translate(0, -50%)'
             };
         } 
-        // Если точка в правой части мозга - карточка слева
         else {
             return {
                 top: `${dotTop}%`,
-                left: `${Math.max(dotLeft - 20, 51)}%`, // Смещаем влево от точки, но не выходим за границы
+                left: `${Math.max(dotLeft - 20, 51)}%`,
                 transform: 'translate(-100%, -50%)'
             };
         }
     }
 
-    return (<section className={className}>
+    return (<section className={`${className} ${selectedDotIndex !== null && 'expanded'}`}>
         <h2>{textContent.thirdSection.title}</h2>
 
         <div className='math-hero-background'>
@@ -88,7 +79,7 @@ const ThirdSection: React.FC<MathSectionProps> = ({className}: MathSectionProps)
                                 position: "absolute",
                                 top: dotPositions[index].top,
                                 left: dotPositions[index].left,
-                                transform: 'translate(-50%, -50%)', // Центрируем точку относительно позиции
+                                transform: 'translate(-50%, -50%)',
                             }}
                         ></div>
                     )

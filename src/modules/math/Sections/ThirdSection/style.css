@@ -1,6 +1,7 @@
 .math-third-section {
     position: relative;
-    min-height: 900px;
+    min-height: 1200px;
+    border: 2px solid red;
 
     h2 {
         text-align: center;
@@ -98,6 +99,9 @@
 
 @media (max-width: 800px) {
     .math-third-section {
+        min-height: 600px;
+        transition: all 0.5s ease-in-out;
+
         h2 {
             font-size: 32px !important;
             padding: 16px 0 !important;
@@ -133,5 +137,10 @@
         .math-brain-content-card {
             padding: 24px !important;
         }
+    }
+
+    .math-third-section.expanded {
+        min-height: 900px;
+        transition: all 0.5s ease-in-out;
     }
 }
