@@ -40,7 +40,7 @@ const FourthSection: React.FC<MathSectionProps> = ({className}: MathSectionProps
                     className='math-types-card'
                     title={card.title}
                     description={card.description}
-                    imagePath={paths.cubes[paths.cubes.length - idx]}
+                    imagePath={paths.cubes[paths.cubes.length - 1 - idx]}
                     flexDirection={card && getFlexDirection(card)}
                 />
             ))}
