@@ -46,7 +46,7 @@ const Slider: React.FC<ISliderProps> = ({
         animate: {scale: 0.75, y: screenWidth >= 768 ? 70 : 40, opacity: 0.5}
     };
 
-    function handleDragEnd(_, info) {
+    function handleDragEnd(_: any, info: any) {
         const step = screenWidth >= 768 ? 550 : 250;
 
         if (info.offset.x < -100) {
