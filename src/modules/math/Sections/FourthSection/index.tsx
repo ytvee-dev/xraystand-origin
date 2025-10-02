@@ -1,23 +1,16 @@
 import React, {type ReactElement} from "react";
 import type {MathSectionProps} from "@modules/math/types";
-import type {TRootState} from "@store/index.ts";
-import {Languages} from "@domains/Translate";
-import {useSelector} from "react-redux";
+import { useMathPageData } from "@hooks/useMathPageData";
 import GridCard from "@modules/math/components/GridCard";
 import paths from "@modules/math/locales/paths.json";
-import * as textContentKz from "@modules/math/locales/kaz.json";
-import * as textContentRu from "@modules/math/locales/rus.json";
 import "./style.css";
 
 const FourthSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
-    const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
-    const textContent = currentLocale === Languages.KAZAKH ? textContentKz : textContentRu;
-
+    const { textContent } = useMathPageData();
     const cards = textContent.fourthSection.content;
 
     return (<section className={className}>
         <div className='math-fourth-section-background'>
-            <img src={paths.svg.smallSpiral} alt={'background'}/>
             <img src={paths.svg.smallSpiral} alt={'background'}/>
         </div>
         

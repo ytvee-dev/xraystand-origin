@@ -1,17 +1,11 @@
 import React, {type ReactElement} from "react";
 import type {MathSectionProps} from "@modules/math/types";
-import type {TRootState} from "@store/index.ts";
-import {Languages} from "@domains/Translate";
-import {useSelector} from "react-redux";
-import * as textContentKz from "@modules/math/locales/kaz.json";
-import * as textContentRu from "@modules/math/locales/rus.json";
 import * as paths from "@modules/math/locales/paths.json";
+import { useMathPageData } from "@hooks/useMathPageData";
 import "./style.css";
 
 const CoverSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
-    const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
-    const textContent = currentLocale === Languages.KAZAKH ? textContentKz : textContentRu;
-
+    const { textContent } = useMathPageData();
 
     return (
         <section className={className}>

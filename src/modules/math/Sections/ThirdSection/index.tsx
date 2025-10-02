@@ -1,13 +1,8 @@
 import React, {type ReactElement} from "react";
 import type {MathSectionProps} from "@modules/math/types";
-import type {TRootState} from "@store/index.ts";
-import {useSelector} from "react-redux";
 import BrainCard from "@modules/math/components/BrainCard";
-import useScreenWidth from "@hooks/useScreenWidth.ts";
-import {Languages} from "@domains/Translate";
+import { useMathPageData } from "@hooks/useMathPageData";
 import paths from "@modules/math/locales/paths.json";
-import * as textContentKz from "@modules/math/locales/kaz.json";
-import * as textContentRu from "@modules/math/locales/rus.json";
 import "./style.css";
 
 const dotPositions = [
@@ -20,10 +15,7 @@ const dotPositions = [
 ];
 
 const ThirdSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
-    const isMobile = useScreenWidth() < 800;
-    const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
-    const textContent = currentLocale === Languages.KAZAKH ? textContentKz : textContentRu;
-
+    const { textContent, isMobile } = useMathPageData();
     const [selectedDotIndex, setSelectedDotIndex] = React.useState<number | null>(null);
 
     const handleSelectedDot = (index: number) => {

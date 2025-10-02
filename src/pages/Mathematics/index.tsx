@@ -1,18 +1,14 @@
 import React, {type ReactElement} from "react";
 import type {TRootState} from "@store/index.ts";
-
 import {useSelector} from "react-redux";
 import {usePreloadImages} from "@hooks/usePreloadImages.ts";
 import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
-
 import BrightnessLayout from "@layout/Brightness";
-
 import CoverSection from "@modules/math/Sections/CoverSection";
 import FirstSection from "@modules/math/Sections/FirstSection";
 import SecondSection from "@modules/math/Sections/SecondSection";
 import ThirdSection from "@modules/math/Sections/ThirdSection";
 import FourthSection from "@modules/math/Sections/FourthSection";
-import FifthSection from "@modules/math/Sections/FifthSection";
 import Spinner from "@components/common/Spinner";
 
 import * as paths from '@modules/math/locales/paths.json';

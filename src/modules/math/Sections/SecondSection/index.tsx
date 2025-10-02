@@ -1,28 +1,20 @@
 import React, {type ReactElement, useState} from "react";
-import {useSelector} from "react-redux";
-import * as paths from '@modules/math/locales/paths.json';
-import * as textContentRu from '@modules/math/locales/rus.json';
-import * as textContentKz from '@modules/math/locales/kaz.json';
 import type {MathSectionProps} from "@modules/math/types";
-import type {TRootState} from "@store/index.ts";
-import {Languages} from "@domains/Translate";
+import { useMathPageData } from "@hooks/useMathPageData";
+import Slider from "@components/common/Other/Slider";
 import {
     motion,
     AnimatePresence
 } from "framer-motion";
+import * as paths from '@modules/math/locales/paths.json';
 import "./style.css";
-import Slider from "@components/common/Other/Slider";
-import useScreenWidth from "@hooks/useScreenWidth.ts";
 
 export type TCard = { id: string; title: string; subtitle: string; description: string; image: string };
 
 const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
-    const screenWidth = useScreenWidth();
+    const { textContent, screenWidth } = useMathPageData();
     const isMobile = screenWidth <= 768;
     const [index, setIndex] = useState(0);
-
-    const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
-    const textContent = currentLocale === Languages.KAZAKH ? textContentKz : textContentRu;
 
     const cards: TCard[] = textContent.secondSection.content.map((contentItem, idx) => {
         return {

@@ -1,26 +1,14 @@
 import React, {type ReactElement} from "react";
 import type {MathSectionProps} from "@modules/math/types";
 import type {TCard} from "@modules/math/Sections/SecondSection";
-import {Languages} from "@domains/Translate";
-import {useSelector} from "react-redux";
-import CubeCard, {type TFlexDirection} from "@modules/math/components/CubeCard";
-import type {TRootState} from "@store/index.ts";
-import * as textContentKz from "@modules/math/locales/kaz.json";
+import { useMathPageData } from "@hooks/useMathPageData";
+import {getFlexDirection} from "@utils/stylesHelper.ts";
+import CubeCard from "@modules/math/components/CubeCard";
 import * as paths from "@modules/math/locales/paths.json";
-import * as textContentRu from "@modules/math/locales/rus.json";
 import "./style.css";
 
-export const getFlexDirection = (card: TCard): TFlexDirection => {
-    const id: number = Number(card.id.slice(card.id.length-2, -1));
-    if (id % 2 == 0) {
-        return 'row';
-    }
-    return 'row-reverse';
-}
-
 const FirstSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
-    const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
-    const textContent = currentLocale === Languages.KAZAKH ? textContentKz : textContentRu;
+    const { textContent } = useMathPageData();
 
     const cards: TCard[] = textContent.firstSection.content.map((contentItem, idx) => {
         return {
