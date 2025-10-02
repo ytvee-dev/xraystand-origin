@@ -3,24 +3,23 @@ import { useSelector } from 'react-redux';
 import type { TRootState } from '@store/index';
 import { Languages } from '@domains/Translate';
 import useScreenWidth from '@hooks/useScreenWidth';
-import * as textContentKz from '@modules/math/locales/kaz.json';
-import * as textContentRu from '@modules/math/locales/rus.json';
 
-export const useMathPageData = () => {
+export const usePageData = () => {
     const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
     const screenWidth = useScreenWidth();
-    
-    const textContent = useMemo(() => 
-        currentLocale === Languages.KAZAKH ? textContentKz : textContentRu,
-        [currentLocale]
-    );
+    const isContentLoaded: boolean = useSelector((state: TRootState) => state.application.isContentLoaded);
     
     const isMobile = useMemo(() => screenWidth < 800, [screenWidth]);
+    const isTablet = useMemo(() => screenWidth >= 800 && screenWidth < 1200, [screenWidth]);
+    const isDesktop = useMemo(() => screenWidth >= 1200, [screenWidth]);
     
     return {
         currentLocale,
-        textContent,
+        screenWidth,
+        isContentLoaded,
         isMobile,
-        screenWidth
+        isTablet,
+        isDesktop
     };
 };
+
