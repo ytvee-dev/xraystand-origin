@@ -1,13 +1,10 @@
 import { type ReactElement, type MouseEvent, type TouchEvent } from "react";
 import { trafficLightsConfig, type ITrafficLightConfig } from "./meta.ts";
-import {useSelector} from "react-redux";
-import type {TRootState} from "@store/index.ts";
+import {useLocale} from "@hooks/useLocale";
 import "./style.css";
 
 const AnimatedTrafficLight = (): ReactElement => {
-    const currentLocale = useSelector(
-        (state: TRootState) => state.locale.locale
-    );
+    const currentLocale = useLocale();
 
     const handleLightEnter = (event: MouseEvent<HTMLDivElement>): void => {
         event.currentTarget.classList.add("active");

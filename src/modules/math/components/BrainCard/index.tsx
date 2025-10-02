@@ -10,7 +10,6 @@ export interface IBrainCardProps {
 }
 
 const BrainCard: React.FC<IBrainCardProps> = ({title, description, backgroundColor=DEFAULT_BACKGROUND_COLOR}): ReactElement => {
-    // const isMobile = useScreenWidth() < 800;
 
     return (
         <div className={'brain-card'} style={{backgroundColor: backgroundColor}}>

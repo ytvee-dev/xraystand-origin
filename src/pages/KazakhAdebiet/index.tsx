@@ -1,8 +1,7 @@
 import {type ReactElement} from "react";
-import type {TRootState} from "@store/index.ts";
-import {useSelector} from "react-redux";
 import {usePreloadImages} from "@hooks/usePreloadImages.ts";
 import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
+import {usePageData} from "@hooks/usePageData";
 import DefaultLayout from "../../layout/Default";
 import CoverSection from "../../modules/kazakhAdebietModule/Sections/CoverSection";
 import FirstSection from "../../modules/kazakhAdebietModule/Sections/FirstSection";
@@ -14,9 +13,7 @@ import "./style.css";
 
 const KazakhAdebiet = (): ReactElement => {
     const imgUrls = collectFromPathsJson(nutritionContent)
-    const isContentLoaded: boolean = useSelector(
-        (state: TRootState) => state.application.isContentLoaded
-    );
+    const { isContentLoaded } = usePageData();
     usePreloadImages(imgUrls);
 
     return (

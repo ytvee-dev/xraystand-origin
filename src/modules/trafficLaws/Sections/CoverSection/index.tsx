@@ -1,7 +1,5 @@
 import { type ReactElement } from "react";
-import type {TRootState} from "@store/index.ts";
-import {Languages} from "@domains/Translate";
-import {useSelector} from "react-redux";
+import {useLocale, useLocaleContent} from "@hooks/useLocale";
 import road from "@assets/images/trafficLawsPage/coverSection/road.avif";
 import carPng from "@assets/images/trafficLawsPage/coverSection/car.png";
 import cloudsImg from "@assets/images/trafficLawsPage/coverSection/clouds.png";
@@ -11,10 +9,8 @@ import * as textContentRu from "../../locales/rus.json";
 import "./style.css";
 
 const CoverSection = (): ReactElement => {
-    const currentLocale: Languages = useSelector(
-        (state: TRootState) => state.locale.locale
-    );
-    const translation = currentLocale === "kz" ? textContentKz : textContentRu;
+    const currentLocale = useLocale();
+    const translation = useLocaleContent(textContentRu, textContentKz);
 
     return (
         <section className="traffic-laws-cover-section">

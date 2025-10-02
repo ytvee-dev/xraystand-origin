@@ -16,7 +16,6 @@ const CubeCard: React.FC<ICubeCardProps> = ({title, description, imagePath, clas
     const textAlign = flexDirection === 'row-reverse' ? 'start' : 'end';
 
     return (
-        // class: math-types-card
         <div
             className={className}
              style={{

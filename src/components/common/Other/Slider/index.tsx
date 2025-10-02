@@ -15,7 +15,6 @@ export interface ISliderProps {
     setIndex?: (n: number) => void;
     card: TCard;
     drag?: "x" | "y" | true;
-    // children: React.ReactNode | React.ReactElement;
 }
 
 const Slider: React.FC<ISliderProps> = ({
@@ -47,8 +46,6 @@ const Slider: React.FC<ISliderProps> = ({
         animate: {scale: 0.75, y: screenWidth >= 768 ? 70 : 40, opacity: 0.5}
     };
 
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
     function handleDragEnd(_, info) {
         const step = screenWidth >= 768 ? 550 : 250;
 

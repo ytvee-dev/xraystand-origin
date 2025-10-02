@@ -1,11 +1,13 @@
 import React, {type ReactElement} from "react";
 import type {MathSectionProps} from "@modules/math/types";
 import * as paths from "@modules/math/locales/paths.json";
-import { useMathPageData } from "@hooks/useMathPageData";
+import {useLocaleContent} from "@hooks/useLocale";
+import * as textContentKz from "@modules/math/locales/kaz.json";
+import * as textContentRu from "@modules/math/locales/rus.json";
 import "./style.css";
 
 const CoverSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
-    const { textContent } = useMathPageData();
+    const textContent = useLocaleContent(textContentRu, textContentKz);
 
     return (
         <section className={className}>

@@ -7,7 +7,6 @@ export function usePreloadImages(urls: string[], { minDelayMs = 300 } = {}) {
     const startedAt = useRef(0);
 
     useEffect(() => {
-        // пустой список — считаем загруженным
         if (!urls || urls.length === 0) {
             dispatch(setProgress(100));
             dispatch(setIsContentLoaded(true));
@@ -32,7 +31,6 @@ export function usePreloadImages(urls: string[], { minDelayMs = 300 } = {}) {
                         dispatch(setProgress(p));
                         resolve();
                     };
-                    // важно: root-relative путь
                     img.src = src;
                 })
         );
@@ -52,6 +50,5 @@ export function usePreloadImages(urls: string[], { minDelayMs = 300 } = {}) {
         return () => {
             cancelled = true;
         };
-        // важно: завязаться на список URL'ов как на строку, чтобы эффект не бегал бесконечно
     }, [dispatch, JSON.stringify(urls), minDelayMs]);
 }

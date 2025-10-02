@@ -1,4 +1,3 @@
-// utils/collectAssetUrls.ts
 type AnyObj = Record<string, unknown>;
 
 const PREFIX_MAP: Record<string, string> = {

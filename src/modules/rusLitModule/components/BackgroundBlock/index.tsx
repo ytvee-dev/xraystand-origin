@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
 import DSNotification from "../../../../components/common/DSNotification";
-import useScreenWidth from "../../../../hooks/useScreenWidth.ts";
+import {usePageData} from "@hooks/usePageData";
 import DSCardsWrapper from "../../../../components/common/Wrappers/DSCadsWrapper";
 import DSCard from "../../../../components/common/Cards/DSCard";
 import * as paths from "../../locales/paths.json";
@@ -26,7 +26,7 @@ const BackgroundBlock = ({
     era = "old",
     notificationText = null,
 }: IBackgroundBlockProps): ReactElement => {
-    const screenWidth = useScreenWidth();
+    const { screenWidth } = usePageData();
 
     return (
         <div className="ruslit-content-section-content-container">

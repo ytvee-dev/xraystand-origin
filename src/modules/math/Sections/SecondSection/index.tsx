@@ -1,18 +1,22 @@
 import React, {type ReactElement, useState} from "react";
 import type {MathSectionProps} from "@modules/math/types";
-import { useMathPageData } from "@hooks/useMathPageData";
+import {usePageData} from "@hooks/usePageData";
+import {useLocaleContent} from "@hooks/useLocale";
 import Slider from "@components/common/Other/Slider";
 import {
     motion,
     AnimatePresence
 } from "framer-motion";
 import * as paths from '@modules/math/locales/paths.json';
+import * as textContentRu from '@modules/math/locales/rus.json';
+import * as textContentKz from '@modules/math/locales/kaz.json';
 import "./style.css";
 
 export type TCard = { id: string; title: string; subtitle: string; description: string; image: string };
 
 const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
-    const { textContent, screenWidth } = useMathPageData();
+    const { screenWidth } = usePageData();
+    const textContent = useLocaleContent(textContentRu, textContentKz);
     const isMobile = screenWidth <= 768;
     const [index, setIndex] = useState(0);
 
@@ -62,6 +66,7 @@ const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps
             </div>
             <div className='math-second-section-card-text'>
                 <h3>{cards[index] ? cards[index].title : cards[0].title}</h3>
+                <h5>{cards[index] ? cards[index].subtitle : cards[0].subtitle}</h5>
                 <p>{cards[index] ? cards[index].description : cards[0].description}</p>
             </div>
         </section>

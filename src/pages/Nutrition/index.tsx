@@ -1,10 +1,8 @@
 import React, {type ReactElement} from "react";
-import type {TRootState} from "../../store";
-import type {NutritionLocale} from "../../modules/nutrition/types";
-import {useSelector} from "react-redux";
 import {usePreloadImages} from "@hooks/usePreloadImages.ts";
 import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
-import useScreenWidth from "@hooks/useScreenWidth.ts";
+import {usePageData} from "@hooks/usePageData";
+import {useLocaleContent} from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
 import NutritionLogo from "@modules/nutrition/components/NutritionLogo";
 import NutritionNav from "@modules/nutrition/components/NutritionNav";
@@ -15,7 +13,6 @@ import ThirdSection from "@modules/nutrition/Sections/ThirdSection";
 import FourthSection from "@modules/nutrition/Sections/FourthSection";
 import FifthSection from "@modules/nutrition/Sections/FifthSection";
 import Spinner from "@components/common/Spinner";
-import {Languages} from "@domains/Translate";
 import * as contentRu from "@modules/nutrition/locales/rus.json";
 import * as contentKz from "@modules/nutrition/locales/kaz.json";
 import * as paths from "@modules/nutrition/locales/paths.json";
@@ -35,14 +32,8 @@ const Nutrition: React.FC = (): ReactElement => {
     const imgUrls = collectFromPathsJson(paths)
     usePreloadImages(imgUrls);
 
-    const screenWidth = useScreenWidth();
-    const currentLocale: Languages = useSelector(
-        (state: TRootState) => state.locale.locale
-    );
-    const isContentLoaded: boolean = useSelector(
-        (state: TRootState) => state.application.isContentLoaded
-    );
-    const content: NutritionLocale = currentLocale === 'ru' ? contentRu : contentKz;
+    const { screenWidth, isContentLoaded } = usePageData();
+    const content = useLocaleContent(contentRu, contentKz);
 
     const scrollTo = (id: string) => {
         const el = document.getElementById(id);

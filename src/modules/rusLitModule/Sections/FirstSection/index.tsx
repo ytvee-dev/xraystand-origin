@@ -3,7 +3,7 @@ import ContentSection from "../../../../components/common/Sections/DSContentSect
 import DSCard from "../../../../components/common/Cards/DSCard";
 import DSCardsWrapper from "../../../../components/common/Wrappers/DSCadsWrapper";
 import DSNotification from "../../../../components/common/DSNotification";
-import useScreenWidth from "../../../../hooks/useScreenWidth.ts";
+import {usePageData} from "@hooks/usePageData";
 
 import * as content from "../../locales/rus.json";
 import * as paths from "../../locales/paths.json";
@@ -11,7 +11,7 @@ import * as paths from "../../locales/paths.json";
 import "./style.css";
 
 const FirstSection = (): ReactElement => {
-    const screenWidth = useScreenWidth();
+    const { screenWidth } = usePageData();
 
     return (
         <section className="ruslit-first-section">

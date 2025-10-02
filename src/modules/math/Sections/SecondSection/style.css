@@ -35,7 +35,7 @@
     .math-second-section-card-text {
         margin-top: 90px;
         max-width: 395px;
-        height: 177px;
+        height: 210px;
         z-index: 100;
         background: rgba(39, 105, 165, 0.1);
         backdrop-filter: blur(10px);
@@ -47,7 +47,7 @@
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         animation: slideInRight 1s cubic-bezier(0.4, 0, 0.2, 1);
 
-        h3, p {
+        h3, h5, p {
             font-family: Roboto, sans-serif;
             color: #FFFFFF;
             letter-spacing: 0.5px !important;
@@ -56,6 +56,14 @@
 
         h3 {
             font-size: 32px;
+            padding-bottom: 10px;
+            font-weight: 400;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+        }
+
+        h5 {
+            font-size: 18px;
             padding-bottom: 10px;
             font-weight: 400;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -128,6 +136,11 @@
         max-width: 300px !important;
 
         h3 {
+            font-size: 16px !important;
+            padding-bottom: 10px;
+        }
+
+        h5 {
             font-size: 16px !important;
             padding-bottom: 10px;
         }

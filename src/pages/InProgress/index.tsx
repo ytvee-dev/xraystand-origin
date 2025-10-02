@@ -1,7 +1,7 @@
 import {type ReactElement} from "react";
 import DefaultLayout from "../../layout/Default";
 import ContentSection from "../../components/common/Sections/DSContentSection";
-import useWindowWidth from "../../hooks/useScreenWidth.ts";
+import {usePageData} from "@hooks/usePageData";
 import DSNotification from "../../components/common/DSNotification";
 import "./style.css";
 
@@ -15,7 +15,7 @@ const textContent = {
 }
 
 const InProgress = (): ReactElement => {
-    const screenWidth = useWindowWidth();
+    const { screenWidth } = usePageData();
 
     return (
         <DefaultLayout disabled={true}>

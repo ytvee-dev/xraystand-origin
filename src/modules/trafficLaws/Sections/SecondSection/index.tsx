@@ -2,18 +2,14 @@ import {type ReactElement} from "react";
 import ContentSection from "../../../../components/common/Sections/DSContentSection";
 import AnimatedCarCard from "../../components/AnimatedCarCard";
 import AnimatedLargeCard, {type IDescription} from "../../components/AnimatedLargeCard";
-import {type IPageSectionResources, PageSectionIds, Languages} from "../../../../domains/Translate";
+import {type IPageSectionResources, PageSectionIds} from "../../../../domains/Translate";
 import AnimatedTrafficLight from "../../components/AnimatedTrafficLight";
-import {useSelector} from "react-redux";
-import type {TRootState} from "../../../../store";
 import * as textContentKz from "../../locales/kaz.json";
 import * as textContentRu from "../../locales/rus.json";
+import {useLocaleContent} from "@hooks/useLocale";
 
 const SecondSection = (): ReactElement | null => {
-    const currentLocale: Languages = useSelector(
-        (state: TRootState) => state.locale.locale
-    );
-    const translation = currentLocale === "kz" ? textContentKz : textContentRu;
+    const translation = useLocaleContent(textContentRu, textContentKz);
     const secondSectionMeta: IPageSectionResources = translation[PageSectionIds.SECOND_SECTION];
     const secondSectionDescription: IDescription = {
         subtitle: secondSectionMeta.subtitle!, content: secondSectionMeta.content! as string[]

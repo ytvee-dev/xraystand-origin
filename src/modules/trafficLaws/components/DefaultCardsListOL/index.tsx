@@ -2,12 +2,11 @@ import {type ReactElement} from "react";
 import type {TContentItem} from "../../../../utils/types/trafficLawsTypes";
 import {getCardProps} from "./meta.ts";
 import DefaultImageCard from "../DefaultImageCard";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import {setModalContentName} from "../../../../store/slices/TrafficLawsPage";
 import {setIsModalOpened} from "../../../../store/slices/Application";
 import useWindowWidth from "../../../../hooks/useScreenWidth.ts";
-import {Languages} from "../../../../domains/Translate";
-import type {TRootState} from "../../../../store";
+import {useLocale} from "@hooks/useLocale";
 import "./style.css";
 
 export interface IContentCardsContainerProps {
@@ -29,9 +28,7 @@ const DefaultCardsListOL = ({
 }: IContentCardsContainerProps): ReactElement => {
     const dispatch = useDispatch();
     const screenWidth = useWindowWidth();
-    const currentLocale: Languages = useSelector(
-        (state: TRootState) => state.locale.locale
-    );
+    const currentLocale = useLocale();
 
     const modalAction = (item: TContentItem) => {
         dispatch(setModalContentName(item));

@@ -1,14 +1,16 @@
 import React, {type ReactElement} from "react";
 import type {MathSectionProps} from "@modules/math/types";
 import type {TCard} from "@modules/math/Sections/SecondSection";
-import { useMathPageData } from "@hooks/useMathPageData";
+import {useLocaleContent} from "@hooks/useLocale";
 import {getFlexDirection} from "@utils/stylesHelper.ts";
 import CubeCard from "@modules/math/components/CubeCard";
 import * as paths from "@modules/math/locales/paths.json";
+import * as textContentKz from "@modules/math/locales/kaz.json";
+import * as textContentRu from "@modules/math/locales/rus.json";
 import "./style.css";
 
 const FirstSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
-    const { textContent } = useMathPageData();
+    const textContent = useLocaleContent(textContentRu, textContentKz);
 
     const cards: TCard[] = textContent.firstSection.content.map((contentItem, idx) => {
         return {

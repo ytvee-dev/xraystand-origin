@@ -1,8 +1,11 @@
 import React, {type ReactElement} from "react";
 import type {MathSectionProps} from "@modules/math/types";
 import BrainCard from "@modules/math/components/BrainCard";
-import { useMathPageData } from "@hooks/useMathPageData";
+import {usePageData} from "@hooks/usePageData";
+import {useLocaleContent} from "@hooks/useLocale";
 import paths from "@modules/math/locales/paths.json";
+import * as textContentKz from "@modules/math/locales/kaz.json";
+import * as textContentRu from "@modules/math/locales/rus.json";
 import "./style.css";
 
 const dotPositions = [
@@ -15,7 +18,8 @@ const dotPositions = [
 ];
 
 const ThirdSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
-    const { textContent, isMobile } = useMathPageData();
+    const { isMobile } = usePageData();
+    const textContent = useLocaleContent(textContentRu, textContentKz);
     const [selectedDotIndex, setSelectedDotIndex] = React.useState<number | null>(null);
 
     const handleSelectedDot = (index: number) => {

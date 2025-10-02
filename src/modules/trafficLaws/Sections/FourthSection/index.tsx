@@ -4,17 +4,12 @@ import TwoColumnSection from "../../../../components/common/Sections/TwoColumnSe
 import LargeCard from "../../../../components/common/Cards/LargeCard";
 import DefaultCardsListOL from "../../components/DefaultCardsListOL";
 import SquareImageViewer from "../../components/SquareImageViewer";
-import {Languages} from "../../../../domains/Translate";
-import {useSelector} from "react-redux";
-import type {TRootState} from "../../../../store";
+import {useLocaleContent} from "@hooks/useLocale";
 import * as textContentKz from "../../locales/kaz.json";
 import * as textContentRu from "../../locales/rus.json";
 
 const FourthSection = (): ReactElement | null => {
-    const currentLocale: Languages = useSelector(
-        (state: TRootState) => state.locale.locale
-    );
-    const translation = currentLocale === "kz" ? textContentKz : textContentRu;
+    const translation = useLocaleContent(textContentRu, textContentKz);
 
     if (!translation.fourthSection) return null;
 

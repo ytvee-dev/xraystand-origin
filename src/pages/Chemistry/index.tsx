@@ -1,10 +1,10 @@
-import {type ReactElement, useState} from "react";
+import {type ReactElement, useState, useMemo} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import type {IContentSectionProps, IElementJson, ITextContent} from "./types.ts";
-import {Languages} from "@domains/Translate";
 import type {TRootState} from "../../store";
 import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
-import useWindowWidth from "@hooks/useScreenWidth.ts";
+import {usePageData} from "@hooks/usePageData";
+import {useLocaleContent} from "@hooks/useLocale";
 import DefaultLayout from "@layout/Default";
 import PeriodicTable from "@modules/chemistry/components/PeriodicTable";
 import PeriodicTableMobile from "@modules/chemistry/components/PeriodicTableMobile";
@@ -18,29 +18,29 @@ import Button from "@mui/material/Button";
 import {ButtonGroup} from "@mui/material";
 
 const Chemistry = (): ReactElement => {
-    const windowWidth = useWindowWidth();
+    const { currentLocale, screenWidth } = usePageData();
+    const sectionMeta = useLocaleContent(contentRU, contentKZ);
     const dispatch = useDispatch();
     const isElementModalOpened: boolean = useSelector((state: TRootState) => state.chemistry.isModalOpened);
     const [viewMode, setViewMode] = useState<'default' | '3d'>('default');
 
-    const currentLocale: Languages = useSelector(
-        (state: TRootState) => state.locale.locale
-    );
-
-    const sectionMeta = currentLocale === "kz" ? contentKZ : contentRU;
     const sectionMetaTranslation: ITextContent = sectionMeta.section;
-
-    const switchButtons = {
+    
+    const elements = useMemo(() => sectionMeta.elements, [sectionMeta]);
+    
+    const switchButtons = useMemo(() => ({
         default: currentLocale === "kz" ? 'Стандартты көрініс' : 'Стандартный вид',
         volume: currentLocale === "kz" ? '3D моделі' : '3D Модель',
-    };
-
-    const buttons = {
+    }), [currentLocale]);
+    
+    const buttons = useMemo(() => ({
         table: currentLocale === "ru" ? 'Таблица' : 'Кесте',
         sphere: currentLocale === "ru" ? 'Сфера' : 'Шар',
         helix: currentLocale === "ru" ? 'Спираль' : 'Спираль',
         grid: currentLocale === "ru" ? 'Сетка' : 'Тор',
-    };
+    }), [currentLocale]);
+    
+    const isMobile = useMemo(() => screenWidth < 1300, [screenWidth]);
 
     const CustomContentSection = ({title, subtitle, children}: IContentSectionProps) => {
         return (
@@ -65,8 +65,6 @@ const Chemistry = (): ReactElement => {
     const closeModal = () => {
         dispatch(setIsModalOpened(false));
     };
-
-    const {elements} = currentLocale === "kz" ? contentKZ : contentRU;
 
     const handlePick3D = (el: MinimalElement) => {
         dispatch(selectElement(el as unknown as IElementJson));
@@ -95,8 +93,8 @@ const Chemistry = (): ReactElement => {
                 </ButtonGroup>
 
                 <div className="periodic-table-container">
-                    {viewMode === 'default' && windowWidth >= 1300 && <PeriodicTable/> }
-                    {viewMode === 'default' && windowWidth < 1300 && <PeriodicTableMobile/> }
+                    {viewMode === 'default' && !isMobile && <PeriodicTable/> }
+                    {viewMode === 'default' && isMobile && <PeriodicTableMobile/> }
 
                     {viewMode === '3d' && (
                         <PeriodicTable3D
