@@ -27,7 +27,6 @@ const ThirdSection: React.FC<MathSectionProps> = ({className}: MathSectionProps)
     const [selectedDotIndex, setSelectedDotIndex] = React.useState<number | null>(null);
 
     const handleSelectedDot = (index: number) => {
-        console.log(index);
         if (index === selectedDotIndex) {
             setSelectedDotIndex(null);
             return;

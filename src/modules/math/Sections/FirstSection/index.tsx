@@ -10,7 +10,7 @@ import * as paths from "@modules/math/locales/paths.json";
 import * as textContentRu from "@modules/math/locales/rus.json";
 import "./style.css";
 
-const getFlexDirection = (card: TCard): TFlexDirection => {
+export const getFlexDirection = (card: TCard): TFlexDirection => {
     const id: number = Number(card.id.slice(card.id.length-2, -1));
     if (id % 2 == 0) {
         return 'row';

@@ -32,8 +32,6 @@ const LanguageSwitcher: React.FC<ILanguageSwitcherProps> = ({color=''}: ILanguag
     );
 
     const handleSwitchLanguage = (event: ChangeEvent<HTMLInputElement>) => {
-        console.log("handleSwitchLanguage:", event.target.checked);
-
         const selectedLanguage: Languages = !event.target.checked
             ? Languages.RUSSIAN
             : Languages.KAZAKH;

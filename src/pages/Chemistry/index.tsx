@@ -69,7 +69,6 @@ const Chemistry = (): ReactElement => {
     const {elements} = currentLocale === "kz" ? contentKZ : contentRU;
 
     const handlePick3D = (el: MinimalElement) => {
-        console.log(123)
         dispatch(selectElement(el as unknown as IElementJson));
         dispatch(setIsModalOpened(true));
     };
