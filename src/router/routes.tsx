@@ -10,6 +10,7 @@ const Chemistry = lazy(() => import("../pages/Chemistry"));
 const RusLit = lazy(() => import("../pages/RusLit"));
 const Nutrition = lazy(() => import("../pages/Nutrition"));
 const Mathematics = lazy(() => import("@pages/Mathematics"));
+const Pages = lazy(() => import("../pages/Pages"));
 // const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
 // const KazMusic = lazy(() => import("@pages/KazMusic"));
 
@@ -49,6 +50,10 @@ export const paths = {
     KAZ_MUSIC: {
         id: "kazMusic",
         path: "/kazmusicinstr",
+    },
+    PAGES: {
+        id: "pages",
+        path: "/pages",
     },
     NOT_FOUND: {
         id: "notFound",
@@ -94,6 +99,10 @@ const routes: RouteObject[] = [
         ...paths.KAZ_MUSIC,
         // element: <KazMusic />,
         element: <InProgress />,
+    },
+    {
+        ...paths.PAGES,
+        element: <Pages />,
     },
 
     {
