@@ -139,9 +139,31 @@ const PeriodicTable3D: React.FC<Props> = ({ elements, onPick, buttons }) => {
             renderer.domElement.style.touchAction = "none";
             el.appendChild(renderer.domElement);
 
+            el.style.touchAction = "manipulation";
+            el.style.overflow = "hidden";
+            
+            el.addEventListener("touchstart", () => {
+            }, { passive: true });
+            
+            el.addEventListener("touchmove", (e) => {
+                e.preventDefault();
+            }, { passive: false });
+
             const controls = new TrackballControls(camera, renderer.domElement);
             controls.minDistance = 500;
             controls.maxDistance = 6000;
+            
+            controls.noZoom = false;
+            controls.noPan = true;
+            controls.noRotate = false;
+            
+            controls.addEventListener('start', () => {
+                document.body.style.overflow = 'hidden';
+            });
+            
+            controls.addEventListener('end', () => {
+                document.body.style.overflow = '';
+            });
 
             const objects: CSS3DObject[] = [];
             const targets: Targets = { table: [], sphere: [], helix: [], grid: [] };
@@ -193,7 +215,10 @@ const PeriodicTable3D: React.FC<Props> = ({ elements, onPick, buttons }) => {
                     if (moved) return;
                     const dx = Math.abs(e.clientX - downX);
                     const dy = Math.abs(e.clientY - downY);
-                    if (dx > CLICK_MOVE_THRESHOLD || dy > CLICK_MOVE_THRESHOLD) moved = true;
+                    if (dx > CLICK_MOVE_THRESHOLD || dy > CLICK_MOVE_THRESHOLD) {
+                        moved = true;
+                        e.preventDefault();
+                    }
                 });
 
                 const firePick = () => {
@@ -218,15 +243,51 @@ const PeriodicTable3D: React.FC<Props> = ({ elements, onPick, buttons }) => {
                 });
 
                 card.addEventListener("click", (e) => {
-                    if (moved) return;
-                    controls.enabled = false;
-                    firePick();
-                    setTimeout(() => {
-                        controls.enabled = true;
-                    }, 0);
-                    e.stopPropagation();
-                    e.preventDefault();
+                    // Проверяем, что это действительно клик, а не часть жеста
+                    const dt = performance.now() - downT;
+                    const dx = Math.abs(e.clientX - downX);
+                    const dy = Math.abs(e.clientY - downY);
+                    const isClick = !moved && dx < CLICK_MOVE_THRESHOLD && dy < CLICK_MOVE_THRESHOLD && dt < CLICK_TIME_THRESHOLD;
+                    
+                    if (isClick) {
+                        controls.enabled = false;
+                        firePick();
+                        setTimeout(() => {
+                            controls.enabled = true;
+                        }, 0);
+                        e.stopPropagation();
+                    }
                 });
+
+                card.addEventListener("touchstart", (e) => {
+                    // Сохраняем координаты для мобильных кликов
+                    downX = e.touches[0].clientX;
+                    downY = e.touches[0].clientY;
+                    downT = performance.now();
+                    moved = false;
+                }, { passive: true });
+
+                card.addEventListener("touchmove", (e) => {
+                    // Блокируем скролл только при движении
+                    e.preventDefault();
+                }, { passive: false });
+
+                card.addEventListener("touchend", (e) => {
+                    // Обработка кликов на мобильных устройствах
+                    const dt = performance.now() - downT;
+                    const dx = Math.abs(e.changedTouches[0].clientX - downX);
+                    const dy = Math.abs(e.changedTouches[0].clientY - downY);
+                    const isClick = !moved && dx < CLICK_MOVE_THRESHOLD && dy < CLICK_MOVE_THRESHOLD && dt < CLICK_TIME_THRESHOLD;
+                    
+                    if (isClick) {
+                        controls.enabled = false;
+                        firePick();
+                        setTimeout(() => {
+                            controls.enabled = true;
+                        }, 0);
+                        e.stopPropagation();
+                    }
+                }, { passive: true });
 
                 const objectCSS = new CSS3DObject(card);
                 objectCSS.position.x = Math.random() * 4000 - 2000;

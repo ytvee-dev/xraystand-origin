@@ -83,14 +83,14 @@
 
         .math-brain-content-card {
             z-index: 100;
-            pointer-events: none; // Чтобы карточка не блокировала клики по точкам
+            pointer-events: none;
             transition: all 0.3s ease-in-out;
 
             
             .brain-card {
                 opacity: 1;
                 transition: all 0.3s ease-in-out;
-                pointer-events: auto; // Но сама карточка должна быть кликабельной
+                pointer-events: auto;
             }
         }
     }

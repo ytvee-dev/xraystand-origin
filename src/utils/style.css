@@ -1,4 +1,3 @@
-/* Базовые шрифты и отступы */
 .markdown-body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
@@ -13,7 +12,6 @@
     gap: 16px;
 }
 
-/* Заголовки */
 .markdown-body h1 {
     font-size: 2.25rem;
     font-weight: 600;
@@ -40,12 +38,10 @@
     color: #111827;
 }
 
-/* Параграфы */
 .markdown-body p {
     margin: 0.75rem 0;
 }
 
-/* Списки */
 .markdown-body ul {
     margin: 0.75rem 0 0.75rem 1.5rem;
 }
@@ -54,7 +50,6 @@
     margin: 0.25rem 0;
 }
 
-/* Код */
 .markdown-body code {
     background-color: #f6f8fa;
     padding: 0.2em 0.4em;
@@ -72,7 +67,6 @@
     margin: 1rem 0;
 }
 
-/* Ссылки */
 .markdown-body link {
     color: #0969da;
     text-decoration: none;
@@ -83,7 +77,6 @@
     text-decoration: underline;
 }
 
-/* Таблицы */
 .markdown-body table {
     width: 100%;
     border-collapse: collapse;
@@ -103,7 +96,6 @@
     text-align: left;
 }
 
-/* Горизонтальная линия */
 .markdown-body hr {
     border: none;
     border-top: 1px solid #eaecef;

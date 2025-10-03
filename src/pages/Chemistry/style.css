@@ -1,3 +1,7 @@
+.chemistry-page {
+    overflow: hidden;
+}
+
 .custom-chemistry-content-section::-moz-selection {
     color: var(--default-footer-text-color-white);
     background-color: var(--section-container-primary-bg);
