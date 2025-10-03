@@ -5,17 +5,19 @@ import SectionNavigation from "@components/common/Navigation/SectionNavigation";
 const navOptions: NavigationConfig = {
     ru: [
         { key: "welcome", label: "Добро пожаловать" },
-        { key: "about", label: "Что это?" },
+        { key: "about", label: "О проекте" },
         { key: "features", label: "Преимущества" },
         { key: "examples", label: "Стенды" },
+        { key: "development", label: "Разработка" },
         { key: "contact", label: "Контакты" },
     ],
     kz: [
-        { key: "welcome", label: "Добро пожаловать" },
-        { key: "about", label: "Что это?" },
-        { key: "features", label: "Преимущества" },
-        { key: "examples", label: "Стенды" },
-        { key: "contact", label: "Контакты" },
+        { key: "welcome", label: "Қош келдіңіз" },
+        { key: "about", label: "Жоба туралы" },
+        { key: "features", label: "Артықшылықтар" },
+        { key: "examples", label: "Стендтер" },
+        { key: "development", label: "Әзірлеу" },
+        { key: "contact", label: "Байланыс" },
     ],
 };
 
@@ -24,6 +26,7 @@ const ID_BY_KEY: IdMapping = {
     about: "home-about", 
     features: "home-features",
     examples: "home-examples",
+    development: "home-development",
     contact: "home-contact",
 };
 
