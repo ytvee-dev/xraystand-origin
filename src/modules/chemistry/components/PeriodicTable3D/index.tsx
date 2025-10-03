@@ -243,7 +243,6 @@ const PeriodicTable3D: React.FC<Props> = ({ elements, onPick, buttons }) => {
                 });
 
                 card.addEventListener("click", (e) => {
-                    // Проверяем, что это действительно клик, а не часть жеста
                     const dt = performance.now() - downT;
                     const dx = Math.abs(e.clientX - downX);
                     const dy = Math.abs(e.clientY - downY);
@@ -260,7 +259,6 @@ const PeriodicTable3D: React.FC<Props> = ({ elements, onPick, buttons }) => {
                 });
 
                 card.addEventListener("touchstart", (e) => {
-                    // Сохраняем координаты для мобильных кликов
                     downX = e.touches[0].clientX;
                     downY = e.touches[0].clientY;
                     downT = performance.now();
@@ -268,12 +266,10 @@ const PeriodicTable3D: React.FC<Props> = ({ elements, onPick, buttons }) => {
                 }, { passive: true });
 
                 card.addEventListener("touchmove", (e) => {
-                    // Блокируем скролл только при движении
                     e.preventDefault();
                 }, { passive: false });
 
                 card.addEventListener("touchend", (e) => {
-                    // Обработка кликов на мобильных устройствах
                     const dt = performance.now() - downT;
                     const dx = Math.abs(e.changedTouches[0].clientX - downX);
                     const dy = Math.abs(e.changedTouches[0].clientY - downY);
