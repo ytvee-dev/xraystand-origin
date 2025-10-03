@@ -20,7 +20,13 @@ export function collectFromPathsJson(obj: AnyObj): string[] {
     const visit = (v: unknown) => {
         if (typeof v === "string") {
             if (/\.(png|jpe?g|webp|avif|gif|svg)$/i.test(v)) {
-                urls.push(buildPublicPath(v));
+                // Если это внешний URL (начинается с http), используем как есть
+                if (v.startsWith('http')) {
+                    urls.push(v);
+                } else {
+                    // Иначе строим локальный путь
+                    urls.push(buildPublicPath(v));
+                }
             }
             return;
         }

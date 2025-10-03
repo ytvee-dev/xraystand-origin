@@ -2,7 +2,7 @@ import React, {type ReactElement} from "react";
 import type {MathSectionProps} from "@modules/math/types";
 import {useLocaleContent} from "@hooks/useLocale";
 import GridCard from "@modules/math/components/GridCard";
-import paths from "@modules/math/locales/paths.json";
+import * as paths from "@modules/math/locales/paths.json";
 import * as textContentKz from "@modules/math/locales/kaz.json";
 import * as textContentRu from "@modules/math/locales/rus.json";
 import "./style.css";

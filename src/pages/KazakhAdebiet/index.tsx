@@ -8,11 +8,11 @@ import FirstSection from "../../modules/kazakhAdebietModule/Sections/FirstSectio
 import SecondSection from "../../modules/kazakhAdebietModule/Sections/SecondSection";
 import ThirdSection from "../../modules/kazakhAdebietModule/Sections/ThirdSection";
 import Spinner from "@components/common/Spinner";
-import nutritionContent from "@modules/nutrition/locales/paths.json";
+import * as paths from '@modules/kazakhAdebietModule/locales/paths.json';
 import "./style.css";
 
 const KazakhAdebiet = (): ReactElement => {
-    const imgUrls = collectFromPathsJson(nutritionContent)
+    const imgUrls = collectFromPathsJson(paths)
     const { isContentLoaded } = usePageData();
     usePreloadImages(imgUrls);
 

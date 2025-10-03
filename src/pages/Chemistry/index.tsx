@@ -5,24 +5,31 @@ import type {TRootState} from "../../store";
 import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
 import {usePageData} from "@hooks/usePageData";
 import {useLocaleContent} from "@hooks/useLocale";
+import {usePreloadImages} from "@hooks/usePreloadImages.ts";
+import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
 import DefaultLayout from "@layout/Default";
 import PeriodicTable from "@modules/chemistry/components/PeriodicTable";
 import PeriodicTableMobile from "@modules/chemistry/components/PeriodicTableMobile";
 import FlexibleModal from "@components/common/Modal/FlexibleModal";
 import ChemistryModalContent from "@modules/chemistry/components/ChemistryModalContent";
+import Spinner from "@components/common/Spinner";
 import * as contentKZ from "@modules/chemistry/locales/kaz.json";
 import * as contentRU from "@modules/chemistry/locales/rus.json";
+import * as paths from "@modules/chemistry/locales/paths.json";
 import "./style.css";
 import PeriodicTable3D, {type MinimalElement} from "@modules/chemistry/components/PeriodicTable3D";
 import Button from "@mui/material/Button";
 import {ButtonGroup} from "@mui/material";
 
 const Chemistry = (): ReactElement => {
-    const { currentLocale, screenWidth } = usePageData();
+    const { currentLocale, screenWidth, isContentLoaded } = usePageData();
     const sectionMeta = useLocaleContent(contentRU, contentKZ);
     const dispatch = useDispatch();
     const isElementModalOpened: boolean = useSelector((state: TRootState) => state.chemistry.isModalOpened);
     const [viewMode, setViewMode] = useState<'default' | '3d'>('default');
+
+    const imgUrls = collectFromPathsJson(paths);
+    usePreloadImages(imgUrls);
 
     const sectionMetaTranslation: ITextContent = sectionMeta.section;
     
@@ -73,7 +80,9 @@ const Chemistry = (): ReactElement => {
 
     return (
         <DefaultLayout langSwitchColor={'#249FF5'}>
-            <CustomContentSection {...sectionMetaTranslation}>
+            <div className="chemistry-page">
+                {!isContentLoaded && (<Spinner />)}
+                <CustomContentSection {...sectionMetaTranslation}>
                 <FlexibleModal
                     isModalOpened={isElementModalOpened}
                     closeAction={closeModal}
@@ -104,7 +113,8 @@ const Chemistry = (): ReactElement => {
                         />
                     )}
                 </div>
-            </CustomContentSection>
+                </CustomContentSection>
+            </div>
         </DefaultLayout>
     );
 };

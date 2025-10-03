@@ -3,7 +3,7 @@ import type {MathSectionProps} from "@modules/math/types";
 import BrainCard from "@modules/math/components/BrainCard";
 import {usePageData} from "@hooks/usePageData";
 import {useLocaleContent} from "@hooks/useLocale";
-import paths from "@modules/math/locales/paths.json";
+import * as paths from "@modules/math/locales/paths.json";
 import * as textContentKz from "@modules/math/locales/kaz.json";
 import * as textContentRu from "@modules/math/locales/rus.json";
 import "./style.css";
