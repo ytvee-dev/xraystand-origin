@@ -1,4 +1,4 @@
-# Деплой на Cloudflare Pages
+# Деплой на Cloudflare Pages для xraystand.com
 
 ## Быстрый старт
 
@@ -7,7 +7,7 @@
    - Framework: Vite
    - Build command: `npm run build`
    - Output directory: `dist`
-3. Добавьте кастомный домен в настройках
+3. Добавьте кастомный домен `xraystand.com` в настройках
 4. Деплой автоматически запустится при push в main
 
 ## Файлы конфигурации
