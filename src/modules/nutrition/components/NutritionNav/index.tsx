@@ -1,30 +1,9 @@
 import React from "react";
-import type { TRootState } from "../../../../store";
-import type { Languages } from "../../../../domains/Translate";
-import { useSelector } from "react-redux";
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import LanguageSwitcher from "../../../../components/common/Other/LanguageSwitcher";
+import type { NavigationConfig, IdMapping } from "@components/common/Navigation/types";
+import SectionNavigation from "@components/common/Navigation/SectionNavigation";
 import "./style.css";
 
-const langSwitchColor = "#56AB2F";
-
-type NavKey =
-    | "cover"
-    | "first"
-    | "second"
-    | "third"
-    | "fourth"
-    | "fifth";
-
-const navOptions: Record<Languages, { key: NavKey; label: string }[]> = {
+const navOptions: NavigationConfig = {
     ru: [
         { key: "cover",  label: "Основа жизни" },
         { key: "first",  label: "Питательные вещества" },
@@ -43,7 +22,7 @@ const navOptions: Record<Languages, { key: NavKey; label: string }[]> = {
     ],
 };
 
-const ID_BY_KEY: Record<NavKey, string> = {
+const ID_BY_KEY: IdMapping = {
     cover:  "nutrition-cover",
     first:  "nutrition-first",
     second: "nutrition-second",
@@ -57,49 +36,13 @@ interface Props {
 }
 
 const NutritionNav: React.FC<Props> = ({ onNavigate }) => {
-    const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
-    const [sideBarOpened, setSideBarOpened] = React.useState(false);
-    const languageText = currentLocale === 'ru' ? 'Выбор языка' : 'Тiлдi таңдау';
-    const options = navOptions[currentLocale];
-
-    const toggleDrawer = () => setSideBarOpened(v => !v);
-
-    const handleClick = (key: NavKey) => {
-        setSideBarOpened(false);
-        const id = ID_BY_KEY[key];
-        window.setTimeout(() => onNavigate?.(id), 300);
-    };
-
-    const Options = () => (
-        <Box sx={{ width: 270 }} role="presentation">
-            <List>
-                {options.map(({ key, label }) => (
-                    <ListItem key={key} disablePadding>
-                        <ListItemButton onClick={() => handleClick(key)}>
-                            <ListItemText primary={label} />
-                        </ListItemButton>
-                    </ListItem>
-                ))}
-            </List>
-            <Divider />
-            <ListItem>
-                <ListItemText secondary={languageText} sx={{ pointerEvents: 'none' }} />
-                <div onClick={toggleDrawer} onKeyDown={toggleDrawer}>
-                    <LanguageSwitcher color={langSwitchColor} />
-                </div>
-            </ListItem>
-        </Box>
-    );
-
     return (
-        <div className="nutrition-nav">
-            <Button onClick={toggleDrawer} aria-label="open navigation">
-                <MenuIcon sx={{ color: langSwitchColor }} />
-            </Button>
-            <Drawer anchor="right" open={sideBarOpened} onClose={toggleDrawer}>
-                <Options />
-            </Drawer>
-        </div>
+        <SectionNavigation
+            onNavigate={onNavigate}
+            navigationOptions={navOptions}
+            idMapping={ID_BY_KEY}
+            className="nutrition-nav"
+        />
     );
 };
 

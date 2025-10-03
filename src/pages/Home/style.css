@@ -1,10 +1,45 @@
 .home-page {
     min-width: 100%;
     min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: #ECEEE1;
     overflow: hidden;
     position: relative;
+}
+
+.home-section {
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content {
+    max-width: 800px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-content h2 {
+    color: #56AB2F;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.section-content p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.section-content ul {
+    text-align: left;
+    color: #333;
+}
+
+.section-content li {
+    margin-bottom: 0.5rem;
 }
