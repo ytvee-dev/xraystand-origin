@@ -1,0 +1,31 @@
+{
+  "backgrounds": {
+    "aboutSection": "images/nutrition/backgrounds/bg1.png",
+    "featuresSection": "images/nutrition/backgrounds/bg2.png",
+    "examplesSection": "images/nutrition/backgrounds/bg3.png",
+    "developmentSection": "images/nutrition/backgrounds/bg4.png",
+    "contactSection": "images/nutrition/backgrounds/bg1.png"
+  },
+  "cards": [
+    "images/nutrition/cards/card1.png",
+    "images/nutrition/cards/card2.png",
+    "images/nutrition/cards/card3.png"
+  ],
+  "featureCards": [
+    "images/nutrition/cards/card1.png",
+    "images/nutrition/cards/card2.png",
+    "images/nutrition/cards/card3.png",
+    "images/nutrition/cards/card4.png"
+  ],
+  "exampleCards": [
+    "images/nutrition/cards/card2.png",
+    "images/nutrition/cards/card3.png",
+    "images/nutrition/cards/card4.png",
+    "images/nutrition/cards/card5.png"
+  ],
+  "contactCards": [
+    "images/nutrition/cards/card3.png",
+    "images/nutrition/cards/card4.png",
+    "images/nutrition/cards/card5.png"
+  ]
+}
