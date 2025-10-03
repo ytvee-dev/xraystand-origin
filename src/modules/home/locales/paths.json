@@ -1,0 +1,44 @@
+{
+  "svg": {
+    "smallNet": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000206/thrid-section-right_ymdihd.svg",
+    "spiral": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000205/spiral_o9f2ps.svg",
+    "smallSpiral": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000204/small-spiral-right_ieuxys.svg",
+    "right": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000204/right_sklkk4.svg",
+    "left": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000203/left_q5qzyv.svg",
+    "heroArrowImage": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000202/hero-sm-4_ubwsna.svg",
+    "heroBg": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000201/herobg_qcztzv.svg",
+    "heroSm1": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000200/hero-sm-1_qzvjor.svg",
+    "heroSm2": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000200/hero-sm-2_ghyhep.svg",
+    "heroSm3": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000200/hero-sm-3_vkemtf.svg",
+    "heroSm4": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000200/Group_y4ixr4.svg"
+  },
+  "cards": [
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002336/1_symmou.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002334/2_dvkdxe.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002334/3_lalro0.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002335/4_ceeexy.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002335/5_avjpph.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002335/6_yftwg4.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002336/7_ihm0r7.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002336/8_pvv5r4.png"
+  ],
+  "cubes": [
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002693/1_h0uixd.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002694/2_bdbt6i.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002695/3_x3jlci.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002695/4_gmz9mh.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002688/5_gwwg6c.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002688/6_yhfgl8.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002689/7_zc7thi.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002692/26_bhkbqi.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002691/25_mjugfj.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002690/24_thp3to.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002689/23_xokwx1.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002689/22_evug70.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757002689/21_cke5zl.png"
+  ],
+  "images": {
+    "hero": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000207/hero_hicgli.png",
+    "brain": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1757000207/brain_l2j9uc.png"
+  }
+}
