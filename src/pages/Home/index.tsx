@@ -17,6 +17,7 @@ import * as contentRu from "@modules/home/locales/rus.json";
 import * as contentKz from "@modules/home/locales/kaz.json";
 import * as paths from "@modules/home/locales/paths.json";
 import './style.css';
+import HomeLayout from "@layout/HomeLayout";
 
 const HomePage: React.FC = () => {
     const imgUrls = collectFromPathsJson(paths);
@@ -32,8 +33,7 @@ const HomePage: React.FC = () => {
     };
 
     return(
-        <BrightnessLayout
-            logo={<NutritionLogo/>}
+        <HomeLayout
             navigation={<HomeNav onNavigate={scrollTo}/>}
             stickyHeader={true}
         >
@@ -46,7 +46,7 @@ const HomePage: React.FC = () => {
             <ExamplesSection content={content} />
             <DevelopmentSection content={content} />
             <ContactSection content={content} />
-        </BrightnessLayout>
+        </HomeLayout>
     );
 };
 

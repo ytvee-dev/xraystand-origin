@@ -1,7 +1,6 @@
 /* TEAM */
 Developer: YTVEE-DEV (Evgeniy Tyan)
 Site: https://ytvee.com
-Twitter: https://twitter.com/ytvee
 GitHub: https://github.com/ytvee-dev
 
 /* SITE */
