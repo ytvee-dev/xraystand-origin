@@ -1,31 +1,26 @@
 {
   "backgrounds": {
-    "aboutSection": "images/nutrition/backgrounds/bg1.png",
-    "featuresSection": "images/nutrition/backgrounds/bg2.png",
-    "examplesSection": "images/nutrition/backgrounds/bg3.png",
-    "developmentSection": "images/nutrition/backgrounds/bg4.png",
-    "contactSection": "images/nutrition/backgrounds/bg1.png"
+    "cover": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577294/cover_rzqxat.png"
   },
   "cards": [
-    "images/nutrition/cards/card1.png",
-    "images/nutrition/cards/card2.png",
-    "images/nutrition/cards/card3.png"
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577294/bum_z8geju.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577294/circle_exia6i.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577293/zuza_khhovv.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577292/snake_dfv1y1.png"
   ],
-  "featureCards": [
-    "images/nutrition/cards/card1.png",
-    "images/nutrition/cards/card2.png",
-    "images/nutrition/cards/card3.png",
-    "images/nutrition/cards/card4.png"
+  "stands": [
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577295/tech_off_beb2zf.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577295/tech_on_yrrbta.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577295/kaz_off_iiwb94.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577294/kaz_on_orbstt.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577295/mux_off_psewdu.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577295/muz_on_yvnxk4.png"
   ],
-  "exampleCards": [
-    "images/nutrition/cards/card2.png",
-    "images/nutrition/cards/card3.png",
-    "images/nutrition/cards/card4.png",
-    "images/nutrition/cards/card5.png"
-  ],
-  "contactCards": [
-    "images/nutrition/cards/card3.png",
-    "images/nutrition/cards/card4.png",
-    "images/nutrition/cards/card5.png"
+  "rooms": [
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577294/math_ybq8et.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577293/tehnologia_l5or32.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577293/foye_nb0b5b.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577293/kitchen_xladv0.png",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1759577293/kaz_wqmmgj.png"
   ]
 }

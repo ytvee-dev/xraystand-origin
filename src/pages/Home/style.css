@@ -4,6 +4,14 @@
     background: #ECEEE1;
     overflow: hidden;
     position: relative;
+
+    * {
+        &::selection {
+            background: rgba(0, 0, 0, 1);
+            color: #fff;
+        }
+    }
+
 }
 
 .home-section {

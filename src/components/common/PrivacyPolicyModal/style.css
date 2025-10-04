@@ -1,0 +1,117 @@
+.privacy-policy-modal {
+    .privacy-policy-modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 800px;
+        max-height: 90vh;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .privacy-policy-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 32px 16px;
+        border-bottom: 1px solid #e0e0e0;
+        background-color: #f8f9fa;
+
+        .privacy-policy-modal-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .privacy-policy-modal-close {
+            color: #666;
+            padding: 8px;
+            
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+                color: #333;
+            }
+        }
+    }
+
+    .privacy-policy-modal-body {
+        padding: 24px 32px 32px;
+        overflow-y: auto;
+        flex: 1;
+
+        .privacy-policy-content {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 600;
+                color: #2c3e50;
+                margin: 24px 0 12px 0;
+                
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                margin: 0 0 16px 0;
+                color: #555;
+            }
+
+            ul {
+                margin: 12px 0 16px 0;
+                padding-left: 24px;
+
+                li {
+                    font-size: 14px;
+                    margin: 8px 0;
+                    color: #555;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .privacy-policy-modal {
+        .privacy-policy-modal-content {
+            width: 95%;
+            max-height: 95vh;
+        }
+
+        .privacy-policy-modal-header {
+            padding: 16px 20px 12px;
+
+            .privacy-policy-modal-title {
+                font-size: 20px;
+            }
+        }
+
+        .privacy-policy-modal-body {
+            padding: 16px 20px 24px;
+
+            .privacy-policy-content {
+                h3 {
+                    font-size: 16px;
+                    margin: 20px 0 10px 0;
+                }
+
+                p, ul li {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
