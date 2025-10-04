@@ -1,13 +1,12 @@
 import React, {type ReactElement} from "react";
 import {useLocaleContent} from "@hooks/useLocale.ts";
-import * as contentRu from "@modules/home/locales/rus.json";
-import * as contentKz from "@modules/home/locales/kaz.json";
 import "./style.css";
 import SpriteIcon from "@components/common/Other/SpriteIcon";
+import {homeFooterMeta} from './content.ts';
 
 
-const Footer: React.FC = (): ReactElement => {
-    const content = useLocaleContent(contentRu, contentKz);
+const HomeFooter: React.FC = (): ReactElement => {
+    const content = useLocaleContent(homeFooterMeta.ru, homeFooterMeta.kz);
 
     return (
         <footer className="home-footer">
@@ -17,11 +16,11 @@ const Footer: React.FC = (): ReactElement => {
                 </div>
                 <div className="footer-content-container">
                     <div className="footer-information-container">
-                        <p>+7 706 624 6818</p>
-                        <p>info@edurecycle.com</p>
+                        <p>{content.contacts.phone}</p>
+                        <p>{content.contacts.email}</p>
                     </div>
                     <a className="footer-buttons-container">
-                        Политика конфиденциальности
+                        {content.policy}
                     </a>
                 </div>
                 <div className="as-logo-container">
@@ -32,11 +31,11 @@ const Footer: React.FC = (): ReactElement => {
             <div className="divider"></div>
 
             <div className="bottom-container">
-                <p>© 2025 TOO <span>“Educational Recycle Systems”</span>. Все права защищены. </p>
-                {/*<p>Made by YTVEE</p>*/}
+                <p>{content.year} {content.company} <span>{content.companyLabel}</span>. {content.copyright}. </p>
+                <p>{content.madeBy.label} {content.madeBy.author}</p>
             </div>
         </footer>
     );
 };
 
-export default Footer;
+export default HomeFooter;
