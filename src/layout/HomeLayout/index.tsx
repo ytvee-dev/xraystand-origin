@@ -3,10 +3,10 @@ import type {TRootState} from "../../store";
 import type {Languages} from "../../domains/Translate";
 import {trafficLawsFooterMeta} from "../../components/common/Footers/StrictFooter/content.ts";
 import {useSelector} from "react-redux";
-import StrictFooter from "../../components/common/Footers/StrictFooter";
 import CenteredHeader from "../../components/common/CenteredHeader";
 import "./style.css";
 import HomeFooter from "@components/common/Footers/HomeFooter";
+import PrivacyPolicyModal from "@components/common/PrivacyPolicyModal";
 
 export interface IDefaultLayoutProps {
     disabled?: boolean;
@@ -77,6 +77,8 @@ const HomeLayout: React.FC<IDefaultLayoutProps> = ({
                 }
                 sx={sx}
             />
+            
+            <PrivacyPolicyModal />
         </div>
     );
 };

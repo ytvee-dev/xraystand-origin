@@ -1,5 +1,4 @@
 .home-footer {
-    border: 1px solid;
     padding:  calc(100% * 48 / 1440)  calc(100% * 80 / 1440);
     width: 100%;
     display: flex;
@@ -7,6 +6,13 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
+
+    * {
+        &::selection {
+            background: rgba(0, 0, 0, 1);
+            color: #fff;
+        }
+    }
 
     p {
         margin: 0;
@@ -28,6 +34,13 @@
             align-items: center;
         }
 
+        .as-logo-container  {
+            svg {
+                width: 140px;
+                height: 38px;
+            }
+        }
+
         .footer-content-container {
             display: flex;
             flex-direction: column;
@@ -37,6 +50,7 @@
             .footer-information-container {
                 display: flex;
                 gap: 12px;
+                user-select: text;
             }
 
             a {
@@ -53,9 +67,100 @@
     }
 
     .bottom-container {
+        position: relative;
+        width: 100%;
+        
         p {
             span {
                 font-weight: bold;
+            }
+        }
+        
+        .made-by-link {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 11px;
+            color: #888;
+            text-decoration: none;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 0.5px;
+            
+            &:hover {
+                opacity: 1;
+                color: #333;
+                transform: translateY(-2px);
+            }
+            
+            .made-by-author {
+                font-weight: 600;
+                color: #666;
+                transition: color 0.3s ease;
+            }
+            
+            &:hover .made-by-author {
+                color: #000;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px 16px;
+        
+        .top-container {
+            flex-direction: column;
+            gap: 16px;
+            
+            .main-logo-container,
+            .as-logo-container {
+                order: -1;
+            }
+            
+            .as-logo-container {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    height: 38px;
+                }
+            }
+
+            .footer-content-container {
+                order: 1;
+                align-items: center;
+                
+                .footer-information-container {
+                    flex-direction: column;
+                    gap: 8px;
+                    text-align: center;
+                }
+            }
+        }
+        
+        .bottom-container {
+            text-align: center;
+            
+            p {
+                font-size: 12px;
+                line-height: 1.4;
+            }
+            
+            .made-by-link {
+                position: static;
+                display: inline-block;
+                margin-top: 8px;
+                font-size: 10px;
+                opacity: 0.6;
+                
+                &:hover {
+                    transform: none;
+                }
+                
+                &:active {
+                    transform: scale(0.98);
+                }
             }
         }
     }
