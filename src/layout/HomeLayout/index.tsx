@@ -69,14 +69,7 @@ const HomeLayout: React.FC<IDefaultLayoutProps> = ({
 
             <main>{children}</main>
 
-            <HomeFooter
-                meta={
-                    language === 'ru' ?
-                        trafficLawsFooterMeta.ru :
-                        trafficLawsFooterMeta.kz
-                }
-                sx={sx}
-            />
+            <HomeFooter />
             
             <PrivacyPolicyModal />
         </div>
