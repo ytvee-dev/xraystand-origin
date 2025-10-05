@@ -5,15 +5,12 @@ import { useSelector, useDispatch } from "react-redux";
 import { setIsModalOpened } from "@store/slices/Application";
 import type { TRootState } from "@store/index";
 import { useLocaleContent } from "@hooks/useLocale";
-import { homeFooterMeta } from "@components/common/Footers/HomeFooter/content";
 import { trafficLawsFooterMeta } from "@components/common/Footers/StrictFooter/content";
 import "./style.css";
 
 const PrivacyPolicyModal: React.FC = (): ReactElement => {
     const dispatch = useDispatch();
     const isModalOpened = useSelector((state: TRootState) => state.application.isModalOpened);
-    
-    // Use StrictFooter content for all pages (it has privacy policy content)
     const content = useLocaleContent(trafficLawsFooterMeta.ru, trafficLawsFooterMeta.kz);
 
     const handleClose = () => {
@@ -47,7 +44,7 @@ const PrivacyPolicyModal: React.FC = (): ReactElement => {
                 </Box>
                 
                 <Box className="privacy-policy-modal-body">
-                    <div 
+                    <div
                         className="privacy-policy-content"
                         dangerouslySetInnerHTML={{ __html: content.content.privacyPolicyText.content }}
                     />

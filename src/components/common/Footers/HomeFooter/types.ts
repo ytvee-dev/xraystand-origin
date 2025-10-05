@@ -3,29 +3,26 @@ export interface IContacts {
     phone: string
 };
 
-export interface IDefaultDarkFooterContentInfo {
-    description: string;
-    buttonsText: {
-        support: string,
-        privacy: string,
-    },
-    madeBy: {
-        link: string,
-        imagePath: {
-            light: string,
-            dark: string,
-        },
-    },
-};
-
-export interface IStrictFooterContent {
+export interface IHomeFooterContent {
     logoPath: string,
     contacts: IContacts,
+    policy: string,
+    year: string,
+    company: string,
+    companyLabel: string,
     copyright: string,
-    content: IDefaultDarkFooterContentInfo,
+    madeBy: {
+        link: string,
+        label: string,
+        author: string,
+    },
+    privacyPolicyText: {
+        title: string,
+        content: string,
+    },
 };
 
-export interface IDefaultDarkFooterMeta {
-    ru: IStrictFooterContent,
-    kz: IStrictFooterContent,
+export interface IHomeFooterMeta {
+    ru: IHomeFooterContent,
+    kz: IHomeFooterContent,
 };
