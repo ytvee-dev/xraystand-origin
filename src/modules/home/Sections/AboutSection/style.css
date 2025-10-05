@@ -1,2 +1,90 @@
 .about-section {
+    position: relative;
+    flex-direction: column;
+    gap: 36px;
+    background: #ECEEE1;
+
+    .about-stands {
+        margin-top: 160px;
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+
+        .about-stands-img-wrapper {
+            padding-top: calc(100% * 60 / 1440);
+            position: relative;
+            max-width: calc(100% * 600 / 1440);
+            max-height: calc(100% * 800 / 1440);
+            display: flex;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            img:nth-child(1) {
+                width: 100%;
+                height: 100%;
+            }
+
+            img:nth-child(2) {
+                position: absolute;
+                left: 30px;
+                top: -10px;
+            }
+
+            img:nth-child(3) {
+                position: absolute;
+                left: 60px;
+                top: -20px;
+            }
+        }
+    }
+}
+
+.lamp {
+    position: absolute;
+    background-color: #ffffff00;
+
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(49% 1.5%, 49% 0, 51% 0, 51% 1.5%, 150% 100%, -50% 100%);
+    z-index: 10;
+
+    .lamp-body {
+        position: absolute;
+        left: 50%;
+        height: 10%;
+        width: 20%;
+        transform: translate(-50%, 0%);
+        background: linear-gradient(45deg, #ff8800, #f5d8b7);
+        filter: brightness(80%);
+        z-index: -8;
+
+        &::before {
+            content: "";
+            background-color: rgb(255, 83, 16);
+            position: absolute;
+            top: 0;
+            height: 15%;
+            width: 100%;
+            z-index: 1;
+        }
+    }
+    .lamp-bulb {
+        position: absolute;
+        top: 11%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 230, 0, 0.3);
+        width: 5%;
+        height: 5%;
+        z-index: -9;
+        border-radius: 50%;
+    }
+    transition: all 500ms ease;
 }

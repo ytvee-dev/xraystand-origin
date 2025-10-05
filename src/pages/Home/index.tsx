@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
 
             {/* // todo: контент должен не весь прокидывать, а только для текущей секции */}
             <CoverSection content={content} />
-            <AboutSection content={content} />
+            <AboutSection content={content.aboutSection} />
             <FeaturesSection content={content} />
             <ExamplesSection content={content} />
             <DevelopmentSection content={content} />
