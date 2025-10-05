@@ -29,4 +29,9 @@
 
     --light-alert-background-color: #EFE4D3;
     --light-alert-text-color: #000000;
+    
+    /* Cross-browser compatibility fixes */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
