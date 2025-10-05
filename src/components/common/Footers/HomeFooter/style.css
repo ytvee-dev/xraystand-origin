@@ -30,15 +30,94 @@
 
         .main-logo-container,
         .as-logo-container {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
             justify-content: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
             align-items: center;
         }
 
+        .main-logo-container {
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                -o-transform: scale(1.05);
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+            
+            &:active {
+                -webkit-transform: scale(0.98);
+                -moz-transform: scale(0.98);
+                -ms-transform: scale(0.98);
+                -o-transform: scale(0.98);
+                transform: scale(0.98);
+            }
+        }
+
         .as-logo-container  {
+            .as-logo-link {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-justify-content: center;
+                -moz-justify-content: center;
+                -ms-justify-content: center;
+                justify-content: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+                -ms-align-items: center;
+                align-items: center;
+                text-decoration: none;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                
+                &:hover {
+                    -webkit-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    -ms-transform: scale(1.05);
+                    -o-transform: scale(1.05);
+                    transform: scale(1.05);
+                    opacity: 0.8;
+                }
+                
+                &:active {
+                    -webkit-transform: scale(0.98);
+                    -moz-transform: scale(0.98);
+                    -ms-transform: scale(0.98);
+                    -o-transform: scale(0.98);
+                    transform: scale(0.98);
+                }
+            }
+            
             svg {
                 width: 140px;
                 height: 38px;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
             }
         }
 
