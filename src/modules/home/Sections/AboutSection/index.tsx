@@ -13,9 +13,15 @@ interface AboutSectionProps {
 const AboutSection: React.FC<AboutSectionProps> = ({content}): ReactElement => {
     return (
         <section id="home-about" className="home-section about-section">
-            <div className="lamp">
-                <div className="lamp-body"></div>
-                <div className="lamp-bulb"></div>
+            {/* Lamp with switch */}
+            <div className="lamp-container">
+                <input name="switch" id="switch" type="checkbox" />
+                <label className="switch" htmlFor="switch"></label>
+                <div className="lamp">
+                    <div className="lamp-body"></div>
+                    <div className="lamp-bulb"></div>
+                    <div className="lamp-light"></div>
+                </div>
             </div>
 
             <div className='about-stands'>
