@@ -55,3 +55,4 @@ const PrivacyPolicyModal: React.FC = (): ReactElement => {
 };
 
 export default PrivacyPolicyModal;
+

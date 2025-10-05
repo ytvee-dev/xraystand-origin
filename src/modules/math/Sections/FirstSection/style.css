@@ -9,33 +9,61 @@
         right: 0;
         width: 100%;
 
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-align-items: normal;
+        -moz-align-items: normal;
+        -ms-align-items: normal;
         align-items: normal;
 
         img {
             max-width: 100%;
+            -webkit-animation: fading 9s linear infinite;
+            -moz-animation: fading 9s linear infinite;
+            -ms-animation: fading 9s linear infinite;
+            -o-animation: fading 9s linear infinite;
             animation: fading 9s linear infinite;
 
             &:last-of-type {
+                -webkit-align-self: flex-end;
+                -moz-align-self: flex-end;
+                -ms-align-self: flex-end;
                 align-self: flex-end;
             }
         }
     }
 
     .math-first-section-content-wrapper {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 36px;
 
         h2 {
             text-align: center;
-            font-family: Roboto, sans-serif;
+            font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
             font-size: 45px;
             font-weight: 500;
             color: #FFFFFF;
             padding: 24px 0;
             text-shadow: 0 4px 8px rgba(39, 105, 165, 0.3);
+            -webkit-animation: fadeInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
+            -moz-animation: fadeInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
+            -ms-animation: fadeInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
+            -o-animation: fadeInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
             animation: fadeInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
@@ -43,10 +71,18 @@
     @keyframes fadeInDown {
         from {
             opacity: 0;
+            -webkit-transform: translateY(-30px);
+            -moz-transform: translateY(-30px);
+            -ms-transform: translateY(-30px);
+            -o-transform: translateY(-30px);
             transform: translateY(-30px);
         }
         to {
             opacity: 1;
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
             transform: translateY(0);
         }
     }
