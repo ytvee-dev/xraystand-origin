@@ -27,14 +27,14 @@
 }
 
 .kza-cover-text-content h1 {
-    font-family: var(--text-font);
+    font-family: var(--text-font), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     font-weight: 700;
     font-size: 48px;
     color: var(--light-section-title-color);
 }
 
 .kza-cover-text-content h2 {
-    font-family: var(--text-font);
+    font-family: var(--text-font), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     font-weight: 200;
     font-size: 48px;
     color: var(--light-section-title-color);
