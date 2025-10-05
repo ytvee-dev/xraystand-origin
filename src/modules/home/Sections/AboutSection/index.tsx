@@ -28,6 +28,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({content}): ReactElement => {
                     <div className='toggle-button'></div>
                     <div className='toggle-text-on'>ON</div>
                 </div>
+
                 <div id="lamp">
                     <div className="lamp">
                         <div className="gonna-give-light"></div>
