@@ -34,18 +34,24 @@ interface SectionNavigationProps {
     navigationOptions: NavigationConfig;
     idMapping: IdMapping;
     className?: string;
+    color?: string | null;
+    page?: string;
 }
 
 const SectionNavigation: React.FC<SectionNavigationProps> = ({ 
     onNavigate, 
     navigationOptions, 
     idMapping,
-    className = "section-navigation"
+    className = "section-navigation",
+    color,
+    page,
 }) => {
     const currentLocale: Languages = useSelector((state: TRootState) => state.locale.locale);
     const [sideBarOpened, setSideBarOpened] = React.useState(false);
     const languageText = currentLocale === 'ru' ? 'Выбор языка' : 'Тiлдi таңдау';
     const options = navigationOptions[currentLocale] || [];
+    const styleColor = color ?? langSwitchColor;
+    const isHomepage = page === 'home';
 
     const toggleDrawer = () => setSideBarOpened(v => !v);
 
@@ -72,7 +78,7 @@ const SectionNavigation: React.FC<SectionNavigationProps> = ({
             <ListItem>
                 <ListItemText secondary={languageText} sx={{ pointerEvents: 'none' }} />
                 <div onClick={toggleDrawer} onKeyDown={toggleDrawer}>
-                    <LanguageSwitcher color={langSwitchColor} />
+                    <LanguageSwitcher color={styleColor} />
                 </div>
             </ListItem>
         </Box>
@@ -81,9 +87,9 @@ const SectionNavigation: React.FC<SectionNavigationProps> = ({
     return (
         <div className={className}>
             <Button onClick={toggleDrawer} aria-label="open navigation">
-                <MenuIcon sx={{ color: langSwitchColor }} />
+                <MenuIcon sx={{ color: styleColor }} />
             </Button>
-            <Drawer anchor="right" open={sideBarOpened} onClose={toggleDrawer}>
+            <Drawer className={isHomepage ? 'drawer-home' : 'drawer-default'} anchor="right" open={sideBarOpened} onClose={toggleDrawer}>
                 <Options />
             </Drawer>
         </div>

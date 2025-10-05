@@ -14,8 +14,18 @@ import Spinner from "@components/common/Spinner";
 import * as contentRu from "@modules/home/locales/rus.json";
 import * as contentKz from "@modules/home/locales/kaz.json";
 import * as paths from "@modules/home/locales/paths.json";
-import './style.css';
 import HomeLayout from "@layout/HomeLayout";
+import './style.css';
+import {svgSpriteSrcPrefix} from "@utils/constants";
+
+const MainLogo = () => {
+    const { isMobile } = usePageData();
+    return (
+        <svg aria-hidden="true" focusable="false" width={isMobile ? 65 : 100} height={50}>
+            <use href={`${svgSpriteSrcPrefix}${'logo'}`} />
+        </svg>
+    );
+};
 
 const HomePage: React.FC = () => {
     const imgUrls = collectFromPathsJson(paths);
@@ -32,8 +42,10 @@ const HomePage: React.FC = () => {
 
     return(
         <HomeLayout
-            navigation={<HomeNav onNavigate={scrollTo}/>}
+            navigation={<HomeNav onNavigate={scrollTo} color='black' page={'home'}/>}
+            logo={<MainLogo />}
             stickyHeader={true}
+            headerBackgroundColor={'#ECEEE1'}
         >
             {!isContentLoaded && (<Spinner />)}
 
