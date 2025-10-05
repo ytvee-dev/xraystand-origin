@@ -6,12 +6,15 @@ import { setIsModalOpened } from "@store/slices/Application";
 import type { TRootState } from "@store/index";
 import { useLocaleContent } from "@hooks/useLocale";
 import { homeFooterMeta } from "@components/common/Footers/HomeFooter/content";
+import { trafficLawsFooterMeta } from "@components/common/Footers/StrictFooter/content";
 import "./style.css";
 
 const PrivacyPolicyModal: React.FC = (): ReactElement => {
     const dispatch = useDispatch();
     const isModalOpened = useSelector((state: TRootState) => state.application.isModalOpened);
-    const content = useLocaleContent(homeFooterMeta.ru, homeFooterMeta.kz);
+    
+    // Use StrictFooter content for all pages (it has privacy policy content)
+    const content = useLocaleContent(trafficLawsFooterMeta.ru, trafficLawsFooterMeta.kz);
 
     const handleClose = () => {
         dispatch(setIsModalOpened(false));
@@ -32,7 +35,7 @@ const PrivacyPolicyModal: React.FC = (): ReactElement => {
                         component="h2"
                         className="privacy-policy-modal-title"
                     >
-                        {content.privacyPolicyText.title}
+                        {content.content.privacyPolicyText.title}
                     </Typography>
                     <IconButton 
                         onClick={handleClose}
@@ -46,7 +49,7 @@ const PrivacyPolicyModal: React.FC = (): ReactElement => {
                 <Box className="privacy-policy-modal-body">
                     <div 
                         className="privacy-policy-content"
-                        dangerouslySetInnerHTML={{ __html: content.privacyPolicyText.content }}
+                        dangerouslySetInnerHTML={{ __html: content.content.privacyPolicyText.content }}
                     />
                 </Box>
             </Box>
