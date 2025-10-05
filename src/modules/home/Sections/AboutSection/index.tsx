@@ -1,4 +1,4 @@
-import React, {type ReactElement} from "react";
+import React, {type ReactElement, useEffect} from "react";
 import type {HomeSection} from "../../types";
 import * as images from "@modules/home/locales/paths.json";
 import "./style.css";
@@ -7,20 +7,31 @@ interface AboutSectionProps {
     content: HomeSection;
 }
 
-// https://uiverse.io/Musab-boaidani/funny-ladybug-18
-// https://uiverse.io/3bdel3ziz-T/proud-squid-15
-
 const AboutSection: React.FC<AboutSectionProps> = ({content}): ReactElement => {
+    useEffect(() => {
+        const toggle = document.getElementById('switch');
+        if (toggle) {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.classList.toggle('toggle-on');
+            });
+        }
+    }, []);
+
     return (
         <section id="home-about" className="home-section about-section">
-            {/* Lamp with switch */}
+            <div className="left-decoration"></div>
             <div className="lamp-container">
-                <input name="switch" id="switch" type="checkbox" />
-                <label className="switch" htmlFor="switch"></label>
-                <div className="lamp">
-                    <div className="lamp-body"></div>
-                    <div className="lamp-bulb"></div>
-                    <div className="lamp-light"></div>
+                <div className='toggle' id='switch'>
+                    <div className='toggle-text-off'>OFF</div>
+                    <div className='glow-comp'></div>
+                    <div className='toggle-button'></div>
+                    <div className='toggle-text-on'>ON</div>
+                </div>
+                <div id="lamp">
+                    <div className="lamp">
+                        <div className="gonna-give-light"></div>
+                    </div>
                 </div>
             </div>
 

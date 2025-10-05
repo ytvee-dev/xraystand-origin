@@ -4,6 +4,16 @@
     gap: 36px;
     background: #ECEEE1;
 
+    .left-decoration {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% * 300 / 1440);
+        height: calc(100% * 180 / 1440);
+        background: green;
+        z-index: 11;
+    }
+
     .about-stands {
         margin-top: 160px;
 
@@ -24,6 +34,7 @@
             img {
                 width: 100%;
                 height: 100%;
+                opacity: 0;
             }
 
             img:nth-child(1) {
@@ -46,7 +57,6 @@
     }
 }
 
-/* Lamp Container */
 .lamp-container {
     position: absolute;
     top: 0;
@@ -61,194 +71,191 @@
     padding-top: 2rem;
 }
 
-/* Hidden checkbox */
+/* New Toggle Switch */
 #switch {
-    visibility: hidden;
-    clip: rect(0 0 0 0);
     position: absolute;
-    left: 9999px;
-}
-
-/* Switch styling */
-.switch {
-    display: block;
-    width: 130px;
-    height: 60px;
-    margin: 0 auto 2rem;
-    position: relative;
-    background: #ced8da;
-    background: linear-gradient(
-        to right,
-        #ced8da 0%,
-        #d8e0e3 29%, 
-        #ccd4d7 34%,
-        #d4dcdf 62%,
-        #fff9f4 68%,
-        #e1e9ec 74%,
-        #b7bfc2 100%
-    );
-    transition: all 0.2s ease-out;
-    cursor: pointer;
-    border-radius: 0.35em;
-    box-shadow:
-        0 0 1px 2px rgba(0, 0, 0, 0.7),
-        inset 0 2px 0 rgba(255, 255, 255, 0.6),
-        inset 0 -1px 0 1px rgba(0, 0, 0, 0.3),
-        0 8px 10px rgba(0, 0, 0, 0.15);
-}
-
-.switch:before {
-    display: block;
-    position: absolute;
-    left: -35px;
-    right: -35px;
-    top: -25px;
-    bottom: -25px;
-    z-index: -2;
-    content: "";
-    border-radius: 0.4em;
-    background: #d5dde0;
-    background: linear-gradient(#d7dfe2, #bcc7cd);
-    box-shadow:
-        inset 0 2px 0 rgba(255, 255, 255, 0.6),
-        inset 0 -1px 1px 1px rgba(0, 0, 0, 0.3),
-        0 0 8px 2px rgba(0, 0, 0, 0.2),
-        0 2px 4px 2px rgba(0, 0, 0, 0.1);
-    pointer-events: none;
-    transition: all 0.2s ease-out;
-}
-
-.switch:after {
-    content: "";
-    position: absolute;
-    right: -25px;
     top: 50%;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #788b91;
-    margin-top: -8px;
-    z-index: -1;
-    box-shadow:
-        inset 0 -1px 8px rgba(0, 0, 0, 0.7),
-        inset 0 -2px 2px rgba(0, 0, 0, 0.2),
-        0 1px 0 white,
-        0 -1px 0 rgba(0, 0, 0, 0.5),
-        -47px 32px 15px 13px rgba(0, 0, 0, 0.25);
+    left: 50%;
+    width: 75px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    margin-bottom: 2rem;
 }
 
-/* Switch checked state */
-#switch:checked ~ .switch {
-    background: #b7bfc2;
-    background: linear-gradient(
-        to right,
-        #b7bfc2 0%,
-        #e1e9ec 26%,
-        #fff9f4 32%,
-        #d4dcdf 38%,
-        #ccd4d7 66%,
-        #d8e0e3 71%,
-        #ced8da 100%
-    );
-    box-shadow:
-        0 0 1px 2px rgba(0, 0, 0, 0.7),
-        inset 0 2px 0 rgba(255, 255, 255, 0.6),
-        inset 0 -1px 0 1px rgba(0, 0, 0, 0.3),
-        0 8px 10px rgba(0, 0, 0, 0.15),
-        0px 10px 10px black;
-}
-
-#switch:checked ~ .switch:after {
-    background: #b1ffff;
-    box-shadow:
-        inset 0 -1px 8px rgba(0, 0, 0, 0.7),
-        inset 0 -2px 2px rgba(0, 0, 0, 0.2),
-        0 1px 0 white,
-        0 -1px 0 rgba(0, 0, 0, 0.5),
-        -110px 32px 15px 13px rgba(0, 0, 0, 0.25);
-}
-
-/* Lamp styling */
-.lamp {
+.toggle {
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: transparent;
-    clip-path: polygon(49% 1.5%, 49% 0, 51% 0, 51% 1.5%, 150% 100%, -50% 100%);
-    z-index: -10;
-    transition: all 500ms ease;
+    border: 2px solid #444249;
+    border-radius: 20px;
+    transition: border-color 0.6s ease-out;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
-.lamp-body {
+.toggle.toggle-on {
+    border-color: rgba(137, 194, 217, 0.4);
+    transition: all 0.5s 0.15s ease-out;
+}
+
+.toggle-button {
     position: absolute;
-    left: 50%;
-    height: 10%;
-    width: 20%;
-    transform: translate(-50%, 0%);
-    background: linear-gradient(45deg, #ff8800, #f5d8b7);
-    filter: brightness(80%);
-    z-index: -8;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 4px;
+    width: 28px;
+    bottom: 4px;
+    right: 39px;
+    background-color: #444249;
+    border-radius: 19px;
+    cursor: pointer;
+    transition: all 0.3s 0.1s, width 0.1s, top 0.1s, bottom 0.1s;
 }
 
-.lamp-body::before {
-    content: "";
-    background-color: rgb(255, 83, 16);
+.toggle-on .toggle-button {
+    top: 3px;
+    width: 65px;
+    bottom: 3px;
+    right: 3px;
+    border-radius: 23px;
+    background-color: #89c2da;
+    box-shadow: 0 0 16px #4b7a8d;
+    transition: all 0.2s 0.1s, right 0.1s;
+}
+
+.toggle-text-on {
     position: absolute;
     top: 0;
-    height: 15%;
-    width: 100%;
-    z-index: 1;
-    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 36px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+    user-select: none;
+    color: rgba(0,0,0,0);
 }
 
-.lamp-bulb {
-    position: absolute;
-    top: 11%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 230, 0, 0.3);
-    width: 5%;
-    height: 5%;
-    z-index: -9;
-    border-radius: 50%;
-    transition: all 500ms ease;
-    box-shadow: 0 0 20px rgba(255, 230, 0, 0.2);
+.toggle-on .toggle-text-on {
+    color: #3b6a7d;
+    transition: color 0.3s 0.15s;
 }
 
-.lamp-light {
+.toggle-text-off {
     position: absolute;
-    top: 11%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 15%;
-    height: 15%;
-    background: radial-gradient(circle, rgba(255, 230, 0, 0.1) 0%, transparent 70%);
-    border-radius: 50%;
-    z-index: -11;
+    top: 0;
+    bottom: 0;
+    right: 6px;
+    line-height: 36px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+    color: #444249;
+}
+
+.toggle-on .toggle-text-off {
+    color: rgba(0,0,0,0);
+}
+
+.glow-comp {
+    position: absolute;
     opacity: 0;
-    transition: all 500ms ease;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 6px;
+    background-color: rgba(75, 122, 141, 0.1);
+    box-shadow: 0 0 12px rgba(75, 122, 141, 0.2);
+    transition: opacity 4.5s 1s;
+}
+
+.toggle-on .glow-comp {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+/* New Lamp Styles */
+#lamp {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.lamp {
+    position: absolute;
+    top: 0;
+    width: 0.7rem;
+    height: 10rem;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background-repeat: no-repeat;
+    background-size: 0.15rem 8rem, 0.4rem 0.8rem, 0.7rem 2rem;
+    background-position: 50% 0, 0.19rem 8rem, 0 8.8rem;
+    /* Позиционируем лампу под left-decoration */
+    /*top: calc(100% * 180 / 1440); !* Высота left-decoration *!*/
+    left: calc(100% * 150 / 1440); /* Центр left-decoration по ширине */
+    transform: translate(-50%, 0);
+}
+
+.lamp:before, 
+.lamp:after {
+    content: '';
+    position: absolute;
+}
+
+.lamp:before {
+    left: -1.65rem;
+    bottom: -4rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 5px -2px 43px rgba(255, 246, 143, 0.5);
+    transition: all 0.15s;
+    background: rgba(255, 246, 143, 0.5);
+}
+
+.gonna-give-light, 
+.gonna-give-light:before {
+    position: absolute;
+    background: rgba(255, 246, 143, 0.15);
+}
+
+.gonna-give-light {
+    top: 10.05rem;
+    left: 0.25rem;
+    width: 0;
+    height: 1.5rem;
+    border-right: 0.2rem solid rgba(255,255,255,0.05);
+}
+
+.gonna-give-light:before {
+    content: '';
+    top: 1.5rem;
+    left: -0.35rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    border: 0.2rem solid rgba(255,255,255,0.05);
+    box-shadow: 0px 0px 50px rgba(255,255,255,0);
 }
 
 /* Lamp when switched on */
-#switch:checked ~ .lamp {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-#switch:checked ~ .lamp .lamp-body {
-    filter: brightness(100%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 200, 0, 0.3);
-}
-
-#switch:checked ~ .lamp .lamp-bulb {
-    background-color: rgba(255, 230, 0, 0.8);
-    box-shadow: 0 0 30px rgba(255, 230, 0, 0.6), 0 0 60px rgba(255, 200, 0, 0.4);
-}
-
-#switch:checked ~ .lamp .lamp-light {
-    opacity: 1;
-    background: radial-gradient(circle, rgba(255, 230, 0, 0.3) 0%, rgba(255, 200, 0, 0.1) 50%, transparent 70%);
+.toggle-on ~ #lamp .lamp:before {
+    background: rgba(255,255,255,1);
+    box-shadow: 
+        0px 2px 10px rgba(255,255,255,0.8),
+        0px 5px 50px rgba(255,255,255,0.8),
+        0px 8px 80px rgba(255,255,255,0.6),
+        0px 8px 120px rgba(255,255,255,0.6);
 }
 
 /* Responsive design for mobile devices */
@@ -257,39 +264,25 @@
         padding-top: 1rem;
     }
     
-    .switch {
-        width: 100px;
-        height: 50px;
-        margin-bottom: 1.5rem;
+    #switch {
+        width: 60px;
+        height: 32px;
     }
     
-    .switch:before {
-        left: -25px;
-        right: -25px;
-        top: -20px;
-        bottom: -20px;
+    .lamp {
+        width: 0.5rem;
+        height: 8rem;
+        background-size: 0.1rem 6rem, 0.3rem 0.6rem, 0.5rem 1.5rem;
+        background-position: 50% 0, 0.15rem 6rem, 0 6.6rem;
+        top: calc(100% * 120 / 1440); /* Адаптивная высота для планшетов */
+        left: calc(100% * 100 / 1440); /* Адаптивная позиция для планшетов */
     }
     
-    .switch:after {
-        right: -20px;
-        width: 14px;
-        height: 14px;
-        margin-top: -7px;
-    }
-    
-    .lamp-body {
-        height: 8%;
-        width: 25%;
-    }
-    
-    .lamp-bulb {
-        width: 6%;
-        height: 6%;
-    }
-    
-    .lamp-light {
-        width: 18%;
-        height: 18%;
+    .lamp:before {
+        left: -1.2rem;
+        bottom: -3rem;
+        width: 3rem;
+        height: 3rem;
     }
 }
 
@@ -298,38 +291,24 @@
         padding-top: 0.5rem;
     }
     
-    .switch {
-        width: 80px;
-        height: 40px;
-        margin-bottom: 1rem;
+    #switch {
+        width: 50px;
+        height: 28px;
     }
     
-    .switch:before {
-        left: -20px;
-        right: -20px;
-        top: -15px;
-        bottom: -15px;
+    .lamp {
+        width: 0.4rem;
+        height: 6rem;
+        background-size: 0.08rem 4rem, 0.25rem 0.5rem, 0.4rem 1rem;
+        background-position: 50% 0, 0.12rem 4rem, 0 4.5rem;
+        top: calc(100% * 80 / 1440); /* Адаптивная высота для мобильных */
+        left: calc(100% * 80 / 1440); /* Адаптивная позиция для мобильных */
     }
     
-    .switch:after {
-        right: -15px;
-        width: 12px;
-        height: 12px;
-        margin-top: -6px;
-    }
-    
-    .lamp-body {
-        height: 6%;
-        width: 30%;
-    }
-    
-    .lamp-bulb {
-        width: 7%;
-        height: 7%;
-    }
-    
-    .lamp-light {
-        width: 20%;
-        height: 20%;
+    .lamp:before {
+        left: -1rem;
+        bottom: -2.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
