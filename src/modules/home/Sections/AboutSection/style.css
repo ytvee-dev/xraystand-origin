@@ -1,267 +1,165 @@
+/* ===== БАЗА ===== */
 .about-section {
     position: relative;
-    flex-direction: column;
-    gap: 36px;
-    background: #ECEEE1;
-
-    .left-decoration {
-        position: absolute;
-        top: 0;
-        left: 0;
-        max-width: calc(100% * 300 / 1440);
-        max-height: calc(100% * 180 / 1440);
-        z-index: 11;
-
-            img {
-                width: 100%;
-                object-fit: cover;
-            }
-    }
-
-    .about-stands {
-        padding: 24px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 36px;
-        transition: all 0.2s ease-in-out;
-        border-radius: 24px;
-
-
-        &.light-on {
-            background:
-                    radial-gradient(ellipse at center top, rgba(80, 80, 80, 0.6) 0%, rgba(30, 30, 30, 0.7) 30%, rgba(0, 0, 0, 0.8) 70%),
-                    linear-gradient(135deg, rgba(60, 60, 60, 0.4) 0%, rgba(20, 20, 20, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%);
-        }
-
-        &.light-off {
-            background:
-                    radial-gradient(ellipse at center top, rgba(80, 80, 80, 0.8) 0%, rgba(30, 30, 30, 0.9) 30%, rgba(0, 0, 0, 1) 70%),
-                    linear-gradient(135deg, rgba(60, 60, 60, 0.6) 0%, rgba(20, 20, 20, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
-            box-shadow:
-                    inset 0 8px 16px rgba(0, 0, 0, 0.3),
-                    inset 0 -8px 16px rgba(0, 0, 0, 0.2),
-                    inset 8px 0 16px rgba(0, 0, 0, 0.2),
-                    inset -8px 0 16px rgba(0, 0, 0, 0.2);
-
-            .about-stands-img-wrapper {
-                box-shadow:
-                        0 8px 16px rgba(0, 0, 0, 0.4),
-                        0 -4px 8px rgba(0, 0, 0, 0.2),
-                        8px 0 16px rgba(0, 0, 0, 0.3),
-                        -8px 0 16px rgba(0, 0, 0, 0.3);
-            }
-        }
-
-        .about-stands-img-wrapper {
-            position: relative;
-            width: calc(100% * 600 / 1440);
-            max-height: calc(100% * 800 / 1440);
-            border-radius: 24px;
-
-            img {
-                width: 100%;
-                border: 3px solid grey;
-                border-radius: 24px;
-                transition: opacity 0.2s ease-in-out !important;
-            }
-
-            .about-img-turned{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                min-width: calc(100% * 600 / 1440);
-                min-height: calc(100% * 800 / 1440);
-                z-index: 10;
-            }
-        }
-    }
-}
-
-.lamp-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 36px;
+    background: #eceee1;
+}
+
+/* ------- Управляющие переменные лампы ------- */
+/* Все длины считаются относительно .about-stands */
+.about-section .about-stands {
+    /* ширина/высота «ножки» лампы */
+    --lamp-stem-w: 0.8rem;
+    --lamp-stem-h: 10rem;
+
+    /* отступ от левого края контейнера */
+    --lamp-left: 24px;        /* лампа всегда слева */
+    --lamp-top: 0px;          /* прикреплена к верхнему краю */
+
+    /* дополнительный «сдвиг» центра радиального света вниз */
+    --lamp-glow-down: 3rem;
+
+    /* запас под лампу + зазор между лампой и контентом */
+    --lamp-gutter: 1.25rem;
+
+    /* удобные вычисляемые точки света */
+    --lamp-glow-x: calc(var(--lamp-left) + 2rem);
+    --lamp-glow-y: calc(var(--lamp-top) + var(--lamp-glow-down));
+
+    padding: 24px;
+    position: relative;
+    border-radius: 24px;
+    transition: all 0.2s ease-in-out;
+
+    /* сетка контента: картинка + колонка контролов */
+    display: grid;
+    grid-template-columns: 1fr minmax(220px, 260px);
+    gap: 24px;
+    align-items: start;
+
+    /* чтобы лампа не перекрывала стенды — даём левый внутренний отступ */
+    padding-left: calc(24px + var(--lamp-stem-w) + var(--lamp-gutter) + 1.5rem);
+}
+
+/* ===== ФОН С ЛЕВЫМ СВЕТОМ ОТ ЛАМПЫ ===== */
+.about-section .about-stands.light-on {
+    background:
+            radial-gradient(
+                    ellipse farthest-side at var(--lamp-glow-x) var(--lamp-glow-y),
+                    rgba(80, 80, 80, 0.6) 0%,
+                    rgba(30, 30, 30, 0.7) 35%,
+                    rgba(0, 0, 0, 0.8) 70%
+            ),
+            linear-gradient(
+                    135deg,
+                    rgba(60, 60, 60, 0.4) 0%,
+                    rgba(20, 20, 20, 0.6) 50%,
+                    rgba(0, 0, 0, 0.8) 100%
+            );
+}
+
+.about-section .about-stands.light-off {
+    background:
+            radial-gradient(
+                    ellipse farthest-side at var(--lamp-glow-x) var(--lamp-glow-y),
+                    rgba(80, 80, 80, 0.8) 0%,
+                    rgba(30, 30, 30, 0.9) 30%,
+                    rgba(0, 0, 0, 1) 70%
+            ),
+            linear-gradient(
+                    135deg,
+                    rgba(60, 60, 60, 0.6) 0%,
+                    rgba(20, 20, 20, 0.8) 50%,
+                    rgba(0, 0, 0, 1) 100%
+            );
+    box-shadow:
+            inset 0 8px 16px rgba(0, 0, 0, 0.3),
+            inset 0 -8px 16px rgba(0, 0, 0, 0.2),
+            inset 8px 0 16px rgba(0, 0, 0, 0.2),
+            inset -8px 0 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Контент стенда ===== */
+.about-stands-content { position: relative; z-index: 1; }
+
+.about-stands-img-wrapper {
+    position: relative;
+    width: min(600px, 100%);
+    max-width: 100%;
+    border-radius: 24px;
+}
+.about-stands-img-wrapper img {
+    width: 100%;
+    border: 3px solid grey;
+    border-radius: 24px;
+    transition: opacity 0.2s ease-in-out !important;
+}
+.about-stands-img-wrapper .about-img-turned {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* ===== Контролы ===== */
+.about-stands-controls {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
     justify-content: flex-start;
-    padding-top: 2rem;
-
-    .about-stands-next-button button {
-        position: absolute;
-        top: calc(100% * 220 / 1440);
-        right: calc(100% * 100 / 1440);
-        padding: 10px 12px;
-        border: none;
-        background: #ECEEE1;
-        color: black;
-        border-radius: 100px;
-
-        font-family: Montserrat, sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        z-index: 10002;
-        pointer-events: all;
-        transition: all 0.2s ease-in-out;
-
-        &:hover {
-            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3), 0 0 6px rgba(0, 0, 0, 0.3);
-            transform: scale(1.03);
-            cursor: pointer;
-        }
-
-        &:active {
-            background: #b9bbb1;
-            color: rgba(0, 0, 0, 0.73);
-        }
-    }
 }
 
-/* New Toggle Switch */
-#switch {
-    position: absolute;
-    top: calc(100% * 150 / 1440);
-    right: calc(100% * 50 / 1440);
-    width: 75px;
-    height: 40px;
-    transform: translate(-50%, -50%);
-    margin-bottom: 2rem;
+.about-stands-next-button button {
+    padding: 10px 12px;
+    border: none;
+    background: #eceee1;
+    color: black;
+    border-radius: 100px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
 }
-
-.toggle {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #ECEEE1;
-    background: #ECEEE1;
-    border-radius: 20px;
-    transition: border-color 0.6s ease-out;
-    box-sizing: border-box;
+.about-stands-next-button button:hover {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3), 0 0 6px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
     cursor: pointer;
-    box-shadow: 0 0 5px #8e8f83;
-
+}
+.about-stands-next-button button:active {
+    background: #b9bbb1;
+    color: rgba(0, 0, 0, 0.73);
 }
 
-.toggle.toggle-on {
-    box-shadow: none;
-    border-color: rgba(48, 186, 143, 0.4);
-    transition: all 0.5s 0.15s ease-out;
-}
-
-.toggle-button {
+/* ===== Лампа: СЛЕВА, ПРИКРЕПЛЕНА К ВЕРХУ ===== */
+.lamp-overlay {
     position: absolute;
-    top: 4px;
-    width: 28px;
-    bottom: 4px;
-    right: 39px;
-    background: #ECEEE1;
-    background: radial-gradient(circle,rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 1) 100%);
-    box-shadow: 1px 0 3px #8e8f83;
-    border-radius: 19px;
-    cursor: pointer;
-    transition: all 0.2s 0.1s, width 0.1s, top 0.1s, bottom 0.1s;
-}
-
-.toggle-on .toggle-button {
-    top: 3px;
-    width: 65px;
-    bottom: 3px;
-    right: 3px;
-    border-radius: 23px;
-    background: #30BA8F;
-    box-shadow: 0 0 16px #30BA8F;
-    transition: all 0.2s 0.1s, right 0.1s;
-}
-
-.toggle-text-on {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    line-height: 36px;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    cursor: pointer;
-    user-select: none;
-    color: rgba(0,0,0,0);
-}
-
-.toggle-on .toggle-text-on {
-    color: #ffffff;
-    transition: color 0.2s 0.15s;
-}
-
-.toggle-text-off {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 8px;
-    line-height: 37px;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    user-select: none;
-    cursor: pointer;
-    color: #444249;
-}
-
-.toggle-on .toggle-text-off {
-    color: rgba(0,0,0,0);
-}
-
-.glow-comp {
-    position: absolute;
-    opacity: 0;
-    top: 10px;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    border-radius: 6px;
-    transition: opacity 4.5s 1s;
-}
-
-.toggle-on .glow-comp {
-    opacity: 1;
-    transition: opacity 1s;
-}
-
-#lamp {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -10;
+    inset: 0;
+    z-index: 0;       /* под контентом */
     pointer-events: none;
+    overflow: hidden;
 }
 
 .lamp {
     position: absolute;
-    top: 0;
-    left: calc(100% * 300 / 1440);
-    width: 0.8rem;
-    height: 10rem;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+    top: var(--lamp-top);
+    left: var(--lamp-left);
+    width: var(--lamp-stem-w);
+    height: var(--lamp-stem-h);
+    transform: translate(0, 0); /* никакого -50% — лампа именно у левого края */
+    background-image:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
     background-repeat: no-repeat;
     background-size: 0.15rem 8rem, 0.4rem 0.8rem, 0.7rem 2rem;
     background-position: 50% 0, 0.19rem 8rem, 0 8.8rem;
-    transform: translate(-50%, 0);
 }
 
-.lamp:before, 
+.lamp:before,
 .lamp:after {
     content: '';
     position: absolute;
@@ -278,20 +176,18 @@
     background: rgba(255, 246, 143, 0.5);
 }
 
-.gonna-give-light, 
+.gonna-give-light,
 .gonna-give-light:before {
     position: absolute;
     background: rgba(255, 246, 143, 0.15);
 }
-
 .gonna-give-light {
     top: 10.05rem;
     left: 0.25rem;
     width: 0;
     height: 1.5rem;
-    border-right: 0.2rem solid rgba(255,255,255,0.05);
+    border-right: 0.2rem solid rgba(255, 255, 255, 0.05);
 }
-
 .gonna-give-light:before {
     content: '';
     top: 1.5rem;
@@ -299,112 +195,156 @@
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 50%;
-    border: 0.2rem solid rgba(255,255,255,0.05);
-    box-shadow: 0px 0px 50px rgba(255,255,255,0);
+    border: 0.2rem solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0);
 }
 
-/* Lamp when switched on */
-.toggle-on ~ #lamp .lamp:before {
+/* Усиление «лампы» при включении */
+.about-stands.light-on .lamp:before {
     background: rgba(255, 255, 255, 0.8);
-    box-shadow: 
-        0px 2px 10px rgba(255,255,255,0.8),
-        0px 5px 50px rgba(255,255,255,0.8),
-        0px 8px 80px rgba(255,255,255,0.6),
-        0px 8px 120px rgba(255,255,255,0.6);
+    box-shadow:
+            0 2px 10px rgba(255, 255, 255, 0.8),
+            0 5px 50px rgba(255, 255, 255, 0.8),
+            0 8px 80px rgba(255, 255, 255, 0.6),
+            0 8px 120px rgba(255, 255, 255, 0.6);
 }
 
+/* ===== Toggle ===== */
+#switch { width: 75px; height: 40px; }
+
+.toggle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #eceee1;
+    background: #eceee1;
+    border-radius: 20px;
+    transition: border-color 0.6s ease-out;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0 0 5px #8e8f83;
+}
+.toggle.toggle-on {
+    box-shadow: none;
+    border-color: rgba(48, 186, 143, 0.4);
+    transition: all 0.5s 0.15s ease-out;
+}
+.toggle-button {
+    position: absolute;
+    top: 4px;
+    width: 28px;
+    bottom: 4px;
+    right: 39px;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 1) 100%);
+    box-shadow: 1px 0 3px #8e8f83;
+    border-radius: 19px;
+    cursor: pointer;
+    transition: all 0.2s 0.1s, width 0.1s, top 0.1s, bottom 0.1s;
+}
+.toggle-on .toggle-button {
+    top: 3px;
+    width: 65px;
+    bottom: 3px;
+    right: 3px;
+    border-radius: 23px;
+    background: #30ba8f;
+    box-shadow: 0 0 16px #30ba8f;
+    transition: all 0.2s 0.1s, right 0.1s;
+}
+.toggle-text-on,
+.toggle-text-off {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    line-height: 36px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    user-select: none;
+    cursor: pointer;
+}
+.toggle-text-on {
+    left: 0; right: 0;
+    font-size: 16px; font-weight: normal;
+    color: rgba(0, 0, 0, 0);
+}
+.toggle-on .toggle-text-on { color: #fff; transition: color 0.2s 0.15s; }
+.toggle-text-off {
+    right: 8px; font-size: 10px; font-weight: bold; color: #444249;
+}
+.toggle-on .toggle-text-off { color: rgba(0, 0, 0, 0); }
+.glow-comp {
+    position: absolute; opacity: 0;
+    top: 10px; bottom: 10px; left: 10px; right: 10px;
+    border-radius: 6px; transition: opacity 4.5s 1s;
+}
+.toggle-on .glow-comp { opacity: 1; transition: opacity 1s; }
+
+/* ===== Текстовый блок под стендами ===== */
+.about-text-content { padding-inline: 4px; }
+
+/* ===================== АДАПТИВ ===================== */
+
+/* ≥1441px — чуть ниже центр света */
 @media (min-width: 1441px) {
-    .lamp {
-        top: calc(100% * 280 / 1440);
+    .about-section .about-stands {
+        --lamp-stem-w: 0.8rem;
+        --lamp-stem-h: 10.5rem;
+        --lamp-glow-down: 3.2rem;
     }
 }
 
-/* Responsive design for mobile devices */
+/* ≤1024px — сужаем колонку контролов */
+@media (max-width: 1024px) {
+    .about-section .about-stands {
+        grid-template-columns: 1fr 220px;
+    }
+}
+
+/* ≤768px — контролы под картинкой, лампа остаётся слева и у верхнего края */
 @media (max-width: 768px) {
-    .lamp-container {
-        padding-top: 1rem;
+    .about-section .about-stands {
+        grid-template-columns: 1fr;
+        gap: 16px;
+
+        --lamp-stem-w: 0.6rem;
+        --lamp-stem-h: 8rem;
+        --lamp-left: 16px;           /* слева от контейнера */
+        --lamp-glow-down: 2.2rem;
+
+        padding-left: calc(16px + var(--lamp-stem-w) + var(--lamp-gutter) + 1.2rem);
     }
 
-    #switch {
-        top: calc(100% * 90 / 1440);
-        right: calc(100% * 20 / 1440);
-        width: 60px;
-        height: 32px;
+    .about-stands-controls {
+        order: 2;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 12px;
     }
 
-    .toggle-button {
-        width: 22px;
-        right: 31px;
-        border-radius: 20px;
-    }
+    #switch { width: 60px; height: 32px; }
+    .toggle-button { width: 22px; right: 31px; border-radius: 20px; }
+    .toggle-on .toggle-button { top: 3px; width: 51px; bottom: 3px; right: 3px; }
+    .toggle-text-on { line-height: 29px; font-size: 14px; }
+    .toggle-text-off { right: 7px; line-height: 29px; font-size: 8px; }
 
-    .toggle-on .toggle-button {
-        top: 3px;
-        width: 51px;
-        bottom: 3px;
-        right: 3px;
-    }
-
-    .toggle-text-on {
-        line-height: 29px;
-        font-size: 14px;
-    }
-
-    .toggle-text-off {
-        right: 7px;
-        line-height: 29px;
-        font-size: 8px;
-    }
-
-    .lamp {
-        width: 0.6rem;
-        height: 8rem;
-        background-size: 0.1rem 6rem, 0.3rem 0.6rem, 0.5rem 1.5rem;
-        background-position: 50% 0, 0.15rem 6rem, 0 6.6rem;
-        top: calc(100% * 80 / 1440);
-        left: calc(100% * 120 / 1440);
-    }
-    
     .lamp:before {
-        left: -1.05rem;
-        bottom: -2.5rem;
-        width: 2.5rem;
-        height: 2.5rem;
+        left: -1.05rem; bottom: -2.5rem; width: 2.5rem; height: 2.5rem;
     }
-
-    .gonna-give-light {
-        top: 8.05rem;
-        left: 0.15rem;
-        height: 1rem;
-    }
-
-    .gonna-give-light:before {
-        top: 0.8rem;
-        left: -0.35rem;
-    }
+    .gonna-give-light { top: 8.05rem; left: 0.15rem; height: 1rem; }
+    .gonna-give-light:before { top: 0.8rem; left: -0.35rem; }
 }
 
+/* ≤480px — ещё компактнее, но лампа всё так же слева и сверху */
 @media (max-width: 480px) {
-    #switch {
-        top: calc(100% * 70 / 1440);
-        right: 1%;
+    .about-section .about-stands {
+        --lamp-stem-w: 0.5rem;
+        --lamp-stem-h: 5.5rem;
+        --lamp-left: 12px;
+        --lamp-glow-down: 1.8rem;
+
+        padding-left: calc(12px + var(--lamp-stem-w) + var(--lamp-gutter) + 1rem);
     }
 
-    .lamp-container {
-        padding-top: 0.5rem;
-    }
-
-    .lamp {
-        width: 0.5rem;
-        height: 5.5rem;
-        background-size: 0.08rem 4rem, 0.25rem 0.5rem, 0.4rem 1rem;
-        background-position: 50% 0, 0.12rem 4rem, 0 4.5rem;
-        top: calc(100% * 60 / 1440);
-    }
-
-    .gonna-give-light {
-        top: 5.5rem;
-        left: 0.1rem;
-        height: 1rem;
-    }
+    .gonna-give-light { top: 5.5rem; left: 0.1rem; height: 1rem; }
 }
