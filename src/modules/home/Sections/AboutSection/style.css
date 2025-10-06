@@ -264,6 +264,12 @@
         0px 8px 120px rgba(255,255,255,0.6);
 }
 
+@media (min-width: 1441px) {
+    .lamp {
+        top: calc(100% * 280 / 1440);
+    }
+}
+
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
     .lamp-container {
