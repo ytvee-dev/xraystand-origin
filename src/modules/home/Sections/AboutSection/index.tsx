@@ -13,6 +13,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({content}): ReactElement => {
         if (toggle) {
             toggle.addEventListener('click', function(e) {
                 e.preventDefault();
+                e.stopPropagation();
                 this.classList.toggle('toggle-on');
             });
         }
@@ -20,13 +21,16 @@ const AboutSection: React.FC<AboutSectionProps> = ({content}): ReactElement => {
 
     return (
         <section id="home-about" className="home-section about-section">
-            <div className="left-decoration"></div>
+            <div className="left-decoration">
+                <img src={'./public/assets/drops/drop_1.png'} />
+            </div>
+
             <div className="lamp-container">
                 <div className='toggle' id='switch'>
-                    <div className='toggle-text-off'>OFF</div>
+                    <div className='toggle-text-off'>Выкл</div>
                     <div className='glow-comp'></div>
                     <div className='toggle-button'></div>
-                    <div className='toggle-text-on'>ON</div>
+                    <div className='toggle-text-on'>Вкл</div>
                 </div>
 
                 <div id="lamp">
