@@ -37,10 +37,6 @@ const AboutSection: React.FC<AboutSectionProps> = ({content}): ReactElement => {
 
     return (
         <section id="home-about" className="home-section about-section">
-            {/*<div className="left-decoration">*/}
-            {/*    <img src={'./public/assets/drops/drop_1.png'} />*/}
-            {/*</div>*/}
-
             <div className="lamp-container">
                 <div className='toggle' id='switch'>
                     <div className='toggle-text-off'>Выкл</div>
@@ -50,9 +46,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({content}): ReactElement => {
                 </div>
 
                 <div className='about-stands-next-button'>
-                    <button onClick={handleNextImages}>
-                        Следующий
-                    </button>
+                    <button onClick={handleNextImages}>Следующий</button>
                 </div>
 
                 <div id="lamp">
@@ -68,6 +62,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({content}): ReactElement => {
                         className='about-img' 
                         src={images.stands[currentStandsID[0]]}
                         alt='stand'
+                        style={{opacity: 0.6}}
                     />
                     <img 
                         className='about-img-turned'
