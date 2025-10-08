@@ -1,4 +1,3 @@
-/* ===== БАЗА ===== */
 .about-section {
     position: relative;
     display: flex;
@@ -7,210 +6,100 @@
     background: #eceee1;
 }
 
-/* ------- Управляющие переменные лампы ------- */
-/* Все длины считаются относительно .about-stands */
 .about-section .about-stands {
-    /* ширина/высота «ножки» лампы */
     --lamp-stem-w: 0.8rem;
     --lamp-stem-h: 10rem;
-
-    /* отступ от левого края контейнера */
-    --lamp-left: 24px;        /* лампа всегда слева */
-    --lamp-top: 0px;          /* прикреплена к верхнему краю */
-
-    /* дополнительный «сдвиг» центра радиального света вниз */
+    --lamp-left: 36px;
+    --lamp-top: 0px;
     --lamp-glow-down: 3rem;
-
-    /* запас под лампу + зазор между лампой и контентом */
     --lamp-gutter: 1.25rem;
-
-    /* удобные вычисляемые точки света */
-    --lamp-glow-x: calc(var(--lamp-left) + 2rem);
+    --lamp-glow-x: calc(var(--lamp-left) + 2.2rem);
     --lamp-glow-y: calc(var(--lamp-top) + var(--lamp-glow-down));
 
-    padding: 24px;
+    max-width: 1200px;
     position: relative;
-    border-radius: 24px;
-    transition: all 0.2s ease-in-out;
-
-    /* сетка контента: картинка + колонка контролов */
+    border-radius: 28px;
+    padding: 28px 28px 32px calc(28px + var(--lamp-stem-w) + var(--lamp-gutter) + 1.6rem);
     display: grid;
-    grid-template-columns: 1fr minmax(220px, 260px);
-    gap: 24px;
+    grid-template-columns: 1fr minmax(240px, 320px);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "img controls"
+    "img text";
+    gap: 22px 28px;
     align-items: start;
-
-    /* чтобы лампа не перекрывала стенды — даём левый внутренний отступ */
-    padding-left: calc(24px + var(--lamp-stem-w) + var(--lamp-gutter) + 1.5rem);
+    background: radial-gradient(ellipse farthest-side at var(--lamp-glow-x) var(--lamp-glow-y),
+    rgba(80, 80, 80, 0.8) 0%,
+    rgba(30, 30, 30, 1) 60%,
+    rgba(0, 0, 0, 1) 100%),
+    linear-gradient(145deg, rgba(18, 18, 18, 1) 0%, rgba(8, 8, 8, 1) 100%);
+    box-shadow: inset 14px 14px 28px rgba(0, 0, 0, 0.85),
+    inset -14px -14px 28px rgba(60, 60, 60, 0.08),
+    inset 0 0 80px rgba(0, 0, 0, 0.75),
+    0 16px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* ===== ФОН С ЛЕВЫМ СВЕТОМ ОТ ЛАМПЫ ===== */
 .about-section .about-stands.light-on {
-    background:
-            radial-gradient(
-                    ellipse farthest-side at var(--lamp-glow-x) var(--lamp-glow-y),
-                    rgba(80, 80, 80, 0.6) 0%,
-                    rgba(30, 30, 30, 0.7) 35%,
-                    rgba(0, 0, 0, 0.8) 70%
-            ),
-            linear-gradient(
-                    135deg,
-                    rgba(60, 60, 60, 0.4) 0%,
-                    rgba(20, 20, 20, 0.6) 50%,
-                    rgba(0, 0, 0, 0.8) 100%
-            );
+    background: radial-gradient(ellipse farthest-side at var(--lamp-glow-x) var(--lamp-glow-y),
+    rgba(120, 120, 120, 0.65) 0%,
+    rgba(40, 40, 40, 0.9) 50%,
+    rgba(0, 0, 0, 1) 100%),
+    linear-gradient(145deg, rgba(22, 22, 22, 1) 0%, rgba(10, 10, 10, 1) 100%);
+    box-shadow: inset 12px 12px 26px rgba(0, 0, 0, 0.75),
+    inset -10px -10px 24px rgba(100, 100, 100, 0.08),
+    inset 0 0 95px rgba(0, 0, 0, 0.6),
+    0 18px 44px rgba(0, 0, 0, 0.28);
 }
 
-.about-section .about-stands.light-off {
-    background:
-            radial-gradient(
-                    ellipse farthest-side at var(--lamp-glow-x) var(--lamp-glow-y),
-                    rgba(80, 80, 80, 0.8) 0%,
-                    rgba(30, 30, 30, 0.9) 30%,
-                    rgba(0, 0, 0, 1) 70%
-            ),
-            linear-gradient(
-                    135deg,
-                    rgba(60, 60, 60, 0.6) 0%,
-                    rgba(20, 20, 20, 0.8) 50%,
-                    rgba(0, 0, 0, 1) 100%
-            );
-    box-shadow:
-            inset 0 8px 16px rgba(0, 0, 0, 0.3),
-            inset 0 -8px 16px rgba(0, 0, 0, 0.2),
-            inset 8px 0 16px rgba(0, 0, 0, 0.2),
-            inset -8px 0 16px rgba(0, 0, 0, 0.2);
+.about-stands-content {
+    position: relative;
+    z-index: 1;
+    display: contents;
 }
-
-/* ===== Контент стенда ===== */
-.about-stands-content { position: relative; z-index: 1; }
 
 .about-stands-img-wrapper {
+    margin: auto;
+    grid-area: img;
     position: relative;
-    width: min(600px, 100%);
+    width: min(640px, 100%);
     max-width: 100%;
     border-radius: 24px;
+
+    .about-img {
+        opacity: 0.5 !important;
+    }
 }
+
 .about-stands-img-wrapper img {
     width: 100%;
     border: 3px solid grey;
     border-radius: 24px;
+    object-fit: cover;
+    box-shadow: -4px 3px 9px 0 rgba(0, 0, 0, 0.7);
     transition: opacity 0.2s ease-in-out !important;
 }
+
 .about-stands-img-wrapper .about-img-turned {
     position: absolute;
     inset: 0;
     width: 100%;
+    box-shadow: -2px 3px 9px 0 rgba(128, 128, 128, 0.5);
     z-index: 10;
 }
 
-/* ===== Контролы ===== */
 .about-stands-controls {
-    position: relative;
+    grid-area: controls;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-end;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    z-index: 2;
 }
 
-.about-stands-next-button button {
-    padding: 10px 12px;
-    border: none;
-    background: #eceee1;
-    color: black;
-    border-radius: 100px;
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
+#switch {
+    width: 75px;
+    height: 40px;
 }
-.about-stands-next-button button:hover {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3), 0 0 6px rgba(0, 0, 0, 0.3);
-    transform: scale(1.03);
-    cursor: pointer;
-}
-.about-stands-next-button button:active {
-    background: #b9bbb1;
-    color: rgba(0, 0, 0, 0.73);
-}
-
-/* ===== Лампа: СЛЕВА, ПРИКРЕПЛЕНА К ВЕРХУ ===== */
-.lamp-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 0;       /* под контентом */
-    pointer-events: none;
-    overflow: hidden;
-}
-
-.lamp {
-    position: absolute;
-    top: var(--lamp-top);
-    left: var(--lamp-left);
-    width: var(--lamp-stem-w);
-    height: var(--lamp-stem-h);
-    transform: translate(0, 0); /* никакого -50% — лампа именно у левого края */
-    background-image:
-            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
-    background-repeat: no-repeat;
-    background-size: 0.15rem 8rem, 0.4rem 0.8rem, 0.7rem 2rem;
-    background-position: 50% 0, 0.19rem 8rem, 0 8.8rem;
-}
-
-.lamp:before,
-.lamp:after {
-    content: '';
-    position: absolute;
-}
-
-.lamp:before {
-    left: -1.65rem;
-    bottom: -4rem;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    box-shadow: 5px -2px 43px rgba(255, 246, 143, 0.5);
-    transition: all 0.2s;
-    background: rgba(255, 246, 143, 0.5);
-}
-
-.gonna-give-light,
-.gonna-give-light:before {
-    position: absolute;
-    background: rgba(255, 246, 143, 0.15);
-}
-.gonna-give-light {
-    top: 10.05rem;
-    left: 0.25rem;
-    width: 0;
-    height: 1.5rem;
-    border-right: 0.2rem solid rgba(255, 255, 255, 0.05);
-}
-.gonna-give-light:before {
-    content: '';
-    top: 1.5rem;
-    left: -0.35rem;
-    width: 0.9rem;
-    height: 0.9rem;
-    border-radius: 50%;
-    border: 0.2rem solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0);
-}
-
-/* Усиление «лампы» при включении */
-.about-stands.light-on .lamp:before {
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow:
-            0 2px 10px rgba(255, 255, 255, 0.8),
-            0 5px 50px rgba(255, 255, 255, 0.8),
-            0 8px 80px rgba(255, 255, 255, 0.6),
-            0 8px 120px rgba(255, 255, 255, 0.6);
-}
-
-/* ===== Toggle ===== */
-#switch { width: 75px; height: 40px; }
 
 .toggle {
     position: relative;
@@ -224,11 +113,13 @@
     cursor: pointer;
     box-shadow: 0 0 5px #8e8f83;
 }
+
 .toggle.toggle-on {
     box-shadow: none;
     border-color: rgba(48, 186, 143, 0.4);
     transition: all 0.5s 0.15s ease-out;
 }
+
 .toggle-button {
     position: absolute;
     top: 4px;
@@ -239,8 +130,10 @@
     box-shadow: 1px 0 3px #8e8f83;
     border-radius: 19px;
     cursor: pointer;
+    color: rgba(48, 186, 143, 0.8);
     transition: all 0.2s 0.1s, width 0.1s, top 0.1s, bottom 0.1s;
 }
+
 .toggle-on .toggle-button {
     top: 3px;
     width: 65px;
@@ -251,6 +144,7 @@
     box-shadow: 0 0 16px #30ba8f;
     transition: all 0.2s 0.1s, right 0.1s;
 }
+
 .toggle-text-on,
 .toggle-text-off {
     position: absolute;
@@ -262,29 +156,180 @@
     user-select: none;
     cursor: pointer;
 }
+
 .toggle-text-on {
-    left: 0; right: 0;
-    font-size: 16px; font-weight: normal;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    font-weight: normal;
     color: rgba(0, 0, 0, 0);
+    opacity: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.toggle-on .toggle-text-on { color: #fff; transition: color 0.2s 0.15s; }
+
+.toggle-on .toggle-text-on {
+    color: #fff;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
 .toggle-text-off {
-    right: 8px; font-size: 10px; font-weight: bold; color: #444249;
+    right: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #444249;
+    opacity: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.toggle-on .toggle-text-off { color: rgba(0, 0, 0, 0); }
+
+.toggle-on .toggle-text-off {
+    opacity: 0;
+    color: rgba(0, 0, 0, 0);
+    transition: opacity 0.1s !important;
+}
+
 .glow-comp {
-    position: absolute; opacity: 0;
-    top: 10px; bottom: 10px; left: 10px; right: 10px;
-    border-radius: 6px; transition: opacity 4.5s 1s;
+    position: absolute;
+    opacity: 0;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 6px;
+    transition: opacity 4.5s 1s;
 }
-.toggle-on .glow-comp { opacity: 1; transition: opacity 1s; }
 
-/* ===== Текстовый блок под стендами ===== */
-.about-text-content { padding-inline: 4px; }
+.toggle-on .glow-comp {
+    opacity: 1;
+    transition: opacity 1s;
+}
 
-/* ===================== АДАПТИВ ===================== */
+.btn-next {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #eceee1;
+    background: #eceee1;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1a1a1a;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 0 5px #8e8f83;
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease, border-color .15s ease;
+}
 
-/* ≥1441px — чуть ниже центр света */
+.btn-next:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+}
+
+.btn-next:active {
+    transform: translateY(0);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .25);
+    background: #dfe3cf;
+}
+
+.about-stands-text {
+    grid-area: text;
+    color: #effa7a;
+    z-index: 1;
+}
+
+.about-stands-text h2 {
+    margin: 6px 0 16px 0;
+    font-size: clamp(22px, 2.2vw, 32px);
+    line-height: 1.2;
+    color: inherit;
+}
+
+.about-stands-text p {
+    margin: 0;
+    font-size: clamp(14px, 1.4vw, 18px);
+    line-height: 1.55;
+    color: inherit;
+    opacity: .94;
+}
+
+.about-stands.light-on .about-stands-text {
+    color: #fff3b2;
+}
+
+.lamp-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.lamp {
+    position: absolute;
+    top: var(--lamp-top);
+    left: var(--lamp-left);
+    width: var(--lamp-stem-w);
+    height: var(--lamp-stem-h);
+    transform: translate(0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+    background-repeat: no-repeat;
+    background-size: 0.15rem 8rem, 0.4rem 0.8rem, 0.7rem 2rem;
+    background-position: 50% 0, 0.19rem 8rem, 0 8.8rem;
+    margin-left: calc(100% * 15 / 1440);
+}
+
+.lamp:before, .lamp:after {
+    content: "";
+    position: absolute;
+}
+
+.lamp:before {
+    left: -1.65rem;
+    bottom: -4rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 5px -2px 43px rgba(255, 246, 143, 0.5);
+    background: rgba(255, 246, 143, 0.5);
+}
+
+.gonna-give-light, .gonna-give-light:before {
+    position: absolute;
+    background: rgba(255, 246, 143, 0.16);
+}
+
+.gonna-give-light {
+    top: 10.45rem;
+    left: 0.25rem;
+    width: 0;
+    height: 1.5rem;
+    border-right: 0.2rem solid rgba(255, 255, 255, 0.06);
+}
+
+.gonna-give-light:before {
+    content: '';
+    top: 1.5rem;
+    left: -0.35rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    border: 0.2rem solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0);
+}
+
+.about-stands.light-on .lamp:before {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.85), 0 5px 50px rgba(255, 255, 255, 0.8), 0 8px 80px rgba(255, 255, 255, 0.65), 0 8px 120px rgba(255, 255, 255, 0.6);
+}
+
 @media (min-width: 1441px) {
     .about-section .about-stands {
         --lamp-stem-w: 0.8rem;
@@ -293,58 +338,95 @@
     }
 }
 
-/* ≤1024px — сужаем колонку контролов */
 @media (max-width: 1024px) {
     .about-section .about-stands {
-        grid-template-columns: 1fr 220px;
+        grid-template-columns: 1fr 280px;
     }
 }
 
-/* ≤768px — контролы под картинкой, лампа остаётся слева и у верхнего края */
 @media (max-width: 768px) {
+    .about-section {
+        padding: 24px 12px !important;
+    }
+
+    .about-stands-text {
+        margin-left: calc(100% * -140 / 1440);
+    }
+
     .about-section .about-stands {
         grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+      "img"
+      "controls"
+      "text";
         gap: 16px;
-
-        --lamp-stem-w: 0.6rem;
-        --lamp-stem-h: 8rem;
-        --lamp-left: 16px;           /* слева от контейнера */
-        --lamp-glow-down: 2.2rem;
-
-        padding-left: calc(16px + var(--lamp-stem-w) + var(--lamp-gutter) + 1.2rem);
+        --lamp-left: 22px;
+        --lamp-glow-down: .2rem;
+        padding: 24px 20px 26px calc(20px + var(--lamp-stem-w) + var(--lamp-gutter) + 1.2rem);
     }
 
     .about-stands-controls {
-        order: 2;
-        align-items: center;
+        grid-column: 1 / -1;
         justify-content: center;
-        width: 100%;
-        gap: 12px;
     }
 
-    #switch { width: 60px; height: 32px; }
-    .toggle-button { width: 22px; right: 31px; border-radius: 20px; }
-    .toggle-on .toggle-button { top: 3px; width: 51px; bottom: 3px; right: 3px; }
-    .toggle-text-on { line-height: 29px; font-size: 14px; }
-    .toggle-text-off { right: 7px; line-height: 29px; font-size: 8px; }
+    #switch {
+        width: 60px;
+        height: 32px;
+    }
+
+    .toggle-button {
+        width: 22px;
+        right: 31px;
+        border-radius: 20px;
+    }
+
+    .toggle-on .toggle-button {
+        top: 3px;
+        width: 51px;
+        bottom: 3px;
+        right: 3px;
+    }
+
+    .toggle-text-on {
+        line-height: 29px;
+        font-size: 14px;
+    }
+
+    .toggle-text-off {
+        right: 7px;
+        line-height: 29px;
+        font-size: 8px;
+    }
 
     .lamp:before {
-        left: -1.05rem; bottom: -2.5rem; width: 2.5rem; height: 2.5rem;
+        left: -0.93rem;
+        bottom: -2.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
-    .gonna-give-light { top: 8.05rem; left: 0.15rem; height: 1rem; }
-    .gonna-give-light:before { top: 0.8rem; left: -0.35rem; }
+
+    .gonna-give-light {
+        top: 10.05rem;
+        left: 0.23em;
+        height: 1rem;
+    }
+
+    .gonna-give-light:before {
+        top: 0.8rem;
+        left: -0.357rem;
+    }
 }
 
-/* ≤480px — ещё компактнее, но лампа всё так же слева и сверху */
 @media (max-width: 480px) {
     .about-section .about-stands {
-        --lamp-stem-w: 0.5rem;
-        --lamp-stem-h: 5.5rem;
-        --lamp-left: 12px;
-        --lamp-glow-down: 1.8rem;
-
-        padding-left: calc(12px + var(--lamp-stem-w) + var(--lamp-gutter) + 1rem);
+        padding: 20px 16px 22px calc(16px + var(--lamp-stem-w) + var(--lamp-gutter) + 1rem);
     }
 
-    .gonna-give-light { top: 5.5rem; left: 0.1rem; height: 1rem; }
+    .btn-next {
+        width: 104px;
+        height: 36px;
+        font-size: 13px;
+    }
 }
