@@ -35,8 +35,8 @@
     linear-gradient(145deg, rgba(18, 18, 18, 1) 0%, rgba(8, 8, 8, 1) 100%);
     box-shadow: inset 14px 14px 28px rgba(0, 0, 0, 0.85),
     inset -14px -14px 28px rgba(60, 60, 60, 0.08),
-    inset 0 0 80px rgba(0, 0, 0, 0.75),
-    0 16px 40px rgba(0, 0, 0, 0.25);
+    inset 0 0 80px rgba(0, 0, 0, 0.75);
+    /*0 16px 40px rgba(0, 0, 0, 0.25);*/
 }
 
 .about-section .about-stands.light-on {
@@ -47,8 +47,8 @@
     linear-gradient(145deg, rgba(22, 22, 22, 1) 0%, rgba(10, 10, 10, 1) 100%);
     box-shadow: inset 12px 12px 26px rgba(0, 0, 0, 0.75),
     inset -10px -10px 24px rgba(100, 100, 100, 0.08),
-    inset 0 0 95px rgba(0, 0, 0, 0.6),
-    0 18px 44px rgba(0, 0, 0, 0.28);
+    inset 0 0 95px rgba(0, 0, 0, 0.6);
+    /*0 18px 44px rgba(0, 0, 0, 0.28);*/
 }
 
 .about-stands-content {
@@ -246,7 +246,7 @@
 
 .about-stands-text h2 {
     margin: 6px 0 16px 0;
-    font-size: 48px;
+    font-size: 32px;
     line-height: 1.2;
     color: inherit;
 }
@@ -334,7 +334,7 @@
 @media (min-width: 1441px) {
     .about-section .about-stands {
         --lamp-stem-w: 0.8rem;
-        --lamp-stem-h: 10.5rem;
+        --lamp-stem-h: 9.99rem;
         --lamp-glow-down: 3.2rem;
     }
 }
