@@ -30,7 +30,7 @@ const TurnIcon: React.FC<{ size: number, color: string }> = ({size, color}) => (
 const AboutSection: React.FC<AboutSectionProps> = ({content}): ReactElement => {
     const [isLightOn, setLightOn] = React.useState<boolean>(false);
     const [currentStandsID, setCurrentStandsID] = React.useState<number[]>([4, 5]);
-    const {currentLocale} = usePageData();
+    const {currentLocale, isMobile} = usePageData();
     const nextButtonText = currentLocale === 'ru' ? "Следующий" : "Келесі";
 
     const handleNextImages = () => {
@@ -84,7 +84,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({content}): ReactElement => {
                             <div className="glow-comp"/>
                             <div className="toggle-button"></div>
                             <div className="toggle-text-on">
-                                {isLightOn && <TurnIcon size={24} color='rgba(255, 255, 255, 0.8)'/>}
+                                {isLightOn && <TurnIcon size={isMobile ? 18 : 24} color='rgba(255, 255, 255, 0.8)'/>}
                             </div>
                         </div>
 

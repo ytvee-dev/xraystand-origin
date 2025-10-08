@@ -36,7 +36,6 @@
     box-shadow: inset 14px 14px 28px rgba(0, 0, 0, 0.85),
     inset -14px -14px 28px rgba(60, 60, 60, 0.08),
     inset 0 0 80px rgba(0, 0, 0, 0.75);
-    /*0 16px 40px rgba(0, 0, 0, 0.25);*/
 }
 
 .about-section .about-stands.light-on {
@@ -48,7 +47,6 @@
     box-shadow: inset 12px 12px 26px rgba(0, 0, 0, 0.75),
     inset -10px -10px 24px rgba(100, 100, 100, 0.08),
     inset 0 0 95px rgba(0, 0, 0, 0.6);
-    /*0 18px 44px rgba(0, 0, 0, 0.28);*/
 }
 
 .about-stands-content {
@@ -72,7 +70,7 @@
 
 .about-stands-img-wrapper img {
     width: 100%;
-    border: 3px solid grey;
+    border: 3px solid rgba(0, 0, 0, 0.3);
     border-radius: 24px;
     object-fit: cover;
     box-shadow: -4px 3px 9px 0 rgba(0, 0, 0, 0.7);
