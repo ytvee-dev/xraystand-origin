@@ -26,6 +26,7 @@
                 font-family: var(--technical-font), serif;
                 font-size: 24px;
                 font-weight: bold;
+                transition: all 0.3s ease-in-out;
             }
         }
 
@@ -66,7 +67,6 @@
             width: 24px;
             height: 241px;
             background: #ECEEE1;
-            border-radius: 9px;
             transition: width 0.3s ease-in-out;
 
         }
@@ -74,11 +74,15 @@
         .home-card-image-left-decor {
             top: 10%;
             left: -12px;
+            border-top-right-radius: 19px;
+            border-bottom-right-radius: 19px;
         }
 
         .home-card-image-right-decor {
             top: 10%;
             right: -12px;
+            border-top-left-radius: 19px;
+            border-bottom-left-radius: 19px;
         }
     }
 
@@ -157,7 +161,7 @@
 
     .home-card-text {
         opacity: 1;
-        height: 120px;
+        height: 80px;
         transition: height 0.3s ease-in-out, opacity 0.6s ease-in;
     }
 
@@ -169,3 +173,124 @@
         }
     }
 }
+
+@media (max-width: 1340px) {
+    .touched-card {
+        .home-card-text {
+            height: 100px;
+        }
+    }
+}
+
+@media (max-width: 1188px) {
+    .touched-card {
+        .home-card-text {
+            height: 80px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .home-card {
+        max-width: 100%;
+    }
+
+    .untouched-card {
+
+        .home-card-content-wrapper {
+            .home-card-title {
+                h3 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .touched-card {
+        .home-card-text {
+            height: 50px;
+        }
+
+        .home-card-content-wrapper {
+            .home-card-title {
+                h3 {
+                    font-size: 18px;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            .home-card-text {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .home-card-image-wrapper {
+            img {
+                width: 100%;
+                transform: translateY(calc(-25%));
+            }
+        }
+    }
+}
+
+@media (max-width: 564px) {
+    .touched-card {
+        .home-card-text {
+            height: 70px;
+        }
+    }
+}
+
+@media (max-width: 454px) {
+    .touched-card {
+        .home-card-text {
+            height: 90px;
+        }
+
+        .home-card-image-wrapper {
+            img {
+                width: 85%;
+                transform: translateY(calc(-25%));
+            }
+        }
+    }
+}
+
+@media (max-width: 411px) {
+    .touched-card {
+        .home-card-text {
+            height: 110px;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .touched-card {
+        .home-card-text {
+            height: 125px;
+        }
+
+        .home-card-content-wrapper {
+            .home-card-text {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 319px) {
+    .touched-card {
+        .home-card-content-wrapper {
+            .home-card-text {
+                p {
+                    font-size: clamp(13px, 2vw, 32px);
+                }
+            }
+        }
+    }
+}
+

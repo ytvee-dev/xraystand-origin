@@ -11,8 +11,8 @@ interface AboutSectionProps {
 const TurnIcon: React.FC<{ size: number, color: string }> = ({size, color}) => (
     <svg id="svg" fill={color} width={`${size}px`} height={`${size}px`} version="1.1" viewBox="144 144 512 512"
          xmlns="http://www.w3.org/2000/svg">
-        <g id="IconSvg_bgCarrier" stroke-width="0"></g>
-        <g id="IconSvg_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"></g>
+        <g id="IconSvg_bgCarrier" strokeWidth="0"></g>
+        <g id="IconSvg_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC"></g>
         <g id="IconSvg_iconCarrier">
             <g xmlns="http://www.w3.org/2000/svg">
                 <path

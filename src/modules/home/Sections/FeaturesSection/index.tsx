@@ -16,6 +16,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({content}): ReactElemen
 
     return (
         <section id="home-features" className="home-section features-section">
+            <h2>{content.title}</h2>
             <div className="home-features-cards-wrapper">
                 {content?.content?.map((card, index: number) => (
                     <HomeCard
