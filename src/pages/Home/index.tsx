@@ -3,6 +3,7 @@ import {usePreloadImages} from "@hooks/usePreloadImages.ts";
 import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
 import {usePageData} from "@hooks/usePageData";
 import {useLocaleContent} from "@hooks/useLocale";
+import HomeLayout from "@layout/HomeLayout";
 import CoverSection from "@modules/home/Sections/CoverSection";
 import AboutSection from "@modules/home/Sections/AboutSection";
 import FeaturesSection from "@modules/home/Sections/FeaturesSection";
@@ -14,9 +15,8 @@ import Spinner from "@components/common/Spinner";
 import * as contentRu from "@modules/home/locales/rus.json";
 import * as contentKz from "@modules/home/locales/kaz.json";
 import * as paths from "@modules/home/locales/paths.json";
-import HomeLayout from "@layout/HomeLayout";
-import './style.css';
 import {svgSpriteSrcPrefix} from "@utils/constants";
+import './style.css';
 
 const MainLogo = () => {
     const { isMobile } = usePageData();
@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
             {/* // todo: контент должен не весь прокидывать, а только для текущей секции */}
             <CoverSection content={content} />
             <AboutSection content={content.aboutSection} />
-            <FeaturesSection content={content} />
+            <FeaturesSection content={content.featuresSection} />
             <ExamplesSection content={content} />
             <DevelopmentSection content={content} />
             <ContactSection content={content} />

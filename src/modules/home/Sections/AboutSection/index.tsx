@@ -1,15 +1,15 @@
-import React, { type ReactElement } from "react";
-import type { HomeSection } from "../../types";
+import React, {type ReactElement} from "react";
+import type {HomeSection} from "../../types";
+import {usePageData} from "@hooks/usePageData.ts";
 import * as images from "@modules/home/locales/paths.json";
 import "./style.css";
-import {usePageData} from "@hooks/usePageData.ts";
 
 interface AboutSectionProps {
     content: HomeSection;
 }
 
-const TurnIcon: React.FC<{size: number, color: string}> = ({size, color}) => (
-    <svg id="svg" fill={color}  width={`${size}px`} height={`${size}px`} version="1.1" viewBox="144 144 512 512"
+const TurnIcon: React.FC<{ size: number, color: string }> = ({size, color}) => (
+    <svg id="svg" fill={color} width={`${size}px`} height={`${size}px`} version="1.1" viewBox="144 144 512 512"
          xmlns="http://www.w3.org/2000/svg">
         <g id="IconSvg_bgCarrier" stroke-width="0"></g>
         <g id="IconSvg_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"></g>
@@ -27,10 +27,10 @@ const TurnIcon: React.FC<{size: number, color: string}> = ({size, color}) => (
     </svg>
 );
 
-const AboutSection: React.FC<AboutSectionProps> = ({ content }): ReactElement => {
+const AboutSection: React.FC<AboutSectionProps> = ({content}): ReactElement => {
     const [isLightOn, setLightOn] = React.useState<boolean>(false);
     const [currentStandsID, setCurrentStandsID] = React.useState<number[]>([4, 5]);
-    const { currentLocale } = usePageData();
+    const {currentLocale} = usePageData();
     const nextButtonText = currentLocale === 'ru' ? "Следующий" : "Келесі";
 
     const handleNextImages = () => {
@@ -49,7 +49,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ content }): ReactElement =>
             <div className={`about-stands ${isLightOn ? "light-on" : "light-off"}`}>
                 <div className="lamp-overlay" aria-hidden>
                     <div className="lamp">
-                        <div className="gonna-give-light" />
+                        <div className="gonna-give-light"/>
                     </div>
                 </div>
 
@@ -59,13 +59,13 @@ const AboutSection: React.FC<AboutSectionProps> = ({ content }): ReactElement =>
                             className="about-img"
                             src={images.stands[currentStandsID[0]]}
                             alt="stand"
-                            style={{ opacity: 0.6 }}
+                            style={{opacity: 0.6}}
                         />
                         <img
                             className="about-img-turned"
                             src={images.stands[currentStandsID[1]]}
                             alt="stand"
-                            style={{ opacity: isLightOn ? 0.95 : 0 }}
+                            style={{opacity: isLightOn ? 0.95 : 0}}
                         />
                     </div>
 
@@ -81,10 +81,10 @@ const AboutSection: React.FC<AboutSectionProps> = ({ content }): ReactElement =>
                             <div className="toggle-text-off">
                                 Выкл
                             </div>
-                            <div className="glow-comp" />
+                            <div className="glow-comp"/>
                             <div className="toggle-button"></div>
                             <div className="toggle-text-on">
-                                {isLightOn && <TurnIcon size={24} color='rgba(255, 255, 255, 0.8)' />}
+                                {isLightOn && <TurnIcon size={24} color='rgba(255, 255, 255, 0.8)'/>}
                             </div>
                         </div>
 

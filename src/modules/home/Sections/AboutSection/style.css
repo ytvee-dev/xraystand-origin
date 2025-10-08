@@ -307,7 +307,7 @@
 }
 
 .gonna-give-light {
-    top: 10.45rem;
+    top: 10.05rem;
     left: 0.25rem;
     width: 0;
     height: 1.5rem;
@@ -342,6 +342,24 @@
     .about-section .about-stands {
         grid-template-columns: 1fr 280px;
     }
+
+    .lamp:before {
+        left: -0.93rem;
+        bottom: -2.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .gonna-give-light {
+        top: 10.05rem;
+        left: 0.23em;
+        height: 1rem;
+    }
+
+    .gonna-give-light:before {
+        top: 0.8rem;
+        left: -0.357rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -367,8 +385,9 @@
     }
 
     .about-stands-controls {
+        padding: 0 2%;
         grid-column: 1 / -1;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     #switch {
@@ -400,23 +419,7 @@
         font-size: 8px;
     }
 
-    .lamp:before {
-        left: -0.93rem;
-        bottom: -2.5rem;
-        width: 2.5rem;
-        height: 2.5rem;
-    }
 
-    .gonna-give-light {
-        top: 10.05rem;
-        left: 0.23em;
-        height: 1rem;
-    }
-
-    .gonna-give-light:before {
-        top: 0.8rem;
-        left: -0.357rem;
-    }
 }
 
 @media (max-width: 480px) {

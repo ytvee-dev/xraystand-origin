@@ -1,2 +1,8 @@
 .features-section {
+    background: #ECEEE1;
+
+    .home-features-cards-wrapper {
+        display: flex;
+        gap: 24px;
+    }
 }
