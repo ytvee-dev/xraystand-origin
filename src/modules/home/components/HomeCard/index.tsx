@@ -13,7 +13,6 @@ export interface HomeCardProps {
 
 const HomeCard: React.FC<HomeCardProps> = ({title, description, cardType, imageIndex, isActive, onActivate}) => {
     const imagesSrc = paths.cards;
-    const [cardState, setCardState] = React.useState<'touched' | 'untouched'>('untouched');
 
     const handlePointerUp = (e: React.PointerEvent) => {
         if (["touch", "pen", "mouse"].includes(e.pointerType)) {
