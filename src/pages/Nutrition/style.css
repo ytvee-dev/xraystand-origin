@@ -1,4 +1,10 @@
-.nutrition-section { scroll-margin-top: 100px; }
+.nutrition-section { 
+    scroll-margin-top: 100px; 
+    /* Cross-browser compatibility fixes */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 #nutrition-cover {
     padding-top: 70px;

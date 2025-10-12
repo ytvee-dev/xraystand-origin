@@ -1,2 +1,238 @@
 .development-section {
+    background: #ECEEE1;
+    overflow-x: clip;
+
+    .development-wrapper {
+        --edge: 156px;
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        .development-text-wrapper {
+            max-width: 750px;
+            margin: 0 auto;
+            text-align: center;
+
+            h2 {
+                font-size: 48px;
+                font-family: var(--technical-font), "Montserrat", sans-serif;
+                color: black;
+                padding-bottom: 16px;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: Open Sans, sans-serif;
+                color: #333333;
+            }
+        }
+
+        .development-chips-wrapper {
+            width: 95vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            overflow: hidden;
+
+            .chips-first-line,
+            .chips-second-line,
+            .chips-third-line {
+                min-width: 100% !important;
+                display: flex;
+                justify-content: space-around;
+                gap: 36px;
+                will-change: transform;
+
+                & > div {
+                    padding: 12px;
+
+                    &:hover {
+                        color: #5C6064;
+                        background-color: #FFFFFF;
+                    }
+                }
+            }
+
+            .chips-first-line {
+                --shift: 22%;
+                --dur: 12s;
+                animation: slide-h var(--dur) ease-in-out infinite alternate;
+
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+
+            .chips-second-line {
+                --shift: 26%;
+                --dur: 13.5s;
+                animation: slide-h var(--dur) ease-in-out infinite alternate-reverse;
+
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+
+            .chips-third-line {
+                --shift: 20%;
+                --dur: 11s;
+                animation: slide-h var(--dur) ease-in-out infinite alternate;
+
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+        /*noinspection CssInvalidPropertyValue*/
+        -webkit-mask-image: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0) 0%,
+                #000 var(--edge),
+                #000 calc(100% - var(--edge)),
+                rgba(0, 0, 0, 0) 100%
+        );
+
+        mask-image: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0) 0%,
+                #000 var(--edge),
+                #000 calc(100% - var(--edge)),
+                rgba(0, 0, 0, 0) 100%
+        );
+
+        @supports not ((mask-image: linear-gradient(#000, #000)) or (-webkit-mask-image: linear-gradient(#000, #000))) {
+            position: relative;
+            overflow: hidden;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: var(--edge);
+                pointer-events: none;
+                z-index: 2;
+                filter: blur(10px);
+            }
+
+            &::before {
+                left: 0;
+                background: linear-gradient(to right, #ECEEE1 55%, rgba(236, 238, 225, 0));
+            }
+
+            &::after {
+                right: 0;
+                background: linear-gradient(to left, #ECEEE1 55%, rgba(236, 238, 225, 0));
+            }
+        }
+    }
+}
+
+@keyframes slide-h {
+    from {
+        transform: translateX(calc(var(--shift) * -1));
+    }
+    to {
+        transform: translateX(var(--shift));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .chips-first-line,
+    .chips-second-line,
+    .chips-third-line {
+        animation: none;
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .development-section .development-wrapper {
+        --edge: clamp(20px, 10vw, 48px);
+        --blur: clamp(4px, 1.8vw, 8px);
+    }
+
+    .development-wrapper {
+        gap: 50px !important;
+
+        .development-text-wrapper {
+            padding: 0 10%;
+
+            h2 {
+                font-size: 24px !important;
+                padding: 12px;
+            }
+
+            p {
+                font-size: 14px !important;
+            }
+        }
+
+        .development-chips-wrapper {
+            gap: 16px !important;
+
+            .chips-first-line,
+            .chips-second-line,
+            .chips-third-line {
+                gap: 16px !important;
+                will-change: transform;
+
+                & > div {
+                    padding: 12px !important;
+
+                    &:hover {
+                        color: #5C6064;
+                        background-color: #FFFFFF;
+                    }
+
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .development-section .development-wrapper {
+        --edge: clamp(16px, 12vw, 40px);
+        --blur: clamp(3px, 2.2vw, 7px);
+    }
+
+    .development-wrapper {
+        .development-text-wrapper {
+            padding: 0 5%;
+        }
+
+        .development-chips-wrapper {
+            gap: 16px !important;
+
+            .chips-first-line,
+            .chips-second-line,
+            .chips-third-line {
+                gap: 16px !important;
+                will-change: transform;
+
+                & > div {
+                    padding: 0 4px!important;
+
+                    &:hover {
+                        color: #5C6064;
+                        background-color: #FFFFFF;
+                    }
+
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
 }

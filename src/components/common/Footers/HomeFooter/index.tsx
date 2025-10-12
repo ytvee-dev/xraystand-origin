@@ -33,9 +33,11 @@ const HomeFooter: React.FC = (): ReactElement => {
                     </a>
                 </div>
                 <div className="as-logo-container">
-                    <svg aria-hidden="true" focusable="false">
-                        <use href={`${svgSpriteSrcPrefix}${iconId}`} />
-                    </svg>
+                    <a href="https://astanahub.com/" target="_blank" rel="noopener noreferrer" className="as-logo-link">
+                        <svg aria-hidden="true" focusable="false">
+                            <use href={`${svgSpriteSrcPrefix}${iconId}`} />
+                        </svg>
+                    </a>
                 </div>
             </div>
 

@@ -1,10 +1,18 @@
 @keyframes fade {
     from {
         opacity: 0;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
     }
     to {
         opacity: 1;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
     }
 }
@@ -58,8 +66,11 @@
     position: absolute;
     width: 50%;
     height: 50%;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
-
 }
 
 .top-left {
@@ -92,6 +103,10 @@
 
 .quarter:hover {
     opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
 }
 
@@ -110,6 +125,10 @@
 .description-block {
     position: absolute;
     z-index: 10;
+    -webkit-animation: fade 0.3s ease-in-out;
+    -moz-animation: fade 0.3s ease-in-out;
+    -ms-animation: fade 0.3s ease-in-out;
+    -o-animation: fade 0.3s ease-in-out;
     animation: fade 0.3s ease-in-out;
     opacity: 1;
 }
@@ -126,6 +145,10 @@
     left: 0;
     right: 0;
     max-width: 272px;
+    -webkit-transform: translateX(183%) !important;
+    -moz-transform: translateX(183%) !important;
+    -ms-transform: translateX(183%) !important;
+    -o-transform: translateX(183%) !important;
     transform: translateX(183%) !important;
     z-index: 10;
 }
@@ -177,13 +200,27 @@
 
 .mobile-circle-plate-wrapper {
     position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 25px;
 }
 
 .mobile-description-blocks {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
     justify-content: center;
 }
 

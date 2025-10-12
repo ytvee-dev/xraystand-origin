@@ -32,7 +32,7 @@ const SecondSection = (): ReactElement => {
                                 imageName={paths.people[i * 4 + indx]}
                                 title={card.title}
                                 label={card.label}
-                                backgroundColor="#FAFAFA"
+                                backgroundColor="#FFFFFF"
                                 minWidth="97px"
                                 maxWidth="317px"
                                 imageHeight="286px"

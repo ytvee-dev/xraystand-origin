@@ -5,6 +5,7 @@ import Header from "../../components/common/Header";
 import StrictFooter from "../../components/common/Footers/StrictFooter";
 import {trafficLawsFooterMeta} from "../../components/common/Footers/StrictFooter/content.ts";
 import {useSelector} from "react-redux";
+import PrivacyPolicyModal from "@components/common/PrivacyPolicyModal";
 import "./style.css";
 
 export interface IDefaultLayoutProps {
@@ -33,6 +34,8 @@ const DefaultLayout = ({ disabled, strictLanguage, children, langSwitchColor='' 
                         trafficLawsFooterMeta.kz
                 }
             />
+            
+            <PrivacyPolicyModal />
         </div>
     );
 };

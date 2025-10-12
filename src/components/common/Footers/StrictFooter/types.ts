@@ -16,6 +16,10 @@ export interface IDefaultDarkFooterContentInfo {
             dark: string,
         },
     },
+    privacyPolicyText: {
+        title: string,
+        content: string,
+    },
 };
 
 export interface IStrictFooterContent {

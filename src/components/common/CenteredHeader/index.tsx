@@ -1,7 +1,6 @@
-// import Logo from "../Other/Logo";
 import React, {type ReactElement} from "react";
-import "./style.css";
 import LanguageSwitcher from "@components/common/Other/LanguageSwitcher";
+import "./style.css";
 
 export interface CenteredHeaderProps {
     logo?: ReactElement | null;

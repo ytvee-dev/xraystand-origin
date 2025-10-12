@@ -32,15 +32,19 @@ const ID_BY_KEY: IdMapping = {
 
 interface Props {
     onNavigate?: (id: string) => void;
+    color?: string | null;
+    page?: string;
 }
 
-const HomeNav: React.FC<Props> = ({ onNavigate }) => {
+const HomeNav: React.FC<Props> = ({ onNavigate, color=null, page='' }) => {
     return (
         <SectionNavigation
             onNavigate={onNavigate}
             navigationOptions={navOptions}
             idMapping={ID_BY_KEY}
             className="home-nav"
+            color={color}
+            page={page}
         />
     );
 };

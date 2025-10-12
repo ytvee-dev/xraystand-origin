@@ -6,3 +6,7 @@
     width: 30px;
     height: 30px;
 }
+
+.drawer-home .MuiDrawer-paper {
+    background: #ECEEE1 !important;
+}

@@ -1,2 +1,42 @@
 .features-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: #ECEEE1;
+
+    h2 {
+        font-family: var(--technical-font), serif;
+        font-size: 48px;
+        color: black;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .home-features-cards-wrapper {
+        display: flex;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .features-section {
+        .home-features-cards-wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .features-section {
+        .home-features-cards-wrapper {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        h2 {
+            font-size: 24px;
+            padding: 0 !important;
+        }
+    }
 }

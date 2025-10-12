@@ -45,7 +45,7 @@
         "description": "С помощью QR-кода пользователь попадает на онлайн-страницу с расширенным контентом: подробными текстами, фактами и дополнительными материалами."
       },
       {
-        "title": "Легкая визуальная подача сложной информации",
+        "title": "Легкая подача сложной информации",
         "subTitle": "Понятно о сложном",
         "description": "Конструкция стенда помогает просто и наглядно объяснять многосоставные явления, делая абстрактные темы более доступными для понимания."
       },
@@ -61,9 +61,175 @@
       "text": ""
     }
   },
+  "developmentSection": {
+    "title": "Разработка",
+    "description": "Каждый стенд адаптирован под конкретную учебную тему и возрастную категорию. Контент разрабатывается с методической точностью и одобряется профессиональными педагогами.",
+    "content": [
+      {
+        "title": "Физика",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Химия",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Биология",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "НВП",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Математика",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Русская литература",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Қазақ әдебиеті",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "English ",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Музыка",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "История Казахстана",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Инклюзия",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Великие географические открытия",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Начальное образование",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Пожарная безопасность",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Правила дорожного движения",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Гражданская безопасность",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Антитеррористическая безопасность",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Антикоррупционная безопасность",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Техника безопасности в кабинетах",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Правила оказания первой помощи",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Физическое здоровье",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Ұлттық құндылықтар",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Эмоциональный интеллект",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "История Алматы",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Публичные выступления",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Здоровое питание",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Экология",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Горы и вершины Алматы",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Біртұтас тәрбие бағдарламасы",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Государственные услуги",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Основы этикета",
+        "subTitle": "",
+        "description": ""
+      }
+    ],
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  },
   "examplesSection": {
-    "title": "Стенды",
-    "description": "Ознакомьтесь с доступными образовательными стендами и выберите интересующую вас тему для изучения.",
+    "title": "Примеры стендов",
+    "description": "",
     "content": [
       {
         "title": "Математический стенд",
@@ -84,67 +250,6 @@
         "title": "Литературный стенд",
         "subTitle": "Мир слов",
         "description": "Исследуйте произведения классической литературы, развивайте навыки анализа текста и письма."
-      }
-    ],
-    "notificationLabel": "",
-    "colorScheme": {
-      "background": "",
-      "text": ""
-    }
-  },
-  "developmentSection": {
-    "title": "Разработка",
-    "description": "Каждый стенд адаптирован под конкретную учебную тему и возрастную категорию. Контент разрабатывается с методической точностью и одобряется профессиональными педагогами.",
-    "content": [
-      {
-        "title": "Математика",
-        "subTitle": "",
-        "description": ""
-      },
-      {
-        "title": "Физика",
-        "subTitle": "",
-        "description": ""
-      },
-      {
-        "title": "Биология",
-        "subTitle": "",
-        "description": ""
-      },
-      {
-        "title": "История",
-        "subTitle": "",
-        "description": ""
-      },
-      {
-        "title": "География",
-        "subTitle": "",
-        "description": ""
-      },
-      {
-        "title": "Иностранные языки",
-        "subTitle": "",
-        "description": ""
-      },
-      {
-        "title": "Литература",
-        "subTitle": "",
-        "description": ""
-      },
-      {
-        "title": "Астрономия",
-        "subTitle": "",
-        "description": ""
-      },
-      {
-        "title": "Химия",
-        "subTitle": "",
-        "description": ""
-      },
-      {
-        "title": "Информатика",
-        "subTitle": "",
-        "description": ""
       }
     ],
     "notificationLabel": "",

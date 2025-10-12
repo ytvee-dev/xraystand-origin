@@ -1,5 +1,7 @@
 
-export const homeFooterMeta = {
+import type { IHomeFooterMeta } from './types';
+
+export const homeFooterMeta: IHomeFooterMeta = {
     ru: {
         logoPath: `./assets/images/sprite.svg#`,
         contacts: {
@@ -73,8 +75,8 @@ export const homeFooterMeta = {
         company: 'ЖШС',
         companyLabel: '"Educational Recycle Systems"',
         copyright: "Барлық құқықтар қорғалған",
-        madeBy: {
-            link: "https://ytvee.com/service",
+            madeBy: {
+                link: "https://ytvee.com/service",
             label: 'Made by',
             author: 'YTVEE',
         },
