@@ -24,7 +24,7 @@ import './style.css';
 const MainLogo = () => {
     const { isMobile } = usePageData();
     return (
-        <svg aria-hidden="true" focusable="false" width={isMobile ? 65 : 100} height={50}>
+        <svg aria-hidden="true" focusable="false" width={isMobile ? 65 : 80} height={50}>
             <use href={`${svgSpriteSrcPrefix}${'logo'}`} />
         </svg>
     );
