@@ -53,8 +53,8 @@ const HomePage: React.FC = () => {
             <CoverSection content={content} />
             <AboutSection content={content.aboutSection} />
             <FeaturesSection content={content.featuresSection} />
-            <ExamplesSection content={content} />
-            <DevelopmentSection content={content} />
+            <DevelopmentSection content={content.developmentSection} />
+            <ExamplesSection content={content.examplesSection} />
             <ContactSection content={content} />
         </HomeLayout>
     );
