@@ -11,7 +11,7 @@
         gap: 32px;
 
         .development-text-wrapper {
-            max-width: 1200px;
+            max-width: 750px;
             margin: 0 auto;
             text-align: center;
 
@@ -30,7 +30,7 @@
         }
 
         .development-chips-wrapper {
-            width: 100vw;
+            width: 95vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -159,11 +159,14 @@
     }
 
     .development-wrapper {
+        gap: 50px !important;
+
         .development-text-wrapper {
             padding: 0 10%;
 
             h2 {
                 font-size: 24px !important;
+                padding: 12px;
             }
 
             p {

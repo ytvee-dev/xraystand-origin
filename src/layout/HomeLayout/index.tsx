@@ -38,7 +38,7 @@ const HomeLayout: React.FC<IDefaultLayoutProps> = ({
 }: IDefaultLayoutProps) => {
 
     return (
-        <div className={`default-layout ${disabled ? "disabled" : ""}`}>
+        <div className={`home-layout ${disabled ? "disabled" : ""}`}>
             <CenteredHeader
                 logo={logo || null}
                 navigation={navigation || null}
