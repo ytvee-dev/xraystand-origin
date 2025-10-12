@@ -1,144 +1,174 @@
 .development-section {
     background: #ECEEE1;
     overflow-x: clip;
+}
 
-    .development-wrapper {
-        --edge: 156px;
+.development-section .development-wrapper {
+    --edge: 156px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 32px;
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000 var(--edge), #000 calc(100% - var(--edge)), rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000 var(--edge), #000 calc(100% - var(--edge)), rgba(0, 0, 0, 0) 100%);
+}
 
+.development-section .development-wrapper .development-text-wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.development-section .development-wrapper .development-text-wrapper h2 {
+    font-size: 48px;
+    font-family: var(--technical-font), "Montserrat", sans-serif;
+    color: black;
+    padding-bottom: 16px;
+}
+
+.development-section .development-wrapper .development-text-wrapper p {
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    color: #333333;
+}
+
+.development-section .development-wrapper .development-chips-wrapper {
+    width: 95vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 24px;
+    overflow: hidden;
+}
+
+.development-section .development-wrapper .development-chips-wrapper .chips-first-line,
+.development-section .development-wrapper .development-chips-wrapper .chips-second-line,
+.development-section .development-wrapper .development-chips-wrapper .chips-third-line {
+    min-width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    gap: 36px;
+    will-change: transform;
+}
+
+.development-section .development-wrapper .development-chips-wrapper .chips-first-line > div,
+.development-section .development-wrapper .development-chips-wrapper .chips-second-line > div,
+.development-section .development-wrapper .development-chips-wrapper .chips-third-line > div {
+    padding: 12px;
+}
+
+.development-section .development-wrapper .development-chips-wrapper .chips-first-line > div:hover,
+.development-section .development-wrapper .development-chips-wrapper .chips-second-line > div:hover,
+.development-section .development-wrapper .development-chips-wrapper .chips-third-line > div:hover {
+    color: #5C6064;
+    background-color: #FFFFFF;
+}
+
+.development-section .development-wrapper .development-chips-wrapper .chips-first-line {
+    --shift: 22%;
+    --dur: 12s;
+    -webkit-animation: slide-h var(--dur) ease-in-out infinite alternate;
+    animation: slide-h var(--dur) ease-in-out infinite alternate;
+}
+
+.development-section .development-wrapper .development-chips-wrapper .chips-first-line:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.development-section .development-wrapper .development-chips-wrapper .chips-second-line {
+    --shift: 26%;
+    --dur: 13.5s;
+    -webkit-animation: slide-h var(--dur) ease-in-out infinite alternate-reverse;
+    animation: slide-h var(--dur) ease-in-out infinite alternate-reverse;
+}
+
+.development-section .development-wrapper .development-chips-wrapper .chips-second-line:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.development-section .development-wrapper .development-chips-wrapper .chips-third-line {
+    --shift: 20%;
+    --dur: 11s;
+    -webkit-animation: slide-h var(--dur) ease-in-out infinite alternate;
+    animation: slide-h var(--dur) ease-in-out infinite alternate;
+}
+
+.development-section .development-wrapper .development-chips-wrapper .chips-third-line:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@supports not ((mask-image: linear-gradient(#000, #000)) or (-webkit-mask-image: linear-gradient(#000, #000))) {
+    .development-section .development-wrapper {
         position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
+        overflow: hidden;
+    }
 
-        .development-text-wrapper {
-            max-width: 750px;
-            margin: 0 auto;
-            text-align: center;
+    .development-section .development-wrapper::before,
+    .development-section .development-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: var(--edge);
+        pointer-events: none;
+        z-index: 2;
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+    }
 
-            h2 {
-                font-size: 48px;
-                font-family: var(--technical-font), "Montserrat", sans-serif;
-                color: black;
-                padding-bottom: 16px;
-            }
+    .development-section .development-wrapper::before {
+        left: 0;
+        background: -webkit-gradient(linear, left top, right top, color-stop(55%, #ECEEE1), to(rgba(236, 238, 225, 0)));
+        background: linear-gradient(to right, #ECEEE1 55%, rgba(236, 238, 225, 0));
+    }
 
-            p {
-                font-size: 16px;
-                font-family: Open Sans, sans-serif;
-                color: #333333;
-            }
-        }
+    .development-section .development-wrapper::after {
+        right: 0;
+        background: -webkit-gradient(linear, right top, left top, color-stop(55%, #ECEEE1), to(rgba(236, 238, 225, 0)));
+        background: linear-gradient(to left, #ECEEE1 55%, rgba(236, 238, 225, 0));
+    }
+}
 
-        .development-chips-wrapper {
-            width: 95vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 24px;
-            overflow: hidden;
-
-            .chips-first-line,
-            .chips-second-line,
-            .chips-third-line {
-                min-width: 100% !important;
-                display: flex;
-                justify-content: space-around;
-                gap: 36px;
-                will-change: transform;
-
-                & > div {
-                    padding: 12px;
-
-                    &:hover {
-                        color: #5C6064;
-                        background-color: #FFFFFF;
-                    }
-                }
-            }
-
-            .chips-first-line {
-                --shift: 22%;
-                --dur: 12s;
-                animation: slide-h var(--dur) ease-in-out infinite alternate;
-
-                &:hover {
-                    animation-play-state: paused;
-                }
-            }
-
-            .chips-second-line {
-                --shift: 26%;
-                --dur: 13.5s;
-                animation: slide-h var(--dur) ease-in-out infinite alternate-reverse;
-
-                &:hover {
-                    animation-play-state: paused;
-                }
-            }
-
-            .chips-third-line {
-                --shift: 20%;
-                --dur: 11s;
-                animation: slide-h var(--dur) ease-in-out infinite alternate;
-
-                &:hover {
-                    animation-play-state: paused;
-                }
-            }
-        }
-
-        /*noinspection CssInvalidPropertyValue*/
-        -webkit-mask-image: linear-gradient(
-                to right,
-                rgba(0, 0, 0, 0) 0%,
-                #000 var(--edge),
-                #000 calc(100% - var(--edge)),
-                rgba(0, 0, 0, 0) 100%
-        );
-
-        mask-image: linear-gradient(
-                to right,
-                rgba(0, 0, 0, 0) 0%,
-                #000 var(--edge),
-                #000 calc(100% - var(--edge)),
-                rgba(0, 0, 0, 0) 100%
-        );
-
-        @supports not ((mask-image: linear-gradient(#000, #000)) or (-webkit-mask-image: linear-gradient(#000, #000))) {
-            position: relative;
-            overflow: hidden;
-
-            &::before,
-            &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                width: var(--edge);
-                pointer-events: none;
-                z-index: 2;
-                filter: blur(10px);
-            }
-
-            &::before {
-                left: 0;
-                background: linear-gradient(to right, #ECEEE1 55%, rgba(236, 238, 225, 0));
-            }
-
-            &::after {
-                right: 0;
-                background: linear-gradient(to left, #ECEEE1 55%, rgba(236, 238, 225, 0));
-            }
-        }
+@-webkit-keyframes slide-h {
+    from {
+        -webkit-transform: translateX(calc(var(--shift) * -1));
+        transform: translateX(calc(var(--shift) * -1));
+    }
+    to {
+        -webkit-transform: translateX(var(--shift));
+        transform: translateX(var(--shift));
     }
 }
 
 @keyframes slide-h {
     from {
+        -webkit-transform: translateX(calc(var(--shift) * -1));
         transform: translateX(calc(var(--shift) * -1));
     }
     to {
+        -webkit-transform: translateX(var(--shift));
         transform: translateX(var(--shift));
     }
 }
@@ -147,7 +177,9 @@
     .chips-first-line,
     .chips-second-line,
     .chips-third-line {
+        -webkit-animation: none;
         animation: none;
+        -webkit-transform: none;
         transform: none;
     }
 }
@@ -160,43 +192,49 @@
 
     .development-wrapper {
         gap: 50px !important;
+    }
 
-        .development-text-wrapper {
-            padding: 0 10%;
+    .development-wrapper .development-text-wrapper {
+        padding: 0 10%;
+    }
 
-            h2 {
-                font-size: 24px !important;
-                padding: 12px;
-            }
+    .development-wrapper .development-text-wrapper h2 {
+        font-size: 24px !important;
+        padding: 12px;
+    }
 
-            p {
-                font-size: 14px !important;
-            }
-        }
+    .development-wrapper .development-text-wrapper p {
+        font-size: 14px !important;
+    }
 
-        .development-chips-wrapper {
-            gap: 16px !important;
+    .development-wrapper .development-chips-wrapper {
+        gap: 16px !important;
+    }
 
-            .chips-first-line,
-            .chips-second-line,
-            .chips-third-line {
-                gap: 16px !important;
-                will-change: transform;
+    .development-wrapper .development-chips-wrapper .chips-first-line,
+    .development-wrapper .development-chips-wrapper .chips-second-line,
+    .development-wrapper .development-chips-wrapper .chips-third-line {
+        gap: 16px !important;
+        will-change: transform;
+    }
 
-                & > div {
-                    padding: 12px !important;
+    .development-wrapper .development-chips-wrapper .chips-first-line > div,
+    .development-wrapper .development-chips-wrapper .chips-second-line > div,
+    .development-wrapper .development-chips-wrapper .chips-third-line > div {
+        padding: 12px !important;
+    }
 
-                    &:hover {
-                        color: #5C6064;
-                        background-color: #FFFFFF;
-                    }
+    .development-wrapper .development-chips-wrapper .chips-first-line > div:hover,
+    .development-wrapper .development-chips-wrapper .chips-second-line > div:hover,
+    .development-wrapper .development-chips-wrapper .chips-third-line > div:hover {
+        color: #5C6064;
+        background-color: #FFFFFF;
+    }
 
-                    span {
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
+    .development-wrapper .development-chips-wrapper .chips-first-line > div span,
+    .development-wrapper .development-chips-wrapper .chips-second-line > div span,
+    .development-wrapper .development-chips-wrapper .chips-third-line > div span {
+        font-size: 14px;
     }
 }
 
@@ -206,33 +244,37 @@
         --blur: clamp(3px, 2.2vw, 7px);
     }
 
-    .development-wrapper {
-        .development-text-wrapper {
-            padding: 0 5%;
-        }
+    .development-wrapper .development-text-wrapper {
+        padding: 0 5%;
+    }
 
-        .development-chips-wrapper {
-            gap: 16px !important;
+    .development-wrapper .development-chips-wrapper {
+        gap: 16px !important;
+    }
 
-            .chips-first-line,
-            .chips-second-line,
-            .chips-third-line {
-                gap: 16px !important;
-                will-change: transform;
+    .development-wrapper .development-chips-wrapper .chips-first-line,
+    .development-wrapper .development-chips-wrapper .chips-second-line,
+    .development-wrapper .development-chips-wrapper .chips-third-line {
+        gap: 16px !important;
+        will-change: transform;
+    }
 
-                & > div {
-                    padding: 0 4px!important;
+    .development-wrapper .development-chips-wrapper .chips-first-line > div,
+    .development-wrapper .development-chips-wrapper .chips-second-line > div,
+    .development-wrapper .development-chips-wrapper .chips-third-line > div {
+        padding: 0 4px !important;
+    }
 
-                    &:hover {
-                        color: #5C6064;
-                        background-color: #FFFFFF;
-                    }
+    .development-wrapper .development-chips-wrapper .chips-first-line > div:hover,
+    .development-wrapper .development-chips-wrapper .chips-second-line > div:hover,
+    .development-wrapper .development-chips-wrapper .chips-third-line > div:hover {
+        color: #5C6064;
+        background-color: #FFFFFF;
+    }
 
-                    span {
-                        font-size: 12px;
-                    }
-                }
-            }
-        }
+    .development-wrapper .development-chips-wrapper .chips-first-line > div span,
+    .development-wrapper .development-chips-wrapper .chips-second-line > div span,
+    .development-wrapper .development-chips-wrapper .chips-third-line > div span {
+        font-size: 12px;
     }
 }
