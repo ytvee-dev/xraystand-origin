@@ -4,19 +4,62 @@
 
 .nutrition-fourth-section-img-wrapper img {
     width: 100%;
+    -webkit-animation: spin 25s linear infinite;
+    -moz-animation: spin 25s linear infinite;
+    -ms-animation: spin 25s linear infinite;
+    -o-animation: spin 25s linear infinite;
     animation: spin 25s linear infinite;
 }
 
 .nutrition-fourth-section-items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 50px;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
     justify-content: space-between;
 }
 
 @-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-    to   { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+    from { 
+        -webkit-transform: rotate(0deg); 
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg); 
+    }
+    to { 
+        -webkit-transform: rotate(360deg); 
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg); 
+    }
+}
+
+@keyframes spin {
+    from { 
+        -webkit-transform: rotate(0deg); 
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg); 
+    }
+    to { 
+        -webkit-transform: rotate(360deg); 
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg); 
+    }
 }
 
 @media (max-width: 768px) {
@@ -29,6 +72,9 @@
     }
 
     .nutrition-fourth-section-items {
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
         align-items: center;
     }
 

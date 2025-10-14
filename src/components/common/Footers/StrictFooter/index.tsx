@@ -1,5 +1,7 @@
 import {type ReactElement} from "react";
 import type {IStrictFooterContent} from "./types.ts";
+import { useDispatch } from "react-redux";
+import { setIsModalOpened } from "@store/slices/Application";
 import "./style.css";
 
 interface IStrictFooterSX {
@@ -24,9 +26,15 @@ const Footer = ({meta, sx = {
     logoColorMode: "light",
     madeByColorMode: "light",
 }}: IStrictFooterProps): ReactElement => {
+    const dispatch = useDispatch();
     const madeBySrc = sx.madeByColorMode === 'light' ? meta.content.madeBy.imagePath.light :
         meta.content.madeBy.imagePath.dark;
     const logoHref = meta.logoPath + (sx.logoColorMode === "light" ? "footerLogoLight" : "footerLogoDark");
+
+    const handlePolicyClick = (e: React.MouseEvent) => {
+        e.preventDefault();
+        dispatch(setIsModalOpened(true));
+    };
 
     return (
         <footer
@@ -49,7 +57,13 @@ const Footer = ({meta, sx = {
                         style={{color: sx?.boldTextColor}}
                     >
                         <p>{meta.content.buttonsText.support}</p>
-                        <p>{meta.content.buttonsText.privacy}</p>
+                        <p 
+                            onClick={handlePolicyClick} 
+                            style={{ cursor: 'pointer' }}
+                            className="privacy-policy-link"
+                        >
+                            {meta.content.buttonsText.privacy}
+                        </p>
                     </div>
                 </div>
                 <div className="footer-contacts-container">

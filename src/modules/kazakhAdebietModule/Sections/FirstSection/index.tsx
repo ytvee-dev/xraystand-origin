@@ -21,7 +21,7 @@ const FirstSection = (): ReactElement => {
                             key={indx}
                             imageName={paths.cards[indx]}
                             title={card.title}
-                            backgroundColor="#FAFAFA"
+                            backgroundColor="#FFFFFF"
                             minWidth="97px"
                             maxWidth="317px"
                             imageHeight="200px"

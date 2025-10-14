@@ -10,6 +10,10 @@
         color: #FFFFFF;
         padding: 24px 0;
         text-shadow: 0 4px 8px rgba(39, 105, 165, 0.3);
+        -webkit-animation: fadeInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
+        -moz-animation: fadeInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
+        -ms-animation: fadeInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
+        -o-animation: fadeInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
         animation: fadeInDown 1s cubic-bezier(0.4, 0, 0.2, 1);
     }
 

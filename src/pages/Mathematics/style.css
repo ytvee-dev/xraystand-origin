@@ -1,7 +1,10 @@
 .math-logo {
-    font-family: var(--technical-font);
+    font-family: var(--technical-font), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     font-weight: 500;
     font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     color: #FFFFFF;
 }
@@ -14,4 +17,8 @@
 .math-section {
     padding: 40px 24px;
     background-color: #071A22;
+    /* Cross-browser compatibility fixes */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }

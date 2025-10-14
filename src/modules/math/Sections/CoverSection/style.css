@@ -1,9 +1,44 @@
 @keyframes lighting {
-    0% { opacity: 0.1; transform: scale(4.1); }
-    25% { opacity: 0.5; transform: scale(4.2); }
-    50% { opacity: 0.7; transform: scale(4.3); }
-    75% { opacity: 0.5; transform: scale(4.2); }
-    100%   { opacity: 0.1; transform: scale(4.1); }
+    0% { 
+        opacity: 0.1; 
+        -webkit-transform: scale(4.1);
+        -moz-transform: scale(4.1);
+        -ms-transform: scale(4.1);
+        -o-transform: scale(4.1);
+        transform: scale(4.1); 
+    }
+    25% { 
+        opacity: 0.5; 
+        -webkit-transform: scale(4.2);
+        -moz-transform: scale(4.2);
+        -ms-transform: scale(4.2);
+        -o-transform: scale(4.2);
+        transform: scale(4.2); 
+    }
+    50% { 
+        opacity: 0.7; 
+        -webkit-transform: scale(4.3);
+        -moz-transform: scale(4.3);
+        -ms-transform: scale(4.3);
+        -o-transform: scale(4.3);
+        transform: scale(4.3); 
+    }
+    75% { 
+        opacity: 0.5; 
+        -webkit-transform: scale(4.2);
+        -moz-transform: scale(4.2);
+        -ms-transform: scale(4.2);
+        -o-transform: scale(4.2);
+        transform: scale(4.2); 
+    }
+    100% { 
+        opacity: 0.1; 
+        -webkit-transform: scale(4.1);
+        -moz-transform: scale(4.1);
+        -ms-transform: scale(4.1);
+        -o-transform: scale(4.1);
+        transform: scale(4.1); 
+    }
 }
 
 .math-cover-section {
@@ -30,7 +65,15 @@
 
 .math-hero-background img {
     width: 100%;
+    -webkit-transform: scale(2.7);
+    -moz-transform: scale(2.7);
+    -ms-transform: scale(2.7);
+    -o-transform: scale(2.7);
     transform: scale(2.7);
+    -webkit-animation: lighting 12s linear infinite;
+    -moz-animation: lighting 12s linear infinite;
+    -ms-animation: lighting 12s linear infinite;
+    -o-animation: lighting 12s linear infinite;
     animation: lighting 12s linear infinite;
 }
 
@@ -50,15 +93,30 @@
 
 .math-hero-text {
     max-width: 350px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 16px;
+    -webkit-animation: slideInLeft 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-animation: slideInLeft 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-animation: slideInLeft 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-animation: slideInLeft 1s cubic-bezier(0.4, 0, 0.2, 1);
     animation: slideInLeft 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .math-hero-text * {
     color: #FFFFFF;
-    font-family: var(--text-font);
+    font-family: var(--text-font), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -66,22 +124,38 @@
     font-size: 45px;
     font-weight: 500;
     text-shadow: 0 4px 8px rgba(39, 105, 165, 0.3);
+    -webkit-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+    -moz-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+    -ms-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+    -o-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
     animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
 }
 
 .math-hero-text p {
     font-size: 16px;
     opacity: 0.9;
+    -webkit-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
+    -moz-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
+    -ms-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
+    -o-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
     animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
 }
 
 @keyframes slideInLeft {
     from {
         opacity: 0;
+        -webkit-transform: translateX(-50px);
+        -moz-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+        -o-transform: translateX(-50px);
         transform: translateX(-50px);
     }
     to {
         opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
         transform: translateX(0);
     }
 }
@@ -89,10 +163,18 @@
 @keyframes fadeInUp {
     from {
         opacity: 0;
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -o-transform: translateY(30px);
         transform: translateY(30px);
     }
     to {
         opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
         transform: translateY(0);
     }
 }
@@ -101,8 +183,16 @@
     max-width: 390px;
     max-height: 390px;
     z-index: 99;
+    -webkit-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
+    -webkit-filter: drop-shadow(0 12px 24px rgba(39, 105, 165, 0.3));
+    -moz-filter: drop-shadow(0 12px 24px rgba(39, 105, 165, 0.3));
+    -ms-filter: drop-shadow(0 12px 24px rgba(39, 105, 165, 0.3));
+    -o-filter: drop-shadow(0 12px 24px rgba(39, 105, 165, 0.3));
     filter: drop-shadow(0 12px 24px rgba(39, 105, 165, 0.3));
 }
 
@@ -110,18 +200,38 @@
 .math-hero-image-wrapper img:hover,
 .math-hero-image-wrapper:active,
 .math-hero-image-wrapper img:active {
+    -webkit-transform: rotate(360deg) scale(0.1);
+    -moz-transform: rotate(360deg) scale(0.1);
+    -ms-transform: rotate(360deg) scale(0.1);
+    -o-transform: rotate(360deg) scale(0.1);
     transform: rotate(360deg) scale(0.1);
     opacity: 0;
+    -webkit-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .math-hero-image-wrapper img {
     width: 100%;
+    -webkit-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-filter: drop-shadow(0 8px 16px rgba(39, 105, 165, 0.2));
+    -moz-filter: drop-shadow(0 8px 16px rgba(39, 105, 165, 0.2));
+    -ms-filter: drop-shadow(0 8px 16px rgba(39, 105, 165, 0.2));
+    -o-filter: drop-shadow(0 8px 16px rgba(39, 105, 165, 0.2));
     filter: drop-shadow(0 8px 16px rgba(39, 105, 165, 0.2));
 }
 
 .math-hero-image-wrapper:hover img {
+    -webkit-filter: drop-shadow(0 16px 32px rgba(39, 105, 165, 0.4));
+    -moz-filter: drop-shadow(0 16px 32px rgba(39, 105, 165, 0.4));
+    -ms-filter: drop-shadow(0 16px 32px rgba(39, 105, 165, 0.4));
+    -o-filter: drop-shadow(0 16px 32px rgba(39, 105, 165, 0.4));
     filter: drop-shadow(0 16px 32px rgba(39, 105, 165, 0.4));
 }
 
@@ -148,6 +258,10 @@
     .math-hero-background img {
         width: 100%;
         min-width: 500px;
+        -webkit-transform: scale(3) translateY(-10%);
+        -moz-transform: scale(3) translateY(-10%);
+        -ms-transform: scale(3) translateY(-10%);
+        -o-transform: scale(3) translateY(-10%);
         transform: scale(3) translateY(-10%);
     }
 
@@ -197,6 +311,10 @@
 #heroSm2,
 #heroSm3,
 #heroSm4 {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     z-index: 100;
 }
@@ -229,10 +347,18 @@
 }
 
 #heroArrowImage:hover {
+    -webkit-filter: blur(316px);
+    -moz-filter: blur(316px);
+    -ms-filter: blur(316px);
+    -o-filter: blur(316px);
     filter: blur(316px);
 }
 
 #heroSm1:hover {
+    -webkit-filter: blur(316px);
+    -moz-filter: blur(316px);
+    -ms-filter: blur(316px);
+    -o-filter: blur(316px);
     filter: blur(316px);
 }
 
