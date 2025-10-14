@@ -9,14 +9,31 @@ export interface CoverSectionProps {
     lang: 'kz' | 'ru';
 }
 
+const i18n = {
+    ru: {
+        placeholder: "Введите ваш e-mail",
+        buttonText: "Получить консультацию",
+        emailErrorText: "Введен некорректный почтовый адрес",
+        thanksText: "Благодарим за заявку. В ближайшее время с вами свяжется менеджер!",
+    },
+    kz: {
+        placeholder: "Электрондық поштаңызды енгізіңіз",
+        buttonText: "Кеңес алу",
+        emailErrorText: "Жарамсыз электрондық пошта мекенжайы",
+        thanksText: "Өтінішіңіз үшін рақмет. Жақын арада менеджер сізбен байланысады!",
+    },
+} as const;
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const logoPath: string = `${svgSpriteSrcPrefix}logo-color`;
 
-const CoverSection: React.FC<CoverSectionProps> = ({ content }): ReactElement => {
-    const placeholder = "Введите ваш e-mail";
-    const buttonText = "Получить консультацию";
-    const emailErrorText = "Введен некорректный почтовый адрес";
-    const thanksText = "Благодарим за заявку. В ближайшее время с вами свяжется менеджер!";
+const CoverSection: React.FC<CoverSectionProps> = ({ content, lang }): ReactElement => {
+    const t = i18n[lang] ?? i18n.ru;
+
+    const placeholder = t.placeholder;
+    const buttonText = t.buttonText;
+    const emailErrorText = t.emailErrorText;
+    const thanksText = t.thanksText;
 
     const inputRef = useRef<HTMLInputElement>(null);
     const honeyRef = useRef<HTMLInputElement>(null);
@@ -48,11 +65,9 @@ const CoverSection: React.FC<CoverSectionProps> = ({ content }): ReactElement =>
     return (
         <section id="home-welcome" className="hero-section">
             <div className="home-hero-form-wrapper">
-                {/*{status === "loading" && (*/}
-                    <div className={`${status === "loading" ? 'home-hero-thanks' : 'stub'}`}>
-                        <h2>{thanksText}</h2>
-                    </div>
-                {/*)}*/}
+                <div className={`${status === "loading" ? 'home-hero-thanks' : 'stub'}`}>
+                    <h2>{thanksText}</h2>
+                </div>
 
                 <div className="home-hero-form-logo">
                     <svg width="32px" height="40px" color={"#EFFA7A"}>
