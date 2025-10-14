@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
     const imgUrls = collectFromPathsJson(paths);
     usePreloadImages(imgUrls);
 
-    const { isContentLoaded } = usePageData();
+    const { isContentLoaded, currentLocale } = usePageData();
     const content = useLocaleContent(contentRu, contentKz);
 
     const scrollTo = (id: string) => {
@@ -52,12 +52,12 @@ const HomePage: React.FC = () => {
         >
             {!isContentLoaded && (<Spinner />)}
 
-            <CoverSection content={content} />
+            <CoverSection content={content} lang={currentLocale} />
             <AboutSection content={content.aboutSection} />
             <FeaturesSection content={content.featuresSection} />
             <DevelopmentSection content={content.developmentSection} />
             <ExamplesSection content={content.examplesSection} />
-            <ContactSection content={content} />
+            <ContactSection content={content.contactSection} lang={currentLocale} />
         </HomeLayout>
     );
 };
