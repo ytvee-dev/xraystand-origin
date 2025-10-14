@@ -25,7 +25,3 @@ export interface HomeContent {
     developmentSection: HomeSection;
     contactSection: HomeSection;
 }
-
-export interface CoverSectionProps {
-    content: HomeContent;
-}
