@@ -57,7 +57,7 @@ const HomePage: React.FC = () => {
             <FeaturesSection content={content.featuresSection} />
             <DevelopmentSection content={content.developmentSection} />
             <ExamplesSection content={content.examplesSection} />
-            <ContactSection content={content} />
+            <ContactSection content={content.contactSection} lang={currentLocale} />
         </HomeLayout>
     );
 };
