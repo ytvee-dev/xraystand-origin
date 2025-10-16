@@ -1,4 +1,4 @@
-import React, {type ReactElement} from "react";
+import React, {type ReactElement, useRef, useState} from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import type {HomeSection} from "../../types";
 import "./style.css";
@@ -19,6 +19,8 @@ const i18n = {
         commentText: "Ваш вопрос",
         commentPlaceholder: "Ваш вопрос...",
         buttonText: "Запросить демонстрацию",
+        nameErrorText: "Пожалуйста, введите ваше имя",
+        phoneErrorText: "Пожалуйста, введите номер телефона",
     },
     kz: {
         nameText: "Аты-жөні",
@@ -28,6 +30,8 @@ const i18n = {
         commentText: "Сұрақ/пікір",
         commentPlaceholder: "Сұрағыңызды жазыңыз...",
         buttonText: "Демонстрацияға өтініш беру",
+        nameErrorText: "Атыңызды енгізіңіз",
+        phoneErrorText: "Телефон нөмірін енгізіңіз",
     },
 } as const;
 
@@ -78,6 +82,7 @@ const IconEmail = () => (
 const ContactSection: React.FC<ContactSectionProps> = ({content, lang}): ReactElement => {
     const t = i18n[lang] ?? i18n.ru;
     const [state, handleSubmit] = useForm(FORM_ID);
+    const [localErrors, setLocalErrors] = useState<{name?: string; phone?: string}>({});
 
     const nameText = t.nameText;
     const namePlaceholder = t.namePlaceholder;
@@ -86,11 +91,36 @@ const ContactSection: React.FC<ContactSectionProps> = ({content, lang}): ReactEl
     const commentText = t.commentText;
     const commentPlaceholder = t.commentPlaceholder;
     const buttonText = t.buttonText;
+    const nameErrorText = t.nameErrorText;
+    const phoneErrorText = t.phoneErrorText;
+
+    const nameRef = useRef<HTMLInputElement>(null);
+    const phoneRef = useRef<HTMLInputElement>(null);
 
     if (!content.content) return <></>;
 
     const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        
+        const name = nameRef.current?.value?.trim() || "";
+        const phone = phoneRef.current?.value?.trim() || "";
+        
+        const errors: {name?: string; phone?: string} = {};
+        
+        if (!name) {
+            errors.name = nameErrorText;
+        }
+        
+        if (!phone) {
+            errors.phone = phoneErrorText;
+        }
+        
+        if (Object.keys(errors).length > 0) {
+            setLocalErrors(errors);
+            return;
+        }
+        
+        setLocalErrors({});
         await handleSubmit(e);
     };
 
@@ -145,12 +175,15 @@ const ContactSection: React.FC<ContactSectionProps> = ({content, lang}): ReactEl
                     <label className="home-form-field">
                         <span className="home-form-label">{nameText}</span>
                         <input
+                            ref={nameRef}
                             className="home-form-input"
                             type="text"
                             name="name"
                             placeholder={namePlaceholder}
-                            required
+                            onFocus={() => localErrors.name && setLocalErrors(prev => ({...prev, name: undefined}))}
+                            onInput={() => localErrors.name && setLocalErrors(prev => ({...prev, name: undefined}))}
                         />
+                        {localErrors.name && <p className="form-error">{localErrors.name}</p>}
                         <ValidationError 
                             prefix="Name" 
                             field="name"
@@ -161,12 +194,15 @@ const ContactSection: React.FC<ContactSectionProps> = ({content, lang}): ReactEl
                     <label className="home-form-field">
                         <span className="home-form-label">{phoneText}</span>
                         <input
+                            ref={phoneRef}
                             className="home-form-input"
                             type="tel"
                             name="phone"
                             placeholder={phonePlaceholder}
-                            required
+                            onFocus={() => localErrors.phone && setLocalErrors(prev => ({...prev, phone: undefined}))}
+                            onInput={() => localErrors.phone && setLocalErrors(prev => ({...prev, phone: undefined}))}
                         />
+                        {localErrors.phone && <p className="form-error">{localErrors.phone}</p>}
                         <ValidationError 
                             prefix="Phone" 
                             field="phone"
