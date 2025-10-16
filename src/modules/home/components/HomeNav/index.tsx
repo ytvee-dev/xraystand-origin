@@ -5,7 +5,6 @@ import "./style.css";
 
 const navOptions: NavigationConfig = {
     ru: [
-        { key: "welcome", label: "Добро пожаловать" },
         { key: "about", label: "О проекте" },
         { key: "features", label: "Преимущества" },
         { key: "development", label: "Разработка" },
@@ -13,7 +12,6 @@ const navOptions: NavigationConfig = {
         { key: "contact", label: "Контакты" },
     ],
     kz: [
-        { key: "welcome", label: "Қош келдіңіз" },
         { key: "about", label: "Жоба туралы" },
         { key: "features", label: "Артықшылықтар" },
         { key: "development", label: "Әзірлеу" },
@@ -23,8 +21,7 @@ const navOptions: NavigationConfig = {
 };
 
 const ID_BY_KEY: IdMapping = {
-    welcome: "home-welcome",
-    about: "home-about", 
+    about: "home-about",
     features: "home-features",
     examples: "home-examples",
     development: "home-development",
