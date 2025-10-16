@@ -123,7 +123,6 @@ const CoverSection: React.FC<CoverSectionProps> = ({ content, lang }): ReactElem
                         autoComplete="off"
                         style={{ display: "none" }}
                     />
-                    {/*<input type="hidden" name="source" value="xraystand.com" />*/}
                     <input type="hidden" name="subject" value="Только почта" />
                     <button type="submit" disabled={state.submitting}>
                         <span>{state.submitting ? "Отправка..." : buttonText}</span>

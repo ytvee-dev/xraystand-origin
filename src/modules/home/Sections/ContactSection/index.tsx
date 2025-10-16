@@ -178,7 +178,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({content, lang}): ReactEl
                         <span className="home-form-label">{commentText}</span>
                         <textarea
                             className="home-form-textarea"
-                            name="source"
+                            name="message"
                             placeholder={commentPlaceholder}
                             rows={4}
                         />
@@ -188,7 +188,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({content, lang}): ReactEl
                             errors={state.errors}
                         />
                     </label>
-
+                    <input type="hidden" name="subject" value="Заявка на созвон" />
                     <button className="home-form-cta" type="submit" disabled={state.submitting}>
                         <span>{state.submitting ? "Отправка..." : buttonText}</span>
                         <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
