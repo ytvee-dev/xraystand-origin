@@ -261,6 +261,16 @@
                 transition: opacity 0.2s ease-in-out;
             }
         }
+
+        .home-hero-form-input.loading {
+            opacity: 0.7;
+            pointer-events: none;
+        }
+
+        .home-hero-form-input.loading button {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
     }
 
     .home-hero-cover {
