@@ -18,9 +18,6 @@ import * as paths from "@modules/home/locales/paths.json";
 import {svgSpriteSrcPrefix} from "@utils/constants";
 import './style.css';
 
-// todo: move to env
-// const EMAIL = "xxxxxxx@gmail.com";
-
 const MainLogo = () => {
     const { isMobile } = usePageData();
     return (
