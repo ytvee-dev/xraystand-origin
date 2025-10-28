@@ -11,7 +11,7 @@ export interface CoverSectionProps {
     lang: Languages;
 }
 
-const FORM_ID = import.meta.env.VITE_FROMSPREE_ID ?? 'meorvder';
+const FORM_ID = import.meta.env.VITE_FROMSPREE_ID ?? 'xwpwlynb';
 
 const i18n = {
     [Languages.RUSSIAN]: {
