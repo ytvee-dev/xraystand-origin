@@ -4,6 +4,7 @@ import type {IContentLabel, TContentItem} from "@utils/types/trafficLawsTypes";
 import {useDispatch, useSelector} from "react-redux";
 import {usePreloadImages} from "@hooks/usePreloadImages.ts";
 import {setIsModalOpened} from "@store/slices/Application";
+import {setModalContentName} from "@store/slices/TrafficLawsPage";
 import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
 import {usePageData} from "@hooks/usePageData";
 import DefaultLayout from "@layout/Default";
@@ -121,7 +122,10 @@ const TrafficsLawsPage = (): ReactElement => {
     const isModalOpened: boolean = useSelector((state: TRootState) => state.application.isModalOpened);
     const modalContentName: TContentItem =
         useSelector((state: TRootState) => state.trafficLaws.modalContentName) as IContentLabel;
-    const title = modalContentName?.title || "";
+    
+    // Проверяем, что modalContentName - это объект с title (не пустая строка)
+    const hasModalContent = modalContentName && typeof modalContentName === 'object' && 'title' in modalContentName;
+    const title = hasModalContent ? (modalContentName as IContentLabel).title || "" : "";
 
     const splitString = (str: string): string[] => {
         const i = str.indexOf("—");
@@ -132,13 +136,15 @@ const TrafficsLawsPage = (): ReactElement => {
     }
 
     const PoliceManModalContent = (): ReactElement => {
+        if (!hasModalContent) return <></>;
+        const content = modalContentName as IContentLabel;
         return (
             <div className="tl-modal-content">
-                {modalContentName.additionalInfo?.pointsTextList.map((item: string, index: number) => (
+                {content.additionalInfo?.pointsTextList.map((item: string, index: number) => (
                     <DefaultImageCard
                         key={index}
-                        imageId={modalPolicemanImagesPaths[modalContentName.title!][index]}
-                        title={splitString(modalContentName.additionalInfo?.pointsTextList[index] as string)[0]}
+                        imageId={modalPolicemanImagesPaths[content.title!][index]}
+                        title={splitString(content.additionalInfo?.pointsTextList[index] as string)[0]}
                         label={splitString(item as string)[1]}
                     />
                 ))}
@@ -147,13 +153,15 @@ const TrafficsLawsPage = (): ReactElement => {
     };
 
     const SignModalContent = (): ReactElement => {
+        if (!hasModalContent) return <></>;
+        const content = modalContentName as IContentLabel;
         return (
             <div className="tl-modal-content">
-                {modalContentName.additionalInfo?.pointsTextList.map((_item: string, index: number) => (
+                {content.additionalInfo?.pointsTextList.map((_item: string, index: number) => (
                     <DefaultImageCard
                         key={index}
-                        imageId={signsImagesPaths[modalContentName.title!][index]}
-                        title={modalContentName.additionalInfo?.pointsTextList[index]}
+                        imageId={signsImagesPaths[content.title!][index]}
+                        title={content.additionalInfo?.pointsTextList[index]}
                     />
                 ))}
             </div>
@@ -162,19 +170,23 @@ const TrafficsLawsPage = (): ReactElement => {
 
     const closeModal = () => {
         dispatch(setIsModalOpened(false));
+        dispatch(setModalContentName(""));
     };
+
+    // Открываем модальное окно только если есть modalContentName (т.е. это модальное окно для знаков/жестов)
+    const shouldOpenModal = isModalOpened && hasModalContent;
 
     return (
         <DefaultLayout langSwitchColor={'#249FF5'}>
             <div className="traffics-laws-page">
                 {!isContentLoaded && (<Spinner />)}
                 <FlexibleModal
-                    isModalOpened={isModalOpened}
+                    isModalOpened={shouldOpenModal}
                     closeAction={closeModal}
                 >
-                    {isModalOpened && (
+                    {shouldOpenModal && hasModalContent && (
                         <div>
-                            <p className="tl-modal-title">{modalContentName.title}</p>
+                            <p className="tl-modal-title">{(modalContentName as IContentLabel).title}</p>
                             <div className="tl-modal-content">
                                 {title in modalPolicemanImagesPaths && <PoliceManModalContent/>}
                                 {title in signsImagesPaths && <SignModalContent/>}
