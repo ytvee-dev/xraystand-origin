@@ -5,6 +5,7 @@ import {trafficLawsFooterMeta} from "../../components/common/Footers/StrictFoote
 import {useSelector} from "react-redux";
 import StrictFooter from "../../components/common/Footers/StrictFooter";
 import CenteredHeader from "../../components/common/CenteredHeader";
+import PrivacyPolicyModal from "@components/common/PrivacyPolicyModal";
 import "./style.css";
 
 export interface IDefaultLayoutProps {
@@ -76,6 +77,8 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
                 }
                 sx={sx}
             />
+            
+            <PrivacyPolicyModal />
         </div>
     );
 };
