@@ -6,8 +6,8 @@ export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
     ru: {
         logoPath: `./assets/images/sprite.svg#`,
         contacts: {
-            email: "info@xraystand.kz",
-            phone: "+7 (7172) 73-50-50",
+            email: "info@edurecycle.com",
+            phone: "+7 706 624 6818",
         },
         copyright: "© X-Ray Stand. Все права защищены",
         content: {
@@ -68,8 +68,8 @@ export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
     kz: {
         logoPath: `./assets/images/sprite.svg#`,
         contacts: {
-            email: "info@xraystand.kz",
-            phone: "+7 (7172) 73-50-50",
+            email: "info@edurecycle.com",
+            phone: "+7 706 624 6818",
         },
         copyright: "© X-Ray Stand. Барлық құқықтар қорғалған.",
         content: {
