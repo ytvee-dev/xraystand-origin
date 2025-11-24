@@ -19,7 +19,7 @@ export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
                 privacy: "Политика конфиденциальности",
             },
             madeBy: {
-                link: "https://ytvee.com/service",
+                link: "https://ytvee.com/services",
                 imagePath: {
                     light: madeBySrcLight,
                     dark: madeBySrcDark,
@@ -81,7 +81,7 @@ export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
                 privacy: "Құпиялық саясаты",
             },
             madeBy: {
-                link: "https://ytvee.com/service",
+                link: "https://ytvee.com/services",
                 imagePath: {
                     light: madeBySrcLight,
                     dark: madeBySrcDark,

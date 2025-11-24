@@ -14,7 +14,7 @@ export const homeFooterMeta: IHomeFooterMeta = {
         companyLabel: '"Educational Recycle Systems"',
         copyright: "Все права защищены",
         madeBy: {
-            link: "https://ytvee.com/service",
+            link: "https://ytvee.com/services",
             label: 'Made by',
             author: 'YTVEE',
         },
@@ -76,7 +76,7 @@ export const homeFooterMeta: IHomeFooterMeta = {
         companyLabel: '"Educational Recycle Systems"',
         copyright: "Барлық құқықтар қорғалған",
             madeBy: {
-                link: "https://ytvee.com/service",
+                link: "https://ytvee.com/services",
             label: 'Made by',
             author: 'YTVEE',
         },
