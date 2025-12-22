@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import {usePreloadImages} from "@hooks/usePreloadImages.ts";
 import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
 import {usePageData} from "@hooks/usePageData";
@@ -28,7 +28,7 @@ const MainLogo = () => {
 };
 
 const HomePage: React.FC = () => {
-    const imgUrls = collectFromPathsJson(paths);
+    const imgUrls = useMemo(() => collectFromPathsJson(paths), []);
     usePreloadImages(imgUrls);
 
     const { isContentLoaded, currentLocale } = usePageData();
