@@ -1,6 +1,6 @@
 /* TEAM */
-Developer: YTVEE-DEV (Evgeniy Tyan)
-Site: https://ytvee.com
+Developer: YTDEV (Evgeniy Tyan)
+Site: https://ytdev.me
 GitHub: https://github.com/ytvee-dev
 
 /* SITE */

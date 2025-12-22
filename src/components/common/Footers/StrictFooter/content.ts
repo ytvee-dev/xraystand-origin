@@ -1,33 +1,35 @@
-import madeBySrcLight from "../../../../../public/assets/images/madeByLight.avif";
 import madeBySrcDark from "../../../../../public/assets/images/madeByDark.avif";
-import type {IDefaultDarkFooterMeta} from "./types.ts";
+import madeBySrcLight from "../../../../../public/assets/images/madeByLight.avif";
+
+import type { IDefaultDarkFooterMeta } from "./types.ts";
 
 export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
-    ru: {
-        logoPath: `./assets/images/sprite.svg#`,
-        contacts: {
-            email: "info@edurecycle.com",
-            phone: "+7 706 624 6818",
+  ru: {
+    logoPath: `./assets/images/sprite.svg#`,
+    contacts: {
+      email: "info@edurecycle.com",
+      phone: "+7 706 624 6818",
+    },
+    copyright: "© X-Ray Stand. Все права защищены",
+    content: {
+      description:
+        "Данный продукт защищён авторским правом в соответствии " +
+        "с Законом об авторском праве и смежных правах РК. Информация " +
+        "носит ознакомительный характер.",
+      buttonsText: {
+        support: "Техподдержка",
+        privacy: "Политика конфиденциальности",
+      },
+      madeBy: {
+        link: "https://ytdev.me",
+        imagePath: {
+          light: madeBySrcLight,
+          dark: madeBySrcDark,
         },
-        copyright: "© X-Ray Stand. Все права защищены",
-        content: {
-            description: "Данный продукт защищён авторским правом в соответствии " +
-                "с Законом об авторском праве и смежных правах РК. Информация " +
-                "носит ознакомительный характер.",
-            buttonsText: {
-                support: "Техподдержка",
-                privacy: "Политика конфиденциальности",
-            },
-            madeBy: {
-                link: "https://ytvee.com/services",
-                imagePath: {
-                    light: madeBySrcLight,
-                    dark: madeBySrcDark,
-                },
-            },
-            privacyPolicyText: {
-                title: 'Политика конфиденциальности',
-                content: `
+      },
+      privacyPolicyText: {
+        title: "Политика конфиденциальности",
+        content: `
                     <p>Перед использованием Сайта, пользователям рекомендуется ознакомиться с условиями настоящей Политики конфиденциальности.</p>
                     <h3>1. Общие положения</h3>
                     <p>1.1. Использование Сайта в любой форме означает безоговорочное согласие Пользователя с условиями настоящей Политики конфиденциальности (далее – Политика) и указанными в ней условиями обработки его персональной информации. В случае несогласия с условиями Политики конфиденциальности Пользователь должен воздержаться от использования Сайта.</p>
@@ -61,35 +63,36 @@ export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
                     <p>6.1. Настоящая Политика, отношения между Пользователем и Администрацией, возникающие в связи с применением настоящей Политики, а также вопросы, не урегулированные настоящей Политикой, регулируются действующим законодательством Республики Казахстан.</p>
                     <h3>7. Контактная информация</h3>
                     <p>Если у вас есть вопросы по данной Политике конфиденциальности, свяжитесь с нами по адресу: info@xraystand.kz</p>
-                `
-            },
-        }
+                `,
+      },
     },
-    kz: {
-        logoPath: `./assets/images/sprite.svg#`,
-        contacts: {
-            email: "info@edurecycle.com",
-            phone: "+7 706 624 6818",
+  },
+  kz: {
+    logoPath: `./assets/images/sprite.svg#`,
+    contacts: {
+      email: "info@edurecycle.com",
+      phone: "+7 706 624 6818",
+    },
+    copyright: "© X-Ray Stand. Барлық құқықтар қорғалған.",
+    content: {
+      description:
+        "Осы өнім ҚР Авторлық құқық және сабақтас құқықтар " +
+        "туралы Заңына сәйкес авторлық құқықпен қорғалған. " +
+        "Ақпарат тек танысу мақсатында ұсынылған.",
+      buttonsText: {
+        support: "Техникалық қолдау",
+        privacy: "Құпиялық саясаты",
+      },
+      madeBy: {
+        link: "https://ytdev.me",
+        imagePath: {
+          light: madeBySrcLight,
+          dark: madeBySrcDark,
         },
-        copyright: "© X-Ray Stand. Барлық құқықтар қорғалған.",
-        content: {
-            description: "Осы өнім ҚР Авторлық құқық және сабақтас құқықтар " +
-                "туралы Заңына сәйкес авторлық құқықпен қорғалған. " +
-                "Ақпарат тек танысу мақсатында ұсынылған.",
-            buttonsText: {
-                support: "Техникалық қолдау",
-                privacy: "Құпиялық саясаты",
-            },
-            madeBy: {
-                link: "https://ytvee.com/services",
-                imagePath: {
-                    light: madeBySrcLight,
-                    dark: madeBySrcDark,
-                },
-            },
-            privacyPolicyText: {
-                title: 'Құпиялық саясаты',
-                content: `
+      },
+      privacyPolicyText: {
+        title: "Құпиялық саясаты",
+        content: `
                     <p>Сайтты пайдаланбас бұрын пайдаланушыларға осы Құпиялық саясатының шарттарымен танысу ұсынылады.</p>
                     <h3>1. Жалпы ережелер</h3>
                     <p>1.1. Сайтты кез келген түрде пайдалану пайдаланушының осы Құпиялық саясатының (бұдан әрі – Саясат) шарттарымен және оның жеке ақпаратын өңдеу шарттарымен шартсыз келісімді білдіреді. Құпиялық саясатының шарттарымен келіспеген жағдайда пайдаланушы Сайтты пайдаланудан бас тартуы тиіс.</p>
@@ -123,8 +126,8 @@ export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
                     <p>6.1. Осы Саясат, пайдаланушы мен Әкімшілік арасындағы осы Саясатты қолдануға байланысты туындайтын қатынастар, сондай-ақ осы Саясатпен реттелмеген мәселелер Қазақстан Республикасының қолданыстағы заңнамасымен реттеледі.</p>
                     <h3>7. Байланыс ақпараты</h3>
                     <p>Осы Құпиялық саясаты бойынша сұрақтарыңыз болса, бізге мына мекенжай бойынша хабарласыңыз: info@xraystand.kz</p>
-                `
-            },
-        }
+                `,
+      },
     },
+  },
 };
