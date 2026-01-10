@@ -10,7 +10,6 @@ import PeriodicTable from "@modules/chemistry/components/PeriodicTable";
 import PeriodicTableMobile from "@modules/chemistry/components/PeriodicTableMobile";
 import FlexibleModal from "@components/common/Modal/FlexibleModal";
 import ChemistryModalContent from "@modules/chemistry/components/ChemistryModalContent";
-import Spinner from "@components/common/Spinner";
 import * as contentKZ from "@modules/chemistry/locales/kaz.json";
 import * as contentRU from "@modules/chemistry/locales/rus.json";
 import "./style.css";
@@ -19,7 +18,7 @@ import Button from "@mui/material/Button";
 import {ButtonGroup} from "@mui/material";
 
 const Chemistry = (): ReactElement => {
-    const { currentLocale, screenWidth, isContentLoaded } = usePageData();
+    const { currentLocale, screenWidth } = usePageData();
     const sectionMeta = useLocaleContent(contentRU, contentKZ);
     const dispatch = useDispatch();
     const isElementModalOpened: boolean = useSelector((state: TRootState) => state.chemistry.isModalOpened);
@@ -75,7 +74,6 @@ const Chemistry = (): ReactElement => {
     return (
         <DefaultLayout langSwitchColor={'#249FF5'}>
             <div className="chemistry-page">
-                {!isContentLoaded && (<Spinner />)}
                 <CustomContentSection {...sectionMetaTranslation}>
                 <FlexibleModal
                     isModalOpened={isElementModalOpened}
