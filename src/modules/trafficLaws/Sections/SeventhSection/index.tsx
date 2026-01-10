@@ -4,15 +4,13 @@ import TwoColumnSection from "../../../../components/common/Sections/TwoColumnSe
 import LargeCard from "../../../../components/common/Cards/LargeCard";
 import DefaultCardsListOL from "../../components/DefaultCardsListOL";
 import SquareImageViewer from "../../components/SquareImageViewer";
-import usePageImagesIds from "../../../../hooks/usePageImagesIds";
-import {PageIds} from "../../../../domains/Translate";
 import {useLocaleContent} from "@hooks/useLocale";
 import * as textContentKz from "../../locales/kaz.json";
 import * as textContentRu from "../../locales/rus.json";
+import * as paths from "../../locales/paths.json";
 
 const SeventhSection = (): ReactElement | null => {
     const translation = useLocaleContent(textContentRu, textContentKz);
-    const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
 
     if (!translation.seventhSection) return null;
 
@@ -29,7 +27,7 @@ const SeventhSection = (): ReactElement | null => {
                 >
                     <DefaultCardsListOL
                         content={translation.seventhSection["content"] as TContentItem[]}
-                        imageIdData={pageImageIdData?.seventhSection?.contentListData ?? []}
+                        imageIdData={paths.trafficLawsPage.seventhSection.contentListData}
                         isCardsClickable={true}
                         smallImageSizes={true}
                     />
