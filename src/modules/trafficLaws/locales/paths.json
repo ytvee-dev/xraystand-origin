@@ -1,0 +1,81 @@
+{
+  "trafficLawsPage": {
+    "firstSection": {
+      "contentListData": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051935/roadUser1_xjqzsz.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051935/roadUser2_mqiixs.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051936/roadUser3_aolg94.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051936/roadUser4_h4zszo.webp"
+      ],
+      "globalData": []
+    },
+    "secondSection": {
+      "contentListData": [],
+      "globalData": [
+        "trafficLawsPage/trafficLight"
+      ]
+    },
+    "thirdSection": {
+      "contentListData": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051940/transitionRules1_vkoedk.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051941/transitionRules2_ewy48a.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051941/transitionRules3_ptbh5s.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051942/transitionRules4_abwnne.webp"
+      ],
+      "globalData": []
+    },
+    "fourthSection": {
+      "contentListData": [],
+      "globalData": [
+        "trafficLawsPage/cyclistsScooters"
+      ]
+    },
+    "fifthSection": {
+      "contentListData": [
+        "trafficLawsPage/dangerousTransitionError1",
+        "trafficLawsPage/dangerousTransitionError2",
+        "trafficLawsPage/dangerousTransitionError3",
+        "trafficLawsPage/dangerousTransitionError4"
+      ],
+      "globalData": []
+    },
+    "sixthSection": {
+      "contentListData": [
+        "trafficLawsPage/roadSign1",
+        "trafficLawsPage/roadSign2",
+        "trafficLawsPage/roadSign3",
+        "trafficLawsPage/roadSign4",
+        "trafficLawsPage/roadSign5"
+      ],
+      "globalData": []
+    },
+    "seventhSection": {
+      "contentListData": [
+        "trafficLawsPage/objectsOfTrafficControllerGestures1",
+        "trafficLawsPage/objectsOfTrafficControllerGestures2"
+      ],
+      "globalData": [
+        "trafficLawsPage/pointsman"
+      ]
+    },
+    "eighthSection": {
+      "contentListData": [
+        "trafficLawsPage/safetyAtSchoolAndInTheYard1",
+        "trafficLawsPage/safetyAtSchoolAndInTheYard2",
+        "trafficLawsPage/safetyAtSchoolAndInTheYard3",
+        "trafficLawsPage/safetyAtSchoolAndInTheYard4"
+      ],
+      "globalData": []
+    },
+    "ninthSection": {
+      "contentListData": [
+        "trafficLawsPage/remember1",
+        "trafficLawsPage/remember2",
+        "trafficLawsPage/remember3",
+        "trafficLawsPage/remember4",
+        "trafficLawsPage/remember5"
+      ],
+      "globalData": []
+    }
+  }
+}
