@@ -1,19 +1,24 @@
 {
+  "backgrounds": {
+    "coverImg": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063067/cover_l3hbbb_pxdbju.webp",
+    "coverMobile": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063064/coverMobile_tluq8m_p1x2pm.webp"
+  },
   "cards": [
-    "kazakhAdebiet/cards/yurta.png",
-    "kazakhAdebiet/cards/zhirau.png",
-    "kazakhAdebiet/cards/19Centre.png",
-    "kazakhAdebiet/cards/sssr.png",
-    "kazakhAdebiet/cards/independence.png"
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063046/yurta_g21qzk_dwjvpo.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063047/zhirau_xj4bvv_mmk3it.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063050/19Centre_gc7ws2_fpe3cu.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063052/sssr_bs3u0n_bok2fe.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063049/independence_mbszks_gdplyb.webp"
   ],
   "people": [
-    "kazakhAdebiet/people/ahmet.png",
-    "kazakhAdebiet/people/shakarim.png",
-    "kazakhAdebiet/people/magzhan.png",
-    "kazakhAdebiet/people/zhusipbek.png",
-    "kazakhAdebiet/people/dulatov.png",
-    "kazakhAdebiet/people/saken.png",
-    "kazakhAdebiet/people/ilyas.png",
-    "kazakhAdebiet/people/mailin.png"
-  ]
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063057/ahmet_xuv5te_apudky.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063055/shakarim_eh9ylk_hyqrfj.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063058/magzhan_ceszz1_thwas3.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063060/zhusipbek_wuwnhr_chdmlp.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063061/dulatov_m9c8mz_gpqspl.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063063/saken_n9yfrp_ofuskl.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063055/ilyas_fwsf6l_nn0cbd.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063053/mailin_ugziz7_g3zqhv.webp"
+  ],
+  "tree": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768063066/tree_w0urvs_tp2rd2.webp"
 }

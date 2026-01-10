@@ -1,12 +1,13 @@
 import { type ReactElement } from "react";
 import {useLocale, useLocaleContent} from "@hooks/useLocale";
-import road from "@assets/images/trafficLawsPage/coverSection/road.avif";
-import carPng from "@assets/images/trafficLawsPage/coverSection/car.png";
-import cloudsImg from "@assets/images/trafficLawsPage/coverSection/clouds.png";
-import housesImg from "@assets/images/trafficLawsPage/coverSection/houses.png";
 import * as textContentKz from "../../locales/kaz.json";
 import * as textContentRu from "../../locales/rus.json";
 import "./style.css";
+
+const housesImg = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051919/houses_iznhzw.webp';
+const cloudsImg = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051919/clouds_nhylpp.webp';
+const carPng = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051919/car_kutkjb.webp';
+const road = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051920/road_pzv2g5.avif';
 
 const CoverSection = (): ReactElement => {
     const currentLocale = useLocale();

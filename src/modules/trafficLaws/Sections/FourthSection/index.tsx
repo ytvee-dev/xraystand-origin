@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import type {TContentItem} from "../../../../utils/types/trafficLawsTypes";
+import type {TContentItem} from "../../types";
 import TwoColumnSection from "../../../../components/common/Sections/TwoColumnSection";
 import LargeCard from "../../../../components/common/Cards/LargeCard";
 import DefaultCardsListOL from "../../components/DefaultCardsListOL";
@@ -25,7 +25,7 @@ const FourthSection = (): ReactElement | null => {
                 </LargeCard>
             }
             rightColumn={
-                <SquareImageViewer path={"/assets/images/trafficLawsPage/cyclistsScooters.png"} width={564}/>
+                <SquareImageViewer path={"https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051920/cyclistsScooters_w9fulf.webp"} width={564}/>
             }
         />
     );

@@ -1,9 +1,10 @@
 import {type ReactElement} from "react";
 import type {TRootState} from "../../store";
-import type {IContentLabel, TContentItem} from "@utils/types/trafficLawsTypes";
+import type {IContentLabel, TContentItem} from "@modules/trafficLaws/types";
 import {useDispatch, useSelector} from "react-redux";
 import {usePreloadImages} from "@hooks/usePreloadImages.ts";
 import {setIsModalOpened} from "@store/slices/Application";
+import {setModalContentName} from "@store/slices/TrafficLawsPage";
 import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
 import {usePageData} from "@hooks/usePageData";
 import DefaultLayout from "@layout/Default";
@@ -20,93 +21,93 @@ import CoverSection from "@modules/trafficLaws/Sections/CoverSection";
 import FlexibleModal from "@components/common/Modal/FlexibleModal";
 import DefaultImageCard from "@modules/trafficLaws/components/DefaultImageCard";
 import Spinner from "@components/common/Spinner";
-import * as paths from '@data/imageSrc.json';
+import * as paths from '../../modules/trafficLaws/locales/paths.json';
 import "./style.css";
 
 const modalPolicemanImagesPaths: Record<string, string[]> = {
     "Для пешеходов": [
-        "trafficLawsPage/modal/policemanHandUp",
-        "trafficLawsPage/modal/policemanHandStop",
-        "trafficLawsPage/modal/policemanHandsSide"
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandUp_v9nefx.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandStop_yfoevu.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051922/policemanHandsSide_fiqpfo.webp"
     ],
     "Для водителей": [
-        "trafficLawsPage/modal/policemanHandsSide",
-        "trafficLawsPage/modal/policemanInProfile",
-        "trafficLawsPage/modal/policemanHandUp",
-        "trafficLawsPage/modal/policemanHandStop",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051922/policemanHandsSide_fiqpfo.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanInProfile_k9sw1o.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandUp_v9nefx.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandStop_yfoevu.webp",
     ],
     "Реттеушінің қимылдары": [
-        "trafficLawsPage/modal/policemanHandUp",
-        "trafficLawsPage/modal/policemanHandStop",
-        "trafficLawsPage/modal/policemanHandsSide"
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandUp_v9nefx.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandStop_yfoevu.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051922/policemanHandsSide_fiqpfo.webp"
     ],
     "Көлік жүргізушілерге": [
-        "trafficLawsPage/modal/policemanHandsSide",
-        "trafficLawsPage/modal/policemanInProfile",
-        "trafficLawsPage/modal/policemanHandUp",
-        "trafficLawsPage/modal/policemanHandStop",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051922/policemanHandsSide_fiqpfo.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanInProfile_k9sw1o.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandUp_v9nefx.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandStop_yfoevu.webp",
     ],
 };
 
 const signsImagesPaths: Record<string, string[]> = {
     "Информационные": [
-        "trafficLawsPage/modal/signs/toptop",
-        "trafficLawsPage/modal/signs/bus",
-        "trafficLawsPage/modal/signs/plus",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/toptop_f7kwwa.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/bus_h6fe55.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/plus_xrqyhz.webp",
     ],
     "Приоритета": [
-        "trafficLawsPage/modal/signs/romb",
-        "trafficLawsPage/modal/signs/triangle",
-        "trafficLawsPage/modal/signs/stop",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/romb_fjh25o.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051929/triangle_kazg0z.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/stop_a2motr.webp",
     ],
     "Предписывающие": [
-        "trafficLawsPage/modal/signs/up",
-        "trafficLawsPage/modal/signs/human",
-        "trafficLawsPage/modal/signs/bibicycle",
-        "trafficLawsPage/modal/signs/down",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051929/up_c0q0jt.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/human_h2xl4b.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/bibicycle_ylnlet.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051925/down_vbkzkj.webp",
     ],
     "Запрещающие": [
-        "trafficLawsPage/modal/signs/nopeople",
-        "trafficLawsPage/modal/signs/kirpich",
-        "trafficLawsPage/modal/signs/nobicycle",
-        "trafficLawsPage/modal/signs/nofast",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/nopeople_d3k6wq.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/kirpich_ejm3eb.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/nobicycle_fsu3ur.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/nofast_hh6ydx.webp",
     ],
     "Предупреждающие": [
-        "trafficLawsPage/modal/signs/child",
-        "trafficLawsPage/modal/signs/zebra",
-        "trafficLawsPage/modal/signs/bicycle",
-        "trafficLawsPage/modal/signs/train",
-        "trafficLawsPage/modal/signs/dangerous",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/child_cgwypg.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051930/zebra_bayfjc.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/bicycle_oarkev.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/train_kgk3az.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051925/dangerous_vmcqez.webp",
     ],
 
     "Ақпараттық белгілер": [
-        "trafficLawsPage/modal/signs/toptop",
-        "trafficLawsPage/modal/signs/bus",
-        "trafficLawsPage/modal/signs/plus",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/toptop_f7kwwa.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/bus_h6fe55.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/plus_xrqyhz.webp",
     ],
     "Басымдық белгілері": [
-        "trafficLawsPage/modal/signs/romb",
-        "trafficLawsPage/modal/signs/triangle",
-        "trafficLawsPage/modal/signs/stop",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/romb_fjh25o.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051929/triangle_kazg0z.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/stop_a2motr.webp",
     ],
     "Нұсқаушы белгілер": [
-        "trafficLawsPage/modal/signs/up",
-        "trafficLawsPage/modal/signs/human",
-        "trafficLawsPage/modal/signs/bibicycle",
-        "trafficLawsPage/modal/signs/down",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051929/up_c0q0jt.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/human_h2xl4b.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/bibicycle_ylnlet.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051925/down_vbkzkj.webp",
     ],
     "Тыйым салатын белгілер": [
-        "trafficLawsPage/modal/signs/nopeople",
-        "trafficLawsPage/modal/signs/kirpich",
-        "trafficLawsPage/modal/signs/nobicycle",
-        "trafficLawsPage/modal/signs/nofast",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/nopeople_d3k6wq.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/kirpich_ejm3eb.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/nobicycle_fsu3ur.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/nofast_hh6ydx.webp",
     ],
     "Ескерту белгілері": [
-        "trafficLawsPage/modal/signs/child",
-        "trafficLawsPage/modal/signs/zebra",
-        "trafficLawsPage/modal/signs/bicycle",
-        "trafficLawsPage/modal/signs/train",
-        "trafficLawsPage/modal/signs/dangerous",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/child_cgwypg.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051930/zebra_bayfjc.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/bicycle_oarkev.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/train_kgk3az.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051925/dangerous_vmcqez.webp",
     ],
 
 };
@@ -121,7 +122,9 @@ const TrafficsLawsPage = (): ReactElement => {
     const isModalOpened: boolean = useSelector((state: TRootState) => state.application.isModalOpened);
     const modalContentName: TContentItem =
         useSelector((state: TRootState) => state.trafficLaws.modalContentName) as IContentLabel;
-    const title = modalContentName?.title || "";
+    
+    const hasModalContent = modalContentName && typeof modalContentName === 'object' && 'title' in modalContentName;
+    const title = hasModalContent ? (modalContentName as IContentLabel).title || "" : "";
 
     const splitString = (str: string): string[] => {
         const i = str.indexOf("—");
@@ -132,13 +135,15 @@ const TrafficsLawsPage = (): ReactElement => {
     }
 
     const PoliceManModalContent = (): ReactElement => {
+        if (!hasModalContent) return <></>;
+        const content = modalContentName as IContentLabel;
         return (
             <div className="tl-modal-content">
-                {modalContentName.additionalInfo?.pointsTextList.map((item: string, index: number) => (
+                {content.additionalInfo?.pointsTextList.map((item: string, index: number) => (
                     <DefaultImageCard
                         key={index}
-                        imageId={modalPolicemanImagesPaths[modalContentName.title!][index]}
-                        title={splitString(modalContentName.additionalInfo?.pointsTextList[index] as string)[0]}
+                        imageId={modalPolicemanImagesPaths[content.title!][index]}
+                        title={splitString(content.additionalInfo?.pointsTextList[index] as string)[0]}
                         label={splitString(item as string)[1]}
                     />
                 ))}
@@ -147,13 +152,15 @@ const TrafficsLawsPage = (): ReactElement => {
     };
 
     const SignModalContent = (): ReactElement => {
+        if (!hasModalContent) return <></>;
+        const content = modalContentName as IContentLabel;
         return (
             <div className="tl-modal-content">
-                {modalContentName.additionalInfo?.pointsTextList.map((_item: string, index: number) => (
+                {content.additionalInfo?.pointsTextList.map((_item: string, index: number) => (
                     <DefaultImageCard
                         key={index}
-                        imageId={signsImagesPaths[modalContentName.title!][index]}
-                        title={modalContentName.additionalInfo?.pointsTextList[index]}
+                        imageId={signsImagesPaths[content.title!][index]}
+                        title={content.additionalInfo?.pointsTextList[index]}
                     />
                 ))}
             </div>
@@ -162,19 +169,22 @@ const TrafficsLawsPage = (): ReactElement => {
 
     const closeModal = () => {
         dispatch(setIsModalOpened(false));
+        dispatch(setModalContentName(""));
     };
+
+    const shouldOpenModal = isModalOpened && hasModalContent;
 
     return (
         <DefaultLayout langSwitchColor={'#249FF5'}>
             <div className="traffics-laws-page">
                 {!isContentLoaded && (<Spinner />)}
                 <FlexibleModal
-                    isModalOpened={isModalOpened}
+                    isModalOpened={shouldOpenModal}
                     closeAction={closeModal}
                 >
-                    {isModalOpened && (
+                    {shouldOpenModal && hasModalContent && (
                         <div>
-                            <p className="tl-modal-title">{modalContentName.title}</p>
+                            <p className="tl-modal-title">{(modalContentName as IContentLabel).title}</p>
                             <div className="tl-modal-content">
                                 {title in modalPolicemanImagesPaths && <PoliceManModalContent/>}
                                 {title in signsImagesPaths && <SignModalContent/>}

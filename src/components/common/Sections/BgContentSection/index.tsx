@@ -55,7 +55,6 @@ const BgContentSection = ({
                         className="bg-content-section-title"
                         style={{
                             color: colorScheme.text,
-                            // fontFamily: sxText?.fontFamily,
                             fontSize: screenWidth > 768 ? sxText?.titleFontSize : defaultMobileSectionSX.titleFontSize,
                             fontWeight: sxText?.titleFontWeight,
                         }}
@@ -68,7 +67,6 @@ const BgContentSection = ({
                         className="bg-content-section-description"
                         style={{
                             color: sxText?.subTitleColor,
-                            // fontFamily: sxText?.fontFamily,
                             fontSize: screenWidth > 768 ? sxText?.labelFontSize : defaultMobileSectionSX.labelFontSize,
                             fontWeight: sxText?.fontWeight,
                         }}

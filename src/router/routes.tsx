@@ -64,50 +64,50 @@ export const paths = {
 const routes: RouteObject[] = [
     {
         ...paths.HOME,
-        element: <HomePage />,
+        element: <HomePage/>,
     },
     {
         ...paths.TRAFFIC_LAWS_PAGE,
-        element: <TrafficsLawsPage />,
+        element: <TrafficsLawsPage/>,
     },
     {
         ...paths.CHEMISTRY,
-        element: <Chemistry />,
+        element: <Chemistry/>,
     },
     {
         ...paths.RUS_LIT,
-        element: <RusLit />,
+        element: <RusLit/>,
     },
     {
         ...paths.KAZAKH_ADEBIET,
-        element: <KazakhAdebiet />,
+        element: <KazakhAdebiet/>,
     },
     {
         ...paths.MATH,
-        element: <Mathematics />,
+        element: <Mathematics/>,
     },
     {
         ...paths.NUTRITION,
-        element: <Nutrition />,
+        element: <Nutrition/>,
     },
     {
         ...paths.SAFETY_PRECAUTIONS,
         // element: <SafetyPrecautions />,
-        element: <InProgress />,
+        element: <InProgress/>,
     },
     {
         ...paths.KAZ_MUSIC,
         // element: <KazMusic />,
-        element: <InProgress />,
+        element: <InProgress/>,
     },
     {
         ...paths.PAGES,
-        element: <Pages />,
+        element: <Pages/>,
     },
 
     {
         ...paths.NOT_FOUND,
-        element: <NotFoundPage />,
+        element: <NotFoundPage/>,
     },
 ];
 

@@ -1,6 +1,7 @@
 .ds-notification,
 .ds-notification div {
     display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 6px;
     gap: 5px;

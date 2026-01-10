@@ -1,21 +1,27 @@
 {
   "backgrounds": {
     "cover": "nutrition/backgrounds/bg0.png",
-    "firstSection": "nutrition/backgrounds/bg1.png",
-    "secondSection": "nutrition/backgrounds/bg2.png",
-    "thirdSection": "nutrition/backgrounds/bg3.png",
-    "fourthSection": "nutrition/backgrounds/bg3.png",
-    "fifthSection": "nutrition/backgrounds/bg4.png"
+    "firstSection": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051906/bg1_o3j4rc.webp",
+    "secondSection": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051906/bg2_injsbb.webp",
+    "thirdSection": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051906/bg3_r1fulp.webp",
+    "fourthSection": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051906/bg4_rddd5x.webp",
+    "fifthSection": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051906/5_hemzzb.webp"
   },
   "cards": [
-    "nutrition/cards/card1.png",
-    "nutrition/cards/card2.png",
-    "nutrition/cards/card3.png",
-    "nutrition/cards/card4.png",
-    "nutrition/cards/card5.png",
-    "nutrition/cards/card6.png"
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051906/card1_hfnmqe.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051907/card2_k9ibyg.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051907/card3_x8wtiw.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051908/card4_msoxdn.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051908/card5_orfyqh.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051908/card6_pcgvjs.webp"
+  ],
+  "icons": [
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051909/water_sevh0a.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051909/fruits_lgjvjd.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051909/eggs_g2xlxc.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051908/bread_qypplt.webp"
   ],
   "images": {
-    "plate": "nutrition/plate.png"
+    "plate": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051910/plate_amzvw2.webp"
   }
 }

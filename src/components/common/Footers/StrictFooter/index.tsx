@@ -2,6 +2,7 @@ import {type ReactElement} from "react";
 import type {IStrictFooterContent} from "./types.ts";
 import { useDispatch } from "react-redux";
 import { setIsModalOpened } from "@store/slices/Application";
+import { setModalContentName } from "@store/slices/TrafficLawsPage";
 import "./style.css";
 
 interface IStrictFooterSX {
@@ -33,6 +34,8 @@ const Footer = ({meta, sx = {
 
     const handlePolicyClick = (e: React.MouseEvent) => {
         e.preventDefault();
+        // Очищаем modalContentName чтобы открылась политика конфиденциальности, а не модальное окно для знаков/жестов
+        dispatch(setModalContentName(""));
         dispatch(setIsModalOpened(true));
     };
 

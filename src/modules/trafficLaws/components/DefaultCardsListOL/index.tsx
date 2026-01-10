@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import type {TContentItem} from "../../../../utils/types/trafficLawsTypes";
+import type {TContentItem} from "../../types";
 import {getCardProps} from "./meta.ts";
 import DefaultImageCard from "../DefaultImageCard";
 import {useDispatch} from "react-redux";

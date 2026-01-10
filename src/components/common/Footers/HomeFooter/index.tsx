@@ -5,6 +5,7 @@ import SpriteIcon from "@components/common/Other/SpriteIcon";
 import {homeFooterMeta, iconId} from './content.ts';
 import {svgSpriteSrcPrefix} from "@utils/constants";
 import { setIsModalOpened } from "@store/slices/Application";
+import { setModalContentName } from "@store/slices/TrafficLawsPage";
 import "./style.css";
 
 
@@ -14,6 +15,8 @@ const HomeFooter: React.FC = (): ReactElement => {
 
     const handlePolicyClick = (e: React.MouseEvent) => {
         e.preventDefault();
+        // Очищаем modalContentName чтобы открылась политика конфиденциальности, а не модальное окно для знаков/жестов
+        dispatch(setModalContentName(""));
         dispatch(setIsModalOpened(true));
     };
 

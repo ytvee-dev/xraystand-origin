@@ -1,4 +1,4 @@
-import type {TContentItem} from "../../../../utils/types/trafficLawsTypes";
+import type {TContentItem} from "../../types";
 
 interface IAdditionalInfo {
     title: string;
