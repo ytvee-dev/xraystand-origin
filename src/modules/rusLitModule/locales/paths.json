@@ -1,46 +1,46 @@
 {
   "backgrounds": {
-    "cover": "rusLit/backgrounds/coverBg.png",
-    "names": "rusLit/backgrounds/namesBg.png",
-    "centres": "rusLit/backgrounds/centresBg.png"
+    "cover": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051911/coverBg_mogqdt.webp",
+    "names": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051911/namesBg_mxlvyp.webp",
+    "centres": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051910/centresBg_iqj9ac.webp"
   },
   "cards": [
-    "rusLit/cards/oldLitra.png",
-    "rusLit/cards/svetska.png",
-    "rusLit/cards/goldCentre.png",
-    "rusLit/cards/silverCentre.png",
-    "rusLit/cards/litra.png"
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051912/oldLitra_vz3xqh.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051913/svetska_u99mog.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051911/goldCentre_xzfka5.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051912/silverCentre_na14zh.webp",
+    "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051911/litra_wb8cq2.webp"
   ],
   "people": {
     "old": [
-      "rusLit/people/monk.png",
-      "rusLit/people/michael.png",
-      "rusLit/people/gavriil.png",
-      "rusLit/people/denis.png",
-      "rusLit/people/nikolay.png"
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051916/monk_lwzhqo.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051916/michael_gosufm.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051915/gavriil_tgfcsh.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051914/denis_xajjy9.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051917/nikolay_hnuhia.webp"
     ],
     "gold": [
-      "rusLit/people/pushkin.png",
-      "rusLit/people/lermontov.png",
-      "rusLit/people/gogol.png",
-      "rusLit/people/tolstoy.png",
-      "rusLit/people/chehov.png",
-      "rusLit/people/dostoevskiy.png"
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051917/pushkin_xgptrx.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051916/lermontov_bpl9o1.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051915/gogol_ueorbw.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051918/tolstoy_ja9t4w.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051914/chehov_laqcdu.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051915/dostoevskiy_bz9hrl.webp"
     ],
     "silver": [
-      "rusLit/people/block.png",
-      "rusLit/people/ahmatova.png",
-      "rusLit/people/cvetaeva.png",
-      "rusLit/people/mayakovskiy.png"
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051913/block_nwehh5.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051913/ahmatova_rzr5xc.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051914/cvetaeva_dmgbtx.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051916/mayakovskiy_pyihuh.webp"
     ],
     "sssr": [
-      "rusLit/people/bulgakov.png",
-      "rusLit/people/sholohov.png",
-      "rusLit/people/tvardovskiy.png",
-      "rusLit/people/solzhenicin.png"
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051913/bulgakov_pceanv.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051917/sholohov_kkzvut.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051919/tvardovskiy_xlbrd8.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051918/solzhenicin_imzh6s.webp"
     ]
   },
   "images": {
-    "genres": "rusLit/backgrounds/centresBg.png"
+    "genres": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051910/centresBg_iqj9ac.webp"
   }
 }

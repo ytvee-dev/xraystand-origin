@@ -19,7 +19,6 @@ const notificationColorScheme = {
 }
 
 const SecondSection = (): ReactElement => {
-    const imagePrefix = "./assets/images/";
     const screenWidth = useScreenWidth();
 
     return (
@@ -47,7 +46,7 @@ const SecondSection = (): ReactElement => {
                 }
                 rightColumn={
                     <SquareImageViewer
-                        path={imagePrefix + paths.images.genres}
+                        path={paths.images.genres}
                         width={575}
                         height={510}
                         objectFit="cover"
