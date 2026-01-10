@@ -5,6 +5,7 @@ import DSContentBlock, {type DSContentBlockColorScheme} from "../../../../compon
 import DSCardsWrapper from "../../../../components/common/Wrappers/DSCadsWrapper";
 import DSInformationCard from "../../../../components/common/Cards/DSInformationCard";
 import * as content from "../../locales/kaz.json";
+import * as paths from "../../locales/paths.json";
 import "./style.css";
 
 const rightColumnColorScheme: DSContentBlockColorScheme = {
@@ -21,7 +22,7 @@ const SecondSection = (): ReactElement => {
         <section className="kza-second-section">
             <TwoColumnSection
                 leftColumn={
-                    <SquareImageViewer path={"assets/images/kazakhAdebiet/tree.png"} width={564}/>
+                    <SquareImageViewer path={paths.tree} width={564}/>
                 }
                 rightColumn={
                     <DSContentBlock

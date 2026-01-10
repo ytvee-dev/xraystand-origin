@@ -1,0 +1,11 @@
+.content-section-alert-wrapper {
+    max-width: 1200px;
+    min-width: 100px;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .content-section-alert-wrapper {
+        margin: 0 20px;
+    }
+}
