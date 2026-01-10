@@ -1,5 +1,5 @@
-import { lazy } from "react";
-import { type RouteObject } from "react-router";
+import {lazy} from "react";
+import {type RouteObject} from "react-router";
 
 const HomePage = lazy(() => import("../pages/Home"));
 const NotFoundPage = lazy(() => import("../pages/NotFound"));
@@ -15,100 +15,100 @@ const Pages = lazy(() => import("../pages/Pages"));
 // const KazMusic = lazy(() => import("@pages/KazMusic"));
 
 export const paths = {
-  HOME: {
-    id: "home",
-    path: "/",
-  },
-  TRAFFIC_LAWS_PAGE: {
-    id: "trafficLawsPage",
-    path: "/traffic-laws",
-  },
-  CHEMISTRY: {
-    id: "chemistryPage",
-    path: "/chemistry",
-  },
-  RUS_LIT: {
-    id: "rusLitPage",
-    path: "/ruslit",
-  },
-  KAZAKH_ADEBIET: {
-    id: "kazakhAdebietPage",
-    path: "/kazakhadebiet",
-  },
-  MATH: {
-    id: "mathPage",
-    path: "/math",
-  },
-  NUTRITION: {
-    id: "nutritionPage",
-    path: "/healthyfood",
-  },
-  SAFETY_PRECAUTIONS: {
-    id: "safetyPrecautionsPage",
-    path: "/classroomsafety",
-  },
-  KAZ_MUSIC: {
-    id: "kazMusic",
-    path: "/kazmusicinstr",
-  },
-  PAGES: {
-    id: "pages",
-    path: "/pages",
-  },
-  NOT_FOUND: {
-    id: "notFound",
-    path: "*",
-  },
+    HOME: {
+        id: "home",
+        path: "/",
+    },
+    TRAFFIC_LAWS_PAGE: {
+        id: "trafficLawsPage",
+        path: "/traffic-laws",
+    },
+    CHEMISTRY: {
+        id: "chemistryPage",
+        path: "/chemistry",
+    },
+    RUS_LIT: {
+        id: "rusLitPage",
+        path: "/ruslit",
+    },
+    KAZAKH_ADEBIET: {
+        id: "kazakhAdebietPage",
+        path: "/kazakhadebiet",
+    },
+    MATH: {
+        id: "mathPage",
+        path: "/math",
+    },
+    NUTRITION: {
+        id: "nutritionPage",
+        path: "/healthyfood",
+    },
+    SAFETY_PRECAUTIONS: {
+        id: "safetyPrecautionsPage",
+        path: "/classroomsafety",
+    },
+    KAZ_MUSIC: {
+        id: "kazMusic",
+        path: "/kazmusicinstr",
+    },
+    PAGES: {
+        id: "pages",
+        path: "/pages",
+    },
+    NOT_FOUND: {
+        id: "notFound",
+        path: "*",
+    },
 };
 
 const routes: RouteObject[] = [
-  {
-    ...paths.HOME,
-    element: <HomePage />,
-  },
-  {
-    ...paths.TRAFFIC_LAWS_PAGE,
-    element: <TrafficsLawsPage />,
-  },
-  {
-    ...paths.CHEMISTRY,
-    element: <Chemistry />,
-  },
-  {
-    ...paths.RUS_LIT,
-    element: <RusLit />,
-  },
-  {
-    ...paths.KAZAKH_ADEBIET,
-    element: <KazakhAdebiet />,
-  },
-  {
-    ...paths.MATH,
-    element: <Mathematics />,
-  },
-  {
-    ...paths.NUTRITION,
-    element: <Nutrition />,
-  },
-  {
-    ...paths.SAFETY_PRECAUTIONS,
-    // element: <SafetyPrecautions />,
-    element: <InProgress />,
-  },
-  {
-    ...paths.KAZ_MUSIC,
-    // element: <KazMusic />,
-    element: <InProgress />,
-  },
-  {
-    ...paths.PAGES,
-    element: <Pages />,
-  },
+    {
+        ...paths.HOME,
+        element: <HomePage/>,
+    },
+    {
+        ...paths.TRAFFIC_LAWS_PAGE,
+        element: <TrafficsLawsPage/>,
+    },
+    {
+        ...paths.CHEMISTRY,
+        element: <Chemistry/>,
+    },
+    {
+        ...paths.RUS_LIT,
+        element: <RusLit/>,
+    },
+    {
+        ...paths.KAZAKH_ADEBIET,
+        element: <KazakhAdebiet/>,
+    },
+    {
+        ...paths.MATH,
+        element: <Mathematics/>,
+    },
+    {
+        ...paths.NUTRITION,
+        element: <Nutrition/>,
+    },
+    {
+        ...paths.SAFETY_PRECAUTIONS,
+        // element: <SafetyPrecautions />,
+        element: <InProgress/>,
+    },
+    {
+        ...paths.KAZ_MUSIC,
+        // element: <KazMusic />,
+        element: <InProgress/>,
+    },
+    {
+        ...paths.PAGES,
+        element: <Pages/>,
+    },
 
-  {
-    ...paths.NOT_FOUND,
-    element: <NotFoundPage />,
-  },
+    {
+        ...paths.NOT_FOUND,
+        element: <NotFoundPage/>,
+    },
 ];
 
 export default routes;

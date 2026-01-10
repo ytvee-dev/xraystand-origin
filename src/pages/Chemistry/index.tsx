@@ -5,8 +5,6 @@ import type {TRootState} from "../../store";
 import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
 import {usePageData} from "@hooks/usePageData";
 import {useLocaleContent} from "@hooks/useLocale";
-import {usePreloadImages} from "@hooks/usePreloadImages.ts";
-import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
 import DefaultLayout from "@layout/Default";
 import PeriodicTable from "@modules/chemistry/components/PeriodicTable";
 import PeriodicTableMobile from "@modules/chemistry/components/PeriodicTableMobile";
@@ -15,7 +13,6 @@ import ChemistryModalContent from "@modules/chemistry/components/ChemistryModalC
 import Spinner from "@components/common/Spinner";
 import * as contentKZ from "@modules/chemistry/locales/kaz.json";
 import * as contentRU from "@modules/chemistry/locales/rus.json";
-import * as paths from "@modules/chemistry/locales/paths.json";
 import "./style.css";
 import PeriodicTable3D, {type MinimalElement} from "@modules/chemistry/components/PeriodicTable3D";
 import Button from "@mui/material/Button";
@@ -27,9 +24,6 @@ const Chemistry = (): ReactElement => {
     const dispatch = useDispatch();
     const isElementModalOpened: boolean = useSelector((state: TRootState) => state.chemistry.isModalOpened);
     const [viewMode, setViewMode] = useState<'default' | '3d'>('default');
-
-    const imgUrls = collectFromPathsJson(paths);
-    usePreloadImages(imgUrls);
 
     const sectionMetaTranslation: ITextContent = sectionMeta.section;
     

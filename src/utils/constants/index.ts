@@ -25,6 +25,8 @@ export const enum SvgSpriteIds {
     LOGO = "logo",
     CONTENT_SECTION_NOTIFICATION_ICON = "contentSectionNotificationIcon",
     WARNING = "warningIcon",
+    IN_PROGRESS_MOBILE = "inProgressMobile",
+    IN_PROGRESS_DESKTOP = "inProgressDesktop",
 }
 
 export const enum ContentSectionColorTypes {
