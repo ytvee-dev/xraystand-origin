@@ -13,31 +13,31 @@ export interface ITrafficLightsConfig {
 
 export const trafficLightsConfig: ITrafficLightsConfig = {
     backgroundImageSrc:
-        "./assets/images/trafficLawsPage/secondSection/tlBackground.avif",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051938/tlBackground_whk10v.webp",
     trafficLights: [
         {
             imageLightOnSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/redOn.avif",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051940/redOn_kfwrci.webp",
             imageLightOffSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/redOff.avif",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051939/redOff_hzr3nw.webp",
             color: "red",
             activeLabelRu: "Красный — стой",
             activeLabelkz: "Қызыл — тоқта.",
         },
         {
             imageLightOnSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/yellowOn.avif",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051940/yellowOn_nvkdxq.webp",
             imageLightOffSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/yellowOff.avif",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051940/yellowOff_x480go.webp",
             color: "yellow",
             activeLabelRu: "Жёлтый — приготовься",
             activeLabelkz: "Сары — дайындал.",
         },
         {
             imageLightOnSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/greenOn.avif",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051939/greenOn_d51shk.webp",
             imageLightOffSrc:
-                "./assets/images/trafficLawsPage/secondSection/trafficLight/greenOff.avif",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051938/greenOff_mm8fvo.webp",
             color: "green",
             activeLabelRu: "Зелёный — можно идти",
             activeLabelkz: "Жасыл — өтуге болады.",

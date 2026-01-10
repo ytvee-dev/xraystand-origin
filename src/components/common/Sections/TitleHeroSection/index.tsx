@@ -1,7 +1,6 @@
 import React, {type ReactElement} from "react";
 import type {IDefaultCardSxText} from "../../Cards/CardsTypes.ts";
 import {defaultSectionSX} from "../meta.tsx";
-import heroBackground from "@assets/images/nutrition/backgrounds/hero.svg";
 import "./style.css";
 
 export interface ITitleHeroSectionProps {
@@ -10,6 +9,8 @@ export interface ITitleHeroSectionProps {
     backgroundColor?: string;
     sx?: IDefaultCardSxText;
 }
+
+const heroBackground = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768057781/hero_ymxrc3.webp';
 
 const TitleHeroSection: React.FC<ITitleHeroSectionProps> = ({
     title='',

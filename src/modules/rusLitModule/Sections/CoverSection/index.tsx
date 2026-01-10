@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
-import coverImg from '@assets/images/rusLit/backgrounds/coverBg.png';
 import * as sectionContent from '../../locales/rus.json';
+import * as paths from '../../locales/paths.json';
 import "./style.css";
 
 const CoverSection = (): ReactElement => {
@@ -8,7 +8,7 @@ const CoverSection = (): ReactElement => {
     return (
         <section className="ruslit-cover-section">
             <div className="ruslit-cover-section-image-container">
-                <img alt={'cover'} src={coverImg} />
+                <img alt={'cover'} src={paths.backgrounds.cover} />
             </div>
 
             <div className="ruslit-cover-text-content">
