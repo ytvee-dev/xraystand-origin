@@ -26,88 +26,88 @@ import "./style.css";
 
 const modalPolicemanImagesPaths: Record<string, string[]> = {
     "Для пешеходов": [
-        "trafficLawsPage/modal/policemanHandUp",
-        "trafficLawsPage/modal/policemanHandStop",
-        "trafficLawsPage/modal/policemanHandsSide"
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandUp_v9nefx.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandStop_yfoevu.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051922/policemanHandsSide_fiqpfo.webp"
     ],
     "Для водителей": [
-        "trafficLawsPage/modal/policemanHandsSide",
-        "trafficLawsPage/modal/policemanInProfile",
-        "trafficLawsPage/modal/policemanHandUp",
-        "trafficLawsPage/modal/policemanHandStop",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051922/policemanHandsSide_fiqpfo.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanInProfile_k9sw1o.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandUp_v9nefx.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandStop_yfoevu.webp",
     ],
     "Реттеушінің қимылдары": [
-        "trafficLawsPage/modal/policemanHandUp",
-        "trafficLawsPage/modal/policemanHandStop",
-        "trafficLawsPage/modal/policemanHandsSide"
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandUp_v9nefx.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandStop_yfoevu.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051922/policemanHandsSide_fiqpfo.webp"
     ],
     "Көлік жүргізушілерге": [
-        "trafficLawsPage/modal/policemanHandsSide",
-        "trafficLawsPage/modal/policemanInProfile",
-        "trafficLawsPage/modal/policemanHandUp",
-        "trafficLawsPage/modal/policemanHandStop",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051922/policemanHandsSide_fiqpfo.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanInProfile_k9sw1o.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandUp_v9nefx.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandStop_yfoevu.webp",
     ],
 };
 
 const signsImagesPaths: Record<string, string[]> = {
     "Информационные": [
-        "trafficLawsPage/modal/signs/toptop",
-        "trafficLawsPage/modal/signs/bus",
-        "trafficLawsPage/modal/signs/plus",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/toptop_f7kwwa.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/bus_h6fe55.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/plus_xrqyhz.webp",
     ],
     "Приоритета": [
-        "trafficLawsPage/modal/signs/romb",
-        "trafficLawsPage/modal/signs/triangle",
-        "trafficLawsPage/modal/signs/stop",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/romb_fjh25o.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051929/triangle_kazg0z.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/stop_a2motr.webp",
     ],
     "Предписывающие": [
-        "trafficLawsPage/modal/signs/up",
-        "trafficLawsPage/modal/signs/human",
-        "trafficLawsPage/modal/signs/bibicycle",
-        "trafficLawsPage/modal/signs/down",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051929/up_c0q0jt.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/human_h2xl4b.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/bibicycle_ylnlet.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051925/down_vbkzkj.webp",
     ],
     "Запрещающие": [
-        "trafficLawsPage/modal/signs/nopeople",
-        "trafficLawsPage/modal/signs/kirpich",
-        "trafficLawsPage/modal/signs/nobicycle",
-        "trafficLawsPage/modal/signs/nofast",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/nopeople_d3k6wq.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/kirpich_ejm3eb.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/nobicycle_fsu3ur.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/nofast_hh6ydx.webp",
     ],
     "Предупреждающие": [
-        "trafficLawsPage/modal/signs/child",
-        "trafficLawsPage/modal/signs/zebra",
-        "trafficLawsPage/modal/signs/bicycle",
-        "trafficLawsPage/modal/signs/train",
-        "trafficLawsPage/modal/signs/dangerous",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/child_cgwypg.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051930/zebra_bayfjc.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/bicycle_oarkev.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/train_kgk3az.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051925/dangerous_vmcqez.webp",
     ],
 
     "Ақпараттық белгілер": [
-        "trafficLawsPage/modal/signs/toptop",
-        "trafficLawsPage/modal/signs/bus",
-        "trafficLawsPage/modal/signs/plus",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/toptop_f7kwwa.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/bus_h6fe55.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/plus_xrqyhz.webp",
     ],
     "Басымдық белгілері": [
-        "trafficLawsPage/modal/signs/romb",
-        "trafficLawsPage/modal/signs/triangle",
-        "trafficLawsPage/modal/signs/stop",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/romb_fjh25o.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051929/triangle_kazg0z.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/stop_a2motr.webp",
     ],
     "Нұсқаушы белгілер": [
-        "trafficLawsPage/modal/signs/up",
-        "trafficLawsPage/modal/signs/human",
-        "trafficLawsPage/modal/signs/bibicycle",
-        "trafficLawsPage/modal/signs/down",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051929/up_c0q0jt.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/human_h2xl4b.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/bibicycle_ylnlet.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051925/down_vbkzkj.webp",
     ],
     "Тыйым салатын белгілер": [
-        "trafficLawsPage/modal/signs/nopeople",
-        "trafficLawsPage/modal/signs/kirpich",
-        "trafficLawsPage/modal/signs/nobicycle",
-        "trafficLawsPage/modal/signs/nofast",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051927/nopeople_d3k6wq.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/kirpich_ejm3eb.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/nobicycle_fsu3ur.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051926/nofast_hh6ydx.webp",
     ],
     "Ескерту белгілері": [
-        "trafficLawsPage/modal/signs/child",
-        "trafficLawsPage/modal/signs/zebra",
-        "trafficLawsPage/modal/signs/bicycle",
-        "trafficLawsPage/modal/signs/train",
-        "trafficLawsPage/modal/signs/dangerous",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/child_cgwypg.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051930/zebra_bayfjc.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051924/bicycle_oarkev.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051928/train_kgk3az.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051925/dangerous_vmcqez.webp",
     ],
 
 };
@@ -123,7 +123,6 @@ const TrafficsLawsPage = (): ReactElement => {
     const modalContentName: TContentItem =
         useSelector((state: TRootState) => state.trafficLaws.modalContentName) as IContentLabel;
     
-    // Проверяем, что modalContentName - это объект с title (не пустая строка)
     const hasModalContent = modalContentName && typeof modalContentName === 'object' && 'title' in modalContentName;
     const title = hasModalContent ? (modalContentName as IContentLabel).title || "" : "";
 
@@ -173,7 +172,6 @@ const TrafficsLawsPage = (): ReactElement => {
         dispatch(setModalContentName(""));
     };
 
-    // Открываем модальное окно только если есть modalContentName (т.е. это модальное окно для знаков/жестов)
     const shouldOpenModal = isModalOpened && hasModalContent;
 
     return (
