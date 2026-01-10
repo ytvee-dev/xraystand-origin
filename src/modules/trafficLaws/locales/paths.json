@@ -6,13 +6,6 @@
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051935/roadUser2_mqiixs.webp",
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051936/roadUser3_aolg94.webp",
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051936/roadUser4_h4zszo.webp"
-      ],
-      "globalData": []
-    },
-    "secondSection": {
-      "contentListData": [],
-      "globalData": [
-        "trafficLawsPage/trafficLight"
       ]
     },
     "thirdSection": {
@@ -21,61 +14,47 @@
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051941/transitionRules2_ewy48a.webp",
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051941/transitionRules3_ptbh5s.webp",
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051942/transitionRules4_abwnne.webp"
-      ],
-      "globalData": []
-    },
-    "fourthSection": {
-      "contentListData": [],
-      "globalData": [
-        "trafficLawsPage/cyclistsScooters"
       ]
     },
     "fifthSection": {
       "contentListData": [
-        "trafficLawsPage/dangerousTransitionError1",
-        "trafficLawsPage/dangerousTransitionError2",
-        "trafficLawsPage/dangerousTransitionError3",
-        "trafficLawsPage/dangerousTransitionError4"
-      ],
-      "globalData": []
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051921/dangerousTransitionError1_emozf3.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051921/dangerousTransitionError2_d9itns.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051921/dangerousTransitionError3_c8b1a6.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051921/dangerousTransitionError4_qnubiz.webp"
+      ]
     },
     "sixthSection": {
       "contentListData": [
-        "trafficLawsPage/roadSign1",
-        "trafficLawsPage/roadSign2",
-        "trafficLawsPage/roadSign3",
-        "trafficLawsPage/roadSign4",
-        "trafficLawsPage/roadSign5"
-      ],
-      "globalData": []
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051933/roadSign1_a8fs1c.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051933/roadSign2_ir8r8q.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051934/roadSign3_vdafvq.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051934/roadSign4_yd5w5n.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051934/roadSign5_hncebh.webp"
+      ]
     },
     "seventhSection": {
       "contentListData": [
-        "trafficLawsPage/objectsOfTrafficControllerGestures1",
-        "trafficLawsPage/objectsOfTrafficControllerGestures2"
-      ],
-      "globalData": [
-        "trafficLawsPage/pointsman"
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051930/objectsOfTrafficControllerGestures1_kbuoec.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051930/objectsOfTrafficControllerGestures2_r7qynh.webp"
       ]
     },
     "eighthSection": {
       "contentListData": [
-        "trafficLawsPage/safetyAtSchoolAndInTheYard1",
-        "trafficLawsPage/safetyAtSchoolAndInTheYard2",
-        "trafficLawsPage/safetyAtSchoolAndInTheYard3",
-        "trafficLawsPage/safetyAtSchoolAndInTheYard4"
-      ],
-      "globalData": []
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051936/safetyAtSchoolAndInTheYard1_iubxt8.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051937/safetyAtSchoolAndInTheYard2_cjw8hc.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051937/safetyAtSchoolAndInTheYard3_oengeb.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051938/safetyAtSchoolAndInTheYard4_yakxvo.webp"
+      ]
     },
     "ninthSection": {
       "contentListData": [
-        "trafficLawsPage/remember1",
-        "trafficLawsPage/remember2",
-        "trafficLawsPage/remember3",
-        "trafficLawsPage/remember4",
-        "trafficLawsPage/remember5"
-      ],
-      "globalData": []
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051931/remember1_rry00f.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051931/remember2_ezvfrs.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051932/remember3_mhzmgj.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051932/remember4_donbjd.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051932/remember5_z9axn4.webp"
+      ]
     }
   }
 }
