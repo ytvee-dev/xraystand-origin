@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import type {TContentItem} from "../../../../utils/types/trafficLawsTypes";
+import type {TContentItem} from "../../types";
 import TwoColumnSection from "../../../../components/common/Sections/TwoColumnSection";
 import LargeCard from "../../../../components/common/Cards/LargeCard";
 import DefaultCardsListOL from "../../components/DefaultCardsListOL";

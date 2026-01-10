@@ -54,7 +54,6 @@ const LargeCard = ({
                 label={notificationLabel}
                 backgroundColor={colorScheme.notificationBackgroundColor}
                 textColor={colorScheme?.notificationTextColor}
-                iconColor={colorScheme?.notificationIconColor}
                 fullWidth={true}
             />
         </div>

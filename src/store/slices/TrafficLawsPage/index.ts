@@ -1,6 +1,6 @@
 import { type PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
-import type {TContentItem} from "../../../utils/types/trafficLawsTypes";
+import type {TContentItem} from "@modules/trafficLaws/types";
 
 interface IPageState {
     modalContentName: TContentItem;

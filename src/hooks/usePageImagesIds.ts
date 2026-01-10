@@ -1,4 +1,4 @@
-import imageIdData from "../data/imageSrc.json";
+import imageIdData from "../modules/trafficLaws/locales/paths.json";
 import type { PageIds, PageSectionIds } from "../domains/Translate";
 
 export interface ISectionImageIdData {

@@ -1,7 +1,7 @@
-import madeBySrcDark from "../../../../../public/assets/images/madeByDark.avif";
-import madeBySrcLight from "../../../../../public/assets/images/madeByLight.avif";
-
 import type { IDefaultDarkFooterMeta } from "./types.ts";
+
+const madeBySrcDark = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768064889/madeByDark_q1asyp.webp';
+const madeBySrcLight = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768064890/madeByLight_kpzohk.webp';
 
 export const trafficLawsFooterMeta: IDefaultDarkFooterMeta = {
   ru: {

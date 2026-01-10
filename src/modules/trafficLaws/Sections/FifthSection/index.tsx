@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import type {TContentItem} from "../../../../utils/types/trafficLawsTypes";
+import type {TContentItem} from "../../types";
 import ContentSection from "../../../../components/common/Sections/DSContentSection";
 import DefaultCardsListOL from "../../components/DefaultCardsListOL";
 import DSNotification from "../../../../components/common/DSNotification";

@@ -1,6 +1,7 @@
 import {type ReactElement, useRef} from "react";
-import {contentAnimationsSrcPrefix, contentImageSrcSuffix} from "@utils/constants";
 import "./style.css";
+
+const animatedSmallCar = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768064382/animatedSmallCar_zxmhtk.webp';
 
 const AnimatedCarCard = (): ReactElement => {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -10,7 +11,7 @@ const AnimatedCarCard = (): ReactElement => {
             <div className="animated-car-wrapper">
                 <img
                     className="animated-car-image"
-                    src={`${contentAnimationsSrcPrefix}animatedSmallCar${contentImageSrcSuffix}`}
+                    src={animatedSmallCar}
                     alt="animated car"
                 />
             </div>
