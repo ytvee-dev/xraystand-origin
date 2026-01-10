@@ -2,7 +2,6 @@ import React, {type ReactElement} from "react";
 import type {SecondSection as TSecondSection} from "../../types";
 import CirclePlate from "../../components/CirclePlate";
 import BgContentSection from "../../../../components/common/Sections/BgContentSection";
-import {dsCardImagePathPrefix} from "../../../../components/common/Cards/cardsMeta.tsx";
 import * as paths from "../../locales/paths.json";
 import "./style.css";
 
@@ -11,13 +10,12 @@ interface SecondSectionProps {
 }
 
 const SecondSection: React.FC<SecondSectionProps> = ({content}: SecondSectionProps): ReactElement => {
-    const backgroundImage = dsCardImagePathPrefix + paths.backgrounds.secondSection;
 
     return (
         <BgContentSection
             textData={content.secondSection}
             sectionName={'nutrition-second-section'}
-            backgroundImage={backgroundImage}
+            backgroundImage={paths.backgrounds.secondSection}
             strictHeight={true}
         >
             <CirclePlate content={content.secondSection.content} />

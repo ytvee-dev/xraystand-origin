@@ -35,10 +35,10 @@ const FourthSection: React.FC<FourthSectionProps> = ({content}: FourthSectionPro
                     </div>
                 } rightColumn={
                     <div className={'nutrition-fourth-section-items'}>
-                        {itemsIcons.map((item) => (
+                        {itemsIcons.map((item, index) => (
                             <IconTextItem
                                 key={item}
-                                iconName={`${dsCardImagePathPrefix}nutrition/icons/${item}.avif`}
+                                iconName={paths.icons[index]}
                                 iconType={'png'}
                                 title={content.fourthSection.title}
                                 text={content.fourthSection.description}

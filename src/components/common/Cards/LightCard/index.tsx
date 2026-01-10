@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
-import {defaultDSCardSX, dsCardImagePathPrefix} from "../cardsMeta.tsx";
+import {defaultDSCardSX} from "../cardsMeta.tsx";
 import "./style.css";
 
 
@@ -27,8 +27,6 @@ const LightCard = ({
     classes='',
 }: IContentImageCardProps): ReactElement => {
 
-    const imagePath = dsCardImagePathPrefix + imageName;
-
     return (
         <Card className={`light-card ${classes}`} sx={{
             minWidth: minWidth,
@@ -42,7 +40,7 @@ const LightCard = ({
                     <CardMedia
                         component="img"
                         height={imageHeight}
-                        image={imagePath}
+                        image={imageName}
                         alt={imageName}
                         sx={{
                             objectFit: sxText.imgObjectFit!,

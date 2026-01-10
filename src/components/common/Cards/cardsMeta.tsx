@@ -1,6 +1,6 @@
 import type { IDefaultCardSxText, INestedCardSx } from "./CardsTypes.ts";
-
-export const dsCardImagePathPrefix = "./assets/images/";
+//todo: remove this
+export const dsCardImagePathPrefix = "";
 
 export const defaultDSCardSX: IDefaultCardSxText = {
   titleColor: "rgba(0,0,0,1)",
