@@ -3,15 +3,14 @@ import type {TContentItem} from "../../types";
 import ContentSection from "../../../../components/common/Sections/DSContentSection";
 import DefaultCardsListOL from "../../components/DefaultCardsListOL";
 import DSNotification from "../../../../components/common/DSNotification";
-import usePageImagesIds from "../../../../hooks/usePageImagesIds";
-import {PageIds, PageSectionIds} from "../../../../domains/Translate";
+import {PageSectionIds} from "../../../../domains/Translate";
 import {useLocaleContent} from "@hooks/useLocale";
 import * as textContentKz from "../../locales/kaz.json";
 import * as textContentRu from "../../locales/rus.json";
+import * as paths from "../../locales/paths.json";
 
 const ThirdSection = (): ReactElement | null => {
     const translation = useLocaleContent(textContentRu, textContentKz);
-    const {pageImageIdData} = usePageImagesIds(PageIds.TRAFFIC_LAWS_PAGE);
 
     if (!translation.thirdSection) return null;
 
@@ -26,7 +25,7 @@ const ThirdSection = (): ReactElement | null => {
             <div className={"background-cards-container"}>
                 <DefaultCardsListOL
                     content={translation.thirdSection["content"] as TContentItem[]}
-                    imageIdData={pageImageIdData?.thirdSection?.contentListData ?? []}
+                    imageIdData={paths.trafficLawsPage.thirdSection.contentListData}
                 />
             </div>
             <div className="content-section-alert-wrapper">
