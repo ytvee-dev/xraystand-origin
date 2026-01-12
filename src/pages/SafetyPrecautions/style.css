@@ -1,0 +1,17 @@
+.rules {
+    display: flex;
+    justify-content: center;
+
+
+    /* .leftSection{
+        
+    } */
+}
+/* 
+@media(max-width: 800px) {
+    .rules{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+} */

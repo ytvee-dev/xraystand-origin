@@ -1,0 +1,17 @@
+.rules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffffff;
+    padding: 32px 40px;
+    width: 100%;
+    max-width: 520px;
+    max-height: 496px;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.rules-list-item {
+    font-size: 20px;
+    line-height: 1.4;
+}

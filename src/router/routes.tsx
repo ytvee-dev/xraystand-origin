@@ -11,7 +11,7 @@ const RusLit = lazy(() => import("../pages/RusLit"));
 const Nutrition = lazy(() => import("../pages/Nutrition"));
 const Mathematics = lazy(() => import("@pages/Mathematics"));
 const Pages = lazy(() => import("../pages/Pages"));
-// const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
+const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
 // const KazMusic = lazy(() => import("@pages/KazMusic"));
 
 export const paths = {
@@ -92,8 +92,7 @@ const routes: RouteObject[] = [
     },
     {
         ...paths.SAFETY_PRECAUTIONS,
-        // element: <SafetyPrecautions />,
-        element: <InProgress/>,
+        element: <SafetyPrecautions />,
     },
     {
         ...paths.KAZ_MUSIC,

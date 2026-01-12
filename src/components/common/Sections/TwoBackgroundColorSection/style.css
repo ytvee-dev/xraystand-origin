@@ -1,0 +1,64 @@
+.board-section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 44px 144px;
+  gap: 36px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: linear-gradient(90deg,
+      var(--board-background-left) 0%,
+      var(--board-background-left) 50%,
+      var(--board-background-right) 50%,
+      var(--board-background-right) 100%);
+}
+
+.board-section-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  max-width: 1152px;
+  color: #FFFFFF;
+}
+
+.board-section-img {
+  width: 640px;
+  height: auto;
+}
+
+.board-section-notification {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.rules-section {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 36px;
+  background: var(--rules-background);
+  padding-top: 44px;
+  padding-right: var(--rules-padding-right);
+  padding-bottom: 44px;
+  padding-left: var(--rules-padding-left);
+}
+
+.rules-section-title {
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--rules-list-title-color);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.25px;
+}
