@@ -13,8 +13,7 @@ const TwoBackgroundColorSection = ({
     backgroundRight,
     rulesBackground,
     rulesListTitleColor,
-    rulesSectionPaddingLeft,
-    rulesSectionPaddingRight,
+    classname,
 }: ISectionProps): ReactElement => {
     return (
         <div className="section">
@@ -33,7 +32,7 @@ const TwoBackgroundColorSection = ({
 
                     <img src={img} alt={title} className="board-section-img" />
 
-                    {notificationLabel && (
+                    {notificationLabel && screen.width >=800 &&(
                         <div className="board-section-notification">
                             <DSNotification
                                 label={notificationLabel}
@@ -46,18 +45,23 @@ const TwoBackgroundColorSection = ({
 
             {!!content?.length && (
                 <section
-                    className="rules-section"
+                    className={`rules-section ${classname}`}
                     style={
                         {
                             "--rules-background": rulesBackground,
-                            "--rules-padding-left": rulesSectionPaddingLeft,
-                            "--rules-padding-right": rulesSectionPaddingRight,
                         } as CSSProperties
                     }
                 >
-                    <h2 className="rules-section-title" style={{
-                        "--rules-list-title-color": rulesListTitleColor,
-                    } as CSSProperties} >{title}</h2>
+                    <h2
+                        className="rules-section-title"
+                        style={
+                            {
+                                "--rules-list-title-color": rulesListTitleColor,
+                            } as CSSProperties
+                        }
+                    >
+                        {title}
+                    </h2>
                     <RulesList items={content} />
                 </section>
             )}

@@ -8,8 +8,7 @@ const RulesSection = ({
     content,
     rulesBackground,
     rulesListTitleColor,
-    rulesSectionPaddingLeft,
-    rulesSectionPaddingRight,
+    classname,
 }: ISectionProps): ReactElement => {
     return (
         <TwoBackgroundColorSection
@@ -18,8 +17,7 @@ const RulesSection = ({
             content={content}
             rulesBackground={rulesBackground}
             rulesListTitleColor={rulesListTitleColor}
-            rulesSectionPaddingLeft={rulesSectionPaddingLeft}
-            rulesSectionPaddingRight={rulesSectionPaddingRight}
+            classname={classname}
         />
     );
 };

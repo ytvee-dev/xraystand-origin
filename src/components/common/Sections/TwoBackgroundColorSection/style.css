@@ -20,7 +20,7 @@
   font-family: "Ubuntu", sans-serif;
   font-size: 48px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 100%;
   letter-spacing: 0.25px;
   margin: 0;
   text-align: center;
@@ -44,13 +44,10 @@
   width: 50vw;
   display: flex;
   flex-direction: column;
-  align-items:center;
   gap: 36px;
   background: var(--rules-background);
   padding-top: 44px;
-  padding-right: var(--rules-padding-right);
   padding-bottom: 44px;
-  padding-left: var(--rules-padding-left);
 }
 
 .rules-section-title {
@@ -61,4 +58,33 @@
   font-size: 48px;
   line-height: 100%;
   letter-spacing: 0.25px;
+}
+
+.left-section {
+  padding-left: 25%;
+}
+
+.right-section {
+  padding-left: 7%;
+}
+
+@media (max-width: 800px) {
+  .rules-section {
+    align-items: flex-start;
+    width: 100vw;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rules-section-title,
+  .board-section-title {
+    font-size: 30px;
+    letter-spacing: -1.5px;
+    line-height: 120%;
+  }
 }

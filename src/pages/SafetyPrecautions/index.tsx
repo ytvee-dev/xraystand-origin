@@ -46,7 +46,7 @@ const SafetyPrecautions = (): ReactElement => {
                         }
                         rulesBackground="#FFFFFF"
                         rulesListTitleColor="#18A778"
-                        rulesSectionPaddingLeft="20%"
+                        classname="left-section"
                     />
                     <RulesSection
                         title={
@@ -58,7 +58,7 @@ const SafetyPrecautions = (): ReactElement => {
                         }
                         rulesBackground="#246138"
                         rulesListTitleColor="#F5B423"
-                        rulesSectionPaddingRight="20%"
+                        classname="right-section"
                     />
                 </div>
                 <BoardSection
@@ -80,7 +80,7 @@ const SafetyPrecautions = (): ReactElement => {
                             sectionMetaTranslation.leftLabsRulesSection.content
                         }
                         rulesBackground="#FFFFFF"
-                        rulesSectionPaddingLeft="20%"
+                        classname="left-section"
                     />
                     <RulesSection
                         title={
@@ -91,7 +91,7 @@ const SafetyPrecautions = (): ReactElement => {
                         }
                         rulesBackground="#4E307C"
                         rulesListTitleColor="#E66C3F"
-                        rulesSectionPaddingRight="20%"
+                        classname="right-section"
                     />
                 </div>
                 <BoardSection
@@ -115,7 +115,7 @@ const SafetyPrecautions = (): ReactElement => {
                                 .content
                         }
                         rulesBackground="#FFFFFF"
-                        rulesSectionPaddingLeft="20%"
+                        classname="left-section"
                     />
                     <RulesSection
                         title={
@@ -128,7 +128,7 @@ const SafetyPrecautions = (): ReactElement => {
                         }
                         rulesBackground="#7C5030"
                         rulesListTitleColor="#F5B423"
-                        rulesSectionPaddingRight="20%"
+                        classname="right-section"
                     />
                 </div>
                 <BoardSection
@@ -153,7 +153,7 @@ const SafetyPrecautions = (): ReactElement => {
                         }
                         rulesBackground="#FFFFFF"
                         rulesListTitleColor="#269AD5"
-                        rulesSectionPaddingLeft="20%"
+                        classname="left-section"
                     />
                     <RulesSection
                         title={
@@ -166,7 +166,7 @@ const SafetyPrecautions = (): ReactElement => {
                         }
                         rulesBackground="#304B7C"
                         rulesListTitleColor="#F5B423"
-                        rulesSectionPaddingRight="20%"
+                        classname="right-section"
                     />
                 </div>
             </div>
