@@ -7,9 +7,11 @@
     width: 100%;
     max-width: 520px;
     max-height: 496px;
+    border: 2px solid black;
 }
 
 .rules-list-item {
+    height: 3rem;
     font-family: "Roboto";
     font-weight: 400;
     font-style: normal;
