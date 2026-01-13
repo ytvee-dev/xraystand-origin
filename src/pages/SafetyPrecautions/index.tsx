@@ -10,6 +10,7 @@ import { useLocaleContent } from "@hooks/useLocale";
 import { usePageData } from "@hooks/usePageData";
 import { type ReactElement } from "react";
 import "./style.css";
+import RulesList from "@components/common/Other/RulesList";
 
 const SafetyPrecautions = (): ReactElement => {
     const { isContentLoaded } = usePageData();
@@ -47,18 +48,20 @@ const SafetyPrecautions = (): ReactElement => {
                 <div className="rules">
                     <TwoBackgroundColorSection
                         title={leftCommonRulesSection.title}
-                        content={leftCommonRulesSection.content}
                         rulesBackground="#FFFFFF"
                         rulesListTitleColor="#18A778"
                         classname="left-section"
-                    />
+                    >
+                        <RulesList items={leftCommonRulesSection.content} />
+                    </TwoBackgroundColorSection>
                     <TwoBackgroundColorSection
                         title={rightCommonRulesSection.title}
-                        content={rightCommonRulesSection.content}
                         rulesBackground="#246138"
                         rulesListTitleColor="#F5B423"
                         classname="right-section"
-                    />
+                    >
+                        <RulesList items={rightCommonRulesSection.content}/>
+                    </TwoBackgroundColorSection>
                 </div>
                 <TwoBackgroundColorSection
                     title={labsBoardSection.title}
@@ -70,17 +73,19 @@ const SafetyPrecautions = (): ReactElement => {
                 <div className="rules">
                     <TwoBackgroundColorSection
                         title={leftLabsRulesSection.title}
-                        content={leftLabsRulesSection.content}
                         rulesBackground="#FFFFFF"
                         classname="left-section"
-                    />
+                    >
+                        <RulesList items={leftLabsRulesSection.content}/>
+                    </TwoBackgroundColorSection>
                     <TwoBackgroundColorSection
                         title={rightLabsRulesSection.title}
-                        content={rightLabsRulesSection.content}
                         rulesBackground="#4E307C"
                         rulesListTitleColor="#E66C3F"
                         classname="right-section"
-                    />
+                    >
+                        <RulesList items={rightLabsRulesSection.content}/>
+                    </TwoBackgroundColorSection>
                 </div>
                 <TwoBackgroundColorSection
                     title={technologyBoardSection.title}
@@ -92,17 +97,19 @@ const SafetyPrecautions = (): ReactElement => {
                 <div className="rules">
                     <TwoBackgroundColorSection
                         title={leftTechnologyRulesSection.title}
-                        content={leftTechnologyRulesSection.content}
                         rulesBackground="#FFFFFF"
                         classname="left-section"
-                    />
+                    >
+                        <RulesList items={leftTechnologyRulesSection.content}/>
+                    </TwoBackgroundColorSection>
                     <TwoBackgroundColorSection
                         title={rightTechnologyRulesSection.title}
-                        content={rightTechnologyRulesSection.content}
                         rulesBackground="#7C5030"
                         rulesListTitleColor="#F5B423"
                         classname="right-section"
-                    />
+                    >
+                        <RulesList items={rightTechnologyRulesSection.content}/>
+                    </TwoBackgroundColorSection>
                 </div>
                 <TwoBackgroundColorSection
                     title={computerBoardSection.title}
@@ -114,18 +121,20 @@ const SafetyPrecautions = (): ReactElement => {
                 <div className="rules">
                     <TwoBackgroundColorSection
                         title={leftComputerRulesSection.title}
-                        content={leftComputerRulesSection.content}
                         rulesBackground="#FFFFFF"
                         rulesListTitleColor="#269AD5"
                         classname="left-section"
-                    />
+                    >
+                        <RulesList items={leftComputerRulesSection.content}/>
+                    </TwoBackgroundColorSection>
                     <TwoBackgroundColorSection
                         title={rightComputerRulesSection.title}
-                        content={rightComputerRulesSection.content}
                         rulesBackground="#304B7C"
                         rulesListTitleColor="#F5B423"
                         classname="right-section"
-                    />
+                    >
+                        <RulesList items={rightComputerRulesSection.content}/>
+                    </TwoBackgroundColorSection>
                 </div>
             </div>
         </DefaultLayout>

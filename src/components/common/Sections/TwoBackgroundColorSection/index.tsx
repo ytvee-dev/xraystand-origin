@@ -1,4 +1,3 @@
-import RulesList from "../../Other/RulesList";
 import DSNotification from "@components/common/DSNotification";
 import type { ISectionProps } from "@modules/safetyPrecautions/types";
 import type { CSSProperties, ReactElement } from "react";
@@ -8,16 +7,16 @@ const TwoBackgroundColorSection = ({
     title,
     img,
     notificationLabel,
-    content,
     backgroundLeft,
     backgroundRight,
     rulesBackground,
     rulesListTitleColor,
     classname,
+    children,
 }: ISectionProps): ReactElement => {
     return (
         <div className="section">
-            {!!img && (
+            {img && (
                 <section
                     className="board-section"
                     style={
@@ -29,9 +28,7 @@ const TwoBackgroundColorSection = ({
                     }
                 >
                     <h2 className="board-section-title">{title}</h2>
-
                     <img src={img} alt={title} className="board-section-img" />
-
                     {notificationLabel && screen.width >=800 &&(
                         <div className="board-section-notification">
                             <DSNotification
@@ -42,8 +39,7 @@ const TwoBackgroundColorSection = ({
                     )}
                 </section>
             )}
-
-            {!!content?.length && (
+            {children && (
                 <section
                     className={`rules-section ${classname}`}
                     style={
@@ -56,13 +52,13 @@ const TwoBackgroundColorSection = ({
                         className="rules-section-title"
                         style={
                             {
-                                "--rules-list-title-color": rulesListTitleColor,
+                                color: rulesListTitleColor,
                             } as CSSProperties
                         }
                     >
                         {title}
                     </h2>
-                    <RulesList items={content} />
+                    {children}
                 </section>
             )}
         </div>

@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export interface TRuleItem {
     title: string;
     subTitle?: string;
@@ -14,4 +16,5 @@ export interface ISectionProps {
     backgroundRight?: string;
     rulesBackground?: string;
     rulesListTitleColor?: string;
+    children?: ReactNode;
 }
