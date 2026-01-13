@@ -11,7 +11,7 @@
 }
 
 .rules-list-item {
-    height: 3rem;
+    min-height: 3rem;
     font-family: "Roboto";
     font-weight: 400;
     font-style: normal;

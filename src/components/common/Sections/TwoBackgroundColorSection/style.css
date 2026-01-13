@@ -88,3 +88,9 @@
     line-height: 120%;
   }
 }
+
+@media (max-width: 826px) {
+  .rules-section {
+    width: 100vw;
+  }
+}
