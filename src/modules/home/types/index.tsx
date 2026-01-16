@@ -27,20 +27,20 @@ export interface ContentStructure {
 }
 
 export interface SafetyPrecautionsContent {
-    commonBoardSection: {
+    commonBoard: {
         title: string;
         subTitle?: string;
         notificationLabel: string;
     };
-    leftCommonRulesSection: HomeSection;
-    rightCommonRulesSection: HomeSection;
-    labsBoardSection: HomeSection;
-    leftLabsRulesSection: HomeSection;
-    rightLabsRulesSection: HomeSection;
-    technologyBoardSection: HomeSection;
-    leftTechnologyRulesSection: HomeSection;
-    rightTechnologyRulesSection: HomeSection;
-    computerBoardSection: HomeSection;
-    leftComputerRulesSection: HomeSection;
-    rightComputerRulesSection: HomeSection;
+    leftCommonRules: HomeSection;
+    rightCommonRules: HomeSection;
+    labsBoard: HomeSection;
+    leftLabsRules: HomeSection;
+    rightLabsRules: HomeSection;
+    technologyBoard: HomeSection;
+    leftTechnologyRules: HomeSection;
+    rightTechnologyRules: HomeSection;
+    computerBoard: HomeSection;
+    leftComputerRules: HomeSection;
+    rightComputerRules: HomeSection;
 }
