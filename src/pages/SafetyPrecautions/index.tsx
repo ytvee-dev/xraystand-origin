@@ -11,6 +11,8 @@ import {type ReactElement} from "react";
 import "./style.css";
 import DoubleCardsSection from "@modules/safetyPrecautions/Sections/DoubleCardsSection";
 import type {SafetyPrecautionsContent} from "@modules/home/types";
+import TwoColorsSection from "@components/common/Sections/TwoColorsSection";
+import DSNotification from "@components/common/DSNotification";
 
 const SafetyPrecautions = (): ReactElement => {
     const {isContentLoaded} = usePageData();
@@ -42,6 +44,21 @@ const SafetyPrecautions = (): ReactElement => {
         <DefaultLayout langSwitchColor="#00855A">
             <div className="safety-precautions-page">
                 {!isContentLoaded && <Spinner/>}
+                <TwoColorsSection
+                    title={content.commonBoard.title}
+                    imageSrc={paths.boards.common}
+                    notification={
+                        <DSNotification
+                            label={content.commonBoard.notificationLabel}
+                            fullWidth
+                        />
+                    }
+                    sx={{
+                        titleColor: "#FFFFFF",
+                        leftSideBackgroundColor: "#1DAA7A",
+                        rightSideBackgroundColor: "#00855A",
+                    }}
+                />
                 <DoubleCardsSection
                     leftSideContent={sectionsProps.classroom.leftSideContent}
                     rightSideContent={sectionsProps.classroom.rightSideContent}

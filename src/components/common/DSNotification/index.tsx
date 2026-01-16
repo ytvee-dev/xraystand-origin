@@ -19,14 +19,14 @@ export interface IFlexibleAlertProps {
 export enum NotificationBackgroundColors {
     beige = "#FEFCF3",
     lightSand = "#EBCD91",
-};
+}
+
 export enum NotificationTypes {
     warning = "warning",
     info = "info",
-};
+}
+
 const DEFAULT_ICON_SIZE: string = "19px";
-
-
 
 const DSNotification = ({
     label="",
