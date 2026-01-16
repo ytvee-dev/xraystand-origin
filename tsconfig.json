@@ -36,8 +36,7 @@
       "@locales/*": ["src/locales/*"],
       "@store/*": ["src/store/*"],
       "@utils/*": ["src/utils/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@data/*": ["src/data/*"]
+      "@hooks/*": ["src/hooks/*"]
     },
     "allowSyntheticDefaultImports": true
   },

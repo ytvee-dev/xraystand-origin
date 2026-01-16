@@ -1,0 +1,32 @@
+.rules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffffff;
+    padding: 32px 40px;
+    width: 100%;
+    max-width: 520px;
+    max-height: 496px;
+    border: 2px solid black;
+}
+
+.rules-list-item {
+    min-height: 3rem;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+@media (max-width: 768px) {
+    .rules-list-item {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .rules-list {
+        align-items: start;
+    }
+}

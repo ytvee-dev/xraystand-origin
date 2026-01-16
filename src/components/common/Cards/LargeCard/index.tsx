@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import DSNotification from "../../DSNotification";
+import DSNotification from "@components/common/DSNotification";
 import "./style.css";
 
 export interface ILargeCardDescription {

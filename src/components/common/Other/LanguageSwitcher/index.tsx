@@ -1,13 +1,13 @@
-import {Languages, languageSwitcherOptions} from "../../../../domains/Translate";
+import {Languages, languageSwitcherOptions} from "@domains/Translate";
 import {type ChangeEvent} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {setLocale} from "../../../../store/slices/Locale";
-import type {TRootState} from "../../../../store";
+import {setLocale} from "@store/slices/Locale";
+import type {TRootState} from "@store/index";
 import {Switch} from "@mui/material";
 import {
     LocalStorageKeys,
     type IListItemProps,
-} from "../../../../utils/constants";
+} from "@utils/constants";
 
 interface ILanguageSwitcherProps {
     color?: string;

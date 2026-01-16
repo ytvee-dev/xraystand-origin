@@ -1,21 +1,21 @@
 import React, {type ReactElement} from "react";
-import type {IDefaultCardSxText} from "../../Cards/CardsTypes.ts";
-import {defaultSectionSX} from "../meta.tsx";
+import type {IDefaultCardSxText} from "@components/common/Cards/CardsTypes.ts";
+import {defaultSectionSX} from "@components/common/Sections/meta.tsx";
 import "./style.css";
 
 export interface ITitleHeroSectionProps {
     title?: string;
     subtitle?: string;
     backgroundColor?: string;
+    backgroundImage?: string;
     sx?: IDefaultCardSxText;
 }
-
-const heroBackground = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768057781/hero_ymxrc3.webp';
 
 const TitleHeroSection: React.FC<ITitleHeroSectionProps> = ({
     title='',
     subtitle='',
     backgroundColor='transparent',
+    backgroundImage='',
     sx=defaultSectionSX,
 }: ITitleHeroSectionProps): ReactElement => {
     return (
@@ -42,7 +42,7 @@ const TitleHeroSection: React.FC<ITitleHeroSectionProps> = ({
                     }}
                 >{subtitle}</p>
             </div>
-            <img src={heroBackground} alt="background"/>
+            <img src={backgroundImage} alt="background"/>
         </section>
     );
 };

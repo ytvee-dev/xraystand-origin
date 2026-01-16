@@ -1,7 +1,7 @@
 import {type ReactElement, type ReactNode} from "react";
-import type {IDefaultCardSxText} from "../../Cards/CardsTypes.ts";
+import type {IDefaultCardSxText} from "@components/common/Cards/CardsTypes.ts";
 import useScreenWidth from "@hooks/useScreenWidth.ts";
-import {defaultMobileSectionSX, defaultSectionSX} from "../meta.tsx";
+import {defaultMobileSectionSX, defaultSectionSX} from "@components/common/Sections/meta.tsx";
 import "./style.css";
 
 export interface IContentSectionTextData {

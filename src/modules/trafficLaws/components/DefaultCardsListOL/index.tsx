@@ -5,7 +5,7 @@ import DefaultImageCard from "../DefaultImageCard";
 import {useDispatch} from "react-redux";
 import {setModalContentName} from "../../../../store/slices/TrafficLawsPage";
 import {setIsModalOpened} from "../../../../store/slices/Application";
-import useWindowWidth from "../../../../hooks/useScreenWidth.ts";
+import useWindowWidth from "@hooks/useScreenWidth.ts";
 import {useLocale} from "@hooks/useLocale";
 import "./style.css";
 
@@ -49,8 +49,7 @@ const DefaultCardsListOL = ({
                             {...props} imageId={imageIdData && imageIdData[index]}
                             smallImageSizes={smallImageSizes}
                             backgroundColor={backgroundCardsColor}
-                            action={isCardsClickable ? () => modalAction(item) : () => {
-                            }}
+                            action={isCardsClickable ? () => modalAction(item) : () => {}}
                             linkText={
                                 isCardsClickable && currentLocale == "ru" ? "посмотреть ещё" :
                                     isCardsClickable && currentLocale == "kz" ? "Қосымша қарау" : ""

@@ -1,13 +1,13 @@
 import React, { type ReactElement, useRef, useState, useEffect } from "react";
 import { useForm, ValidationError } from '@formspree/react';
-import type {HomeContent} from "../../types";
+import type {ContentStructure} from "../../types";
 import { svgSpriteSrcPrefix } from "@utils/constants";
 import { Languages } from "@domains/Translate";
 import paths from "@modules/home/locales/paths.json";
 import "./style.css";
 
 export interface CoverSectionProps {
-    content: HomeContent;
+    content: ContentStructure;
     lang: Languages;
 }
 

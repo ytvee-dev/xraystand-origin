@@ -1,4 +1,4 @@
-import type {IDefaultCardSxText} from "../Cards/CardsTypes.ts";
+import type {IDefaultCardSxText} from "@components/common/Cards/CardsTypes.ts";
 
 export const defaultSectionSX: IDefaultCardSxText = {
     fontFamily: "Roboto",

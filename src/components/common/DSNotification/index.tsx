@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
 import {Alert} from "@mui/material";
-import SpriteIcon from "../Other/SpriteIcon";
+import SpriteIcon from "@components/common/Other/SpriteIcon";
 import "./style.css";
 
 export type TNotificationTypes = "warning" | "info";
@@ -19,14 +19,14 @@ export interface IFlexibleAlertProps {
 export enum NotificationBackgroundColors {
     beige = "#FEFCF3",
     lightSand = "#EBCD91",
-};
+}
+
 export enum NotificationTypes {
     warning = "warning",
     info = "info",
-};
+}
+
 const DEFAULT_ICON_SIZE: string = "19px";
-
-
 
 const DSNotification = ({
     label="",

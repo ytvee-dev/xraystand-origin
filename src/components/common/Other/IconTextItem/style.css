@@ -44,7 +44,13 @@
     }
 
     .icon-text-item-text-wrapper {
+        width: 100%;
         padding: 0 4%;
+
+        * {
+            text-align: left;
+
+        }
     }
 
     .icon-text-item-text-wrapper h3 {

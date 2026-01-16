@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
-import type {IDSCardsWrapper} from "../Wrappers.types.ts";
-import useScreenWidth from "../../../../hooks/useScreenWidth.ts";
+import type {IDSCardsWrapper} from "@components/common/Wrappers/Wrappers.types.ts";
+import useScreenWidth from "@hooks/useScreenWidth.ts";
 import "./style.css";
 
 

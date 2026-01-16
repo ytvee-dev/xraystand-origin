@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import type {INestedCardProps} from "../CardsTypes.ts";
+import type {INestedCardProps} from "@components/common/Cards/CardsTypes.ts";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
-import {defaultDSCardSX, dsCardImagePathPrefix, nestedDSCardSX} from "../cardsMeta.tsx";
+import {defaultDSCardSX, dsCardImagePathPrefix, nestedDSCardSX} from "@components/common/Cards/cardsMeta.tsx";
 import "./style.css";
 
 

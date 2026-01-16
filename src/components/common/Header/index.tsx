@@ -1,5 +1,5 @@
-import Logo from "../Other/Logo";
-import LanguageSwitcher from "../Other/LanguageSwitcher";
+import Logo from "@components/common/Other/Logo";
+import LanguageSwitcher from "@components/common/Other/LanguageSwitcher";
 import {type ReactElement} from "react";
 import "./style.css";
 

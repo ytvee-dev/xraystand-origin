@@ -54,6 +54,7 @@ const Nutrition: React.FC = (): ReactElement => {
                     title={content.coverSection.title}
                     subtitle={content.coverSection.description}
                     backgroundColor={heroSectionBgColor}
+                    backgroundImage="https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768057781/hero_ymxrc3.webp"
                     sx={{
                         fontFamily: "Rubik, sans-serif",
                         titleColor: "#FFFFFF",

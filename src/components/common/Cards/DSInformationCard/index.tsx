@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import type {IInformationCardProps} from "../CardsTypes.ts";
+import type {IInformationCardProps} from "@components/common/Cards/CardsTypes.ts";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
@@ -7,7 +7,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 import {
     defaultDSCardSX,
     defaultDSInformationCardSX,
-} from "../cardsMeta.tsx";
+} from "@components/common/Cards/cardsMeta.tsx";
 import "./style.css";
 
 

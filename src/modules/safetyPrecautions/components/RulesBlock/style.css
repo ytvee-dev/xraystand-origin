@@ -1,0 +1,53 @@
+.rules-block {
+    max-width: 564px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    z-index: 10;
+
+    svg {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    h2 {
+        font-size: 48px;
+        font-family: var(--title-font), serif;
+    }
+
+    ul {
+        li {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+    }
+    
+    .rules-block-card {
+        background: #FFFFFF;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rules-block {
+        .rules-block-card {
+            .icon-text-item {
+                h3 {
+                    padding-bottom: 0;
+                    font-size: 20px;
+                }
+                svg {
+                    min-width: 45px !important;
+                    min-height: 45px !important;
+                }
+
+            }
+        }
+    }
+}
