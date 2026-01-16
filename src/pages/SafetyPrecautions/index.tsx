@@ -28,14 +28,30 @@ const SafetyPrecautions = (): ReactElement => {
                 sx: {
                     titleColor: '#18A778',
                     descriptionColor: 'rgba(0, 0, 0, 0.87)',
-                }
+                },
+                icons: [
+                    'CompostOutlined',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                ],
             },
             rightSideContent: {
                 content: content.rightCommonRules,
                 sx: {
                     titleColor: '#F5B423',
                     descriptionColor: '#FFFFFF',
-                }
+                },
+                icons: [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                ],
             }
         },
         labsBoard: {
@@ -44,14 +60,32 @@ const SafetyPrecautions = (): ReactElement => {
                 sx: {
                     titleColor: '#000000',
                     descriptionColor: 'rgba(0, 0, 0, 0.87)',
-                }
+                },
+                icons: [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                ],
             },
             rightSideContent: {
                 content: content.rightLabsRules,
                 sx: {
                     titleColor: '#E66C3F',
                     descriptionColor: '#FFFFFF',
-                }
+                },
+                icons: [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                ],
             }
         },
         technologyBoard: {
@@ -60,14 +94,32 @@ const SafetyPrecautions = (): ReactElement => {
                 sx: {
                     titleColor: '#000000',
                     descriptionColor: 'rgba(0, 0, 0, 0.87)',
-                }
+                },
+                icons: [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                ],
             },
             rightSideContent: {
                 content: content.rightTechnologyRules,
                 sx: {
                     titleColor: '#F5B423',
                     descriptionColor: '#FFFFFF',
-                }
+                },
+                icons: [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                ],
             }
         },
         computerBoard: {
@@ -76,14 +128,32 @@ const SafetyPrecautions = (): ReactElement => {
                 sx: {
                     titleColor: '#269AD5',
                     descriptionColor: 'rgba(0, 0, 0, 0.87)',
-                }
+                },
+                icons: [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                ],
             },
             rightSideContent: {
                 content: content.rightComputerRules,
                 sx: {
                     titleColor: '#F5B423',
                     descriptionColor: '#FFFFFF',
-                }
+                },
+                icons: [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                ],
             }
         }
     }
@@ -114,6 +184,8 @@ const SafetyPrecautions = (): ReactElement => {
                     rightBackground="#246138"
                     leftLayer="straight-left"
                     rightLayer="straight-right"
+                    leftIcons={sectionsProps.commonBoard.leftSideContent.icons}
+                    rightIcons={sectionsProps.commonBoard.rightSideContent.icons}
                 />
 
                 <TwoColorsSection
@@ -138,6 +210,8 @@ const SafetyPrecautions = (): ReactElement => {
                     rightBackground="#4E307C"
                     leftLayer="purple-left"
                     rightLayer="purple-right"
+                    leftIcons={sectionsProps.labsBoard.leftSideContent.icons}
+                    rightIcons={sectionsProps.labsBoard.rightSideContent.icons}
                 />
 
                 <TwoColorsSection
@@ -156,6 +230,8 @@ const SafetyPrecautions = (): ReactElement => {
                     rightBackground="#7C5030"
                     leftLayer="yellow-left"
                     rightLayer="yellow-right"
+                    leftIcons={sectionsProps.technologyBoard.leftSideContent.icons}
+                    rightIcons={sectionsProps.technologyBoard.rightSideContent.icons}
                 />
 
                 <TwoColorsSection
@@ -174,6 +250,8 @@ const SafetyPrecautions = (): ReactElement => {
                     rightBackground="#304B7C"
                     leftLayer="blue-left"
                     rightLayer="blue-right"
+                    leftIcons={sectionsProps.computerBoard.leftSideContent.icons}
+                    rightIcons={sectionsProps.computerBoard.rightSideContent.icons}
                 />
             </div>
         </DefaultLayout>

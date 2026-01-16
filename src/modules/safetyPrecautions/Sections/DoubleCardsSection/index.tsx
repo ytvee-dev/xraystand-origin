@@ -12,6 +12,8 @@ export interface DoubleCardsSectionProps {
     rightBackground?: string;
     leftLayer?: BackgroundLayerName;
     rightLayer?: BackgroundLayerName;
+    leftIcons?: string[];
+    rightIcons?: string[];
 }
 
 
@@ -22,6 +24,8 @@ const DoubleCardsSection = ({
     rightBackground,
     leftLayer,
     rightLayer,
+    leftIcons,
+    rightIcons,
 }: DoubleCardsSectionProps): ReactElement => {
     const leftSideSX = leftSideContent.sx || {titleColor: "#000000", descriptionColor: "#000000",};
     const rightSideSX = rightSideContent.sx || {titleColor: "#000000", descriptionColor: "#000000",};
@@ -32,8 +36,8 @@ const DoubleCardsSection = ({
                 backgroundColorLeft={leftBackground || 'white'}
                 backgroundColorRight={rightBackground || 'white'}
                 variant={'simple'}
-                leftColumn={<RulesBlock content={leftSideContent.content} sx={leftSideSX}/>}
-                rightColumn={<RulesBlock content={rightSideContent.content} sx={rightSideSX}/>}
+                leftColumn={<RulesBlock content={leftSideContent.content} sx={leftSideSX} icons={leftIcons}/>}
+                rightColumn={<RulesBlock content={rightSideContent.content} sx={rightSideSX} icons={rightIcons}/>}
                 leftLayer={leftLayer}
                 rightLayer={rightLayer}
                 classNames={{

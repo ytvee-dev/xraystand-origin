@@ -1,7 +1,6 @@
 import { type ReactElement } from "react";
 import "./style.css";
 import type {HomeSection} from "@modules/home/types";
-// import * as paths from "@modules/nutrition/locales/paths.json";
 import IconTextItem from "@components/common/Other/IconTextItem";
 
 export interface RulesBlockSX {
@@ -12,11 +11,10 @@ export interface RulesBlockSX {
 export interface RulesBlockProps {
     content: HomeSection;
     sx?: RulesBlockSX | null;
+    icons?: string[];
 }
 
-const iconStub = "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051909/fruits_lgjvjd.webp";
-
-const RulesBlock = ({content, sx}: RulesBlockProps): ReactElement => {
+const RulesBlock = ({content, sx, icons}: RulesBlockProps): ReactElement => {
     const { title, description } = content;
     const cardList = content.content;
     const titleColor = sx?.titleColor;
@@ -27,11 +25,12 @@ const RulesBlock = ({content, sx}: RulesBlockProps): ReactElement => {
             <h2 style={{color: titleColor}}>{title}</h2>
             {description && <p style={{color: descriptionColor}}>{description}</p>}
             <ul className="rules-block-card">
-                {!!cardList?.length && cardList.map((item) => (
+                {!!cardList?.length && cardList.map((item, i: number) => (
                     <li key={item.title}>
                         <IconTextItem
-                            iconName={iconStub}
-                            iconType="png"
+                            iconName={icons && icons[i]}
+                            iconType="mui"
+                            iconColor={sx?.titleColor}
                             title={item.title}
                             text={item.description}
                         />
