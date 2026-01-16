@@ -143,7 +143,7 @@ const RightPurple = () => (
 
 const LeftYellow = () => (
     <>
-        <svg className="background-layer desktop" width="1027" height="608" viewBox="0 0 1027 608" fill="none"
+        <svg style={{opacity: 1}} className="background-layer desktop" width="1027" height="608" viewBox="0 0 1027 608" fill="none"
              xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.5">
                 <mask id="mask0_650_23413" maskUnits="userSpaceOnUse" x="-389" y="-1" width="1416" height="725">
@@ -182,7 +182,7 @@ const LeftYellow = () => (
 
 const RightYellow = () => (
     <>
-        <svg className="background-layer desktop" width="732" height="608" viewBox="0 0 732 608" fill="none"
+        <svg style={{opacity: 1}} className="background-layer desktop" width="732" height="608" viewBox="0 0 732 608" fill="none"
              xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.25">
                 <mask id="mask0_650_23419" maskUnits="userSpaceOnUse" x="0" y="-4" width="1564" height="728">

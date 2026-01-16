@@ -1,423 +1,418 @@
 {
-    "commonBoard": {
-        "title": "Общие правила для всех учебных кабинетов",
-        "subTitle": "",
-        "description": "",
-        "content": [],
-        "notificationLabel": "Не перебегай, не отвлекайся, не спеши.",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
-    },
-
-    "leftCommonRules": {
-        "title": "Что следует делать:",
-        "subTitle": "",
-        "description": "",
-        "content": [
-            {
-                "title": "Поддерживать порядок и чистоту.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Внимательно слушать инструктаж преподавателя.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Использовать только исправное оборудование.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Следить за самочувствием.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Сообщать об опасных ситуациях.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Быть внимательным и дисциплинированным.",
-                "subTitle": "",
-                "description": ""
-            }
-        ],
-        "notificationLabel": "",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
-    },
-
-    "rightCommonRules": {
-        "title": "Что запрещено делать:",
-        "subTitle": "",
-        "description": "",
-        "content": [
-            {
-                "title": "Самовольно включать и настраивать оборудование.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Оставлять включённые устройства без присмотра.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Бегать, толкаться и шуметь.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Использовать предметы не по назначению.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Пытаться чинить оборудование самостоятельно.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Игнорировать правила и указания преподавателя.",
-                "subTitle": "",
-                "description": ""
-            }
-        ],
-        "notificationLabel": "",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
-    },
-
-    "labsBoard": {
-        "title": "Правила для лабораторных кабинетов",
-        "subTitle": "",
-        "description": "",
-        "content": [],
-        "notificationLabel": "Не перебегай, не отвлекайся, не спеши.",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
-    },
-
-    "leftLabsRules": {
-        "title": "Что следует делать:",
-        "subTitle": "",
-        "description": "",
-        "content": [
-            {
-                "title": "Надевать защитные средства.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Внимательно читать инструкции и слушать преподавателя.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Проверять оборудование перед использованием.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Соблюдать порядок на рабочем месте.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Правильно утилизировать отходы.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Работать только с разрешения учителя.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Мыть руки после работы.",
-                "subTitle": "",
-                "description": ""
-            }
-        ],
-        "notificationLabel": "",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
-    },
-
-    "rightLabsRules": {
-        "title": "Что запрещено делать:",
-        "subTitle": "",
-        "description": "",
-        "content": [
-            {
-                "title": "Самовольно начинать опыты.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Пробовать вещества на вкус и нюхать пары напрямую.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Работать с открытым огнём без необходимости.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Засорять раковины твёрдыми веществами.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Касаться нагретого оборудования без защиты.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Оставлять реактивы открытыми.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Хранить еду и напитки в лаборатории.",
-                "subTitle": "",
-                "description": ""
-            }
-        ],
-        "notificationLabel": "",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
-    },
-
-    "technologyBoard": {
-        "title": "Правила для мастерских и кабинетов технологии",
-        "subTitle": "",
-        "description": "",
-        "content": [],
-        "notificationLabel": "",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
-    },
-
-    "leftTechnologyRules": {
-        "title": "Что следует делать:",
-        "subTitle": "",
-        "description": "",
-        "content": [
-            {
-                "title": "Проверять исправность инструментов перед началом работы.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Закреплять заготовки при обработке.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Использовать спецодежду и защитные средства.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Соблюдать правильную позу и технику работы.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Следить за чистотой рабочего места.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Работать только под наблюдением преподавателя.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Сообщать о неисправностях.",
-                "subTitle": "",
-                "description": ""
-            }
-        ],
-        "notificationLabel": "",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
-    },
-
-    "rightTechnologyRules": {
-        "title": "Что запрещено делать:",
-        "subTitle": "",
-        "description": "",
-        "content": [
-            {
-                "title": "Использовать неисправные инструменты и станки.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Работать без средств защиты.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Оставлять включённые станки без присмотра.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Хранить острые предметы открыто.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Использовать инструменты не по назначению.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Толкаться и отвлекать других.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Поправлять заготовки во время работы станка.",
-                "subTitle": "",
-                "description": ""
-            }
-        ],
-        "notificationLabel": "",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
-    },
-
-    "computerBoard": {
-        "title": "Правила для компьютерных кабинетов",
-        "subTitle": "",
-        "description": "",
-        "content": [],
-        "notificationLabel": "Не перебегай, не отвлекайся, не спеши.",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
-    },
-
-    "leftComputerRules": {
-        "title": "Что следует делать:",
-        "subTitle": "",
-        "description": "",
-        "content": [
-            {
-                "title": "Работать за компьютером только с разрешения преподавателя.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Следить за осанкой и рабочей позой.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Делать регулярные перерывы.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Сообщать преподавателю о любых неисправностях.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Использовать только разрешённые флеш-накопители и программы.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Бережно обращаться с оборудованием.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Завершать работу по правилам.",
-                "subTitle": "",
-                "description": ""
-            }
-        ],
-        "notificationLabel": "",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
-    },
-
-    "rightComputerRules": {
-        "title": "Что запрещено делать:",
-        "subTitle": "",
-        "description": "",
-        "content": [
-            {
-                "title": "Самостоятельно разбирать и чинить оборудование.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Устанавливать программы без разрешения.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Подключать незнакомые устройства.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Нажимать на клавиши слишком сильно или бросать мышь.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Оставлять включённый компьютер без необходимости.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Играть в игры и посещать запрещённые сайты без разрешения.",
-                "subTitle": "",
-                "description": ""
-            },
-            {
-                "title": "Есть и пить за рабочим местом.",
-                "subTitle": "",
-                "description": ""
-            }
-        ],
-        "notificationLabel": "",
-        "colorScheme": {
-            "background": "",
-            "text": ""
-        }
+  "commonBoard": {
+    "title": "Общие правила для всех учебных кабинетов",
+    "subTitle": "",
+    "description": "",
+    "content": [],
+    "notificationLabel": "Не перебегай, не отвлекайся, не спеши.",
+    "colorScheme": {
+      "background": "",
+      "text": ""
     }
+  },
+  "leftCommonRules": {
+    "title": "Что следует делать:",
+    "subTitle": "",
+    "description": "",
+    "content": [
+      {
+        "title": "Поддерживать порядок и чистоту.",
+        "subTitle": "",
+        "description": "",
+        "iconName": ""
+      },
+      {
+        "title": "Внимательно слушать инструктаж преподавателя.",
+        "subTitle": "",
+        "description": "",
+        "iconName": ""
+      },
+      {
+        "title": "Использовать только исправное оборудование.",
+        "subTitle": "",
+        "description": "",
+        "iconName": ""
+      },
+      {
+        "title": "Следить за самочувствием.",
+        "subTitle": "",
+        "description": "",
+        "iconName": ""
+      },
+      {
+        "title": "Сообщать об опасных ситуациях.",
+        "subTitle": "",
+        "description": "",
+        "iconName": ""
+      },
+      {
+        "title": "Быть внимательным и дисциплинированным.",
+        "subTitle": "",
+        "description": "",
+        "iconName": ""
+      }
+    ],
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  },
+  "rightCommonRules": {
+    "title": "Что запрещено делать:",
+    "subTitle": "",
+    "description": "",
+    "content": [
+      {
+        "title": "Самовольно включать и настраивать оборудование.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Оставлять включённые устройства без присмотра.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Бегать, толкаться и шуметь.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Использовать предметы не по назначению.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Пытаться чинить оборудование самостоятельно.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Игнорировать правила и указания преподавателя.",
+        "subTitle": "",
+        "description": ""
+      }
+    ],
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  },
+  "labsBoard": {
+    "title": "Правила для лабораторных кабинетов",
+    "subTitle": "",
+    "description": "",
+    "content": [],
+    "notificationLabel": "Не перебегай, не отвлекайся, не спеши.",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  },
+  "leftLabsRules": {
+    "title": "Что следует делать:",
+    "subTitle": "",
+    "description": "",
+    "content": [
+      {
+        "title": "Надевать защитные средства.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Внимательно читать инструкции и слушать преподавателя.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Проверять оборудование перед использованием.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Соблюдать порядок на рабочем месте.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Правильно утилизировать отходы.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Работать только с разрешения учителя.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Мыть руки после работы.",
+        "subTitle": "",
+        "description": ""
+      }
+    ],
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  },
+  "rightLabsRules": {
+    "title": "Что запрещено делать:",
+    "subTitle": "",
+    "description": "",
+    "content": [
+      {
+        "title": "Самовольно начинать опыты.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Пробовать вещества на вкус и нюхать пары напрямую.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Работать с открытым огнём без необходимости.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Засорять раковины твёрдыми веществами.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Касаться нагретого оборудования без защиты.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Оставлять реактивы открытыми.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Хранить еду и напитки в лаборатории.",
+        "subTitle": "",
+        "description": ""
+      }
+    ],
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  },
+  "technologyBoard": {
+    "title": "Правила для мастерских и кабинетов технологии",
+    "subTitle": "",
+    "description": "",
+    "content": [],
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  },
+  "leftTechnologyRules": {
+    "title": "Что следует делать:",
+    "subTitle": "",
+    "description": "",
+    "content": [
+      {
+        "title": "Проверять исправность инструментов перед началом работы.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Закреплять заготовки при обработке.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Использовать спецодежду и защитные средства.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Соблюдать правильную позу и технику работы.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Следить за чистотой рабочего места.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Работать только под наблюдением преподавателя.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Сообщать о неисправностях.",
+        "subTitle": "",
+        "description": ""
+      }
+    ],
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  },
+  "rightTechnologyRules": {
+    "title": "Что запрещено делать:",
+    "subTitle": "",
+    "description": "",
+    "content": [
+      {
+        "title": "Использовать неисправные инструменты и станки.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Работать без средств защиты.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Оставлять включённые станки без присмотра.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Хранить острые предметы открыто.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Использовать инструменты не по назначению.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Толкаться и отвлекать других.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Поправлять заготовки во время работы станка.",
+        "subTitle": "",
+        "description": ""
+      }
+    ],
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  },
+  "computerBoard": {
+    "title": "Правила для компьютерных кабинетов",
+    "subTitle": "",
+    "description": "",
+    "content": [],
+    "notificationLabel": "Не перебегай, не отвлекайся, не спеши.",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  },
+  "leftComputerRules": {
+    "title": "Что следует делать:",
+    "subTitle": "",
+    "description": "",
+    "content": [
+      {
+        "title": "Работать за компьютером только с разрешения преподавателя.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Следить за осанкой и рабочей позой.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Делать регулярные перерывы.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Сообщать преподавателю о любых неисправностях.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Использовать только разрешённые флеш-накопители и программы.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Бережно обращаться с оборудованием.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Завершать работу по правилам.",
+        "subTitle": "",
+        "description": ""
+      }
+    ],
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  },
+  "rightComputerRules": {
+    "title": "Что запрещено делать:",
+    "subTitle": "",
+    "description": "",
+    "content": [
+      {
+        "title": "Самостоятельно разбирать и чинить оборудование.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Устанавливать программы без разрешения.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Подключать незнакомые устройства.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Нажимать на клавиши слишком сильно или бросать мышь.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Оставлять включённый компьютер без необходимости.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Играть в игры и посещать запрещённые сайты без разрешения.",
+        "subTitle": "",
+        "description": ""
+      },
+      {
+        "title": "Есть и пить за рабочим местом.",
+        "subTitle": "",
+        "description": ""
+      }
+    ],
+    "notificationLabel": "",
+    "colorScheme": {
+      "background": "",
+      "text": ""
+    }
+  }
 }
