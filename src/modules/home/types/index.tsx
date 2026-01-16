@@ -13,7 +13,7 @@ export interface HomeSection {
     };
 }
 
-export interface HomeContent {
+export interface ContentStructure {
     coverSection: {
         title: string;
         subTitle?: string;
@@ -24,4 +24,23 @@ export interface HomeContent {
     examplesSection: HomeSection;
     developmentSection: HomeSection;
     contactSection: HomeSection;
+}
+
+export interface SafetyPrecautionsContent {
+    commonBoardSection: {
+        title: string;
+        subTitle?: string;
+        notificationLabel: string;
+    };
+    leftCommonRulesSection: HomeSection;
+    rightCommonRulesSection: HomeSection;
+    labsBoardSection: HomeSection;
+    leftLabsRulesSection: HomeSection;
+    rightLabsRulesSection: HomeSection;
+    technologyBoardSection: HomeSection;
+    leftTechnologyRulesSection: HomeSection;
+    rightTechnologyRulesSection: HomeSection;
+    computerBoardSection: HomeSection;
+    leftComputerRulesSection: HomeSection;
+    rightComputerRulesSection: HomeSection;
 }

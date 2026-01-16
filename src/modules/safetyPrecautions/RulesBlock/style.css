@@ -1,0 +1,27 @@
+.rules-block {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0abcf5;
+
+    img {
+        max-width: 60px !important;
+    }
+
+    ul {
+        li {
+            display: -webkit-box; /* Для браузеров WebKit (Chrome, Safari) */
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2; /* Ограничение двумя строками */
+        }
+    }
+    
+    .rules-block-card {
+        background: #FFFFFF;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    }
+}

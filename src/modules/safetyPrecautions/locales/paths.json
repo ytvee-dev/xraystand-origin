@@ -1,0 +1,8 @@
+{
+    "boards": {
+        "COMMON": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768073948/common_aqfqjp.webp",
+        "TECHNOLOGY": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768073946/mater_dqozsu.webp",
+        "COMPUTER": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768073942/computers_xxt9o1.webp",
+        "LABS": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768073941/labs_p1pxcc.webp"
+    }
+}

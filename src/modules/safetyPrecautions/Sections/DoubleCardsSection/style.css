@@ -1,0 +1,12 @@
+.rules-left-column,
+.rules-right-column {
+    display: flex;
+}
+
+.rules-left-column {
+    justify-content: flex-end;
+}
+
+.rules-right-column {
+    justify-content: flex-start;
+}
