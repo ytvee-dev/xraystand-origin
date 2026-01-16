@@ -16,13 +16,13 @@ export interface DoubleCardsSectionProps {
 
 
 const DoubleCardsSection = ({
-                                leftSideContent,
-                                rightSideContent,
-                                leftBackground,
-                                rightBackground,
-                                leftLayer,
-                                rightLayer,
-                            }: DoubleCardsSectionProps): ReactElement => {
+    leftSideContent,
+    rightSideContent,
+    leftBackground,
+    rightBackground,
+    leftLayer,
+    rightLayer,
+}: DoubleCardsSectionProps): ReactElement => {
     const leftSideSX = leftSideContent.sx || {titleColor: "#000000", descriptionColor: "#000000",};
     const rightSideSX = rightSideContent.sx || {titleColor: "#000000", descriptionColor: "#000000",};
 
