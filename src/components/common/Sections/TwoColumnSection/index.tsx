@@ -1,5 +1,6 @@
 import {type ReactElement, type ReactNode} from "react";
 import "./style.css";
+import BackgroundLayer, {type BackgroundLayerName} from "@modules/safetyPrecautions/components/BackgroundLayer";
 
 export interface IContentSectionProps {
     leftColumn: ReactNode;
@@ -7,6 +8,8 @@ export interface IContentSectionProps {
     variant?: 'default' | 'simple';
     backgroundColorLeft?: string;
     backgroundColorRight?: string;
+    leftLayer?: BackgroundLayerName;
+    rightLayer?: BackgroundLayerName;
     classNames?: {
         leftColumn: string;
         rightColumn: string;
@@ -19,7 +22,9 @@ const TwoColumnSection = ({
   backgroundColorRight,
   leftColumn,
   rightColumn,
-  classNames = { leftColumn: '', rightColumn: '' },
+  leftLayer,
+  rightLayer,
+  classNames = {leftColumn: '', rightColumn: ''},
 }: IContentSectionProps): ReactElement => {
     if (variant === 'simple') {
         return (
@@ -27,11 +32,17 @@ const TwoColumnSection = ({
                 <div
                     className={`left-column-simple-block ${classNames.leftColumn}`}
                     style={{background: backgroundColorLeft}}
-                >{leftColumn}</div>
+                >
+                    <BackgroundLayer name={leftLayer || "straight-left"}/>
+                    {leftColumn}
+                </div>
                 <div
                     className={`right-column-simple-block ${classNames.rightColumn}`}
                     style={{background: backgroundColorRight}}
-                >{rightColumn}</div>
+                >
+                    <BackgroundLayer name={rightLayer || "straight-right"}/>
+                    {rightColumn}
+                </div>
             </section>
         );
     }

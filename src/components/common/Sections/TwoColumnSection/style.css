@@ -2,6 +2,7 @@
     width: 100%;
     padding: 44px 20px;
     background-color: transparent;
+    z-index: 20;
 }
 
 .columns-container {
@@ -27,10 +28,13 @@
     display: flex;
     flex-wrap: nowrap;
     background-color: transparent;
+    position: relative;
+    z-index: 2;
 }
 
 .left-column-simple-block,
 .right-column-simple-block {
+    position: relative;
     padding: 44px 24px;
     width: 50%;
 }
@@ -55,6 +59,7 @@
     .right-column-simple-block {
         width: 100%;
         justify-content: flex-start !important;
+        overflow: hidden;
     }
 }
 

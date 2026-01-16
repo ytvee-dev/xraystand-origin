@@ -11,7 +11,7 @@ import {type ReactElement} from "react";
 import "./style.css";
 import DoubleCardsSection from "@modules/safetyPrecautions/Sections/DoubleCardsSection";
 import type {SafetyPrecautionsContent} from "@modules/home/types";
-//
+
 const SafetyPrecautions = (): ReactElement => {
     const {isContentLoaded} = usePageData();
     const content: SafetyPrecautionsContent = useLocaleContent(contentRu, contentKz);
@@ -47,6 +47,8 @@ const SafetyPrecautions = (): ReactElement => {
                     rightSideContent={sectionsProps.classroom.rightSideContent}
                     leftBackground="white"
                     rightBackground="#246138"
+                    leftLayer="straight-left"
+                    rightLayer="straight-right"
                 />
             </div>
         </DefaultLayout>
