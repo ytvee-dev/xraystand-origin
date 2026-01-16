@@ -1,12 +1,12 @@
 import {type ReactElement, type ReactNode} from "react";
 import {useSelector} from "react-redux";
-import type {TRootState} from "../../../../store";
+import type {TRootState} from "@store/index";
 import Button from '@mui/material/Button';
 import DialogTitle from '@mui/material/DialogTitle';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import {Languages} from "../../../../domains/Translate";
+import {Languages} from "@domains/Translate";
 import "./style.css"
 
 export interface IFlexibleModal {

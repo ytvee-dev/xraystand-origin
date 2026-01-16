@@ -1,5 +1,5 @@
-import SpriteIcon from "../SpriteIcon";
-import { SvgSpriteIds } from "../../../../utils/constants";
+import SpriteIcon from "@components/common/Other/SpriteIcon";
+import { SvgSpriteIds } from "@utils/constants";
 import { type ReactElement } from "react";
 
 export interface ILogoProps {

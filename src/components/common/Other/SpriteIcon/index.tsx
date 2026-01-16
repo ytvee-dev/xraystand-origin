@@ -1,4 +1,4 @@
-import { svgSpriteSrcPrefix } from "../../../../utils/constants";
+import { svgSpriteSrcPrefix } from "@utils/constants";
 import { type ReactElement } from "react";
 
 export interface ISpriteIconProps {

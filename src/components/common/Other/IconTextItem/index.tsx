@@ -1,7 +1,7 @@
 import React, {type ReactElement} from "react";
 import * as MuiIcons from '@mui/icons-material';
 import { type SvgIconProps } from '@mui/material/SvgIcon';
-import SpriteIcon from "../SpriteIcon";
+import SpriteIcon from "@components/common/Other/SpriteIcon";
 import "./style.css";
 
 interface IIConTextItemProps {

@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
 import {Alert} from "@mui/material";
-import SpriteIcon from "../Other/SpriteIcon";
+import SpriteIcon from "@components/common/Other/SpriteIcon";
 import "./style.css";
 
 export type TNotificationTypes = "warning" | "info";
