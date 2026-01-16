@@ -1,4 +1,3 @@
-import RulesList from "../../Other/RulesList";
 import DSNotification from "@components/common/DSNotification";
 import type { ISectionProps } from "@modules/safetyPrecautions/types";
 import type { CSSProperties, ReactElement } from "react";
