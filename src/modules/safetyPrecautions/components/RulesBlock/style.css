@@ -5,8 +5,9 @@
     gap: 36px;
     z-index: 10;
 
-    img {
-        max-width: 60px !important;
+    svg {
+        width: 60px !important;
+        height: 60px !important;
     }
 
     h2 {
@@ -35,17 +36,15 @@
 
 @media screen and (max-width: 768px) {
     .rules-block {
-        img {
-            max-width: 45px !important;
-        }
-
         .rules-block-card {
             .icon-text-item {
-                flex-direction: row;
-
                 h3 {
                     padding-bottom: 0;
                     font-size: 20px;
+                }
+                svg {
+                    min-width: 45px !important;
+                    min-height: 45px !important;
                 }
 
             }
