@@ -1,5 +1,5 @@
 import React, {type ReactElement, type ReactNode} from "react";
-import CenteredHeader from "../../components/common/CenteredHeader";
+import CenteredHeader from "@components/common/CenteredHeader";
 import HomeFooter from "@components/common/Footers/HomeFooter";
 import PrivacyPolicyModal from "@components/common/PrivacyPolicyModal";
 import "./style.css";

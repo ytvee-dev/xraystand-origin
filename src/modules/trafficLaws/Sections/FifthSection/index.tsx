@@ -1,8 +1,8 @@
 import {type ReactElement} from "react";
 import type {TContentItem} from "../../types";
-import ContentSection from "../../../../components/common/Sections/DSContentSection";
+import ContentSection from "@components/common/Sections/DSContentSection";
 import DefaultCardsListOL from "../../components/DefaultCardsListOL";
-import DSNotification from "../../../../components/common/DSNotification";
+import DSNotification from "@components/common/DSNotification";
 import {useLocaleContent} from "@hooks/useLocale";
 import * as textContentKz from "../../locales/kaz.json";
 import * as textContentRu from "../../locales/rus.json";

@@ -1,6 +1,6 @@
 import React, {type ReactElement} from "react";
 import type {FifthSection as TFifthSection} from "../../types";
-import useScreenWidth from "../../../../hooks/useScreenWidth.ts";
+import useScreenWidth from "@hooks/useScreenWidth.ts";
 
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem, {timelineItemClasses} from '@mui/lab/TimelineItem';

@@ -1,7 +1,7 @@
 import React, {type ReactElement} from "react";
 import type {SecondSection as TSecondSection} from "../../types";
 import CirclePlate from "../../components/CirclePlate";
-import BgContentSection from "../../../../components/common/Sections/BgContentSection";
+import BgContentSection from "@components/common/Sections/BgContentSection";
 import * as paths from "../../locales/paths.json";
 import "./style.css";
 

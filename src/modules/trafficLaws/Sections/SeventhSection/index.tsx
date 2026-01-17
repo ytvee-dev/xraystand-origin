@@ -1,7 +1,7 @@
 import {type ReactElement} from "react";
 import type {TContentItem} from "../../types";
-import TwoColumnSection from "../../../../components/common/Sections/TwoColumnSection";
-import LargeCard from "../../../../components/common/Cards/LargeCard";
+import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
+import LargeCard from "@components/common/Cards/LargeCard";
 import DefaultCardsListOL from "../../components/DefaultCardsListOL";
 import SquareImageViewer from "../../components/SquareImageViewer";
 import {useLocaleContent} from "@hooks/useLocale";

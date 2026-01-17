@@ -21,7 +21,7 @@ import CoverSection from "@modules/trafficLaws/Sections/CoverSection";
 import FlexibleModal from "@components/common/Modal/FlexibleModal";
 import DefaultImageCard from "@modules/trafficLaws/components/DefaultImageCard";
 import Spinner from "@components/common/Spinner";
-import * as paths from '../../modules/trafficLaws/locales/paths.json';
+import * as paths from '@modules/trafficLaws/locales/paths.json';
 import "./style.css";
 
 const modalPolicemanImagesPaths: Record<string, string[]> = {

@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
 import type {TContentItem} from "../../types";
-import ContentSection from "../../../../components/common/Sections/DSContentSection";
+import ContentSection from "@components/common/Sections/DSContentSection";
 import DefaultCardsListOL from "../../components/DefaultCardsListOL";
 import {useLocaleContent} from "@hooks/useLocale";
 import * as textContentKz from "../../locales/kaz.json";

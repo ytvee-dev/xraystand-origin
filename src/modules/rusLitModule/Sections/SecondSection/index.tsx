@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import {type DSContentBlockColorScheme} from "../../../../components/common/DSContentBlock";
+import {type DSContentBlockColorScheme} from "@components/common/DSContentBlock";
 import BackgroundBlock from "../../components/BackgroundBlock";
 import * as content from "../../locales/rus.json";
 import * as paths from "../../locales/paths.json";

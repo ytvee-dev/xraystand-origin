@@ -1,6 +1,6 @@
 import { type PayloadAction } from "@reduxjs/toolkit";
-import { Languages } from "../../../domains/Translate";
-import { LocalStorageKeys } from "../../../utils/constants";
+import { Languages } from "@domains/Translate";
+import { LocalStorageKeys } from "@utils/constants";
 import { createSlice } from "@reduxjs/toolkit";
 
 interface ILocaleState {

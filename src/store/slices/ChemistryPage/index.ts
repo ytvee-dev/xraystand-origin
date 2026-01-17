@@ -1,6 +1,6 @@
 import { type PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
-import type {IElementJson} from "../../../pages/Chemistry/types.ts";
+import type {IElementJson} from "@pages/Chemistry/types.ts";
 
 interface IPageState {
     isModalOpened: boolean;

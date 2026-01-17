@@ -1,8 +1,8 @@
 import {type ReactElement} from "react";
-import DSNotification from "../../../../components/common/DSNotification";
+import DSNotification from "@components/common/DSNotification";
 import {usePageData} from "@hooks/usePageData";
-import DSCardsWrapper from "../../../../components/common/Wrappers/DSCadsWrapper";
-import DSCard from "../../../../components/common/Cards/DSCard";
+import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
+import DSCard from "@components/common/Cards/DSCard";
 import * as paths from "../../locales/paths.json";
 import "./style.css";
 

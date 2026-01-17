@@ -1,4 +1,4 @@
-import type {IElementJson} from "../../../../pages/Chemistry/types.ts";
+import type {IElementJson} from "@pages/Chemistry/types.ts";
 
 export const contentFieldsRu: IElementJson = {
     number: "Порядковый номер",

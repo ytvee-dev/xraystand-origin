@@ -1,8 +1,8 @@
 import {type ReactElement} from "react";
-import ContentSection from "../../../../components/common/Sections/DSContentSection";
+import ContentSection from "@components/common/Sections/DSContentSection";
 import AnimatedCarCard from "../../components/AnimatedCarCard";
 import AnimatedLargeCard, {type IDescription} from "../../components/AnimatedLargeCard";
-import {type IPageSectionResources, PageSectionIds} from "../../../../domains/Translate";
+import {type IPageSectionResources, PageSectionIds} from "@domains/Translate";
 import AnimatedTrafficLight from "../../components/AnimatedTrafficLight";
 import * as textContentKz from "../../locales/kaz.json";
 import * as textContentRu from "../../locales/rus.json";
