@@ -1,11 +1,11 @@
 import {type ReactElement} from "react";
 import ContentSection from "@components/common/Sections/DSContentSection";
-import AnimatedCarCard from "../../components/AnimatedCarCard";
-import AnimatedLargeCard, {type IDescription} from "../../components/AnimatedLargeCard";
+import AnimatedCarCard from "@modules/trafficLaws/components/AnimatedCarCard";
+import AnimatedLargeCard, {type IDescription} from "@modules/trafficLaws/components/AnimatedLargeCard";
 import {type IPageSectionResources, PageSectionIds} from "@domains/Translate";
-import AnimatedTrafficLight from "../../components/AnimatedTrafficLight";
-import * as textContentKz from "../../locales/kaz.json";
-import * as textContentRu from "../../locales/rus.json";
+import AnimatedTrafficLight from "@modules/trafficLaws/components/AnimatedTrafficLight";
+import * as textContentKz from "@modules/trafficLaws/locales/kaz.json";
+import * as textContentRu from "@modules/trafficLaws/locales/rus.json";
 import {useLocaleContent} from "@hooks/useLocale";
 
 const SecondSection = (): ReactElement | null => {

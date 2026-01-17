@@ -1,13 +1,13 @@
 import {useDispatch, useSelector} from "react-redux";
 import {type ReactElement, type FC} from "react";
-import type {TRootState} from "../../../../store";
+import type {TRootState} from "@store/index.ts";
 import type {IElementJson} from "@pages/Chemistry/types.ts";
 import type { TElementsInfo} from "@pages/Chemistry/types.ts";
 import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
-import ElementCell from "../ElementCell";
+import ElementCell from "@modules/chemistry/components/ElementCell";
 import {Languages} from "@domains/Translate";
-import * as contentKZ from "../../locales/kaz.json";
-import * as contentRU from "../../locales/rus.json";
+import * as contentKZ from "@modules/chemistry/locales/kaz.json";
+import * as contentRU from "@modules/chemistry/locales/rus.json";
 import "./style.css";
 
 const groupElementsByPeriod = (elements: TElementsInfo): Record<number, TElementsInfo> => {

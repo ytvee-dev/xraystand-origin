@@ -1,5 +1,5 @@
 import React, {type ReactElement, type ReactNode} from "react";
-import type {TRootState} from "../../store";
+import type {TRootState} from "@store/index.ts";
 import type {Languages} from "@domains/Translate";
 import {trafficLawsFooterMeta} from "@components/common/Footers/StrictFooter/content.ts";
 import {useSelector} from "react-redux";

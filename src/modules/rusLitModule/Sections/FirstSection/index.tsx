@@ -5,8 +5,8 @@ import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
 import DSNotification from "@components/common/DSNotification";
 import {usePageData} from "@hooks/usePageData";
 
-import * as content from "../../locales/rus.json";
-import * as paths from "../../locales/paths.json";
+import * as content from "@modules/rusLitModule/locales/rus.json";
+import * as paths from "@modules/rusLitModule/locales/paths.json";
 
 import "./style.css";
 

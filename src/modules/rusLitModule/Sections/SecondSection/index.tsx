@@ -1,8 +1,8 @@
 import {type ReactElement} from "react";
 import {type DSContentBlockColorScheme} from "@components/common/DSContentBlock";
-import BackgroundBlock from "../../components/BackgroundBlock";
-import * as content from "../../locales/rus.json";
-import * as paths from "../../locales/paths.json";
+import BackgroundBlock from "@modules/rusLitModule/components/BackgroundBlock";
+import * as content from "@modules/rusLitModule/locales/rus.json";
+import * as paths from "@modules/rusLitModule/locales/paths.json";
 import "./style.css";
 
 const rusLitTextColors: DSContentBlockColorScheme = {

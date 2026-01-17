@@ -1,5 +1,5 @@
 import {type ReactElement} from "react";
-import type {TRootState} from "../../store";
+import type {TRootState} from "@store/index.ts";
 import type {Languages} from "@domains/Translate";
 import Header from "@components/common/Header";
 import StrictFooter from "@components/common/Footers/StrictFooter";

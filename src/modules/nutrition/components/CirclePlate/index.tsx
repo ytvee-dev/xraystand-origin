@@ -3,7 +3,7 @@ import type {LabeledItem} from "../../types";
 import useScreenWidth from "@hooks/useScreenWidth.ts";
 import LightCard from "@components/common/Cards/LightCard";
 import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
-import * as paths from "../../locales/paths.json";
+import * as paths from "@modules/nutrition/locales/paths.json";
 import "./style.css";
 
 type TDescriptionBlock =

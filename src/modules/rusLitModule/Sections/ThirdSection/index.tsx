@@ -2,11 +2,11 @@ import {type ReactElement} from "react";
 import useScreenWidth from "@hooks/useScreenWidth.ts";
 import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
 import DSContentBlock from "@components/common/DSContentBlock";
-import SquareImageViewer from "../../../trafficLaws/components/SquareImageViewer";
+import SquareImageViewer from "@modules/trafficLaws/components/SquareImageViewer";
 import DSInformationCard from "@components/common/Cards/DSInformationCard";
 
-import * as content from "../../locales/rus.json";
-import * as paths from "../../locales/paths.json";
+import * as content from "@modules/rusLitModule/locales/rus.json";
+import * as paths from "@modules/rusLitModule/locales/paths.json";
 import "./style.css";
 
 const notificationColorScheme = {
