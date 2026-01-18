@@ -1,5 +1,5 @@
-import type {IListItemProps} from "../../utils/constants";
-import type {IChemistryPageResources, TElementsInfo} from "../../pages/Chemistry/types.ts";
+import type {IListItemProps} from "@utils/constants";
+import type {IChemistryPageResources, TElementsInfo} from "@pages/Chemistry/types.ts";
 
 export interface IInfoCardResources {
     title: string;

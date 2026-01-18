@@ -1,5 +1,5 @@
 import { type ReactElement } from "react";
-import DSNotification from "../../../../components/common/DSNotification";
+import DSNotification from "@components/common/DSNotification";
 import "./style.css";
 
 export interface IDescription {

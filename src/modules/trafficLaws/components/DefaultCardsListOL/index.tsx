@@ -1,10 +1,10 @@
 import {type ReactElement} from "react";
-import type {TContentItem} from "../../types";
+import type {TContentItem} from "@modules/trafficLaws/types";
 import {getCardProps} from "./meta.ts";
-import DefaultImageCard from "../DefaultImageCard";
+import DefaultImageCard from "@modules/trafficLaws/components/DefaultImageCard";
 import {useDispatch} from "react-redux";
-import {setModalContentName} from "../../../../store/slices/TrafficLawsPage";
-import {setIsModalOpened} from "../../../../store/slices/Application";
+import {setModalContentName} from "@store/slices/TrafficLawsPage";
+import {setIsModalOpened} from "@store/slices/Application";
 import useWindowWidth from "@hooks/useScreenWidth.ts";
 import {useLocale} from "@hooks/useLocale";
 import "./style.css";

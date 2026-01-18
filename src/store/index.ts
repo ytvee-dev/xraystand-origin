@@ -1,7 +1,7 @@
 import localeSlice from "./slices/Locale";
-import applicationSlice from "./slices/Application";
-import trafficLawsSlice from "./slices/TrafficLawsPage";
-import chemistrySlice from "./slices/ChemistryPage";
+import applicationSlice from "@store/slices/Application";
+import trafficLawsSlice from "@store/slices/TrafficLawsPage";
+import chemistrySlice from "@store/slices/ChemistryPage";
 import { configureStore } from "@reduxjs/toolkit";
 
 const store = configureStore({

@@ -1,5 +1,5 @@
-import store from "./store";
-import Application from "./components/Application";
+import store from "@store/index.ts";
+import Application from "@components/Application";
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 

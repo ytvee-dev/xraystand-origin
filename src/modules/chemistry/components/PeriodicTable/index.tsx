@@ -1,14 +1,14 @@
 import {type ChangeEvent, type ReactElement, useState, type FC} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {selectElement, setIsModalOpened} from "../../../../store/slices/ChemistryPage";
-import type {TCategoryState, IElementJson} from "../../../../pages/Chemistry/types.ts";
-import ElementCell from "../ElementCell";
-import type {TElementsInfo} from "../../../../pages/Chemistry/types.ts";
-import {Languages} from "../../../../domains/Translate";
+import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
+import type {TCategoryState, IElementJson} from "@pages/Chemistry/types.ts";
+import ElementCell from "@modules/chemistry/components/ElementCell";
+import type {TElementsInfo} from "@pages/Chemistry/types.ts";
+import {Languages} from "@domains/Translate";
 import "./style.css";
-import type {TRootState} from "../../../../store";
-import * as contentKZ from "../../locales/kaz.json";
-import * as contentRU from "../../locales/rus.json";
+import type {TRootState} from "@store/index.ts";
+import * as contentKZ from "@modules/chemistry/locales/kaz.json";
+import * as contentRU from "@modules/chemistry/locales/rus.json";
 
 const makeInitialCategories = (elements: TElementsInfo): TCategoryState =>
     elements.reduce<TCategoryState>(

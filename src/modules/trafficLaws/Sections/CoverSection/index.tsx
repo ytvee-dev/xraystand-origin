@@ -1,7 +1,7 @@
 import { type ReactElement } from "react";
 import {useLocale, useLocaleContent} from "@hooks/useLocale";
-import * as textContentKz from "../../locales/kaz.json";
-import * as textContentRu from "../../locales/rus.json";
+import * as textContentKz from "@modules/trafficLaws/locales/kaz.json";
+import * as textContentRu from "@modules/trafficLaws/locales/rus.json";
 import "./style.css";
 
 const housesImg = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051919/houses_iznhzw.webp';

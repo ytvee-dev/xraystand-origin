@@ -1,7 +1,7 @@
 import {type ReactElement, useState, useMemo} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import type {IContentSectionProps, IElementJson, ITextContent} from "./types.ts";
-import type {TRootState} from "../../store";
+import type {TRootState} from "@store/index.ts";
 import {selectElement, setIsModalOpened} from "@store/slices/ChemistryPage";
 import {usePageData} from "@hooks/usePageData";
 import {useLocaleContent} from "@hooks/useLocale";

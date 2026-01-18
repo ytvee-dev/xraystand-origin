@@ -1,5 +1,5 @@
 import React, {type ReactElement} from "react";
-import type {HomeSection} from "../../types";
+import type {HomeSection} from "@modules/home/types";
 import {usePageData} from "@hooks/usePageData.ts";
 import * as images from "@modules/home/locales/paths.json";
 import "./style.css";

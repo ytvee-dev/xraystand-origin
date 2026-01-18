@@ -1,9 +1,9 @@
 import {type ReactElement} from "react";
-import type {TRootState} from "../../store";
-import type {Languages} from "../../domains/Translate";
-import Header from "../../components/common/Header";
-import StrictFooter from "../../components/common/Footers/StrictFooter";
-import {trafficLawsFooterMeta} from "../../components/common/Footers/StrictFooter/content.ts";
+import type {TRootState} from "@store/index.ts";
+import type {Languages} from "@domains/Translate";
+import Header from "@components/common/Header";
+import StrictFooter from "@components/common/Footers/StrictFooter";
+import {trafficLawsFooterMeta} from "@components/common/Footers/StrictFooter/content.ts";
 import {useSelector} from "react-redux";
 import PrivacyPolicyModal from "@components/common/PrivacyPolicyModal";
 import "./style.css";
