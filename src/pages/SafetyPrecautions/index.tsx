@@ -48,7 +48,7 @@ const SafetyPrecautions = (): ReactElement => {
                 icons: [
                     'BuildOutlined',
                     'Warning',
-                    'BlockOutlined',
+                    'DirectionsRun',
                     'DoNotTouchOutlined',
                     'HandymanOutlined',
                     'GavelOutlined',
