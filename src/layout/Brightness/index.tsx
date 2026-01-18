@@ -1,10 +1,10 @@
 import React, {type ReactElement, type ReactNode} from "react";
-import type {TRootState} from "../../store";
-import type {Languages} from "../../domains/Translate";
-import {trafficLawsFooterMeta} from "../../components/common/Footers/StrictFooter/content.ts";
+import type {TRootState} from "@store/index.ts";
+import type {Languages} from "@domains/Translate";
+import {trafficLawsFooterMeta} from "@components/common/Footers/StrictFooter/content.ts";
 import {useSelector} from "react-redux";
-import StrictFooter from "../../components/common/Footers/StrictFooter";
-import CenteredHeader from "../../components/common/CenteredHeader";
+import StrictFooter from "@components/common/Footers/StrictFooter";
+import CenteredHeader from "@components/common/CenteredHeader";
 import PrivacyPolicyModal from "@components/common/PrivacyPolicyModal";
 import "./style.css";
 

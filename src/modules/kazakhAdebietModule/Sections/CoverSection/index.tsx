@@ -1,7 +1,7 @@
 import {type ReactElement} from "react";
 import {usePageData} from "@hooks/usePageData";
-import * as sectionContent from '../../locales/kaz.json';
-import * as paths from '../../locales/paths.json';
+import * as sectionContent from '@modules/kazakhAdebietModule/locales/kaz.json';
+import * as paths from '@modules/kazakhAdebietModule/locales/paths.json';
 import "./style.css";
 
 const CoverSection = (): ReactElement => {

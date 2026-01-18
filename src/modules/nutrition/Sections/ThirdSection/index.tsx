@@ -1,10 +1,10 @@
 import React, {type ReactElement} from "react";
 import type {ThirdSection as TThirdSection} from "../../types";
-import useScreenWidth from "../../../../hooks/useScreenWidth.ts";
-import BgContentSection from "../../../../components/common/Sections/BgContentSection";
-import TwoColumnSection from "../../../../components/common/Sections/TwoColumnSection";
-import NestedCard from "../../../../components/common/Cards/NestedCard";
-import {dsCardImagePathPrefix} from "../../../../components/common/Cards/cardsMeta.tsx";
+import useScreenWidth from "@hooks/useScreenWidth.ts";
+import BgContentSection from "@components/common/Sections/BgContentSection";
+import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
+import NestedCard from "@components/common/Cards/NestedCard";
+import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
 import * as paths from "../../locales/paths.json";
 import "./style.css";
 

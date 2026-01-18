@@ -1,11 +1,11 @@
 import {type ReactElement} from "react";
-import type {TContentItem} from "../../types";
-import ContentSection from "../../../../components/common/Sections/DSContentSection";
-import DefaultCardsListOL from "../../components/DefaultCardsListOL";
+import type {TContentItem} from "@modules/trafficLaws/types";
+import ContentSection from "@components/common/Sections/DSContentSection";
+import DefaultCardsListOL from "@modules/trafficLaws/components/DefaultCardsListOL";
 import {useLocaleContent} from "@hooks/useLocale";
-import * as textContentKz from "../../locales/kaz.json";
-import * as textContentRu from "../../locales/rus.json";
-import * as paths from "../../locales/paths.json";
+import * as textContentKz from "@modules/trafficLaws/locales/kaz.json";
+import * as textContentRu from "@modules/trafficLaws/locales/rus.json";
+import * as paths from "@modules/trafficLaws/locales/paths.json";
 
 const EighthSection = (): ReactElement | null => {
     const translation = useLocaleContent(textContentRu, textContentKz);

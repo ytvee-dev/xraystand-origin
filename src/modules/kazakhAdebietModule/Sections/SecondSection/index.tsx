@@ -1,11 +1,11 @@
 import {type ReactElement} from "react";
-import SquareImageViewer from "../../../trafficLaws/components/SquareImageViewer";
-import TwoColumnSection from "../../../../components/common/Sections/TwoColumnSection";
-import DSContentBlock, {type DSContentBlockColorScheme} from "../../../../components/common/DSContentBlock";
-import DSCardsWrapper from "../../../../components/common/Wrappers/DSCadsWrapper";
-import DSInformationCard from "../../../../components/common/Cards/DSInformationCard";
-import * as content from "../../locales/kaz.json";
-import * as paths from "../../locales/paths.json";
+import SquareImageViewer from "@modules/trafficLaws/components/SquareImageViewer";
+import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
+import DSContentBlock, {type DSContentBlockColorScheme} from "@components/common/DSContentBlock";
+import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
+import DSInformationCard from "@components/common/Cards/DSInformationCard";
+import * as content from "@modules/kazakhAdebietModule/locales/kaz.json";
+import * as paths from "@modules/kazakhAdebietModule/locales/paths.json";
 import "./style.css";
 
 const rightColumnColorScheme: DSContentBlockColorScheme = {

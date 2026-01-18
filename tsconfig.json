@@ -23,7 +23,7 @@
     "erasableSyntaxOnly": false,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-
+    
     "baseUrl": ".",
     "paths": {
       "@assets/*": ["public/assets/*"],
@@ -33,7 +33,6 @@
       "@router/*": ["src/router/*"],
       "@layout/*": ["src/layout/*"],
       "@domains/*": ["src/domains/*"],
-      "@locales/*": ["src/locales/*"],
       "@store/*": ["src/store/*"],
       "@utils/*": ["src/utils/*"],
       "@hooks/*": ["src/hooks/*"]

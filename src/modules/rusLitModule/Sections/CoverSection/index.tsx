@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
-import * as sectionContent from '../../locales/rus.json';
-import * as paths from '../../locales/paths.json';
+import * as sectionContent from '@modules/rusLitModule/locales/rus.json';
+import * as paths from '@modules/rusLitModule/locales/paths.json';
 import "./style.css";
 
 const CoverSection = (): ReactElement => {

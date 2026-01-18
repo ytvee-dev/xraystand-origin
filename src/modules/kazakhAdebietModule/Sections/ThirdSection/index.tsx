@@ -1,11 +1,11 @@
 import {type ReactElement} from "react";
-import ContentSection from "../../../../components/common/Sections/DSContentSection";
-import DSNotification from "../../../../components/common/DSNotification";
-import DSCard from "../../../../components/common/Cards/DSCard";
-import DSCardsWrapper from "../../../../components/common/Wrappers/DSCadsWrapper";
+import ContentSection from "@components/common/Sections/DSContentSection";
+import DSNotification from "@components/common/DSNotification";
+import DSCard from "@components/common/Cards/DSCard";
+import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
 
-import * as content from "../../locales/kaz.json";
-import * as paths from "../../locales/paths.json";
+import * as content from "@modules/kazakhAdebietModule/locales/kaz.json";
+import * as paths from "@modules/kazakhAdebietModule/locales/paths.json";
 import "./style.css";
 
 const SecondSection = (): ReactElement => {

@@ -1,8 +1,8 @@
 import {type ReactElement} from "react";
-import DefaultLayout from "../../layout/Default";
-import ContentSection from "../../components/common/Sections/DSContentSection";
+import DefaultLayout from "@layout/Default";
+import ContentSection from "@components/common/Sections/DSContentSection";
 import {usePageData} from "@hooks/usePageData";
-import DSNotification from "../../components/common/DSNotification";
+import DSNotification from "@components/common/DSNotification";
 import "./style.css";
 
 const textContent = {

@@ -1,10 +1,10 @@
 import React, {type ReactElement} from "react";
 import type {FirstSection as TFirstSection} from "../../types";
-import DSCardsWrapper from "../../../../components/common/Wrappers/DSCadsWrapper";
-import BgContentSection from "../../../../components/common/Sections/BgContentSection";
-import LightCard from "../../../../components/common/Cards/LightCard";
+import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
+import BgContentSection from "@components/common/Sections/BgContentSection";
+import LightCard from "@components/common/Cards/LightCard";
 import * as paths from "../../locales/paths.json";
-import {dsCardImagePathPrefix} from "../../../../components/common/Cards/cardsMeta.tsx";
+import {dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
 import "./style.css";
 
 interface FirstSectionProps {

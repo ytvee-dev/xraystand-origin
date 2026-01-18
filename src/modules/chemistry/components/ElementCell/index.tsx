@@ -1,5 +1,5 @@
 import type {FC} from "react";
-import type {ICellProps} from "../../../../pages/Chemistry/types.ts";
+import type {ICellProps} from "@pages/Chemistry/types.ts";
 import {VARIANT} from "./meta.ts";
 import "./style.css";
 

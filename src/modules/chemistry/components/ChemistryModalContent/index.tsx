@@ -1,8 +1,8 @@
 import {useSelector} from "react-redux";
 import type {FC, ReactNode} from "react";
-import type {TRootState} from "../../../../store";
-import type {IElementJson} from "../../../../pages/Chemistry/types.ts";
-import ElementCell from "../ElementCell";
+import type {TRootState} from "@store/index.ts";
+import type {IElementJson} from "@pages/Chemistry/types.ts";
+import ElementCell from "@modules/chemistry/components/ElementCell";
 import {contentFieldsKz, contentFieldsRu} from "./meta.ts";
 import "./style.css";
 
