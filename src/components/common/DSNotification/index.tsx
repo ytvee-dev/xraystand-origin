@@ -31,8 +31,7 @@ export interface IFlexibleAlertProps {
     fontSize?: string;
     padding?: string,
     imgPosition?: ImgPosition,
-    cardGap?: string,
-    cardType?: 'default' | 'custom',
+    cardGap?: string
 }
 
 export enum NotificationBackgroundColors {
