@@ -24,7 +24,7 @@ const FirstSection = (): ReactElement | null => {
                 />
             </div>
             <div className="content-section-alert-wrapper">
-                <DSNotification label={translation[PageSectionIds.FIRST_SECTION].notificationLabel as string} />
+                <DSNotification content={translation[PageSectionIds.FIRST_SECTION].notificationLabel as string} />
             </div>
         </ContentSection>
     );

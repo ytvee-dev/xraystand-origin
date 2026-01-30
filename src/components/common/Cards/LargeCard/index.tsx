@@ -51,7 +51,7 @@ const LargeCard = ({
             </div>
             <div className="large-card-body">{children && children}</div>
             <DSNotification
-                label={notificationLabel}
+                content={notificationLabel}
                 backgroundColor={colorScheme.notificationBackgroundColor}
                 textColor={colorScheme?.notificationTextColor}
                 fullWidth={true}

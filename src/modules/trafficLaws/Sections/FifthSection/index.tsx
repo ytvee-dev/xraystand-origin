@@ -29,7 +29,7 @@ const FifthSection = (): ReactElement | null => {
                 />
             </div>
             <div className="content-section-alert-wrapper">
-                <DSNotification label={translation.fifthSection.notificationLabel as string} />
+                <DSNotification content={translation.fifthSection.notificationLabel as string} />
             </div>
         </ContentSection>
     );

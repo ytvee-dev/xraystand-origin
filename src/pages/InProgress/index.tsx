@@ -31,7 +31,7 @@ const InProgress = (): ReactElement => {
                     </svg>
                 </div>
                 <div className="content-section-alert-wrapper">
-                    <DSNotification label={textContent.alertText} />
+                    <DSNotification content={textContent.alertText} />
                 </div>
             </ContentSection>
 
