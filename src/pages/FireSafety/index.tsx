@@ -1,4 +1,5 @@
-import React, { useMemo } from "react";
+import React from "react";
+// import { useMemo } from "react";
 // import {usePreloadImages} from "@hooks/usePreloadImages.ts";
 // import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
 // import {usePageData} from "@hooks/usePageData";
