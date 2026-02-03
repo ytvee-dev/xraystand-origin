@@ -35,7 +35,7 @@ const AnimatedLargeCard = ({
             </div>
             <div className="animated-car-card-body">{children}</div>
             <div className="content-section-alert-wrapper">
-                <DSNotification label={notificationLabel} />
+                <DSNotification content={notificationLabel} />
             </div>
         </div>
     );

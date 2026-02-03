@@ -42,7 +42,7 @@ const FirstSection = (): ReactElement => {
                     </DSCardsWrapper>
                     <div style={{maxWidth: 1200}}>
                         <DSNotification
-                            label={content.firstSection.notificationLabel as string}
+                            content={content.firstSection.notificationLabel as string}
                             backgroundColor={"#FFE9E9"}
                             iconColor={"#871A16"}
                             fullWidth={true}

@@ -34,7 +34,7 @@ const IconTextItem: React.FC<IIConTextItemProps> = ({
 }: IIConTextItemProps): ReactElement => {
     return (
         <div className='icon-text-item'>
-            {iconType === "svg" && <SpriteIcon iconId={iconName} size={'80px'} color={iconColor} />}
+            {iconType === "svg" && <SpriteIcon iconId={iconName} width={'80px'} height={'80px'} color={iconColor} />}
             {iconType === "png" && <img src={iconName} alt="image" />}
             {iconType === "mui" && iconName && <DynamicIcon name={iconName as keyof typeof MuiIcons} iconColor={iconColor} />}
             <div className="icon-text-item-text-wrapper">

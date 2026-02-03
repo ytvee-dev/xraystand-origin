@@ -55,13 +55,14 @@ const DSContentBlock = ({
             </div>
             <div className="ds-content-block__body">{children && children}</div>
             <DSNotification
-                label={notificationLabel}
+                content={notificationLabel}
                 type="warning"
                 backgroundColor={colorScheme?.notificationBackgroundColor}
                 textColor={colorScheme?.notificationTextColor}
                 borderColor={colorScheme?.notificationBorderColor}
                 iconName="warningIcon"
-                iconSize="19px"
+                iconWidth="19px"
+                iconHeight="19px"
                 iconColor={colorScheme?.notificationIconColor}
                 fullWidth
             />
