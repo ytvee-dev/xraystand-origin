@@ -1,4 +1,4 @@
-import {type ReactElement, type ReactNode} from "react";
+import { type CSSProperties, type ReactElement, type ReactNode } from "react";
 import DSNotification from "@components/common/DSNotification";
 import "./style.css";
 
@@ -9,12 +9,23 @@ export interface DSContentBlockDescription {
 
 export interface DSContentBlockColorScheme {
     titleColor?: string;
+    titleStyle?: CSSProperties;
     subtitleColor?: string;
+    subtitleStyle?: CSSProperties;
     descriptionColor?: string;
+    descriptionStyle?: CSSProperties;
+    contentBlockStyle?: CSSProperties;
     notificationBackgroundColor?: string;
     notificationBorderColor?: string;
+    notificationBorderRadius?: string;
     notificationTextColor?: string;
     notificationIconColor?: string;
+    notificationStyle?: CSSProperties;
+    notificationAlertStyle?: CSSProperties;
+    notificationIconName?: string;
+    notificationIconWidth?: string;
+    notificationIconHeight?: string;
+    notificationCardGap?: string;
 }
 
 export interface DSContentBlockProps {
@@ -42,28 +53,52 @@ const DSContentBlock = ({
     notificationLabel = "",
     colorScheme = defaultColorScheme,
 }: DSContentBlockProps): ReactElement => {
-    const isSubtitle = (d: DSContentBlockDescription | string): d is DSContentBlockDescription =>
+    const isSubtitle = (
+        d: DSContentBlockDescription | string,
+    ): d is DSContentBlockDescription =>
         typeof d === "object" && d !== null && "subtitle" in d;
 
     return (
         <div className="ds-content-block">
             <div className="ds-content-block__header">
-                <h1 style={{color: colorScheme.titleColor}}>{title && title}</h1>
-                <h3 style={{color: colorScheme.subtitleColor}}>
-                    {isSubtitle(description) ? description.subtitle : description}
+                <h1
+                    style={{
+                        color: colorScheme.titleColor,
+                        ...colorScheme.titleStyle,
+                    }}
+                >
+                    {title && title}
+                </h1>
+                <h3
+                    style={{
+                        color: colorScheme.subtitleColor,
+                        ...colorScheme.subtitleStyle,
+                    }}
+                >
+                    {isSubtitle(description)
+                        ? description.subtitle
+                        : description}
                 </h3>
             </div>
-            <div className="ds-content-block__body">{children && children}</div>
+            <div
+                className="ds-content-block__body"
+                style={colorScheme.contentBlockStyle}
+            >
+                {children && children}
+            </div>
             <DSNotification
                 content={notificationLabel}
+                style={colorScheme.notificationStyle}
+                alertStyle={colorScheme.notificationAlertStyle}
                 type="warning"
                 backgroundColor={colorScheme?.notificationBackgroundColor}
                 textColor={colorScheme?.notificationTextColor}
                 borderColor={colorScheme?.notificationBorderColor}
-                iconName="warningIcon"
-                iconWidth="19px"
-                iconHeight="19px"
+                iconName={colorScheme?.notificationIconName ?? "warningIcon"}
+                iconWidth={colorScheme?.notificationIconWidth ?? "19px"}
+                iconHeight={colorScheme?.notificationIconHeight ?? "19px"}
                 iconColor={colorScheme?.notificationIconColor}
+                cardGap={colorScheme?.notificationCardGap}
                 fullWidth
             />
         </div>

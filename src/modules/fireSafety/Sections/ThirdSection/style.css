@@ -1,0 +1,29 @@
+.fire-safety-third-section-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fire-safety-third-section-content-wrapper h2 {
+    margin-bottom: 1.5rem;
+}
+
+.fire-safety-third-section-content-wrapper .fire-safety-description {
+    margin-bottom: 4.125rem;
+}
+
+.smoke-and-fire-list {
+    display: flex;
+    gap: 3rem;
+}
+
+.fire-safety-description {
+    width: 35.25rem;
+    margin: auto;
+}
+
+@media (max-width: 1000px) {
+    .smoke-and-fire-list {
+    flex-direction: column;
+}
+}
