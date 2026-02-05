@@ -24,26 +24,27 @@ const ThirdSection: React.FC<FireSafetySectionProps> = ({
                     title={textContent.fireReportingSection.title}
                     colorScheme={{
                         titleStyle: { ...headerTextStyle, margin: 0, gap: 0 },
-                        notificationAlertStyle: {
-                            ...captionTextStyle,
-                            justifyContent: "start",
-                        },
-                        contentBlockStyle: {
-                            display: "block",
-                        },
+
                         notificationBackgroundColor: "#C7493C",
                         notificationBorderColor: "#FFFFFF",
                         notificationTextColor: "#FFFFFFDE",
                         notificationIconColor: "#FFFFFF",
-                        notificationIconName: SvgSpriteIds.FIRE_SAFETY_WARNING,
-                        notificationIconWidth: "2.813rem",
-                        notificationIconHeight: "2.5rem",
-                        notificationBorderRadius: "1.563rem",
-                        notificationCardGap: "0.75rem",
                     }}
                     notificationLabel={
                         textContent.fireReportingSection.notificationLabel
                     }
+                    notificationAlertStyle={{
+                        ...captionTextStyle,
+                        justifyContent: "start",
+                    }}
+                    contentBlockStyle={{
+                        display: "block",
+                    }}
+                    notificationIconName={SvgSpriteIds.FIRE_SAFETY_WARNING}
+                    notificationIconWidth="2.813rem"
+                    notificationIconHeight="2.5rem"
+                    notificationBorderRadius="1.563rem"
+                    notificationCardGap="0.75rem"
                 >
                     <DSInforamtionCard
                         width={"100%"}
