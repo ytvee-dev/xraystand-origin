@@ -22,7 +22,7 @@ export interface DSContentBlockProps {
     title?: string;
     description?: DSContentBlockDescription | string;
     children?: ReactElement | ReactNode | null;
-    notificationLabel?: string;
+    notificationLabel?: string | string[];
     colorScheme?: DSContentBlockColorScheme;
     subtitleStyle?: CSSProperties;
     descriptionStyle?: CSSProperties;

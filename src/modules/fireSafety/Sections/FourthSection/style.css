@@ -1,0 +1,54 @@
+.fire-safety-fourth-section-content-wrapper {
+    padding: 0 6.375rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.fire-safety-fourth-section-content-wrapper .fire-safety-fourth-section-content-evacuation-steps {
+    display: block;
+    width: 100%;
+    flex: 1;
+}
+
+.fire-safety-fourth-section-content-wrapper .fire-safety-fourth-section-content-evacuation-steps .fire-safety-types-card {
+    margin-bottom: 1.5rem;
+}
+
+.fire-safety-fourth-section-content-bans-steps {
+    display: flex;
+    gap: 1rem;
+}
+
+.fire-safety-fourth-section-content-right-block {
+    flex: 1;
+}
+
+.fire-safety-fourth-section-content-right-block .fire-safety-fourth-section-content-bans-steps {
+    margin-bottom: 3rem;
+}
+
+.fire-safety-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.fire-safety-section .fire-safety-description {
+    margin-bottom: 4.125rem;
+}
+
+.smoke-and-fire-list {
+    display: flex;
+    gap: 3rem;
+}
+
+@media (max-width: 1200px) {
+    .fire-safety-fourth-section-content-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .fire-safety-fourth-section-content-bans-steps {
+        flex-direction: column;
+    }
+}

@@ -8,12 +8,13 @@ export type TFlexDirection =
     | "column-reverse"
     | "row-reverse";
 export interface ICardProps {
-    title: string;
+    title?: string;
     description: string;
     imagePath?: string;
     flexDirection: TFlexDirection;
     className?: string;
     style?: CSSProperties;
+    imageStyle?: CSSProperties;
 }
 
 const Card: React.FC<ICardProps> = ({
@@ -23,6 +24,7 @@ const Card: React.FC<ICardProps> = ({
     className,
     flexDirection,
     style,
+    imageStyle,
 }): ReactElement => {
     const isMobile = useScreenWidth() < 800;
     const textAlign = flexDirection === "row-reverse" ? "start" : "end";
@@ -36,16 +38,18 @@ const Card: React.FC<ICardProps> = ({
             }}
         >
             <div className={"math-card-text"}>
-                <h3 style={{ textAlign: !isMobile ? textAlign : "center" }}>
-                    {title}
-                </h3>
+                {title && (
+                    <h3 style={{ textAlign: !isMobile ? textAlign : "center" }}>
+                        {title}
+                    </h3>
+                )}
                 <p style={{ textAlign: !isMobile ? textAlign : "center" }}>
                     {description}
                 </p>
             </div>
             {imagePath && (
                 <div className={"fire-safety-card-image"}>
-                    <img src={imagePath} alt={title} />
+                    <img src={imagePath} alt={title} style={imageStyle} />
                 </div>
             )}
         </div>
