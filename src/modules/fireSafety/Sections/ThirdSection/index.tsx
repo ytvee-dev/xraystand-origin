@@ -1,5 +1,6 @@
 import React, { type ReactElement } from "react";
 import DSContentBlock from "@components/common/DSContentBlock";
+import * as paths from "@modules/firesafety/locales/paths.json";
 import DSInforamtionCard from "@components/common/Cards/DSInformationCard";
 import * as textContentRu from "@modules/fireSafety/locales/rus.json";
 import * as textContentKz from "@modules/fireSafety/locales/kaz.json";
@@ -23,7 +24,11 @@ const ThirdSection: React.FC<FireSafetySectionProps> = ({
                 <DSContentBlock
                     title={textContent.fireReportingSection.title}
                     colorScheme={{
-                        titleStyle: { ...headerTextStyle, margin: 0, gap: 0 },
+                        titleStyle: {
+                            ...headerTextStyle,
+                            margin: 0,
+                            gap: 0,
+                        },
 
                         notificationBackgroundColor: "#C7493C",
                         notificationBorderColor: "#FFFFFF",
@@ -60,7 +65,18 @@ const ThirdSection: React.FC<FireSafetySectionProps> = ({
                         }}
                     />
                 </DSContentBlock>
-                <div style={{ width: "40%" }}>Здесь должна быть картинка</div>
+                <div className="fire-safety-third-section-call-block">
+                    <img
+                        id="fire-safety-third-section-phone"
+                        src={paths.images.phone}
+                        alt={"fire-safety-third-section-phone"}
+                    />
+                    <img
+                        id="fire-safety-third-section-call"
+                        src={paths.images.call}
+                        alt={"fire-safety-third-section-call"}
+                    />
+                </div>
             </div>
         </section>
     );

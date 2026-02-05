@@ -1,6 +1,6 @@
 import React, { type ReactElement } from "react";
 import Card from "@modules/fireSafety/components/Card";
-import * as paths from "@modules/math/locales/paths.json";
+import * as paths from "@modules/firesafety/locales/paths.json";
 import * as textContentKz from "@modules/fireSafety/locales/kaz.json";
 import * as textContentRu from "@modules/fireSafety/locales/rus.json";
 import type { FireSafetySectionProps } from "@modules/fireSafety/types";
@@ -11,6 +11,7 @@ import "./style.css";
 
 const FirstSection: React.FC<FireSafetySectionProps> = ({
     className,
+    style,
 }: FireSafetySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
 
@@ -21,13 +22,22 @@ const FirstSection: React.FC<FireSafetySectionProps> = ({
                 title: contentItem.title,
                 subtitle: contentItem.subTitle,
                 description: contentItem.description,
-                image: paths.cards[idx] || "",
+                image: paths.cards.firstSection[idx] || "",
             };
         },
     );
 
     return (
-        <section className={className}>
+        <section className={className} style={style}>
+            <div className="fire-safety-first-section-content-wrapper-background">
+                <img
+                    className="fire-safety-first-section-content-wrapper-background-image"
+                    src={paths.backgrounds.orangeSmoke}
+                    alt={
+                        "fire-safety-first-section-content-wrapper-background-image"
+                    }
+                />
+            </div>
             <div className="fire-safety-first-section-content-wrapper">
                 <h2 className="header-text centered-text">
                     {textContent.fireCausesSection.title}
@@ -40,7 +50,7 @@ const FirstSection: React.FC<FireSafetySectionProps> = ({
                             className="fire-safety-types-card"
                             title={card.title}
                             description={card.description}
-                            imagePath={paths.cubes[idx]}
+                            imagePath={card.image}
                             flexDirection={card && getFlexDirection(card)}
                         />
                     ))}

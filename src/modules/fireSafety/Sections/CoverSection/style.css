@@ -1,4 +1,82 @@
+.fire-safety-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40.75rem;
+}
+
+#fire-safety-hero-background-clouds {
+    position: relative;
+    top: 0;
+    right: 2rem;
+    width: 100%;
+}
+
+#fire-safety-hero-background-burning-houses {
+    position: absolute;
+    bottom: -7.5rem;
+    right: 2rem;
+    width: 30.125rem;
+}
+
+.fire-safety-hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fire-safety-hero-logo {
+    width: 46rem;
+    position: relative;
+}
+
+.fire-safety-hero-logo .fire-safety-hero-logo-image {
+    width: 100%;
+}
+
+.fire-safety-hero-logo span {
+    position: absolute;
+    bottom: 3.5rem;
+    right: 3rem;
+}
+
 .fire-safety-description {
     width: 46rem;
     margin: auto;
+}
+
+@media (max-width: 800px) {
+    .fire-safety-hero-background {
+        overflow: hidden;
+    }
+
+    #fire-safety-hero-background-clouds {
+        width: 300%;
+        right: 17rem;
+    }
+
+    .fire-safety-hero-logo {
+        width: 20rem;
+    }
+
+    .fire-safety-hero-logo span {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 1rem;
+    }
+}
+
+@media (max-width: 630px) {
+    #fire-safety-hero-background-clouds {
+        width: 300%;
+        right: 17rem;
+    }
+
+    .fire-safety-description {
+        width: 20rem;
+        margin: auto;
+    }
 }

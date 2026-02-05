@@ -1,18 +1,16 @@
 import React from "react";
-// import { useMemo } from "react";
-// import {usePreloadImages} from "@hooks/usePreloadImages.ts";
-// import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
-// import {usePageData} from "@hooks/usePageData";
-// import {useLocaleContent} from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
+import Spinner from "@components/common/Spinner";
+import * as paths from "@modules/firesafety/locales/paths.json";
 import CoverSection from "@modules/fireSafety/Sections/CoverSection";
-// import * as contentRu from "@modules/firesafety/locales/rus.json";
-// import * as contentKz from "@modules/firesafety/locales/kaz.json";
-// import * as paths from "@modules/firesafety/locales/paths.json";
-import "./style.css";
 import FirstSection from "@modules/fireSafety/Sections/FirstSection";
-import SecondSection from "@modules/fireSafety/Sections/SecondSection";
 import ThirdSection from "@modules/fireSafety/Sections/ThirdSection";
+import SecondSection from "@modules/fireSafety/Sections/SecondSection";
+import { collectFromPathsJson } from "@utils/collectAssetUrls";
+import { usePreloadImages } from "@hooks/usePreloadImages";
+import type { TRootState } from "@store/index";
+import { useSelector } from "react-redux";
+import "./style.css";
 
 const pageLayoutSX = {
     backgroundColor: "rgba(54, 19, 19, 1)",
@@ -32,17 +30,12 @@ const FireSafetyLogo = () => {
 };
 
 const FireSafety: React.FC = () => {
-    // const imgUrls = useMemo(() => collectFromPathsJson(paths), []);
-    // usePreloadImages(imgUrls);
+    const imgUrls = collectFromPathsJson(paths);
+    usePreloadImages(imgUrls);
 
-    // const { isContentLoaded, currentLocale } = usePageData();
-    // const content = useLocaleContent(contentRu, contentKz);
-
-    // const scrollTo = (id: string) => {
-    //     const el = document.getElementById(id);
-    //     if (!el) return;
-    //     el.scrollIntoView({ behavior: "smooth", block: "start" });
-    // };
+    const isContentLoaded: boolean = useSelector(
+        (state: TRootState) => state.application.isContentLoaded,
+    );
 
     return (
         <BrightnessLayout
@@ -53,8 +46,15 @@ const FireSafety: React.FC = () => {
             headerBackgroundColor="rgba(51, 18, 18, 1)"
         >
             <div className="fire-safety-page">
-                <CoverSection className="fire-safety-section" />
-                <FirstSection className="fire-safety-section" />
+                {!isContentLoaded && <Spinner />}
+                <CoverSection
+                    className="fire-safety-section"
+                    style={{ position: "relative", marginBottom: "12rem" }}
+                />
+                <FirstSection
+                    className="fire-safety-section"
+                    style={{ position: "relative", zIndex: "1" }}
+                />
                 <SecondSection className="fire-safety-section" />
                 <ThirdSection className="fire-safety-section" />
             </div>

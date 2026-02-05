@@ -1,9 +1,10 @@
 .fire-safety-types-card {
     margin: auto;
-    max-width: 672px;
+    width: 100%;
+    max-width: 40rem;
     display: flex;
     gap: 26px;
-    justify-content: space-between;
+    justify-content: start;
     padding: 24px;
     border-radius: 12px;
     background: #7E3028BF;

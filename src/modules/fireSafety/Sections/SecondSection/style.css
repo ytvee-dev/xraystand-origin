@@ -1,3 +1,7 @@
+.fire-safety-second-section-content-wrapper {
+    padding: 0 6.375rem;
+}
+
 .fire-safety-second-section-content-wrapper h2 {
     margin-bottom: 1.5rem;
 }
@@ -9,11 +13,6 @@
 .smoke-and-fire-list {
     display: flex;
     gap: 3rem;
-}
-
-.fire-safety-description {
-    width: 35.25rem;
-    margin: auto;
 }
 
 @media (max-width: 1000px) {
