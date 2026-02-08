@@ -5,6 +5,7 @@ import * as paths from "@modules/firesafety/locales/paths.json";
 import CoverSection from "@modules/fireSafety/Sections/CoverSection";
 import FirstSection from "@modules/fireSafety/Sections/FirstSection";
 import ThirdSection from "@modules/fireSafety/Sections/ThirdSection";
+import FifthSection from "@modules/fireSafety/Sections/FifthSection";
 import FourthSection from "@modules/fireSafety/Sections/FourthSection";
 import SecondSection from "@modules/fireSafety/Sections/SecondSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
@@ -59,6 +60,7 @@ const FireSafety: React.FC = () => {
                 <SecondSection className="fire-safety-section" />
                 <ThirdSection className="fire-safety-section" />
                 <FourthSection className="fire-safety-section" />
+                <FifthSection className="fire-safety-section" />
             </div>
         </BrightnessLayout>
     );

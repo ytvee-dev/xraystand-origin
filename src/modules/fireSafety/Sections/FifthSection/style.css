@@ -1,0 +1,45 @@
+.fire-safety-fifth-section-content-wrapper h2 {
+    margin-bottom: 6.375rem;
+    position: relative;
+    z-index: 2;
+}
+
+.fire-suppressions {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.fire-safety-fifth-section-content-rules {
+    display: flex;
+    gap: 5rem;
+}
+
+.fire-safety-fifth-section-content-rules {
+    display: flex;
+    gap: 5rem;
+}
+
+.fire-safety-fifth-section-content-rules > * {
+    flex: 1;
+}
+
+@media screen and (max-width: 1200px) {
+.fire-causes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+}
+
+@media (max-width: 630px) {
+.fire-safety-fifth-section-content-wrapper-background-image {
+    height: 50rem;
+    top: -20rem;
+}
+
+.fire-safety-fifth-section-content-rules {
+    flex-direction: column;
+}
+}
