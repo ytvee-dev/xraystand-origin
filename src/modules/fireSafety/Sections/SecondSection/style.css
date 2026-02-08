@@ -15,8 +15,3 @@
     gap: 3rem;
 }
 
-@media (max-width: 1000px) {
-    .smoke-and-fire-list {
-    flex-direction: column;
-}
-}

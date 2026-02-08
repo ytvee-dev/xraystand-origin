@@ -24,7 +24,7 @@ const SeventhSection: React.FC<FireSafetySectionProps> = ({
     style,
 }: FireSafetySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
-    const { isDesktop } = usePageData();
+    const { isDesktop, isMobile } = usePageData();
 
     const [leftRulesPart, ...rightRulesPart] =
         textContent.firePreventionSection.content;
@@ -49,6 +49,8 @@ const SeventhSection: React.FC<FireSafetySectionProps> = ({
         },
     );
 
+    const titleClassname: string = !isMobile ? "header-text" : "title-text";
+
     return (
         <section className={className} style={style}>
             <div className="fire-safety-seventh-section-content-wrapper-background">
@@ -68,7 +70,7 @@ const SeventhSection: React.FC<FireSafetySectionProps> = ({
                 />
             </div>
             <div className="fire-safety-seventh-section-content-wrapper">
-                <h2 className="header-text centered-text">
+                <h2 className={`${titleClassname} centered-text`}>
                     {textContent.firePreventionSection.title}
                 </h2>
                 <div className="fire-safety-description caption-text centered-text">

@@ -12,6 +12,7 @@ import SecondSection from "@modules/fireSafety/Sections/SecondSection";
 import SeventhSection from "@modules/fireSafety/Sections/SeventhSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
+import { usePageData } from "@hooks/usePageData";
 import type { TRootState } from "@store/index";
 import { useSelector } from "react-redux";
 import "./style.css";
@@ -37,6 +38,8 @@ const FireSafety: React.FC = () => {
     const imgUrls = collectFromPathsJson(paths);
     usePreloadImages(imgUrls);
 
+    const { isMobile } = usePageData();
+
     const isContentLoaded: boolean = useSelector(
         (state: TRootState) => state.application.isContentLoaded,
     );
@@ -45,6 +48,7 @@ const FireSafety: React.FC = () => {
         <BrightnessLayout
             logo={<FireSafetyLogo />}
             isLanguageSwitcher={true}
+            stickyHeader
             switcherColor="rgba(199, 73, 60, 1)"
             sx={pageLayoutSX}
             headerBackgroundColor="rgba(51, 18, 18, 1)"
@@ -53,7 +57,10 @@ const FireSafety: React.FC = () => {
                 {!isContentLoaded && <Spinner />}
                 <CoverSection
                     className="fire-safety-section"
-                    style={{ position: "relative", marginBottom: "12rem" }}
+                    style={{
+                        position: "relative",
+                        marginBottom: !isMobile ? "12rem" : "5rem",
+                    }}
                 />
                 <FirstSection
                     className="fire-safety-section"

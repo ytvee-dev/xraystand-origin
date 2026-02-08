@@ -9,6 +9,7 @@ import type { TCard } from "@modules/math/Sections/SecondSection";
 import { captionTextStyle } from "@modules/fireSafety/cssStyles";
 import { getFlexDirection } from "@utils/stylesHelper";
 import { useLocaleContent } from "@hooks/useLocale";
+import { usePageData } from "@hooks/usePageData";
 import { SvgSpriteIds } from "@utils/constants";
 import "./style.css";
 
@@ -16,6 +17,8 @@ const FourthSection: React.FC<FireSafetySectionProps> = ({
     className,
 }: FireSafetySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
+
+    const { isMobile } = usePageData();
 
     const leftCards: TCard[] =
         textContent.evacuationSection.content.leftBlock.map(
@@ -43,9 +46,11 @@ const FourthSection: React.FC<FireSafetySectionProps> = ({
             },
         );
 
+    const titleClassname: string = !isMobile ? "header-text" : "title-text";
+
     return (
         <section className={className}>
-            <h2 className="header-text centered-text">
+            <h2 className={`${titleClassname} centered-text`}>
                 {textContent.evacuationSection.title}
             </h2>
             <div className="fire-safety-description caption-text centered-text">
@@ -54,7 +59,7 @@ const FourthSection: React.FC<FireSafetySectionProps> = ({
 
             <div className="fire-safety-fourth-section-content-wrapper">
                 <div className="fire-safety-fourth-section-content-evacuation-steps">
-                    {leftCards.map((card, idx) => (
+                    {leftCards.map((card) => (
                         <Card
                             key={card.id}
                             className="fire-safety-types-card"
@@ -71,7 +76,7 @@ const FourthSection: React.FC<FireSafetySectionProps> = ({
                 </div>
                 <div className="fire-safety-fourth-section-content-right-block">
                     <div className="fire-safety-fourth-section-content-bans-steps">
-                        {banCards.map((card, idx) => (
+                        {banCards.map((card) => (
                             <Card
                                 key={card.id}
                                 className="fire-safety-types-card"

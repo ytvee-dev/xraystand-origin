@@ -1,4 +1,4 @@
-import React, { type ReactElement } from "react";
+import React, { type CSSProperties, type ReactElement } from "react";
 import DSContentBlock from "@components/common/DSContentBlock";
 import * as paths from "@modules/firesafety/locales/paths.json";
 import DSInforamtionCard from "@components/common/Cards/DSInformationCard";
@@ -6,10 +6,12 @@ import * as textContentRu from "@modules/fireSafety/locales/rus.json";
 import * as textContentKz from "@modules/fireSafety/locales/kaz.json";
 import type { FireSafetySectionProps } from "@modules/fireSafety/types";
 import { useLocaleContent } from "@hooks/useLocale";
+import { usePageData } from "@hooks/usePageData";
 import { SvgSpriteIds } from "@utils/constants";
 import {
     captionTextStyle,
     headerTextStyle,
+    headerTextStyleSmall,
 } from "@modules/fireSafety/cssStyles";
 import "./style.css";
 
@@ -18,6 +20,12 @@ const ThirdSection: React.FC<FireSafetySectionProps> = ({
 }: FireSafetySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
 
+    const { isMobile } = usePageData();
+
+    const titleStyle: CSSProperties = !isMobile
+        ? headerTextStyle
+        : headerTextStyleSmall;
+
     return (
         <section className={className}>
             <div className="fire-safety-third-section-content-wrapper">
@@ -25,7 +33,7 @@ const ThirdSection: React.FC<FireSafetySectionProps> = ({
                     title={textContent.fireReportingSection.title}
                     colorScheme={{
                         titleStyle: {
-                            ...headerTextStyle,
+                            ...titleStyle,
                             margin: 0,
                             gap: 0,
                         },

@@ -6,6 +6,7 @@ import * as textContentRu from "@modules/fireSafety/locales/rus.json";
 import type { FireSafetySectionProps } from "@modules/fireSafety/types";
 import type { TCard } from "@modules/math/Sections/SecondSection";
 import { useLocaleContent } from "@hooks/useLocale";
+import { usePageData } from "@hooks/usePageData";
 import { SvgSpriteIds } from "@utils/constants";
 import "./style.css";
 
@@ -13,6 +14,8 @@ const SecondSection: React.FC<FireSafetySectionProps> = ({
     className,
 }: FireSafetySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
+
+    const { isMobile } = usePageData();
 
     const cards: TCard[] = textContent.smokeAndFireSection.content.map(
         (contentItem, idx) => {
@@ -26,10 +29,12 @@ const SecondSection: React.FC<FireSafetySectionProps> = ({
         },
     );
 
+    const titleClassname: string = !isMobile ? "header-text" : "title-text";
+
     return (
         <section className={className}>
             <div className="fire-safety-second-section-content-wrapper">
-                <h2 className="header-text centered-text">
+                <h2 className={`${titleClassname} centered-text`}>
                     {textContent.smokeAndFireSection.title}
                 </h2>
                 <div className="fire-safety-description caption-text centered-text">

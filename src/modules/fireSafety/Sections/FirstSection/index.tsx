@@ -7,6 +7,7 @@ import type { FireSafetySectionProps } from "@modules/fireSafety/types";
 import type { TCard } from "@modules/math/Sections/SecondSection";
 import { getFlexDirection } from "@utils/stylesHelper.ts";
 import { useLocaleContent } from "@hooks/useLocale";
+import { usePageData } from "@hooks/usePageData";
 import "./style.css";
 
 const FirstSection: React.FC<FireSafetySectionProps> = ({
@@ -14,6 +15,8 @@ const FirstSection: React.FC<FireSafetySectionProps> = ({
     style,
 }: FireSafetySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
+
+    const { isMobile } = usePageData();
 
     const cards: TCard[] = textContent.fireCausesSection.content.map(
         (contentItem, idx) => {
@@ -27,6 +30,8 @@ const FirstSection: React.FC<FireSafetySectionProps> = ({
         },
     );
 
+    const titleClassname: string = !isMobile ? "header-text" : "title-text";
+
     return (
         <section className={className} style={style}>
             <div className="fire-safety-first-section-content-wrapper-background">
@@ -39,12 +44,12 @@ const FirstSection: React.FC<FireSafetySectionProps> = ({
                 />
             </div>
             <div className="fire-safety-first-section-content-wrapper">
-                <h2 className="header-text centered-text">
+                <h2 className={`${titleClassname} centered-text`}>
                     {textContent.fireCausesSection.title}
                 </h2>
 
                 <div className="fire-causes">
-                    {cards.map((card, idx) => (
+                    {cards.map((card) => (
                         <Card
                             key={card.id}
                             className="fire-safety-types-card"

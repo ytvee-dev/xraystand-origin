@@ -42,26 +42,3 @@
     flex: 1;
 }
 
-@media screen and (max-width: 1200px) {
-.fire-causes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
-}
-
-@media (max-width: 630px) {
-.fire-safety-fifth-section-content-wrapper-background-image {
-    height: 50rem;
-    top: -20rem;
-}
-
-.fire-safety-fifth-section-content-rules {
-    flex-direction: column;
-}
-
-.fire-safety-fifth-section-content-wrapper-background-city {
-    width: 70rem;
-    left: -20rem;
-}
-}

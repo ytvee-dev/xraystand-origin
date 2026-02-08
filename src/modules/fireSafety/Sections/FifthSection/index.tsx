@@ -9,6 +9,7 @@ import type { TCard } from "@modules/math/Sections/SecondSection";
 import { captionTextStyle } from "@modules/fireSafety/cssStyles";
 import { getFlexDirection } from "@utils/stylesHelper.ts";
 import { useLocaleContent } from "@hooks/useLocale";
+import { usePageData } from "@hooks/usePageData";
 import { SvgSpriteIds } from "@utils/constants";
 import "./style.css";
 
@@ -17,6 +18,8 @@ const FifthSection: React.FC<FireSafetySectionProps> = ({
     style,
 }: FireSafetySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
+
+    const { isMobile } = usePageData();
 
     const suppressions: TCard[] =
         textContent.fireSuppressionSection.content.suppressions.map(
@@ -36,6 +39,8 @@ const FifthSection: React.FC<FireSafetySectionProps> = ({
             (rules) => rules.map((ruleData) => ruleData.description),
         );
 
+    const titleClassname: string = !isMobile ? "header-text" : "title-text";
+
     return (
         <section className={className} style={style}>
             <div className="fire-safety-fifth-section-content-wrapper-background">
@@ -48,7 +53,7 @@ const FifthSection: React.FC<FireSafetySectionProps> = ({
                 />
             </div>
             <div className="fire-safety-fifth-section-content-wrapper">
-                <h2 className="header-text centered-text">
+                <h2 className={`${titleClassname} centered-text`}>
                     {textContent.fireSuppressionSection.title}
                 </h2>
 

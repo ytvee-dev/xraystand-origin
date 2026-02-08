@@ -26,18 +26,3 @@
 }
 
 
-@media screen and (max-width: 1200px) {
-.fire-causes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
-}
-
-@media (max-width: 630px) {
-.fire-safety-first-section-content-wrapper-background-image {
-    height: 50rem;
-    top: -20rem;
-
-}
-}

@@ -20,6 +20,14 @@ export const headerTextStyle: CSSProperties = {
     color: "#FFFFFFDE",
 };
 
+export const headerTextStyleSmall: CSSProperties = {
+    fontWeight: 400,
+    fontSize: "2rem",
+    lineHeight: "2.1rem",
+    letterSpacing: 0,
+    color: "#FFFFFFDE",
+};
+
 export const captionTextStyle: CSSProperties = {
     fontWeight: 400,
     fontSize: "1rem",

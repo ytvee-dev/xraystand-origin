@@ -48,35 +48,3 @@
     margin: auto;
 }
 
-@media (max-width: 800px) {
-    .fire-safety-hero-background {
-        overflow: hidden;
-    }
-
-    #fire-safety-hero-background-clouds {
-        width: 300%;
-        right: 17rem;
-    }
-
-    .fire-safety-hero-logo {
-        width: 20rem;
-    }
-
-    .fire-safety-hero-logo span {
-        position: absolute;
-        bottom: 0.5rem;
-        right: 1rem;
-    }
-}
-
-@media (max-width: 630px) {
-    #fire-safety-hero-background-clouds {
-        width: 300%;
-        right: 17rem;
-    }
-
-    .fire-safety-description {
-        width: 20rem;
-        margin: auto;
-    }
-}

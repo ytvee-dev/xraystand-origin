@@ -41,14 +41,3 @@
     gap: 3rem;
 }
 
-@media (max-width: 1200px) {
-    .fire-safety-fourth-section-content-wrapper {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 600px) {
-    .fire-safety-fourth-section-content-bans-steps {
-        flex-direction: column;
-    }
-}

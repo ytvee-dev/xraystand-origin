@@ -24,7 +24,7 @@ const SixthSection: React.FC<FireSafetySectionProps> = ({
 }: FireSafetySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
 
-    const { isDesktop } = usePageData();
+    const { isDesktop, isMobile } = usePageData();
 
     const evacuationRules: IFireRulesCardData[] =
         textContent.evacuationSafetyRulesSection.content.map(
@@ -39,10 +39,12 @@ const SixthSection: React.FC<FireSafetySectionProps> = ({
             },
         );
 
+    const titleClassname: string = !isMobile ? "header-text" : "title-text";
+
     return (
         <section className={className} style={style}>
             <div className="fire-safety-sixth-section-content-wrapper">
-                <h2 className="header-text centered-text">
+                <h2 className={`${titleClassname} centered-text`}>
                     {textContent.evacuationSafetyRulesSection.title}
                 </h2>
 

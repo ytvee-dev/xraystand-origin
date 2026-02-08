@@ -49,16 +49,3 @@
     flex-direction: column;
     gap: 1.5rem;
 }
-
-@media screen and (max-width: 1200px) {
-.fire-safety-seventh-section-content-wrapper .fire-preventions-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
-
-.fire-safety-seventh-section-content-wrapper .fire-preventions-wrapper .left-part,
-.fire-safety-seventh-section-content-wrapper .fire-preventions-wrapper .right-part {
-    width: 100%;
-}
-}
