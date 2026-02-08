@@ -1,0 +1,64 @@
+.fire-safety-seventh-section-content-wrapper {
+    z-index: 2;
+    position: relative;
+}
+
+.fire-safety-seventh-section-content-wrapper h2 {
+    margin-bottom: 6.375rem;
+}
+
+.fire-safety-seventh-section-content-wrapper-background {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.fire-safety-seventh-section-content-wrapper .fire-preventions-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 30rem;
+    justify-content: space-between;
+}
+
+#fire-safety-seventh-section-content-wrapper-background-steam {
+    position: absolute;
+    width: 100%;
+    height: 46.125rem;
+    bottom: 0;
+    left: 0;
+}
+
+#fire-safety-seventh-section-content-wrapper-background-match {
+    position: absolute;
+    width: auto;
+    height: 63.813rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fire-preventions-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.fire-preventions-wrapper .right-part {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+.fire-safety-seventh-section-content-wrapper .fire-preventions-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.fire-safety-seventh-section-content-wrapper .fire-preventions-wrapper .left-part,
+.fire-safety-seventh-section-content-wrapper .fire-preventions-wrapper .right-part {
+    width: 100%;
+}
+}

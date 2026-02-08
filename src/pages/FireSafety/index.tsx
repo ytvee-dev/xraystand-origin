@@ -9,6 +9,7 @@ import FifthSection from "@modules/fireSafety/Sections/FifthSection";
 import SixthSection from "@modules/fireSafety/Sections/SixthSection";
 import FourthSection from "@modules/fireSafety/Sections/FourthSection";
 import SecondSection from "@modules/fireSafety/Sections/SecondSection";
+import SeventhSection from "@modules/fireSafety/Sections/SeventhSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import type { TRootState } from "@store/index";
@@ -63,6 +64,14 @@ const FireSafety: React.FC = () => {
                 <FourthSection className="fire-safety-section" />
                 <FifthSection className="fire-safety-section" />
                 <SixthSection className="fire-safety-section" />
+                <SeventhSection
+                    className="fire-safety-section"
+                    style={{
+                        position: "relative",
+                        zIndex: "1",
+                        overflow: "hidden",
+                    }}
+                />
             </div>
         </BrightnessLayout>
     );
