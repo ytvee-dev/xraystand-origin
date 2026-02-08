@@ -62,7 +62,14 @@ const FireSafety: React.FC = () => {
                 <SecondSection className="fire-safety-section" />
                 <ThirdSection className="fire-safety-section" />
                 <FourthSection className="fire-safety-section" />
-                <FifthSection className="fire-safety-section" />
+                <FifthSection
+                    className="fire-safety-section"
+                    style={{
+                        position: "relative",
+                        zIndex: "1",
+                        overflow: "hidden",
+                    }}
+                />
                 <SixthSection className="fire-safety-section" />
                 <SeventhSection
                     className="fire-safety-section"

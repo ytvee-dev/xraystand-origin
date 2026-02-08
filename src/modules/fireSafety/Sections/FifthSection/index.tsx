@@ -38,13 +38,22 @@ const FifthSection: React.FC<FireSafetySectionProps> = ({
 
     return (
         <section className={className} style={style}>
+            <div className="fire-safety-fifth-section-content-wrapper-background">
+                <img
+                    className="fire-safety-fifth-section-content-wrapper-background-city"
+                    src={paths.backgrounds.houseBackdrops}
+                    alt={
+                        "fire-safety-fifth-section-content-wrapper-background-city"
+                    }
+                />
+            </div>
             <div className="fire-safety-fifth-section-content-wrapper">
                 <h2 className="header-text centered-text">
-                    {textContent.fireCausesSection.title}
+                    {textContent.fireSuppressionSection.title}
                 </h2>
 
                 <div className="fire-suppressions">
-                    {suppressions.map((card, idx) => (
+                    {suppressions.map((card) => (
                         <Card
                             key={card.id}
                             className="fire-safety-types-card"
