@@ -42,10 +42,10 @@ const SecondSection: React.FC<FireSafetySectionProps> = ({
                 </div>
 
                 <div className="smoke-and-fire-list">
-                    {cards.map((card, idx) => (
+                    {cards.map((card) => (
                         <DSNotification
                             className="smoke-and-fire-notification caption-text"
-                            key={idx}
+                            key={card.id}
                             content={card.description}
                             type="warning"
                             backgroundColor={"#C7493C"}
