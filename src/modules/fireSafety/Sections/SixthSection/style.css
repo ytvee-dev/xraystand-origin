@@ -1,0 +1,48 @@
+.fire-safety-sixth-section-content-wrapper h2 {
+    margin-bottom: 6.375rem;
+    position: relative;
+    z-index: 2;
+}
+
+.fire-evacuation-rules {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.fire-safety-sixth-section-content-rules {
+    display: flex;
+    gap: 5rem;
+}
+
+.fire-safety-sixth-section-content-rules {
+    display: flex;
+    gap: 5rem;
+}
+
+.fire-safety-sixth-section-content-rules > * {
+    flex: 1;
+}
+
+@media screen and (max-width: 1200px) {
+.fire-causes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.fire-evacuation-rules {
+    flex-direction: column;
+}
+}
+
+@media (max-width: 630px) {
+.fire-safety-sixth-section-content-wrapper-background-image {
+    height: 50rem;
+    top: -20rem;
+}
+
+.fire-safety-sixth-section-content-rules {
+    flex-direction: column;
+}
+}

@@ -48,6 +48,7 @@ export interface IContentImageCardProps {
 
 export interface INestedCardProps {
     imageName?: string;
+    withImage?: boolean;
     title?: string;
     subTitle?: string;
     label?: string;
@@ -61,6 +62,11 @@ export interface INestedCardProps {
     justifyContent?: string; // flex-start | flex-end | space-between
     sxText?: IDefaultCardSxText;
     sxNestedCards?: INestedCardSx;
+    titleStyle?: CSSProperties;
+    labelDescriptionStyle?: CSSProperties;
+    style?: CSSProperties;
+    actionWrapperStyle?: CSSProperties;
+    nestedCardsStyle?: CSSProperties;
 }
 
 export interface IInformationCardSxContent {
@@ -85,7 +91,7 @@ export interface IInformationCardProps {
     labelStyle?: CSSProperties;
 }
 
-interface INestedCards {
+export interface INestedCards {
     title?: string;
     label?: string;
 }

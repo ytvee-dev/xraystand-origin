@@ -57,27 +57,30 @@ const FifthSection: React.FC<FireSafetySectionProps> = ({
                     ))}
                 </div>
                 <div className="fire-safety-fifth-section-content-rules">
-                    {rulesNotificationContents.map((rules: string[]) => (
-                        <DSNotification
-                            content={rules}
-                            backgroundColor="#C7493C"
-                            borderColor="#FFFFFF"
-                            textColor="#FFFFFFDE"
-                            iconColor="#FFFFFF"
-                            iconName={SvgSpriteIds.FIRE_SAFETY_WARNING}
-                            iconWidth="2.813rem"
-                            iconHeight="2.5rem"
-                            borderRadius="1.563rem"
-                            cardGap="0.75rem"
-                            alertStyle={{
-                                ...captionTextStyle,
-                                justifyContent: "start",
-                                alignContent: "start",
-                                height: "100%",
-                                width: "100%",
-                            }}
-                        />
-                    ))}
+                    {rulesNotificationContents.map(
+                        (rules: string[], index: number) => (
+                            <DSNotification
+                                key={index}
+                                content={rules}
+                                backgroundColor="#C7493C"
+                                borderColor="#FFFFFF"
+                                textColor="#FFFFFFDE"
+                                iconColor="#FFFFFF"
+                                iconName={SvgSpriteIds.FIRE_SAFETY_WARNING}
+                                iconWidth="2.813rem"
+                                iconHeight="2.5rem"
+                                borderRadius="1.563rem"
+                                cardGap="0.75rem"
+                                alertStyle={{
+                                    ...captionTextStyle,
+                                    justifyContent: "start",
+                                    alignContent: "start",
+                                    height: "100%",
+                                    width: "100%",
+                                }}
+                            />
+                        ),
+                    )}
                 </div>
             </div>
         </section>
