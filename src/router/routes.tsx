@@ -1,3 +1,4 @@
+import Demo from "@pages/Demo";
 import {lazy} from "react";
 import {type RouteObject} from "react-router";
 
@@ -64,6 +65,10 @@ export const paths = {
         id: "notFound",
         path: "*",
     },
+    DEMO: {
+        id: "demo",
+        path: "/demo",
+    },
 };
 
 const routes: RouteObject[] = [
@@ -116,6 +121,10 @@ const routes: RouteObject[] = [
     {
         ...paths.NOT_FOUND,
         element: <NotFoundPage/>,
+    },
+    {
+        ...paths.DEMO,
+        element: <Demo/>,
     },
 ];
 
