@@ -49,14 +49,27 @@
 }
 
 @media (max-width: 630px) {
-#fire-safety-third-section-phone {
-    width: 9rem;
+    #fire-safety-third-section-phone {
+        width: 9rem;
+    }
+
+    #fire-safety-third-section-call {
+        top: 4rem;
+        left: -3rem;
+        width: 9rem;
+    }
+
 }
 
-#fire-safety-third-section-call {
-    top: 4rem;
-    left: -3rem;
-    width: 9rem;
-}
 
+@media (max-width: 440px) {
+    #fire-safety-third-section-phone {
+        width: 7rem;
+    }
+
+    #fire-safety-third-section-call {
+        top: 4rem;
+        left: -3rem;
+        width: 7rem;
+    }
 }
