@@ -1,6 +1,6 @@
 import React, { type ReactElement } from "react";
 import Card from "@modules/fireSafety/components/Card";
-import * as paths from "@modules/firesafety/locales/paths.json";
+import * as paths from "@modules/fireSafety/locales/paths.json";
 import * as textContentKz from "@modules/fireSafety/locales/kaz.json";
 import * as textContentRu from "@modules/fireSafety/locales/rus.json";
 import type { FireSafetySectionProps } from "@modules/fireSafety/types";

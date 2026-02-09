@@ -1,6 +1,6 @@
-import React, { type CSSProperties, type ReactElement } from "react";
 import DSContentBlock from "@components/common/DSContentBlock";
-import * as paths from "@modules/firesafety/locales/paths.json";
+import * as paths from "@modules/fireSafety/locales/paths.json";
+import React, { type CSSProperties, type ReactElement } from "react";
 import DSInforamtionCard from "@components/common/Cards/DSInformationCard";
 import * as textContentRu from "@modules/fireSafety/locales/rus.json";
 import * as textContentKz from "@modules/fireSafety/locales/kaz.json";
