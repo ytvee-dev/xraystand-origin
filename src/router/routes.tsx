@@ -1,3 +1,4 @@
+import Demo from "@pages/Demo";
 import {lazy} from "react";
 import {type RouteObject} from "react-router";
 import Implementation from "@pages/Implementation";
@@ -13,6 +14,7 @@ const Nutrition = lazy(() => import("@pages/Nutrition"));
 const Mathematics = lazy(() => import("@pages/Mathematics"));
 const Pages = lazy(() => import("@pages/Pages"));
 const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
+const FireSafety = lazy(() => import("@pages/FireSafety"));
 // const KazMusic = lazy(() => import("@pages/KazMusic"));
 
 export const paths = {
@@ -52,6 +54,10 @@ export const paths = {
         id: "kazMusic",
         path: "/kazmusicinstr",
     },
+    FIRE_SAFETY: {
+        id: "fireSafety",
+        path: "/firesafety",
+    },
     PAGES: {
         id: "pages",
         path: "/pages",
@@ -63,6 +69,10 @@ export const paths = {
     NOT_FOUND: {
         id: "notFound",
         path: "*",
+    },
+    DEMO: {
+        id: "demo",
+        path: "/demo",
     },
 };
 
@@ -105,6 +115,10 @@ const routes: RouteObject[] = [
         element: <InProgress/>,
     },
     {
+        ...paths.FIRE_SAFETY,
+        element: <FireSafety/>,
+    },
+    {
         ...paths.PAGES,
         element: <Pages/>,
     },
@@ -116,6 +130,10 @@ const routes: RouteObject[] = [
     {
         ...paths.NOT_FOUND,
         element: <NotFoundPage/>,
+    },
+    {
+        ...paths.DEMO,
+        element: <Demo/>,
     },
 ];
 

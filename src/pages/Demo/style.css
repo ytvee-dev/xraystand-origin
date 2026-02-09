@@ -1,0 +1,24 @@
+.pages-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.bordered-card-content-wrapper {
+    position: relative;
+}
+
+.bordered-card {
+    border: 1px solid red;
+    border-radius: 0 !important;
+}
+
+.bordered-card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+}

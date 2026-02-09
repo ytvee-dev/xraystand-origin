@@ -49,7 +49,7 @@ const SecondSection = (): ReactElement => {
                     </DSCardsWrapper>
                 ))}
                 <div className="content-section-alert-wrapper">
-                    <DSNotification label={content.thirdSection.notificationLabel as string} />
+                    <DSNotification content={content.thirdSection.notificationLabel as string} />
                 </div>
             </ContentSection>
         </section>

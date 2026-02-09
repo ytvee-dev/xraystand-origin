@@ -24,7 +24,7 @@ const HomeFooter: React.FC = (): ReactElement => {
         <footer className="home-footer">
             <div className="top-container">
                 <div className="main-logo-container">
-                    <SpriteIcon iconId={'logo'} size={'80px'} />
+                    <SpriteIcon iconId={'logo'} width={'80px'} height={'80px'} />
                 </div>
                 <div className="footer-content-container">
                     <div className="footer-information-container">
