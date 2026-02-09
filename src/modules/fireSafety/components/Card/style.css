@@ -1,17 +1,18 @@
 .fire-safety-types-card {
     margin: auto;
-    max-width: 672px;
+    width: 100%;
+    max-width: 40rem;
     display: flex;
     gap: 26px;
-    justify-content: space-between;
+    justify-content: start;
     padding: 24px;
     border-radius: 12px;
     background: #7E3028BF;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 32px rgba(39, 105, 165, 0.1),
-                0 4px 16px rgba(39, 105, 165, 0.05);
+    box-shadow: 0 8px 32px rgba(165, 39, 39, 0.1),
+                0 4px 16px rgba(165, 39, 39, 0.05);
 }
 
 .fire-safety-types-card:hover {

@@ -1,5 +1,5 @@
-import { type CSSProperties, type ReactElement, type ReactNode } from "react";
 import DSNotification from "@components/common/DSNotification";
+import { type CSSProperties, type ReactElement, type ReactNode } from "react";
 import "./style.css";
 
 export interface DSContentBlockDescription {
@@ -11,29 +11,29 @@ export interface DSContentBlockColorScheme {
     titleColor?: string;
     titleStyle?: CSSProperties;
     subtitleColor?: string;
-    subtitleStyle?: CSSProperties;
     descriptionColor?: string;
-    descriptionStyle?: CSSProperties;
-    contentBlockStyle?: CSSProperties;
     notificationBackgroundColor?: string;
     notificationBorderColor?: string;
-    notificationBorderRadius?: string;
     notificationTextColor?: string;
     notificationIconColor?: string;
-    notificationStyle?: CSSProperties;
-    notificationAlertStyle?: CSSProperties;
-    notificationIconName?: string;
-    notificationIconWidth?: string;
-    notificationIconHeight?: string;
-    notificationCardGap?: string;
 }
 
 export interface DSContentBlockProps {
     title?: string;
     description?: DSContentBlockDescription | string;
     children?: ReactElement | ReactNode | null;
-    notificationLabel?: string;
+    notificationLabel?: string | string[];
     colorScheme?: DSContentBlockColorScheme;
+    subtitleStyle?: CSSProperties;
+    descriptionStyle?: CSSProperties;
+    contentBlockStyle?: CSSProperties;
+    notificationStyle?: CSSProperties;
+    notificationAlertStyle?: CSSProperties;
+    notificationIconName?: string;
+    notificationIconWidth?: string;
+    notificationIconHeight?: string;
+    notificationCardGap?: string;
+    notificationBorderRadius?: string;
 }
 
 const defaultColorScheme: DSContentBlockColorScheme = {
@@ -52,6 +52,15 @@ const DSContentBlock = ({
     children,
     notificationLabel = "",
     colorScheme = defaultColorScheme,
+    subtitleStyle,
+    contentBlockStyle,
+    notificationStyle,
+    notificationAlertStyle,
+    notificationIconName,
+    notificationIconWidth,
+    notificationIconHeight,
+    notificationCardGap,
+    notificationBorderRadius,
 }: DSContentBlockProps): ReactElement => {
     const isSubtitle = (
         d: DSContentBlockDescription | string,
@@ -72,7 +81,7 @@ const DSContentBlock = ({
                 <h3
                     style={{
                         color: colorScheme.subtitleColor,
-                        ...colorScheme.subtitleStyle,
+                        ...subtitleStyle,
                     }}
                 >
                     {isSubtitle(description)
@@ -80,25 +89,23 @@ const DSContentBlock = ({
                         : description}
                 </h3>
             </div>
-            <div
-                className="ds-content-block__body"
-                style={colorScheme.contentBlockStyle}
-            >
+            <div className="ds-content-block__body" style={contentBlockStyle}>
                 {children && children}
             </div>
             <DSNotification
                 content={notificationLabel}
-                style={colorScheme.notificationStyle}
-                alertStyle={colorScheme.notificationAlertStyle}
+                style={notificationStyle}
+                alertStyle={notificationAlertStyle}
                 type="warning"
                 backgroundColor={colorScheme?.notificationBackgroundColor}
                 textColor={colorScheme?.notificationTextColor}
                 borderColor={colorScheme?.notificationBorderColor}
-                iconName={colorScheme?.notificationIconName ?? "warningIcon"}
-                iconWidth={colorScheme?.notificationIconWidth ?? "19px"}
-                iconHeight={colorScheme?.notificationIconHeight ?? "19px"}
+                iconName={notificationIconName ?? "warningIcon"}
+                iconWidth={notificationIconWidth ?? "19px"}
+                iconHeight={notificationIconHeight ?? "19px"}
                 iconColor={colorScheme?.notificationIconColor}
-                cardGap={colorScheme?.notificationCardGap}
+                cardGap={notificationCardGap}
+                borderRadius={notificationBorderRadius}
                 fullWidth
             />
         </div>

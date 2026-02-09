@@ -1,14 +1,17 @@
-import React, { type ReactElement } from "react";
 import DSContentBlock from "@components/common/DSContentBlock";
+import * as paths from "@modules/fireSafety/locales/paths.json";
+import React, { type CSSProperties, type ReactElement } from "react";
 import DSInforamtionCard from "@components/common/Cards/DSInformationCard";
 import * as textContentRu from "@modules/fireSafety/locales/rus.json";
 import * as textContentKz from "@modules/fireSafety/locales/kaz.json";
 import type { FireSafetySectionProps } from "@modules/fireSafety/types";
 import { useLocaleContent } from "@hooks/useLocale";
+import { usePageData } from "@hooks/usePageData";
 import { SvgSpriteIds } from "@utils/constants";
 import {
     captionTextStyle,
     headerTextStyle,
+    headerTextStyleSmall,
 } from "@modules/fireSafety/cssStyles";
 import "./style.css";
 
@@ -17,33 +20,44 @@ const ThirdSection: React.FC<FireSafetySectionProps> = ({
 }: FireSafetySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
 
+    const { isMobile } = usePageData();
+
+    const titleStyle: CSSProperties = !isMobile
+        ? headerTextStyle
+        : headerTextStyleSmall;
+
     return (
         <section className={className}>
             <div className="fire-safety-third-section-content-wrapper">
                 <DSContentBlock
                     title={textContent.fireReportingSection.title}
                     colorScheme={{
-                        titleStyle: { ...headerTextStyle, margin: 0, gap: 0 },
-                        notificationAlertStyle: {
-                            ...captionTextStyle,
-                            justifyContent: "start",
+                        titleStyle: {
+                            ...titleStyle,
+                            margin: 0,
+                            gap: 0,
                         },
-                        contentBlockStyle: {
-                            display: "block",
-                        },
+
                         notificationBackgroundColor: "#C7493C",
                         notificationBorderColor: "#FFFFFF",
                         notificationTextColor: "#FFFFFFDE",
                         notificationIconColor: "#FFFFFF",
-                        notificationIconName: SvgSpriteIds.FIRE_SAFETY_WARNING,
-                        notificationIconWidth: "2.813rem",
-                        notificationIconHeight: "2.5rem",
-                        notificationBorderRadius: "1.563rem",
-                        notificationCardGap: "0.75rem",
                     }}
                     notificationLabel={
                         textContent.fireReportingSection.notificationLabel
                     }
+                    notificationAlertStyle={{
+                        ...captionTextStyle,
+                        justifyContent: "start",
+                    }}
+                    contentBlockStyle={{
+                        display: "block",
+                    }}
+                    notificationIconName={SvgSpriteIds.FIRE_SAFETY_WARNING}
+                    notificationIconWidth="2.813rem"
+                    notificationIconHeight="2.5rem"
+                    notificationBorderRadius="1.563rem"
+                    notificationCardGap="0.75rem"
                 >
                     <DSInforamtionCard
                         width={"100%"}
@@ -59,7 +73,18 @@ const ThirdSection: React.FC<FireSafetySectionProps> = ({
                         }}
                     />
                 </DSContentBlock>
-                <div style={{ width: "40%" }}>Здесь должна быть картинка</div>
+                <div className="fire-safety-third-section-call-block">
+                    <img
+                        id="fire-safety-third-section-phone"
+                        src={paths.images.phone}
+                        alt={"fire-safety-third-section-phone"}
+                    />
+                    <img
+                        id="fire-safety-third-section-call"
+                        src={paths.images.call}
+                        alt={"fire-safety-third-section-call"}
+                    />
+                </div>
             </div>
         </section>
     );

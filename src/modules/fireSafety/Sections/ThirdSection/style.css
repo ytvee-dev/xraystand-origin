@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10rem;
 }
 
 .fire-safety-third-section-content-wrapper h2 {
@@ -12,18 +13,21 @@
     margin-bottom: 4.125rem;
 }
 
-.smoke-and-fire-list {
-    display: flex;
-    gap: 3rem;
+.fire-safety-third-section-call-block {
+    position: relative;
+    padding: 4rem;
 }
 
-.fire-safety-description {
-    width: 35.25rem;
-    margin: auto;
+#fire-safety-third-section-phone {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 11.5rem;
 }
 
-@media (max-width: 1000px) {
-    .smoke-and-fire-list {
-    flex-direction: column;
-}
+#fire-safety-third-section-call {
+    position: relative;
+    top: 4rem;
+    left: -3rem;
+    width: 11.5rem;
 }
