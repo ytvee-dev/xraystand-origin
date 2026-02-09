@@ -1,7 +1,7 @@
 import React from "react";
 import BrightnessLayout from "@layout/Brightness";
 import Spinner from "@components/common/Spinner";
-import * as paths from "@modules/firesafety/locales/paths.json";
+import * as paths from "@modules/fireSafety/locales/paths.json";
 import CoverSection from "@modules/fireSafety/Sections/CoverSection";
 import FirstSection from "@modules/fireSafety/Sections/FirstSection";
 import ThirdSection from "@modules/fireSafety/Sections/ThirdSection";
