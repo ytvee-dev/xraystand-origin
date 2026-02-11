@@ -1,50 +1,58 @@
-import React, {type ReactElement, useState} from "react";
-import type {MathSectionProps} from "@modules/math/types";
-import {usePageData} from "@hooks/usePageData";
-import {useLocaleContent} from "@hooks/useLocale";
 import Slider from "@components/common/Other/Slider";
-import {
-    motion,
-    AnimatePresence
-} from "framer-motion";
-import * as paths from '@modules/math/locales/paths.json';
-import * as textContentRu from '@modules/math/locales/rus.json';
-import * as textContentKz from '@modules/math/locales/kaz.json';
+import * as paths from "@modules/math/locales/paths.json";
+import React, { type ReactElement, useState } from "react";
+import * as textContentRu from "@modules/math/locales/rus.json";
+import * as textContentKz from "@modules/math/locales/kaz.json";
+import type { MathSectionProps } from "@modules/math/types";
+import { motion, AnimatePresence } from "framer-motion";
+import { useLocaleContent } from "@hooks/useLocale";
+import { usePageData } from "@hooks/usePageData";
 import "./style.css";
 
-export type TCard = { id: string; title: string; subtitle: string; description: string; image: string };
+export type TCard = {
+    id: string;
+    title: string;
+    subtitle: string;
+    description: string;
+    image: string;
+};
 
-const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps): ReactElement => {
+const SecondSection: React.FC<MathSectionProps> = ({
+    className,
+}: MathSectionProps): ReactElement => {
     const { screenWidth } = usePageData();
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const isMobile = screenWidth <= 768;
     const [index, setIndex] = useState(0);
 
-    const cards: TCard[] = textContent.secondSection.content.map((contentItem, idx) => {
-        return {
-            id: String(idx + 1),
-            title: contentItem.title,
-            subtitle: contentItem.subTitle,
-            description: contentItem.description,
-            image: paths.cards[idx] || ""
-        };
-    });
+    const cards: TCard[] = textContent.secondSection.content.map(
+        (contentItem, idx) => {
+            return {
+                id: String(idx + 1),
+                title: contentItem.title,
+                subtitle: contentItem.subTitle,
+                description: contentItem.description,
+                image: paths.cards[idx] || "",
+            };
+        },
+    );
 
     return (
         <section className={className}>
-            <div className='math-second-section-background'>
-                <img src={paths.svg.spiral} alt={'image'}/>
+            <div className="math-second-section-background">
+                <img src={paths.svg.spiral} alt={"image"} />
             </div>
             <h2>{textContent.secondSection.title}</h2>
-            <div className='math-second-section-content-wrapper'>
+            <div className="math-second-section-content-wrapper">
                 <motion.div
-                    className='motion-slider'
+                    className="motion-slider"
                     style={{
-                        width: isMobile ? '200px' : '400px',
+                        width: isMobile ? "200px" : "400px",
                         height: isMobile ? 150 : 340,
                         position: "relative",
-                        margin: '0 auto'
-                    }}>
+                        margin: "0 auto",
+                    }}
+                >
                     <AnimatePresence initial={false}>
                         <Slider
                             key={index + 1}
@@ -62,12 +70,17 @@ const SecondSection: React.FC<MathSectionProps> = ({className}: MathSectionProps
                         />
                     </AnimatePresence>
                 </motion.div>
-
             </div>
-            <div className='math-second-section-card-text'>
+            <div className="math-second-section-card-text">
                 <h3>{cards[index] ? cards[index].title : cards[0].title}</h3>
-                <h5>{cards[index] ? cards[index].subtitle : cards[0].subtitle}</h5>
-                <p>{cards[index] ? cards[index].description : cards[0].description}</p>
+                <h5>
+                    {cards[index] ? cards[index].subtitle : cards[0].subtitle}
+                </h5>
+                <p>
+                    {cards[index]
+                        ? cards[index].description
+                        : cards[0].description}
+                </p>
             </div>
         </section>
     );
