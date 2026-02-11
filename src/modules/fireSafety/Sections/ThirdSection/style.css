@@ -1,0 +1,33 @@
+.fire-safety-third-section-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.fire-safety-third-section-content-wrapper h2 {
+    margin-bottom: 1.5rem;
+}
+
+.fire-safety-third-section-content-wrapper .fire-safety-description {
+    margin-bottom: 4.125rem;
+}
+
+.fire-safety-third-section-call-block {
+    position: relative;
+    padding: 4rem;
+}
+
+#fire-safety-third-section-phone {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 11.5rem;
+}
+
+#fire-safety-third-section-call {
+    position: relative;
+    top: 4rem;
+    left: -3rem;
+    width: 11.5rem;
+}

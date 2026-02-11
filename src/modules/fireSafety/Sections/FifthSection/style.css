@@ -1,0 +1,44 @@
+.fire-safety-fifth-section-content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.fire-safety-fifth-section-content-wrapper h2 {
+    margin-bottom: 6.375rem;
+}
+
+.fire-safety-fifth-section-content-wrapper-background {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.fire-safety-fifth-section-content-wrapper-background-city {
+    position: absolute;
+    width: 100%;
+    bottom: 20rem;
+    left: 0;
+}
+
+.fire-suppressions {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.fire-safety-fifth-section-content-rules {
+    display: flex;
+    gap: 5rem;
+}
+
+.fire-safety-fifth-section-content-rules {
+    display: flex;
+    gap: 5rem;
+}
+
+.fire-safety-fifth-section-content-rules > * {
+    flex: 1;
+}
+

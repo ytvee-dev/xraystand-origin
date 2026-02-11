@@ -1,0 +1,25 @@
+.fire-safety-sixth-section-content-wrapper h2 {
+    margin-bottom: 6.375rem;
+    position: relative;
+    z-index: 2;
+}
+
+.fire-evacuation-rules {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.fire-safety-sixth-section-content-rules {
+    display: flex;
+    gap: 5rem;
+}
+
+.fire-safety-sixth-section-content-rules {
+    display: flex;
+    gap: 5rem;
+}
+
+.fire-safety-sixth-section-content-rules > * {
+    flex: 1;
+}
