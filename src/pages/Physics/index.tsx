@@ -42,12 +42,15 @@ const Physics: React.FC = () => {
         <BrightnessLayout
             logo={<PhysicsLogo />}
             isLanguageSwitcher={true}
-            switcherColor={'#071A22'}
+            switcherColor={'#EE7630'}
             sx={pageLayoutSX}
             headerBackgroundColor="#222630"
+            languageSwitcherClassName="physics-language-switcher"
         >
             <h1>Physics Page</h1>
+            
         </BrightnessLayout>
+        
     );
 };
 

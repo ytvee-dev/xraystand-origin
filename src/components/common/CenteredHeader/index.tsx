@@ -1,4 +1,4 @@
-import React, {type ReactElement} from "react";
+import React, { type ReactElement } from "react";
 import LanguageSwitcher from "@components/common/Other/LanguageSwitcher";
 import "./style.css";
 
@@ -9,6 +9,7 @@ export interface CenteredHeaderProps {
     isLanguageSwitcher?: boolean;
     switcherColor?: string;
     backgroundColor?: string;
+    languageSwitcherClassName?: string;
 };
 
 const CenteredHeader: React.FC<CenteredHeaderProps> = ({
@@ -18,6 +19,7 @@ const CenteredHeader: React.FC<CenteredHeaderProps> = ({
     isLanguageSwitcher = false,
     switcherColor,
     backgroundColor = "rgba(255, 255, 255, 0.97)",
+    languageSwitcherClassName = ''
 }: CenteredHeaderProps): ReactElement => {
 
     return (
@@ -36,7 +38,8 @@ const CenteredHeader: React.FC<CenteredHeaderProps> = ({
 
                 <div className="centered-application-header-right">
                     <div className="centered-application-header-right-nav">{navigation}</div>
-                    {isLanguageSwitcher && (<LanguageSwitcher color={switcherColor && switcherColor} />)}
+                    {isLanguageSwitcher && (<LanguageSwitcher color={switcherColor && switcherColor} className={languageSwitcherClassName}/>)}
+                    
                 </div>
             </header>
         </div>
