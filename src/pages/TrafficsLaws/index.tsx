@@ -27,8 +27,8 @@ import "./style.css";
 const modalPolicemanImagesPaths: Record<string, string[]> = {
     "Для пешеходов": [
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandUp_v9nefx.webp",
-        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandStop_yfoevu.webp",
-        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051922/policemanHandsSide_fiqpfo.webp"
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051922/policemanHandsSide_fiqpfo.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051923/policemanHandStop_yfoevu.webp"
     ],
     "Для водителей": [
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051922/policemanHandsSide_fiqpfo.webp",
