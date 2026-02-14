@@ -5,7 +5,9 @@ import * as textContentRu from "@modules/fireSafety/locales/rus.json";
 import type { FireSafetySectionProps } from "@modules/fireSafety/types";
 import { useLocaleContent } from "@hooks/useLocale";
 import { usePageData } from "@hooks/usePageData";
+import { useLocale } from "@hooks/useLocale";
 import "./style.css";
+
 
 const CoverSection: React.FC<FireSafetySectionProps> = ({
     className,
@@ -15,9 +17,15 @@ const CoverSection: React.FC<FireSafetySectionProps> = ({
 
     const { isMobile } = usePageData();
 
+    const currentLanguage = useLocale();
+    const coverImage = currentLanguage === 'ru'
+        ? paths.images.fireSafetyCoverImageRu
+        : paths.images.fireSafetyCoverImageKaz;
+
     const heroLogoHeaderClassName: string = !isMobile
         ? "header-text-bold"
         : "title-text";
+
 
     return (
         <section className={className} style={style}>
@@ -39,7 +47,7 @@ const CoverSection: React.FC<FireSafetySectionProps> = ({
                 <div className="fire-safety-hero-logo">
                     <img
                         className="fire-safety-hero-logo-image"
-                        src={paths.images.fireSafetyCoverImage}
+                        src={coverImage}
                         alt={"fire-safety-hero-logo-image"}
                     />
                     <span className={heroLogoHeaderClassName}>

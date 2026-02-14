@@ -39,7 +39,8 @@
         ]
     },
     "images": {
-        "fireSafetyCoverImage": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325602/fire_safety_cover_image_qlml2y.webp",
+        "fireSafetyCoverImageRu": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771074329/title-fire-safety-ru_l4mv0s.webp",
+        "fireSafetyCoverImageKaz": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771074319/title-fire-safety-kaz_wrrbxd.webp",
         "phone": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325598/telephone_wuwplv.webp",
         "match": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325598/match_f5ahd4.webp",
         "call": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325596/call_zfwfxk.webp"
