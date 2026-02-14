@@ -31,6 +31,10 @@ h1 {
     margin: 5rem;
 }
 
+.fire-safety-language-switcher {
+    color: #FFFFFF;
+}
+
 @media screen and (max-width: 1200px) {
     .fire-causes {
         display: flex;

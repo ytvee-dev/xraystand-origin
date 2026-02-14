@@ -52,6 +52,7 @@ const FireSafety: React.FC = () => {
             switcherColor="rgba(199, 73, 60, 1)"
             sx={pageLayoutSX}
             headerBackgroundColor="rgba(51, 18, 18, 1)"
+            languageSwitcherClassName="fire-safety-language-switcher"
         >
             <div className="fire-safety-page">
                 {!isContentLoaded && <Spinner />}
