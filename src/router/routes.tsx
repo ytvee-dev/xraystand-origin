@@ -1,4 +1,5 @@
 import Demo from "@pages/Demo";
+import path from "path";
 import {lazy} from "react";
 import {type RouteObject} from "react-router";
 
@@ -15,6 +16,8 @@ const Pages = lazy(() => import("@pages/Pages"));
 const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
 const FireSafety = lazy(() => import("@pages/FireSafety"));
 const Physics = lazy(() => import('@pages/Physics'));
+const English = lazy(() => import('@pages/English'));
+const Biology = lazy(() => import('@pages/Biology'));
 // const KazMusic = lazy(() => import("@pages/KazMusic"));
 
 export const paths = {
@@ -61,6 +64,14 @@ export const paths = {
     PHYSICS: {
         id: "physics",
         path: "/physics",
+    },
+    ENGLISH: {
+        id: "english",
+        path: "/english",
+    },
+    BIOLOGY: {
+        id: "biology",
+        path: "bio",
     },
     PAGES: {
         id: "pages",
@@ -121,6 +132,14 @@ const routes: RouteObject[] = [
     {
         ...paths.PHYSICS,
         element: <Physics />
+    },
+    {
+        ...paths.ENGLISH,
+        element: <English />
+    },
+    {
+        ...paths.BIOLOGY,
+        element: <Biology />
     },
     {
         ...paths.PAGES,
