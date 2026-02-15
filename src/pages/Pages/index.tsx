@@ -70,7 +70,7 @@ const pagesInfo: IPageInfo[] = [
         path: paths.SAFETY_PRECAUTIONS.path,
         title: "Техника безопасности в классе",
         description: "Правила безопасного поведения в учебных помещениях",
-        status: "in-progress",
+        status: "active",
     },
     {
         id: paths.KAZ_MUSIC.id,
