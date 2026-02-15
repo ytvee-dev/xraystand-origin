@@ -86,6 +86,27 @@ const pagesInfo: IPageInfo[] = [
         description: "Описание правил пожарной безопасности",
         status: "in-progress",
     },
+    {
+        id: paths.PHYSICS.id,
+        path: paths.PHYSICS.path,
+        title: "Физика",
+        description: "Наука о природе, которая объясняет, почему и как всё в мире движется, взаимодействует и изменяется.",
+        status: "in-progress",
+    },
+    {
+        id: paths.BIOLOGY.id,
+        path: paths.BIOLOGY.path,
+        title: "Биология",
+        description: "Эволюционный путь жизни - огромная, многомиллионная история",
+        status: "in-progress",
+    },
+    {
+        id: paths.ENGLISH.id,
+        path: paths.ENGLISH.path,
+        title: "Английский язык",
+        description: "Описание",
+        status: "in-progress",
+    },
 ];
 
 const textContent = {

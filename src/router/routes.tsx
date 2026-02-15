@@ -1,5 +1,4 @@
 import Demo from "@pages/Demo";
-import path from "path";
 import {lazy} from "react";
 import {type RouteObject} from "react-router";
 
@@ -71,7 +70,7 @@ export const paths = {
     },
     BIOLOGY: {
         id: "biology",
-        path: "bio",
+        path: "/bio",
     },
     PAGES: {
         id: "pages",
@@ -131,15 +130,15 @@ const routes: RouteObject[] = [
     },
     {
         ...paths.PHYSICS,
-        element: <Physics />
+        element: <Physics/>
     },
     {
         ...paths.ENGLISH,
-        element: <English />
+        element: <English/>
     },
     {
         ...paths.BIOLOGY,
-        element: <Biology />
+        element: <Biology/>
     },
     {
         ...paths.PAGES,
