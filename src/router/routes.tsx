@@ -15,8 +15,8 @@ const Pages = lazy(() => import("@pages/Pages"));
 const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
 const FireSafety = lazy(() => import("@pages/FireSafety"));
 const Physics = lazy(() => import('@pages/Physics'));
-const English = lazy(() => import('@pages/English'));
-const Biology = lazy(() => import('@pages/Biology'));
+// const English = lazy(() => import('@pages/English'));
+// const Biology = lazy(() => import('@pages/Biology'));
 // const KazMusic = lazy(() => import("@pages/KazMusic"));
 
 export const paths = {
@@ -134,11 +134,11 @@ const routes: RouteObject[] = [
     },
     {
         ...paths.ENGLISH,
-        element: <English/>
+        element: <NotFoundPage/>
     },
     {
         ...paths.BIOLOGY,
-        element: <Biology/>
+        element: <NotFoundPage/>
     },
     {
         ...paths.PAGES,
