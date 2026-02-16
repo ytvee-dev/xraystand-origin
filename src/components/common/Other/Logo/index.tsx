@@ -7,7 +7,7 @@ export interface ILogoProps {
 }
 
 const Logo = ({ size }: ILogoProps): ReactElement => {
-    return <SpriteIcon iconId={SvgSpriteIds.LOGO} size={size} />;
+    return <SpriteIcon iconId={SvgSpriteIds.LOGO} width={size} height={size}/>;
 };
 
 export default Logo;

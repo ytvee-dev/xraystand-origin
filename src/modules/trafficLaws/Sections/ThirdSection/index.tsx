@@ -29,7 +29,7 @@ const ThirdSection = (): ReactElement | null => {
                 />
             </div>
             <div className="content-section-alert-wrapper">
-                <DSNotification label={translation[PageSectionIds.THIRD_SECTION].notificationLabel as string} />
+                <DSNotification content={translation[PageSectionIds.THIRD_SECTION].notificationLabel as string} />
             </div>
         </ContentSection>
     );

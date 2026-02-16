@@ -1,8 +1,8 @@
-import React, {type ReactElement, type ReactNode} from "react";
-import type {TRootState} from "@store/index.ts";
-import type {Languages} from "@domains/Translate";
-import {trafficLawsFooterMeta} from "@components/common/Footers/StrictFooter/content.ts";
-import {useSelector} from "react-redux";
+import React, { type ReactElement, type ReactNode } from "react";
+import type { TRootState } from "@store/index.ts";
+import type { Languages } from "@domains/Translate";
+import { trafficLawsFooterMeta } from "@components/common/Footers/StrictFooter/content.ts";
+import { useSelector } from "react-redux";
 import StrictFooter from "@components/common/Footers/StrictFooter";
 import CenteredHeader from "@components/common/CenteredHeader";
 import PrivacyPolicyModal from "@components/common/PrivacyPolicyModal";
@@ -19,6 +19,7 @@ export interface IDefaultLayoutProps {
     switcherColor?: string;
     sx?: IBrightnessLayoutSX;
     headerBackgroundColor?: string;
+    languageSwitcherClassName?: string;
 }
 
 export interface IBrightnessLayoutSX {
@@ -45,11 +46,12 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
     children,
     logo,
     navigation,
-    stickyHeader=false,
+    stickyHeader = false,
     isLanguageSwitcher = false,
     switcherColor,
-    sx=DEFAULT_SX,
+    sx = DEFAULT_SX,
     headerBackgroundColor,
+    languageSwitcherClassName
 }: IDefaultLayoutProps) => {
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale
@@ -65,6 +67,7 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
                 isLanguageSwitcher={isLanguageSwitcher}
                 switcherColor={switcherColor && switcherColor}
                 backgroundColor={headerBackgroundColor}
+                languageSwitcherClassName={languageSwitcherClassName}
             />
 
             <main>{children}</main>
@@ -77,7 +80,7 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
                 }
                 sx={sx}
             />
-            
+
             <PrivacyPolicyModal />
         </div>
     );

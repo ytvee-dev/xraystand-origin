@@ -168,7 +168,7 @@ const SafetyPrecautions = (): ReactElement => {
                     imageSrc={paths.boards.common}
                     notification={
                         <DSNotification
-                            label={content.commonBoard.notificationLabel}
+                            content={content.commonBoard.notificationLabel}
                             fullWidth
                         />
                     }
@@ -194,7 +194,7 @@ const SafetyPrecautions = (): ReactElement => {
                     imageSrc={paths.boards.common}
                     notification={
                         <DSNotification
-                            label={content.labsBoard.notificationLabel}
+                            content={content.labsBoard.notificationLabel ?? ''}
                             fullWidth
                         />
                     }

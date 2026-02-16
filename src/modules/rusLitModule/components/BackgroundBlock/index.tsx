@@ -62,7 +62,7 @@ const BackgroundBlock = ({
                 {screenWidth < 910 && notificationText && (
                     <div style={{maxWidth: 1200}}>
                         <DSNotification
-                            label={notificationText}
+                            content={notificationText}
                             backgroundColor={"#FFE9E9"}
                             iconColor={"#871A16"}
                             fullWidth={true}
@@ -75,7 +75,7 @@ const BackgroundBlock = ({
             {screenWidth >= 910 && notificationText && (
                 <div style={{maxWidth: 1200}}>
                     <DSNotification
-                        label={notificationText}
+                        content={notificationText}
                         backgroundColor={"#FFE9E9"}
                         iconColor={"#871A16"}
                         fullWidth={true}
