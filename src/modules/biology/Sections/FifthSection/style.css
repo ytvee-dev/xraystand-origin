@@ -1,0 +1,167 @@
+.biology-fifth-section {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 1121px;
+
+    background-color: rgba(115, 164, 196, 1);
+}
+
+.biology-fifth-section-header {
+    width: 800px;
+
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+
+    font-size: 2.5rem;
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.biology-fifth-section-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    gap: 2rem;
+}
+
+.biology-fifth-section-cards-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    width: 700px;
+    height: auto;
+    gap: 3.75rem;
+}
+
+.biology-fifth-section-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    background-color: rgba(66, 96, 117, 1);
+    border-radius: 45px;
+
+    padding: 24px 25px 15px 25px;
+
+    width: 300px;
+    max-height: 423px;
+
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+}
+
+.biology-fifth-section-card-header {
+    text-align: start;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.biology-fifth-section-card-content-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    gap: 24px;
+
+    font-weight: 400;
+    color: rgba(254, 247, 255, 1);
+}
+
+.biology-fifth-section-card-marked-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.25rem;
+    margin-left: 1.5rem;
+    gap: 0.25rem;
+}
+
+.biology-fifth-section-first-images-container {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 6rem;
+
+    gap: 4rem;
+}
+
+.biology-fifth-section-second-images-container {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 2rem;
+    margin-bottom: 6rem;
+
+    gap: 2.5rem;
+}
+
+.pair-of-images {
+    display: flex;
+    flex-direction: row;
+}
+
+#first-image,
+#third-image,
+#fifth-image {
+    width: 72px;
+    height: 170px;
+}
+
+#second-image {
+    width: 117px;
+    height: 170px;
+}
+
+#fourth-image {
+    width: 173px;
+    height: 170px;
+}
+
+#sixth-image {
+    width: 244px;
+    height: 202px;
+}
+
+#seventh-image {
+    width: 238px;
+    height: 87px;
+}
+
+#eighth-image {
+    width: 229px;
+    height: 113px;
+}
+
+#nineth-image {
+    width: 238px;
+    height: 102px;
+}
+
+#tenth-image {
+    width: 234px;
+    height: 125px;
+}
+
+#eleventh-image {
+    width: 242px;
+    height: 104px;
+}
