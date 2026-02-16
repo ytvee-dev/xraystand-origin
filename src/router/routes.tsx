@@ -1,6 +1,7 @@
 import Demo from "@pages/Demo";
 import {lazy} from "react";
 import {type RouteObject} from "react-router";
+import Implementation from "@pages/Implementation";
 
 const HomePage = lazy(() => import("@pages/Home"));
 const NotFoundPage = lazy(() => import("@pages/NotFound"));
@@ -74,6 +75,10 @@ export const paths = {
         id: "pages",
         path: "/pages",
     },
+    IMPLEMENTATION: {
+        id: "implementationPage",
+        path: "/implementation",
+    },
     NOT_FOUND: {
         id: "notFound",
         path: "*",
@@ -141,6 +146,10 @@ const routes: RouteObject[] = [
     {
         ...paths.PAGES,
         element: <Pages/>,
+    },
+    {
+        ...paths.IMPLEMENTATION,
+        element: <Implementation/>,
     },
 
     {
