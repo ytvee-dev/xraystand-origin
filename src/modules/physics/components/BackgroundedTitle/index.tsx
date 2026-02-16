@@ -1,31 +1,31 @@
 import { type ReactElement } from "react";
 import './style.css'
 
-interface ITitleCardProps{
+interface IBackgroundedTitleProps{
     title: string;
     subTitle?: string,
     bgColor?: string,
-    fontWeight?: '400' | '700',
+    titleFontWeight?: '400' | '700',
     fullWidth?: boolean;
 }
 
-const TitleCard = ({
+const BackgroundedTitle = ({
     title,
     subTitle,
     bgColor = "#ee7630",
-    fontWeight = "400",
+    titleFontWeight = "400",
     fullWidth = false
-}: ITitleCardProps): ReactElement => {
+}: IBackgroundedTitleProps): ReactElement => {
     return (
-        <div className="title-card"
+        <div className="bg-title"
             style={{
                 backgroundColor: bgColor,
                 width: fullWidth ? "100%" : "auto",
                 padding: subTitle ? "24px" : "15px"
             }}>
-                <h2 style={{
-                    fontWeight: fontWeight,
-                    fontFamily: subTitle ? 'var(--title-font)' : 'var(--text-font)',
+                <h2 className={subTitle ? 'font-ubuntu' : 'font-roboto'}
+                style={{
+                    fontWeight: titleFontWeight,
                     marginBottom: subTitle ? '16px' : '',
                 }}>
                     {title}
@@ -36,4 +36,4 @@ const TitleCard = ({
     )
 }
 
-export default TitleCard;
+export default BackgroundedTitle;

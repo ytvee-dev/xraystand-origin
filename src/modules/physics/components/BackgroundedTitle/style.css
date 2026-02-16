@@ -1,35 +1,43 @@
-.title-card{
+.bg-title{
     color: #fff;
     letter-spacing: 0.25px;
     text-align: center;
     border: 2px solid #ffffff;
 }
 
-.title-card h2{
+.bg-title h2 {
     font-size: 45px;
 }
 
-.title-card h3{
+.bg-title h3 {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.15px;
     font-family: var(--text-font);
     font-weight: 400;
-    margin-inline: 150px;
+    margin-inline: 10%;
 }
 
-@media(max-width: 1024px){
-    .title-card h3{
-        margin-inline: 50px;
+.font-ubuntu{
+    font-family: var(--title-font);
+}
+
+.font-roboto{
+    font-family: var(--text-font);
+}
+
+@media (max-width: 1024px) {
+    .bg-title h3 {
+        margin-inline: 5%;
     }
 }
 
-@media(max-width: 800px){
-    .title-card h2{
+@media (max-width: 800px) {
+    .bg-title h2 {
         font-size: 36px;
     }
 
-    .title-card h3{
+    .bg-title h3 {
         font-size: 1rem;
         margin-inline: 0;
     }
