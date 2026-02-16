@@ -1,0 +1,19 @@
+.physics-logo {
+    font-family: var(--technical-font), serif;
+    font-weight: 600;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #FFFFFF;
+}
+
+h1{
+    margin: 3rem;
+    text-align: center;
+}
+
+.physics-language-switcher {
+    color: #EE7630;
+}

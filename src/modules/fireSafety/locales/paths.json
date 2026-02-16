@@ -1,0 +1,48 @@
+{
+    "backgrounds": {
+        "steam": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325451/steam_bzawnq.webp",
+        "orangeSmoke": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325451/orange_smoke_mua2qv.webp",
+        "burningHouses": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325450/burning_houses_xbsyif.webp",
+        "houseBackdrops": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325450/house_backdrops_wwzcye.webp",
+        "cloudBackdrops": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770327450/cloud_backdrops_bnvset.webp"
+    },
+    "cards": {
+        "firstSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325568/match_ban_zxojdy.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325558/cigarette_ban_rpk7zh.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325553/ban_on_electrical_appliances_aih9op.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325556/carbon_dioxide_ban_vfm3q2.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325558/electricity_ban_d0s3j6.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325553/ban_lighter_xzvd4w.webp"
+        ],
+        "fourthSection": {
+            "leftBlock": [
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325561/fire_exit_ssqpa4.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325559/emergency_exit_l2bizz.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325569/heavy_smoke_ozq7gx.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325557/damp_cloth_c33cjl.webp"
+            ],
+            "rightBlock": [
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325554/burning_room_vziibv.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325569/using_the_elevator_gm3kor.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325560/eyes_msfzdw.webp"
+            ]
+        },
+        "fifthSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325563/fire_extinguisher_1_iiubqs.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325565/fire_extinguisher_2_woltas.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325565/fire_extinguisher_3_bemt3z.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325570/sand_n2x9au.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325570/water_aebb01.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325560/felt_y0hecu.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325554/blanket_ir51jd.webp"
+        ]
+    },
+    "images": {
+        "fireSafetyCoverImageRu": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771074329/title-fire-safety-ru_l4mv0s.webp",
+        "fireSafetyCoverImageKaz": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771074319/title-fire-safety-kaz_wrrbxd.webp",
+        "phone": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325598/telephone_wuwplv.webp",
+        "match": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325598/match_f5ahd4.webp",
+        "call": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770325596/call_zfwfxk.webp"
+    }
+}

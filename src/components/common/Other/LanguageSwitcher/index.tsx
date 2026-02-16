@@ -11,6 +11,7 @@ import {
 
 interface ILanguageSwitcherProps {
     color?: string;
+    className?: string;
 };
 
 const getLocaleLabelByValue = (selectedValue: string): string => {
@@ -24,7 +25,7 @@ const getLocaleLabelByValue = (selectedValue: string): string => {
         : currentLocaleOption.label;
 };
 
-const LanguageSwitcher: React.FC<ILanguageSwitcherProps> = ({color=''}: ILanguageSwitcherProps) => {
+const LanguageSwitcher: React.FC<ILanguageSwitcherProps> = ({color='', className}: ILanguageSwitcherProps) => {
     const dispatch = useDispatch();
 
     const currentLocale = useSelector(
@@ -61,7 +62,7 @@ const LanguageSwitcher: React.FC<ILanguageSwitcherProps> = ({color=''}: ILanguag
     };
 
     return (
-        <div style={{userSelect: "none"}}>
+        <div className={className} style={{userSelect: "none"}}>
             <Switch
                 checked={isDefaultChecked}
                 onChange={handleSwitchLanguage}

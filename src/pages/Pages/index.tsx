@@ -11,7 +11,7 @@ interface IPageInfo {
     path: string;
     title: string;
     description: string;
-    status: 'active' | 'in-progress' | 'disabled';
+    status: "active" | "in-progress" | "disabled";
 }
 
 const pagesInfo: IPageInfo[] = [
@@ -20,64 +20,93 @@ const pagesInfo: IPageInfo[] = [
         path: paths.HOME.path,
         title: "Главная страница",
         description: "Добро пожаловать на интерактивные стенды Xraystand",
-        status: 'active'
+        status: "active",
     },
     {
         id: paths.TRAFFIC_LAWS_PAGE.id,
         path: paths.TRAFFIC_LAWS_PAGE.path,
         title: "Правила дорожного движения",
         description: "Изучение основ безопасности дорожного движения",
-        status: 'active'
+        status: "active",
     },
     {
         id: paths.CHEMISTRY.id,
         path: paths.CHEMISTRY.path,
         title: "Химия",
         description: "Интерактивное изучение химических элементов и процессов",
-        status: 'active'
+        status: "active",
     },
     {
         id: paths.RUS_LIT.id,
         path: paths.RUS_LIT.path,
         title: "Русская литература",
-        description: "Знакомство с классическими произведениями русской литературы",
-        status: 'active'
+        description:
+            "Знакомство с классическими произведениями русской литературы",
+        status: "active",
     },
     {
         id: paths.KAZAKH_ADEBIET.id,
         path: paths.KAZAKH_ADEBIET.path,
         title: "Казахская литература",
         description: "Изучение произведений казахских писателей и поэтов",
-        status: 'active'
+        status: "active",
     },
     {
         id: paths.MATH.id,
         path: paths.MATH.path,
         title: "Математика",
         description: "Царица наук - от арифметики до высшей математики",
-        status: 'active'
+        status: "active",
     },
     {
         id: paths.NUTRITION.id,
         path: paths.NUTRITION.path,
         title: "Здоровое питание",
         description: "Основы правильного питания и здорового образа жизни",
-        status: 'active'
+        status: "active",
     },
     {
         id: paths.SAFETY_PRECAUTIONS.id,
         path: paths.SAFETY_PRECAUTIONS.path,
         title: "Техника безопасности в классе",
         description: "Правила безопасного поведения в учебных помещениях",
-        status: 'in-progress'
+        status: "active",
     },
     {
         id: paths.KAZ_MUSIC.id,
         path: paths.KAZ_MUSIC.path,
         title: "Казахские музыкальные инструменты",
         description: "Традиционные музыкальные инструменты Казахстана",
-        status: 'in-progress'
-    }
+        status: "in-progress",
+    },
+    {
+        id: paths.FIRE_SAFETY.id,
+        path: paths.FIRE_SAFETY.path,
+        title: "Пожарная безопасность",
+        description: "Описание правил пожарной безопасности",
+        status: "in-progress",
+    },
+    {
+        id: paths.PHYSICS.id,
+        path: paths.PHYSICS.path,
+        title: "Физика",
+        description: "Наука о природе, которая объясняет, почему и как всё в мире движется, взаимодействует и изменяется.",
+        status: "in-progress",
+    },
+    {
+        id: paths.BIOLOGY.id,
+        path: paths.BIOLOGY.path,
+        title: "Биология",
+        description: "Эволюционный путь жизни - огромная, многомиллионная история",
+        status: "in-progress",
+    },
+    {
+        id: paths.ENGLISH.id,
+        path: paths.ENGLISH.path,
+        title: "Английский язык",
+        description: "Описание",
+        status: "in-progress",
+    },
 ];
 
 const textContent = {
@@ -89,17 +118,27 @@ const PageCard = ({ page }: { page: IPageInfo }): ReactElement => {
     const cardVariants = {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0 },
-        hover: { y: -5, scale: 1.02 }
+        hover: { y: -5, scale: 1.02 },
     };
 
     const getStatusBadge = (status: string) => {
         switch (status) {
-            case 'active':
-                return <span className="status-badge status-active">Доступно</span>;
-            case 'in-progress':
-                return <span className="status-badge status-in-progress">В разработке</span>;
-            case 'disabled':
-                return <span className="status-badge status-disabled">Недоступно</span>;
+            case "active":
+                return (
+                    <span className="status-badge status-active">Доступно</span>
+                );
+            case "in-progress":
+                return (
+                    <span className="status-badge status-in-progress">
+                        В разработке
+                    </span>
+                );
+            case "disabled":
+                return (
+                    <span className="status-badge status-disabled">
+                        Недоступно
+                    </span>
+                );
             default:
                 return null;
         }
@@ -114,7 +153,7 @@ const PageCard = ({ page }: { page: IPageInfo }): ReactElement => {
             whileHover="hover"
             transition={{
                 duration: 0.1,
-                ease: "easeOut"
+                ease: "easeOut",
             }}
         >
             <div className="page-card-header">
@@ -128,7 +167,7 @@ const PageCard = ({ page }: { page: IPageInfo }): ReactElement => {
         </motion.div>
     );
 
-    if (page.status === 'active') {
+    if (page.status === "active") {
         return (
             <Link to={page.path} className="page-card-link">
                 <CardContent />
@@ -140,9 +179,8 @@ const PageCard = ({ page }: { page: IPageInfo }): ReactElement => {
 };
 
 const Pages = (): ReactElement => {
-
     return (
-        <DefaultLayout strictLanguage='ru'>
+        <DefaultLayout strictLanguage="ru">
             <ContentSection textData={textContent}>
                 <div className="pages-container">
                     <div className="pages-grid">
