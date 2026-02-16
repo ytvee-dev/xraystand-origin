@@ -12,9 +12,9 @@ const Application = (): ReactElement => {
         <div className="application">
             <RouterProvider>
                 <ApplicationRouter />
-                <Analytics mode="production" />
-                <SpeedInsights />
             </RouterProvider>
+            <SpeedInsights />
+            <Analytics mode="production" />
         </div>
     );
 };
