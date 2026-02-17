@@ -12,4 +12,5 @@ export const svgSpriteSrcPrefix: string = "./assets/images/sprite.svg#";
 export const enum SvgSpriteIds {
     LOGO = "logo",
     FIRE_SAFETY_WARNING = "fireSafetyWarning",
+    BIOLOGY_CELL = "biologyCell",
 }

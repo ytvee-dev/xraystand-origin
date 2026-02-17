@@ -1,13 +1,13 @@
 import * as paths from "@modules/biology/locales/paths.json";
 import * as textContentRu from "@modules/biology/locales/rus.json";
-import * as textContentKz from "@modules/biology/locales/rus.json";
+import * as textContentKaz from "@modules/biology/locales/rus.json";
 import type { BiologySectionProps } from "@modules/biology/types";
 import { useLocaleContent } from "@hooks/useLocale";
 import type { ReactElement } from "react";
 import "./style.css";
 
 const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
-    const textContent = useLocaleContent(textContentRu, textContentKz);
+    const textContent = useLocaleContent(textContentRu, textContentKaz);
 
     return (
         <section className={className}>
