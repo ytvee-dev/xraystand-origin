@@ -19,11 +19,9 @@
     margin-bottom: 16px;
 }
 
-.bg-title h3 {
-    font-size: 16px;
+.bg-title p {
     line-height: 150%;
     letter-spacing: 0.15px;
-    font-weight: 400;
     margin-inline: 10%;
 }
 
@@ -32,7 +30,7 @@
         padding: 12px 10px;
     }
 
-    .bg-title h3 {
+    .bg-title p {
         margin-inline: 5%;
     }
 }
@@ -43,8 +41,7 @@
         margin-bottom: 10px;
     }
 
-    .bg-title h3 {
-        font-size: 1rem;
+    .bg-title p {
         margin-inline: 0;
     }
 }

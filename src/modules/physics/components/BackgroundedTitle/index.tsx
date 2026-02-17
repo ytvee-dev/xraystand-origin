@@ -28,7 +28,7 @@ const BackgroundedTitle = ({
                     {title}
                 </h2>
 
-                {subTitle && <h3>{subTitle}</h3>}
+                {subTitle && <p>{subTitle}</p>}
         </div>
     )
 }
