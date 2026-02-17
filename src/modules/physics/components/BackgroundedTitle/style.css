@@ -1,32 +1,37 @@
-.bg-title{
+.bg-title {
     color: #fff;
     letter-spacing: 0.25px;
     text-align: center;
     border: 2px solid #ffffff;
+    padding: 15px;
+}
+
+.has-subtitle {
+    padding: 24px;
 }
 
 .bg-title h2 {
     font-size: 45px;
+    margin-bottom: 0;
+}
+
+.has-subtitle h2 {
+    margin-bottom: 16px;
 }
 
 .bg-title h3 {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.15px;
-    font-family: var(--text-font);
     font-weight: 400;
     margin-inline: 10%;
 }
 
-.font-ubuntu{
-    font-family: var(--title-font);
-}
-
-.font-roboto{
-    font-family: var(--text-font);
-}
-
 @media (max-width: 1024px) {
+    .bg-title {
+        padding: 12px 10px;
+    }
+
     .bg-title h3 {
         margin-inline: 5%;
     }
@@ -35,6 +40,7 @@
 @media (max-width: 800px) {
     .bg-title h2 {
         font-size: 36px;
+        margin-bottom: 10px;
     }
 
     .bg-title h3 {

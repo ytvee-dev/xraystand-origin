@@ -17,16 +17,13 @@ const BackgroundedTitle = ({
     fullWidth = false
 }: IBackgroundedTitleProps): ReactElement => {
     return (
-        <div className="bg-title"
+        <div className={`bg-title ${subTitle ? 'has-subtitle' : '' }`}
             style={{
                 backgroundColor: bgColor,
                 width: fullWidth ? "100%" : "auto",
-                padding: subTitle ? "24px" : "15px"
             }}>
-                <h2 className={subTitle ? 'font-ubuntu' : 'font-roboto'}
-                style={{
+                <h2 style={{
                     fontWeight: titleFontWeight,
-                    marginBottom: subTitle ? '16px' : '',
                 }}>
                     {title}
                 </h2>
