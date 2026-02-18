@@ -6,7 +6,7 @@
     padding: 15px;
 }
 
-.has-subtitle {
+.has-description {
     padding: 24px;
 }
 
@@ -15,7 +15,7 @@
     margin-bottom: 0;
 }
 
-.has-subtitle h2 {
+.has-description h2 {
     margin-bottom: 16px;
 }
 

@@ -3,7 +3,7 @@ import './style.css'
 
 interface IBackgroundedTitleProps{
     title: string;
-    subTitle?: string,
+    description?: string,
     bgColor?: string,
     titleFontWeight?: '400' | '700',
     fullWidth?: boolean;
@@ -11,13 +11,13 @@ interface IBackgroundedTitleProps{
 
 const BackgroundedTitle = ({
     title,
-    subTitle,
+    description,
     bgColor = "#ee7630",
     titleFontWeight = "400",
     fullWidth = false
 }: IBackgroundedTitleProps): ReactElement => {
     return (
-        <div className={`bg-title ${subTitle ? 'has-subtitle' : '' }`}
+        <div className={`bg-title ${description ? 'has-description' : '' }`}
             style={{
                 backgroundColor: bgColor,
                 width: fullWidth ? "100%" : "auto",
@@ -28,7 +28,7 @@ const BackgroundedTitle = ({
                     {title}
                 </h2>
 
-                {subTitle && <p>{subTitle}</p>}
+                {description && <p>{description}</p>}
         </div>
     )
 }
