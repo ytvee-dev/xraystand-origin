@@ -27,7 +27,7 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
             </div>
 
             <div className="sixth-section-cards-container">
-                <div id="first-card" className="sixth-section-card">
+                <div id="first-6th-card" className="sixth-section-card">
                     <div className="sixth-section-card-info-block">
                         <h2 className="title-bilogy-text">
                             {
@@ -52,7 +52,7 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
                     </div>
                 </div>
 
-                <div id="second-card" className="sixth-section-card">
+                <div id="second-6th-card" className="sixth-section-card">
                     <div className="sixth-section-card-picture-wrapper">
                         <img
                             className="sixth-section-card-picture"
@@ -77,7 +77,7 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
                     </div>
                 </div>
 
-                <div id="third-card" className="sixth-section-card">
+                <div id="third-6th-card" className="sixth-section-card">
                     <div className="sixth-section-card-info-block">
                         <h2 className="title-bilogy-text">
                             {
@@ -102,7 +102,7 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
                     </div>
                 </div>
 
-                <div id="fourth-card" className="sixth-section-card">
+                <div id="fourth-6th-card" className="sixth-section-card">
                     <div className="sixth-section-card-picture-wrapper">
                         <img
                             className="sixth-section-card-picture"
@@ -127,7 +127,7 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
                     </div>
                 </div>
 
-                <div id="fifth-card" className="sixth-section-card">
+                <div id="fifth-6th-card" className="sixth-section-card">
                     <div className="sixth-section-card-info-block">
                         <h2 className="title-bilogy-text">
                             {
@@ -152,7 +152,7 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
                     </div>
                 </div>
 
-                <div id="sixth-card" className="sixth-section-card">
+                <div id="sixth-6th-card" className="sixth-section-card">
                     <div className="sixth-section-card-picture-wrapper">
                         <img
                             className="sixth-section-card-picture"
@@ -177,7 +177,7 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
                     </div>
                 </div>
 
-                <div id="seventh-card" className="sixth-section-card">
+                <div id="seventh-6th-card" className="sixth-section-card">
                     <div className="sixth-section-card-info-block">
                         <h2 className="title-bilogy-text">
                             {
@@ -202,7 +202,7 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
                     </div>
                 </div>
 
-                <div id="eighth-card" className="sixth-section-card">
+                <div id="eighth-6th-card" className="sixth-section-card">
                     <div className="sixth-section-card-picture-wrapper">
                         <img
                             className="sixth-section-card-picture"
@@ -227,7 +227,7 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
                     </div>
                 </div>
 
-                <div id="nineth-card" className="sixth-section-card">
+                <div id="nineth-6th-card" className="sixth-section-card">
                     <div className="sixth-section-card-info-block">
                         <h2 className="title-bilogy-text">
                             {
@@ -252,7 +252,7 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
                     </div>
                 </div>
 
-                <div id="tenth-card" className="sixth-section-card">
+                <div id="tenth-6th-card" className="sixth-section-card">
                     <div className="sixth-section-card-picture-wrapper">
                         <img
                             className="sixth-section-card-picture"

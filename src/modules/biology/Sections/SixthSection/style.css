@@ -1,40 +1,50 @@
 .header-biology-section-text {
-    font-size: 45px;
+    font-size: 2.8125rem;
     font-weight: 400;
 
     color: #ffffff;
 
-    line-height: 52px;
+    line-height: 3.25rem;
     letter-spacing: 0;
 }
 
 .title-bilogy-text {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 
     color: #ffffff;
 
-    line-height: 32px;
+    line-height: 2rem;
+    letter-spacing: 0;
+}
+
+.title-biology-medium-text {
+    font-size: 2rem;
+    font-weight: 400;
+
+    color: #ffffff;
+
+    line-height: 2rem;
     letter-spacing: 0;
 }
 
 .description-biology-small-text {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
 
     color: #ffffff;
 
-    line-height: 20px;
+    line-height: 1.25rem;
     letter-spacing: 0.25px;
 }
 
 .description-biology-medium-text {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 
     color: #ffffff;
 
-    line-height: 20px;
+    line-height: 1.25rem;
     letter-spacing: 0.25px;
 }
 
@@ -66,7 +76,7 @@
     width: 564px;
     height: 194px;
 
-    gap: 27px;
+    gap: 1.6875rem;
 }
 
 .header-sixth-section {
@@ -92,7 +102,7 @@
 
     max-width: 800px;
 
-    gap: 26px;
+    gap: 1.625rem;
 }
 
 .sixth-section-card-info-block {
@@ -102,7 +112,7 @@
     width: 486px;
     height: auto;
 
-    gap: 4px;
+    gap: 0.25rem;
 }
 
 .sixth-section-card-picture-wrapper {
@@ -115,86 +125,86 @@
     height: 100%;
 }
 
-#first-card {
+#first-6th-card {
     left: 17.5rem;
     top: 2rem;
 
     text-align: right;
 }
 
-#second-card {
+#second-6th-card {
     left: 38rem;
     top: 5rem;
 
     text-align: left;
 }
 
-#third-card {
+#third-6th-card {
     left: 17.5rem;
     top: 8rem;
 
     text-align: right;
 }
 
-#fourth-card {
+#fourth-6th-card {
     left: 38rem;
     top: 11rem;
 
     text-align: left;
 }
 
-#fifth-card {
+#fifth-6th-card {
     left: 17.5rem;
     top: 13.5rem;
 
     text-align: right;
 }
 
-#sixth-card {
+#sixth-6th-card {
     left: 38rem;
     top: 17rem;
 
     text-align: left;
 }
 
-#seventh-card {
+#seventh-6th-card {
     left: 17.5rem;
     top: 20rem;
 
     text-align: right;
 }
 
-#eighth-card {
+#eighth-6th-card {
     left: 38rem;
     top: 23rem;
 
     text-align: left;
 }
 
-#nineth-card {
+#nineth-6th-card {
     left: 17.5rem;
     top: 26rem;
 
     text-align: right;
 }
 
-#tenth-card {
+#tenth-6th-card {
     left: 38rem;
     top: 29rem;
 
     text-align: left;
 }
 
-#fourth-card .sixth-section-card-picture-wrapper,
-#fifth-card .sixth-section-card-picture-wrapper {
+#fourth-6th-card .sixth-section-card-picture-wrapper,
+#fifth-6th-card .sixth-section-card-picture-wrapper {
     width: 162px;
 }
 
-#seventh-card .sixth-section-card-picture-wrapper {
+#seventh-6th-card .sixth-section-card-picture-wrapper {
     width: 235px;
 }
 
-#tenth-card .sixth-section-card-picture-wrapper {
+#tenth-6th-card .sixth-section-card-picture-wrapper {
     height: 156px;
 }
 

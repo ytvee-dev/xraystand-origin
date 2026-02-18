@@ -1,0 +1,210 @@
+.biology-seventh-section {
+    width: 100%;
+    height: 1900px;
+
+    position: relative;
+
+    background-color: #d17176;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.biology-seventh-section-header-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 3.5rem;
+
+    width: 646px;
+    height: 226px;
+
+    text-align: center;
+
+    gap: 1.6875rem;
+}
+
+.biology-seventh-section-background-images-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.biology-seventh-section-cards-container {
+    width: 100%;
+    height: 82%;
+    position: relative;
+}
+
+.biology-seventh-section-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    background-color: #a9626e;
+    border-radius: 2.8125rem;
+
+    padding: 1.5rem;
+    gap: 1.5rem;
+
+    width: 571px;
+    height: fit-content;
+
+    z-index: 2;
+}
+
+.biology-seventh-section-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    border: 0.0625rem solid #ffffff;
+    border-radius: 2.8125rem;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0.75rem 1.5rem;
+
+    gap: 0.625rem;
+}
+
+.biology-seventh-section-card-content li {
+    margin-left: 1.5rem;
+}
+
+.biology-seventh-section-card-info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#first-7th-card {
+    left: 14.5rem;
+}
+
+#second-7th-card {
+    bottom: 22rem;
+    left: 51.5rem;
+}
+
+#third-7th-card {
+    bottom: 37%;
+    left: 14.5rem;
+}
+
+#fourth-7th-card {
+    left: 51.5rem;
+    bottom: 59.5%;
+}
+
+#fifth-7th-card {
+    left: 14.5rem;
+    bottom: 59.5%;
+}
+
+#sixth-7th-card {
+    left: 51.5rem;
+    bottom: 86.5%;
+}
+
+.biology-seventh-section-picture {
+    position: absolute;
+    z-index: 1;
+}
+
+#first-7th-image {
+    width: 108px;
+
+    left: 18.5%;
+    top: 10rem;
+}
+
+#second-7th-image {
+    width: 157px;
+
+    right: 26%;
+    top: 13%;
+}
+
+#third-7th-image {
+    width: 154px;
+    height: 154px;
+
+    right: 7rem;
+    top: 14.5%;
+}
+
+#fourth-7th-image {
+    width: 115px;
+    height: 115px;
+
+    right: 7rem;
+    top: 25%;
+}
+
+#fifth-7th-image {
+    width: 97px;
+    height: 100px;
+
+    right: 8.5rem;
+    bottom: 32%;
+}
+
+#sixth-7th-image {
+    width: 175px;
+    height: 175px;
+
+    right: 4rem;
+    bottom: 17%;
+}
+
+#seventh-7th-image {
+    width: 110px;
+    height: 110px;
+
+    right: 15%;
+    bottom: 5rem;
+}
+
+#eighth-7th-image {
+    width: 106px;
+    height: 106px;
+
+    right: 1rem;
+    bottom: 2rem;
+}
+
+#nineth-7th-image {
+    width: 91px;
+    height: 89px;
+
+    left: 40%;
+    bottom: 3.75rem;
+}
+
+#tenth-7th-image {
+    width: 149px;
+    height: 148px;
+
+    left: 7rem;
+    bottom: 16%;
+}
+
+#eleven-7th-image {
+    width: 116px;
+
+    left: 8.25rem;
+    top: 41%;
+}
+
+#twelve-7th-image {
+    height: 100px;
+
+    left: 4rem;
+    top: 32%;
+}

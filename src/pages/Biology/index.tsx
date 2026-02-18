@@ -11,6 +11,7 @@ import type { ReactElement } from "react";
 import { paths } from "@router/routes";
 import "./style.css";
 import SixthSection from "@modules/biology/Sections/SixthSection";
+import SeventhSection from "@modules/biology/Sections/SeventhSection";
 
 const pageLayoutSX = {
     backgroundColor: "#2769A5",
@@ -51,6 +52,7 @@ const Biology: React.FC = (): ReactElement => {
                 <FirstSection className="biology-section biology-first-section" />
                 <FifthSection className="biology-section biology-fifth-section" />
                 <SixthSection className="biology-section biology-sixth-section" />
+                <SeventhSection className="biology-section biology-seventh-section" />
             </div>
         </BrightnessLayout>
     );
