@@ -1,0 +1,19 @@
+.square-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+
+    &.square-rounded {
+        border-radius: 25px;
+    }
+
+    .square-card-image {
+        width: 37%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
