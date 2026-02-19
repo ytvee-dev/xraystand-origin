@@ -1,7 +1,5 @@
 import Spinner from "@components/common/Spinner";
 import BrightnessLayout from "@layout/Brightness";
-import CoverSection from "@modules/biology/Sections/CoverSection";
-import FirstSection from "@modules/biology/Sections/FirstSection";
 import FifthSection from "@modules/biology/Sections/FifthSection";
 import SixthSection from "@modules/biology/Sections/SixthSection";
 import SeventhSection from "@modules/biology/Sections/SeventhSection";
@@ -48,8 +46,6 @@ const Biology: React.FC = (): ReactElement => {
         >
             <div className="biology-page">
                 {!isContentLoaded && <Spinner />}
-                <CoverSection className="biology-section biology-cover-section" />
-                <FirstSection className="biology-section biology-first-section" />
                 <FifthSection className="biology-section biology-fifth-section" />
                 <SixthSection className="biology-section biology-sixth-section" />
                 <SeventhSection className="biology-section biology-seventh-section" />
