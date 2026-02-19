@@ -1,0 +1,55 @@
+.physics-first-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: none;
+}
+
+.physics-first-section-content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+
+    h2 {
+        text-align: center;
+        font-size: 45px;
+        color: #fff;
+        padding: 24px;
+    }
+}
+
+.physics-first-section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 440px);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    column-gap: 130px;
+    row-gap: 20px;
+}
+
+.physics-types-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: none;
+    box-shadow: none;
+    align-items: flex-start;
+    white-space: pre-line;
+}
+
+.physics-types-card img {
+    width: 115px;
+    height: 100%;
+    border-radius: 0;
+    align-items: flex-start;
+}
+
+.physics-types-card .card-text h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.physics-types-card .card-text p {
+    font-size: 13px;
+}

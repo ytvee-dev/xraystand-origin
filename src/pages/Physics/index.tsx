@@ -8,6 +8,7 @@ import BrightnessLayout from "@layout/Brightness";
 // import * as contentRu from "@modules/physics/locales/rus.json";
 // import * as contentKz from "@modules/physics/locales/kaz.json";
 // import * as paths from "@modules/physics/locales/paths.json";
+import FirstSection from "@modules/physics/Sections/FirstSection";
 import './style.css';
 
 const pageLayoutSX = {
@@ -47,10 +48,10 @@ const Physics: React.FC = () => {
             headerBackgroundColor="#222630"
             languageSwitcherClassName="physics-language-switcher"
         >
-            <h1>Physics Page</h1>
-            
+            <FirstSection className="first-section"/>
         </BrightnessLayout>
-        
+
+
     );
 };
 
