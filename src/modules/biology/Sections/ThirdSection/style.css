@@ -1,0 +1,128 @@
+.biology-third-section {
+    background-color: #50C0AC;
+    position: relative;
+    padding: 31px 200px;
+    height: 991px;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.biology-third-section-background {
+    position: absolute;
+}
+
+#biology-third-section-background-svg-1 {
+    width: 95px;
+    left: 325px;
+    top: 26px
+}
+
+#biology-third-section-background-svg-2 {
+    height: 134px;
+    right: 183px;
+    top: 0;
+}
+
+#biology-third-section-background-svg-3 {
+    height: 340px;
+    bottom: 56px;
+    left: 1178px;
+}
+
+#biology-third-section-background-svg-4 {
+    height: 138px;
+    left: 245px;
+    bottom: 186px;
+}
+
+.cell-division-title-block,
+.biology-third-section-cards-grid {
+    z-index: 1;
+}
+
+.cell-division-header-block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    width: 564px;
+}
+
+.cell-division-header-block .title {
+    font-size: 45px;
+}
+
+.cell-division-header-block .description {
+    font-size: 16px;
+}
+
+.biology-third-section-cards-grid {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.biology-third-section-cards-grid .biology-third-section-card {
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: left;
+    height: fit-content;
+    padding: 16px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #489484;
+    border-radius: 40px;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3), 
+                inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.biology-third-section-cards-grid .biology-third-section-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    background: linear-gradient(210deg, silver, transparent) border-box;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    background-origin: border-box;
+    pointer-events: none;
+}
+
+#biology-third-section-card-1 {
+    width: 308px;
+}
+
+#biology-third-section-card-2 {
+    width: 323px;
+}
+
+#biology-third-section-card-3 {
+    width: 308px;
+}
+
+.biology-third-section-card .card-title {
+    font-size: 22px;
+}
+
+.biology-third-section-card .card-text-section {
+    border-radius: 43px;
+    padding: 20px 20px;
+    background-color: #30695A;
+}
+
+.biology-third-section-card .card-text-section .card-sub-description > ul{
+    margin-left: 20px;
+}

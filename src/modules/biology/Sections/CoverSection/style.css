@@ -1,0 +1,112 @@
+.biology-cover-section {
+    position: relative;
+    margin-top: 68px;
+    height: 794px;
+    width: 100%;
+    background-color: #85B4CD;
+    color: #FFFFFF;
+}
+
+.bio-background-svg {
+    position: absolute;
+}
+
+#bio-back-svg-1 {
+    height: 100px;
+    left: 95.51px;
+    bottom: 55px;
+}
+
+#bio-back-svg-2 {
+    top: 66px;
+    left: 30px;
+    width: 150.12px;
+}
+
+#bio-back-svg-3 {
+    height: 505px;
+    right: 0;
+}
+
+#bio-back-svg-4 {
+    right: 130px;
+    top: 455px;
+    height: 173px;
+}
+
+.biology-hero-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.biology-hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1167.65px;
+    height: 415px;
+    margin: auto;
+    margin-top: 150px;
+    gap: 0;
+}
+
+#bio-content-back-upper,
+#bio-content-darvin {
+    position: absolute;
+}
+
+#bio-content-darvin {
+    left: 418px;
+    top: 38.6px;
+    height: 294px;
+    z-index: 3;
+}
+
+#bio-content-back-upper {
+    left: 0;
+    top: 0;
+    z-index: 2;
+    height: 385.36px;
+    width: 1134.3px;
+}
+
+#bio-content-back-lower {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#bio-content-back-lower {
+    width: 100%;
+}
+
+.biology-hero-content-text {
+    z-index: 4;
+    position: absolute;
+}
+
+.biology-hero-content-text .upper-block,
+.biology-hero-content-text .lower-block {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.biology-hero-content-text .upper-block > img,
+.biology-hero-content-text .lower-block > img {
+    width: 433px;
+}
+
+.biology-hero-content-text .upper-block > h1,
+.biology-hero-content-text .lower-block > h1 {
+    font-size: 70px;
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    height: 40px;
+}

@@ -1,0 +1,58 @@
+.biology-first-section {
+    background-color: #50C0AC;
+    padding: 44px 144px;
+    height: 640px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    color: #FFFFFF;
+}
+
+.biology-first-section-text-block {
+    width: 564px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.biology-first-section-text-block-title {
+    height: 48px;
+    font-size: 48px;
+}
+
+.biology-first-section-text-block-description {
+    height: 336px;
+    width: 564px;
+    font-size: 20px;
+}
+
+#centered-svg {
+    height: 82px;
+}
+
+.biology-first-section-pictures-block {
+    width: 384px;
+    position: relative;
+}
+
+.pictures-block-svg {
+    position: absolute;
+}
+
+#pictures-block-svg-1 {
+    height: 192.64px;
+    top: 0;
+    right: 0;
+}
+
+#pictures-block-svg-2 {
+    top: 116px;
+    left: 0;
+    height: 230.86px;
+}
+
+#pictures-block-svg-3 {
+    bottom: 0;
+    right: 54.71px;
+    height: 206.83px;
+}

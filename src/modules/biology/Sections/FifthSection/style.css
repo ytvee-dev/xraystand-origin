@@ -1,0 +1,86 @@
+.biology-fifth-section {
+    background-color: #AD92C3;
+    padding: 44px 144px;
+    height: 949px;
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    gap: 24px;
+}
+
+.left-content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 673px;
+}
+
+.left-content-section .card-section {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.left-content-section .card-section .card {
+    font-size: 16px !important;
+    background-color: #7A61A0;
+    width: 324px;
+    padding: 28px;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: left;
+    height: fit-content;
+    border-radius: 40px;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3), 
+                inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.left-content-section .card-section .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    background: linear-gradient(210deg, silver, transparent) border-box;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    background-origin: border-box;
+    pointer-events: none;
+}
+
+.left-content-section .card-section .card .card-title {
+    font-size: 20px;
+}
+
+.left-content-section .card-section #card-left .main-description {
+    margin: 16px 0px;
+}
+
+.left-content-section .card-section .card .card-description-list {
+    margin-left: 30px;
+}
+
+.left-content-section .card-section #card-right .card-description-list {
+    margin-top: 16px;
+}
+
+.right-content-section {
+    position: relative;
+    height: 100%;
+    width: 505px;
+}
+
+.right-content-section .image {
+    position: absolute;
+    width: 473px;
+    height: 717px;
+    bottom: 0;
+    left: 0;
+}

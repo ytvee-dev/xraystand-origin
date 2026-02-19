@@ -1,0 +1,113 @@
+.biology-second-section {
+    background-color: #50C0AC;
+    position: relative;
+    padding: 27px 47px;
+    padding-bottom: 102px;
+    height: 953px;
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+#biology-second-section-background-svg-1,
+#biology-second-section-background-svg-2 {
+    position: absolute;
+}
+
+#biology-second-section-background-svg-1 {
+    height: 134px;
+    top: 18px;
+    left: 234px;
+}
+
+#biology-second-section-background-svg-2 {
+    height: 219px;
+    bottom: 12px;
+    left: 218px;
+}
+
+.cell-structure-title-block,
+.biology-second-section-cards-grid {
+    z-index: 1;
+}
+
+.cell-structure-header-block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    width: 564px;
+}
+
+.cell-structure-header-block .title {
+    font-size: 45px;
+}
+
+.cell-structure-header-block .description {
+    font-size: 16px;
+}
+
+.biology-second-section-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.biology-second-section-cards-grid .biology-second-section-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    height: 320px;
+    background-color: #489484;
+    border-radius: 40px;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3), 
+                inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.biology-second-section-cards-grid .biology-second-section-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    background: linear-gradient(210deg, silver, transparent) border-box;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    background-origin: border-box;
+    pointer-events: none;
+}
+
+.biology-second-section-card .card-image {
+    height: 112px;
+}
+
+.biology-second-section-card .card-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 108px;
+    width: 100%;
+    text-align: left;
+}
+
+.biology-second-section-card .card-text-section .card-title {
+    font-size: 24px;
+}
+
+.biology-second-section-card .card-text-section .card-description {
+    font-size: 14px;
+}
