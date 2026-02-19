@@ -1,244 +1,258 @@
 import * as paths from "@modules/biology/locales/paths.json";
 import * as textContentRu from "@modules/biology/locales/rus.json";
-import * as textContentKaz from "@modules/biology/locales/rus.json";
+import * as textContentKaz from "@modules/biology/locales/kaz.json";
 import type { BiologySectionProps } from "@modules/biology/types";
 import { useLocaleContent } from "@hooks/useLocale";
 import type { ReactElement } from "react";
 import "./style.css";
 
+interface ITextData {
+    id: number;
+    text: string;
+    options?: string[];
+}
+
 const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKaz);
 
+    const firstCardContent: ITextData[] = [
+        {
+            id: 1,
+            text: textContent.naturalSelectionSection.content[0].description,
+        },
+        {
+            id: 2,
+            text: textContent.naturalSelectionSection.content[1].description,
+        },
+        {
+            id: 3,
+            text: textContent.naturalSelectionSection.content[2].description,
+        },
+    ];
+
+    const secondCardContent: ITextData[] = [
+        {
+            id: 1,
+            text: textContent.naturalSelectionSection.content[3].description,
+        },
+        {
+            id: 2,
+            text: textContent.naturalSelectionSection.content[4].description,
+            options: [
+                textContent.naturalSelectionSection.content[5].description,
+                textContent.naturalSelectionSection.content[6].description,
+                textContent.naturalSelectionSection.content[7].description,
+            ],
+        },
+        {
+            id: 3,
+            text: textContent.naturalSelectionSection.content[8].description,
+        },
+    ];
+
+    const thirdCardContent: ITextData[] = [
+        {
+            id: 1,
+            text: textContent.naturalSelectionSection.content[9].description,
+        },
+        {
+            id: 2,
+            text: textContent.naturalSelectionSection.content[10].description,
+            options: [
+                textContent.naturalSelectionSection.content[11].description,
+                textContent.naturalSelectionSection.content[12].description,
+                textContent.naturalSelectionSection.content[13].description,
+            ],
+        },
+        {
+            id: 3,
+            text: textContent.naturalSelectionSection.content[14].description,
+        },
+    ];
+
     return (
         <section className={className}>
-            <h1 className="biology-fifth-section-header">
+            <h1 className="biology-fifth-section-header header-biology-section-text">
                 {textContent.naturalSelectionSection.title}
             </h1>
 
             <div className="biology-fifth-section-content">
-                <div className="biology-fifth-section-first-images-container">
-                    <div className="pair-of-images">
-                        <img
-                            id="first-image"
-                            className="biology-fifth-section-image"
-                            src={paths.images[0]}
-                            alt="biology-image"
-                        />
-                        <img
-                            id="second-image"
-                            src={paths.images[3]}
-                            className="biology-fifth-section-image"
-                            alt="biology-image"
-                        />
-                    </div>
-
-                    <div className="pair-of-images">
-                        <img
-                            id="third-image"
-                            src={paths.images[0]}
-                            className="biology-fifth-section-image"
-                            alt="biology-image"
-                        />
-                        <img
-                            id="fourth-image"
-                            src={paths.images[2]}
-                            className="biology-fifth-section-image"
-                            alt="biology-image"
-                        />
-                    </div>
-
-                    <div className="pair-of-images">
-                        <img
-                            id="fifth-image"
-                            src={paths.images[0]}
-                            className="biology-fifth-section-image"
-                            alt="biology-image"
-                        />
-                        <img
-                            id="sixth-image"
-                            src={paths.images[1]}
-                            className="biology-fifth-section-image"
-                            alt="biology-image"
-                        />
-                    </div>
-                </div>
-
                 <div className="biology-fifth-section-cards-container">
                     <div
+                        id="first-5th-card"
                         className="biology-fifth-section-card"
-                        style={{ height: "389px" }}
                     >
-                        <h2 className="biology-fifth-section-card-header">
-                            {
-                                textContent.naturalSelectionSection.content[0]
-                                    .title
-                            }
-                        </h2>
-
-                        <div className="biology-fifth-section-card-content-container">
-                            <p>
-                                {
-                                    textContent.naturalSelectionSection
-                                        .content[0].description
-                                }
-                            </p>
-
-                            <p>
-                                {
-                                    textContent.naturalSelectionSection
-                                        .content[1].description
-                                }
-                            </p>
-
-                            <p>
-                                {
-                                    textContent.naturalSelectionSection
-                                        .content[2].description
-                                }
-                            </p>
+                        <div className="biology-fifth-section-card-image-container">
+                            <img
+                                id="first-image"
+                                className="biology-fifth-section-image"
+                                src={paths.images[6]}
+                                alt="biology-image"
+                            />
                         </div>
-                    </div>
 
-                    <div className="biology-fifth-section-card">
-                        <h2 className="biology-fifth-section-card-header">
-                            {
-                                textContent.naturalSelectionSection.content[3]
-                                    .title
-                            }
-                        </h2>
                         <div className="biology-fifth-section-card-content-container">
-                            <p>
+                            <h2 className="biology-fifth-section-card-header title-bilogy-text">
                                 {
                                     textContent.naturalSelectionSection
-                                        .content[3].description
+                                        .content[0].title
                                 }
-                            </p>
+                            </h2>
 
-                            <p>
-                                {
-                                    textContent.naturalSelectionSection
-                                        .content[4].description
-                                }
-                                <ul className="biology-fifth-section-card-marked-list">
-                                    <li>
-                                        {
-                                            textContent.naturalSelectionSection
-                                                .content[5].description
-                                        }
-                                    </li>
-                                    <li>
-                                        {
-                                            textContent.naturalSelectionSection
-                                                .content[6].description
-                                        }
-                                    </li>
-                                    <li>
-                                        {
-                                            textContent.naturalSelectionSection
-                                                .content[7].description
-                                        }
-                                    </li>
-                                </ul>
-                            </p>
-
-                            <p>
-                                {
-                                    textContent.naturalSelectionSection
-                                        .content[8].description
-                                }
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="biology-fifth-section-card">
-                        <h2 className="biology-fifth-section-card-header">
-                            {
-                                textContent.naturalSelectionSection.content[9]
-                                    .title
-                            }
-                        </h2>
-                        <div className="biology-fifth-section-card-content-container">
-                            <p>
-                                {
-                                    textContent.naturalSelectionSection
-                                        .content[9].description
-                                }
-                            </p>
-
-                            <p>
-                                {
-                                    textContent.naturalSelectionSection
-                                        .content[10].description
-                                }
-                                <ul className="biology-fifth-section-card-marked-list">
-                                    <li
-                                        style={{
-                                            height: "41px",
-                                        }}
+                            <div className="biology-fifth-section-card-info-content-wrapper">
+                                {firstCardContent.map((data: ITextData) => (
+                                    <p
+                                        className="description-biology-small-text"
+                                        key={data.id}
                                     >
-                                        {
-                                            textContent.naturalSelectionSection
-                                                .content[11].description
-                                        }
-                                    </li>
-                                    <li>
-                                        {
-                                            textContent.naturalSelectionSection
-                                                .content[12].description
-                                        }
-                                    </li>
-                                    <li style={{ whiteSpace: "nowrap" }}>
-                                        {
-                                            textContent.naturalSelectionSection
-                                                .content[13].description
-                                        }
-                                    </li>
-                                </ul>
-                            </p>
-
-                            <p style={{ marginBottom: "0.5rem" }}>
-                                {
-                                    textContent.naturalSelectionSection
-                                        .content[14].description
-                                }
-                            </p>
+                                        {data.text}
+                                    </p>
+                                ))}
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="biology-fifth-section-second-images-container">
-                    <img
-                        id="seventh-image"
-                        className="biology-fifth-section-image"
-                        src={paths.images[4]}
-                        alt="biology-image"
-                    />
-                    <img
-                        id="eighth-image"
-                        src={paths.images[13]}
-                        className="biology-fifth-section-image"
-                        alt="biology-image"
-                    />
+                    <div
+                        id="second-5th-card"
+                        className="biology-fifth-section-card"
+                    >
+                        <div className="biology-fifth-section-card-image-container">
+                            {/* <img
+                                id="second-image"
+                                className="biology-fifth-section-image"
+                                src={}
+                                alt="biology-image"
+                            /> */}
+                        </div>
 
-                    <img
-                        id="nineth-image"
-                        src={paths.images[7]}
-                        className="biology-fifth-section-image"
-                        alt="biology-image"
-                    />
-                    <img
-                        id="tenth-image"
-                        src={paths.images[13]}
-                        className="biology-fifth-section-image"
-                        alt="biology-image"
-                    />
+                        <div className="biology-fifth-section-card-content-container">
+                            <h2 className="biology-fifth-section-card-header title-bilogy-text">
+                                {
+                                    textContent.naturalSelectionSection
+                                        .content[3].title
+                                }
+                            </h2>
 
-                    <img
-                        id="eleventh-image"
-                        src={paths.images[5]}
-                        className="biology-fifth-section-image"
-                        alt="biology-image"
-                    />
+                            <div className="biology-fifth-section-card-info-content-wrapper">
+                                {secondCardContent.map((data: ITextData) => (
+                                    <div
+                                        key={data.id}
+                                        className="description-biology-small-text"
+                                    >
+                                        <p>{data.text}</p>
+
+                                        {data.options && (
+                                            <ul>
+                                                {data.options.map(
+                                                    (text: string) => (
+                                                        <li key={data.id}>
+                                                            {text}
+                                                        </li>
+                                                    ),
+                                                )}
+                                            </ul>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        id="third-5th-card"
+                        className="biology-fifth-section-card"
+                    >
+                        <div className="biology-fifth-section-card-image-container">
+                            <div className="biology-fifth-section-image-wrapper">
+                                <img
+                                    id="eighth-image"
+                                    className="biology-fifth-section-image"
+                                    src={paths.images[4]}
+                                    alt="biology-image"
+                                />
+                                <div className="biology-fifth-section-image-description">
+                                    ЧЕЛОВЕК
+                                </div>
+                            </div>
+
+                            <div className="biology-fifth-section-image-wrapper">
+                                <img
+                                    id="nineth-image"
+                                    src={paths.images[13]}
+                                    className="biology-fifth-section-image"
+                                    alt="biology-image"
+                                />
+                                <div className="biology-fifth-section-image-description">
+                                    КОШКА
+                                </div>
+                            </div>
+                            <div className="biology-fifth-section-image-wrapper">
+                                <img
+                                    id="tenth-image"
+                                    src={paths.images[14]}
+                                    className="biology-fifth-section-image"
+                                    alt="biology-image"
+                                />
+                                <div className="biology-fifth-section-image-description">
+                                    ЛЕТУЧАЯ МЫШЬ
+                                </div>
+                            </div>
+                            <div className="biology-fifth-section-image-wrapper">
+                                <img
+                                    id="eleventh-image"
+                                    src={paths.images[7]}
+                                    className="biology-fifth-section-image"
+                                    alt="biology-image"
+                                />
+                                <div className="biology-fifth-section-image-description">
+                                    ДЕЛЬФИН
+                                </div>
+                            </div>
+                            <div className="biology-fifth-section-image-wrapper">
+                                <img
+                                    id="twelve-image"
+                                    src={paths.images[5]}
+                                    className="biology-fifth-section-image"
+                                    alt="biology-image"
+                                />
+                                <div className="biology-fifth-section-image-description twelve">
+                                    ЛОШАДЬ
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="biology-fifth-section-card-content-container">
+                            <h2 className="biology-fifth-section-card-header title-bilogy-text">
+                                {
+                                    textContent.naturalSelectionSection
+                                        .content[9].title
+                                }
+                            </h2>
+
+                            <div className="biology-fifth-section-card-info-content-wrapper">
+                                {thirdCardContent.map((data: ITextData) => (
+                                    <div
+                                        key={data.id}
+                                        className="description-biology-small-text"
+                                    >
+                                        <p>{data.text}</p>
+
+                                        {data.options && (
+                                            <ul>
+                                                {data.options.map(
+                                                    (text: string) => (
+                                                        <li key={data.id}>
+                                                            {text}
+                                                        </li>
+                                                    ),
+                                                )}
+                                            </ul>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

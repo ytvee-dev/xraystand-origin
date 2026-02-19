@@ -18,10 +18,7 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
                     {textContent.prokaryotesToHumansSection.title}
                 </h2>
 
-                <span
-                    className="description-biology-medium-text"
-                    style={{ textAlign: "center" }}
-                >
+                <span className="description-biology-medium-text">
                     {textContent.prokaryotesToHumansSection.description}
                 </span>
             </div>

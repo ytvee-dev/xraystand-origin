@@ -3,6 +3,8 @@ import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/biology/Sections/CoverSection";
 import FirstSection from "@modules/biology/Sections/FirstSection";
 import FifthSection from "@modules/biology/Sections/FifthSection";
+import SixthSection from "@modules/biology/Sections/SixthSection";
+import SeventhSection from "@modules/biology/Sections/SeventhSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import type { TRootState } from "@store/index";
@@ -10,8 +12,6 @@ import { useSelector } from "react-redux";
 import type { ReactElement } from "react";
 import { paths } from "@router/routes";
 import "./style.css";
-import SixthSection from "@modules/biology/Sections/SixthSection";
-import SeventhSection from "@modules/biology/Sections/SeventhSection";
 
 const pageLayoutSX = {
     backgroundColor: "#2769A5",

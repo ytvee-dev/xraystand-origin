@@ -6,10 +6,21 @@ import { useLocaleContent } from "@hooks/useLocale";
 import type { ReactElement } from "react";
 import "./style.css";
 
+interface IText {
+    id: number;
+    text: string;
+}
+
+interface ITextData {
+    id: number;
+    title?: string;
+    description: string;
+}
+
 const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKaz);
 
-    const firstCardContent = [
+    const firstCardContent: ITextData[] = [
         {
             id: 1,
             description: textContent.virusesSection.content[3].description,
@@ -32,7 +43,7 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
         },
     ];
 
-    const secondCardContent = [
+    const secondCardContent: ITextData[] = [
         {
             id: 1,
             title: textContent.virusesSection.content[11].description,
@@ -61,7 +72,7 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
         },
     ];
 
-    const thirdCardContent = [
+    const thirdCardContent: ITextData[] = [
         {
             id: 1,
             title: textContent.virusesSection.content[26].description,
@@ -85,7 +96,7 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
         },
     ];
 
-    const fourthCardContent = [
+    const fourthCardContent: IText[] = [
         {
             id: 1,
             text: textContent.virusesSection.content[39].description,
@@ -112,7 +123,7 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
         },
     ];
 
-    const fifthCardContent = [
+    const fifthCardContent: IText[] = [
         {
             id: 1,
             text: textContent.virusesSection.content[49].description,
@@ -135,7 +146,7 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
         },
     ];
 
-    const fifthCardContentTwo = [
+    const fifthCardContentTwo: IText[] = [
         {
             id: 1,
             text: textContent.virusesSection.content[55].description,
@@ -154,7 +165,7 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
         },
     ];
 
-    const sixthCardContent = [
+    const sixthCardContent: ITextData[] = [
         {
             id: 1,
             title: textContent.virusesSection.content[62].description,
@@ -274,8 +285,8 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
 
                         <ul>
                             {textContent.virusesSection.content[2].description}
-                            {firstCardContent.map((object) => (
-                                <li key={object.id}>{object.description}</li>
+                            {firstCardContent.map((data: ITextData) => (
+                                <li key={data.id}>{data.description}</li>
                             ))}
                         </ul>
 
@@ -298,13 +309,13 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
                             {textContent.virusesSection.content[10].description}
                         </span>
 
-                        {secondCardContent.map((object) => (
+                        {secondCardContent.map((data: ITextData) => (
                             <div
-                                key={object.id}
+                                key={data.id}
                                 className="biology-seventh-section-card-info-wrapper"
                             >
-                                <span>{object.title}</span>
-                                <span>{object.description}</span>
+                                <span>{data.title}</span>
+                                <span>{data.description}</span>
                             </div>
                         ))}
 
@@ -342,13 +353,13 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
                             {textContent.virusesSection.content[25].description}
                         </span>
 
-                        {thirdCardContent.map((object) => (
+                        {thirdCardContent.map((data: ITextData) => (
                             <div
-                                key={object.id}
+                                key={data.id}
                                 className="biology-seventh-section-card-info-wrapper"
                             >
-                                <span>{object.title}</span>
-                                <span>{object.description}</span>
+                                <span>{data.title}</span>
+                                <span>{data.description}</span>
                             </div>
                         ))}
 
@@ -389,8 +400,8 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
                         </span>
 
                         <ul>
-                            {fourthCardContent.map((object) => (
-                                <li key={object.id}>{object.text}</li>
+                            {fourthCardContent.map((data: IText) => (
+                                <li key={data.id}>{data.text}</li>
                             ))}
                         </ul>
 
@@ -414,14 +425,14 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
                         </span>
                         <ul>
                             {textContent.virusesSection.content[48].description}
-                            {fifthCardContent.map((object) => (
-                                <li key={object.id}>{object.text}</li>
+                            {fifthCardContent.map((data: IText) => (
+                                <li key={data.id}>{data.text}</li>
                             ))}
                         </ul>
                         <ul>
                             {textContent.virusesSection.content[54].description}
-                            {fifthCardContentTwo.map((object) => (
-                                <li key={object.id}>{object.text}</li>
+                            {fifthCardContentTwo.map((data: IText) => (
+                                <li key={data.id}>{data.text}</li>
                             ))}
                         </ul>
 
@@ -444,15 +455,15 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
                             {textContent.virusesSection.content[61].description}
                         </span>
 
-                        {sixthCardContent.map((object) => (
+                        {sixthCardContent.map((data: ITextData) => (
                             <div
-                                key={object.id}
+                                key={data.id}
                                 className="biology-seventh-section-card-info-wrapper"
                             >
-                                <span>{object.title}</span>
-                                <span>{object.description}</span>
+                                <span>{data.title}</span>
+                                <span>{data.description}</span>
 
-                                {object.id === 2 && (
+                                {data.id === 2 && (
                                     <ul>
                                         {
                                             textContent.virusesSection
