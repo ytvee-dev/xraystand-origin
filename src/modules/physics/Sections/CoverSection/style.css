@@ -154,7 +154,7 @@
 
 .physics-hero-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 1050px;
     padding-top: 200px;
     padding-bottom: 140px;
@@ -241,7 +241,7 @@
     }
 
     .physics-hero-image-wrapper {
-        max-width: 350px;
+        max-width: 330px;
     }
 }
 
@@ -251,7 +251,7 @@
     }
 
     .physics-custom-svg:nth-child(2) {
-        left: 55%;
+        left: 65%;
     }
 
     .physics-custom-svg:nth-child(3) {
@@ -265,6 +265,10 @@
 
     .physics-custom-svg:nth-child(5) {
         display: none;
+    }
+
+    .physics-hero-text{
+        width: 400px;
     }
 }
 
