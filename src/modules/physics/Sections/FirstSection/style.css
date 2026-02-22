@@ -2,32 +2,34 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 50px 40px;
 }
 
 .physics-first-section-content-wrapper {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
 }
 
-.physics-first-section-content-wrapper h2 {
-    text-align: center;
-    font-size: 45px;
-    color: #fff;
-    margin-bottom: 60px;
-}
-
 .physics-first-section-grid {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    gap: 20px 102px;
+    gap: 107px; 
+    margin: 72px 0;
+    width: 100%;
+}
+
+.left-content-cards,
+.right-content-cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px; 
+    max-width: 440px; 
 }
 
 .physics-types-card {
-    width: 440px;
+    width: 100%; 
     display: flex;
     align-items: flex-start;
     gap: 24px;
@@ -41,31 +43,43 @@
     height: auto;
 }
 
-.physics-types-card .card-text {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
+@media (max-width: 1045px) {
+    .physics-first-section-grid {
+        flex-direction: column; 
+        align-items: center;
+        gap: 45px;
+    }
 
-.physics-types-card .card-text h3 {
-    font-size: 15px;
-    color: #fff;
-}
-
-.physics-types-card .card-text p {
-    font-size: 13px;
-    color: #fff;
-}
-
-@media (max-width: 800px) {
+    .left-content-cards,
+    .right-content-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
 
     .physics-types-card {
-        flex-direction: column;   
-        align-items: center;      
-        text-align: center;      
-        gap: 12px;                
-        width: 100%;              
-        max-width: 400px;         
-        padding: 16px;            
+        display: flex;
+        align-items: center; 
+        gap: 24px;
+        width: 100%;
+    }
+
+    .physics-types-card:nth-child(odd) {
+        flex-direction: row !important;
+        text-align: left !important;
+    }
+
+    .physics-types-card:nth-child(even) {
+        flex-direction: row-reverse !important;
+        text-align: right !important;
+    }
+
+    .physics-types-card:nth-child(even) * {
+        text-align: left !important;
+    }
+
+    .physics-types-card:nth-child(odd) * {
+        text-align: right !important;
     }
 }
+

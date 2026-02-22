@@ -8,12 +8,12 @@
     },
     "cardsImage": [
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771157617/mechanics_1_pjcq4w.webp",
-        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771157725/thermodynamics_1_btiuel.webp",
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771157814/optics_1_l2yii8.webp",
-        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771157943/Electricity_and_magnetism_1_s1ou8p.webp",
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771158093/acoustics_1_vrtco6.webp",
-        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771158171/astronomy_1_hxvbla.webp",
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771158270/quantum_and_nuclear_1_tnamyn.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771157725/thermodynamics_1_btiuel.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771157943/Electricity_and_magnetism_1_s1ou8p.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771158171/astronomy_1_hxvbla.webp",
         "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771158373/theory_of_relativity_1_dvon2e.webp"
     ],
     "peoples": {
