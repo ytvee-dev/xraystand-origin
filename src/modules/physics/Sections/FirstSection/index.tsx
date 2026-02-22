@@ -42,6 +42,7 @@ const FirstSection: React.FC<MathSectionProps> = ({ className }: MathSectionProp
 
     return (
         <section className={`physics-first-section ${className || ""}`}>
+            
             <div className="physics-first-section-content-wrapper">
                 <BackgroundedTitle
                     title={textContent.physicsBranchesSection.title}
