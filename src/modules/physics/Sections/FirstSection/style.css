@@ -15,7 +15,7 @@
 .physics-first-section-grid {
     display: flex;
     justify-content: center;
-    gap: 107px; 
+    gap: 107px;
     margin: 72px 0;
     width: 100%;
 }
@@ -24,18 +24,19 @@
 .right-content-cards {
     display: flex;
     flex-direction: column;
-    row-gap: 45px; 
-    max-width: 440px; 
+    row-gap: 45px;
+    max-width: 440px;
 }
 
 .physics-types-card {
-    width: 100%; 
+    width: 100%;
     display: flex;
     align-items: flex-start;
     gap: 24px;
     background: none;
     box-shadow: none;
     white-space: pre-line;
+    height: 240px;
 }
 
 .physics-types-card img {
@@ -43,43 +44,26 @@
     height: auto;
 }
 
-@media (max-width: 1045px) {
+@media (max-width: 1020px) {
+    .physics-first-section {
+        padding: 7px;
+    }
+
     .physics-first-section-grid {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         gap: 45px;
     }
-
-    .left-content-cards,
-    .right-content-cards {
-        display: flex;
-        flex-direction: column;
-        gap: 45px;
-    }
-
-    .physics-types-card {
-        display: flex;
-        align-items: center; 
-        gap: 24px;
-        width: 100%;
-    }
-
-    .physics-types-card:nth-child(odd) {
-        flex-direction: row !important;
-        text-align: left !important;
-    }
-
-    .physics-types-card:nth-child(even) {
-        flex-direction: row-reverse !important;
-        text-align: right !important;
-    }
-
-    .physics-types-card:nth-child(even) * {
-        text-align: left !important;
-    }
-
-    .physics-types-card:nth-child(odd) * {
-        text-align: right !important;
-    }
 }
 
+@media (max-width: 800px) {
+    .physics-types-card {
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .physics-types-card * {
+        text-align: left !important;
+    }
+
+}

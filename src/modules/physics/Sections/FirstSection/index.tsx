@@ -26,10 +26,11 @@ const FirstSection: React.FC<MathSectionProps> = ({ className }: MathSectionProp
         if (item.title) {
             cards.push({
                 id: `card-${cards.length + 1}`,
+                image: paths.cardsImage[cards.length] || "",
                 title: item.title,
                 subtitle: item.subTitle,
                 description: item.description,
-                image: paths.cardsImage[cards.length] || "",
+                
             });
         } else {
             const lastCard = cards[cards.length - 1];
@@ -56,9 +57,9 @@ const FirstSection: React.FC<MathSectionProps> = ({ className }: MathSectionProp
                         <CubeCard
                             key={card.id}
                             className="physics-types-card"
+                            imagePath={card.image}
                             title={card.title}
                             description={card.description}
-                            imagePath={card.image}
                             flexDirection="row-reverse"
                         />
                     ))}
@@ -69,9 +70,9 @@ const FirstSection: React.FC<MathSectionProps> = ({ className }: MathSectionProp
                         <CubeCard
                             key={card.id}
                             className="physics-types-card"
+                            imagePath={card.image}
                             title={card.title}
                             description={card.description}
-                            imagePath={card.image}
                             flexDirection="row-reverse"
                         />
                     ))}
