@@ -197,73 +197,73 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
             <div className="biology-seventh-section-background-images-container">
                 <img
                     id="first-7th-image"
-                    src={paths.backgrounds[12]}
+                    src={paths.backgrounds.seventhSection[11]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />
                 <img
                     id="second-7th-image"
-                    src={paths.backgrounds[11]}
+                    src={paths.backgrounds.seventhSection[10]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />
                 <img
                     id="third-7th-image"
-                    src={paths.backgrounds[10]}
+                    src={paths.backgrounds.seventhSection[9]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />
                 <img
                     id="fourth-7th-image"
-                    src={paths.backgrounds[9]}
+                    src={paths.backgrounds.seventhSection[8]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />
                 <img
                     id="fifth-7th-image"
-                    src={paths.backgrounds[8]}
+                    src={paths.backgrounds.seventhSection[7]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />
                 <img
                     id="sixth-7th-image"
-                    src={paths.backgrounds[7]}
+                    src={paths.backgrounds.seventhSection[6]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />
                 <img
                     id="seventh-7th-image"
-                    src={paths.backgrounds[6]}
+                    src={paths.backgrounds.seventhSection[5]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />
                 <img
                     id="eighth-7th-image"
-                    src={paths.backgrounds[5]}
+                    src={paths.backgrounds.seventhSection[4]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />
                 <img
                     id="nineth-7th-image"
-                    src={paths.backgrounds[4]}
+                    src={paths.backgrounds.seventhSection[3]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />
                 <img
                     id="tenth-7th-image"
-                    src={paths.backgrounds[3]}
+                    src={paths.backgrounds.seventhSection[2]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />
                 <img
                     id="eleven-7th-image"
-                    src={paths.backgrounds[2]}
+                    src={paths.backgrounds.seventhSection[1]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />
                 <img
                     id="twelve-7th-image"
-                    src={paths.backgrounds[1]}
+                    src={paths.backgrounds.seventhSection[0]}
                     className="biology-seventh-section-picture"
                     alt="biology-image"
                 />

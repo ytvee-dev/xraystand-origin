@@ -1,6 +1,6 @@
 .biology-sixth-section {
     width: 100%;
-    height: 2800px;
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -19,13 +19,13 @@
     margin-top: 4.5rem;
     margin-bottom: 1.5rem;
 
-    width: 564px;
-    height: 194px;
+    width: 35.25rem;
+    height: 11.875rem;
 
     gap: 1.6875rem;
 }
 
-.header-sixth-section {
+.header-sixth-section-wrapper {
     text-align: center;
 }
 
@@ -33,127 +33,48 @@
     width: 100%;
     height: 100%;
 
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3rem;
 }
 
 .sixth-section-card {
     display: flex;
     align-items: center;
+    justify-content: left;
 
     position: relative;
     z-index: 2;
 
-    width: fit-content;
+    width: 80%;
     height: fit-content;
 
-    max-width: 800px;
+    background-color: #4a7799;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+        0 0.5rem 2rem rgba(39, 94, 165, 0.1),
+        0 0.25rem 1rem rgba(39, 94, 165, 0.1);
 
     gap: 1.625rem;
 }
 
-.sixth-section-card-info-block {
-    display: flex;
-    flex-direction: column;
-
-    width: 486px;
-    height: auto;
-
-    gap: 0.25rem;
-}
-
-.sixth-section-card-picture-wrapper {
-    width: 141px;
-    height: 141px;
-}
-
-.sixth-section-card-picture {
-    width: 100%;
-    height: 100%;
-}
-
-#first-6th-card {
-    left: 17.5rem;
-    top: 2rem;
-
-    text-align: right;
-}
-
-#second-6th-card {
-    left: 38rem;
-    top: 5rem;
-
-    text-align: left;
-}
-
-#third-6th-card {
-    left: 17.5rem;
-    top: 8rem;
-
-    text-align: right;
-}
-
-#fourth-6th-card {
-    left: 38rem;
-    top: 11rem;
-
-    text-align: left;
-}
-
-#fifth-6th-card {
-    left: 17.5rem;
-    top: 13.5rem;
-
-    text-align: right;
-}
-
-#sixth-6th-card {
-    left: 38rem;
-    top: 17rem;
-
-    text-align: left;
-}
-
-#seventh-6th-card {
-    left: 17.5rem;
-    top: 20rem;
-
-    text-align: right;
-}
-
-#eighth-6th-card {
-    left: 38rem;
-    top: 23rem;
-
-    text-align: left;
-}
-
-#nineth-6th-card {
-    left: 17.5rem;
-    top: 26rem;
-
-    text-align: right;
-}
-
-#tenth-6th-card {
-    left: 38rem;
-    top: 29rem;
-
-    text-align: left;
-}
-
-#fourth-6th-card .sixth-section-card-picture-wrapper,
-#fifth-6th-card .sixth-section-card-picture-wrapper {
-    width: 162px;
-}
-
-#seventh-6th-card .sixth-section-card-picture-wrapper {
-    width: 235px;
-}
-
-#tenth-6th-card .sixth-section-card-picture-wrapper {
-    height: 156px;
+.sixth-section-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:
+        0 1.25rem 2.5rem rgba(88, 144, 218, 0.1),
+        0 0.5rem 1.5rem rgba(88, 187, 218, 0.1),
+        0 0.25rem 0.75rem rgba(88, 187, 218, 0.1);
+    background-color: #304f66;
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .sixth-section-notification-block {
-    margin-bottom: 3.5rem;
+    margin: 2rem 0;
 }

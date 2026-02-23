@@ -138,7 +138,7 @@ const routes: RouteObject[] = [
         element: <Physics />,
     },
     { ...paths.ENGLISH, element: <NotFoundPage /> },
-    { ...paths.BIOLOGY, element: <NotFoundPage /> },
+    { ...paths.BIOLOGY, element: <Biology /> },
     {
         ...paths.PAGES,
         element: <Pages />,

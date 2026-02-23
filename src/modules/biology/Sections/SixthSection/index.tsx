@@ -1,15 +1,35 @@
+import Card from "@modules/fireSafety/components/Card";
 import * as paths from "@modules/biology/locales/paths.json";
 import DSNotification from "@components/common/DSNotification";
 import * as textContentRu from "@modules/biology/locales/rus.json";
 import * as textContentKaz from "@modules/biology/locales/kaz.json";
 import type { BiologySectionProps } from "@modules/biology/types";
+import type { TCard } from "@modules/math/Sections/SecondSection";
 import { useLocaleContent } from "@hooks/useLocale";
+import type { CSSProperties } from "@mui/material";
 import { SvgSpriteIds } from "@utils/constants";
 import type { ReactElement } from "react";
 import "./style.css";
 
 const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKaz);
+
+    const imageStyles: CSSProperties = {
+        width: "auto",
+        height: "8.75rem",
+        objectFit: "contain",
+    };
+
+    const cardData: TCard[] =
+        textContent.prokaryotesToHumansSection.content.map((data, index) => {
+            return {
+                id: "index-" + index + 1,
+                title: data.title,
+                subtitle: data.subTitle,
+                description: data.description,
+                image: paths.cards.sixthSection[index],
+            };
+        });
 
     return (
         <section className={className}>
@@ -24,255 +44,17 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
             </div>
 
             <div className="sixth-section-cards-container">
-                <div id="first-6th-card" className="sixth-section-card">
-                    <div className="sixth-section-card-info-block">
-                        <h2 className="title-bilogy-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[0].title
-                            }
-                        </h2>
-                        <span className="description-biology-small-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[0].description
-                            }
-                        </span>
-                    </div>
-
-                    <div className="sixth-section-card-picture-wrapper">
-                        <img
-                            className="sixth-section-card-picture"
-                            src={paths.cards[9]}
-                            alt="biology-image"
-                        />
-                    </div>
-                </div>
-
-                <div id="second-6th-card" className="sixth-section-card">
-                    <div className="sixth-section-card-picture-wrapper">
-                        <img
-                            className="sixth-section-card-picture"
-                            src={paths.cards[8]}
-                            alt="biology-image"
-                        />
-                    </div>
-
-                    <div className="sixth-section-card-info-block">
-                        <h2 className="title-bilogy-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[1].title
-                            }
-                        </h2>
-                        <span className="description-biology-small-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[1].description
-                            }
-                        </span>
-                    </div>
-                </div>
-
-                <div id="third-6th-card" className="sixth-section-card">
-                    <div className="sixth-section-card-info-block">
-                        <h2 className="title-bilogy-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[2].title
-                            }
-                        </h2>
-                        <span className="description-biology-small-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[2].description
-                            }
-                        </span>
-                    </div>
-
-                    <div className="sixth-section-card-picture-wrapper">
-                        <img
-                            className="sixth-section-card-picture"
-                            src={paths.cards[7]}
-                            alt="biology-image"
-                        />
-                    </div>
-                </div>
-
-                <div id="fourth-6th-card" className="sixth-section-card">
-                    <div className="sixth-section-card-picture-wrapper">
-                        <img
-                            className="sixth-section-card-picture"
-                            src={paths.cards[6]}
-                            alt="biology-image"
-                        />
-                    </div>
-
-                    <div className="sixth-section-card-info-block">
-                        <h2 className="title-bilogy-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[3].title
-                            }
-                        </h2>
-                        <span className="description-biology-small-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[3].description
-                            }
-                        </span>
-                    </div>
-                </div>
-
-                <div id="fifth-6th-card" className="sixth-section-card">
-                    <div className="sixth-section-card-info-block">
-                        <h2 className="title-bilogy-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[4].title
-                            }
-                        </h2>
-                        <span className="description-biology-small-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[4].description
-                            }
-                        </span>
-                    </div>
-
-                    <div className="sixth-section-card-picture-wrapper">
-                        <img
-                            className="sixth-section-card-picture"
-                            src={paths.cards[5]}
-                            alt="biology-image"
-                        />
-                    </div>
-                </div>
-
-                <div id="sixth-6th-card" className="sixth-section-card">
-                    <div className="sixth-section-card-picture-wrapper">
-                        <img
-                            className="sixth-section-card-picture"
-                            src={paths.cards[4]}
-                            alt="biology-image"
-                        />
-                    </div>
-
-                    <div className="sixth-section-card-info-block">
-                        <h2 className="title-bilogy-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[5].title
-                            }
-                        </h2>
-                        <span className="description-biology-small-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[5].description
-                            }
-                        </span>
-                    </div>
-                </div>
-
-                <div id="seventh-6th-card" className="sixth-section-card">
-                    <div className="sixth-section-card-info-block">
-                        <h2 className="title-bilogy-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[6].title
-                            }
-                        </h2>
-                        <span className="description-biology-small-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[6].description
-                            }
-                        </span>
-                    </div>
-
-                    <div className="sixth-section-card-picture-wrapper">
-                        <img
-                            className="sixth-section-card-picture"
-                            src={paths.cards[3]}
-                            alt="biology-image"
-                        />
-                    </div>
-                </div>
-
-                <div id="eighth-6th-card" className="sixth-section-card">
-                    <div className="sixth-section-card-picture-wrapper">
-                        <img
-                            className="sixth-section-card-picture"
-                            src={paths.cards[2]}
-                            alt="biology-image"
-                        />
-                    </div>
-
-                    <div className="sixth-section-card-info-block">
-                        <h2 className="title-bilogy-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[7].title
-                            }
-                        </h2>
-                        <span className="description-biology-small-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[7].description
-                            }
-                        </span>
-                    </div>
-                </div>
-
-                <div id="nineth-6th-card" className="sixth-section-card">
-                    <div className="sixth-section-card-info-block">
-                        <h2 className="title-bilogy-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[8].title
-                            }
-                        </h2>
-                        <span className="description-biology-small-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[8].description
-                            }
-                        </span>
-                    </div>
-
-                    <div className="sixth-section-card-picture-wrapper">
-                        <img
-                            className="sixth-section-card-picture"
-                            src={paths.cards[1]}
-                            alt="biology-image"
-                        />
-                    </div>
-                </div>
-
-                <div id="tenth-6th-card" className="sixth-section-card">
-                    <div className="sixth-section-card-picture-wrapper">
-                        <img
-                            className="sixth-section-card-picture"
-                            src={paths.cards[0]}
-                            alt="biology-image"
-                        />
-                    </div>
-
-                    <div className="sixth-section-card-info-block">
-                        <h2 className="title-bilogy-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[9].title
-                            }
-                        </h2>
-                        <span className="description-biology-small-text">
-                            {
-                                textContent.prokaryotesToHumansSection
-                                    .content[9].description
-                            }
-                        </span>
-                    </div>
-                </div>
+                {cardData.map((data: TCard) => (
+                    <Card
+                        key={data.id}
+                        className="sixth-section-card"
+                        title={data.title}
+                        description={data.description}
+                        flexDirection="row-reverse"
+                        imagePath={data.image}
+                        imageStyle={imageStyles}
+                    />
+                ))}
             </div>
 
             <DSNotification
@@ -285,9 +67,9 @@ const SixthSection = ({ className }: BiologySectionProps): ReactElement => {
                 iconName={SvgSpriteIds.BIOLOGY_CELL}
                 iconColor="#FFFFFF"
                 backgroundColor="#72A2C2"
-                borderRadius="45px"
-                iconWidth="39px"
-                iconHeight="39px"
+                borderRadius="2.8125rem"
+                iconWidth="2.4375rem"
+                iconHeight="2.4375rem"
                 cardGap="1.25rem"
             />
         </section>

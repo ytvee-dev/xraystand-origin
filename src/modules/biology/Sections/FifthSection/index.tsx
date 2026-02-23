@@ -86,7 +86,7 @@ const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
                             <img
                                 id="first-image"
                                 className="biology-fifth-section-image"
-                                src={paths.images[6]}
+                                src={paths.images.fifthSection[6]}
                                 alt="biology-image"
                             />
                         </div>
@@ -167,7 +167,7 @@ const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
                                 <img
                                     id="eighth-image"
                                     className="biology-fifth-section-image"
-                                    src={paths.images[4]}
+                                    src={paths.images.fifthSection[4]}
                                     alt="biology-image"
                                 />
                                 <div className="biology-fifth-section-image-description">
@@ -178,7 +178,7 @@ const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
                             <div className="biology-fifth-section-image-wrapper">
                                 <img
                                     id="nineth-image"
-                                    src={paths.images[13]}
+                                    src={paths.images.fifthSection[8]}
                                     className="biology-fifth-section-image"
                                     alt="biology-image"
                                 />
@@ -189,7 +189,7 @@ const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
                             <div className="biology-fifth-section-image-wrapper">
                                 <img
                                     id="tenth-image"
-                                    src={paths.images[14]}
+                                    src={paths.images.fifthSection[9]}
                                     className="biology-fifth-section-image"
                                     alt="biology-image"
                                 />
@@ -200,7 +200,7 @@ const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
                             <div className="biology-fifth-section-image-wrapper">
                                 <img
                                     id="eleventh-image"
-                                    src={paths.images[7]}
+                                    src={paths.images.fifthSection[7]}
                                     className="biology-fifth-section-image"
                                     alt="biology-image"
                                 />
@@ -211,7 +211,7 @@ const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
                             <div className="biology-fifth-section-image-wrapper">
                                 <img
                                     id="twelve-image"
-                                    src={paths.images[5]}
+                                    src={paths.images.fifthSection[5]}
                                     className="biology-fifth-section-image"
                                     alt="biology-image"
                                 />
