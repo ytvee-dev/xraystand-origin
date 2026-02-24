@@ -2,8 +2,10 @@ import React from "react";
 import { useLocaleContent } from "@hooks/useLocale";
 import * as textContentRu from "@modules/physics/locales/rus.json";
 import * as textContentKz from "@modules/physics/locales/rus.json";
-import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle"
-import ParentCard from "@modules/physics/components/LevelCards/parentCard"
+import * as paths from "@modules/physics/locales/paths.json";
+import * as mathPaths from "@modules/math/locales/paths.json";
+import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
+import ParentCard from "@modules/physics/components/LevelCards/parentCard";
 import './style.css'
 
 const FifthSection = () => {
@@ -24,11 +26,17 @@ const FifthSection = () => {
 
     return (
         <section className='physics-fifth-section'>
-            <BackgroundedTitle title={content.lawsAndConstantsSection.title}/>
-            <div className="physics-laws-cards-wrapper">
+            <div className="physics-img-background">
+                <img src={mathPaths.svg.heroBg} alt='background'/>
+            </div>
+
+            <div className="physics-fifth-content-wrapper">
+                <BackgroundedTitle title={content.lawsAndConstantsSection.title}/>
+                <div className="physics-fifth-cards-wrapper">
                 {array.map((item, index) => 
                     <ParentCard content={item} key={index}/>
                 )}
+                </div>
             </div>
         </section>
     )

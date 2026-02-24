@@ -1,26 +1,47 @@
 .physics-fifth-section {
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 70px;
-    margin-bottom: 220px;
-    margin-inline: auto;
+    position: relative;
+    min-height: 1800px;
 }
 
-.physics-laws-cards-wrapper {
+.physics-img-background{
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.physics-img-background img {
+    width: 250%;
+    transform: translateX(-28%);
+}
+
+.physics-fifth-content-wrapper {
+    max-width: 1200px;
+    padding: 0 20px;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.physics-fifth-cards-wrapper {
     margin-top: 72px;
     display: flex;
     flex-direction: column;
-    flex-shrink: 1;
+    align-items: center;
     column-gap: 12px;
     row-gap: 36px;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
     max-height: 1650px;
 }
 
-@media (max-width: 1240px) {
-    .physics-fifth-section {
-        /* max-width: 1000px; */
+@media (max-width: 1024px) {
+    .physics-fifth-cards-wrapper {
+        flex-wrap: nowrap;
+        max-height:none;
     }
 }
