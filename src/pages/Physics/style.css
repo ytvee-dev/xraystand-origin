@@ -9,16 +9,15 @@
     color: #FFFFFF;
 }
 
-h1{
-    margin: 3rem;
-    text-align: center;
-}
-
 .physics-language-switcher {
     color: #EE7630;
 }
 
+.physics-background{
+    background: linear-gradient(179.94deg, #212630 0.05%, #225992 55.11%, #212630 100.51%);
+}
+ 
 .first-section {
-    background-color: #222630;
+    margin: 85px 0 170px;
     padding: 0 20px;
 }

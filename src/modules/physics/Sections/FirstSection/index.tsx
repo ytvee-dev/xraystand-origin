@@ -30,7 +30,6 @@ const FirstSection: React.FC<MathSectionProps> = ({ className }: MathSectionProp
                 title: item.title,
                 subtitle: item.subTitle,
                 description: item.description,
-                
             });
         } else {
             const lastCard = cards[cards.length - 1];

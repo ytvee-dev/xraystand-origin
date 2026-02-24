@@ -5,6 +5,7 @@ import React from "react";
 // import {usePageData} from "@hooks/usePageData";
 // import {useLocaleContent} from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
+import CoverSection from "@modules/physics/Sections/CoverSection";
 // import * as contentRu from "@modules/physics/locales/rus.json";
 // import * as contentKz from "@modules/physics/locales/kaz.json";
 // import * as paths from "@modules/physics/locales/paths.json";
@@ -48,7 +49,10 @@ const Physics: React.FC = () => {
             headerBackgroundColor="#222630"
             languageSwitcherClassName="physics-language-switcher"
         >
-            <FirstSection className="first-section"/>
+            <div className="physics-background">
+                <CoverSection/>
+                <FirstSection className="first-section"/>
+            </div>
         </BrightnessLayout>
 
 
