@@ -10,6 +10,7 @@ import BrightnessLayout from "@layout/Brightness";
 // import * as paths from "@modules/physics/locales/paths.json";
 import FirstSection from "@modules/physics/Sections/FirstSection";
 import './style.css';
+import FifthSection from "@modules/physics/Sections/FifthSection";
 
 const pageLayoutSX = {
     backgroundColor: "#2769A5",
@@ -49,6 +50,7 @@ const Physics: React.FC = () => {
             languageSwitcherClassName="physics-language-switcher"
         >
             <FirstSection className="first-section"/>
+            <FifthSection/>
         </BrightnessLayout>
 
 

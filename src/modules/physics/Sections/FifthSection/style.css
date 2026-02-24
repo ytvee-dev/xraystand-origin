@@ -1,0 +1,26 @@
+.physics-fifth-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 70px;
+    margin-bottom: 220px;
+    margin-inline: auto;
+}
+
+.physics-laws-cards-wrapper {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    column-gap: 12px;
+    row-gap: 36px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    max-height: 1650px;
+}
+
+@media (max-width: 1240px) {
+    .physics-fifth-section {
+        /* max-width: 1000px; */
+    }
+}
