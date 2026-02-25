@@ -1,6 +1,6 @@
 .biology-seventh-section {
     width: 100%;
-    height: 1900px;
+    height: 121.875rem;
 
     position: relative;
 
@@ -19,8 +19,8 @@
 
     margin-bottom: 3.5rem;
 
-    width: 646px;
-    height: 226px;
+    width: 39.75rem;
+    height: 14.75rem;
 
     text-align: center;
 
@@ -52,10 +52,14 @@
     padding: 1.5rem;
     gap: 1.5rem;
 
-    width: 571px;
+    width: 35.6875rem;
     height: fit-content;
 
     z-index: 2;
+}
+
+.biology-seventh-section-card-header {
+    margin: 0 0 0.75rem 0.5rem;
 }
 
 .biology-seventh-section-card-content {
@@ -74,10 +78,6 @@
     gap: 0.625rem;
 }
 
-.biology-seventh-section-card-content li {
-    margin-left: 1.5rem;
-}
-
 .biology-seventh-section-card-info-wrapper {
     display: flex;
     flex-direction: column;
@@ -93,23 +93,23 @@
 }
 
 #third-7th-card {
-    bottom: 37%;
+    bottom: 39%;
     left: 14.5rem;
 }
 
 #fourth-7th-card {
     left: 51.5rem;
-    bottom: 59.5%;
+    bottom: 60%;
 }
 
 #fifth-7th-card {
     left: 14.5rem;
-    bottom: 59.5%;
+    bottom: 60.5%;
 }
 
 #sixth-7th-card {
     left: 51.5rem;
-    bottom: 86.5%;
+    bottom: 87%;
 }
 
 .biology-seventh-section-picture {
@@ -118,92 +118,92 @@
 }
 
 #first-7th-image {
-    width: 108px;
+    width: 6.75rem;
 
     left: 18.5%;
     top: 10rem;
 }
 
 #second-7th-image {
-    width: 157px;
+    width: 9.8125rem;
 
     right: 26%;
     top: 13%;
 }
 
 #third-7th-image {
-    width: 154px;
-    height: 154px;
+    width: 9.625rem;
+    height: 9.625rem;
 
     right: 7rem;
     top: 14.5%;
 }
 
 #fourth-7th-image {
-    width: 115px;
-    height: 115px;
+    width: 7.188rem;
+    height: 7.188rem;
 
     right: 7rem;
     top: 25%;
 }
 
 #fifth-7th-image {
-    width: 97px;
-    height: 100px;
+    width: 6.0625rem;
+    height: 6.25rem;
 
     right: 8.5rem;
     bottom: 32%;
 }
 
 #sixth-7th-image {
-    width: 175px;
-    height: 175px;
+    width: 10.9375rem;
+    height: 10.9375rem;
 
     right: 4rem;
     bottom: 17%;
 }
 
 #seventh-7th-image {
-    width: 110px;
-    height: 110px;
+    width: 6.875rem;
+    height: 6.875rem;
 
     right: 15%;
-    bottom: 5rem;
+    bottom: 3rem;
 }
 
 #eighth-7th-image {
-    width: 106px;
-    height: 106px;
+    width: 6.625rem;
+    height: 6.625rem;
 
     right: 1rem;
     bottom: 2rem;
 }
 
 #nineth-7th-image {
-    width: 91px;
-    height: 89px;
+    width: 5.6875rem;
+    height: 5.5625rem;
 
     left: 40%;
     bottom: 3.75rem;
 }
 
 #tenth-7th-image {
-    width: 149px;
-    height: 148px;
+    width: 9.3125rem;
+    height: 9.3125rem;
 
     left: 7rem;
     bottom: 16%;
 }
 
 #eleven-7th-image {
-    width: 116px;
+    width: 7.25rem;
 
     left: 8.25rem;
     top: 41%;
 }
 
 #twelve-7th-image {
-    height: 100px;
+    height: 6.25rem;
 
     left: 4rem;
     top: 32%;

@@ -55,13 +55,13 @@
     justify-content: center;
 
     width: 100%;
-    height: 800px;
+    height: 50rem;
 
     background-color: rgba(115, 164, 196, 1);
 }
 
 .biology-fifth-section-header {
-    width: 800px;
+    width: 50rem;
     position: relative;
     top: 4.5rem;
 
@@ -84,10 +84,10 @@
     display: flex;
     justify-content: center;
 
-    height: 454px;
+    height: 28.38rem;
     width: 100%;
 
-    gap: 26px;
+    gap: 1.625rem;
 }
 
 .biology-fifth-section-card {
@@ -95,122 +95,11 @@
     align-items: start;
 
     background-color: rgba(66, 96, 117, 1);
-    border-radius: 45px;
+    border-radius: 2.8125rem;
 
-    padding: 24px 25px 15px 25px;
+    padding: 1.5rem 1.5625rem 0.9375rem 1.5625rem;
 
     width: fit-content;
-    max-width: 459px;
-    max-height: 423px;
-}
-
-.biology-fifth-section-card-header {
-    text-align: start;
-}
-
-.biology-fifth-section-card-image-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    width: 100%;
-    height: 100%;
-
-    flex: 0.4;
-}
-
-.biology-fifth-section-image {
-    z-index: 1;
-}
-
-.biology-fifth-section-image-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.biology-fifth-section-image-description {
-    position: relative;
-    opacity: 0.8;
-
-    bottom: 0.25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 1rem;
-
-    width: 94px;
-    height: 20px;
-
-    background-color: #678fb1;
-    color: #ffffff;
-    font-size: 6px;
-
-    z-index: 2;
-}
-
-.biology-fifth-section-card-content-container {
-    display: flex;
-    flex-direction: column;
-
-    height: 100%;
-    width: 100%;
-
-    flex: 0.6;
-
-    gap: 4px;
-}
-
-.biology-fifth-section-card-info-content-wrapper {
-    display: flex;
-    flex-direction: column;
-
-    height: 100%;
-    width: 100%;
-
-    gap: 1.5rem;
-}
-
-.biology-fifth-section-card-info-content-wrapper li {
-    margin-left: 1.5rem;
-}
-
-#first-image {
-    width: 140px;
-
-    margin-top: 2.5rem;
-}
-
-/* #second-image {
-} */
-
-#eighth-image {
-    width: 102px;
-    height: 38px;
-}
-
-#nineth-image {
-    width: 99px;
-    height: 49px;
-}
-
-#tenth-image {
-    width: 101px;
-    height: 54px;
-}
-
-#eleventh-image {
-    width: 102px;
-    height: 44px;
-}
-
-#twelve-image {
-    width: 104px;
-    height: 51px;
-}
-
-.biology-fifth-section-image-description.twelve {
-    bottom: 0.9rem;
+    max-width: 28.6875rem;
+    max-height: 26.4375rem;
 }
