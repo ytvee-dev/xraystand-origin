@@ -3,10 +3,13 @@ import ChildCard from './childCard';
 import './parentStyle.css';
 //пропс: 1 card
 interface Cards{
-    title?: string,
-    subTitle?: string,
-    description: string
-}
+    id: string;
+    title: string;
+    subtitle?: string;
+    description: string;
+    img?: string;
+    imgClassIndex?: number;
+};
 
 interface IParentCard{
     content: Array<Cards>
@@ -15,9 +18,9 @@ interface IParentCard{
 const ParentCard = ({ content }: IParentCard):ReactElement => {
     return (
         <div className="parent-wrapper">
-            <h3>{content[0].title}</h3>
+            {/* <h3>{content[].title}</h3> */}
             {content.map((item, index) =>
-                <ChildCard text={item.description} key={index}/>
+                <ChildCard text={item.description} key={index} img={item.img} imgClassIndex={item.imgClassIndex}/>
             )}
         </div>
     )

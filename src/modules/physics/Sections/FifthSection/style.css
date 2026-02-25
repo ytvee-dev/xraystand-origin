@@ -40,8 +40,8 @@
 }
 
 @media (max-width: 1024px) {
-    .physics-fifth-cards-wrapper {
+    /* .physics-fifth-cards-wrapper {
         flex-wrap: nowrap;
         max-height:none;
-    }
+    } */
 }

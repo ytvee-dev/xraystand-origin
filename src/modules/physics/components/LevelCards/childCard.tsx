@@ -4,19 +4,25 @@ import './childStyle.css';
 interface IChildCardProps {
     text: string,
     img?: string,
-    imgAlt?: string, //если передаетсяя img, то imgAlt обязательный
+    imgAlt?: string,
+    imgClassIndex?: number,
 }
 
 const ChildCard = ({
     text,
     img,
-    imgAlt
+    imgAlt = 'formula',
+    imgClassIndex
 }: IChildCardProps): ReactElement => {
     return (
-        <div className="child-wrapper">
+        <div className="child-card-wrapper">
             <p>{text}</p>
 
-            {img && <img src={img} alt={imgAlt}/>}
+            {img && <img 
+                src={img} 
+                alt={imgAlt} 
+                className={`child-card-img-${imgClassIndex}`}
+            />}
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { type ReactElement } from "react";
 import { useLocaleContent } from "@hooks/useLocale";
 import * as textContentRu from "@modules/physics/locales/rus.json";
 import * as textContentKz from "@modules/physics/locales/rus.json";
@@ -8,11 +8,48 @@ import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import ParentCard from "@modules/physics/components/LevelCards/parentCard";
 import './style.css'
 
-const FifthSection = () => {
-    const content = useLocaleContent(textContentRu, textContentKz);
+type TPhysicsCard = {
+    id: string;
+    title: string;
+    subtitle?: string;
+    description: string;
+    img?: string;
+    imgClassIndex?: number;
+};
+
+const FifthSection: React.FC = (): ReactElement => {
+    const textContent = useLocaleContent(textContentRu, textContentKz);
+    const content = textContent.lawsAndConstantsSection.content
+    const cards: TPhysicsCard[] = [];
+
+    const imgPaths = Object.values(paths.formulas);
+
+    content.forEach((item) => {
+        cards.push({
+            id: `card-${cards.length + 1}`,
+            title: item.title,
+            subtitle: item.subTitle,
+            description: item.description,
+        })
+    })
+
+    let imgId = 0;
+
+    for(let i = 0; i < content.length; i++) {
+        if ( i > 0 && i <= 2) {
+            cards[i].img = imgPaths[imgId]
+            cards[i].imgClassIndex = imgId
+            imgId++;
+        }
+        else if( i > 2 && i % 2 == 1 ) {
+            cards[i].img = imgPaths[imgId]
+            cards[i].imgClassIndex = imgId
+            imgId++;
+        }
+    };
 
     const [firstCard, secondCard, thirdCard, fourthCard, fifthCard] = React.useMemo(() => {
-        const items = content.lawsAndConstantsSection.content ?? [];
+        const items = cards ?? [];
         const firstCard = items.slice(0,3);
         const secondCard = items.slice(3,5);
         const thirdCard = items.slice(5,7);
@@ -20,7 +57,7 @@ const FifthSection = () => {
         const fifthCard = items.slice(10);
 
         return [firstCard, secondCard, thirdCard, fourthCard, fifthCard];
-    }, [content.lawsAndConstantsSection.content])
+    }, [content])
 
     const array = [firstCard, secondCard, thirdCard, fourthCard, fifthCard]
 
@@ -31,7 +68,7 @@ const FifthSection = () => {
             </div>
 
             <div className="physics-fifth-content-wrapper">
-                <BackgroundedTitle title={content.lawsAndConstantsSection.title}/>
+                <BackgroundedTitle title={textContent.lawsAndConstantsSection.title}/>
                 <div className="physics-fifth-cards-wrapper">
                 {array.map((item, index) => 
                     <ParentCard content={item} key={index}/>
