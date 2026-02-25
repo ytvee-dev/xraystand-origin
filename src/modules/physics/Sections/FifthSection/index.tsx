@@ -24,6 +24,19 @@ const FifthSection: React.FC = (): ReactElement => {
 
     const imgPaths = Object.values(paths.formulas);
 
+    const descriptions: string[] = cards.map(item => item.description)
+    const res3 = descriptions.splice(12, 2).join(`\n`)
+    descriptions.splice(12, 0, res3);
+    const res2 = descriptions.splice(9, 2).join(`\n`)
+    descriptions.splice(9, 0, res2);
+    const res1 = descriptions.splice(5, 2).join(`\n`)
+    descriptions.splice(5, 0, res1);
+
+    content.map((item, index) => ({
+        ...item,
+        description: descriptions[index]
+    }))
+
     content.forEach((item) => {
         cards.push({
             id: `card-${cards.length + 1}`,
@@ -32,16 +45,6 @@ const FifthSection: React.FC = (): ReactElement => {
             description: item.description,
         })
     })
-
-    const descriptions: string[] = cards.map(item => item.description)
-    const res3 = descriptions.splice(12, 2).join(`\n`)
-    descriptions.splice(12, 0, res3);
-    const res2 = descriptions.splice(9, 2).join(`\n`)
-    descriptions.splice(9, 0, res2);
-    const res1 = descriptions.splice(5, 2).join(`\n`)
-    descriptions.splice(5, 0, res1);
-    console.log(content)
-    console.log(descriptions)
 
     let imgId = 0;
 
