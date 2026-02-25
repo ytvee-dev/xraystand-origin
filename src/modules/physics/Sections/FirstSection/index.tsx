@@ -44,7 +44,7 @@ const FirstSection: React.FC<MathSectionProps> = ({ className }: MathSectionProp
         <section className={`physics-first-section ${className || ""}`}>
             <div className="physics-first-section-background">
                 <img src={svg.heroBg} alt="background" className="bg-img-1" />
-                {/* <img src={svg.heroBg} alt="background" className="bg-img-2" />  */}
+                <img src={svg.heroBg} alt="background" className="bg-img-2" /> 
             </div>
 
             <div className="physics-first-section-content-wrapper">
