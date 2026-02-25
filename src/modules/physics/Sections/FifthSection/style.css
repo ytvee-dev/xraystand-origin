@@ -31,11 +31,11 @@
     margin-top: 72px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     column-gap: 12px;
     row-gap: 36px;
-    flex-wrap: wrap;
-    justify-content: center;
     max-height: 1650px;
 }
 

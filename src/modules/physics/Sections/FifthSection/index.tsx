@@ -20,7 +20,7 @@ type TPhysicsCard = {
 const FifthSection: React.FC = (): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const content = textContent.lawsAndConstantsSection.content
-    let cards: TPhysicsCard[] = [];
+    const cards: TPhysicsCard[] = [];
 
     const imgPaths = Object.values(paths.formulas);
 
@@ -33,10 +33,19 @@ const FifthSection: React.FC = (): ReactElement => {
         })
     })
 
+    const descriptions: string[] = cards.map(item => item.description)
+    const res3 = descriptions.splice(12, 2).join(`\n`)
+    descriptions.splice(12, 0, res3);
+    const res2 = descriptions.splice(9, 2).join(`\n`)
+    descriptions.splice(9, 0, res2);
+    const res1 = descriptions.splice(5, 2).join(`\n`)
+    descriptions.splice(5, 0, res1);
+    console.log(content)
+    console.log(descriptions)
+
     let imgId = 0;
 
     for(let i = 0; i < content.length; i++) {
-                    console.log(i)
         if ( i > 0 && i <= 2) {
             cards[i].img = imgPaths[imgId]
             cards[i].imgClassIndex = imgId
@@ -45,13 +54,7 @@ const FifthSection: React.FC = (): ReactElement => {
         else if( i > 2 && i % 2 == 1 ) {
             cards[i].img = imgPaths[imgId]
             cards[i].imgClassIndex = imgId
-            imgId++;
-        }
-
-        if( i > 4  && i % 3 == 0) {
-            cards[i].description = cards.map(item => item.description).join(`\n`);
-            console.log(cards[i].description);  
-            // cards[i].description += `\n AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA ${cards[i + 1].description}`
+            imgId++; 
         }
     };
 
@@ -76,10 +79,11 @@ const FifthSection: React.FC = (): ReactElement => {
 
             <div className="physics-fifth-content-wrapper">
                 <BackgroundedTitle title={textContent.lawsAndConstantsSection.title}/>
+
                 <div className="physics-fifth-cards-wrapper">
-                {array.map((item, index) => 
-                    <ParentCard content={item} key={index}/>
-                )}
+                    {array.map((item, index) => 
+                        <ParentCard content={item} key={index}/>
+                    )}
                 </div>
             </div>
         </section>

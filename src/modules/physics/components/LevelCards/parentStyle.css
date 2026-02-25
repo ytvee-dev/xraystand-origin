@@ -26,7 +26,7 @@
 
 .parent-wrapper:nth-child(4) {
     background: rgba(33, 69, 109, 1);
-}
+}  
 
 .parent-wrapper:nth-child(5) {
     background: rgba(33, 54, 79, 1);
@@ -40,7 +40,6 @@
 
 @media (max-width: 1024px) {
     .parent-wrapper{
-        width: 100%;
-        max-width: 500px;
+        width: 440px;
     }
 }
