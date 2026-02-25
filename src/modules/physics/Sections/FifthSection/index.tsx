@@ -20,7 +20,7 @@ type TPhysicsCard = {
 const FifthSection: React.FC = (): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const content = textContent.lawsAndConstantsSection.content
-    const cards: TPhysicsCard[] = [];
+    let cards: TPhysicsCard[] = [];
 
     const imgPaths = Object.values(paths.formulas);
 
@@ -36,6 +36,7 @@ const FifthSection: React.FC = (): ReactElement => {
     let imgId = 0;
 
     for(let i = 0; i < content.length; i++) {
+                    console.log(i)
         if ( i > 0 && i <= 2) {
             cards[i].img = imgPaths[imgId]
             cards[i].imgClassIndex = imgId
@@ -46,6 +47,12 @@ const FifthSection: React.FC = (): ReactElement => {
             cards[i].imgClassIndex = imgId
             imgId++;
         }
+
+        if( i > 4  && i % 3 == 0) {
+            cards[i].description = cards.map(item => item.description).join(`\n`);
+            console.log(cards[i].description);  
+            // cards[i].description += `\n AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA ${cards[i + 1].description}`
+        }
     };
 
     const [firstCard, secondCard, thirdCard, fourthCard, fifthCard] = React.useMemo(() => {
@@ -53,8 +60,8 @@ const FifthSection: React.FC = (): ReactElement => {
         const firstCard = items.slice(0,3);
         const secondCard = items.slice(3,5);
         const thirdCard = items.slice(5,7);
-        const fourthCard = items.slice(7,10);
-        const fifthCard = items.slice(10);
+        const fourthCard = items.slice(8,11);
+        const fifthCard = items.slice(11);
 
         return [firstCard, secondCard, thirdCard, fourthCard, fifthCard];
     }, [content])
