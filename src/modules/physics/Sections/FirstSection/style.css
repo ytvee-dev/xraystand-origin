@@ -1,13 +1,83 @@
+@keyframes lighting {
+    0% { 
+        opacity: 0.1; 
+        -webkit-transform: scale(2.1);
+        -moz-transform: scale(2.1);
+        -ms-transform: scale(2.1);
+        -o-transform: scale(2.1);
+        transform: scale(2.1); 
+    }
+    25% { 
+        opacity: 0.5; 
+        -webkit-transform: scale(2.2);
+        -moz-transform: scale(2.2);
+        -ms-transform: scale(2.2);
+        -o-transform: scale(2.2);
+        transform: scale(2.2); 
+    }
+    50% { 
+        opacity: 0.7; 
+        -webkit-transform: scale(2.3);
+        -moz-transform: scale(2.3);
+        -ms-transform: scale(2.3);
+        -o-transform: scale(2.3);
+        transform: scale(2.3); 
+    }
+    75% { 
+        opacity: 0.5; 
+        -webkit-transform: scale(2.2);
+        -moz-transform: scale(2.2);
+        -ms-transform: scale(2.2);
+        -o-transform: scale(2.2);
+        transform: scale(2.2); 
+    }
+    100% { 
+        opacity: 0.1; 
+        -webkit-transform: scale(2.1);
+        -moz-transform: scale(2.1);
+        -ms-transform: scale(2.1);
+        -o-transform: scale(2.1);
+        transform: scale(2.1); 
+    }
+} 
+
 .physics-first-section {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 50px 40px;
+    padding: 50px 40px 0px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.physics-first-section-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: 0;
+}
+
+.physics-first-section-background img {
+    position: absolute;
+    bottom: -2%;
+    width: 100%; 
+    height: auto;
+    -webkit-transform: scale(2.7);
+    -moz-transform: scale(2.7);
+    -ms-transform: scale(2.7);
+    -o-transform: scale(2.7);
+    transform: scale(2.7);
+    -webkit-animation: lighting 12s linear infinite;
+    -moz-animation: lighting 12s linear infinite;
+    -ms-animation: lighting 12s linear infinite;
+    -o-animation: lighting 12s linear infinite;
+    animation: lighting 12s linear infinite;
 }
 
 .physics-first-section-content-wrapper {
     width: 100%;
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
 }
@@ -66,4 +136,8 @@
         text-align: left !important;
     }
 
+     .bg-img-1 {
+        bottom: auto;
+        left: 10%;
+    }
 }
