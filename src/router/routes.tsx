@@ -12,6 +12,7 @@ const Chemistry = lazy(() => import("@pages/Chemistry"));
 const RusLit = lazy(() => import("@pages/RusLit"));
 const Nutrition = lazy(() => import("@pages/Nutrition"));
 const Mathematics = lazy(() => import("@pages/Mathematics"));
+const Biology = lazy(() => import("@pages/Biology"));
 const Pages = lazy(() => import("@pages/Pages"));
 const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
 const FireSafety = lazy(() => import("@pages/FireSafety"));
@@ -141,7 +142,7 @@ const routes: RouteObject[] = [
     },
     {
         ...paths.BIOLOGY,
-        element: <NotFoundPage/>
+        element: <Biology/>
     },
     {
         ...paths.PAGES,

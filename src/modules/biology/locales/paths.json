@@ -57,17 +57,19 @@
       "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643588/colored-cell-2_zp2knq.webp",
       "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643586/colored-cell-1_f8fedt.webp"
     ],
+    "coverSection": [
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643591/colored-cubics-2_ktcoyf.webp",
+      "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643590/colored-cubics-1_bms2ks.webp"
+    ],
+    "evoSection": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1772128789/evo-section_imioxa.webp",
     "0": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643607/peahen_lxv6wi.webp",   
     "1": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643607/peacock-stage-3_sir5tf.webp",
     "2": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643603/peacock-stage-2_hznk6k.webp",
     "3": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643600/peacock-stage-1_gx2ory.webp",
     "4": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643596/human-arm_sueill.webp",
     "5": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643595/horse-arm_ntu4z8.webp",
-    "6": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1772128789/evo-section_imioxa.webp",
-    "7": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643592/dolphin-arm_y30j0c.webp",
-    "8": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643591/colored-cubics-2_ktcoyf.webp",
-    "9": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643590/colored-cubics-1_bms2ks.webp",
-    "13": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643586/cat-arm_lclhy7.webp",
-    "14": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643585/bat-arm_udywwz.webp"
+    "6": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643592/dolphin-arm_y30j0c.webp",
+    "7": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643586/cat-arm_lclhy7.webp",
+    "8": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643585/bat-arm_udywwz.webp"
   }
 }

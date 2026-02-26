@@ -5,14 +5,13 @@ import ThirdSection from "@modules/biology/Sections/ThirdSection";
 import FifthSection from "@modules/biology/Sections/FifthSection";
 import CoverSection from "@modules/biology/Sections/CoverSection";
 import SecondSection from "@modules/biology/Sections/SecondSection";
+import FourthSection from "@modules/biology/Sections/FourthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { type TRootState } from "@store/index";
 import { useSelector } from "react-redux";
 import { type ReactElement } from "react";
 import { paths } from "@router/routes";
-import "./style.css";
-import FourthSection from "@modules/biology/Sections/FourthSection";
 
 const pageLayoutSX = {
     backgroundColor: "#2769A5",

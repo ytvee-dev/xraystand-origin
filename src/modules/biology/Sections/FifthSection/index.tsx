@@ -65,7 +65,7 @@ const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySection
             </div>
 
             <div className="right-content-section">
-                <img className="image" src={paths.images[6]} alt="image" />
+                <img className="image" src={paths.images.evoSection} alt="image" />
             </div>
         </section>
     )
