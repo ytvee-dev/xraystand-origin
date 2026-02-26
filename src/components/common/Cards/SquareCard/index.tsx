@@ -48,14 +48,14 @@ const SquareCard = ({
             if (block.includes("•")) {
                 const parts = block.split("•").map((part) => part.trim());
 
-                const beforeList = parts[0] !== "" ? parts[0] : null;
+                const listTitle = parts[0] !== "" ? parts[0] : null;
 
                 const listItems = parts.slice(1).filter((item) => item !== "");
 
                 return (
                     <Fragment key={blockIndex}>
-                        {beforeList && (
-                            <p className={labelClassName}>{beforeList}</p>
+                        {listTitle && (
+                            <p className={labelClassName}>{listTitle}</p>
                         )}
 
                         {listItems.length > 0 && (

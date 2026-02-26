@@ -76,6 +76,8 @@ const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
                         paragraphSeparator="/"
                         titleClassName="title-bilogy-text"
                         labelClassName="description-biology-small-text"
+                        imagePath={paths.images.fifthSection[2]}
+                        imageStyle={{ width: "6.5rem" }}
                         labelWrapperStyle={{ gap: "0.5rem" }}
                     />
                 </div>
