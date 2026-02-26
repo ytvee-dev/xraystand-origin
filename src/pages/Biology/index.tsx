@@ -5,6 +5,7 @@ import ThirdSection from "@modules/biology/Sections/ThirdSection";
 import FifthSection from "@modules/biology/Sections/FifthSection";
 import CoverSection from "@modules/biology/Sections/CoverSection";
 import SecondSection from "@modules/biology/Sections/SecondSection";
+import FourthSection from "@modules/biology/Sections/FourthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { type TRootState } from "@store/index";
@@ -50,7 +51,7 @@ const Biology: React.FC = (): ReactElement => {
                     <FirstSection className='biology-section biology-first-section'/>
                     <SecondSection className='biology-section biology-second-section' />
                     <ThirdSection className='biology-section biology-third-section' />
-
+                    <FourthSection className='biology-section biology-fourth-section'/>
                     <FifthSection className='biology-section biology-fifth-section' />
                 </div>
             </BrightnessLayout>

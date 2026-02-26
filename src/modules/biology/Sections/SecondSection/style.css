@@ -1,12 +1,12 @@
 .biology-second-section {
     background-color: #50C0AC;
     position: relative;
-    padding: 27px 47px;
-    padding-bottom: 102px;
-    height: 953px;
+    padding: 1.6875rem 2.9375rem;
+    padding-bottom: 6.375rem;
+    height: 59.5625rem;
     display: flex;
     flex-direction: column;
-    gap: 51px;
+    gap: 3.1875rem;
     color: #FFFFFF;
     align-items: center;
 }
@@ -17,15 +17,15 @@
 }
 
 #biology-second-section-background-svg-1 {
-    height: 134px;
-    top: 18px;
-    left: 234px;
+    height: 8.375rem;
+    top: 1.125rem;
+    left: 14.625rem;
 }
 
 #biology-second-section-background-svg-2 {
-    height: 219px;
-    bottom: 12px;
-    left: 218px;
+    height: 13.6875rem;
+    bottom: 0.75rem;
+    left: 13.625rem;
 }
 
 .cell-structure-title-block,
@@ -37,22 +37,22 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 27px;
-    width: 564px;
+    gap: 1.6875rem;
+    width: 35.25rem;
 }
 
 .cell-structure-header-block .title {
-    font-size: 45px;
+    font-size: 2.8125rem;
 }
 
 .cell-structure-header-block .description {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .biology-second-section-cards-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 1.5625rem;
     margin: 0 auto;
     width: 100%;
 }
@@ -63,12 +63,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
-    height: 320px;
+    padding: 1.5rem;
+    height: 20rem;
     background-color: #489484;
-    border-radius: 40px;
-    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3), 
-                inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 2.5rem;
+    box-shadow: inset 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.3), 
+                inset 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
@@ -79,8 +79,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 40px;
-    border: 1px solid transparent;
+    border-radius: 2.5rem;
+    border: 0.0625rem solid transparent;
     background: linear-gradient(210deg, silver, transparent) border-box;
     -webkit-mask: 
         linear-gradient(#fff 0 0) padding-box, 
@@ -92,22 +92,23 @@
 }
 
 .biology-second-section-card .card-image {
-    height: 112px;
+    height: 7rem;
 }
 
 .biology-second-section-card .card-text-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 108px;
+    gap: 0.25rem;
+    min-height: 6.75rem;
     width: 100%;
     text-align: left;
 }
 
 .biology-second-section-card .card-text-section .card-title {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .biology-second-section-card .card-text-section .card-description {
-    font-size: 14px;
+    font-size: 0.875rem;
 }

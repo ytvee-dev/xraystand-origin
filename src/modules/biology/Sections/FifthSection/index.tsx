@@ -7,6 +7,7 @@ import { useLocaleContent } from "@hooks/useLocale";
 import { type ReactElement } from "react";
 import "./style.css";
 import DSNotification from "@components/common/DSNotification";
+import { SvgSpriteIds } from "@utils/constants";
 
 const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
@@ -48,11 +49,23 @@ const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySection
                     </div>
                 </div>
 
-                <DSNotification content={textContent.evolutionSection.notificationLabel}/>
+                <DSNotification 
+                    className="biology-fifth-section-notification"
+                    content={textContent.evolutionSection.notificationLabel}
+                    iconName={SvgSpriteIds.BIOLOGY_CELL} 
+                    backgroundColor="#7A61A0"
+                    textColor="#FFFFFF"
+                    iconColor="#FFFFFF"
+                    borderRadius="2.5rem"
+                    padding = "0 0"
+                    iconWidth="2.4375rem"
+                    iconHeight="2.4375rem"
+                    cardGap="24px"
+                />
             </div>
 
             <div className="right-content-section">
-                <img className="image" src={paths.images[6]} alt="image" />
+                <img className="image" src={paths.images.evoSection} alt="image" />
             </div>
         </section>
     )

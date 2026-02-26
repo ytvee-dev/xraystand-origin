@@ -7,6 +7,7 @@ import { useLocaleContent } from "@hooks/useLocale";
 import { type ReactElement } from "react";
 import "./style.css";
 import DSNotification from "@components/common/DSNotification";
+import { SvgSpriteIds } from "@utils/constants";
 
 const ThirdSection: React.FC<BiologySectionProps> = ({className}: BiologySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
@@ -47,7 +48,31 @@ const ThirdSection: React.FC<BiologySectionProps> = ({className}: BiologySection
                 ))}
             </div>
 
-            <DSNotification content={textContent.cellDivisionSection.content[1][0].description}/>
+            <DSNotification 
+                content={
+                    <div className="biology-third-section-notification-content">
+                        <div>{textContent.cellDivisionSection.content[1][0].description}</div>
+                        <div>{textContent.cellDivisionSection.content[1][1].description}</div>
+                        <ul className="biology-third-section-notification-content-list">
+                            <li>{textContent.cellDivisionSection.content[1][2].description}</li>
+                            <li>{textContent.cellDivisionSection.content[1][3].description}</li>
+                            <li>{textContent.cellDivisionSection.content[1][4].description}</li>
+                            <li>{textContent.cellDivisionSection.content[1][5].description}</li>
+                        </ul>
+                        <div>{textContent.cellDivisionSection.content[1][6].description}</div>
+                    </div>
+                }
+                className="biology-third-section-notification"
+                iconName={SvgSpriteIds.BIOLOGY_CELL}
+                backgroundColor="#30695A"
+                textColor="#FFFFFF"
+                iconColor="#FFFFFF"
+                borderRadius="2.5rem"
+                padding = "0px 0px"
+                iconWidth="2.4375rem"
+                iconHeight="2.4375rem"
+                cardGap="24px"
+            />
         </section>
     )
 }

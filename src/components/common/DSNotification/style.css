@@ -1,5 +1,5 @@
 .ds-notification,
-.ds-notification div {
+.ds-notification > div {
     display: flex;
     justify-content: center;
     align-items: center;

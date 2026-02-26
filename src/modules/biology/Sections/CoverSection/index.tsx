@@ -68,14 +68,14 @@ const CoverSection: React.FC<BiologySectionProps> = ({
 
                             <img
                                 className="bio-hero-content-text-svg"
-                                src={paths.images[8]}
+                                src={paths.images.coverSection[0]}
                                 alt=""
                             />
                         </div>
                         <div className="lower-block">
                             <img
                                 className="bio-hero-content-text-svg"
-                                src={paths.images[9]}
+                                src={paths.images.coverSection[1]}
                                 alt=""
                             />
 
