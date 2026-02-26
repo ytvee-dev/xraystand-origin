@@ -1,0 +1,304 @@
+.biology-fourth-section {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #7A61A0;
+    color: #FFFFFF;
+    padding: 44px 0px;
+
+    * {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .biology-fourth-section-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+            -webkit-animation: fading 9s linear infinite;
+            -moz-animation: fading 9s linear infinite;
+            -ms-animation: fading 9s linear infinite;
+            -o-animation: fading 9s linear infinite;
+            animation: fading 9s linear infinite;
+        }
+    }
+
+    h2 {
+        font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+        font-size: 45px;
+        font-weight: 500;
+        color: #FFFFFF;
+        padding-bottom: 64px;
+    }
+
+    .biology-fourth-section-card-text {
+        margin-top: 90px;
+        max-width: 395px;
+        width: 493px;
+        height: fit-content;
+        z-index: 100;
+        background: rgba(39, 105, 165, 0.1);
+        -webkit-backdrop-filter: blur(10px);
+        -moz-backdrop-filter: blur(10px);
+        -ms-backdrop-filter: blur(10px);
+        -o-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        padding: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px rgba(39, 105, 165, 0.15),
+                    0 4px 16px rgba(39, 105, 165, 0.1);
+        -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        -ms-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        -webkit-animation: slideInRight 1s cubic-bezier(0.4, 0, 0.2, 1);
+        -moz-animation: slideInRight 1s cubic-bezier(0.4, 0, 0.2, 1);
+        -ms-animation: slideInRight 1s cubic-bezier(0.4, 0, 0.2, 1);
+        -o-animation: slideInRight 1s cubic-bezier(0.4, 0, 0.2, 1);
+        animation: slideInRight 1s cubic-bezier(0.4, 0, 0.2, 1);
+
+        h3, h5, p {
+            font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: #FFFFFF;
+            letter-spacing: 0.5px !important;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        h3 {
+            font-size: 32px;
+            padding-bottom: 10px;
+            font-weight: 400;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            -webkit-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+            -moz-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+            -ms-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+            -o-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+            animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+        }
+
+        h5 {
+            font-size: 18px;
+            padding-bottom: 10px;
+            font-weight: 400;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            -webkit-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+            -moz-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+            -ms-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+            -o-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+            animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            opacity: 0.9;
+            -webkit-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
+            -moz-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
+            -ms-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
+            -o-animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
+            animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.6s both;
+        }
+    }
+
+    .biology-fourth-section-card-text:hover {
+        -webkit-transform: translateY(-8px) scale(1.02);
+        -moz-transform: translateY(-8px) scale(1.02);
+        -ms-transform: translateY(-8px) scale(1.02);
+        -o-transform: translateY(-8px) scale(1.02);
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 20px 40px rgba(39, 105, 165, 0.25),
+                    0 8px 24px rgba(39, 105, 165, 0.15);
+        background: rgba(39, 105, 165, 0.15);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .biology-fourth-section-main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0rem 12.9375rem;
+        width: 100%;
+    }
+
+    @keyframes slideInRight {
+        from {
+            opacity: 0;
+            -webkit-transform: translateX(50px);
+            -moz-transform: translateX(50px);
+            -ms-transform: translateX(50px);
+            -o-transform: translateX(50px);
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(30px);
+            -moz-transform: translateY(30px);
+            -ms-transform: translateY(30px);
+            -o-transform: translateY(30px);
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+}
+
+.biology-fourth-section-header-block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6875rem;
+    width: 35.25rem;
+}
+
+.biology-fourth-section-header-block .title {
+    font-size: 2.8125rem;
+}
+
+.biology-fourth-section-header-block .description {
+    font-size: 1rem;
+}
+
+.biology-fourth-section-custom-animated-image-card {
+    box-sizing: border-box;
+    background-color: #AD92C3;
+    border-radius: 2.5rem;
+    box-shadow: inset 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.3), 
+                inset 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.biology-fourth-section-custom-animated-image-card img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.biology-fourth-section-custom-animated-image-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 2.5rem;
+    border: 0.0625rem solid transparent;
+    background: linear-gradient(210deg, silver, transparent) border-box;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    background-origin: border-box;
+    pointer-events: none;
+}
+
+.biology-fourth-section-content-wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.motion-slider {
+    max-width: 400px;
+}
+
+@media (max-width: 800px) {
+    .motion-slider {
+        max-width: 200px;
+    }
+
+    h2 {
+        font-size: 36px !important;
+        text-align: center;
+        letter-spacing: -1px;
+    }
+
+    .biology-fourth-section-card-text {
+        margin-top: 75px;
+        height: 200px !important;
+        max-width: 300px !important;
+
+        h3 {
+            font-size: 16px !important;
+            padding-bottom: 10px;
+        }
+
+        h5 {
+            font-size: 16px !important;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px !important;
+            height: 140px;
+        }
+    }
+}
+
+@keyframes fading {
+    0% { opacity: 0.1; }
+    25% { opacity: 0.5; }
+    50% { opacity: 0.7; }
+    75% { opacity: 0.5; }
+    100%   { opacity: 0.1; }
+}

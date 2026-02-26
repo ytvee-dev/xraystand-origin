@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, type CSSProperties} from "react";
 import {
     motion,
     useMotionValue,
@@ -12,6 +12,8 @@ type TCard = { id: string; title: string; subtitle: string; description: string;
 export interface ISliderProps {
     index: number;
     frontCard: boolean;
+    cardClassName?: string;
+    wrapperStyle?: CSSProperties;
     setIndex?: (n: number) => void;
     card: TCard;
     drag?: "x" | "y" | true;
@@ -20,6 +22,8 @@ export interface ISliderProps {
 const Slider: React.FC<ISliderProps> = ({
     index,
     frontCard,
+    cardClassName = "",
+    wrapperStyle = {},
     setIndex = (n: number) => {console.info(n)},
     card,
     drag,
@@ -84,12 +88,14 @@ const Slider: React.FC<ISliderProps> = ({
                     ? {type: "spring", stiffness: 300, damping: 20}
                     : {scale: {duration: 0.2}, opacity: {duration: 0.4}}
             }
+            className={cardClassName}
         >
             <div
                 className='slider-card-wrapper'
                 style={{
                         width: screenWidth >= 768 ? 395 : 200,
                         height: screenWidth >= 768 ? 395 : 200,
+                        ...wrapperStyle
                 }}
             >
                 <img

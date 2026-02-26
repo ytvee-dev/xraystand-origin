@@ -1,0 +1,114 @@
+.biology-second-section {
+    background-color: #50C0AC;
+    position: relative;
+    padding: 1.6875rem 2.9375rem;
+    padding-bottom: 6.375rem;
+    height: 59.5625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.1875rem;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+#biology-second-section-background-svg-1,
+#biology-second-section-background-svg-2 {
+    position: absolute;
+}
+
+#biology-second-section-background-svg-1 {
+    height: 8.375rem;
+    top: 1.125rem;
+    left: 14.625rem;
+}
+
+#biology-second-section-background-svg-2 {
+    height: 13.6875rem;
+    bottom: 0.75rem;
+    left: 13.625rem;
+}
+
+.cell-structure-title-block,
+.biology-second-section-cards-grid {
+    z-index: 1;
+}
+
+.cell-structure-header-block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6875rem;
+    width: 35.25rem;
+}
+
+.cell-structure-header-block .title {
+    font-size: 2.8125rem;
+}
+
+.cell-structure-header-block .description {
+    font-size: 1rem;
+}
+
+.biology-second-section-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5625rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.biology-second-section-cards-grid .biology-second-section-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    height: 20rem;
+    background-color: #489484;
+    border-radius: 2.5rem;
+    box-shadow: inset 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.3), 
+                inset 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.biology-second-section-cards-grid .biology-second-section-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 2.5rem;
+    border: 0.0625rem solid transparent;
+    background: linear-gradient(210deg, silver, transparent) border-box;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    background-origin: border-box;
+    pointer-events: none;
+}
+
+.biology-second-section-card .card-image {
+    height: 7rem;
+}
+
+.biology-second-section-card .card-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+    min-height: 6.75rem;
+    width: 100%;
+    text-align: left;
+}
+
+.biology-second-section-card .card-text-section .card-title {
+    font-size: 1.5rem;
+}
+
+.biology-second-section-card .card-text-section .card-description {
+    font-size: 0.875rem;
+}
