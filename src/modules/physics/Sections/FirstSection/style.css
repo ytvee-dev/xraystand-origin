@@ -1,0 +1,69 @@
+.physics-first-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 40px;
+}
+
+.physics-first-section-content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.physics-first-section-grid {
+    display: flex;
+    justify-content: center;
+    gap: 107px;
+    margin: 72px 0;
+    width: 100%;
+}
+
+.left-content-cards,
+.right-content-cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    max-width: 440px;
+}
+
+.physics-types-card {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    background: none;
+    box-shadow: none;
+    white-space: pre-line;
+    height: 240px;
+}
+
+.physics-types-card img {
+    width: 115px;
+    height: auto;
+}
+
+@media (max-width: 1020px) {
+    .physics-first-section {
+        padding: 7px;
+    }
+
+    .physics-first-section-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+}
+
+@media (max-width: 800px) {
+    .physics-types-card {
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .physics-types-card * {
+        text-align: left !important;
+    }
+
+}
