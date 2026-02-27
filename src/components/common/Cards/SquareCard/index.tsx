@@ -36,13 +36,17 @@ const SquareCard = ({
     const renderLabel = (): React.ReactNode => {
         if (!label) return null;
 
-        const blocks =
-            paragraphSeparator && label.includes(paragraphSeparator)
-                ? label
-                      .split(paragraphSeparator)
-                      .map((part) => part.trim())
-                      .filter((part) => part !== "")
-                : [label.trim()];
+        let blocks: string[];
+
+        if (paragraphSeparator && label.includes(paragraphSeparator)) {
+            const rawParts = label.split(paragraphSeparator);
+
+            const trimmedParts = rawParts.map((part) => part.trim());
+
+            blocks = trimmedParts.filter((part) => part !== "");
+        } else {
+            blocks = [label.trim()];
+        }
 
         return blocks.map((block, blockIndex) => {
             if (block.includes("•")) {

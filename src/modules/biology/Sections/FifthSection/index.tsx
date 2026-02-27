@@ -31,6 +31,33 @@ const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
         `${textContent.naturalSelectionSection.content[13].description} /` +
         textContent.naturalSelectionSection.content[14].description;
 
+    const cardsContent = [
+        {
+            id: 1,
+            title: textContent.naturalSelectionSection.content[0].title,
+            label: firstCardText,
+            imagePath: paths.images.fifthSection[1],
+            imageStyle: { width: "8.75rem", marginTop: "2rem" },
+            labelWrapperStyle: { gap: "0.8rem" },
+        },
+        {
+            id: 2,
+            title: textContent.naturalSelectionSection.content[3].title,
+            label: secondCardText,
+            imagePath: paths.images.fifthSection[0],
+            imageStyle: { width: "8rem", marginTop: "2rem" },
+            labelWrapperStyle: { gap: "0.5rem" },
+        },
+        {
+            id: 3,
+            title: textContent.naturalSelectionSection.content[9].title,
+            label: thirdCardText,
+            imagePath: paths.images.fifthSection[2],
+            imageStyle: { width: "6.5rem" },
+            labelWrapperStyle: { gap: "0.5rem" },
+        },
+    ];
+
     return (
         <section className={className}>
             <h1 className="biology-fifth-section-header header-biology-section-text">
@@ -39,47 +66,20 @@ const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
 
             <div className="biology-fifth-section-content">
                 <div className="biology-fifth-section-cards-container">
-                    <SquareCard
-                        className="biology-fifth-section-card"
-                        title={
-                            textContent.naturalSelectionSection.content[0].title
-                        }
-                        label={firstCardText}
-                        paragraphSeparator="/"
-                        titleClassName="title-bilogy-text"
-                        labelClassName="description-biology-small-text"
-                        imagePath={paths.images.fifthSection[1]}
-                        imageStyle={{ width: "8.75rem", marginTop: "2rem" }}
-                        labelWrapperStyle={{ gap: "0.8rem" }}
-                    />
-
-                    <SquareCard
-                        className="biology-fifth-section-card"
-                        title={
-                            textContent.naturalSelectionSection.content[3].title
-                        }
-                        label={secondCardText}
-                        paragraphSeparator="/"
-                        titleClassName="title-bilogy-text"
-                        labelClassName="description-biology-small-text"
-                        imagePath={paths.images.fifthSection[0]}
-                        imageStyle={{ width: "8rem", marginTop: "2rem" }}
-                        labelWrapperStyle={{ gap: "0.5rem" }}
-                    />
-
-                    <SquareCard
-                        className="biology-fifth-section-card"
-                        title={
-                            textContent.naturalSelectionSection.content[9].title
-                        }
-                        label={thirdCardText}
-                        paragraphSeparator="/"
-                        titleClassName="title-bilogy-text"
-                        labelClassName="description-biology-small-text"
-                        imagePath={paths.images.fifthSection[2]}
-                        imageStyle={{ width: "6.5rem" }}
-                        labelWrapperStyle={{ gap: "0.5rem" }}
-                    />
+                    {cardsContent.map((cardData) => (
+                        <SquareCard
+                            key={cardData.id}
+                            className="biology-fifth-section-card"
+                            title={cardData.title}
+                            label={cardData.label}
+                            titleClassName="title-bilogy-text"
+                            labelClassName="description-biology-small-text"
+                            paragraphSeparator="/"
+                            imagePath={cardData.imagePath}
+                            imageStyle={cardData.imageStyle}
+                            labelWrapperStyle={cardData.labelWrapperStyle}
+                        />
+                    ))}
                 </div>
             </div>
         </section>

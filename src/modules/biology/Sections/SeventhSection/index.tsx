@@ -87,6 +87,49 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
         `${textContent.virusesSection.content[69].description} /` +
         textContent.virusesSection.content[70].description;
 
+    const cardsData = [
+        {
+            id: "first-7th-card",
+            title: textContent.virusesSection.content[0].title,
+            label: firstCardLabel,
+        },
+        {
+            id: "second-7th-card",
+            title: textContent.virusesSection.content[9].title,
+            label: secondCardLabel,
+        },
+        {
+            id: "third-7th-card",
+            title: textContent.virusesSection.content[24].title,
+            label: thirdCardLabel,
+        },
+        {
+            id: "fourth-7th-card",
+            title: textContent.virusesSection.content[37].title,
+            label: fourthCardLabel,
+        },
+        {
+            id: "fifth-7th-card",
+            title: textContent.virusesSection.content[46].title,
+            label: fifthCardLabel,
+        },
+        {
+            id: "sixth-7th-card",
+            title: textContent.virusesSection.content[60].title,
+            label: sixthCardLabel,
+        },
+    ];
+
+    const imagesData = paths.backgrounds.seventhSection.map(
+        (imagePath, imageIndex) => {
+            return {
+                id: "seventh-section-image-" + `${imageIndex + 1}`,
+                src: imagePath,
+                alt: "biology-image",
+            };
+        },
+    );
+
     const labelWrapperStyle: CSSProperties = {
         border: "0.0625rem solid #ffffff",
         borderRadius: "2.8125rem",
@@ -108,146 +151,31 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
             </div>
 
             <div className="biology-seventh-section-background-images-container">
-                <img
-                    id="first-7th-image"
-                    src={paths.backgrounds.seventhSection[11]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
-                <img
-                    id="second-7th-image"
-                    src={paths.backgrounds.seventhSection[10]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
-                <img
-                    id="third-7th-image"
-                    src={paths.backgrounds.seventhSection[9]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
-                <img
-                    id="fourth-7th-image"
-                    src={paths.backgrounds.seventhSection[8]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
-                <img
-                    id="fifth-7th-image"
-                    src={paths.backgrounds.seventhSection[7]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
-                <img
-                    id="sixth-7th-image"
-                    src={paths.backgrounds.seventhSection[6]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
-                <img
-                    id="seventh-7th-image"
-                    src={paths.backgrounds.seventhSection[5]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
-                <img
-                    id="eighth-7th-image"
-                    src={paths.backgrounds.seventhSection[4]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
-                <img
-                    id="nineth-7th-image"
-                    src={paths.backgrounds.seventhSection[3]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
-                <img
-                    id="tenth-7th-image"
-                    src={paths.backgrounds.seventhSection[2]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
-                <img
-                    id="eleven-7th-image"
-                    src={paths.backgrounds.seventhSection[1]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
-                <img
-                    id="twelve-7th-image"
-                    src={paths.backgrounds.seventhSection[0]}
-                    className="biology-seventh-section-picture"
-                    alt="biology-image"
-                />
+                {imagesData.map((imageData) => (
+                    <img
+                        key={imageData.id}
+                        id={imageData.id}
+                        className="biology-seventh-section-picture"
+                        src={imageData.src}
+                        alt={imageData.alt}
+                    />
+                ))}
             </div>
 
             <div className="biology-seventh-section-cards-container">
-                <SquareCard
-                    id="first-7th-card"
-                    className="biology-seventh-section-card"
-                    title={textContent.virusesSection.content[0].title}
-                    titleClassName="biology-seventh-section-card-header title-biology-medium-text"
-                    label={firstCardLabel}
-                    labelClassName="biology-seventh-section-card-label description-biology-medium-text"
-                    paragraphSeparator="/"
-                    labelWrapperStyle={labelWrapperStyle}
-                />
-
-                <SquareCard
-                    id="second-7th-card"
-                    className="biology-seventh-section-card"
-                    title={textContent.virusesSection.content[9].title}
-                    titleClassName="biology-seventh-section-card-header title-biology-medium-text"
-                    label={secondCardLabel}
-                    labelClassName="description-biology-medium-text"
-                    paragraphSeparator="/"
-                    labelWrapperStyle={labelWrapperStyle}
-                />
-
-                <SquareCard
-                    id="third-7th-card"
-                    className="biology-seventh-section-card"
-                    title={textContent.virusesSection.content[24].title}
-                    titleClassName="biology-seventh-section-card-header title-biology-medium-text"
-                    label={thirdCardLabel}
-                    labelClassName="description-biology-medium-text"
-                    paragraphSeparator="/"
-                    labelWrapperStyle={labelWrapperStyle}
-                />
-
-                <SquareCard
-                    id="fourth-7th-card"
-                    className="biology-seventh-section-card"
-                    title={textContent.virusesSection.content[37].title}
-                    titleClassName="biology-seventh-section-card-header title-biology-medium-text"
-                    label={fourthCardLabel}
-                    labelClassName="description-biology-medium-text"
-                    paragraphSeparator="/"
-                    labelWrapperStyle={labelWrapperStyle}
-                />
-
-                <SquareCard
-                    id="fifth-7th-card"
-                    className="biology-seventh-section-card"
-                    title={textContent.virusesSection.content[46].title}
-                    titleClassName="biology-seventh-section-card-header title-biology-medium-text"
-                    label={fifthCardLabel}
-                    labelClassName="description-biology-medium-text"
-                    paragraphSeparator="/"
-                    labelWrapperStyle={labelWrapperStyle}
-                />
-
-                <SquareCard
-                    id="sixth-7th-card"
-                    className="biology-seventh-section-card"
-                    title={textContent.virusesSection.content[60].title}
-                    titleClassName="biology-seventh-section-card-header title-biology-medium-text"
-                    label={sixthCardLabel}
-                    labelClassName="description-biology-medium-text"
-                    paragraphSeparator="/"
-                    labelWrapperStyle={labelWrapperStyle}
-                />
+                {cardsData.map((cardData) => (
+                    <SquareCard
+                        key={cardData.id}
+                        id={cardData.id}
+                        className="biology-seventh-section-card"
+                        title={cardData.title}
+                        label={cardData.label}
+                        titleClassName="biology-seventh-section-card-header title-biology-medium-text"
+                        labelClassName="description-biology-medium-text"
+                        paragraphSeparator="/"
+                        labelWrapperStyle={labelWrapperStyle}
+                    />
+                ))}
             </div>
         </section>
     );
