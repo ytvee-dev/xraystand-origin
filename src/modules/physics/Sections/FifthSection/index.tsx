@@ -1,78 +1,28 @@
-import React, { type ReactElement } from "react";
-import { useLocaleContent } from "@hooks/useLocale";
+import React, {type ReactElement} from "react";
+import {useLocaleContent} from "@hooks/useLocale";
 import * as textContentRu from "@modules/physics/locales/rus.json";
 import * as textContentKz from "@modules/physics/locales/rus.json";
-import * as paths from "@modules/physics/locales/paths.json";
 import * as mathPaths from "@modules/math/locales/paths.json";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
-import ParentCard from "@modules/physics/components/LevelCards/parentCard";
+import ParentCard, {type ParentCardProps, type SubCard} from "@modules/physics/components/LevelCards/ParentCard";
 import './style.css'
-
-type TPhysicsCard = {
-    id: string;
-    title: string;
-    subtitle?: string;
-    description: string;
-    img?: string;
-    imgClassIndex?: number;
-};
 
 const FifthSection: React.FC = (): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const content = textContent.lawsAndConstantsSection.content
-    const cards: TPhysicsCard[] = [];
-
-    const imgPaths = Object.values(paths.formulas);
-
-    const descriptions: string[] = cards.map(item => item.description)
-    const res3 = descriptions.splice(12, 2).join(`\n`)
-    descriptions.splice(12, 0, res3);
-    const res2 = descriptions.splice(9, 2).join(`\n`)
-    descriptions.splice(9, 0, res2);
-    const res1 = descriptions.splice(5, 2).join(`\n`)
-    descriptions.splice(5, 0, res1);
-
-    content.map((item, index) => ({
-        ...item,
-        description: descriptions[index]
-    }))
+    const cards: ParentCardProps[] = [];
 
     content.forEach((item) => {
-        cards.push({
-            id: `card-${cards.length + 1}`,
-            title: item.title,
-            subtitle: item.subTitle,
-            description: item.description,
-        })
+        if (item.title.length > 0) {
+            cards.push({
+                title: item.title,
+                subCards: item.description as SubCard[],
+            })
+        }
     })
 
-    let imgId = 0;
-
-    for(let i = 0; i < content.length; i++) {
-        if ( i > 0 && i <= 2) {
-            cards[i].img = imgPaths[imgId]
-            cards[i].imgClassIndex = imgId
-            imgId++;
-        }
-        else if( i > 2 && i % 2 == 1 ) {
-            cards[i].img = imgPaths[imgId]
-            cards[i].imgClassIndex = imgId
-            imgId++; 
-        }
-    };
-
-    const [firstCard, secondCard, thirdCard, fourthCard, fifthCard] = React.useMemo(() => {
-        const items = cards ?? [];
-        const firstCard = items.slice(0,3);
-        const secondCard = items.slice(3,5);
-        const thirdCard = items.slice(5,7);
-        const fourthCard = items.slice(8,11);
-        const fifthCard = items.slice(11);
-
-        return [firstCard, secondCard, thirdCard, fourthCard, fifthCard];
-    }, [content])
-
-    const array = [firstCard, secondCard, thirdCard, fourthCard, fifthCard]
+   const cardsLeft = cards.slice(0, 3);
+   const cardsRight = cards.slice(3);
 
     return (
         <section className='physics-fifth-section'>
@@ -83,10 +33,17 @@ const FifthSection: React.FC = (): ReactElement => {
             <div className="physics-fifth-content-wrapper">
                 <BackgroundedTitle title={textContent.lawsAndConstantsSection.title}/>
 
-                <div className="physics-fifth-cards-wrapper">
-                    {array.map((item, index) => 
-                        <ParentCard content={item} key={index}/>
-                    )}
+                <div className="physics-fifth-section-cards">
+                    <div className="physics-fifth-cards-wrapper">
+                        {cardsLeft.map((card) =>
+                            <ParentCard key={card.title} title={card.title} subCards={card.subCards}/>
+                        )}
+                    </div>
+                    <div className="physics-fifth-cards-wrapper">
+                        {cardsRight.map((card) =>
+                            <ParentCard key={card.title} title={card.title} subCards={card.subCards}/>
+                        )}
+                    </div>
                 </div>
             </div>
         </section>
