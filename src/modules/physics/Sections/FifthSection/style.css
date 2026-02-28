@@ -1,12 +1,11 @@
 .physics-fifth-section {
     position: relative;
-    /*min-height: 1800px;*/
 }
 
 .physics-img-background{
     position: absolute;
     left: 0;
-    bottom: -10%;
+    bottom: 10%;
     z-index: 1;
     overflow: hidden;
 }
@@ -23,17 +22,11 @@
     flex-direction: column;
     gap: 72px;
     padding-bottom: 220px;
-    /*width: 100%;*/
-    /*position: absolute;*/
-    /*inset: 0;*/
-    /*z-index: 5;*/
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
 }
 
 .physics-fifth-section-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 12px;
 }
@@ -41,23 +34,7 @@
 .physics-fifth-cards-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    /*margin-top: 72px;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*column-gap: 12px;*/
-    /*row-gap: 36px;*/
-    /*max-height: 1650px;*/
-}
-
-@media (max-width: 1024px) {
-    /* .physics-fifth-cards-wrapper {
-        flex-wrap: nowrap;
-        max-height:none;
-    } */
+    gap: 36px;
 }
 
 @media (max-width: 1200px) {
@@ -68,6 +45,15 @@
 }
 
 @media (max-width: 930px) {
+    .physics-img-background {
+        top: 10%;
+    }
+
+    .physics-img-background img {
+        width: 600%;
+        transform: translateX(-35%);
+    }
+
     .physics-fifth-section-cards {
         flex-wrap: wrap;
         justify-content: center;

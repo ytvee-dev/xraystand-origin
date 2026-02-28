@@ -43,3 +43,9 @@
         width: 440px;
     }
 }
+
+@media (max-width: 930px) {
+    .parent-wrapper{
+        width: auto;
+    }
+}
