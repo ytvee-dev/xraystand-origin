@@ -186,4 +186,8 @@
         width: 120%;
         transform: translateX(-50%);
     }
+
+    .physics-types-card {
+        height: auto;
+    }
 }
