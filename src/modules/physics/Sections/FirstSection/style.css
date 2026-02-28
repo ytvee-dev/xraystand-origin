@@ -41,9 +41,6 @@
     }
 } 
 
-body {
-    /* overflow: hidden; */
-}
 .physics-first-section {
     width: 100%;
     display: flex;
