@@ -11,6 +11,7 @@ import CoverSection from "@modules/physics/Sections/CoverSection";
 // import * as paths from "@modules/physics/locales/paths.json";
 import FirstSection from "@modules/physics/Sections/FirstSection";
 import './style.css';
+import FifthSection from "@modules/physics/Sections/FifthSection";
 
 const pageLayoutSX = {
     backgroundColor: "#2769A5",
@@ -52,6 +53,7 @@ const Physics: React.FC = () => {
             <div className="physics-background">
                 <CoverSection/>
                 <FirstSection className="first-section"/>
+                <FifthSection/>
             </div>
         </BrightnessLayout>
 
