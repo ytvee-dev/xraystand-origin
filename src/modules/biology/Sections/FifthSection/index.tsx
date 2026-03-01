@@ -21,32 +21,57 @@ const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySection
                 </div>
 
                 <div className="card-section">
-                    <div className="card" id="card-left">
-                        <span className="card-title">{textContent.evolutionSection.content[0].description}</span>
-                        
-                        <div className="main-description">
-                            {textContent.evolutionSection.content[1].description}
+                    {textContent.evolutionSection.content.map((card, cardIndex) => (
+                        <div className="card" key={cardIndex}>
+                            {card.map((item, itemIndex) => {
+                                switch (item.type) {
+                                case "header":
+                                case "text":
+                                    return (
+                                    <div
+                                        key={itemIndex}
+                                        className={item.type === "header" ? "card-title" : ""}
+                                        style={{ marginTop: item.marginTop ? '1rem' : '0' }}
+                                    >
+                                        {item.content}
+                                    </div>
+                                    );
+
+                                case "description":
+                                    return (
+                                    <div
+                                        key={itemIndex}
+                                        className="main-description"
+                                        style={{ marginTop: item.marginTop ? '1rem' : '0' }}
+                                    >
+                                        {item.content}
+                                    </div>
+                                    );
+
+                                case "list":
+                                    const listItems: string[] = item.content as string[];
+                                    
+                                    return (
+                                        <ul
+                                            key={itemIndex}
+                                            className="card-description-list"
+                                            style={{ 
+                                                marginTop: item.marginTop ? '1rem' : '0', 
+                                                marginLeft: "1.875rem"
+                                            }}
+                                        >
+                                            {listItems.map((listItem, listIndex) => (
+                                                <li key={listIndex}>{listItem}</li>
+                                            ))}
+                                        </ul>
+                                    );
+
+                                default:
+                                    return null;
+                                }
+                            })}
                         </div>
-
-                        <span>{textContent.evolutionSection.content[2].description}</span>
-
-                        <ul className="card-description-list">
-                            <li>{textContent.evolutionSection.content[3].description}</li>
-                            <li>{textContent.evolutionSection.content[4].description}</li>
-                            <li>{textContent.evolutionSection.content[5].description}</li>
-                        </ul>
-
-                    </div>
-                    <div className="card" id="card-right">
-                        <span className="card-title">{textContent.evolutionSection.content[6].description}</span>
-
-                        <ul className="card-description-list">
-                            <li>{textContent.evolutionSection.content[7].description}</li>
-                            <li>{textContent.evolutionSection.content[8].description}</li>
-                            <li>{textContent.evolutionSection.content[9].description}</li>
-                            <li>{textContent.evolutionSection.content[10].description}</li>
-                        </ul>
-                    </div>
+                    ))}
                 </div>
 
                 <DSNotification 
