@@ -44,6 +44,7 @@
 .physics-cover-section {
     position: relative;
     min-height: 750px;
+    /* padding-bottom: 800px; */
 }
 
 .physics-hero-background {
@@ -245,10 +246,6 @@
 }
 
 @media (max-width: 900px) {
-    .physics-hero-background {
-        min-width:100vw;
-    }
-
     .physics-custom-svg {
         max-width: 150px;
     }
