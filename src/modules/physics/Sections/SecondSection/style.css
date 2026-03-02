@@ -1,0 +1,54 @@
+.physics-second-section {
+    padding: 50px 40px;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.physics-second-section-content {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 24px;
+}
+
+.physics-second-section-card-text {
+    color: white;
+    line-height: 24px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.physics-second-section-card-text h3 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.physics-second-section-card-text-discoveries li,
+.physics-second-section-card-text-facts li {
+    margin-left: 26px;
+    
+}
+
+@media(max-width: 1240px) {
+    .physics-second-section-card-text {
+        max-width: 420px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .physics-second-section-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .physics-second-section-card-text {
+        max-width: none;
+    }
+
+    .physics-second-section-card-text h3 {
+        text-align: center;
+    }
+}
