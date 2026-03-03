@@ -1,13 +1,14 @@
 import React from "react";
 import * as paths from "@modules/biology/locales/paths.json";
+import DSNotification from "@components/common/DSNotification";
 import * as textContentKz from "@modules/biology/locales/kaz.json";
 import * as textContentRu from "@modules/biology/locales/rus.json";
+import CardContentRenderer from "@modules/biology/components/CardContentItem";
 import { type BiologySectionProps } from "@modules/biology/types";
 import { useLocaleContent } from "@hooks/useLocale";
+import { SvgSpriteIds } from "@utils/constants";
 import { type ReactElement } from "react";
 import "./style.css";
-import DSNotification from "@components/common/DSNotification";
-import { SvgSpriteIds } from "@utils/constants";
 
 const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
@@ -23,53 +24,23 @@ const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySection
                 <div className="card-section">
                     {textContent.evolutionSection.content.map((card, cardIndex) => (
                         <div className="card" key={cardIndex}>
-                            {card.map((item, itemIndex) => {
-                                switch (item.type) {
-                                case "header":
-                                case "text":
-                                    return (
-                                    <div
-                                        key={itemIndex}
-                                        className={item.type === "header" ? "card-title" : ""}
-                                        style={{ marginTop: item.marginTop ? '1rem' : '0' }}
-                                    >
-                                        {item.content}
-                                    </div>
-                                    );
-
-                                case "description":
-                                    return (
-                                    <div
-                                        key={itemIndex}
-                                        className="main-description"
-                                        style={{ marginTop: item.marginTop ? '1rem' : '0' }}
-                                    >
-                                        {item.content}
-                                    </div>
-                                    );
-
-                                case "list":
-                                    const listItems: string[] = item.content as string[];
-                                    
-                                    return (
-                                        <ul
-                                            key={itemIndex}
-                                            className="card-description-list"
-                                            style={{ 
-                                                marginTop: item.marginTop ? '1rem' : '0', 
-                                                marginLeft: "1.875rem"
-                                            }}
-                                        >
-                                            {listItems.map((listItem, listIndex) => (
-                                                <li key={listIndex}>{listItem}</li>
-                                            ))}
-                                        </ul>
-                                    );
-
-                                default:
-                                    return null;
-                                }
-                            })}
+                            <CardContentRenderer 
+                                items={card.map(item => ({
+                                    type: item.type,
+                                    description: item.content,
+                                    marginTop: item.marginTop,
+                                    marginBottom: false
+                                }))}
+                                classNames={{
+                                    header: 'card-title',
+                                    description: 'main-description',
+                                    list: 'card-description-list'
+                                }}
+                                styleConfig={{
+                                    marginTopValue: '1rem',
+                                    listMarginLeft: '1.875rem'
+                                }}
+                            />
                         </div>
                     ))}
                 </div>
@@ -82,7 +53,7 @@ const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySection
                     textColor="#FFFFFF"
                     iconColor="#FFFFFF"
                     borderRadius="2.5rem"
-                    padding = "0 0"
+                    padding="0 0"
                     iconWidth="2.4375rem"
                     iconHeight="2.4375rem"
                     cardGap="24px"

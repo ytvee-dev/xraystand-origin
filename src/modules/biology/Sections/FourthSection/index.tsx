@@ -7,7 +7,9 @@ import { type BiologySectionProps } from "@modules/biology/types";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocaleContent } from "@hooks/useLocale";
 import { usePageData } from "@hooks/usePageData";
+
 import "./style.css";
+import CardContentRenderer from "@modules/biology/components/CardContentItem";
 
 export type TImgCard = {
     id: string;
@@ -95,33 +97,17 @@ const FourthSection: React.FC<BiologySectionProps> = ({
                     </h3>
 
                     <div className="biology-card-content">
-                        {textContent.organismClassificationSection.content[index % imgCards.length].cardContent.map((item, itemIndex) => {
-                        if (item.type === 'text') {
-                            return (
-                            <div
-                                key={itemIndex}
-                                className="biology-card-text"
-                                style={{ marginBottom: item.marginBottom ? '1rem' : '0' }}
-                            >{item.description}</div>
-                            );
-                        }
-
-                        if (item.type === 'list') {
-                            const listItems = item.description as string[];
-                            
-                            return (
-                                <ul
-                                    key={itemIndex}
-                                    className="biology-card-list"
-                                    style={{ marginBottom: item.marginBottom ? '1rem' : '0', marginLeft: "1.7rem"}}
-                                >
-                                    {listItems.map((listItem, listIndex) => (
-                                        <li key={listIndex}>{listItem}</li>
-                                    ))}
-                                </ul>
-                            );
-                        }
-                        })}
+                        <CardContentRenderer 
+                            items={textContent.organismClassificationSection.content[index % imgCards.length].cardContent}
+                            classNames={{
+                                text: 'biology-card-text',
+                                list: 'biology-card-list'
+                            }}
+                            styleConfig={{
+                                marginBottomValue: '1rem',
+                                listMarginLeft: '1.7rem'
+                            }}
+                        />
                     </div>
                 </div>
             </div>
