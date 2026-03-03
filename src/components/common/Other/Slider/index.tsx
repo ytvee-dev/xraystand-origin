@@ -15,6 +15,11 @@ export interface ISliderProps {
     setIndex?: (n: number) => void;
     card: TCard;
     drag?: "x" | "y" | true;
+    width?: number,
+    height?: number,
+    mobileWidth?: number,
+    mobileHeight?: number,
+    borderRadius?: number
 }
 
 const Slider: React.FC<ISliderProps> = ({
@@ -23,6 +28,11 @@ const Slider: React.FC<ISliderProps> = ({
     setIndex = (n: number) => {console.info(n)},
     card,
     drag,
+    width = 395,
+    height = 395,
+    mobileWidth = 200,
+    mobileHeight = 200,
+    borderRadius = 10
 }) => {
     const screenWidth = useScreenWidth();
     const [exitX, setExitX] = useState(0);
@@ -62,8 +72,8 @@ const Slider: React.FC<ISliderProps> = ({
     return (
         <motion.div
             style={{
-                width: screenWidth >= 768 ? 395 : 200,
-                height: screenWidth >= 768 ? 395 : 200,
+                width: screenWidth >= 768 ? width : mobileWidth,
+                height: screenWidth >= 768 ? height : mobileHeight,
                 position: "absolute",
                 top: 0,
                 x,
@@ -88,8 +98,9 @@ const Slider: React.FC<ISliderProps> = ({
             <div
                 className='slider-card-wrapper'
                 style={{
-                        width: screenWidth >= 768 ? 395 : 200,
-                        height: screenWidth >= 768 ? 395 : 200,
+                    width: screenWidth >= 768 ? width : mobileWidth,
+                    height: screenWidth >= 768 ? height : mobileHeight,
+                    borderRadius: `${borderRadius}px`     
                 }}
             >
                 <img

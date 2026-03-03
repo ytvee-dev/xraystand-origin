@@ -65,7 +65,13 @@ const SecondSection: React.FC = (): ReactElement => {
         }
     )
 
-    const indexedCard = cards[index]
+    const indexedCard = cards[index] ? cards[index] : cards[0]
+    const sliderSize = {
+        width: 330,
+        height: 400,
+        mobileWidth: 180,
+        mobileHeight: 220
+    }
 
     return (
         <section className='physics-second-section'>
@@ -86,6 +92,11 @@ const SecondSection: React.FC = (): ReactElement => {
                             frontCard={false}
                             index={(index + 1) % cards.length}
                             card={cards[(index + 1) % cards.length]}
+                            width={sliderSize.width}
+                            mobileWidth={sliderSize.mobileWidth}
+                            height={sliderSize.height}
+                            mobileHeight={sliderSize.mobileHeight}
+                            borderRadius={0}
                         />
                         <Slider
                             key={index}
@@ -94,13 +105,18 @@ const SecondSection: React.FC = (): ReactElement => {
                             setIndex={setIndex}
                             drag={true}
                             card={cards[index % cards.length]}
+                            width={sliderSize.width}
+                            mobileWidth={sliderSize.mobileWidth}
+                            height={sliderSize.height}
+                            mobileHeight={sliderSize.mobileHeight}
+                            borderRadius={0}
                         />
                     </AnimatePresence>
                 </motion.div>
 
                 <div className='physics-second-section-card-text'>
-                    <h3>{indexedCard ? indexedCard.title : cards[0].title}</h3>
-                    <p>{indexedCard ? indexedCard.description : cards[0].description}</p>
+                    <h3>{indexedCard.title}</h3>
+                    <p>{indexedCard.description}</p>
 
                     <div className="physics-second-section-discoveries-wrapper">
                         <p>{indexedCard.content[0].title}</p>
