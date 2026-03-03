@@ -1,124 +1,26 @@
+import SquareCard, {
+    type ICardData,
+    type ICardLabel,
+} from "@components/common/Cards/SquareCard";
 import * as paths from "@modules/biology/locales/paths.json";
-import SquareCard from "@components/common/Cards/SquareCard";
 import * as textContentRu from "@modules/biology/locales/rus.json";
 import * as textContentKaz from "@modules/biology/locales/kaz.json";
 import type { BiologySectionProps } from "@modules/biology/types";
 import type { CSSProperties, ReactElement } from "react";
 import { useLocaleContent } from "@hooks/useLocale";
+import {
+    groupByTitle,
+    type IContentGroup,
+    type IContentItem,
+} from "@modules/biology/functions";
 import "./style.css";
 
 const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKaz);
 
-    const firstCardLabel =
-        `${textContent.virusesSection.content[1].description} /` +
-        `${textContent.virusesSection.content[2].description} •` +
-        `${textContent.virusesSection.content[3].description} •` +
-        `${textContent.virusesSection.content[4].description} •` +
-        `${textContent.virusesSection.content[5].description} •` +
-        `${textContent.virusesSection.content[6].description} •` +
-        `${textContent.virusesSection.content[7].description} /` +
-        textContent.virusesSection.content[8].description;
-
-    const secondCardLabel =
-        `${textContent.virusesSection.content[10].description} /` +
-        `${textContent.virusesSection.content[11].description} /` +
-        `${textContent.virusesSection.content[12].description} /` +
-        `${textContent.virusesSection.content[13].description} /` +
-        `${textContent.virusesSection.content[14].description} /` +
-        `${textContent.virusesSection.content[15].description} /` +
-        `${textContent.virusesSection.content[16].description} /` +
-        `${textContent.virusesSection.content[17].description} /` +
-        `${textContent.virusesSection.content[18].description} /` +
-        `${textContent.virusesSection.content[19].description} /` +
-        `${textContent.virusesSection.content[20].description} •` +
-        `${textContent.virusesSection.content[21].description} •` +
-        `${textContent.virusesSection.content[22].description} /` +
-        textContent.virusesSection.content[23].description;
-
-    const thirdCardLabel =
-        `${textContent.virusesSection.content[25].description} /` +
-        `${textContent.virusesSection.content[26].description} /` +
-        `${textContent.virusesSection.content[27].description} /` +
-        `${textContent.virusesSection.content[28].description} /` +
-        `${textContent.virusesSection.content[29].description} /` +
-        `${textContent.virusesSection.content[30].description} /` +
-        `${textContent.virusesSection.content[31].description} /` +
-        `${textContent.virusesSection.content[32].description} /` +
-        `${textContent.virusesSection.content[33].description} •` +
-        `${textContent.virusesSection.content[34].description} •` +
-        `${textContent.virusesSection.content[35].description} •` +
-        textContent.virusesSection.content[36].description;
-
-    const fourthCardLabel =
-        `${textContent.virusesSection.content[38].description} •` +
-        `${textContent.virusesSection.content[39].description} •` +
-        `${textContent.virusesSection.content[40].description} •` +
-        `${textContent.virusesSection.content[41].description} •` +
-        `${textContent.virusesSection.content[42].description} •` +
-        `${textContent.virusesSection.content[43].description} •` +
-        `${textContent.virusesSection.content[44].description} /` +
-        textContent.virusesSection.content[45].description;
-
-    const fifthCardLabel =
-        `${textContent.virusesSection.content[47].description} /` +
-        `${textContent.virusesSection.content[48].description} •` +
-        `${textContent.virusesSection.content[49].description} •` +
-        `${textContent.virusesSection.content[50].description} •` +
-        `${textContent.virusesSection.content[51].description} •` +
-        `${textContent.virusesSection.content[52].description} •` +
-        `${textContent.virusesSection.content[53].description} /` +
-        `${textContent.virusesSection.content[54].description} •` +
-        `${textContent.virusesSection.content[55].description} •` +
-        `${textContent.virusesSection.content[56].description} •` +
-        `${textContent.virusesSection.content[57].description} •` +
-        `${textContent.virusesSection.content[58].description} /` +
-        textContent.virusesSection.content[59].description;
-
-    const sixthCardLabel =
-        `${textContent.virusesSection.content[61].description} /` +
-        `${textContent.virusesSection.content[62].description} /` +
-        `${textContent.virusesSection.content[63].description} /` +
-        `${textContent.virusesSection.content[64].description} /` +
-        `${textContent.virusesSection.content[65].description} /` +
-        `${textContent.virusesSection.content[66].description} •` +
-        `${textContent.virusesSection.content[67].description} •` +
-        `${textContent.virusesSection.content[68].description} /` +
-        `${textContent.virusesSection.content[69].description} /` +
-        textContent.virusesSection.content[70].description;
-
-    const cardsData = [
-        {
-            id: "first-7th-card",
-            title: textContent.virusesSection.content[0].title,
-            label: firstCardLabel,
-        },
-        {
-            id: "second-7th-card",
-            title: textContent.virusesSection.content[9].title,
-            label: secondCardLabel,
-        },
-        {
-            id: "third-7th-card",
-            title: textContent.virusesSection.content[24].title,
-            label: thirdCardLabel,
-        },
-        {
-            id: "fourth-7th-card",
-            title: textContent.virusesSection.content[37].title,
-            label: fourthCardLabel,
-        },
-        {
-            id: "fifth-7th-card",
-            title: textContent.virusesSection.content[46].title,
-            label: fifthCardLabel,
-        },
-        {
-            id: "sixth-7th-card",
-            title: textContent.virusesSection.content[60].title,
-            label: sixthCardLabel,
-        },
-    ];
+    const groups: IContentGroup[] = groupByTitle(
+        textContent.virusesSection.content,
+    );
 
     const imagesData = paths.backgrounds.seventhSection.map(
         (imagePath, imageIndex) => {
@@ -129,6 +31,24 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
             };
         },
     );
+
+    const cardsData: ICardData[] = groups.map((textData, index) => {
+        const cardLabels: ICardLabel[] = textData.items.map(
+            (data: IContentItem) => {
+                return {
+                    description: data.description,
+                    listParts: data.listParts || [],
+                };
+            },
+        );
+
+        return {
+            id: `seventh-section-card-${index}`,
+            title: textData.title,
+            labels: cardLabels,
+            imagePath: paths.images.fifthSection[index],
+        };
+    });
 
     const labelWrapperStyle: CSSProperties = {
         border: "0.0625rem solid #ffffff",
@@ -162,20 +82,21 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
                 ))}
             </div>
 
-            <div className="biology-seventh-section-cards-container">
-                {cardsData.map((cardData) => (
-                    <SquareCard
-                        key={cardData.id}
-                        id={cardData.id}
-                        className="biology-seventh-section-card"
-                        title={cardData.title}
-                        label={cardData.label}
-                        titleClassName="biology-seventh-section-card-header title-biology-medium-text"
-                        labelClassName="description-biology-medium-text"
-                        paragraphSeparator="/"
-                        labelWrapperStyle={labelWrapperStyle}
-                    />
-                ))}
+            <div className="biology-seventh-section-content">
+                <div className="biology-seventh-section-cards-container">
+                    {cardsData.map((cardData) => (
+                        <SquareCard
+                            key={cardData.id}
+                            id={cardData.id}
+                            className="biology-seventh-section-card"
+                            title={cardData.title}
+                            labels={cardData.labels}
+                            titleClassName="biology-seventh-section-card-header title-biology-medium-text"
+                            labelClassName="description-biology-medium-text"
+                            labelWrapperStyle={labelWrapperStyle}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     );

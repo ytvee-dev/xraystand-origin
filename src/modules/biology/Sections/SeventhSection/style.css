@@ -33,10 +33,18 @@
     height: 100%;
 }
 
-.biology-seventh-section-cards-container {
-    width: 100%;
+.biology-seventh-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     height: 82%;
-    position: relative;
+    width: 100%;
+}
+
+.biology-seventh-section-cards-container {
+    width: fit-content;
+    height: 100%;
 }
 
 .biology-seventh-section-card {
@@ -58,58 +66,33 @@
     z-index: 2;
 }
 
-.biology-seventh-section-card-header {
-    margin: 0 0 0.75rem 0.5rem;
+#seventh-section-card-0 {
+    right: 14.5rem;
 }
 
-.biology-seventh-section-card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-
-    border: 0.0625rem solid #ffffff;
-    border-radius: 2.8125rem;
-
-    width: 100%;
-    height: 100%;
-
-    padding: 0.75rem 1.5rem;
-
-    gap: 0.625rem;
+#seventh-section-card-1 {
+    bottom: 21rem;
+    left: 23rem;
 }
 
-.biology-seventh-section-card-info-wrapper {
-    display: flex;
-    flex-direction: column;
+#seventh-section-card-2 {
+    bottom: 37%;
+    right: 14.5rem;
 }
 
-#first-7th-card {
-    left: 14.5rem;
+#seventh-section-card-3 {
+    bottom: 57.5%;
+    left: 23rem;
 }
 
-#second-7th-card {
-    bottom: 22rem;
-    left: 51.5rem;
+#seventh-section-card-4 {
+    right: 14.5rem;
+    bottom: 57%;
 }
 
-#third-7th-card {
-    bottom: 39%;
-    left: 14.5rem;
-}
-
-#fourth-7th-card {
-    left: 51.5rem;
-    bottom: 60%;
-}
-
-#fifth-7th-card {
-    left: 14.5rem;
-    bottom: 60.5%;
-}
-
-#sixth-7th-card {
-    left: 51.5rem;
-    bottom: 87%;
+#seventh-section-card-5 {
+    bottom: 82.5%;
+    left: 23rem;
 }
 
 .biology-seventh-section-picture {
@@ -151,7 +134,7 @@
     width: 6.0625rem;
     height: 6.25rem;
 
-    right: 8.5rem;
+    right: 4.5rem;
     bottom: 32%;
 }
 
@@ -159,7 +142,7 @@
     width: 10.9375rem;
     height: 10.9375rem;
 
-    right: 4rem;
+    right: 1.5rem;
     bottom: 17%;
 }
 
@@ -184,21 +167,21 @@
     height: 5.5625rem;
 
     left: 40%;
-    bottom: 3.75rem;
+    bottom: 7rem;
 }
 
 #seventh-section-image-10 {
     width: 9.3125rem;
     height: 9.3125rem;
 
-    left: 7rem;
+    left: 10.5rem;
     bottom: 16%;
 }
 
 #seventh-section-image-11 {
     width: 7.25rem;
 
-    left: 8.25rem;
+    left: 11.5rem;
     top: 41%;
 }
 
