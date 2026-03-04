@@ -36,10 +36,6 @@ const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySection
                                     description: "main-description",
                                     list: "card-description-list"
                                 }}
-                                styleConfig={{
-                                    marginTopValue: "1rem",
-                                    listMarginLeft: "1.875rem"
-                                }}
                             />
                         </div>
                     ))}

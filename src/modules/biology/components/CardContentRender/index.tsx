@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { type ReactElement } from "react";
+import "./style.css";
 
 export type ContentItem = {
     type: string;
@@ -17,38 +18,23 @@ export type ICardContentProps = {
         list?: string;
         listItem?: string;
     };
-    styleConfig?: {
-        marginTopValue?: string;
-        marginBottomValue?: string;
-        listMarginLeft?: string;
-    };
 };
 
 const CardContentRender = ({
     items,
     classNames = {},
-    styleConfig = {},
 }: ICardContentProps): ReactElement => {
-    const {
-        marginTopValue = "1rem",
-        marginBottomValue = "1rem",
-        listMarginLeft = "1.875rem",
-    } = styleConfig;
-
     return (
         <Fragment>
             {items.map((item, itemIndex) => {
-                const marginTop = item.marginTop ? marginTopValue : "0";
-                const marginBottom = item.marginBottom
-                    ? marginBottomValue
-                    : "0";
+                const marginTop = item.marginTop ? "card-content-margin-top" : "";
+                const marginBottom = item.marginBottom ? "card-content-margin-bottom" : "";
 
                 if (item.type === "text") {
                     return (
                         <div
                             key={itemIndex}
-                            className={classNames.text || ""}
-                            style={{ marginTop, marginBottom }}
+                            className={`${classNames.text || ""} ${marginTop} ${marginBottom}`.trim()}
                         >
                             {item.description}
                         </div>
@@ -59,8 +45,7 @@ const CardContentRender = ({
                     return (
                         <div
                             key={itemIndex}
-                            className={classNames.header || ""}
-                            style={{ marginTop, marginBottom }}
+                            className={`${classNames.header || ""} ${marginTop} ${marginBottom}`.trim()}
                         >
                             {item.description}
                         </div>
@@ -71,8 +56,7 @@ const CardContentRender = ({
                     return (
                         <div
                             key={itemIndex}
-                            className={classNames.description || ""}
-                            style={{ marginTop, marginBottom }}
+                            className={`${classNames.description || ""} ${marginTop} ${marginBottom}`.trim()}
                         >
                             {item.description}
                         </div>
@@ -85,12 +69,7 @@ const CardContentRender = ({
                     return (
                         <ul
                             key={itemIndex}
-                            className={classNames.list || ""}
-                            style={{
-                                marginTop,
-                                marginBottom,
-                                marginLeft: listMarginLeft,
-                            }}
+                            className={`${classNames.list || ""} ${marginTop} ${marginBottom} card-content-margin-left`.trim()}
                         >
                             {listItems.map((listItem, listIndex) => (
                                 <li

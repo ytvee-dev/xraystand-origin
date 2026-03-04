@@ -103,10 +103,6 @@ const FourthSection: React.FC<BiologySectionProps> = ({
                                 text: "biology-card-text",
                                 list: "biology-card-list"
                             }}
-                            styleConfig={{
-                                marginBottomValue: "1rem",
-                                listMarginLeft: "1.7rem"
-                            }}
                         />
                     </div>
                 </div>

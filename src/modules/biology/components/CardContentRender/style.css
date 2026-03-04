@@ -1,0 +1,13 @@
+/* Базовые отступы для карточек */
+.card-content-margin-top {
+    margin-top: 1rem;
+}
+
+.card-content-margin-bottom {
+    margin-bottom: 1rem;
+}
+
+/* Стили для списков */
+.card-content-margin-left {
+    margin-left: 1.875rem;
+}
