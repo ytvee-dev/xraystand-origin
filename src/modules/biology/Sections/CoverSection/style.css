@@ -99,9 +99,10 @@
     width: 27.0625rem;
 }
 
-.biology-hero-content-text .upper-block > h1,
-.biology-hero-content-text .lower-block > h1 {
+.biology-hero-content-text .upper-block > div,
+.biology-hero-content-text .lower-block > div {
     font-size: 4.375rem;
+    font-weight: bold;
 }
 
 #subtitle {

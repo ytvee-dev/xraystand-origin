@@ -60,16 +60,15 @@
 }
 
 .right-content-section {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 31.5625rem;
 }
 
 .right-content-section .image {
-    position: absolute;
     width: 29.5625rem;
-    bottom: 0;
-    left: 0;
 }
 
 .biology-fifth-section-notification {

@@ -62,7 +62,7 @@ const CoverSection: React.FC<BiologySectionProps> = ({
 
                     <div className="biology-hero-content-text">
                         <div className="upper-block">
-                            <h1>{heroContentTextArray[0]}</h1>
+                            <div>{heroContentTextArray[0]}</div>
 
                             <img
                                 className="bio-hero-content-text-svg"
@@ -77,7 +77,7 @@ const CoverSection: React.FC<BiologySectionProps> = ({
                                 alt=""
                             />
 
-                            <h1>{heroContentTextArray[1]}</h1>
+                            <div>{heroContentTextArray[1]}</div>
                         </div>
                     </div>
                 </div>

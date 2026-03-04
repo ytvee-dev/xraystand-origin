@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 import { type ReactElement } from "react";
 
 export type ContentItem = {
@@ -30,21 +30,21 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({
     styleConfig = {}
 }): ReactElement => {
     const {
-        marginTopValue = '1rem',
-        marginBottomValue = '1rem',
-        listMarginLeft = '1.875rem'
+        marginTopValue = "1rem",
+        marginBottomValue = "1rem",
+        listMarginLeft = "1.875rem"
     } = styleConfig;
 
     const renderContent = () => {
         return items.map((item, itemIndex) => {
-            const marginTop = item.marginTop ? marginTopValue : '0';
-            const marginBottom = item.marginBottom ? marginBottomValue : '0';
+            const marginTop = item.marginTop ? marginTopValue : "0";
+            const marginBottom = item.marginBottom ? marginBottomValue : "0";
 
-            if (item.type === 'text') {
+            if (item.type === "text") {
                 return (
                     <div
                         key={itemIndex}
-                        className={classNames.text || ''}
+                        className={classNames.text || ""}
                         style={{ marginTop, marginBottom }}
                     >
                         {item.description}
@@ -52,11 +52,11 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({
                 );
             }
 
-            if (item.type === 'header') {
+            if (item.type === "header") {
                 return (
                     <div
                         key={itemIndex}
-                        className={classNames.header || ''}
+                        className={classNames.header || ""}
                         style={{ marginTop, marginBottom }}
                     >
                         {item.description}
@@ -64,11 +64,11 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({
                 );
             }
 
-            if (item.type === 'description') {
+            if (item.type === "description") {
                 return (
                     <div
                         key={itemIndex}
-                        className={classNames.description || ''}
+                        className={classNames.description || ""}
                         style={{ marginTop, marginBottom }}
                     >
                         {item.description}
@@ -76,13 +76,13 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({
                 );
             }
 
-            if (item.type === 'list') {
+            if (item.type === "list") {
                 const listItems = item.description as string[];
                 
                 return (
                     <ul
                         key={itemIndex}
-                        className={classNames.list || ''}
+                        className={classNames.list || ""}
                         style={{ 
                             marginTop, 
                             marginBottom,
@@ -92,7 +92,7 @@ const ContentRenderer: React.FC<ContentRendererProps> = ({
                         {listItems.map((listItem, listIndex) => (
                             <li 
                                 key={listIndex}
-                                className={classNames.listItem || ''}
+                                className={classNames.listItem || ""}
                             >
                                 {listItem}
                             </li>
