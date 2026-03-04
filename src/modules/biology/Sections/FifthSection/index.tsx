@@ -3,7 +3,7 @@ import * as paths from "@modules/biology/locales/paths.json";
 import DSNotification from "@components/common/DSNotification";
 import * as textContentKz from "@modules/biology/locales/kaz.json";
 import * as textContentRu from "@modules/biology/locales/rus.json";
-import CardContentRenderer from "@modules/biology/components/CardContentItem";
+import CardContentRenderer from "@modules/biology/components/CardContentRender";
 import { type BiologySectionProps } from "@modules/biology/types";
 import { useLocaleContent } from "@hooks/useLocale";
 import { SvgSpriteIds } from "@utils/constants";
@@ -32,13 +32,13 @@ const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySection
                                     marginBottom: false
                                 }))}
                                 classNames={{
-                                    header: 'card-title',
-                                    description: 'main-description',
-                                    list: 'card-description-list'
+                                    header: "card-title",
+                                    description: "main-description",
+                                    list: "card-description-list"
                                 }}
                                 styleConfig={{
-                                    marginTopValue: '1rem',
-                                    listMarginLeft: '1.875rem'
+                                    marginTopValue: "1rem",
+                                    listMarginLeft: "1.875rem"
                                 }}
                             />
                         </div>

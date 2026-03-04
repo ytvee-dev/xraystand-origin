@@ -9,7 +9,7 @@ import { useLocaleContent } from "@hooks/useLocale";
 import { usePageData } from "@hooks/usePageData";
 
 import "./style.css";
-import CardContentRenderer from "@modules/biology/components/CardContentItem";
+import CardContentRenderer from "@modules/biology/components/CardContentRender";
 
 export type TImgCard = {
     id: string;
@@ -69,9 +69,9 @@ const FourthSection: React.FC<BiologySectionProps> = ({
                                 card={imgCards[(index + 1) % imgCards.length]}
                                 cardClassName="biology-fourth-section-custom-animated-image-card"
                                 wrapperStyle={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
                                 }}
                             />
                             <Slider
@@ -83,9 +83,9 @@ const FourthSection: React.FC<BiologySectionProps> = ({
                                 card={imgCards[index % imgCards.length]}
                                 cardClassName="biology-fourth-section-custom-animated-image-card"
                                 wrapperStyle={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
                                 }}
                             />
                         </AnimatePresence>
@@ -100,12 +100,12 @@ const FourthSection: React.FC<BiologySectionProps> = ({
                         <CardContentRenderer 
                             items={textContent.organismClassificationSection.content[index % imgCards.length].cardContent}
                             classNames={{
-                                text: 'biology-card-text',
-                                list: 'biology-card-list'
+                                text: "biology-card-text",
+                                list: "biology-card-list"
                             }}
                             styleConfig={{
-                                marginBottomValue: '1rem',
-                                listMarginLeft: '1.7rem'
+                                marginBottomValue: "1rem",
+                                listMarginLeft: "1.7rem"
                             }}
                         />
                     </div>
