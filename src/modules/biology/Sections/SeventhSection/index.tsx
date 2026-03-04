@@ -62,7 +62,7 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
     return (
         <section className={className}>
             <div className="biology-seventh-section-header-block">
-                <h2 className="header-biology-section-text">
+                <h2 className="header-seventh-section header-biology-section-text">
                     {textContent.virusesSection.title}
                 </h2>
                 <span className="description-biology-medium-text">
