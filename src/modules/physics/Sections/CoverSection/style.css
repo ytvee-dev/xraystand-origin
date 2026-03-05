@@ -245,6 +245,10 @@
 }
 
 @media (max-width: 900px) {
+    .physics-hero-background {
+        min-width:100vw;
+    }
+    
     .physics-custom-svg {
         max-width: 150px;
     }
