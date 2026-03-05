@@ -44,7 +44,6 @@
 .physics-cover-section {
     position: relative;
     min-height: 750px;
-    /* padding-bottom: 800px; */
 }
 
 .physics-hero-background {
@@ -246,6 +245,10 @@
 }
 
 @media (max-width: 900px) {
+    .physics-hero-background {
+        min-width:100vw;
+    }
+    
     .physics-custom-svg {
         max-width: 150px;
     }
@@ -273,6 +276,10 @@
 }
 
 @media (max-width: 768px) {
+    .physics-cover-section {
+        overflow: hidden;
+    }
+
     .physics-hero-content {
         flex-direction: column-reverse;
         align-items: center;
