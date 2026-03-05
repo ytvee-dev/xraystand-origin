@@ -2,6 +2,7 @@
     padding: 50px 40px;
     max-width: 1200px;
     margin-inline: auto;
+    overflow: hidden;
 }
 
 .physics-second-section-content {

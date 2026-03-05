@@ -276,6 +276,10 @@
 }
 
 @media (max-width: 768px) {
+    .physics-cover-section {
+        overflow: hidden;
+    }
+
     .physics-hero-content {
         flex-direction: column-reverse;
         align-items: center;
