@@ -69,8 +69,8 @@ const SecondSection: React.FC = (): ReactElement => {
     const sliderSize = {
         width: 330,
         height: 400,
-        mobileWidth: 180,
-        mobileHeight: 220
+        mobileWidth: 188,
+        mobileHeight: 228
     }
 
     return (
@@ -81,8 +81,8 @@ const SecondSection: React.FC = (): ReactElement => {
                 <motion.div
                     className="motion-slider"
                     style={{
-                        width: isMobile ? "180px" : "330px",
-                        height: isMobile ? 220 : 400,
+                        width: isMobile ? "188px" : "330px",
+                        height: isMobile ? 228 : 400,
                         position: "relative",
                     }}
                 >
