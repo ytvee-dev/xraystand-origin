@@ -6,6 +6,7 @@ import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import * as paths from "@modules/physics/locales/paths.json";
 import * as textContentKz from "@modules/physics/locales/kaz.json";
 import * as textContentRu from "@modules/physics/locales/rus.json";
+import { svg } from "@modules/math/locales/paths.json";
 import "./style.css";
 
 type TPhysicsCard = {
@@ -41,7 +42,11 @@ const FirstSection: React.FC<MathSectionProps> = ({ className }: MathSectionProp
 
     return (
         <section className={`physics-first-section ${className || ""}`}>
-            
+            <div className="physics-first-section-background">
+                <img src={svg.heroBg} alt="background" className="bg-img-1" />
+                <img src={svg.heroBg} alt="background" className="bg-img-2" /> 
+            </div>
+
             <div className="physics-first-section-content-wrapper">
                 <BackgroundedTitle
                     title={textContent.physicsBranchesSection.title}
