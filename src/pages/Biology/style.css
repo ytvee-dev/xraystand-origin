@@ -22,7 +22,7 @@
     overflow: hidden;
 }
 
-@media screen and (width <= 390px) {
+@media screen and (width <= 580px) {
     .biology-fifth-section {
         height: auto;
     }
@@ -38,6 +38,7 @@
 
     .biology-fifth-section-cards-container {
         flex-direction: column;
+        align-items: center;
         height: auto;
 
         padding: 0 1rem;
@@ -52,8 +53,9 @@
         gap: 0.25rem;
     }
 
-    #fifth-section-card-1 img {
-        margin-top: 8rem !important;
+    #fifth-section-card-1 {
+        flex-direction: column !important;
+        align-items: center;
     }
 
     .header-sixth-section {
@@ -117,7 +119,7 @@
     }
 }
 
-@media screen and (390px < width <= 600px) {
+@media screen and (580px < width <= 600px) {
     .biology-fifth-section {
         height: auto;
     }
@@ -228,6 +230,7 @@
         flex-direction: row;
         height: auto;
         flex-wrap: wrap;
+        align-items: center;
 
         padding: 0 1rem;
 
@@ -281,7 +284,7 @@
     }
 }
 
-@media screen and (800px < width <= 1000px) {
+@media screen and (800px < width <= 1180px) {
     .biology-fifth-section {
         height: auto;
     }
@@ -339,8 +342,12 @@
     }
 
     .biology-seventh-section-cards-container {
-        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
+        margin-top: 1.5rem;
         padding: 0 1rem;
     }
 
@@ -407,7 +414,7 @@
     }
 }
 
-@media screen and (1000px < width <= 1200px) {
+@media screen and (1180px < width <= 1200px) {
     .biology-fifth-section {
         height: auto;
     }
