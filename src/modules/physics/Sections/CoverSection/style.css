@@ -43,7 +43,8 @@
 
 .physics-cover-section {
     position: relative;
-    min-height: 750px;
+    padding-inline: 20px;
+    margin-bottom: 60px;
 }
 
 .physics-hero-background {
