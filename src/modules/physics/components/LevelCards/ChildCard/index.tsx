@@ -1,5 +1,5 @@
 import React, { type ReactElement } from "react";
-import './styles.css';
+import './style.css';
 
 export interface IChildCardProps {
     text: string,

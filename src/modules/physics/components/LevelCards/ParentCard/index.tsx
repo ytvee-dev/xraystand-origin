@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import ChildCard from "../ChildCard";
 import * as paths from "@modules/physics/locales/paths.json";
-import "./styles.css";
+import "./style.css";
 
 export type TCardsNames =
   | "newton1"
