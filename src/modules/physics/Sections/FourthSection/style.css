@@ -1,0 +1,27 @@
+.physics-fourth-section {
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    padding: 50px 40px 0px 40px;
+}
+
+.physics-fourth-section-content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.physcs-fourth-section-title {
+    padding: 80px;
+}
+
+/* .content-section {
+    background: transparent !important;
+    box-shadow: none !important;
+} */
+
+.ds-card-wrapper {
+    color: white;
+}

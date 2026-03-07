@@ -1,8 +1,14 @@
 import React from "react";
 import './style.css';
 import SquareCard from "@components/common/Cards/SquareCard";
-import DSNotification from "@components/common/DSNotification";
 import SpriteIcon from "@components/common/Other/SpriteIcon";
+import Card from "@mui/material/Card";
+import CardActionArea from "@mui/material/CardActionArea";
+import CardMedia from "@mui/material/CardMedia";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import CardActions from "@mui/material/CardActions";
+import Button from "@mui/material/Button";
 
 const imagePath = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1768051951/1_h2dh5q.webp';
 
@@ -14,21 +20,25 @@ const listTempalte = [
 ]
 
 const Implementation: React.FC = () => {
-    return(
+    return (
         <div className={"implementation-page"}>
-            <DSNotification
-                iconName="super-attention"
-                iconSize="45px"
-                list={listTempalte}
-                backgroundColor={'#C3473B'}
-                textColor={'white'}
-                alignIcon={'start'}
-                listStyle="numeric"
-                sx={{
-                    maxWidth: '580px',
-                    borderRadius: 'medium'
-                }}
-            />
+            <Card sx={{ maxWidth: 345 }}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={imagePath}
+                        alt="green iguana"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Lizard
+                        </Typography>
+                        
+                    </CardContent>
+                </CardActionArea>
+               
+            </Card>
         </div>
     );
 };
