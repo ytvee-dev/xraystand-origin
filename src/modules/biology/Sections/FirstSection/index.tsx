@@ -14,31 +14,51 @@ const FirstSection: React.FC<BiologySectionProps> = ({className}: BiologySection
 
     return (
         <section className={className}>
-            <div className="biology-first-section-text-block">
-                <h1 className="biology-first-section-text-block-title">{textContent.lifeComponentsSection.title}</h1>
-                <div className="biology-first-section-text-block-description">{textContent.lifeComponentsSection.description}</div>
-                <DSNotification 
-                    content={textContent.lifeComponentsSection.notificationLabel} 
-                    iconName={SvgSpriteIds.BIOLOGY_CELL} 
-                    className="biology-first-section-notification" 
-                    backgroundColor="#489484"
-                    textColor="#FFFFFF"
-                    iconColor="#FFFFFF"
-                    borderRadius="2.5rem"
-                    padding = "0 0"
-                    iconWidth="2.4375rem"
-                    iconHeight="2.4375rem"
-                    cardGap="24px"
-                />
+            <div className="biology-first-section-content">
+                <div className="biology-first-section-text-block">
+                    <h1 className="biology-first-section-text-block-title">
+                        {textContent.lifeComponentsSection.title}
+                    </h1>
+                    <div className="biology-first-section-text-block-description">
+                        {textContent.lifeComponentsSection.description}
+                    </div>
+                </div>
+
+                <div className="biology-first-section-visual-block">
+                    <img 
+                        id="centered-svg" 
+                        src={paths.backgrounds[13]} 
+                        alt="background" 
+                        className="biology-first-section-centered-svg"
+                    />
+
+                    <div className="biology-first-section-pictures-block">
+                        {paths.images.firstSection.map((src, index) => (
+                            <img 
+                                key={`picture-${index}`}
+                                id={`pictures-block-svg-${index + 1}`} 
+                                className="pictures-block-svg" 
+                                src={src} 
+                                alt={`biology illustration ${index + 1}`} 
+                            />
+                        ))}
+                    </div>
+                </div>
             </div>
 
-            <img id="centered-svg" src={paths.backgrounds[13]} alt="image" />
-
-            <div className="biology-first-section-pictures-block">
-                {paths.images.firstSection.map((src, index) => (
-                    <img id={`pictures-block-svg-${index + 1}`} className="pictures-block-svg" src={src} alt="image" />
-                ))}
-            </div>
+            <DSNotification 
+                content={textContent.lifeComponentsSection.notificationLabel} 
+                iconName={SvgSpriteIds.BIOLOGY_CELL} 
+                className="biology-first-section-notification" 
+                backgroundColor="#489484"
+                textColor="#FFFFFF"
+                iconColor="#FFFFFF"
+                borderRadius="2.5rem"
+                padding="0 0"
+                iconWidth="2.4375rem"
+                iconHeight="2.4375rem"
+                cardGap="24px"
+            />
         </section>
     );
 };

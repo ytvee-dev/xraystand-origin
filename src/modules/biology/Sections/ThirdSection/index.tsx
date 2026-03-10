@@ -68,6 +68,7 @@ const ThirdSection: React.FC<BiologySectionProps> = ({className}: BiologySection
                 textColor="#FFFFFF"
                 iconColor="#FFFFFF"
                 borderRadius="2.5rem"
+                alertStyle={{ padding: "0", width: "fit-content"}}
                 padding = "0px 0px"
                 iconWidth="2.4375rem"
                 iconHeight="2.4375rem"
