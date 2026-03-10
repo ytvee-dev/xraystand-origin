@@ -4,11 +4,11 @@ import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import * as paths from "@modules/physics/locales/paths.json";
 import * as textContentKz from "@modules/physics/locales/kaz.json";
 import * as textContentRu from "@modules/physics/locales/rus.json";
-import ContentSection from "@components/common/Sections/DSContentSection";
-import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
-import DSCard from "@components/common/Cards/DSCard";
-
+import { cardsBg} from "@modules/physics/locales/paths.json";
 import "./style.css";
+import Card from "@mui/material/Card";
+import CardActionArea from "@mui/material/CardActionArea";
+import CardMedia from "@mui/material/CardMedia";
 
 
 // type TInLifeCard = {
@@ -19,12 +19,10 @@ import "./style.css";
 
 const FourthSection: React.FC = (): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
-
     const content = textContent.inLifeSection.content;
 
     return (
         <section className="physics-fourth-section">
-
             <div className="physcs-fourth-section-title">
                 <BackgroundedTitle
                     title={textContent.inLifeSection.title}
@@ -35,36 +33,30 @@ const FourthSection: React.FC = (): ReactElement => {
             </div>
 
             <div className="physics-fourth-section-content-wrapper">
-                <ContentSection>
-                    <DSCardsWrapper
-                        screenMaxWidth={1000}
-                        cardsGap="24px"
-                        wrapperMaxWidth={1200}
-                    >
-                        {content.map((card, indx) => (
-                            <DSCard
-                                key={indx}
-                                imageName={paths.cardsBg}
-                                title={card}
-                                minWidth="97px"
-                                maxWidth="317px"
-                                imageHeight="300px"
-                                backgroundColor="transparent"
-                                sxText={{
-                                    imgObjectFit: "contain",
-                                    // imgPadding: "16px",
-                                    // titleColor: "#333333",
-                                    // labelColor: "#555555",
-                                    // linkColor: "#FF5722",
-                                    fontWeight: 500,
-                                }}
+                {content.map((text, index) => (
+                    <Card key={index} className="card">
+                        <CardActionArea className="card-area">
+                            <CardMedia
+                                className="background-card"
+                                component="img"
+                                height="140"
+                                image={cardsBg}
                             />
-                        ))}
-                    </DSCardsWrapper>
-                </ContentSection>
+                        </CardActionArea>
+                        <div className="card-content">
+                            <img 
+                                src={paths.cards[index]} 
+                                alt="icon" 
+                                className="card-icon" 
+                            />
+                            <p style={{ color: 'white', fontWeight: 700 }}>{text}</p>
+                        </div>
+                    </Card>
+                ))}
             </div>
         </section>
     );
 };
+
 
 export default FourthSection;
