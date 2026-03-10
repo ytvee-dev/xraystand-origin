@@ -8,7 +8,6 @@ import { usePageData } from "@hooks/usePageData";
 import { useLocale } from "@hooks/useLocale";
 import "./style.css";
 
-
 const CoverSection: React.FC<FireSafetySectionProps> = ({
     className,
     style,
@@ -18,14 +17,14 @@ const CoverSection: React.FC<FireSafetySectionProps> = ({
     const { isMobile } = usePageData();
 
     const currentLanguage = useLocale();
-    const coverImage = currentLanguage === 'ru'
-        ? paths.images.fireSafetyCoverImageRu
-        : paths.images.fireSafetyCoverImageKaz;
+    const coverImage =
+        currentLanguage === "ru"
+            ? paths.images.fireSafetyCoverImageRu
+            : paths.images.fireSafetyCoverImageKaz;
 
     const heroLogoHeaderClassName: string = !isMobile
         ? "header-text-bold"
         : "title-text";
-
 
     return (
         <section className={className} style={style}>

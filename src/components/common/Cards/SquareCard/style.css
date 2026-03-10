@@ -4,16 +4,24 @@
     align-items: center;
     justify-content: center;
     gap: 1.25rem;
+}
 
-    &.square-rounded {
-        border-radius: 25px;
-    }
+.square-card-content,
+.square-card-label-wrapper {
+    display: flex;
+    flex-direction: column;
 
-    .square-card-image {
-        width: 37%;
+    gap: 0.25rem;
+}
 
-        img {
-            width: 100%;
-        }
-    }
+.square-card-image {
+    flex: 0.4;
+}
+
+.square-card-image img {
+    width: 100%;
+}
+
+.square-card ul {
+    margin-left: 1rem;
 }

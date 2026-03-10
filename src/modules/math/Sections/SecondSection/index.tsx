@@ -1,6 +1,6 @@
 import Slider from "@components/common/Other/Slider";
 import * as paths from "@modules/math/locales/paths.json";
-import React, { type ReactElement, useState } from "react";
+import React, { type CSSProperties, type ReactElement, useState } from "react";
 import * as textContentRu from "@modules/math/locales/rus.json";
 import * as textContentKz from "@modules/math/locales/kaz.json";
 import type { MathSectionProps } from "@modules/math/types";
@@ -15,6 +15,7 @@ export type TCard = {
     subtitle: string;
     description: string;
     image: string;
+    imageStyle?: CSSProperties;
 };
 
 const SecondSection: React.FC<MathSectionProps> = ({
