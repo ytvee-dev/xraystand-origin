@@ -1,7 +1,6 @@
 .slider-card-wrapper {
     position: relative;
     user-select: none;
-    border-radius: 10px;
     overflow: hidden;
 }
 

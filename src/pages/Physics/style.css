@@ -13,11 +13,6 @@
     color: #EE7630;
 }
 
-.physics-background{
+.physics-background {
     background: linear-gradient(179.94deg, #212630 0.05%, #225992 55.11%, #212630 100.51%);
-}
- 
-.first-section {
-    margin: 85px 0 170px;
-    padding: 0 7px;
 }
