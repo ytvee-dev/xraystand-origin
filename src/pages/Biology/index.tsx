@@ -3,7 +3,7 @@ import BrightnessLayout from "@layout/Brightness";
 import FirstSection from "@modules/biology/Sections/FirstSection";
 import ThirdSection from "@modules/biology/Sections/ThirdSection";
 import CoverSection from "@modules/biology/Sections/CoverSection";
-import EighthSection from "@modules/biology/Sections/FifthSection";
+import EighthSection from "@modules/biology/Sections/EighthSection";
 import SecondSection from "@modules/biology/Sections/SecondSection";
 import FourthSection from "@modules/biology/Sections/FourthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
