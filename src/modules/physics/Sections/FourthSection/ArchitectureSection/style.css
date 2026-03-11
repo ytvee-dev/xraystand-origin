@@ -1,0 +1,28 @@
+.physcs-architecture-section-title p{
+    font-size:14px;
+}
+
+.physics-architecture-section {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.physcs-architecture-section-title {
+    padding: 44px 40px 36px;
+}
+
+.physics-architecture-cards {
+    margin-top: 20px;
+    width: 100%;
+    /* max-width: 1152px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+.physics-architecture-card {
+    width: 19%;
+}

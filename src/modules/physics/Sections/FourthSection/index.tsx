@@ -9,6 +9,7 @@ import "./style.css";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardMedia from "@mui/material/CardMedia";
+import ArchitectureSection from "./ArchitectureSection";
 
 
 // type TInLifeCard = {
@@ -54,6 +55,7 @@ const FourthSection: React.FC = (): ReactElement => {
                     </Card>
                 ))}
             </div>
+            <ArchitectureSection />
         </section>
     );
 };

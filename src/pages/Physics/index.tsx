@@ -53,7 +53,7 @@ const Physics: React.FC = () => {
             <div className="physics-background">
                 <CoverSection/>
                 <FirstSection className="first-section"/>
-                <FourthSection/>
+                <FourthSection />
             </div>
         </BrightnessLayout>
 
