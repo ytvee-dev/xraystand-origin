@@ -10,7 +10,9 @@ import { SvgSpriteIds } from "@utils/constants";
 import { type ReactElement } from "react";
 import "./style.css";
 
-const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySectionProps): ReactElement => {
+const EighthSection: React.FC<BiologySectionProps> = ({
+    className,
+}: BiologySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
 
     return (
@@ -22,29 +24,31 @@ const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySection
                 </div>
 
                 <div className="card-section">
-                    {textContent.evolutionSection.content.map((card, cardIndex) => (
-                        <div className="card" key={cardIndex}>
-                            <CardContentRenderer 
-                                items={card.map(item => ({
-                                    type: item.type,
-                                    description: item.content,
-                                    marginTop: item.marginTop,
-                                    marginBottom: false
-                                }))}
-                                classNames={{
-                                    header: "card-title",
-                                    description: "main-description",
-                                    list: "card-description-list"
-                                }}
-                            />
-                        </div>
-                    ))}
+                    {textContent.evolutionSection.content.map(
+                        (card, cardIndex) => (
+                            <div className="card" key={cardIndex}>
+                                <CardContentRenderer
+                                    items={card.map((item) => ({
+                                        type: item.type,
+                                        description: item.content,
+                                        marginTop: item.marginTop,
+                                        marginBottom: false,
+                                    }))}
+                                    classNames={{
+                                        header: "card-title",
+                                        description: "main-description",
+                                        list: "card-description-list",
+                                    }}
+                                />
+                            </div>
+                        ),
+                    )}
                 </div>
 
-                <DSNotification 
-                    className="biology-fifth-section-notification"
+                <DSNotification
+                    className="biology-eighth-section-notification"
                     content={textContent.evolutionSection.notificationLabel}
-                    iconName={SvgSpriteIds.BIOLOGY_CELL} 
+                    iconName={SvgSpriteIds.BIOLOGY_CELL}
                     backgroundColor="#7A61A0"
                     textColor="#FFFFFF"
                     iconColor="#FFFFFF"
@@ -57,10 +61,14 @@ const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySection
             </div>
 
             <div className="right-content-section">
-                <img className="image" src={paths.images.evoSection} alt="image" />
+                <img
+                    className="image"
+                    src={paths.images.evoSection}
+                    alt="image"
+                />
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default FifthSection;
+export default EighthSection;
