@@ -3,9 +3,12 @@ import BrightnessLayout from "@layout/Brightness";
 import FirstSection from "@modules/biology/Sections/FirstSection";
 import ThirdSection from "@modules/biology/Sections/ThirdSection";
 import CoverSection from "@modules/biology/Sections/CoverSection";
+import FifthSection from "@modules/biology/Sections/FifthSection";
+import SixthSection from "@modules/biology/Sections/SixthSection";
 import EighthSection from "@modules/biology/Sections/EighthSection";
 import SecondSection from "@modules/biology/Sections/SecondSection";
 import FourthSection from "@modules/biology/Sections/FourthSection";
+import SeventhSection from "@modules/biology/Sections/SeventhSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { type TRootState } from "@store/index";
@@ -55,6 +58,9 @@ const Biology: React.FC = (): ReactElement => {
                 <ThirdSection className="biology-section biology-third-section" />
                 <FourthSection className="biology-section biology-fourth-section" />
                 <EighthSection className="biology-section biology-eighth-section" />
+                <FifthSection className="biology-section biology-fifth-section" />
+                <SixthSection className="biology-section biology-sixth-section" />
+                <SeventhSection className="biology-section biology-seventh-section" />
             </div>
         </BrightnessLayout>
     );

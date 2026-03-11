@@ -8,33 +8,34 @@ import { type ReactElement } from "react";
 import "./style.css";
 
 const coverSectionBackgroundsSrcArray: string[] = [
-    paths.backgrounds[17],
-    paths.backgrounds[16],
-    paths.backgrounds[15],
-    paths.backgrounds[13]
-]
+    paths.backgrounds.other[5],
+    paths.backgrounds.other[4],
+    paths.backgrounds.other[3],
+    paths.backgrounds.other[1],
+];
 
 const coverSectionHeroContent = [
     {
         id: "bio-content-back-lower",
-        src: paths.backgrounds[19]
+        src: paths.backgrounds.other[7],
     },
     {
         id: "bio-content-back-upper",
-        src: paths.backgrounds[18]
+        src: paths.backgrounds.other[6],
     },
     {
         id: "bio-content-darvin",
-        src: paths.backgrounds[0]
-    }
-]
+        src: paths.backgrounds.other[0],
+    },
+];
 
 const CoverSection: React.FC<BiologySectionProps> = ({
     className,
 }: BiologySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
 
-    const heroContentTextArray: string[] = textContent.coverSection.title.split(" ");
+    const heroContentTextArray: string[] =
+        textContent.coverSection.title.split(" ");
 
     return (
         <section className={className}>

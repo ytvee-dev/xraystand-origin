@@ -9,7 +9,9 @@ import { type ReactElement } from "react";
 import "./style.css";
 import { SvgSpriteIds } from "@utils/constants";
 
-const FirstSection: React.FC<BiologySectionProps> = ({className}: BiologySectionProps): ReactElement => {
+const FirstSection: React.FC<BiologySectionProps> = ({
+    className,
+}: BiologySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
 
     return (
@@ -25,31 +27,31 @@ const FirstSection: React.FC<BiologySectionProps> = ({className}: BiologySection
                 </div>
 
                 <div className="biology-first-section-visual-block">
-                    <img 
-                        id="centered-svg" 
-                        src={paths.backgrounds[13]} 
-                        alt="background" 
+                    <img
+                        id="centered-svg"
+                        src={paths.backgrounds.other[1]}
+                        alt="background"
                         className="biology-first-section-centered-svg"
                     />
 
                     <div className="biology-first-section-pictures-block">
                         {paths.images.firstSection.map((src, index) => (
-                            <img 
+                            <img
                                 key={`picture-${index}`}
-                                id={`pictures-block-svg-${index + 1}`} 
-                                className="pictures-block-svg" 
-                                src={src} 
-                                alt={`biology illustration ${index + 1}`} 
+                                id={`pictures-block-svg-${index + 1}`}
+                                className="pictures-block-svg"
+                                src={src}
+                                alt={`biology illustration ${index + 1}`}
                             />
                         ))}
                     </div>
                 </div>
             </div>
 
-            <DSNotification 
-                content={textContent.lifeComponentsSection.notificationLabel} 
-                iconName={SvgSpriteIds.BIOLOGY_CELL} 
-                className="biology-first-section-notification" 
+            <DSNotification
+                content={textContent.lifeComponentsSection.notificationLabel}
+                iconName={SvgSpriteIds.BIOLOGY_CELL}
+                className="biology-first-section-notification"
                 backgroundColor="#489484"
                 textColor="#FFFFFF"
                 iconColor="#FFFFFF"
