@@ -9,20 +9,34 @@
 }
 
 .physcs-architecture-section-title {
-    padding: 44px 40px 36px;
+    padding: 44px 80px 36px;
+}
+
+.physcs-architecture-section-title p{
+    margin-top: 16px;
 }
 
 .physics-architecture-cards {
     margin-top: 20px;
     width: 100%;
-    /* max-width: 1152px; */
+    max-width: 1300px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+
+.physics-architecture-card {
+    /* width: 300px;  */
+    height: 90%;
+    padding: 0;
 
 }
 
-.physics-architecture-card {
-    width: 19%;
+.physics-architecture-card p {
+    white-space: pre-line;
+    align-items: flex-start;
 }

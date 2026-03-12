@@ -32,8 +32,9 @@ const ArchitectureSection: React.FC = (): ReactElement => {
                         display: 'flex',
                         justifyContent: 'center',
                         flexWrap: 'wrap',
-                        gap: 2,
+                        gap: 3,
                         // mt: 6
+                        alignItems: 'flex-start'
                     }}
                 >
 
@@ -42,12 +43,18 @@ const ArchitectureSection: React.FC = (): ReactElement => {
                             className="physics-architecture-card"
                             key={index}
                             sx={{
-                                // width: 250,
+                                width:
+                                    index === 0 ? 260 :
+                                    index === 1 ? 170 :
+                                    index === 2 ? 177 :
+                                    index === 3 ? 200 :
+                                    220,
                                 backgroundColor: 'transparent',
                                 border: '1px solid rgb(255, 255, 255)',
                                 borderRadius: '3px',
                                 color: 'white',
-                                boxShadow: 'none'
+                                boxShadow: 'none',
+                                height: 'auto',
                             }}
                         >
                             <CardContent>
@@ -55,7 +62,8 @@ const ArchitectureSection: React.FC = (): ReactElement => {
                                     variant="h6"
                                     sx={{
                                         fontWeight: 700,
-                                        mb: 2
+                                        fontSize: '18px',
+                                        // mb: 2
                                     }}
                                 >
                                     {item.title}
@@ -64,11 +72,23 @@ const ArchitectureSection: React.FC = (): ReactElement => {
                                 <Typography
                                     variant="body2"
                                     sx={{
+                                        opacity: 0.9,
                                         lineHeight: 1.7,
-                                        opacity: 0.9
                                     }}
                                 >
-                                    {item.description}
+                                    {index === 0
+                                        ? item.description.split("\n").map((line: string, i: number) => (
+                                            <span
+                                                key={i}
+                                                style={{
+                                                    display: "block",
+                                                    marginTop: i === 1 ? "20px" : "0"
+                                                }}
+                                            >
+                                                {line}
+                                            </span>
+                                        ))
+                                        : item.description}
 
                                 </Typography>
                             </CardContent>
