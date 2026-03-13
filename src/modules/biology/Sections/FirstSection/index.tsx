@@ -29,7 +29,7 @@ const FirstSection: React.FC<BiologySectionProps> = ({
                 <div className="biology-first-section-visual-block">
                     <img
                         id="centered-svg"
-                        src={paths.backgrounds.other[1]}
+                        src={paths.backgrounds.other[0]}
                         alt="background"
                         className="biology-first-section-centered-svg"
                     />

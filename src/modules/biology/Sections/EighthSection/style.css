@@ -1,6 +1,5 @@
 .biology-eighth-section {
     background-color: #ad92c3;
-    padding: 2.75rem 9rem;
     height: 59.3125rem;
     display: flex;
     flex-direction: row;
@@ -8,20 +7,29 @@
     gap: 1.5rem;
 }
 
-.left-content-section {
+.biology-eighth-section-header-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 36px;
+}
+
+.left-part {
     display: flex;
     flex-direction: column;
     gap: 2.25rem;
     width: 42.0625rem;
+
+    margin: 6rem 0 0 10%;
 }
 
-.left-content-section .card-section {
+.left-part .card-section {
     display: flex;
     flex-direction: row;
     gap: 1.5625rem;
 }
 
-.left-content-section .card-section .card {
+.left-part .card-section .card {
     font-size: 1rem !important;
     background-color: #7a61a0;
     width: 20.25rem;
@@ -37,7 +45,7 @@
     position: relative;
 }
 
-.left-content-section .card-section .card::after {
+.left-part .card-section .card::after {
     content: "";
     position: absolute;
     top: 0;
@@ -56,19 +64,20 @@
     pointer-events: none;
 }
 
-.left-content-section .card-section .card .card-title {
+.left-part .card-section .card .card-title {
     font-size: 1.25rem;
 }
 
-.right-content-section {
+.right-part {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 31.5625rem;
+    margin-left: 3rem;
 }
 
-.right-content-section .image {
+.right-part .image {
     width: 29.5625rem;
 }
 

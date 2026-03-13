@@ -17,10 +17,15 @@ const EighthSection: React.FC<BiologySectionProps> = ({
 
     return (
         <section className={className}>
-            <div className="left-content-section">
-                <h1 className="title">{textContent.evolutionSection.title}</h1>
-                <div className="description">
-                    {textContent.evolutionSection.description}
+            <div className="left-part">
+                <div className="biology-eighth-section-header-container">
+                    <h1 className="biology-eighth-section-title">
+                        {textContent.evolutionSection.title}
+                    </h1>
+
+                    <div className="biology-eighth-section-description">
+                        {textContent.evolutionSection.description}
+                    </div>
                 </div>
 
                 <div className="card-section">
@@ -60,7 +65,7 @@ const EighthSection: React.FC<BiologySectionProps> = ({
                 />
             </div>
 
-            <div className="right-content-section">
+            <div className="right-part">
                 <img
                     className="image"
                     src={paths.images.evoSection}

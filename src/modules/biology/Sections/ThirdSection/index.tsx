@@ -19,25 +19,25 @@ const ThirdSection: React.FC<BiologySectionProps> = ({
             <img
                 className="biology-third-section-background"
                 id="biology-third-section-background-svg-1"
-                src={paths.backgrounds.other[2]}
-                alt="image"
-            />
-            <img
-                className="biology-third-section-background"
-                id="biology-third-section-background-svg-2"
                 src={paths.backgrounds.other[1]}
                 alt="image"
             />
             <img
                 className="biology-third-section-background"
+                id="biology-third-section-background-svg-2"
+                src={paths.backgrounds.other[0]}
+                alt="image"
+            />
+            <img
+                className="biology-third-section-background"
                 id="biology-third-section-background-svg-3"
-                src={paths.backgrounds.other[2]}
+                src={paths.backgrounds.other[1]}
                 alt="image"
             />
             <img
                 className="biology-third-section-background"
                 id="biology-third-section-background-svg-4"
-                src={paths.backgrounds.other[2]}
+                src={paths.backgrounds.other[1]}
                 alt="image"
             />
 

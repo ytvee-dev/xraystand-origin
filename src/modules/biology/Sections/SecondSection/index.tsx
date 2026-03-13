@@ -16,12 +16,12 @@ const SecondSection: React.FC<BiologySectionProps> = ({
         <section className={className}>
             <img
                 id="biology-second-section-background-svg-1"
-                src={paths.backgrounds.other[1]}
+                src={paths.backgrounds.other[0]}
                 alt="image"
             />
             <img
                 id="biology-second-section-background-svg-2"
-                src={paths.backgrounds.other[1]}
+                src={paths.backgrounds.other[0]}
                 alt="image"
             />
 

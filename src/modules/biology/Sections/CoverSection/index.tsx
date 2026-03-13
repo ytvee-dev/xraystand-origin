@@ -8,24 +8,24 @@ import { type ReactElement } from "react";
 import "./style.css";
 
 const coverSectionBackgroundsSrcArray: string[] = [
-    paths.backgrounds.other[5],
-    paths.backgrounds.other[4],
-    paths.backgrounds.other[3],
-    paths.backgrounds.other[1],
+    paths.backgrounds.coverSection[3],
+    paths.backgrounds.coverSection[2],
+    paths.backgrounds.coverSection[1],
+    paths.backgrounds.other[0],
 ];
 
 const coverSectionHeroContent = [
     {
         id: "bio-content-back-lower",
-        src: paths.backgrounds.other[7],
+        src: paths.backgrounds.coverSection[5],
     },
     {
         id: "bio-content-back-upper",
-        src: paths.backgrounds.other[6],
+        src: paths.backgrounds.coverSection[4],
     },
     {
         id: "bio-content-darvin",
-        src: paths.backgrounds.other[0],
+        src: paths.backgrounds.coverSection[0],
     },
 ];
 
@@ -81,8 +81,11 @@ const CoverSection: React.FC<BiologySectionProps> = ({
                             <div>{heroContentTextArray[1]}</div>
                         </div>
                     </div>
+
+                    <p id="biology-cover-section-subtitle">
+                        {textContent.coverSection.subTitle}
+                    </p>
                 </div>
-                <p id="subtitle">{textContent.coverSection.subTitle}</p>
             </div>
         </section>
     );

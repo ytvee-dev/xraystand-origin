@@ -3,13 +3,12 @@ import * as paths from "@modules/biology/locales/paths.json";
 import React, { type ReactElement, useState } from "react";
 import * as textContentRu from "@modules/biology/locales/rus.json";
 import * as textContentKz from "@modules/biology/locales/kaz.json";
+import CardContentRenderer from "@modules/biology/components/CardContentRender";
 import { type BiologySectionProps } from "@modules/biology/types";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocaleContent } from "@hooks/useLocale";
 import { usePageData } from "@hooks/usePageData";
-
 import "./style.css";
-import CardContentRenderer from "@modules/biology/components/CardContentRender";
 
 export type TImgCard = {
     id: string;
@@ -27,27 +26,43 @@ const FourthSection: React.FC<BiologySectionProps> = ({
     const isMobile = screenWidth <= 768;
     const [index, setIndex] = useState(0);
 
-    const imgCards: TImgCard[] = textContent.organismClassificationSection.content.map(
-        (contentItem, idx) => {
-            return {
-                id: String(idx + 1),
-                title: contentItem.title,
-                subtitle: "",
-                description: "",
-                image: paths.cards.fourthSectionCards[idx] || "",
-            };
-        },
-    );
+    const imgCards: TImgCard[] =
+        textContent.organismClassificationSection.content.map(
+            (contentItem, idx) => {
+                return {
+                    id: String(idx + 1),
+                    title: contentItem.title,
+                    subtitle: "",
+                    description: "",
+                    image: paths.cards.fourthSectionCards[idx] || "",
+                };
+            },
+        );
 
     return (
         <section className={className}>
-            <div className="biology-fourth-section-background">
-                {/* <img src={paths.svg.spiral} alt={"image"} /> */}
+            <div className="biology-fourth-section-background-images">
+                <img
+                    id="bio-back-svg-4-0"
+                    className="bio-background-svg"
+                    src={paths.backgrounds.other[1]}
+                    alt="image"
+                />
+                <img
+                    id="bio-back-svg-4-1"
+                    className="bio-background-svg"
+                    src={paths.backgrounds.other[1]}
+                    alt="image"
+                />
             </div>
 
             <div className="biology-fourth-section-header-block">
-                <span className="title">{textContent.organismClassificationSection.title}</span>
-                <div className="description">{textContent.organismClassificationSection.description}</div>
+                <span className="biology-fourth-section-title">
+                    {textContent.organismClassificationSection.title}
+                </span>
+                <div className="biology-fourth-section-description">
+                    {textContent.organismClassificationSection.description}
+                </div>
             </div>
 
             <div className="biology-fourth-section-main-content">
@@ -93,15 +108,23 @@ const FourthSection: React.FC<BiologySectionProps> = ({
                 </div>
                 <div className="biology-fourth-section-card-text">
                     <h3 className="biology-card-title">
-                        {textContent.organismClassificationSection.content[index % imgCards.length].title}
+                        {
+                            textContent.organismClassificationSection.content[
+                                index % imgCards.length
+                            ].title
+                        }
                     </h3>
 
                     <div className="biology-card-content">
-                        <CardContentRenderer 
-                            items={textContent.organismClassificationSection.content[index % imgCards.length].cardContent}
+                        <CardContentRenderer
+                            items={
+                                textContent.organismClassificationSection
+                                    .content[index % imgCards.length]
+                                    .cardContent
+                            }
                             classNames={{
                                 text: "biology-card-text",
-                                list: "biology-card-list"
+                                list: "biology-card-list",
                             }}
                         />
                     </div>
