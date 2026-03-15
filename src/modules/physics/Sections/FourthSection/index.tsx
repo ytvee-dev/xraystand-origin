@@ -10,13 +10,9 @@ import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardMedia from "@mui/material/CardMedia";
 import ArchitectureSection from "./ArchitectureSection";
-
-
-// type TInLifeCard = {
-//     title: string;
-//     subtitle?: string;
-//     description?: string;
-// };
+import DigitalSection from "./DigitalSection";
+import MedicalSection from "./MedicalSection";
+import EverydaySection from "./EverydaySection";
 
 const FourthSection: React.FC = (): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
@@ -56,6 +52,9 @@ const FourthSection: React.FC = (): ReactElement => {
                 ))}
             </div>
             <ArchitectureSection />
+            {/* <DigitalSection /> */}
+            {/* <MedicalSection /> */}
+            <EverydaySection />
         </section>
     );
 };

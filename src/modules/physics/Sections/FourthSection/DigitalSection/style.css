@@ -1,0 +1,53 @@
+.physics-digital-section {
+    width: 100%;
+    justify-content: center;
+    padding: 40px 90px 36px;
+    margin: 0px auto
+}
+
+.physics-digital-cards {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.physics-architecture-card {
+    height: 90%;
+    padding: 0;
+
+}
+
+.physics-architecture-card p {
+    white-space: pre-line;
+    align-items: flex-start;
+    padding: 0;
+}
+
+
+.digital-list {
+    padding-left:16px;
+    /* padding-top: 30px;   */
+    list-style-type: disc;
+}
+
+.physics-digital-card:nth-child(1) .MuiCardContent-root ul:nth-of-type(n) {
+    margin-top: 0px !important;
+}
+
+.physics-digital-card:nth-child(2) .MuiCardContent-root ul:nth-of-type(n) {
+    margin-top: 15px;
+}
+
+.physics-digital-card:nth-child(3) .MuiCardContent-root ul:nth-of-type(n+2) {
+    margin-top: 15px;
+}
+
+.physics-digital-card:nth-child(4) .MuiCardContent-root ul:nth-of-type(n+1) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
