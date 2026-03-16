@@ -6,20 +6,20 @@ import * as textContentRu from "@modules/physics/locales/rus.json";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import "./style.css";
 
-const ArchitectureSection: React.FC = (): ReactElement => {
+const PhysicsInArchitectureSection: React.FC = (): ReactElement => {
 
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const rawCards = textContent.examplesSection.content;
     const cardsData = rawCards.slice(1, 6);
+    const cardsWidth = [260, 170, 177, 200, 220];
 
     return (
         <div className="physics-architecture-section">
 
                 <BackgroundedTitle
                     title={rawCards[0].title}
-                    subtitle={rawCards[0].subTitle}
+                    description={rawCards[0].subTitle}
                     titleFontWeight="700"
-                    subtitleFontSize="16px"
                     fullWidth
                 />
 
@@ -40,12 +40,7 @@ const ArchitectureSection: React.FC = (): ReactElement => {
                             className="physics-architecture-card"
                             key={index}
                             sx={{
-                                width:
-                                    index === 0 ? 260 :
-                                    index === 1 ? 170 :
-                                    index === 2 ? 177 :
-                                    index === 3 ? 200 :
-                                    220,
+                                width: cardsWidth[index],
                                 backgroundColor: 'transparent',
                                 border: '1px solid rgb(255, 255, 255)',
                                 borderRadius: '3px',
@@ -58,9 +53,7 @@ const ArchitectureSection: React.FC = (): ReactElement => {
                                 <Typography
                                     variant="h6"
                                     sx={{
-                                        fontWeight: 700,
                                         fontSize: '18px',
-                                        // mb: 2
                                     }}
                                 >
                                     {item.title}
@@ -98,4 +91,4 @@ const ArchitectureSection: React.FC = (): ReactElement => {
     );
 };
 
-export default ArchitectureSection;
+export default PhysicsInArchitectureSection;

@@ -63,9 +63,8 @@ const DigitalSection: React.FC = (): ReactElement => {
 
             <BackgroundedTitle
                 title={rawCards[6].title}
-                subtitle={rawCards[6].subTitle}
+                description={rawCards[6].subTitle}
                 titleFontWeight="700"
-                subtitleFontSize="16px"
                 fullWidth
             />
 
@@ -102,9 +101,7 @@ const DigitalSection: React.FC = (): ReactElement => {
                                 <Typography
                                     variant="h6"
                                     sx={{
-                                        // fontWeight: 700,
                                         fontSize: "18px",
-                                        // mb: "16px"
                                     }}
                                 >
                                     {item.title}

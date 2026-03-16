@@ -9,7 +9,7 @@ import "./style.css";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardMedia from "@mui/material/CardMedia";
-import ArchitectureSection from "./ArchitectureSection";
+import PhysicsInArchitectureSection from "./PhysicsInArchitectureSection";
 import DigitalSection from "./DigitalSection";
 import MedicalSection from "./MedicalSection";
 import EverydaySection from "./EverydaySection";
@@ -18,12 +18,17 @@ const FourthSection: React.FC = (): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const content = textContent.inLifeSection.content;
 
+    const [activeCard, setActiveCard] = React.useState<number | null>(null);
+
+    const handleCardClick = (index: number) => {
+        setActiveCard(index === activeCard ? null : index);
+    };
+
     return (
         <section className="physics-fourth-section">
             <div className="physcs-fourth-section-title">
                 <BackgroundedTitle
                     title={textContent.inLifeSection.title}
-                    bgColor="#ee7630"
                     titleFontWeight="700"
                     fullWidth
                 />
@@ -38,6 +43,7 @@ const FourthSection: React.FC = (): ReactElement => {
                                 component="img"
                                 height="140"
                                 image={cardsBg}
+                                onClick={() => handleCardClick(index)}
                             />
                         </CardActionArea>
                         <div className="card-content">
@@ -51,10 +57,31 @@ const FourthSection: React.FC = (): ReactElement => {
                     </Card>
                 ))}
             </div>
-            <ArchitectureSection />
-            {/* <DigitalSection /> */}
-            {/* <MedicalSection /> */}
-            <EverydaySection />
+             <div className="physics-cards">
+                {activeCard === 0 && (
+                    <div className="section-right">
+                        <EverydaySection />
+                    </div>
+                )}
+
+                {activeCard === 1 && (
+                    <div className="section-left">
+                        <PhysicsInArchitectureSection />
+                    </div>
+                )}
+
+                {activeCard === 2 && (
+                    <div className="section-right">
+                        <MedicalSection />
+                    </div>
+                )}
+
+                {activeCard === 3 && (
+                    <div className="section-left">
+                        <DigitalSection />
+                    </div>
+                )}
+            </div>
         </section>
     );
 };

@@ -13,17 +13,16 @@ const EverydaySection: React.FC = (): ReactElement => {
     const cardsData = rawCards.slice(18, 21);
 
     return (
-        <div className="physics-architecture-section">
+        <div className="physics-everyday-section">
 
                 <BackgroundedTitle
                     title={rawCards[17].title}
-                    subtitle={rawCards[17].subTitle}
+                    description={rawCards[17].subTitle}
                     titleFontWeight="700"
-                    subtitleFontSize="16px"
                     fullWidth
                 />
 
-            <div className="physics-architecture-cards">
+            <div className="physics-everyday-cards">
                 <Box
                     sx={{
                         display: 'flex',
@@ -37,7 +36,7 @@ const EverydaySection: React.FC = (): ReactElement => {
 
                     {cardsData.map((item: any, index: number) => (
                         <Card
-                            className="physics-architecture-card"
+                            className="physics-everyday-card"
                             key={index}
                             sx={{
                                 width:'368px',
@@ -53,9 +52,7 @@ const EverydaySection: React.FC = (): ReactElement => {
                                 <Typography
                                     variant="h6"
                                     sx={{
-                                        fontWeight: 700,
                                         fontSize: '18px',
-                                        // mb: 2
                                     }}
                                 >
                                     {item.title}

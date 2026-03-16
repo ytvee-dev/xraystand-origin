@@ -1,29 +1,21 @@
-.physics-architecture-section {
+.physics-everyday-section {
     width: 100%;
     justify-content: center;
     padding: 40px 90px 36px;
     margin: 0px auto;
 }
 
-.physics-architecture-section p {
+.physics-everyday-section p {
     margin-top: 15px;
 }
 
-.physics-architecture-cards {
-    width: 100%;
-    max-width: 1300px;
+.physics-everyday-cards {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
 }
 
-.physics-architecture-card {
-    height: 80%;
-    padding: 0;
-
-}
-
-.physics-architecture-card p {
+.physics-everyday-card p {
     white-space: pre-line;
     align-items: flex-start;
     margin-top: 0;

@@ -6,11 +6,12 @@ import * as textContentRu from "@modules/physics/locales/rus.json";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import "./style.css";
 
-const EverydaySection: React.FC = (): ReactElement => {
+const MedicalSection: React.FC = (): ReactElement => {
 
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const rawCards = textContent.examplesSection.content;
     const cardsData = rawCards.slice(12, 17);
+    const cardsWidth = [187, 187, 220, 240, 220];
 
     const renderText = (text: string) => {
     const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
@@ -21,7 +22,7 @@ const EverydaySection: React.FC = (): ReactElement => {
     const flushList = () => {
         if (listItems.length > 0) {
             result.push(
-                <ul key={result.length} className="digital-list">
+                <ul key={result.length} className="medical-list">
                     {listItems.map((item, i) => (
                         <li key={i}>{item}</li>
                     ))}
@@ -35,7 +36,7 @@ const EverydaySection: React.FC = (): ReactElement => {
         if (line.endsWith(":")) {
             flushList();
             result.push(
-                <div key={result.length} className="digital-list-title">
+                <div key={result.length} className="medical-list-title">
                     {line}
                 </div>
             );
@@ -47,7 +48,7 @@ const EverydaySection: React.FC = (): ReactElement => {
         } else {
             flushList();
             result.push(
-                <div key={result.length} className="digital-text">
+                <div key={result.length} className="medical-text">
                     {line}
                 </div>
             );
@@ -59,17 +60,16 @@ const EverydaySection: React.FC = (): ReactElement => {
     return result;
 };
     return (
-        <div className="physics-digital-section">
+        <div className="physics-medical-section">
 
             <BackgroundedTitle
                 title={rawCards[11].title}
-                subtitle={rawCards[11].subTitle}
+                description={rawCards[11].subTitle}
                 titleFontWeight="700"
-                subtitleFontSize="16px"
                 fullWidth
             />
 
-            <div className="physics-digital-cards">
+            <div className="physics-medical-cards">
 
                 <Box
                     sx={{
@@ -85,15 +85,10 @@ const EverydaySection: React.FC = (): ReactElement => {
                     {cardsData.map((item: any, index: number) => (
 
                         <Card
-                            className="physics-digital-card"
+                            className="physics-medical-card"
                             key={index}
                             sx={{
-                                width:
-                                    index === 0 ? 187 :
-                                    index === 1 ? 187 :
-                                    index === 2 ? 220 :
-                                    index === 3 ? 240 :
-                                    220,
+                                width: cardsWidth[index],
                                 backgroundColor: "transparent",
                                 border: "1px solid rgb(255,255,255)",
                                 borderRadius: "3px",
@@ -107,9 +102,7 @@ const EverydaySection: React.FC = (): ReactElement => {
                                 <Typography
                                     variant="h6"
                                     sx={{
-                                        // fontWeight: 700,
                                         fontSize: "18px",
-                                        // mb: "16px"
                                     }}
                                 >
                                     {item.title}
@@ -139,4 +132,4 @@ const EverydaySection: React.FC = (): ReactElement => {
     );
 };
 
-export default EverydaySection;
+export default MedicalSection;
