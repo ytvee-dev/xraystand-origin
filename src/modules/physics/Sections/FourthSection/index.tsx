@@ -36,7 +36,7 @@ const FourthSection: React.FC = (): ReactElement => {
 
             <div className="physics-fourth-section-content-wrapper">
                 {content.map((text, index) => (
-                    <Card key={index} className="card">
+                    <Card key={index} className="physics-fourth-section-top-card">
                         <CardActionArea className="card-area">
                             <CardMedia
                                 className="background-card"
@@ -46,7 +46,7 @@ const FourthSection: React.FC = (): ReactElement => {
                                 onClick={() => handleCardClick(index)}
                             />
                         </CardActionArea>
-                        <div className="card-content">
+                        <div className="physics-fourth-section-card-content">
                             <img 
                                 src={paths.cards[index]} 
                                 alt="icon" 
@@ -57,27 +57,27 @@ const FourthSection: React.FC = (): ReactElement => {
                     </Card>
                 ))}
             </div>
-             <div className="physics-cards">
+             <div className=" physics-fourth-section-cards">
                 {activeCard === 0 && (
-                    <div className="section-right">
+                    <div className="physics-section-right">
                         <EverydaySection />
                     </div>
                 )}
 
                 {activeCard === 1 && (
-                    <div className="section-left">
+                    <div className="physics-section-left">
                         <PhysicsInArchitectureSection />
                     </div>
                 )}
 
                 {activeCard === 2 && (
-                    <div className="section-right">
+                    <div className="physics-section-right">
                         <MedicalSection />
                     </div>
                 )}
 
                 {activeCard === 3 && (
-                    <div className="section-left">
+                    <div className="physics-section-left">
                         <DigitalSection />
                     </div>
                 )}
