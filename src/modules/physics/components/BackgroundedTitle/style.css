@@ -1,0 +1,47 @@
+.bg-title {
+    color: #fff;
+    letter-spacing: 0.25px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 15px;
+}
+
+.has-description {
+    padding: 24px;
+}
+
+.bg-title h2 {
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+.has-description h2 {
+    margin-bottom: 16px;
+}
+
+.bg-title p {
+    line-height: 150%;
+    letter-spacing: 0.15px;
+    margin-inline: 10%;
+}
+
+@media (max-width: 1024px) {
+    .bg-title {
+        padding: 12px 10px;
+    }
+
+    .bg-title p {
+        margin-inline: 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    .bg-title h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .bg-title p {
+        margin-inline: 0;
+    }
+}

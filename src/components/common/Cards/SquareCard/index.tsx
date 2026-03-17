@@ -1,52 +1,98 @@
-import React, {type ReactElement} from "react";
-import type {MathSectionProps} from "@modules/math/types";
+import { type CSSProperties, type ReactElement, type ReactNode } from "react";
+import type { TFlexDirection } from "@modules/fireSafety/components/Card";
 import "./style.css";
 
-export interface IGridCardProps extends MathSectionProps {
-    title?: string;
-    description?: string;
+export interface ICardData {
+    id: string;
+    title: string;
+    labels: ICardLabel[];
     imagePath?: string;
-    cardStyle: 'square' | 'square-rounded';
-    sx?: {
-        borderType?: 'solid' | 'dashed' | 'none';
-        borderColor?: string;
-        textColor?: string;
-        cardPadding?: string;
-        cardMaxWidth?: string;
-    };
+    imageStyle?: CSSProperties;
 }
 
-const SquareCard: React.FC<IGridCardProps> = ({
-  title,
-  description,
-  imagePath,
-  cardStyle = 'square',
-  sx = {
-      borderType: 'solid',
-      borderColor: 'transparent',
-      textColor: 'white',
-      cardPadding: '24px',
-      cardMaxWidth: '100%',
-  },
-  className,
-}): ReactElement => {
+export interface ICardLabel {
+    description: string;
+    listParts?: string[];
+}
+
+export interface ISquareCardProps {
+    id?: string;
+    className: string;
+    title?: string;
+    labels: ICardLabel[];
+    titleClassName?: string;
+    labelClassName?: string;
+    imagePath?: string;
+    flexDirection?: TFlexDirection;
+    imageStyle?: CSSProperties;
+    cardStyle?: CSSProperties;
+    cardContentStyle?: CSSProperties;
+    labelWrapperStyle?: CSSProperties;
+}
+
+const SquareCard = ({
+    id,
+    className,
+    title = "",
+    labels,
+    titleClassName = "",
+    labelClassName = "",
+    flexDirection = "row",
+    imageStyle,
+    imagePath,
+    labelWrapperStyle,
+    cardContentStyle,
+    cardStyle,
+}: ISquareCardProps): ReactElement => {
+    const renderLabel = (): ReactNode => {
+        return labels.map((labelData: ICardLabel, index: number) => {
+            if (labelData.listParts?.length !== 0) {
+                return (
+                    <div className="square-card-list" key={index}>
+                        <p className={labelClassName}>
+                            {labelData.description}
+                        </p>
+                        <ul className={labelClassName}>
+                            {labelData.listParts?.map(
+                                (listPart: string, index: number) => (
+                                    <li key={index}>{listPart}</li>
+                                ),
+                            )}
+                        </ul>
+                    </div>
+                );
+            }
+
+            return (
+                <p key={index} className={labelClassName}>
+                    {labelData.description}
+                </p>
+            );
+        });
+    };
+
     return (
         <div
-            className={`square-card ${cardStyle} ${className || ''}`}
-            style={{
-                border: `1px ${sx.borderType} ${sx.borderColor}`,
-                padding: sx.cardPadding,
-                maxWidth: sx.cardMaxWidth,
-            }}
+            id={id || ""}
+            className={`square-card  ${className || ""}`}
+            style={{ flexDirection: flexDirection, ...cardStyle }}
         >
             {imagePath && (
                 <div className="square-card-image">
-                    <img src={imagePath} alt={title}/>
+                    <img src={imagePath} alt={title} style={imageStyle} />
                 </div>
             )}
-            <div className="square-card-content">
-                {title && <h3 style={{color: sx.textColor}}>{title}</h3>}
-                {description && <p style={{color: sx.textColor}}>{description}</p>}
+
+            <div className="square-card-content" style={cardContentStyle}>
+                {title && <h2 className={titleClassName}>{title}</h2>}
+                {labels && (
+                    <div
+                        className="square-card-label-wrapper"
+                        style={labelWrapperStyle}
+                    >
+                        {renderLabel()}
+                    </div>
+                )}
             </div>
         </div>
     );

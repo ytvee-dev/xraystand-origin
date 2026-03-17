@@ -73,17 +73,17 @@ const pagesInfo: IPageInfo[] = [
         status: "active",
     },
     {
-        id: paths.KAZ_MUSIC.id,
-        path: paths.KAZ_MUSIC.path,
-        title: "Казахские музыкальные инструменты",
-        description: "Традиционные музыкальные инструменты Казахстана",
-        status: "in-progress",
-    },
-    {
         id: paths.FIRE_SAFETY.id,
         path: paths.FIRE_SAFETY.path,
         title: "Пожарная безопасность",
         description: "Описание правил пожарной безопасности",
+        status: "active",
+    },
+    {
+        id: paths.KAZ_MUSIC.id,
+        path: paths.KAZ_MUSIC.path,
+        title: "Казахские музыкальные инструменты",
+        description: "Традиционные музыкальные инструменты Казахстана",
         status: "in-progress",
     },
     {
