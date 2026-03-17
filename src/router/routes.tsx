@@ -1,6 +1,6 @@
 import Demo from "@pages/Demo";
-import {lazy} from "react";
-import {type RouteObject} from "react-router";
+import { lazy } from "react";
+import { type RouteObject } from "react-router";
 import Implementation from "@pages/Implementation";
 
 const HomePage = lazy(() => import("@pages/Home"));
@@ -16,7 +16,8 @@ const Biology = lazy(() => import("@pages/Biology"));
 const Pages = lazy(() => import("@pages/Pages"));
 const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
 const FireSafety = lazy(() => import("@pages/FireSafety"));
-const Physics = lazy(() => import('@pages/Physics'));
+const Physics = lazy(() => import("@pages/Physics"));
+
 // const KazMusic = lazy(() => import("@pages/KazMusic"));
 
 export const paths = {
@@ -93,31 +94,31 @@ export const paths = {
 const routes: RouteObject[] = [
     {
         ...paths.HOME,
-        element: <HomePage/>,
+        element: <HomePage />,
     },
     {
         ...paths.TRAFFIC_LAWS_PAGE,
-        element: <TrafficsLawsPage/>,
+        element: <TrafficsLawsPage />,
     },
     {
         ...paths.CHEMISTRY,
-        element: <Chemistry/>,
+        element: <Chemistry />,
     },
     {
         ...paths.RUS_LIT,
-        element: <RusLit/>,
+        element: <RusLit />,
     },
     {
         ...paths.KAZAKH_ADEBIET,
-        element: <KazakhAdebiet/>,
+        element: <KazakhAdebiet />,
     },
     {
         ...paths.MATH,
-        element: <Mathematics/>,
+        element: <Mathematics />,
     },
     {
         ...paths.NUTRITION,
-        element: <Nutrition/>,
+        element: <Nutrition />,
     },
     {
         ...paths.SAFETY_PRECAUTIONS,
@@ -126,40 +127,42 @@ const routes: RouteObject[] = [
     {
         ...paths.KAZ_MUSIC,
         // element: <KazMusic />,
-        element: <InProgress/>,
+        element: <InProgress />,
     },
     {
         ...paths.FIRE_SAFETY,
-        element: <FireSafety/>,
+        element: <FireSafety />,
     },
     {
         ...paths.PHYSICS,
-        element: <Physics/>
+        element: <Physics />,
     },
     {
         ...paths.ENGLISH,
-        element: <NotFoundPage/>
+        element: <NotFoundPage />,
     },
     {
         ...paths.BIOLOGY,
-        element: <Biology/>
+        element: <Biology />,
     },
+    { ...paths.ENGLISH, element: <NotFoundPage /> },
+    { ...paths.BIOLOGY, element: <Biology /> },
     {
         ...paths.PAGES,
-        element: <Pages/>,
+        element: <Pages />,
     },
     {
         ...paths.IMPLEMENTATION,
-        element: <Implementation/>,
+        element: <Implementation />,
     },
 
     {
         ...paths.NOT_FOUND,
-        element: <NotFoundPage/>,
+        element: <NotFoundPage />,
     },
     {
         ...paths.DEMO,
-        element: <Demo/>,
+        element: <Demo />,
     },
 ];
 

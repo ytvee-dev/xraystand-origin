@@ -1,74 +1,72 @@
-import React from "react";
+import SquareCard, {
+    type ICardData,
+    type ICardLabel,
+} from "@components/common/Cards/SquareCard";
 import * as paths from "@modules/biology/locales/paths.json";
-import * as textContentKz from "@modules/biology/locales/kaz.json";
 import * as textContentRu from "@modules/biology/locales/rus.json";
-import { type BiologySectionProps } from "@modules/biology/types";
+import * as textContentKaz from "@modules/biology/locales/kaz.json";
+import { groupByTitle, type IContentItem } from "@modules/biology/functions";
+import type { BiologySectionProps } from "@modules/biology/types";
+import type { CSSProperties, ReactElement } from "react";
 import { useLocaleContent } from "@hooks/useLocale";
-import { type ReactElement } from "react";
 import "./style.css";
-import DSNotification from "@components/common/DSNotification";
-import { SvgSpriteIds } from "@utils/constants";
 
-const FifthSection: React.FC<BiologySectionProps> = ({className}: BiologySectionProps): ReactElement => {
-    const textContent = useLocaleContent(textContentRu, textContentKz);
+const FifthSection = ({ className }: BiologySectionProps): ReactElement => {
+    const textContent = useLocaleContent(textContentRu, textContentKaz);
+
+    const cardsStyles: CSSProperties[] = [
+        { width: "8.75rem", marginTop: "2rem" },
+        { width: "8rem", marginTop: "2rem" },
+        { width: "6.5rem" },
+    ];
+
+    const groups = groupByTitle(textContent.naturalSelectionSection.content);
+
+    const cardsData: ICardData[] = groups.map((textData, index) => {
+        const cardLabels: ICardLabel[] = textData.items.map(
+            (data: IContentItem) => {
+                return {
+                    description: data.description,
+                    listParts: data.listParts || [],
+                };
+            },
+        );
+
+        return {
+            id: `fifth-section-card-${index}`,
+            title: textData.title,
+            labels: cardLabels,
+            imagePath: paths.images.fifthSection[index],
+            imageStyle: cardsStyles[index],
+        };
+    });
 
     return (
         <section className={className}>
-            <div className="left-content-section">
-                <h1 className="title">{textContent.evolutionSection.title}</h1>
-                <div className="description">
-                    {textContent.evolutionSection.description}
+            <h1 className="biology-fifth-section-header header-biology-section-text">
+                {textContent.naturalSelectionSection.title}
+            </h1>
+
+            <div className="biology-fifth-section-content">
+                <div className="biology-fifth-section-cards-container">
+                    {cardsData.map((cardData: ICardData) => (
+                        <SquareCard
+                            key={cardData.id}
+                            id={cardData.id}
+                            className="biology-fifth-section-card"
+                            title={cardData.title}
+                            labels={cardData.labels}
+                            titleClassName="title-bilogy-text"
+                            labelClassName="description-biology-small-text"
+                            imagePath={cardData.imagePath}
+                            imageStyle={cardData.imageStyle}
+                            labelWrapperStyle={{ gap: "0.8rem" }}
+                        />
+                    ))}
                 </div>
-
-                <div className="card-section">
-                    <div className="card" id="card-left">
-                        <span className="card-title">{textContent.evolutionSection.content[0].description}</span>
-                        
-                        <div className="main-description">
-                            {textContent.evolutionSection.content[1].description}
-                        </div>
-
-                        <span>{textContent.evolutionSection.content[2].description}</span>
-
-                        <ul className="card-description-list">
-                            <li>{textContent.evolutionSection.content[3].description}</li>
-                            <li>{textContent.evolutionSection.content[4].description}</li>
-                            <li>{textContent.evolutionSection.content[5].description}</li>
-                        </ul>
-
-                    </div>
-                    <div className="card" id="card-right">
-                        <span className="card-title">{textContent.evolutionSection.content[6].description}</span>
-
-                        <ul className="card-description-list">
-                            <li>{textContent.evolutionSection.content[7].description}</li>
-                            <li>{textContent.evolutionSection.content[8].description}</li>
-                            <li>{textContent.evolutionSection.content[9].description}</li>
-                            <li>{textContent.evolutionSection.content[10].description}</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <DSNotification 
-                    className="biology-fifth-section-notification"
-                    content={textContent.evolutionSection.notificationLabel}
-                    iconName={SvgSpriteIds.BIOLOGY_CELL} 
-                    backgroundColor="#7A61A0"
-                    textColor="#FFFFFF"
-                    iconColor="#FFFFFF"
-                    borderRadius="2.5rem"
-                    padding = "0 0"
-                    iconWidth="2.4375rem"
-                    iconHeight="2.4375rem"
-                    cardGap="24px"
-                />
-            </div>
-
-            <div className="right-content-section">
-                <img className="image" src={paths.images.evoSection} alt="image" />
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default FifthSection;

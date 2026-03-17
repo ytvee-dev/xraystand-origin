@@ -7,64 +7,63 @@ import { useLocaleContent } from "@hooks/useLocale";
 import { type ReactElement } from "react";
 import "./style.css";
 
+const coverSectionBackgroundsSrcArray: string[] = [
+    paths.backgrounds.coverSection[3],
+    paths.backgrounds.coverSection[2],
+    paths.backgrounds.coverSection[1],
+    paths.backgrounds.other[0],
+];
+
+const coverSectionHeroContent = [
+    {
+        id: "bio-content-back-lower",
+        src: paths.backgrounds.coverSection[5],
+    },
+    {
+        id: "bio-content-back-upper",
+        src: paths.backgrounds.coverSection[4],
+    },
+    {
+        id: "bio-content-darvin",
+        src: paths.backgrounds.coverSection[0],
+    },
+];
+
 const CoverSection: React.FC<BiologySectionProps> = ({
     className,
 }: BiologySectionProps): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
 
-    const heroContentTextArray: string[] = textContent.coverSection.title.split(" ");
+    const heroContentTextArray: string[] =
+        textContent.coverSection.title.split(" ");
 
     return (
         <section className={className}>
-            <img
-                id="bio-back-svg-1"
-                className="bio-background-svg"
-                src={paths.backgrounds[17]}
-                alt="image"
-            />
-            <img
-                id="bio-back-svg-2"
-                className="bio-background-svg"
-                src={paths.backgrounds[16]}
-                alt="image"
-            />
-            <img
-                id="bio-back-svg-3"
-                className="bio-background-svg"
-                src={paths.backgrounds[15]}
-                alt="image"
-            />
-            <img
-                id="bio-back-svg-4"
-                className="bio-background-svg"
-                src={paths.backgrounds[13]}
-                alt="image"
-            />
+            {coverSectionBackgroundsSrcArray.map((src, index) => (
+                <img
+                    key={index}
+                    id={`bio-back-svg-${index + 1}`}
+                    className="bio-background-svg"
+                    src={src}
+                    alt="image"
+                />
+            ))}
 
             <div className="biology-hero-wrapper">
                 <div className="biology-hero-content">
-                    <img
-                        className="bio-hero-content-svg"
-                        id="bio-content-back-lower"
-                        src={paths.backgrounds[19]}
-                        alt={"image"}
-                    />
-                    <img
-                        className="bio-hero-content-svg"
-                        id="bio-content-back-upper"
-                        src={paths.backgrounds[18]}
-                        alt={"image"}
-                    />
-                    <img
-                        className="bio-hero-content-svg"
-                        id="bio-content-darvin"
-                        src={paths.backgrounds[0]}
-                        alt={"image"}
-                    />
+                    {coverSectionHeroContent.map((imgContent, index) => (
+                        <img
+                            key={index}
+                            className="bio-hero-content-svg"
+                            id={imgContent.id}
+                            src={imgContent.src}
+                            alt={"image"}
+                        />
+                    ))}
 
                     <div className="biology-hero-content-text">
                         <div className="upper-block">
-                            <h1>{heroContentTextArray[0]}</h1>
+                            <div>{heroContentTextArray[0]}</div>
 
                             <img
                                 className="bio-hero-content-text-svg"
@@ -79,11 +78,14 @@ const CoverSection: React.FC<BiologySectionProps> = ({
                                 alt=""
                             />
 
-                            <h1>{heroContentTextArray[1]}</h1>
+                            <div>{heroContentTextArray[1]}</div>
                         </div>
                     </div>
+
+                    <p id="biology-cover-section-subtitle">
+                        {textContent.coverSection.subTitle}
+                    </p>
                 </div>
-                <p id="subtitle">{textContent.coverSection.subTitle}</p>
             </div>
         </section>
     );
