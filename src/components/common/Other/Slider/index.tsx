@@ -1,59 +1,66 @@
-import React, {useState} from "react";
-import {
-    motion,
-    useMotionValue,
-    useTransform,
-} from "framer-motion";
+import React, { useState, type CSSProperties } from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import useScreenWidth from "@hooks/useScreenWidth.ts";
-import './style.css';
+import "./style.css";
 
-type TCard = { id: string; title: string; subtitle: string; description: string; image: string };
+type TCard = {
+    id: string;
+    title: string;
+    subtitle: string;
+    description: string;
+    image: string;
+};
 
 export interface ISliderProps {
     index: number;
     frontCard: boolean;
+    cardClassName?: string;
+    wrapperStyle?: CSSProperties;
     setIndex?: (n: number) => void;
     card: TCard;
     drag?: "x" | "y" | true;
-    width?: number,
-    height?: number,
-    mobileWidth?: number,
-    mobileHeight?: number,
-    borderRadius?: number
+    width?: number;
+    height?: number;
+    mobileWidth?: number;
+    mobileHeight?: number;
+    borderRadius?: number;
 }
 
 const Slider: React.FC<ISliderProps> = ({
     index,
     frontCard,
-    setIndex = (n: number) => {console.info(n)},
+    cardClassName = "",
+    setIndex = (n: number) => {
+        console.info(n);
+    },
     card,
     drag,
     width = 395,
     height = 395,
     mobileWidth = 200,
     mobileHeight = 200,
-    borderRadius = 10
+    borderRadius = 10,
 }) => {
     const screenWidth = useScreenWidth();
     const [exitX, setExitX] = useState(0);
 
     const x = useMotionValue(0);
     const rotate = useTransform(x, [-150, 0, 150], [-45, 0, 45], {
-        clamp: false
+        clamp: false,
     });
 
     const variantsFrontCard = {
-        animate: {scale: 1, y: 0, opacity: 1},
+        animate: { scale: 1, y: 0, opacity: 1 },
         exit: (custom: number) => ({
             x: custom,
             opacity: 0,
             scale: 0.5,
-            transition: {duration: 0.2}
-        })
+            transition: { duration: 0.2 },
+        }),
     };
     const variantsBackCard = {
-        initial: {scale: 0, y: 105, opacity: 0},
-        animate: {scale: 0.75, y: screenWidth >= 768 ? 70 : 40, opacity: 0.5}
+        initial: { scale: 0, y: 105, opacity: 0 },
+        animate: { scale: 0.75, y: screenWidth >= 768 ? 70 : 40, opacity: 0.5 },
     };
 
     function handleDragEnd(_: any, info: any) {
@@ -78,11 +85,11 @@ const Slider: React.FC<ISliderProps> = ({
                 top: 0,
                 x,
                 rotate,
-                cursor: "grab"
+                cursor: "grab",
             }}
-            whileTap={{cursor: "grabbing"}}
+            whileTap={{ cursor: "grabbing" }}
             drag={drag}
-            dragConstraints={{top: 0, right: 0, bottom: 0, left: 0}}
+            dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
             onDragEnd={handleDragEnd}
             variants={frontCard ? variantsFrontCard : variantsBackCard}
             initial="initial"
@@ -91,16 +98,17 @@ const Slider: React.FC<ISliderProps> = ({
             custom={exitX}
             transition={
                 frontCard
-                    ? {type: "spring", stiffness: 300, damping: 20}
-                    : {scale: {duration: 0.2}, opacity: {duration: 0.4}}
+                    ? { type: "spring", stiffness: 300, damping: 20 }
+                    : { scale: { duration: 0.2 }, opacity: { duration: 0.4 } }
             }
+            className={cardClassName}
         >
             <div
-                className='slider-card-wrapper'
+                className="slider-card-wrapper"
                 style={{
                     width: screenWidth >= 768 ? width : mobileWidth,
                     height: screenWidth >= 768 ? height : mobileHeight,
-                    borderRadius: `${borderRadius}px`     
+                    borderRadius: `${borderRadius}px`,
                 }}
             >
                 <img
@@ -109,11 +117,10 @@ const Slider: React.FC<ISliderProps> = ({
                     alt={card.title}
                     loading="lazy"
                 />
-                <div className='slider-image-wrapper'></div>
+                <div className="slider-image-wrapper"></div>
             </div>
-
         </motion.div>
     );
-}
+};
 
 export default Slider;

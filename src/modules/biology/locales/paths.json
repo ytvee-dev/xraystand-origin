@@ -12,19 +12,23 @@
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643360/way-section-9_glvhax.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643360/way-section-10_pzpv2e.webp"
         ],
-        "secondSection": [
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643349/vacuoles_bg6spr.webp",
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643349/ribosome_qrjmbf.webp",
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643348/platypus_si52ok.webp",
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643348/plant_ip71qh.webp",
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643346/mushrooms_fvh52h.webp",
+        "secondSectionCards": [
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643346/membrane_p75lyd.webp",
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643345/eukaryotes_ibk8wt.webp",
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643345/lysosome_sw2ahu.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643344/cytoplasm_vf5jyp.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643343/core_fh341v.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770647862/mitochondria_hzpif2.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643349/ribosome_qrjmbf.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643345/lysosome_sw2ahu.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1772017106/golgiApparatus_odi8mr.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643349/vacuoles_bg6spr.webp"
+        ],
+        "fourthSectionCards": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1772017107/prokaryotes_rdlysa.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643343/bacteria-and-archaea_fx7sau.webp",
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770647862/mitochondria_hzpif2.webp"
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643345/eukaryotes_ibk8wt.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643348/plant_ip71qh.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643346/mushrooms_fvh52h.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643348/platypus_si52ok.webp"
         ]
     },
     "backgrounds": {
@@ -42,15 +46,18 @@
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643443/viruses-11_nih4rx.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643443/viruses-12_zk25aq.webp"
         ],
-        "other": [
+
+        "coverSection": [
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643457/darvin-photo_nnqmgf.webp",
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643430/uncollored-cell-1_diac1o.webp",
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643430/uncollored-cell-2_azvg7o.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643430/studded-figure_mxavvm.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643429/molecule_empikn.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643429/gen-molecule_j8gl1h.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643106/upper-background_jlngo7.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643106/lower-background_ruqjyt.webp"
+        ],
+        "other": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643430/uncollored-cell-1_diac1o.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643430/uncollored-cell-2_azvg7o.webp"
         ]
     },
     "images": {
@@ -60,11 +67,14 @@
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1772025842/adaptation_wrh9uo.webp"
         ],
         "firstSection": [
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643591/colored-cubics-2_ktcoyf.webp",
-            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643590/colored-cubics-1_bms2ks.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643589/colored-cell-3_jsjr6s.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643588/colored-cell-2_zp2knq.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643586/colored-cell-1_f8fedt.webp"
-        ]
+        ],
+        "coverSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643591/colored-cubics-2_ktcoyf.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1770643590/colored-cubics-1_bms2ks.webp"
+        ],
+        "evoSection": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1772625425/evo-img_fxagcl.webp"
     }
 }

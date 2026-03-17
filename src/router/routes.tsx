@@ -12,11 +12,11 @@ const Chemistry = lazy(() => import("@pages/Chemistry"));
 const RusLit = lazy(() => import("@pages/RusLit"));
 const Nutrition = lazy(() => import("@pages/Nutrition"));
 const Mathematics = lazy(() => import("@pages/Mathematics"));
+const Biology = lazy(() => import("@pages/Biology"));
 const Pages = lazy(() => import("@pages/Pages"));
 const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
 const FireSafety = lazy(() => import("@pages/FireSafety"));
 const Physics = lazy(() => import("@pages/Physics"));
-const Biology = lazy(() => import("@pages/Biology"));
 
 // const KazMusic = lazy(() => import("@pages/KazMusic"));
 
@@ -136,6 +136,14 @@ const routes: RouteObject[] = [
     {
         ...paths.PHYSICS,
         element: <Physics />,
+    },
+    {
+        ...paths.ENGLISH,
+        element: <NotFoundPage />,
+    },
+    {
+        ...paths.BIOLOGY,
+        element: <Biology />,
     },
     { ...paths.ENGLISH, element: <NotFoundPage /> },
     { ...paths.BIOLOGY, element: <Biology /> },

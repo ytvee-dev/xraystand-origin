@@ -1,4 +1,4 @@
-import { type CSSProperties, type ReactElement } from "react";
+import { type CSSProperties, type ReactElement, type ReactNode } from "react";
 import { Alert } from "@mui/material";
 import SpriteIcon from "@components/common/Other/SpriteIcon";
 import "./style.css";
@@ -15,7 +15,7 @@ type WidthTypes = "small" | "middle" | "large";
 type ImgPosition = "flex-start" | "center" | "flex-end";
 
 export interface IFlexibleAlertProps {
-    content: List | Label;
+    content: List | Label | ReactNode;
     listMark?: ListTypes;
     type?: TNotificationTypes;
     backgroundColor?: string;
