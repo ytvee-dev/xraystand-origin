@@ -18,7 +18,7 @@ const FourthSection: React.FC = (): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const content = textContent.inLifeSection.content;
 
-    const [activeCard, setActiveCard] = React.useState<number | null>(null);
+    const [activeCard, setActiveCard] = React.useState<number | null>(0);
 
     const handleCardClick = (index: number) => {
         setActiveCard(index === activeCard ? null : index);
@@ -26,14 +26,11 @@ const FourthSection: React.FC = (): ReactElement => {
 
     return (
         <section className="physics-fourth-section">
-            <div className="physcs-fourth-section-title">
                 <BackgroundedTitle
                     title={textContent.inLifeSection.title}
                     titleFontWeight="700"
                     fullWidth
                 />
-            </div>
-
             <div className="physics-fourth-section-content-wrapper">
                 {content.map((text, index) => (
                     <Card key={index} className="physics-fourth-section-top-card">
