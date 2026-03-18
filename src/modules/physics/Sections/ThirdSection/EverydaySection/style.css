@@ -1,22 +1,34 @@
 .physics-everyday-section {
-    width: 100%;
-    justify-content: center;
-    padding: 2.5rem 0;
-    margin: 0px auto;
-}
-
-.physics-everyday-section p {
-    margin-top: 15px;
+    margin: 2.5rem 0;
 }
 
 .physics-everyday-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.physics-everyday-card {
+    max-width: 390px;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .physics-everyday-card p {
     white-space: pre-line;
-    align-items: flex-start;
-    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .physics-everyday-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .physics-everyday-last-card {
+        grid-column: 1 / -1;
+    }
+    
+    .physics-everyday-card {
+        max-width: none;
+    }
 }

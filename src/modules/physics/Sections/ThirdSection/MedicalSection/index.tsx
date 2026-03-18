@@ -3,17 +3,15 @@ import { useLocaleContent } from "@hooks/useLocale";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import * as textContentKz from "@modules/physics/locales/kaz.json";
 import * as textContentRu from "@modules/physics/locales/rus.json";
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Card, CardContent, Typography } from "@mui/material";
 import "./style.css";
 
 const MedicalSection: React.FC = (): ReactElement => {
-
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const rawCards = textContent.examplesSection.content;
     const cardsData = rawCards.slice(12, 17);
-    const cardsWidth = [187, 187, 220, 240, 220];
 
-    const renderText = (text: string) => {
+    const restructureText = (text: string) => {
     const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
 
     let listItems: string[] = [];
@@ -36,9 +34,9 @@ const MedicalSection: React.FC = (): ReactElement => {
         if (line.endsWith(":")) {
             flushList();
             result.push(
-                <div key={result.length} className="medical-list-title">
+                <span key={result.length} className="medical-list-title">
                     {line}
-                </div>
+                </span>
             );
             return;
         }
@@ -48,9 +46,9 @@ const MedicalSection: React.FC = (): ReactElement => {
         } else {
             flushList();
             result.push(
-                <div key={result.length} className="medical-text">
+                <span key={result.length} className="medical-text">
                     {line}
-                </div>
+                </span>
             );
         }
     });
@@ -61,7 +59,6 @@ const MedicalSection: React.FC = (): ReactElement => {
 };
     return (
         <div className="physics-medical-section">
-
             <BackgroundedTitle
                 title={rawCards[11].title}
                 description={rawCards[11].subTitle}
@@ -70,35 +67,18 @@ const MedicalSection: React.FC = (): ReactElement => {
             />
 
             <div className="physics-medical-cards">
-
-                <Box
-                    sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexWrap: "wrap",
-                        gap: 3,
-                        mt: "36px",
-                        alignItems: "flex-start"
-                    }}
-                >
-
                     {cardsData.map((item: any, index: number) => (
-
                         <Card
                             className="physics-medical-card"
                             key={index}
                             sx={{
-                                width: cardsWidth[index],
                                 backgroundColor: "transparent",
-                                border: "1px solid rgb(255,255,255)",
                                 borderRadius: "3px",
                                 color: "white",
                                 boxShadow: "none",
                             }}
                         >
-
                             <CardContent>
-
                                 <Typography
                                     variant="h6"
                                     sx={{
@@ -108,26 +88,13 @@ const MedicalSection: React.FC = (): ReactElement => {
                                     {item.title}
                                 </Typography>
 
-                                <Typography
-                                    variant="body2"
-                                    sx={{
-                                        lineHeight: 1.7,
-                                        opacity: 0.9
-                                    }}
-                                >
-                                    {renderText(item.description)}
-                                </Typography>
-
+                                <div className="physics-medical-card-content">
+                                    {restructureText(item.description)}
+                                </div>
                             </CardContent>
-
                         </Card>
-
                     ))}
-
-                </Box>
-
             </div>
-
         </div>
     );
 };

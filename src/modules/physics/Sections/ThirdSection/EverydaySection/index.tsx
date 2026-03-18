@@ -3,7 +3,7 @@ import { useLocaleContent } from "@hooks/useLocale";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import * as textContentKz from "@modules/physics/locales/kaz.json";
 import * as textContentRu from "@modules/physics/locales/rus.json";
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Card, CardContent, Typography } from "@mui/material";
 import "./style.css";
 
 const EverydaySection: React.FC = (): ReactElement => {
@@ -23,29 +23,15 @@ const EverydaySection: React.FC = (): ReactElement => {
                 />
 
             <div className="physics-everyday-cards">
-                <Box
-                    sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        flexWrap: 'wrap',
-                        gap: 3,
-                        mt: '36px',
-                        alignItems: 'flex-start'
-                    }}
-                >
-
                     {cardsData.map((item: any, index: number) => (
                         <Card
-                            className="physics-everyday-card"
+                            className={`physics-everyday-card ${index === 2 ? 'physics-everyday-last-card' : ''}`}
                             key={index}
                             sx={{
-                                width:'368px',
                                 backgroundColor: 'transparent',
-                                border: '1px solid rgb(255, 255, 255)',
                                 borderRadius: '3px',
                                 color: 'white',
-                                boxShadow: 'none',
-                                height: 'auto',
+                                boxShadow: 'none'
                             }}
                         >
                             <CardContent>
@@ -83,7 +69,6 @@ const EverydaySection: React.FC = (): ReactElement => {
                             </CardContent>
                         </Card>
                     ))}
-                </Box>
             </div>
 
         </div>

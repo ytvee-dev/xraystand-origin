@@ -3,16 +3,15 @@ import { useLocaleContent } from "@hooks/useLocale";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import * as textContentKz from "@modules/physics/locales/kaz.json";
 import * as textContentRu from "@modules/physics/locales/rus.json";
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Card, CardContent, Typography } from "@mui/material";
 import "./style.css";
 
 const DigitalSection: React.FC = (): ReactElement => {
-
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const rawCards = textContent.examplesSection.content;
     const cardsData = rawCards.slice(7, 11);
 
-    const renderText = (text: string) => {
+    const restructureText = (text: string) => {
     const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
 
     let listItems: string[] = [];
@@ -35,9 +34,9 @@ const DigitalSection: React.FC = (): ReactElement => {
         if (line.endsWith(":")) {
             flushList();
             result.push(
-                <div key={result.length} className="digital-list-title">
+                <span key={result.length} className="digital-list-title">
                     {line}
-                </div>
+                </span>
             );
             return;
         }
@@ -47,9 +46,9 @@ const DigitalSection: React.FC = (): ReactElement => {
         } else {
             flushList();
             result.push(
-                <div key={result.length} className="digital-text">
+                <span key={result.length} className="digital-text">
                     {line}
-                </div>
+                </span>
             );
         }
     });
@@ -58,9 +57,9 @@ const DigitalSection: React.FC = (): ReactElement => {
 
     return result;
 };
+
     return (
         <div className="physics-digital-section">
-
             <BackgroundedTitle
                 title={rawCards[6].title}
                 description={rawCards[6].subTitle}
@@ -69,35 +68,18 @@ const DigitalSection: React.FC = (): ReactElement => {
             />
 
             <div className="physics-digital-cards">
-
-                <Box
-                    sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexWrap: "wrap",
-                        gap: 3,
-                        mt: "36px",
-                        alignItems: "flex-start"
-                    }}
-                >
-
                     {cardsData.map((item: any, index: number) => (
-
                         <Card
                             className="physics-digital-card"
                             key={index}
                             sx={{
-                                width: "270px",
                                 backgroundColor: "transparent",
-                                border: "1px solid rgb(255,255,255)",
                                 borderRadius: "3px",
                                 color: "white",
                                 boxShadow: "none",
                             }}
                         >
-
                             <CardContent>
-
                                 <Typography
                                     variant="h6"
                                     sx={{
@@ -107,26 +89,13 @@ const DigitalSection: React.FC = (): ReactElement => {
                                     {item.title}
                                 </Typography>
 
-                                <Typography
-                                    variant="body2"
-                                    sx={{
-                                        lineHeight: 1.7,
-                                        opacity: 0.9
-                                    }}
-                                >
-                                    {renderText(item.description)}
-                                </Typography>
-
+                                <div className="physics-digital-card-content">
+                                    {restructureText(item.description)}
+                                </div>
                             </CardContent>
-
                         </Card>
-
                     ))}
-
-                </Box>
-
             </div>
-
         </div>
     );
 };

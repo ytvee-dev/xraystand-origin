@@ -1,6 +1,4 @@
 .physics-in-life-section {
-    /* width: 100%; */
-    justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -19,12 +17,10 @@
 
 .physics-in-life-section-top-card {
     position: relative;
-    width: 100%;
     max-width: 275px;
     min-width: 174px;
     justify-content: center;
     align-items: center;
-    height: 100%;
     min-height: 127px;
     max-height: 224px;
     border-radius: 0 !important;

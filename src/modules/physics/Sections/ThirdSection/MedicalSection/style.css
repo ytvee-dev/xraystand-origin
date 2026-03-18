@@ -1,51 +1,63 @@
 .physics-medical-section {
-    width: 100%;
-    justify-content: center;
-    padding: 2.5rem 0;
-    margin: 0px auto
+    margin: 2.5rem 0;
 }
 
 .physics-medical-cards {
-    margin-top: 20px;
+    margin-top: 36px;
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
-    margin: 0 auto;
-    padding: 0 24px;
+    gap: 1.5rem;
 }
 
+.physics-medical-card {
+    max-width: 220px;
+    border: 1px solid rgb(255,255,255);
+}
 
 .physics-medical-card p {
     white-space: pre-line;
-    align-items: flex-start;
-    padding: 0;
+}
+
+.physics-medical-card-content {
+    line-height: 1.7;
+    opacity: 0.9;
 }
 
 .medical-list {
-    padding-left:16px;
-    list-style-type: disc;
+    padding-left: 16px;
 }
 
-.physics-medical-card:nth-child(1) .MuiCardContent-root :nth-of-type(n) {
-    margin-top: 0px;
-}
-
-.physics-medical-card:nth-child(1) .MuiTypography-root:nth-of-type(n) {
-    margin-top: 0px;
-}
-
-.physics-medical-card:nth-child(2) .MuiCardContent-root ul:nth-of-type(n) {
+.physics-medical-card:nth-child(2) ul:nth-of-type(n) {
     margin-top: 15px;
 }
 
-.physics-medical-card:nth-child(3) .MuiCardContent-root ul:nth-of-type(n+2) {
+.physics-medical-card:nth-child(3) ul:nth-of-type(n+2) {
     margin-top: 15px;
 }
 
-.physics-medical-card:nth-child(4) .MuiCardContent-root ul:nth-of-type(n) {
-    margin:10px 0;  
+.physics-medical-card:nth-child(4) ul:nth-of-type(n) {
+    margin: 10px 0;  
 }
 
-.physics-medical-card:nth-child(5) .MuiCardContent-root p:nth-of-type(n) {
-    margin-top: 10px;
+@media (max-width: 1120px) {
+    .physics-medical-cards {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .physics-medical-card {
+        max-width: 440px;
+    }
+}
+
+@media (max-width: 920px) {
+    .physics-medical-card {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .physics-medical-card {
+        max-width: none
+    }
 }

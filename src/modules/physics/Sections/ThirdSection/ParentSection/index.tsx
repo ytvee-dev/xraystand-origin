@@ -8,14 +8,14 @@ import { cardsBg} from "@modules/physics/locales/paths.json";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardMedia from "@mui/material/CardMedia";
-import PhysicsInArchitectureSection from "../PhysicsInArchitectureSection";
+import InArchitectureSection from "../InArchitectureSection";
 import DigitalSection from "../DigitalSection";
 import MedicalSection from "../MedicalSection";
 import EverydaySection from "../EverydaySection";
 import "./style.css";
 
 
-const InLifeSection: React.FC = (): ReactElement => {
+const ParentSection: React.FC = (): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const content = textContent.inLifeSection.content;
 
@@ -27,11 +27,12 @@ const InLifeSection: React.FC = (): ReactElement => {
 
     return (
         <section className="physics-in-life-section">
-                <BackgroundedTitle
-                    title={textContent.inLifeSection.title}
-                    titleFontWeight="700"
-                    fullWidth
-                />
+            <BackgroundedTitle
+                title={textContent.inLifeSection.title}
+                titleFontWeight="700"
+                fullWidth
+            />
+            
             <div className="physics-in-life-section-content-wrapper">
                 {content.map((text, index) => (
                     <Card key={index} className="physics-in-life-section-top-card">
@@ -64,7 +65,7 @@ const InLifeSection: React.FC = (): ReactElement => {
 
                 {activeCard === 1 && (
                     <div className="physics-section-left">
-                        <PhysicsInArchitectureSection />
+                        <InArchitectureSection />
                     </div>
                 )}
 
@@ -85,4 +86,4 @@ const InLifeSection: React.FC = (): ReactElement => {
 };
 
 
-export default InLifeSection;
+export default ParentSection;
