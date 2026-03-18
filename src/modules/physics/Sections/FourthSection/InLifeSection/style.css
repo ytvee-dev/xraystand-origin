@@ -1,5 +1,5 @@
 .physics-in-life-section {
-    width: 100%;
+    /* width: 100%; */
     justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
@@ -56,32 +56,53 @@
     height: 120px;
 }
 
-.physics-section-right{
+.physics-section-right {
     animation: slideRight 0.8s ease;
 }
 
-.physics-section-left{
+.physics-section-left {
     animation: slideLeft 0.8s ease;
 }
 
-@keyframes slideRight{
-    from{
-        opacity:0;
+@keyframes slideRight {
+    from {
+        opacity: 0;
         transform: translateX(200px);
     }
-    to{
-        opacity:1;
+
+    to {
+        opacity: 1;
         transform: translateX(0);
     }
 }
 
-@keyframes slideLeft{
-    from{
-        opacity:0;
+@keyframes slideLeft {
+    from {
+        opacity: 0;
         transform: translateX(-200px);
     }
-    to{
-        opacity:1;
+
+    to {
+        opacity: 1;
         transform: translateX(0);
     }
+}
+
+@media (max-width: 1200px) {
+    .physics-in-life-section {
+        padding: 7px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .physics-in-life-section {
+        padding: 7px;
+    }
+
+    .physics-in-life-section-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
