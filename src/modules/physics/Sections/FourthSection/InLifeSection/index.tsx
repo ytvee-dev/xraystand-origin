@@ -5,16 +5,17 @@ import * as paths from "@modules/physics/locales/paths.json";
 import * as textContentKz from "@modules/physics/locales/kaz.json";
 import * as textContentRu from "@modules/physics/locales/rus.json";
 import { cardsBg} from "@modules/physics/locales/paths.json";
-import "./style.css";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardMedia from "@mui/material/CardMedia";
-import PhysicsInArchitectureSection from "./PhysicsInArchitectureSection";
-import DigitalSection from "./DigitalSection";
-import MedicalSection from "./MedicalSection";
-import EverydaySection from "./EverydaySection";
+import PhysicsInArchitectureSection from "../PhysicsInArchitectureSection";
+import DigitalSection from "../DigitalSection";
+import MedicalSection from "../MedicalSection";
+import EverydaySection from "../EverydaySection";
+import "./style.css";
 
-const FourthSection: React.FC = (): ReactElement => {
+
+const InLifeSection: React.FC = (): ReactElement => {
     const textContent = useLocaleContent(textContentRu, textContentKz);
     const content = textContent.inLifeSection.content;
 
@@ -25,15 +26,15 @@ const FourthSection: React.FC = (): ReactElement => {
     };
 
     return (
-        <section className="physics-fourth-section">
+        <section className="physics-in-life-section">
                 <BackgroundedTitle
                     title={textContent.inLifeSection.title}
                     titleFontWeight="700"
                     fullWidth
                 />
-            <div className="physics-fourth-section-content-wrapper">
+            <div className="physics-in-life-section-content-wrapper">
                 {content.map((text, index) => (
-                    <Card key={index} className="physics-fourth-section-top-card">
+                    <Card key={index} className="physics-in-life-section-top-card">
                         <CardActionArea className="card-area">
                             <CardMedia
                                 className="background-card"
@@ -43,7 +44,7 @@ const FourthSection: React.FC = (): ReactElement => {
                                 onClick={() => handleCardClick(index)}
                             />
                         </CardActionArea>
-                        <div className="physics-fourth-section-card-content">
+                        <div className="physics-in-life-section-card-content">
                             <img 
                                 src={paths.cards[index]} 
                                 alt="icon" 
@@ -54,7 +55,7 @@ const FourthSection: React.FC = (): ReactElement => {
                     </Card>
                 ))}
             </div>
-             <div className=" physics-fourth-section-cards">
+             <div className=" physics-in-life-section-cards">
                 {activeCard === 0 && (
                     <div className="physics-section-right">
                         <EverydaySection />
@@ -84,4 +85,4 @@ const FourthSection: React.FC = (): ReactElement => {
 };
 
 
-export default FourthSection;
+export default InLifeSection;
