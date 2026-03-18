@@ -10,7 +10,7 @@ import CoverSection from "@modules/physics/Sections/CoverSection";
 // import * as contentKz from "@modules/physics/locales/kaz.json";
 // import * as paths from "@modules/physics/locales/paths.json";
 import FirstSection from "@modules/physics/Sections/FirstSection";
-import FourthSection from "@modules/physics/Sections/FourthSection/InLifeSection";
+import ThirdSection from "@modules/physics/Sections/ThirdSection/InLifeSection";
 import './style.css';
 
 const pageLayoutSX = {
@@ -53,7 +53,7 @@ const Physics: React.FC = () => {
             <div className="physics-background">
                 <CoverSection/>
                 <FirstSection className="first-section"/>
-                <FourthSection />
+                <ThirdSection/>
             </div>
         </BrightnessLayout>
 

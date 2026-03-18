@@ -22,7 +22,7 @@ const InLifeSection: React.FC = (): ReactElement => {
     const [activeCard, setActiveCard] = React.useState<number | null>(0);
 
     const handleCardClick = (index: number) => {
-        setActiveCard(index === activeCard ? null : index);
+        setActiveCard(index);
     };
 
     return (
