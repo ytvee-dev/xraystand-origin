@@ -103,3 +103,55 @@
     }
 
 }
+
+@media (max-width: 689px) {
+    .physics-in-life-section {
+        padding: 7px;
+    }
+
+    .physics-in-life-section-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .physics-in-life-section-top-card {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        min-width: unset;
+    }
+
+    .physics-in-life-section-card-content img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .physics-in-life-section-card-content img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .physics-in-life-section-top-card {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:375px) {
+    .physics-in-life-section-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 17px; 
+    }
+
+    .physics-in-life-section-top-card {
+        width: 173px;
+        height: 129px;
+    }
+    .physics-in-life-section-card-content {
+        padding: 0;
+        margin-top: 13px;
+    }
+}
