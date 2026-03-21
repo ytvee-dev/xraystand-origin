@@ -24,14 +24,15 @@
 }
 
 #bio-back-svg-3 {
-    height: 31.5625rem;
-    right: 0;
+    height: 25.25rem;
+    top: 0.5rem;
+    right: 3rem;
 }
 
 #bio-back-svg-4 {
-    right: 8.125rem;
-    top: 28.4375rem;
-    height: 10.8125rem;
+    right: 0;
+    bottom: 1rem;
+    height: 21rem;
 }
 
 .biology-hero-wrapper {
@@ -67,9 +68,9 @@
 
 #bio-content-back-upper {
     left: 0;
-    top: -5%;
+    top: -7%;
     z-index: 2;
-    height: 95%;
+    height: 98%;
     width: 98%;
 }
 
