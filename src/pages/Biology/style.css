@@ -90,6 +90,75 @@
     }
 }
 
+@media screen and (390px < width <= 440px) {
+    .biology-cover-section {
+        width: 100%;
+        margin-top: auto;
+        height: 44rem;
+    }
+
+    .upper-block div,
+    .lower-block div {
+        font-size: 1.375rem !important;
+    }
+
+    #bio-content-darvin {
+        height: 60%;
+    }
+
+    #bio-content-back-upper {
+        top: -3%;
+        height: 74%;
+    }
+
+    #biology-cover-section-subtitle {
+        font-size: 1.125rem;
+        text-align: center;
+        line-height: normal;
+        position: relative;
+        top: 1rem;
+    }
+
+    #bio-back-svg-1 {
+        height: 8.313rem;
+        left: -4.5rem;
+        top: 51%;
+        bottom: auto;
+    }
+
+    #bio-back-svg-2 {
+        display: none;
+    }
+
+    #bio-back-svg-3 {
+        top: 20%;
+        height: 11.438rem;
+        right: 0;
+    }
+
+    #bio-back-svg-4 {
+        width: 4.938rem;
+        height: 4.938rem;
+        right: 0.5rem;
+        bottom: 28%;
+        top: auto;
+    }
+
+    .biology-hero-content-text {
+        top: 17%;
+        gap: 0.5rem;
+    }
+
+    .biology-hero-content-text .upper-block,
+    .biology-hero-content-text .lower-block {
+        gap: 0.5rem;
+    }
+
+    .bio-hero-content-text-svg {
+        max-width: 9.375rem !important;
+    }
+}
+
 @media screen and (440px < width <= 600px) {
     .biology-cover-section {
         width: 100%;
