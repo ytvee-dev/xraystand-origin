@@ -12,15 +12,16 @@
 }
 
 #bio-back-svg-1 {
-    height: 6.25rem;
+    height: 9.1875rem;
     left: 5.969375rem;
     bottom: 3.4375rem;
+    transform: rotate(-30deg);
 }
 
 #bio-back-svg-2 {
     top: 4.125rem;
     left: 1.875rem;
-    width: 9.3825rem;
+    width: 13.875rem;
 }
 
 #bio-back-svg-3 {

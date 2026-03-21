@@ -52,10 +52,11 @@
     }
 
     #bio-back-svg-1 {
-        height: 8.313rem;
-        left: -4.5rem;
-        top: 48%;
+        height: 6.25rem;
+        left: -2.5rem;
+        top: 51%;
         bottom: auto;
+        transform: none;
     }
 
     #bio-back-svg-2 {
@@ -120,10 +121,11 @@
     }
 
     #bio-back-svg-1 {
-        height: 8.313rem;
-        left: -4.5rem;
+        height: 7.5rem;
+        left: -3.25rem;
         top: 51%;
         bottom: auto;
+        transform: none;
     }
 
     #bio-back-svg-2 {
@@ -189,10 +191,11 @@
     }
 
     #bio-back-svg-1 {
-        height: 8.313rem;
-        left: -4.5rem;
-        top: 51%;
+        height: 9rem;
+        left: -3.5rem;
+        top: 51.5%;
         bottom: auto;
+        transform: none;
     }
 
     #bio-back-svg-2 {
@@ -257,10 +260,11 @@
     }
 
     #bio-back-svg-1 {
-        height: 8.313rem;
-        left: -2.5rem;
-        top: 53%;
+        height: 10.9rem;
+        left: -4rem;
+        top: 58%;
         bottom: auto;
+        transform: none;
     }
 
     #bio-back-svg-2 {
@@ -325,14 +329,15 @@
     }
 
     #bio-back-svg-1 {
-        height: 11.625rem;
-        left: -2rem;
-        top: 51%;
-        bottom: auto;
+        height: 10.8rem;
+        left: 4rem;
+        bottom: 5%;
     }
 
     #bio-back-svg-2 {
-        display: none;
+        top: 4.125rem;
+        left: 1.875rem;
+        width: 11.1rem;
     }
 
     #bio-back-svg-3 {
@@ -750,10 +755,11 @@
     }
 
     #bio-back-svg-1 {
-        height: 8.313rem;
-        left: -4.5rem;
-        top: 51%;
+        height: 9.9rem;
+        left: -4rem;
+        top: 53.5%;
         bottom: auto;
+        transform: none;
     }
 
     #bio-back-svg-2 {
