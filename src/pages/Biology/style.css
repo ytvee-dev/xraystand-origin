@@ -26,7 +26,7 @@
     .biology-cover-section {
         width: 100%;
         margin-top: auto;
-        height: 44rem;
+        height: 20rem;
     }
 
     .upper-block div,
@@ -52,10 +52,11 @@
     }
 
     #bio-back-svg-1 {
-        height: 8.313rem;
-        left: -4.5rem;
-        top: 48%;
+        height: 6.25rem;
+        left: -2.5rem;
+        top: 51%;
         bottom: auto;
+        transform: none;
     }
 
     #bio-back-svg-2 {
@@ -63,7 +64,7 @@
     }
 
     #bio-back-svg-3 {
-        top: 26%;
+        top: 5%;
         height: 8.188rem;
         right: 0;
     }
@@ -72,7 +73,7 @@
         width: 4.938rem;
         height: 4.938rem;
         right: 0.5rem;
-        bottom: 28%;
+        bottom: 8%;
         top: auto;
     }
 
@@ -90,11 +91,81 @@
     }
 }
 
+@media screen and (390px < width <= 440px) {
+    .biology-cover-section {
+        width: 100%;
+        margin-top: auto;
+        height: 24rem;
+    }
+
+    .upper-block div,
+    .lower-block div {
+        font-size: 1.375rem !important;
+    }
+
+    #bio-content-darvin {
+        height: 60%;
+    }
+
+    #bio-content-back-upper {
+        top: -3%;
+        height: 74%;
+    }
+
+    #biology-cover-section-subtitle {
+        font-size: 1.125rem;
+        text-align: center;
+        line-height: normal;
+        position: relative;
+        top: 1rem;
+    }
+
+    #bio-back-svg-1 {
+        height: 7.5rem;
+        left: -3.25rem;
+        top: 51%;
+        bottom: auto;
+        transform: none;
+    }
+
+    #bio-back-svg-2 {
+        display: none;
+    }
+
+    #bio-back-svg-3 {
+        top: 5%;
+        height: 11.438rem;
+        right: 0;
+    }
+
+    #bio-back-svg-4 {
+        width: 4.938rem;
+        height: 4.938rem;
+        right: 0.5rem;
+        bottom: 8%;
+        top: auto;
+    }
+
+    .biology-hero-content-text {
+        top: 17%;
+        gap: 0.5rem;
+    }
+
+    .biology-hero-content-text .upper-block,
+    .biology-hero-content-text .lower-block {
+        gap: 0.5rem;
+    }
+
+    .bio-hero-content-text-svg {
+        max-width: 9.375rem !important;
+    }
+}
+
 @media screen and (440px < width <= 600px) {
     .biology-cover-section {
         width: 100%;
         margin-top: auto;
-        height: 44rem;
+        height: 28rem;
     }
 
     .upper-block div,
@@ -108,7 +179,7 @@
 
     #bio-content-back-upper {
         top: -3%;
-        height: 79%;
+        height: 78%;
     }
 
     #biology-cover-section-subtitle {
@@ -120,10 +191,11 @@
     }
 
     #bio-back-svg-1 {
-        height: 8.313rem;
-        left: -4.5rem;
-        top: 51%;
+        height: 9rem;
+        left: -3.5rem;
+        top: 51.5%;
         bottom: auto;
+        transform: none;
     }
 
     #bio-back-svg-2 {
@@ -131,16 +203,16 @@
     }
 
     #bio-back-svg-3 {
-        top: 20%;
+        top: 5%;
         height: 11.438rem;
         right: 0;
     }
 
     #bio-back-svg-4 {
-        width: 4.938rem;
-        height: 4.938rem;
+        width: 7.5rem;
+        height: 7.5rem;
         right: 0.5rem;
-        bottom: 28%;
+        bottom: 5%;
         top: auto;
     }
 
@@ -150,7 +222,7 @@
 
     .biology-hero-content-text .upper-block,
     .biology-hero-content-text .lower-block {
-        gap: 0.5rem;
+        gap: 1.5rem;
     }
 
     .bio-hero-content-text-svg {
@@ -162,7 +234,7 @@
     .biology-cover-section {
         width: 100%;
         margin-top: auto;
-        height: 44rem;
+        height: 36rem;
     }
 
     .upper-block div,
@@ -188,10 +260,11 @@
     }
 
     #bio-back-svg-1 {
-        height: 8.313rem;
-        left: -2.5rem;
-        top: 53%;
+        height: 10.9rem;
+        left: -4rem;
+        top: 58%;
         bottom: auto;
+        transform: none;
     }
 
     #bio-back-svg-2 {
@@ -199,16 +272,16 @@
     }
 
     #bio-back-svg-3 {
-        top: 3%;
-        height: 22.438rem;
+        top: 2%;
+        height: 19.2rem;
         right: 0;
     }
 
     #bio-back-svg-4 {
-        width: 6.875rem;
-        height: 6.875rem;
+        width: 13.266rem;
+        height: 13.266rem;
         right: 0.5rem;
-        bottom: 14%;
+        bottom: 0;
         top: auto;
     }
 
@@ -243,7 +316,7 @@
     }
 
     #bio-content-back-upper {
-        top: -3%;
+        top: -2%;
         height: 87%;
     }
 
@@ -256,14 +329,15 @@
     }
 
     #bio-back-svg-1 {
-        height: 11.625rem;
-        left: -2rem;
-        top: 51%;
-        bottom: auto;
+        height: 10.8rem;
+        left: 4rem;
+        bottom: 5%;
     }
 
     #bio-back-svg-2 {
-        display: none;
+        top: 4.125rem;
+        left: 1.875rem;
+        width: 11.1rem;
     }
 
     #bio-back-svg-3 {
@@ -273,10 +347,10 @@
     }
 
     #bio-back-svg-4 {
-        width: 9.625rem;
-        height: 9.625rem;
-        right: 0.5rem;
-        bottom: 4%;
+        width: 17.25rem;
+        height: 17.25rem;
+        right: 0;
+        bottom: 0;
         top: auto;
     }
 
@@ -655,7 +729,7 @@
     .biology-cover-section {
         width: 100%;
         margin-top: auto;
-        height: 44rem;
+        height: 32rem;
     }
 
     .upper-block div,
@@ -681,10 +755,11 @@
     }
 
     #bio-back-svg-1 {
-        height: 8.313rem;
-        left: -4.5rem;
-        top: 51%;
+        height: 9.9rem;
+        left: -4rem;
+        top: 53.5%;
         bottom: auto;
+        transform: none;
     }
 
     #bio-back-svg-2 {
@@ -692,16 +767,16 @@
     }
 
     #bio-back-svg-3 {
-        top: 13%;
+        top: 5%;
         height: 16rem;
         right: 0;
     }
 
     #bio-back-svg-4 {
-        width: 6.875rem;
-        height: 6.875rem;
+        width: 10.205rem;
+        height: 10.205rem;
         right: 0.5rem;
-        bottom: 14%;
+        bottom: 0;
         top: auto;
     }
 
