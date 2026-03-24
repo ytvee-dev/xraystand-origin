@@ -29,7 +29,7 @@ const pageLayoutSX = {
 const FireSafetyLogo = () => {
     return (
         <div className="fire-safety-logo">
-            <span>Пожарная безопастность</span>
+            <span>Пожарная безопасность</span>
         </div>
     );
 };
