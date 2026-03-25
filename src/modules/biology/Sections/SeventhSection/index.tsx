@@ -94,6 +94,7 @@ const SeventhSection = ({ className }: BiologySectionProps): ReactElement => {
                             titleClassName="biology-seventh-section-card-header title-biology-medium-text"
                             labelClassName="description-biology-medium-text"
                             labelWrapperStyle={labelWrapperStyle}
+                            cardContentStyle={{gap: '24px'}}
                         />
                     ))}
                 </div>
