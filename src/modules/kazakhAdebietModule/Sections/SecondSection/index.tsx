@@ -1,11 +1,13 @@
-import {type ReactElement} from "react";
-import SquareImageViewer from "@modules/trafficLaws/components/SquareImageViewer";
-import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
-import DSContentBlock, {type DSContentBlockColorScheme} from "@components/common/DSContentBlock";
-import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
-import DSInformationCard from "@components/common/Cards/DSInformationCard";
+import DSContentBlock, {
+    type DSContentBlockColorScheme,
+} from "@components/common/DSContentBlock";
 import * as content from "@modules/kazakhAdebietModule/locales/kaz.json";
 import * as paths from "@modules/kazakhAdebietModule/locales/paths.json";
+import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
+import SquareImageViewer from "@modules/trafficLaws/components/SquareImageViewer";
+import DefaultCardsListOL from "@modules/trafficLaws/components/DefaultCardsListOL";
+import type { TContentItem } from "@modules/trafficLaws/types";
+import { type ReactElement } from "react";
 import "./style.css";
 
 const rightColumnColorScheme: DSContentBlockColorScheme = {
@@ -14,24 +16,23 @@ const rightColumnColorScheme: DSContentBlockColorScheme = {
     descriptionColor: "#EBCD91",
     notificationBackgroundColor: "#EBCD91",
     notificationTextColor: "black",
-}
+};
 
 const SecondSection = (): ReactElement => {
-
     return (
         <section className="kza-second-section">
             <TwoColumnSection
-                leftColumn={
-                    <SquareImageViewer path={paths.tree} width={564}/>
-                }
+                leftColumn={<SquareImageViewer path={paths.tree} width={564} />}
                 rightColumn={
                     <DSContentBlock
                         title={content.secondSection.title}
                         description={content.secondSection.description}
-                        notificationLabel={content.secondSection.notificationLabel}
+                        notificationLabel={
+                            content.secondSection.notificationLabel
+                        }
                         colorScheme={rightColumnColorScheme}
                     >
-                        <DSCardsWrapper>
+                        {/* <DSCardsWrapper>
                             {content.secondSection["content"].map((item, indx) => (
                                 <DSInformationCard
                                     key={indx}
@@ -54,7 +55,14 @@ const SecondSection = (): ReactElement => {
                                     backgroundColor={"#EBCD91"}
                                 />
                             ))}
-                        </DSCardsWrapper>
+                        </DSCardsWrapper> */}
+                        <DefaultCardsListOL
+                            content={
+                                content.secondSection.content as TContentItem[]
+                            }
+                            isCardsClickable={true}
+                            smallImageSizes={false}
+                        />
                     </DSContentBlock>
                 }
             />
@@ -63,6 +71,3 @@ const SecondSection = (): ReactElement => {
 };
 
 export default SecondSection;
-
-
-

@@ -1,37 +1,98 @@
 .kazakh-adebiet-page {
-    --dark-section-background-color: #892F17;
+    --dark-section-background-color: #892f17;
 
-    --dark-section-title-color: #EBCD91;
-    --dark-section-subtitle-color: #EBCD91;
-    --dark-section-text-color: #EBCD91;
+    --dark-section-title-color: #ebcd91;
+    --dark-section-subtitle-color: #ebcd91;
+    --dark-section-text-color: #ebcd91;
 
-    --dark-card-background-color: #EBCD91;
+    --dark-card-background-color: #ebcd91;
     --dark-card-title-color: rgba(0, 0, 0, 0.87);
-    --dark-card-label-color: rgba(0, 0, 0, 0.60);
-    --dark-card-link-color: #892F17;
+    --dark-card-label-color: rgba(0, 0, 0, 0.6);
+    --dark-card-link-color: #892f17;
 
-    --dark-alert-background-color: #EBCD91;
-    --dark-alert-stroke-color: #EFE4D3;
+    --dark-alert-background-color: #ebcd91;
+    --dark-alert-stroke-color: #efe4d3;
     --dark-alert-text-color: #000000;
 
+    --light-section-background-color: #ebcd91;
 
-
-    --light-section-background-color: #EBCD91;
-
-    --light-section-title-color: #8A2F17;
-    --light-section-subtitle-color: #8A2F17;
+    --light-section-title-color: #8a2f17;
+    --light-section-subtitle-color: #8a2f17;
     --light-section-text-color: rgba(138, 47, 23, 0.87);
 
-    --light-card-background-color: #FFFFFF;
+    --light-card-background-color: #ffffff;
     --light-card-title-color: rgba(0, 0, 0, 0.87);
     --light-card-label-color: rgba(137, 47, 23, 0.87);
-    --light-card-link-color: #892F17;
+    --light-card-link-color: #892f17;
 
-    --light-alert-background-color: #EFE4D3;
+    --light-alert-background-color: #efe4d3;
     --light-alert-text-color: #000000;
-    
+
     /* Cross-browser compatibility fixes */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.modal-title {
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.15px;
+
+    padding: 16px 0;
+
+    text-align: left;
+}
+
+.modal-subtitle {
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.15px;
+    font-weight: 600;
+
+    padding: 16px 16px 0 0;
+
+    text-align: left;
+}
+
+.modal-description {
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.15px;
+
+    padding: 1px 16px 16px 0;
+
+    text-align: left;
+}
+
+.points-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.kz-people-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    width: 350px;
+}
+
+.people-modal-image-wrapper {
+    max-height: 300px;
+    width: 220px;
+    padding: 10px 0 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.people-image {
+    width: 100%;
+    height: 100%;
 }

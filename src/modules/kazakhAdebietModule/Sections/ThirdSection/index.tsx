@@ -1,13 +1,13 @@
-import { type ReactElement } from "react";
-import ContentSection from "@components/common/Sections/DSContentSection";
 import DSNotification from "@components/common/DSNotification";
-import DSCard from "@components/common/Cards/DSCard";
-import DSCardsWrapper from "@components/common/Wrappers/DSCadsWrapper";
 import * as content from "@modules/kazakhAdebietModule/locales/kaz.json";
 import * as paths from "@modules/kazakhAdebietModule/locales/paths.json";
+import ContentSection from "@components/common/Sections/DSContentSection";
+import DefaultCardsListOL from "@modules/trafficLaws/components/DefaultCardsListOL";
+import type { TContentItem } from "@modules/trafficLaws/types";
+import { type ReactElement } from "react";
 import "./style.css";
 
-const SecondSection = (): ReactElement => {
+const ThirdSection = (): ReactElement => {
     return (
         <section className="kza-third-section">
             <ContentSection
@@ -20,37 +20,14 @@ const SecondSection = (): ReactElement => {
                     },
                 }}
             >
-                {Array.from({ length: 2 }).map((_, i: number) => (
-                    <DSCardsWrapper
-                        key={i}
-                        screenMaxWidth={1000}
-                        cardsGap="24px"
-                        wrapperMaxWidth={1200}
-                    >
-                        {content.thirdSection["content"]
-                            .slice(i * 4, i * 4 + 4)
-                            .map((card, indx) => (
-                                <DSCard
-                                    key={indx}
-                                    imageName={paths.people[i * 4 + indx]}
-                                    title={card.title}
-                                    label={card.label}
-                                    backgroundColor="#FFFFFF"
-                                    minWidth="97px"
-                                    maxWidth="317px"
-                                    imageHeight="286px"
-                                    sxText={{
-                                        imgObjectFit: "contain",
-                                        imgPadding: "12px",
-                                        titleColor: "#333333",
-                                        labelColor: "#555555",
-                                        linkColor: "#FF5722",
-                                        fontWeight: 500,
-                                    }}
-                                />
-                            ))}
-                    </DSCardsWrapper>
-                ))}
+                <DefaultCardsListOL
+                    content={content.thirdSection.content as TContentItem[]}
+                    imageIdData={paths.people}
+                    isCardsClickable={true}
+                    style={{ flexWrap: "wrap", justifyContent: "center" }}
+                    smallImageSizes={false}
+                />
+
                 <div className="content-section-alert-wrapper">
                     <DSNotification
                         content={
@@ -63,4 +40,4 @@ const SecondSection = (): ReactElement => {
     );
 };
 
-export default SecondSection;
+export default ThirdSection;

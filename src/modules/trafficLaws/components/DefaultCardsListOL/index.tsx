@@ -1,12 +1,12 @@
-import {type ReactElement} from "react";
-import type {TContentItem} from "@modules/trafficLaws/types";
-import {getCardProps} from "./meta.ts";
 import DefaultImageCard from "@modules/trafficLaws/components/DefaultImageCard";
-import {useDispatch} from "react-redux";
-import {setModalContentName} from "@store/slices/TrafficLawsPage";
-import {setIsModalOpened} from "@store/slices/Application";
+import { setModalContentName } from "@store/slices/TrafficLawsPage";
+import type { TContentItem } from "@modules/trafficLaws/types";
+import { type CSSProperties, type ReactElement } from "react";
+import { setIsModalOpened } from "@store/slices/Application";
 import useWindowWidth from "@hooks/useScreenWidth.ts";
-import {useLocale} from "@hooks/useLocale";
+import { useLocale } from "@hooks/useLocale";
+import { useDispatch } from "react-redux";
+import { getCardProps } from "./meta.ts";
 import "./style.css";
 
 export interface IContentCardsContainerProps {
@@ -14,7 +14,8 @@ export interface IContentCardsContainerProps {
     imageIdData?: string[];
     backgroundCardsColor?: string;
     isCardsClickable?: boolean;
-    smallImageSizes?: boolean
+    smallImageSizes?: boolean;
+    style?: CSSProperties;
 }
 
 const DEFAULT_BACKGROUND_COLOR: string = "#FFFFFF";
@@ -25,6 +26,7 @@ const DefaultCardsListOL = ({
     isCardsClickable = false,
     smallImageSizes = false,
     backgroundCardsColor = DEFAULT_BACKGROUND_COLOR,
+    style,
 }: IContentCardsContainerProps): ReactElement => {
     const dispatch = useDispatch();
     const screenWidth = useWindowWidth();
@@ -33,10 +35,13 @@ const DefaultCardsListOL = ({
     const modalAction = (item: TContentItem) => {
         dispatch(setModalContentName(item));
         dispatch(setIsModalOpened(true));
-    }
+    };
 
     return (
-        <div className="default-cards-list" style={{maxWidth: screenWidth}}>
+        <div
+            className="default-cards-list"
+            style={{ ...style, maxWidth: screenWidth }}
+        >
             {content.map((item, index) => {
                 const props = getCardProps(item);
                 if (!props) return null;
@@ -44,15 +49,24 @@ const DefaultCardsListOL = ({
                 return (
                     <div
                         className={`list-default-card-wrapper card-wrapper-size-${smallImageSizes ? "small" : "normal"}`}
-                        key={index}>
+                        key={index}
+                    >
                         <DefaultImageCard
-                            {...props} imageId={imageIdData && imageIdData[index]}
+                            {...props}
+                            imageId={imageIdData && imageIdData[index]}
                             smallImageSizes={smallImageSizes}
                             backgroundColor={backgroundCardsColor}
-                            action={isCardsClickable ? () => modalAction(item) : () => {}}
+                            action={
+                                isCardsClickable
+                                    ? () => modalAction(item)
+                                    : () => {}
+                            }
                             linkText={
-                                isCardsClickable && currentLocale == "ru" ? "посмотреть ещё" :
-                                    isCardsClickable && currentLocale == "kz" ? "Қосымша қарау" : ""
+                                isCardsClickable && currentLocale == "ru"
+                                    ? "посмотреть ещё"
+                                    : isCardsClickable && currentLocale == "kz"
+                                      ? "Қосымша қарау"
+                                      : ""
                             }
                         />
                     </div>
