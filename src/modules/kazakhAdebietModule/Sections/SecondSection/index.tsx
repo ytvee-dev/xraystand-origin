@@ -32,30 +32,6 @@ const SecondSection = (): ReactElement => {
                         }
                         colorScheme={rightColumnColorScheme}
                     >
-                        {/* <DSCardsWrapper>
-                            {content.secondSection["content"].map((item, indx) => (
-                                <DSInformationCard
-                                    key={indx}
-                                    title={item.title}
-                                    liOptions={item.pointsTextList}
-                                    sxText={{
-                                        titleColor: "rgba(0,0,0,0.87)",
-                                        labelColor: "rgba(0,0,0,0.6)",
-                                        imgObjectFit: "none",
-                                        imgPadding: "0",
-                                        fontWeight: 500,
-                                        titleFontSize: "20px",
-                                        labelFontSize: "16px",
-                                    }}
-                                    sxContent={{
-                                        minWidth: "270px",
-                                        maxWidth: "270px",
-                                        listPadding: 17,
-                                    }}
-                                    backgroundColor={"#EBCD91"}
-                                />
-                            ))}
-                        </DSCardsWrapper> */}
                         <DefaultCardsListOL
                             content={
                                 content.secondSection.content as TContentItem[]

@@ -45,7 +45,7 @@ const KazakhAdebiet = (): ReactElement => {
         dispatch(setModalContentName(""));
     };
 
-    const PeopleModalContent = (): ReactElement => {
+    const KazakhModalContent = (): ReactElement => {
         if (!hasModalContent) return <></>;
 
         const content = modalContentName as IContentLabel;
@@ -54,11 +54,29 @@ const KazakhAdebiet = (): ReactElement => {
 
         const imagePath = additionalInfo.imagePath;
 
+        const textData = additionalInfo.text;
+
+        const isPeople = textData.some(
+            (section: any) => section.title === "Өмірбаяны",
+        );
+
+        const imageWrapperStyle = isPeople
+            ? {}
+            : {
+                  maxHeight: "none",
+                  width: "100%",
+                  height: "100%",
+                  padding: "0",
+              };
+
         if (!additionalInfo?.text) return <></>;
 
         return (
             <div className="kz-people-modal-content">
-                <div className="people-modal-image-wrapper">
+                <div
+                    className="people-modal-image-wrapper"
+                    style={imageWrapperStyle}
+                >
                     <img
                         className="people-image"
                         src={imagePath}
@@ -66,9 +84,10 @@ const KazakhAdebiet = (): ReactElement => {
                     />
                 </div>
 
-                {additionalInfo.text.map((modalData: any, idx: number) => (
-                    <div key={idx} className="modal-paragraph">
+                {additionalInfo.text.map((modalData: any, id: number) => (
+                    <div key={id} className="modal-paragraph">
                         <h3 className="modal-title">{modalData.title}</h3>
+
                         {modalData.content.map((item: any, i: number) => (
                             <div key={i} className="modal-paragraph-item">
                                 {item.subtitle && (
@@ -104,7 +123,7 @@ const KazakhAdebiet = (): ReactElement => {
                     closeAction={closeModal}
                 >
                     {shouldOpenModal && hasModalContent && (
-                        <PeopleModalContent />
+                        <KazakhModalContent />
                     )}
                 </FlexibleModal>
             </div>

@@ -1,5 +1,5 @@
-import { type ReactElement } from "react";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
+import { type CSSProperties, type ReactElement } from "react";
 import "./style.css";
 
 export interface IContentImageCardProps {
@@ -10,6 +10,7 @@ export interface IContentImageCardProps {
     action?: () => void;
     smallImageSizes?: boolean;
     backgroundColor?: string;
+    imageStyles?: CSSProperties;
 }
 
 const DefaultImageCard = ({
@@ -18,11 +19,13 @@ const DefaultImageCard = ({
     label = "",
     linkText = "",
     action = () => {},
-    smallImageSizes=false,
+    smallImageSizes = false,
     backgroundColor = "#FFFFFF",
 }: IContentImageCardProps): ReactElement => {
     const isList = label.includes("•");
-    const labelItems = isList ? label.split("•").map(item => item.trim()) : [];
+    const labelItems = isList
+        ? label.split("•").map((item) => item.trim())
+        : [];
 
     const renderImage = (): ReactElement | null => {
         if (!imageId) return null;
@@ -59,7 +62,11 @@ const DefaultImageCard = ({
             <div className="default-image-card-description-container">
                 {title && <h4 className="default-image-card-title">{title}</h4>}
                 {label && renderLabel()}
-                {linkText && <Button size="small" onClick={action}>{linkText}</Button>}
+                {linkText && (
+                    <Button size="small" onClick={action}>
+                        {linkText}
+                    </Button>
+                )}
             </div>
         );
     };

@@ -2,6 +2,13 @@
     background-color: #892f17;
 }
 
-.kza-second-section .default-image-card {
-    background-color: #ebcd91 !important;
+.kza-second-section
+    .default-image-card
+    .default-image-card-description-container {
+    background-color: #ebcd91;
 }
+
+/* .kza-second-section .people-modal-image-wrapper {
+    width: 350px;
+    height: 350px;
+} */
