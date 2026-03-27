@@ -4,8 +4,9 @@ import DSContentBlock, {
 import * as content from "@modules/kazakhAdebietModule/locales/kaz.json";
 import * as paths from "@modules/kazakhAdebietModule/locales/paths.json";
 import TwoColumnSection from "@components/common/Sections/TwoColumnSection";
+import DefaultCardsListOL from "@components/common/Other/DefaultCardsListOL";
 import SquareImageViewer from "@modules/trafficLaws/components/SquareImageViewer";
-import DefaultCardsListOL from "@modules/trafficLaws/components/DefaultCardsListOL";
+import { setModalContentName } from "@store/slices/KazakhAdebietPage";
 import type { TContentItem } from "@modules/trafficLaws/types";
 import { type ReactElement } from "react";
 import "./style.css";
@@ -38,6 +39,7 @@ const SecondSection = (): ReactElement => {
                             }
                             isCardsClickable={true}
                             smallImageSizes={false}
+                            setModalContentName={setModalContentName}
                         />
                     </DSContentBlock>
                 }

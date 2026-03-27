@@ -1,5 +1,5 @@
 import Button from "@mui/material/Button";
-import { type CSSProperties, type ReactElement } from "react";
+import { type ReactElement } from "react";
 import "./style.css";
 
 export interface IContentImageCardProps {
@@ -10,7 +10,6 @@ export interface IContentImageCardProps {
     action?: () => void;
     smallImageSizes?: boolean;
     backgroundColor?: string;
-    imageStyles?: CSSProperties;
 }
 
 const DefaultImageCard = ({

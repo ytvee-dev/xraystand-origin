@@ -1,9 +1,9 @@
-import DefaultImageCard from "@modules/trafficLaws/components/DefaultImageCard";
-import { setModalContentName } from "@store/slices/TrafficLawsPage";
+import DefaultImageCard from "@components/common/Cards/DefaultImageCard/index.tsx";
 import type { TContentItem } from "@modules/trafficLaws/types";
 import { type CSSProperties, type ReactElement } from "react";
 import { setIsModalOpened } from "@store/slices/Application";
 import useWindowWidth from "@hooks/useScreenWidth.ts";
+import type { UnknownAction } from "@reduxjs/toolkit";
 import { useLocale } from "@hooks/useLocale";
 import { useDispatch } from "react-redux";
 import { getCardProps } from "./meta.ts";
@@ -12,6 +12,7 @@ import "./style.css";
 export interface IContentCardsContainerProps {
     content: TContentItem[];
     imageIdData?: string[];
+    setModalContentName: (item: TContentItem) => UnknownAction;
     backgroundCardsColor?: string;
     isCardsClickable?: boolean;
     smallImageSizes?: boolean;
@@ -25,6 +26,7 @@ const DefaultCardsListOL = ({
     imageIdData,
     isCardsClickable = false,
     smallImageSizes = false,
+    setModalContentName,
     backgroundCardsColor = DEFAULT_BACKGROUND_COLOR,
     style,
 }: IContentCardsContainerProps): ReactElement => {

@@ -6,7 +6,7 @@ import CoverSection from "@modules/kazakhAdebietModule/Sections/CoverSection";
 import FirstSection from "@modules/kazakhAdebietModule/Sections/FirstSection";
 import ThirdSection from "@modules/kazakhAdebietModule/Sections/ThirdSection";
 import SecondSection from "@modules/kazakhAdebietModule/Sections/SecondSection";
-import { setModalContentName } from "@store/slices/TrafficLawsPage";
+import { setModalContentName } from "@store/slices/KazakhAdebietPage";
 import { collectFromPathsJson } from "@utils/collectAssetUrls.ts";
 import type { IContentLabel } from "@modules/trafficLaws/types";
 import { usePreloadImages } from "@hooks/usePreloadImages.ts";
@@ -29,14 +29,14 @@ const KazakhAdebiet = (): ReactElement => {
         (state: TRootState) => state.application.isModalOpened,
     );
 
-    const modalContentName = useSelector(
-        (state: TRootState) => state.trafficLaws.modalContentName,
+    const modalContent = useSelector(
+        (state: TRootState) => state.kazakhAdebiet.modalContentName,
     );
 
     const hasModalContent =
-        modalContentName &&
-        typeof modalContentName === "object" &&
-        "title" in modalContentName;
+        modalContent &&
+        typeof modalContent === "object" &&
+        "title" in modalContent;
 
     const shouldOpenModal = isModalOpened && hasModalContent;
 
@@ -48,15 +48,15 @@ const KazakhAdebiet = (): ReactElement => {
     const KazakhModalContent = (): ReactElement => {
         if (!hasModalContent) return <></>;
 
-        const content = modalContentName as IContentLabel;
+        const content = modalContent as IContentLabel;
 
-        const additionalInfo = content.additionalInfo as any;
+        const additionalInfo = content.additionalInfo;
 
-        const imagePath = additionalInfo.imagePath;
+        const imagePath = additionalInfo?.imagePath;
 
-        const textData = additionalInfo.text;
+        const textData = additionalInfo?.text;
 
-        const isPeople = textData.some(
+        const isPeople = textData?.some(
             (section: any) => section.title === "Өмірбаяны",
         );
 
@@ -72,13 +72,13 @@ const KazakhAdebiet = (): ReactElement => {
         if (!additionalInfo?.text) return <></>;
 
         return (
-            <div className="kz-people-modal-content">
+            <div className="kz-adebiet-modal-content">
                 <div
-                    className="people-modal-image-wrapper"
+                    className="kz-adebiet-modal-image-wrapper"
                     style={imageWrapperStyle}
                 >
                     <img
-                        className="people-image"
+                        className="kz-adebiet-image"
                         src={imagePath}
                         alt="author-image"
                     />

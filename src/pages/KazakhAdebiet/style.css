@@ -69,16 +69,18 @@
     flex-direction: column;
 }
 
-.kz-people-modal-content {
+.kz-adebiet-modal-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
 
     width: 21.875rem;
+
+    overflow-x: hidden;
 }
 
-.people-modal-image-wrapper {
+.kz-adebiet-modal-image-wrapper {
     max-height: 18.75rem;
     width: 13.75rem;
     padding: 0.625rem 0 1.25rem 0;
@@ -91,7 +93,7 @@
     border-top-right-radius: 0.375rem;
 }
 
-.people-image {
+.kz-adebiet-image {
     width: 100%;
     height: 100%;
 }
