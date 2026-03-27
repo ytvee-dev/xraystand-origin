@@ -16,6 +16,7 @@ export interface IContentCardsContainerProps {
     backgroundCardsColor?: string;
     isCardsClickable?: boolean;
     smallImageSizes?: boolean;
+    cardsLinkText?: string;
     style?: CSSProperties;
 }
 
@@ -28,6 +29,7 @@ const DefaultCardsListOL = ({
     smallImageSizes = false,
     setModalContentName,
     backgroundCardsColor = DEFAULT_BACKGROUND_COLOR,
+    cardsLinkText,
     style,
 }: IContentCardsContainerProps): ReactElement => {
     const dispatch = useDispatch();
@@ -38,6 +40,14 @@ const DefaultCardsListOL = ({
         dispatch(setModalContentName(item));
         dispatch(setIsModalOpened(true));
     };
+
+    const linkText = cardsLinkText
+        ? cardsLinkText
+        : isCardsClickable && currentLocale == "ru"
+          ? "посмотреть ещё"
+          : isCardsClickable && currentLocale == "kz"
+            ? "Қосымша қарау"
+            : "";
 
     return (
         <div
@@ -63,13 +73,7 @@ const DefaultCardsListOL = ({
                                     ? () => modalAction(item)
                                     : () => {}
                             }
-                            linkText={
-                                isCardsClickable && currentLocale == "ru"
-                                    ? "посмотреть ещё"
-                                    : isCardsClickable && currentLocale == "kz"
-                                      ? "Қосымша қарау"
-                                      : ""
-                            }
+                            linkText={linkText}
                         />
                     </div>
                 );

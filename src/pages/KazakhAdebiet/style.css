@@ -76,8 +76,6 @@
     justify-content: start;
 
     width: 21.875rem;
-
-    overflow-x: hidden;
 }
 
 .kz-adebiet-modal-image-wrapper {
@@ -100,4 +98,8 @@
 
 .modal-paragraph {
     width: 100%;
+}
+
+.MuiDialogContent-root {
+    overflow-x: hidden !important;
 }

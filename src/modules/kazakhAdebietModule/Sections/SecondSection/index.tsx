@@ -40,6 +40,7 @@ const SecondSection = (): ReactElement => {
                             isCardsClickable={true}
                             smallImageSizes={false}
                             setModalContentName={setModalContentName}
+                            cardsLinkText="Қосымша қарау"
                         />
                     </DSContentBlock>
                 }

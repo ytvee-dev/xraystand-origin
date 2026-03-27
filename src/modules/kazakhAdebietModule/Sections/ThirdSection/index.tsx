@@ -28,6 +28,7 @@ const ThirdSection = (): ReactElement => {
                     style={{ flexWrap: "wrap", justifyContent: "center" }}
                     smallImageSizes={false}
                     setModalContentName={setModalContentName}
+                    cardsLinkText="Қосымша қарау"
                 />
 
                 <div className="content-section-alert-wrapper">
