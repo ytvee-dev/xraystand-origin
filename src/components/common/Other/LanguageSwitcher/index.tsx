@@ -1,23 +1,21 @@
-import {Languages, languageSwitcherOptions} from "@domains/Translate";
-import {type ChangeEvent} from "react";
-import {useDispatch, useSelector} from "react-redux";
-import {setLocale} from "@store/slices/Locale";
-import type {TRootState} from "@store/index";
-import {Switch} from "@mui/material";
-import {
-    LocalStorageKeys,
-    type IListItemProps,
-} from "@utils/constants";
+import { Languages, languageSwitcherOptions } from "@domains/Translate";
+import { type ChangeEvent } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setLocale } from "@store/slices/Locale";
+import type { TRootState } from "@store/index";
+import { Switch } from "@mui/material";
+import { LocalStorageKeys, type IListItemProps } from "@utils/constants";
 
 interface ILanguageSwitcherProps {
     color?: string;
     className?: string;
-};
+}
 
+//TODO Понять в чём заключается суть функции и по возможности применить
 const getLocaleLabelByValue = (selectedValue: string): string => {
     const currentLocaleOption: IListItemProps | undefined =
         languageSwitcherOptions.find(
-            (option: IListItemProps) => option.value === selectedValue
+            (option: IListItemProps) => option.value === selectedValue,
         );
 
     return !currentLocaleOption
@@ -25,11 +23,14 @@ const getLocaleLabelByValue = (selectedValue: string): string => {
         : currentLocaleOption.label;
 };
 
-const LanguageSwitcher: React.FC<ILanguageSwitcherProps> = ({color='', className}: ILanguageSwitcherProps) => {
+const LanguageSwitcher: React.FC<ILanguageSwitcherProps> = ({
+    color = "",
+    className,
+}: ILanguageSwitcherProps) => {
     const dispatch = useDispatch();
 
     const currentLocale = useSelector(
-        (state: TRootState) => state.locale.locale
+        (state: TRootState) => state.locale.locale,
     );
 
     const handleSwitchLanguage = (event: ChangeEvent<HTMLInputElement>) => {
@@ -62,7 +63,7 @@ const LanguageSwitcher: React.FC<ILanguageSwitcherProps> = ({color='', className
     };
 
     return (
-        <div className={className} style={{userSelect: "none"}}>
+        <div className={className} style={{ userSelect: "none" }}>
             <Switch
                 checked={isDefaultChecked}
                 onChange={handleSwitchLanguage}
