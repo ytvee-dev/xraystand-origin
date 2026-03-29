@@ -103,3 +103,7 @@
 .MuiDialogContent-root {
     overflow-x: hidden !important;
 }
+
+.MuiPaper-root {
+    margin: 0 !important;
+}
