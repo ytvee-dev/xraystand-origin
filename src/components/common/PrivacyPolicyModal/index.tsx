@@ -11,13 +11,31 @@ import "./style.css";
 
 const PrivacyPolicyModal: React.FC = (): ReactElement => {
     const dispatch = useDispatch();
-    const isModalOpened = useSelector((state: TRootState) => state.application.isModalOpened);
-    const modalContentName = useSelector((state: TRootState) => state.trafficLaws.modalContentName);
-    const content = useLocaleContent(trafficLawsFooterMeta.ru, trafficLawsFooterMeta.kz);
+    const isModalOpened = useSelector(
+        (state: TRootState) => state.application.isModalOpened,
+    );
+    const trafficLawsContent = useSelector(
+        (state: TRootState) => state.trafficLaws.modalContentName,
+    );
+    const kazakhAdebietContent = useSelector(
+        (state: TRootState) => state.kazakhAdebiet.modalContentName,
+    );
+
+    const content = useLocaleContent(
+        trafficLawsFooterMeta.ru,
+        trafficLawsFooterMeta.kz,
+    );
 
     // Открываем PrivacyPolicyModal только если нет modalContentName (т.е. это не модальное окно для знаков/жестов)
     // Проверяем, что modalContentName - это пустая строка или не объект с title
-    const hasModalContent = modalContentName && typeof modalContentName === 'object' && 'title' in modalContentName;
+    const hasModalContent =
+        (trafficLawsContent &&
+            typeof trafficLawsContent === "object" &&
+            "title" in trafficLawsContent) ||
+        (kazakhAdebietContent &&
+            typeof kazakhAdebietContent === "object" &&
+            "title" in kazakhAdebietContent);
+
     const shouldOpen = isModalOpened && !hasModalContent;
 
     const handleClose = () => {
@@ -34,15 +52,15 @@ const PrivacyPolicyModal: React.FC = (): ReactElement => {
         >
             <Box className="privacy-policy-modal-content">
                 <Box className="privacy-policy-modal-header">
-                    <Typography 
-                        id="privacy-policy-modal" 
-                        variant="h4" 
+                    <Typography
+                        id="privacy-policy-modal"
+                        variant="h4"
                         component="h2"
                         className="privacy-policy-modal-title"
                     >
                         {content.content.privacyPolicyText.title}
                     </Typography>
-                    <IconButton 
+                    <IconButton
                         onClick={handleClose}
                         className="privacy-policy-modal-close"
                         aria-label="close"
@@ -50,11 +68,13 @@ const PrivacyPolicyModal: React.FC = (): ReactElement => {
                         <CloseIcon />
                     </IconButton>
                 </Box>
-                
+
                 <Box className="privacy-policy-modal-body">
                     <div
                         className="privacy-policy-content"
-                        dangerouslySetInnerHTML={{ __html: content.content.privacyPolicyText.content }}
+                        dangerouslySetInnerHTML={{
+                            __html: content.content.privacyPolicyText.content,
+                        }}
                     />
                 </Box>
             </Box>
@@ -63,4 +83,3 @@ const PrivacyPolicyModal: React.FC = (): ReactElement => {
 };
 
 export default PrivacyPolicyModal;
-

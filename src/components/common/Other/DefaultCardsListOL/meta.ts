@@ -1,4 +1,4 @@
-import type {TContentItem} from "@modules/trafficLaws/types";
+import type { TContentItem } from "@modules/trafficLaws/types";
 
 interface IAdditionalInfo {
     title: string;
@@ -26,6 +26,7 @@ export function getCardProps(item: TContentItem): ICardProps | null {
     if ("label" in item) {
         if ("additionalInfo" in item) {
             return {
+                title: item.title,
                 label: item.label,
                 additionalInfo: item.additionalInfo,
             };
