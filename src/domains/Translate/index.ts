@@ -41,7 +41,6 @@ export interface ITextTranslationResources {
         | IChemistryPageResources;
 }
 
-// Расширил
 export const enum Languages {
     RUSSIAN = "ru",
     KAZAKH = "kz",
@@ -53,14 +52,12 @@ export const languageSwitcherOptions: IListItemProps[] = [
     { label: "KZ", value: Languages.KAZAKH },
 ];
 
-// Создал отдельный
 export const languageSelectOptions: IListItemProps[] = [
     { label: "RU", value: Languages.RUSSIAN },
     { label: "KZ", value: Languages.KAZAKH },
     { label: "EN", value: Languages.ENGLISH },
 ];
 
-//TODO Правильно ли я сделал что расширил?
 export const localesTextRecord: Record<Languages, string> = {
     [Languages.RUSSIAN]: "rusTextLocale",
     [Languages.KAZAKH]: "kazTextLocale",
@@ -71,7 +68,6 @@ export interface IControlTranslationResources {
     contentCardAdditionalInfo: string;
 }
 
-//TODO Правильно ли я сделал что расширил?
 export const localesControlRecord: Record<Languages, string> = {
     [Languages.RUSSIAN]: "rusControlLocale",
     [Languages.KAZAKH]: "kazControlLocale",
