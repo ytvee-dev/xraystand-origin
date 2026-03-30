@@ -1,3 +1,9 @@
 .kza-second-section {
-    background-color: #892F17;
+    background-color: #892f17;
+}
+
+.kza-second-section
+    .default-image-card
+    .default-image-card-description-container {
+    background-color: #ebcd91;
 }

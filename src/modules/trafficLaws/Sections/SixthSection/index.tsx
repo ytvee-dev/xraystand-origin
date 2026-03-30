@@ -1,8 +1,9 @@
-import {type ReactElement} from "react";
-import type {TContentItem} from "@modules/trafficLaws/types";
+import { type ReactElement } from "react";
+import type { TContentItem } from "@modules/trafficLaws/types";
 import ContentSection from "@components/common/Sections/DSContentSection";
-import DefaultCardsListOL from "@modules/trafficLaws/components/DefaultCardsListOL";
-import {useLocaleContent} from "@hooks/useLocale";
+import DefaultCardsListOL from "@components/common/Other/DefaultCardsListOL";
+import { setModalContentName } from "@store/slices/TrafficLawsPage";
+import { useLocaleContent } from "@hooks/useLocale";
 import * as textContentKz from "@modules/trafficLaws/locales/kaz.json";
 import * as textContentRu from "@modules/trafficLaws/locales/rus.json";
 import * as paths from "@modules/trafficLaws/locales/paths.json";
@@ -13,19 +14,26 @@ const SixthSection = (): ReactElement | null => {
     if (!translation.sixthSection) return null;
 
     return (
-        <ContentSection textData={{
-            title: translation.sixthSection["title"],
-            colorScheme: {
-                background: "#FFFFFF",
-                text: "#289FF5",
-            }
-        }}>
+        <ContentSection
+            textData={{
+                title: translation.sixthSection["title"],
+                colorScheme: {
+                    background: "#FFFFFF",
+                    text: "#289FF5",
+                },
+            }}
+        >
             <div className={"background-cards-container"}>
                 <DefaultCardsListOL
-                    content={translation.sixthSection["content"] as TContentItem[]}
-                    imageIdData={paths.trafficLawsPage.sixthSection.contentListData}
+                    content={
+                        translation.sixthSection["content"] as TContentItem[]
+                    }
+                    imageIdData={
+                        paths.trafficLawsPage.sixthSection.contentListData
+                    }
                     isCardsClickable={true}
                     smallImageSizes={true}
+                    setModalContentName={setModalContentName}
                 />
             </div>
         </ContentSection>
