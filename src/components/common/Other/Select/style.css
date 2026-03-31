@@ -2,6 +2,12 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 2.25rem;
 }
 
 .select-option {

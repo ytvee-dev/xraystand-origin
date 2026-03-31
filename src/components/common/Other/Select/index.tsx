@@ -105,7 +105,7 @@ const Select = ({
         <div className="dropdown-container">
             <button
                 type="button"
-                className={`${SELECT_DEFAULT_CLASSNAME} ${className} ${size} ${isOpen ? "opened" : ""} primary-text`}
+                className={`${SELECT_DEFAULT_CLASSNAME} ${className} ${size} ${isOpen ? "opened" : ""}`}
                 onClick={handleOpen}
                 disabled={disabled}
                 style={style}
@@ -123,7 +123,7 @@ const Select = ({
                                 selectedOption?.value === option.value
                                     ? "selected"
                                     : ""
-                            } primary-text`}
+                            }`}
                             style={style}
                         >
                             {option.label}
