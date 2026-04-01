@@ -1,10 +1,13 @@
-import Select, { type ISelectOption } from "../Select";
-import { LocalStorageKeys, type IListItemProps } from "@utils/constants";
+import ruContent from "@components/common/locale/ru.json";
+import enContent from "@components/common/locale/en.json";
+import kazContent from "@components/common/locale/kz.json";
+import { Box, FormControl, InputLabel, NativeSelect } from "@mui/material";
 import { Languages, languageSelectOptions } from "@domains/Translate";
+import type { ChangeEvent, ReactElement } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { LocalStorageKeys } from "@utils/constants";
 import { setLocale } from "@store/slices/Locale";
 import type { TRootState } from "@store/index";
-import type { ReactElement } from "react";
 import "./style.css";
 
 interface ILanguageSelectProps {
@@ -12,26 +15,28 @@ interface ILanguageSelectProps {
     color?: string;
 }
 
-const getLocaleLabelByValue = (selectedValue: string): string => {
-    const currentLocaleOption: IListItemProps | undefined =
-        languageSelectOptions.find(
-            (option: IListItemProps) => option.value === selectedValue,
-        );
+export interface ISelectOption {
+    value: string;
+    label: string;
+}
 
-    if (currentLocaleOption?.label == "RU") {
-        return "Язык";
-    }
+const translations: Record<Languages, string> = {
+    [Languages.RUSSIAN]: ruContent.LanguageSelect,
+    [Languages.ENGLISH]: enContent.LanguageSelect,
+    [Languages.KAZAKH]: kazContent.LanguageSelect,
+};
 
-    if (currentLocaleOption?.label == "KZ") {
-        return "Тіл";
-    }
+const getLocaleLabelByValue = (
+    translations: Record<Languages, string>,
+    selectedValue: string,
+): string => {
+    const locale = selectedValue as Languages;
 
-    return "Language";
+    return translations[locale] || "Language";
 };
 
 const LanguageSelect = ({
     className = "",
-    color,
 }: ILanguageSelectProps): ReactElement => {
     const dispatch = useDispatch();
 
@@ -39,29 +44,53 @@ const LanguageSelect = ({
         (state: TRootState) => state.locale.locale,
     );
 
-    const handleSwitchLanguage = (selectedOption: ISelectOption): void => {
-        const selectedLanguage: Languages = selectedOption.value;
+    const handleSwitchLanguage = (event: ChangeEvent<HTMLSelectElement>) => {
+        const selectedLanguage: Languages = event.target.value as Languages;
 
         dispatch(setLocale(selectedLanguage));
         localStorage.setItem(LocalStorageKeys.LOCALE, selectedLanguage);
     };
 
-    const currentLocaleLabel: string = getLocaleLabelByValue(currentLocale);
+    const currentLocaleLabel: string = getLocaleLabelByValue(
+        translations,
+        currentLocale,
+    );
+    console.log(currentLocaleLabel);
 
     return (
         <div className={`language-select-container ${className}`}>
-            <label className="label-language-select" style={{ color: color }}>
-                {currentLocaleLabel}
-            </label>
-
-            <Select
-                value={currentLocale}
-                className="language-select"
-                options={languageSelectOptions}
-                onChange={handleSwitchLanguage}
-                style={{ color: color }}
-                placeholder="Language"
-            />
+            <Box sx={{ minWidth: 120 }}>
+                <FormControl fullWidth>
+                    <InputLabel
+                        variant="standard"
+                        htmlFor="uncontrolled-native"
+                        sx={{ color: "#40b9dd" }}
+                    >
+                        {currentLocaleLabel}
+                    </InputLabel>
+                    <NativeSelect
+                        value={currentLocale}
+                        onChange={handleSwitchLanguage}
+                        defaultValue={30}
+                        inputProps={{
+                            name: currentLocale,
+                            id: "uncontrolled-native",
+                        }}
+                    >
+                        {languageSelectOptions.map(
+                            (option: ISelectOption, index) => (
+                                <option
+                                    value={option.value}
+                                    className="language-select-option"
+                                    key={index}
+                                >
+                                    {option.label}
+                                </option>
+                            ),
+                        )}
+                    </NativeSelect>
+                </FormControl>
+            </Box>
         </div>
     );
 };

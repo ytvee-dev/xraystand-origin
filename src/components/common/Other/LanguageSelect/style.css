@@ -4,64 +4,14 @@
     align-items: start;
     justify-content: center;
 
-    width: 8.125rem;
+    width: fit-content;
 }
 
-.label-language-select {
-    width: 100%;
-    text-align: start;
-    font-size: 0.813rem;
-    color: #5a5a5a;
-}
-
-.language-select {
-    width: 100%;
-
-    padding: 0.5rem 1rem 0.5rem 0.25rem;
-    font-size: 0.938rem;
-    text-align: start;
-    border: none;
-    cursor: auto;
-
-    border-radius: 0;
-}
-
-.language-select:hover {
-    background-color: #68c2e2;
-}
-
-.language-select-container .dropdown-container {
-    width: 100%;
-}
-
-.language-select-container .dropdown-list {
-    width: 8.125rem;
-}
-
-.language-select-container .dropdown-container button {
-    border-bottom: 0.0625rem solid #d1d5db;
-}
-
-.language-select-container .dropdown-container button:hover {
-    border-bottom: 0.125rem solid #000;
-    background-color: #ffff;
-}
-
-.language-select-container .dropdown-container .opened {
+.language-select-container .css-5h82ro-MuiInputBase-root-MuiInput-root::after {
     border-bottom: 0.125rem solid #68c2e2;
 }
 
-.language-select-container .dropdown-list {
-    border-bottom: 0.0625rem solid #d1d5db;
-    border-left: 0.0625rem solid #d1d5db;
-    border-right: 0.0625rem solid #d1d5db;
-}
-
-.language-select-container .select-option.selected {
-    background-color: #c5ebf7;
-    color: #37b2d8;
-}
-
-.language-select-container .select-option.selected:hover {
-    background-color: #91d8ee;
+.language-select-container
+    .css-ttutc1-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #40b9dd;
 }

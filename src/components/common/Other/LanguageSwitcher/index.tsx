@@ -11,7 +11,6 @@ interface ILanguageSwitcherProps {
     className?: string;
 }
 
-//TODO Понять в чём заключается суть функции и по возможности применить
 const getLocaleLabelByValue = (selectedValue: string): string => {
     const currentLocaleOption: IListItemProps | undefined =
         languageSwitcherOptions.find(
