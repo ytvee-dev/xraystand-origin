@@ -1,27 +1,23 @@
 import React, { type ReactElement } from "react";
-import { useLocaleContent } from "@hooks/useLocale";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
-import * as textContentKz from "@modules/physics/locales/kaz.json";
-import * as textContentRu from "@modules/physics/locales/rus.json";
 import { Card, CardContent, Typography } from "@mui/material";
+import { type IChildSectionProps } from "@modules/physics/types/index"
 import "./style.css";
 
-const InArchitectureSection: React.FC = (): ReactElement => {
-    const textContent = useLocaleContent(textContentRu, textContentKz);
-    const rawCards = textContent.examplesSection.content;
-    const cardsData = rawCards.slice(1, 6);
+const InArchitectureSection: React.FC<IChildSectionProps> = ({content}): ReactElement => {
+    const cards = content.slice(1);
 
     return (
         <div className="physics-architecture-section">
             <BackgroundedTitle
-                title={rawCards[0].title}
-                description={rawCards[0].subTitle}
+                title={content[0].title}
+                description={content[0].subTitle}
                 titleFontWeight="700"
                 fullWidth
             />
 
             <div className="physics-architecture-cards">
-                {cardsData.map((item: any, index: number) => (
+                {cards.map((item: any, index: number) => (
                         <Card
                             className="physics-architecture-card"
                             key={index}

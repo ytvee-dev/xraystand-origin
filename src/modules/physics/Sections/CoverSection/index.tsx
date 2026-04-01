@@ -1,5 +1,6 @@
 import * as paths from '@modules/physics/locales/paths.json';
 import { svg } from '@modules/math/locales/paths.json';
+// import { type ISectionContent } from "@modules/physics/types/index"
 import './style.css';
 import type { ReactElement } from 'react';
 

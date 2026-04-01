@@ -1,31 +1,22 @@
 import React, { type ReactElement } from "react";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import { Card, CardContent, Typography } from "@mui/material";
+import { type IChildSectionProps } from "@modules/physics/types/index";
 import "./style.css";
-interface ISectionCardContent {
-    title: string,
-    subTitle: string,
-    description: string
-}
 
-interface IParentSectionProps {
-    content: ISectionCardContent[]
-}
-
-
-const EverydaySection: React.FC<IParentSectionProps> = ({content}): ReactElement => {
+const EverydaySection: React.FC<IChildSectionProps> = ({content}): ReactElement => {
+    const cards = content.slice(1)
     return (
         <div className="physics-everyday-section">
-
-                <BackgroundedTitle
-                    title={content[0].title}
-                    description={content[0].subTitle}
-                    titleFontWeight="700"
-                    fullWidth
-                />
+            <BackgroundedTitle
+                title={content[0].title}
+                description={content[0].subTitle}
+                titleFontWeight="700"
+                fullWidth
+            />
 
             <div className="physics-everyday-cards">
-                    {content.map((item: any, index: number) => (
+                    {cards.map((item: any, index: number) => (
                         <Card
                             className={`physics-everyday-card ${index === 2 ? 'physics-everyday-last-card' : ''}`}
                             key={index}

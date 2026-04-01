@@ -1,15 +1,11 @@
 import React, { type ReactElement } from "react";
-import { useLocaleContent } from "@hooks/useLocale";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
-import * as textContentKz from "@modules/physics/locales/kaz.json";
-import * as textContentRu from "@modules/physics/locales/rus.json";
+import { type IChildSectionProps } from "@modules/physics/types/index";
 import { Card, CardContent, Typography } from "@mui/material";
 import "./style.css";
 
-const MedicalSection: React.FC = (): ReactElement => {
-    const textContent = useLocaleContent(textContentRu, textContentKz);
-    const rawCards = textContent.examplesSection.content;
-    const cardsData = rawCards.slice(12, 17);
+const MedicalSection: React.FC<IChildSectionProps> = ({ content }): ReactElement => {
+    const cards = content.slice(1)
 
     const restructureText = (text: string) => {
     const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
@@ -60,14 +56,14 @@ const MedicalSection: React.FC = (): ReactElement => {
     return (
         <div className="physics-medical-section">
             <BackgroundedTitle
-                title={rawCards[11].title}
-                description={rawCards[11].subTitle}
+                title={content[0].title}
+                description={content[0].subTitle}
                 titleFontWeight="700"
                 fullWidth
             />
 
             <div className="physics-medical-cards">
-                    {cardsData.map((item: any, index: number) => (
+                    {cards.map((item: any, index: number) => (
                         <Card
                             className="physics-medical-card"
                             key={index}

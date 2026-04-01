@@ -1,19 +1,12 @@
 import React, { type ReactElement } from "react";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import { Card, CardContent, Typography } from "@mui/material";
+import { type IChildSectionProps } from "@modules/physics/types/index";
 import "./style.css";
 
-interface ISectionCardContent {
-    title: string,
-    subTitle: string,
-    description: string
-}
+const DigitalSection: React.FC<IChildSectionProps> = ({content}): ReactElement => {
+    const cards = content.slice(1)
 
-interface IParentSectionProps {
-    content: ISectionCardContent[]
-}
-
-const DigitalSection: React.FC<IParentSectionProps> = ({content}): ReactElement => {
     const restructureText = (text: string) => {
     const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
 
@@ -71,7 +64,7 @@ const DigitalSection: React.FC<IParentSectionProps> = ({content}): ReactElement 
             />
 
             <div className="physics-digital-cards">
-                    {content.map((item: any, index: number) => (
+                    {cards.map((item: any, index: number) => (
                         <Card
                             className="physics-digital-card"
                             key={index}

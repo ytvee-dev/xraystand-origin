@@ -1,7 +1,8 @@
 import React, { type ReactElement } from "react";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import * as paths from "@modules/physics/locales/paths.json";
-import { cardsBg} from "@modules/physics/locales/paths.json";
+import { cardsBg } from "@modules/physics/locales/paths.json";
+import { type IPhysicsSectionProps } from "@modules/physics/types/index"
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardMedia from "@mui/material/CardMedia";
@@ -11,28 +12,14 @@ import MedicalSection from "../MedicalSection";
 import EverydaySection from "../EverydaySection";
 import "./style.css";
 
-interface ISectionCardContent {
-    title: string,
-    subTitle: string,
-    description: string
-}
+const ParentSection: React.FC<IPhysicsSectionProps> = ({content, childContent}: IPhysicsSectionProps): ReactElement => {
+    const cardContent = content.content
 
-interface ISectionContent {
-    title: string,
-    subTitle: string,
-    description: string,
-    content: string[] | ISectionCardContent[]
-}
-
-interface IParentSectionProps {
-    content: ISectionContent,
-    childContent: ISectionContent
-}
-
-const ParentSection: React.FC<IParentSectionProps> = ({content, childContent}: IParentSectionProps): ReactElement => {
-    const cardContent = content.content;
-    const digitalCards = childContent.content.slice(6, 11) as ISectionCardContent[] 
-    const everydayCards = childContent.content.slice(17) as ISectionCardContent[]
+    const childCards = childContent?.content || []
+    const architectureCards = childCards.slice(0, 6) || []
+    const digitalCards = childCards.slice(6, 11) 
+    const medicalCards = childCards.slice(11, 17)
+    const everydayCards = childCards.slice(17)
 
     const [activeCard, setActiveCard] = React.useState<number | null>(0);
     const handleCardClick = (index: number) => {
@@ -79,13 +66,13 @@ const ParentSection: React.FC<IParentSectionProps> = ({content, childContent}: I
 
                 {activeCard === 1 && (
                     <div className="physics-section-left">
-                        <InArchitectureSection />
+                        <InArchitectureSection content={architectureCards}/>
                     </div>
                 )}
 
                 {activeCard === 2 && (
                     <div className="physics-section-right">
-                        <MedicalSection />
+                        <MedicalSection content={medicalCards}/>
                     </div>
                 )}
 
