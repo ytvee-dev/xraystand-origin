@@ -34,10 +34,7 @@ const LanguageSelect = ({
         localStorage.setItem(LocalStorageKeys.LOCALE, selectedLanguage);
     };
 
-    const currentLocaleLabel: string = useLocaleText(
-        currentLocale,
-        "languageSelect",
-    );
+    const currentLocaleLabel: string = useLocaleText("languageSelect");
 
     return (
         <div className={`language-select-container ${className}`}>

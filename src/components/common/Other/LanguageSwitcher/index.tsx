@@ -32,10 +32,7 @@ const LanguageSwitcher: React.FC<ILanguageSwitcherProps> = ({
     };
 
     const isDefaultChecked: boolean = currentLocale === Languages.KAZAKH;
-    const currentLocaleLabel: string = useLocaleText(
-        currentLocale,
-        "languageSwitcher",
-    );
+    const currentLocaleLabel: string = useLocaleText("languageSwitcher");
 
     const styleSX = {
         "& .MuiSwitch-switchBase": {
