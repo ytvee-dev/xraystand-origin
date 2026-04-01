@@ -1,10 +1,8 @@
-import ruContent from "@components/common/locale/ru.json";
-import enContent from "@components/common/locale/en.json";
-import kazContent from "@components/common/locale/kz.json";
 import { Box, FormControl, InputLabel, NativeSelect } from "@mui/material";
 import { Languages, languageSelectOptions } from "@domains/Translate";
 import type { ChangeEvent, ReactElement } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useLocaleText } from "@hooks/useLocaleText";
 import { LocalStorageKeys } from "@utils/constants";
 import { setLocale } from "@store/slices/Locale";
 import type { TRootState } from "@store/index";
@@ -19,21 +17,6 @@ export interface ISelectOption {
     value: string;
     label: string;
 }
-
-const translations: Record<Languages, string> = {
-    [Languages.RUSSIAN]: ruContent.LanguageSelect,
-    [Languages.ENGLISH]: enContent.LanguageSelect,
-    [Languages.KAZAKH]: kazContent.LanguageSelect,
-};
-
-const getLocaleLabelByValue = (
-    translations: Record<Languages, string>,
-    selectedValue: string,
-): string => {
-    const locale = selectedValue as Languages;
-
-    return translations[locale] || "Language";
-};
 
 const LanguageSelect = ({
     className = "",
@@ -51,9 +34,9 @@ const LanguageSelect = ({
         localStorage.setItem(LocalStorageKeys.LOCALE, selectedLanguage);
     };
 
-    const currentLocaleLabel: string = getLocaleLabelByValue(
-        translations,
+    const currentLocaleLabel: string = useLocaleText(
         currentLocale,
+        "languageSelect",
     );
 
     return (
@@ -70,7 +53,6 @@ const LanguageSelect = ({
                     <NativeSelect
                         value={currentLocale}
                         onChange={handleSwitchLanguage}
-                        defaultValue={30}
                         inputProps={{
                             name: currentLocale,
                             id: "uncontrolled-native",

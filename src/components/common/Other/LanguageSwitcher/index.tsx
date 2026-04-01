@@ -1,26 +1,16 @@
-import { Languages, languageSwitcherOptions } from "@domains/Translate";
-import { type ChangeEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useLocaleText } from "@hooks/useLocaleText";
+import { LocalStorageKeys } from "@utils/constants";
 import { setLocale } from "@store/slices/Locale";
 import type { TRootState } from "@store/index";
+import { Languages } from "@domains/Translate";
+import { type ChangeEvent } from "react";
 import { Switch } from "@mui/material";
-import { LocalStorageKeys, type IListItemProps } from "@utils/constants";
 
 interface ILanguageSwitcherProps {
     color?: string;
     className?: string;
 }
-
-const getLocaleLabelByValue = (selectedValue: string): string => {
-    const currentLocaleOption: IListItemProps | undefined =
-        languageSwitcherOptions.find(
-            (option: IListItemProps) => option.value === selectedValue,
-        );
-
-    return !currentLocaleOption
-        ? languageSwitcherOptions[0].label
-        : currentLocaleOption.label;
-};
 
 const LanguageSwitcher: React.FC<ILanguageSwitcherProps> = ({
     color = "",
@@ -42,7 +32,10 @@ const LanguageSwitcher: React.FC<ILanguageSwitcherProps> = ({
     };
 
     const isDefaultChecked: boolean = currentLocale === Languages.KAZAKH;
-    const currentLocaleLabel: string = getLocaleLabelByValue(currentLocale);
+    const currentLocaleLabel: string = useLocaleText(
+        currentLocale,
+        "languageSwitcher",
+    );
 
     const styleSX = {
         "& .MuiSwitch-switchBase": {
