@@ -30,8 +30,6 @@ const PhysicsLogo = () => {
 
 const Physics: React.FC = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
-
-    console.log("coverContent: " + textContent.coverSection.description );
     // const imgUrls = useMemo(() => collectFromPathsJson(paths), []);
     // usePreloadImages(imgUrls);
 
@@ -56,12 +54,10 @@ const Physics: React.FC = () => {
         >
             <div className="physics-background">
                 <CoverSection content={textContent.coverSection}/>
-                <FirstSection className="first-section"/>
+                <FirstSection content={textContent.physicsBranchesSection}/>
                 <ThirdSection/>
             </div>
         </BrightnessLayout>
-
-
     );
 };
 
