@@ -12,6 +12,7 @@ import CoverSection from "@modules/physics/Sections/CoverSection";
 import FirstSection from "@modules/physics/Sections/FirstSection";
 import SecondSection from "@modules/physics/Sections/SecondSection";
 import ThirdSection from "@modules/physics/Sections/ThirdSection/ParentSection";
+import FourthSection from "@modules/physics/Sections/FourthSection";
 import './style.css';
 
 const pageLayoutSX = {
@@ -59,6 +60,7 @@ const Physics: React.FC = () => {
                 <FirstSection content={textContent.physicsBranchesSection}/>
                 <SecondSection content={textContent.scientistsSection} width={screenWidth}/>
                 <ThirdSection/>
+                <FourthSection content={textContent.lawsAndConstantsSection}/>
             </div>
         </BrightnessLayout>
     );
