@@ -1,9 +1,6 @@
 import React, { type ReactElement } from "react";
-import { useLocaleContent } from "@hooks/useLocale";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import * as paths from "@modules/physics/locales/paths.json";
-import * as textContentKz from "@modules/physics/locales/kaz.json";
-import * as textContentRu from "@modules/physics/locales/rus.json";
 import { cardsBg} from "@modules/physics/locales/paths.json";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
@@ -14,13 +11,30 @@ import MedicalSection from "../MedicalSection";
 import EverydaySection from "../EverydaySection";
 import "./style.css";
 
+interface ISectionCardContent {
+    title: string,
+    subTitle: string,
+    description: string
+}
 
-const ParentSection: React.FC = (): ReactElement => {
-    const textContent = useLocaleContent(textContentRu, textContentKz);
-    const content = textContent.inLifeSection.content;
+interface ISectionContent {
+    title: string,
+    subTitle: string,
+    description: string,
+    content: string[] | ISectionCardContent[]
+}
+
+interface IParentSectionProps {
+    content: ISectionContent,
+    childContent: ISectionContent
+}
+
+const ParentSection: React.FC<IParentSectionProps> = ({content, childContent}: IParentSectionProps): ReactElement => {
+    const cardContent = content.content;
+    const digitalCards = childContent.content.slice(6, 11) as ISectionCardContent[] 
+    const everydayCards = childContent.content.slice(17) as ISectionCardContent[]
 
     const [activeCard, setActiveCard] = React.useState<number | null>(0);
-
     const handleCardClick = (index: number) => {
         setActiveCard(index);
     };
@@ -28,13 +42,13 @@ const ParentSection: React.FC = (): ReactElement => {
     return (
         <section className="physics-in-life-section">
             <BackgroundedTitle
-                title={textContent.inLifeSection.title}
+                title={content.title}
                 titleFontWeight="700"
                 fullWidth
             />
             
             <div className="physics-in-life-section-content-wrapper">
-                {content.map((text, index) => (
+                {cardContent.map((text, index) => (
                     <Card key={index} className="physics-in-life-section-top-card">
                         <CardActionArea className="card-area">
                             <CardMedia
@@ -51,7 +65,7 @@ const ParentSection: React.FC = (): ReactElement => {
                                 alt="icon" 
                                 className="card-icon" 
                             />
-                            <p style={{ color: 'white', fontWeight: 700 }}>{text}</p>
+                            <p style={{ color: 'white', fontWeight: 700 }}>{text as string}</p>
                         </div>
                     </Card>
                 ))}
@@ -59,7 +73,7 @@ const ParentSection: React.FC = (): ReactElement => {
              <div className=" physics-in-life-section-cards">
                 {activeCard === 0 && (
                     <div className="physics-section-right">
-                        <EverydaySection />
+                        <EverydaySection content={everydayCards}/>
                     </div>
                 )}
 
@@ -77,7 +91,7 @@ const ParentSection: React.FC = (): ReactElement => {
 
                 {activeCard === 3 && (
                     <div className="physics-section-left">
-                        <DigitalSection />
+                        <DigitalSection content={digitalCards}/>
                     </div>
                 )}
             </div>

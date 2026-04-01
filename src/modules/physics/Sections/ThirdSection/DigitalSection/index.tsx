@@ -1,16 +1,19 @@
 import React, { type ReactElement } from "react";
-import { useLocaleContent } from "@hooks/useLocale";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
-import * as textContentKz from "@modules/physics/locales/kaz.json";
-import * as textContentRu from "@modules/physics/locales/rus.json";
 import { Card, CardContent, Typography } from "@mui/material";
 import "./style.css";
 
-const DigitalSection: React.FC = (): ReactElement => {
-    const textContent = useLocaleContent(textContentRu, textContentKz);
-    const rawCards = textContent.examplesSection.content;
-    const cardsData = rawCards.slice(7, 11);
+interface ISectionCardContent {
+    title: string,
+    subTitle: string,
+    description: string
+}
 
+interface IParentSectionProps {
+    content: ISectionCardContent[]
+}
+
+const DigitalSection: React.FC<IParentSectionProps> = ({content}): ReactElement => {
     const restructureText = (text: string) => {
     const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
 
@@ -61,14 +64,14 @@ const DigitalSection: React.FC = (): ReactElement => {
     return (
         <div className="physics-digital-section">
             <BackgroundedTitle
-                title={rawCards[6].title}
-                description={rawCards[6].subTitle}
+                title={content[0].title}
+                description={content[0].subTitle}
                 titleFontWeight="700"
                 fullWidth
             />
 
             <div className="physics-digital-cards">
-                    {cardsData.map((item: any, index: number) => (
+                    {content.map((item: any, index: number) => (
                         <Card
                             className="physics-digital-card"
                             key={index}

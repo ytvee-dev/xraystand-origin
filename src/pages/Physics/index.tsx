@@ -59,7 +59,7 @@ const Physics: React.FC = () => {
                 <CoverSection content={textContent.coverSection}/>
                 <FirstSection content={textContent.physicsBranchesSection}/>
                 <SecondSection content={textContent.scientistsSection} width={screenWidth}/>
-                <ThirdSection/>
+                <ThirdSection content={textContent.inLifeSection} childContent={textContent.examplesSection}/>
                 <FourthSection content={textContent.lawsAndConstantsSection}/>
             </div>
         </BrightnessLayout>

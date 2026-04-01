@@ -1,29 +1,31 @@
 import React, { type ReactElement } from "react";
-import { useLocaleContent } from "@hooks/useLocale";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
-import * as textContentKz from "@modules/physics/locales/kaz.json";
-import * as textContentRu from "@modules/physics/locales/rus.json";
 import { Card, CardContent, Typography } from "@mui/material";
 import "./style.css";
+interface ISectionCardContent {
+    title: string,
+    subTitle: string,
+    description: string
+}
 
-const EverydaySection: React.FC = (): ReactElement => {
+interface IParentSectionProps {
+    content: ISectionCardContent[]
+}
 
-    const textContent = useLocaleContent(textContentRu, textContentKz);
-    const rawCards = textContent.examplesSection.content;
-    const cardsData = rawCards.slice(18, 21);
 
+const EverydaySection: React.FC<IParentSectionProps> = ({content}): ReactElement => {
     return (
         <div className="physics-everyday-section">
 
                 <BackgroundedTitle
-                    title={rawCards[17].title}
-                    description={rawCards[17].subTitle}
+                    title={content[0].title}
+                    description={content[0].subTitle}
                     titleFontWeight="700"
                     fullWidth
                 />
 
             <div className="physics-everyday-cards">
-                    {cardsData.map((item: any, index: number) => (
+                    {content.map((item: any, index: number) => (
                         <Card
                             className={`physics-everyday-card ${index === 2 ? 'physics-everyday-last-card' : ''}`}
                             key={index}
