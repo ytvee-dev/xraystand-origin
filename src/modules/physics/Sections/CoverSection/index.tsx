@@ -1,14 +1,19 @@
 import * as paths from '@modules/physics/locales/paths.json';
 import { svg } from '@modules/math/locales/paths.json';
-import * as textContentRu from '@modules/physics/locales/rus.json';
-import * as textContentKz from '@modules/physics/locales/kaz.json';
-import { useLocaleContent } from '@hooks/useLocale';
 import './style.css';
 import type { ReactElement } from 'react';
 
-const CoverSection: React.FC = ():ReactElement => {
-    const textContent = useLocaleContent(textContentRu, textContentKz)
+interface ICoverContent {
+    title: string
+    subTitle: string
+    description: string
+}
 
+interface ICoverSectionProps {
+    content: ICoverContent
+}
+
+const CoverSection: React.FC<ICoverSectionProps> = ({ content }: ICoverSectionProps): ReactElement => {
     return (
         <section className='physics-cover-section'>
             <div className='physics-hero-background'>
@@ -24,8 +29,8 @@ const CoverSection: React.FC = ():ReactElement => {
                 
                 <div className="physics-hero-content">
                     <div className="physics-hero-text">
-                        <h1>{textContent.coverSection.title}</h1>
-                        <p>{textContent.coverSection.description}</p>
+                        <h1>{content.title}</h1>
+                        <p>{content.description}</p>
                     </div>
                     <div className="physics-hero-image-wrapper">
                         <img src={paths.heroImg} alt='image'/>
