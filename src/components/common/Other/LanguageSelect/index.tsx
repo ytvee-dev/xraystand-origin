@@ -55,7 +55,6 @@ const LanguageSelect = ({
         translations,
         currentLocale,
     );
-    console.log(currentLocaleLabel);
 
     return (
         <div className={`language-select-container ${className}`}>
