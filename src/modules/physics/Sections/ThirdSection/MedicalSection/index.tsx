@@ -1,10 +1,10 @@
 import React, { type ReactElement } from "react";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
-import { type IChildSectionProps } from "@modules/physics/types/index";
+import { type IChildContentProps } from "@modules/physics/types/index";
 import { Card, CardContent, Typography } from "@mui/material";
 import "./style.css";
 
-const MedicalSection: React.FC<IChildSectionProps> = ({ content }): ReactElement => {
+const MedicalSection: React.FC<IChildContentProps> = ({ content }): ReactElement => {
     const cards = content.slice(1)
 
     const restructureText = (text: string) => {

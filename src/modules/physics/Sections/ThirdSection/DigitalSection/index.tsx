@@ -1,10 +1,10 @@
 import React, { type ReactElement } from "react";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import { Card, CardContent, Typography } from "@mui/material";
-import { type IChildSectionProps } from "@modules/physics/types/index";
+import { type IChildContentProps } from "@modules/physics/types/index";
 import "./style.css";
 
-const DigitalSection: React.FC<IChildSectionProps> = ({content}): ReactElement => {
+const DigitalSection: React.FC<IChildContentProps> = ({content}): ReactElement => {
     const cards = content.slice(1)
 
     const restructureText = (text: string) => {
