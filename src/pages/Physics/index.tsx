@@ -2,14 +2,15 @@ import React from "react";
 // import { useMemo } from "react";
 // import {usePreloadImages} from "@hooks/usePreloadImages.ts";
 // import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
-// import {usePageData} from "@hooks/usePageData";
+// import * as paths from "@modules/physics/locales/paths.json";
 import {useLocaleContent} from "@hooks/useLocale";
-import BrightnessLayout from "@layout/Brightness";
-import CoverSection from "@modules/physics/Sections/CoverSection";
+import { usePageData } from "@hooks/usePageData";
 import * as contentRu from "@modules/physics/locales/rus.json";
 import * as contentKz from "@modules/physics/locales/kaz.json";
-// import * as paths from "@modules/physics/locales/paths.json";
+import BrightnessLayout from "@layout/Brightness";
+import CoverSection from "@modules/physics/Sections/CoverSection";
 import FirstSection from "@modules/physics/Sections/FirstSection";
+import SecondSection from "@modules/physics/Sections/SecondSection";
 import ThirdSection from "@modules/physics/Sections/ThirdSection/ParentSection";
 import './style.css';
 
@@ -30,6 +31,7 @@ const PhysicsLogo = () => {
 
 const Physics: React.FC = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
+    const { screenWidth } = usePageData();
     // const imgUrls = useMemo(() => collectFromPathsJson(paths), []);
     // usePreloadImages(imgUrls);
 
@@ -55,6 +57,7 @@ const Physics: React.FC = () => {
             <div className="physics-background">
                 <CoverSection content={textContent.coverSection}/>
                 <FirstSection content={textContent.physicsBranchesSection}/>
+                <SecondSection content={textContent.scientistsSection} width={screenWidth}/>
                 <ThirdSection/>
             </div>
         </BrightnessLayout>

@@ -2,12 +2,33 @@ import React, { type ReactElement, useState } from 'react';
 import BackgroundedTitle from '@modules/physics/components/BackgroundedTitle';
 import Slider from "@components/common/Other/Slider";
 import { motion, AnimatePresence } from "framer-motion";
-import { usePageData } from "@hooks/usePageData";
-import { useLocaleContent } from '@hooks/useLocale';
-import * as textContentRu from '@modules/physics/locales/rus.json';
-import * as textContentKz from '@modules/physics/locales/kaz.json';
 import * as paths from '@modules/physics/locales/paths.json'
 import './style.css';
+
+interface IScientistsCardContent {
+    title: string,
+    description: string
+}
+
+interface IScientistsCard {
+    title: string,
+    subTitle: string,
+    description: string,
+    image: string,
+    content: IScientistsCardContent[]
+}
+
+interface ISecondContent {
+    title: string,
+    subTitle: string,
+    description: string,
+    content: IScientistsCard[]
+}
+
+interface ISecondSectionProps {
+    content: ISecondContent,
+    width: number
+}
 
 type TImagesNames = "Newton" |
     "Einstein" |
@@ -34,15 +55,13 @@ interface ITextCard {
     content: IDescriptionList[]
 }
 
-const SecondSection: React.FC = (): ReactElement => {
-    const textContent = useLocaleContent(textContentRu, textContentKz)
-    const { screenWidth } = usePageData();
-    const isMobile = screenWidth <= 768;
+const SecondSection: React.FC<ISecondSectionProps> = ({ content, width }: ISecondSectionProps): ReactElement => {
+    const isMobile = width <= 768;
     const [index, setIndex] = useState(0);
 
     const imagePaths = paths.peoples as Record<TImagesNames, string>;
 
-    const cards: ITextCard[] = textContent.scientistsSection.content.map(
+    const cards: ITextCard[] = content.content.map(
         (cardItem, index) => {
             const descriptionList: IDescriptionList[] = cardItem.content.reduce(
                 (acc: IDescriptionList[], contentItem) => {
@@ -75,7 +94,7 @@ const SecondSection: React.FC = (): ReactElement => {
 
     return (
         <section className='physics-second-section'>
-            <BackgroundedTitle title={textContent.scientistsSection.title} />
+            <BackgroundedTitle title={content.title} />
 
             <div className="physics-second-section-content">
                 <motion.div
