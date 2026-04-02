@@ -1,5 +1,8 @@
-import type {IListItemProps} from "@utils/constants";
-import type {IChemistryPageResources, TElementsInfo} from "@pages/Chemistry/types.ts";
+import type { IListItemProps } from "@utils/constants";
+import type {
+    IChemistryPageResources,
+    TElementsInfo,
+} from "@pages/Chemistry/types.ts";
 
 export interface IInfoCardResources {
     title: string;
@@ -7,7 +10,7 @@ export interface IInfoCardResources {
 }
 
 export interface IImageCardResources {
-    title?: string,
+    title?: string;
     label?: string;
     linkText?: string;
     action?: () => void;
@@ -18,40 +21,57 @@ export interface IPageSectionResources {
     [PageSectionItemsIds.TITLE]: string;
     [PageSectionItemsIds.SUBTITLE]?: string;
     [PageSectionItemsIds.DESCRIPTION]?: string;
-    [PageSectionItemsIds.CONTENT]?: IImageCardResources[] | IInfoCardResources[] | IInfoCardResources | string[] | string;
+    [PageSectionItemsIds.CONTENT]?:
+        | IImageCardResources[]
+        | IInfoCardResources[]
+        | IInfoCardResources
+        | string[]
+        | string;
     [PageSectionItemsIds.NOTIFICATION_LABEL]?: string;
-};
+}
 
 export interface ITrafficLawsPageResources {
     [key: string]: IPageSectionResources;
-};
+}
 
 export interface ITextTranslationResources {
-    [key: string]: ITrafficLawsPageResources | TElementsInfo | IChemistryPageResources;
-};
+    [key: string]:
+        | ITrafficLawsPageResources
+        | TElementsInfo
+        | IChemistryPageResources;
+}
 
 export const enum Languages {
     RUSSIAN = "ru",
     KAZAKH = "kz",
-};
+    ENGLISH = "en",
+}
 
 export const languageSwitcherOptions: IListItemProps[] = [
-    {label: "RU", value: Languages.RUSSIAN},
-    {label: "KZ", value: Languages.KAZAKH},
+    { label: "RU", value: Languages.RUSSIAN },
+    { label: "KZ", value: Languages.KAZAKH },
+];
+
+export const languageSelectOptions: IListItemProps[] = [
+    { label: "RU", value: Languages.RUSSIAN },
+    { label: "KZ", value: Languages.KAZAKH },
+    { label: "EN", value: Languages.ENGLISH },
 ];
 
 export const localesTextRecord: Record<Languages, string> = {
-    [Languages.RUSSIAN]: 'rusTextLocale',
-    [Languages.KAZAKH]: 'kazTextLocale',
+    [Languages.RUSSIAN]: "rusTextLocale",
+    [Languages.KAZAKH]: "kazTextLocale",
+    [Languages.ENGLISH]: "enTextLocale",
 };
 
 export interface IControlTranslationResources {
     contentCardAdditionalInfo: string;
-};
+}
 
 export const localesControlRecord: Record<Languages, string> = {
     [Languages.RUSSIAN]: "rusControlLocale",
     [Languages.KAZAKH]: "kazControlLocale",
+    [Languages.ENGLISH]: "enTextLocale",
 };
 
 export const enum PageIds {
@@ -59,7 +79,7 @@ export const enum PageIds {
     CHEMISTRY_PAGE = "chemistryPage",
     RUSLIT_PAGE = "ruslitPage",
     KAZAKH_ADEBIET_PAGE = "kazakhadebietPage",
-};
+}
 
 export const enum PageSectionIds {
     FIRST_SECTION = "firstSection",
@@ -71,7 +91,7 @@ export const enum PageSectionIds {
     SEVENTH_SECTION = "seventhSection",
     EIGHTH_SECTION = "eighthSection",
     NINTH_SECTION = "ninthSection",
-};
+}
 
 export const enum PageSectionItemsIds {
     TITLE = "title",
@@ -79,4 +99,4 @@ export const enum PageSectionItemsIds {
     DESCRIPTION = "description",
     CONTENT = "content",
     NOTIFICATION_LABEL = "notificationLabel",
-};
+}
