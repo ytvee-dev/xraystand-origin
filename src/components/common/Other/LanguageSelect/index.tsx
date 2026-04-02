@@ -38,7 +38,7 @@ const LanguageSelect = ({
 
     return (
         <div className={`language-select-container ${className}`}>
-            <Box sx={{ minWidth: 120 }}>
+            <Box sx={{ minWidth: 95 }}>
                 <FormControl fullWidth>
                     <InputLabel
                         variant="standard"

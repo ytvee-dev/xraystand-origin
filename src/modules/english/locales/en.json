@@ -1,208 +1,251 @@
 {
     "coverSection": {
-        "title": "BASIC ENGLISH GRAMMAR",
-        "content": [
-            {
-                "title": "THE"
-            },
-            {
-                "title": "ENGLISH"
-            },
-            {
-                "title": "LANGUAGE"
-            },
-            {
-                "title": "STARTS"
-            },
-            {
-                "title": "SIMPLY"
-            }
-        ]
+        "title": "BASIC ENGLISH GRAMMAR"
     },
     "firstSection": {
-        "title": "",
+        "title": "Article",
         "content": [
             {
-                "title": "",
-                "description": "",
+                "title": "ZERO ARTICLE (NO ARTICLE)",
+                "description": "Used when we speak about things in a general sense or with specific categories.",
                 "content": [
                     {
-                        "subtitle": "",
-                        "description": ""
+                        "subtitle": "Plural & uncountable nouns (general)",
+                        "description": "Example: Cats are independent."
                     },
                     {
-                        "subtitle": "",
-                        "description": ""
+                        "subtitle": "Proper names",
+                        "description": "Example: He lives in London."
                     },
                     {
-                        "subtitle": "",
-                        "description": ""
+                        "subtitle": "With the names of games, sports, and academic subjects or with some words and expressions: work, home, TV, to have breakfast/lunch/dinner.",
+                        "description": "Example: I go to work by bus."
                     }
                 ]
             },
             {
-                "title": "",
-                "description": "",
+                "title": "DEFINITE ARTICLE: THE",
+                "description": "Used with singular, plural, and uncountable nouns when the speaker and listener both know exactly which thing is being discussed.",
                 "content": [
                     {
-                        "subtitle": "",
-                        "description": ""
+                        "subtitle": "Specific things",
+                        "description": "Example: Look at the moon."
                     },
                     {
-                        "subtitle": "",
-                        "description": ""
+                        "subtitle": "Second mention",
+                        "description": "Example: I saw a movie. The movie was long."
                     },
                     {
-                        "subtitle": "",
-                        "description": ""
+                        "subtitle": "Superlatives",
+                        "description": "Example: He is the best student."
                     }
                 ]
             },
             {
-                "title": "",
-                "description": "",
+                "title": "INDEFINITE ARTICLE: A / AN",
+                "description": "Used with singular countable nouns when mentioning something for the first time or talking about things in general.",
                 "content": [
                     {
-                        "subtitle": "",
-                        "description": ""
+                        "subtitle": "A - Before words starting with a consonant sound.",
+                        "description": "Example: a book, a horse"
                     },
                     {
-                        "subtitle": "",
-                        "description": ""
+                        "subtitle": "An - Before words starting with a vowel sound.",
+                        "description": "Example:  an apple, an hour"
                     }
                 ]
             }
         ]
     },
     "secondSection": {
-        "title": "",
-        "description": "",
+        "title": "Adjective",
+        "description": "An adjective is a word that describes or modifies a noun or pronoun, adding details about its qualities, characteristics, quantity, or extent.",
         "content": [
             {
-                "title": "",
+                "title": "ATTRIBUTIVE:",
                 "content": [
                     {
-                        "description": ""
+                        "description": "go before the noun "
                     },
                     {
-                        "description": ""
+                        "description": "Adjective + Noun"
                     },
                     {
-                        "description": ""
+                        "description": "Fast overtaking"
                     }
                 ]
             },
             {
-                "title": "",
+                "title": "POSTPOSITIVE:",
                 "content": [
                     {
-                        "description": ""
+                        "description": "go immediately after the noun"
                     },
                     {
-                        "description": ""
+                        "description": "Pronoun + Adjective"
                     },
                     {
-                        "description": ""
+                        "description": "Something scary"
                     }
                 ]
             },
             {
-                "title": "",
+                "title": "PREDICATIVE:",
                 "content": [
                     {
-                        "description": ""
+                        "description": "go after the noun and complete a linking verb"
                     },
                     {
-                        "description": ""
+                        "description": "Noun + linking verb + adjective"
                     },
                     {
-                        "description": ""
+                        "description": "Tina is smart"
                     }
                 ]
             }
         ]
     },
     "thirdSection": {
-        "title": "",
-        "description": "",
+        "title": "Noun",
+        "description": "A noun is a word that names a person, place, thing, or idea (concept, quality, state, action) and serves as a fundamental building block in language, often acting as the subject or object in a sentence.",
         "content": [
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" }
+            {
+                "title": "PROPER",
+                "subtitle": "(London, Monday)",
+                "description": "Specific names for people, places or things."
+            },
+            {
+                "title": "COMMON",
+                "subtitle": "(park, mom)",
+                "description": "General names for people, places or things."
+            },
+            {
+                "title": "CONCRETE",
+                "subtitle": "(tree, cat)",
+                "description": "Things that you can see, touch, hear, smell or taste."
+            },
+            {
+                "title": "ABSTRACT",
+                "subtitle": "(happiness, bravery)",
+                "description": "Ideas, feelings or qualities you cannot perceive with your senses."
+            },
+            {
+                "title": "COLLECTIVE",
+                "subtitle": "(family, team)",
+                "description": "Groups or collectives of people or things."
+            },
+            {
+                "title": "POSSESSIVE",
+                "subtitle": "(Tom’s dog, John’s car)",
+                "description": "Shows ownership or possession."
+            },
+            {
+                "title": "COUNTABLE",
+                "subtitle": "(books, dollars)",
+                "description": "Things that can be counted."
+            },
+            {
+                "title": "UNCOUNTABLE",
+                "subtitle": "(water, sand)",
+                "description": "Things that cannot be counted."
+            }
         ]
     },
     "fourthSection": {
-        "title": "",
-        "description": "",
+        "title": "Verb",
+        "description": "A verb is a word that expresses an action, occurrence, or state of being, forming the core of a sentence and indicating what the subject is doing or experiencing.",
         "content": [
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" },
-            { "title": "", "subtitle": "", "description": "" }
+            {
+                "title": "ACTION VERBS:",
+                "subtitle": "show physical or mental action",
+                "description": "Example: She runs every morning."
+            },
+            {
+                "title": "STATIVE VERBS:",
+                "subtitle": "describe a state or feeling",
+                "description": "Example: He knows the correct answer. He still believes that story."
+            },
+            {
+                "title": "REGULAR VERBS:",
+                "subtitle": "add “-ed” for past tense",
+                "description": "Example: work → worked → worked"
+            },
+            {
+                "title": "IRREGULAR VERBS:",
+                "subtitle": "change form in past tense",
+                "description": "Example: go → went → gone"
+            },
+            {
+                "title": "LINKING VERBS:",
+                "subtitle": "connect the subject to more info",
+                "description": "Example: She seems nervous."
+            },
+            {
+                "title": "TRANSITIVE VERBS:",
+                "subtitle": "need a direct object",
+                "description": "Example: He reads a book."
+            },
+            {
+                "title": "INTRANSITIVE VERBS:",
+                "subtitle": "don't need a direct object",
+                "description": "Example: They arrived late."
+            }
         ]
     },
     "fifthSection": {
-        "title": "",
-        "description": "",
+        "title": "Tenses",
+        "description": "Tenses are verb forms that show when an action or state occurs (past, present, future) and provide details about its duration or completion.",
         "content": [
             {
-                "title": "",
+                "title": "MAIN TENSES (TIME)",
                 "content": [
                     {
-                        "title": "",
-                        "subtitle": "",
-                        "description": ""
+                        "title": "Past:",
+                        "subtitle": "Happened before now",
+                        "description": "e.g. walked, was eating"
                     },
                     {
-                        "title": "",
-                        "subtitle": "",
-                        "description": ""
+                        "title": "Present:",
+                        "subtitle": "Happening now or usually",
+                        "description": "e.g. walks, is eating"
                     },
                     {
-                        "title": "",
-                        "subtitle": "",
-                        "description": ""
+                        "title": "Future:",
+                        "subtitle": "Will happen later",
+                        "description": "e.g. will walk, will be eating"
                     }
                 ]
             },
             {
-                "title": "",
-                "description": "",
+                "title": "ASPECTS (DETAILS)",
+                "description": "These combine with the main tenses to add nuance.",
                 "content": [
                     {
-                        "title": "",
-                        "subtitle": "",
-                        "description": ""
+                        "title": "Simple:",
+                        "subtitle": "Basic action",
+                        "description": "e.g. He runs"
                     },
                     {
-                        "title": "",
-                        "subtitle": "",
-                        "description": ""
+                        "title": "Continuous (Progressive):",
+                        "subtitle": "Ongoing action",
+                        "description": "e.g. He is running"
                     },
                     {
-                        "title": "",
-                        "subtitle": "",
-                        "description": ""
+                        "title": "Perfect:",
+                        "subtitle": "Completed action, often with present relevance",
+                        "description": "e.g. He has run"
                     },
                     {
-                        "title": "",
-                        "subtitle": "",
-                        "description": ""
+                        "title": "Perfect Continuous:",
+                        "subtitle": "Ongoing action that started in the past",
+                        "description": "e.g. He has been running"
                     }
                 ]
             }
         ]
     },
     "sixthSection": {
-        "title": "",
+        "title": "EXAMPLES COMBINING TENSE & ASPECT:",
         "description": "",
         "content": [
             {
@@ -283,125 +326,125 @@
         ]
     },
     "seventhSection": {
-        "title": "",
-        "description": "",
+        "title": "Adverb",
+        "description": "An adverb is a word that modifies or describes a verb, adjective, another adverb, to provide more detail.",
         "content": [
             {
-                "title": "",
-                "description": ""
+                "title": "ADVERBS DESCRIBE VERBS",
+                "description": "Example: Abdullah finished his test hastily."
             },
             {
-                "title": "",
-                "description": ""
+                "title": "ADVERBS DESCRIBE ADJECTIVES",
+                "description": "Example: Mount Ranier is quite tall."
             },
             {
-                "title": "",
-                "description": ""
+                "title": "ADVERBS DESCRIBE ADVERBS",
+                "description": "Example: The hotel is almost fully booked."
             }
         ]
     },
     "eighthSection": {
-        "title": "",
+        "title": "Adverbs are words that answer QUESTIONS like:",
         "content": [
             {
-                "title": "",
-                "subtitle": "",
-                "description": ""
+                "title": "HOW:",
+                "subtitle": "quickly, speedily, happily etc.",
+                "description": "Dinner arrived swiftly."
             },
             {
-                "title": "",
-                "subtitle": "",
-                "description": ""
+                "title": "WHERE:",
+                "subtitle": "outside, inside, near etc.",
+                "description": "The car is outside."
             },
             {
-                "title": "",
-                "subtitle": "",
-                "description": ""
+                "title": "WHEN:",
+                "subtitle": "last month, last week, now, later etc. ",
+                "description": "My project is due soon."
             },
             {
-                "title": "",
-                "subtitle": "",
-                "description": ""
+                "title": "HOW MUCH:",
+                "subtitle": "fully, almost, rather etc.",
+                "description": "Lennie is quite strong."
             },
             {
-                "title": "",
-                "subtitle": "",
-                "description": ""
+                "title": "HOW OFTEN:",
+                "subtitle": "never, sometimes, often etc.",
+                "description": "She never misses class."
             }
         ]
     },
     "ninethSection": {
-        "title": "",
-        "description": "",
+        "title": "American and British English differences",
+        "description": "American and British language differences relate to spelling, vocabulary, grammar, pronunciation, and cultural norms (directness versus restraint). British English often retains more traditional forms, while American English prefers simplification, although both are mutually intelligible.",
         "content": [
             {
-                "title": "",
+                "title": "PRONUNCIATION",
                 "content": [
                     {
-                        "title": "",
-                        "description": ""
+                        "title": "R-Coloring (Rhoticity):",
+                        "description": "(Non-Rhotic): Vowels before 'r' often lengthen or change, but the 'r' isn't pronounced unless followed by another vowel (e.g., car /kɑː/)."
                     },
                     {
                         "title": "",
-                        "description": ""
+                        "description": "(Rhotic): The 'r' sound is pronounced after the vowel (e.g., car /kɑːr/, bird /bɜːrd/)."
+                    },
+                    {
+                        "title": "\"Short O\" (ɒ) Sound:",
+                        "description": "Words like hot, lot, box use the /ɒ/ sound."
                     },
                     {
                         "title": "",
-                        "description": ""
+                        "description": "“O” becomes /ɑː/ (like father) or /ɔː/ (like bought) (e.g., hot /hɑːt/ or /hɔːt/)."
+                    },
+                    {
+                        "title": "Diphthongs (Vowel + 'r'):",
+                        "description": "Diphthongic transitions are preserved, for example: near /nɪər/."
                     },
                     {
                         "title": "",
-                        "description": ""
-                    },
-                    {
-                        "title": "",
-                        "description": ""
-                    },
-                    {
-                        "title": "",
-                        "description": ""
+                        "description": "The /ə/ sound often disappears to form a long vowel or monophthong, for example: near /nɪr/."
                     }
                 ]
             },
             {
-                "title": "",
+                "title": "GRAMMAR",
                 "content": [
                     {
-                        "title": "",
-                        "description": ""
+                        "title": "Collective Nouns",
+                        "description": "use singular/plural (The team is/are winning)."
                     },
                     {
                         "title": "",
-                        "description": ""
+                        "description": "use singular (The team is winning)."
+                    },
+                    {
+                        "title": "Verbs",
+                        "description": "use present perfect more (\"I've just eaten\")."
                     },
                     {
                         "title": "",
-                        "description": ""
-                    },
-                    {
-                        "title": "",
-                        "description": ""
+                        "description": "use simple past tense (\"I just ate\")."
                     }
                 ]
             },
             {
-                "title": "",
+                "title": "SPELLING",
                 "content": [
                     {
-                        "title": "",
-                        "description": ""
+                        "title": "Word endings",
+                        "description": "retains French roots: -our, -ise, -re, -ce (colour, organise, centre, defence)."
                     },
                     {
                         "title": "",
-                        "description": ""
+                        "description": "simplified and differentiated spellings: -or, -ize, -er, -se (color, organize, center, defense)."
+                    },
+                    {
+                        "title": "Double consonants",
+                        "description": "often doubles consonant in verbs when adding endings (travelling, cancelled)"
                     },
                     {
                         "title": "",
-                        "description": ""
-                    },
-                    {
-                        "title": "",
-                        "description": ""
+                        "description": "usually uses a single consonant (traveling, canceled)."
                     }
                 ]
             }
