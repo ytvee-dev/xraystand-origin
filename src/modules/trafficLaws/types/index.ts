@@ -10,6 +10,8 @@ export interface IContentLabel {
     additionalInfo?: {
         title: string;
         pointsTextList: string[];
+        imagePath?: string;
+        text?: string[];
     };
 }
 

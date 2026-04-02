@@ -1,9 +1,10 @@
-import {type ReactElement} from "react";
-import type {TContentItem} from "@modules/trafficLaws/types";
+import { type ReactElement } from "react";
+import type { TContentItem } from "@modules/trafficLaws/types";
 import ContentSection from "@components/common/Sections/DSContentSection";
-import DefaultCardsListOL from "@modules/trafficLaws/components/DefaultCardsListOL";
+import DefaultCardsListOL from "@components/common/Other/DefaultCardsListOL";
 import DSNotification from "@components/common/DSNotification";
-import {useLocaleContent} from "@hooks/useLocale";
+import { useLocaleContent } from "@hooks/useLocale";
+import { setModalContentName } from "@store/slices/TrafficLawsPage";
 import * as textContentKz from "@modules/trafficLaws/locales/kaz.json";
 import * as textContentRu from "@modules/trafficLaws/locales/rus.json";
 import * as paths from "@modules/trafficLaws/locales/paths.json";
@@ -14,22 +15,33 @@ const FifthSection = (): ReactElement | null => {
     if (!translation.fifthSection) return null;
 
     return (
-        <ContentSection textData={{
-            title: translation.fifthSection["title"],
-            description: translation.fifthSection["description"],
-            colorScheme: {
-                background: "#FFFFFF",
-                text: "#289FF5",
-            }
-        }}>
+        <ContentSection
+            textData={{
+                title: translation.fifthSection["title"],
+                description: translation.fifthSection["description"],
+                colorScheme: {
+                    background: "#FFFFFF",
+                    text: "#289FF5",
+                },
+            }}
+        >
             <div className={"background-cards-container"}>
                 <DefaultCardsListOL
-                    content={translation.fifthSection["content"] as TContentItem[]}
-                    imageIdData={paths.trafficLawsPage.fifthSection.contentListData}
+                    content={
+                        translation.fifthSection["content"] as TContentItem[]
+                    }
+                    imageIdData={
+                        paths.trafficLawsPage.fifthSection.contentListData
+                    }
+                    setModalContentName={setModalContentName}
                 />
             </div>
             <div className="content-section-alert-wrapper">
-                <DSNotification content={translation.fifthSection.notificationLabel as string} />
+                <DSNotification
+                    content={
+                        translation.fifthSection.notificationLabel as string
+                    }
+                />
             </div>
         </ContentSection>
     );

@@ -1,0 +1,17 @@
+.language-select-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    width: fit-content;
+}
+
+.language-select-container .css-5h82ro-MuiInputBase-root-MuiInput-root::after {
+    border-bottom: 0.125rem solid #68c2e2;
+}
+
+.language-select-container
+    .css-ttutc1-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #40b9dd;
+}
