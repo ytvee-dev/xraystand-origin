@@ -7,11 +7,15 @@
     width: fit-content;
 }
 
-.language-select-container .css-5h82ro-MuiInputBase-root-MuiInput-root::after {
-    border-bottom: 0.125rem solid #68c2e2;
+.language-select-option {
+    color: rgb(0, 0, 0, 0.87);
+}
+
+.language-select-container .css-1ev28is-MuiInputBase-root-MuiInput-root::after {
+    border-bottom: 0.125rem solid #ffffff;
 }
 
 .language-select-container
-    .css-ttutc1-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-    color: #40b9dd;
+    .css-1o87m7z-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #ffffff;
 }
