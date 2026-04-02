@@ -55,6 +55,11 @@
     display: none;
 }
 
+.first-section {
+    margin: 85px 0px 0px;
+    padding: 0 7px;
+}
+
 .physics-first-section-background {
     position: absolute;
     bottom: 0;

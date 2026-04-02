@@ -1,18 +1,35 @@
 import React, {type ReactElement} from "react";
-import {useLocaleContent} from "@hooks/useLocale";
-import * as textContentRu from "@modules/physics/locales/rus.json";
-import * as textContentKz from "@modules/physics/locales/rus.json";
 import * as mathPaths from "@modules/math/locales/paths.json";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import ParentCard, {type ParentCardProps, type SubCard} from "@modules/physics/components/LevelCards/ParentCard";
 import './style.css'
 
-const FifthSection: React.FC = (): ReactElement => {
-    const textContent = useLocaleContent(textContentRu, textContentKz);
-    const content = textContent.lawsAndConstantsSection.content
+interface ICardparagraph {
+    imageName: string,
+    text: string,
+}
+
+interface ICardContent {
+    title: string,
+    subTitle: string,
+    description: ICardparagraph[]
+}
+
+interface IFourthContent {
+    title: string,
+    description: string,
+    content: ICardContent[]
+}
+
+interface IFourthSectionProps {
+    content: IFourthContent
+}
+
+const FourthSection: React.FC<IFourthSectionProps> = ({content}: IFourthSectionProps): ReactElement => {
+    const cardsContent = content.content
     const cards: ParentCardProps[] = [];
 
-    content.forEach((item) => {
+    cardsContent.forEach((item) => {
         if (item.title.length > 0) {
             cards.push({
                 title: item.title,
@@ -31,7 +48,7 @@ const FifthSection: React.FC = (): ReactElement => {
             </div>
 
             <div className="physics-fifth-content-wrapper">
-                <BackgroundedTitle title={textContent.lawsAndConstantsSection.title}/>
+                <BackgroundedTitle title={content.title}/>
 
                 <div className="physics-fifth-section-cards">
                     <div className="physics-fifth-cards-wrapper">
@@ -50,4 +67,4 @@ const FifthSection: React.FC = (): ReactElement => {
     )
 }
 
-export default FifthSection;
+export default FourthSection;
