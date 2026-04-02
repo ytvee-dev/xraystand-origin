@@ -1,0 +1,63 @@
+.physics-medical-section {
+    margin: 2.5rem 0;
+}
+
+.physics-medical-cards {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.physics-medical-card {
+    max-width: 220px;
+    border: 1px solid rgb(255,255,255);
+}
+
+.physics-medical-card p {
+    white-space: pre-line;
+}
+
+.physics-medical-card-content {
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.medical-list {
+    padding-left: 16px;
+}
+
+.physics-medical-card:nth-child(2) ul:nth-of-type(n) {
+    margin-top: 15px;
+}
+
+.physics-medical-card:nth-child(3) ul:nth-of-type(n+2) {
+    margin-top: 15px;
+}
+
+.physics-medical-card:nth-child(4) ul:nth-of-type(n) {
+    margin: 10px 0;  
+}
+
+@media (max-width: 1120px) {
+    .physics-medical-cards {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .physics-medical-card {
+        max-width: 440px;
+    }
+}
+
+@media (max-width: 920px) {
+    .physics-medical-card {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .physics-medical-card {
+        max-width: none
+    }
+}

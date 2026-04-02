@@ -1,0 +1,42 @@
+.physics-architecture-section {
+    margin: 2.5rem 0;
+}
+
+.physics-architecture-cards {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.physics-architecture-card {
+    max-width: 220px;
+    border: 1px solid rgb(255,255,255);
+}
+
+.physics-architecture-card p {
+    white-space: pre-line;
+}
+
+@media (max-width: 1120px) {
+    .physics-architecture-cards {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .physics-architecture-card {
+        max-width: 440px;
+    }
+}
+
+@media (max-width: 920px) {
+    .physics-architecture-card {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .physics-architecture-card {
+        max-width: none
+    }
+}

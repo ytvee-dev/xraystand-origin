@@ -2,16 +2,17 @@ import React from "react";
 // import { useMemo } from "react";
 // import {usePreloadImages} from "@hooks/usePreloadImages.ts";
 // import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
-// import {usePageData} from "@hooks/usePageData";
-// import {useLocaleContent} from "@hooks/useLocale";
+// import * as paths from "@modules/physics/locales/paths.json";
+import {useLocaleContent} from "@hooks/useLocale";
+import { usePageData } from "@hooks/usePageData";
+import * as contentRu from "@modules/physics/locales/rus.json";
+import * as contentKz from "@modules/physics/locales/kaz.json";
 import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/physics/Sections/CoverSection";
-// import * as contentRu from "@modules/physics/locales/rus.json";
-// import * as contentKz from "@modules/physics/locales/kaz.json";
-// import * as paths from "@modules/physics/locales/paths.json";
 import FirstSection from "@modules/physics/Sections/FirstSection";
 import SecondSection from "@modules/physics/Sections/SecondSection";
-import FifthSection from "@modules/physics/Sections/FifthSection";
+import ThirdSection from "@modules/physics/Sections/ThirdSection/ParentSection";
+import FourthSection from "@modules/physics/Sections/FourthSection";
 import './style.css';
 
 const pageLayoutSX = {
@@ -30,6 +31,8 @@ const PhysicsLogo = () => {
 };
 
 const Physics: React.FC = () => {
+    const textContent = useLocaleContent(contentRu, contentKz);
+    const { screenWidth } = usePageData();
     // const imgUrls = useMemo(() => collectFromPathsJson(paths), []);
     // usePreloadImages(imgUrls);
 
@@ -42,6 +45,7 @@ const Physics: React.FC = () => {
     //     el.scrollIntoView({ behavior: "smooth", block: "start" });
     // };
 
+
     return (
         <BrightnessLayout
             logo={<PhysicsLogo />}
@@ -52,14 +56,13 @@ const Physics: React.FC = () => {
             languageSwitcherClassName="physics-language-switcher"
         >
             <div className="physics-background">
-                <CoverSection/>
-                <FirstSection/>
-                <SecondSection/>
-                <FifthSection/>
+                <CoverSection content={textContent.coverSection}/>
+                <FirstSection content={textContent.physicsBranchesSection}/>
+                <SecondSection content={textContent.scientistsSection} width={screenWidth}/>
+                <ThirdSection content={textContent.inLifeSection} childContent={textContent.examplesSection}/>
+                <FourthSection content={textContent.lawsAndConstantsSection}/>
             </div>
         </BrightnessLayout>
-
-
     );
 };
 

@@ -5,14 +5,25 @@ import { Languages } from "@domains/Translate";
 import type { TRootState } from "@store/index";
 
 export const useLocale = () => {
-  return useSelector((state: TRootState) => state.locale.locale);
+    return useSelector((state: TRootState) => state.locale.locale);
 };
 
-export const useLocaleContent = <T>(ruContent: T, kzContent: T): T => {
-  const currentLocale: Languages = useLocale();
+export const useLocaleContent = <T>(
+    ruContent: T,
+    kzContent: T,
+    enContent?: T,
+): T => {
+    const currentLocale: Languages = useLocale();
 
-  return useMemo(
-    () => (currentLocale === Languages.KAZAKH ? kzContent : ruContent),
-    [currentLocale, ruContent, kzContent],
-  );
+    return useMemo(() => {
+        if (currentLocale === Languages.KAZAKH) {
+            return kzContent;
+        }
+
+        if (currentLocale === Languages.RUSSIAN && enContent !== undefined) {
+            return enContent;
+        }
+
+        return ruContent;
+    }, [currentLocale, ruContent, kzContent, enContent]);
 };

@@ -1,0 +1,158 @@
+.physics-in-life-section {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.ds-card-wrapper {
+    color: white;
+}
+
+.physics-in-life-section-content-wrapper {
+    margin-top: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.physics-in-life-section-top-card {
+    position: relative;
+    max-width: 275px;
+    min-width: 174px;
+    justify-content: center;
+    align-items: center;
+    min-height: 127px;
+    max-height: 224px;
+    border-radius: 0 !important;
+    border: 2px solid white;
+}
+
+.physics-in-life-section-top-card button,
+[class*="MuiCardMedia-img"] {
+    height: 100%;
+}
+
+.physics-in-life-section-card-content {
+    padding: 24px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    pointer-events: none;
+}
+
+.physics-in-life-section-card-content img {
+    width: 120px;
+    height: 120px;
+}
+
+.physics-section-right {
+    animation: slideRight 0.8s ease;
+}
+
+.physics-section-left {
+    animation: slideLeft 0.8s ease;
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1200px) {
+    .physics-in-life-section {
+        padding: 7px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .physics-in-life-section {
+        padding: 7px;
+    }
+
+    .physics-in-life-section-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 689px) {
+    .physics-in-life-section {
+        padding: 7px;
+    }
+
+    .physics-in-life-section-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .physics-in-life-section-top-card {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        min-width: unset;
+    }
+
+    .physics-in-life-section-card-content img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .physics-in-life-section-card-content img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .physics-in-life-section-top-card {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:375px) {
+    .physics-in-life-section-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 17px; 
+    }
+
+    .physics-in-life-section-top-card {
+        width: 173px;
+        height: 129px;
+    }
+    .physics-in-life-section-card-content {
+        padding: 0;
+        margin-top: 13px;
+    }
+}
