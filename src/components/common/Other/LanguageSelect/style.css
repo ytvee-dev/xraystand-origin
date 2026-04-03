@@ -15,7 +15,8 @@
     border-bottom: 0.125rem solid #ffffff;
 }
 
+.language-select-container [class*="MuiFormLabel-root-MuiInputLabel-root"],
 .language-select-container
-    .css-1o87m7z-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    [class*="MuiFormLabel-root-MuiInputLabel-root"].Mui-focused {
     color: #ffffff;
 }
