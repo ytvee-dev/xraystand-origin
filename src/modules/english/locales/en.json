@@ -448,7 +448,47 @@
                     }
                 ]
             },
-            { "title": "VOCABULARY", "content": [] }
+            {
+                "title": "VOCABULARY",
+                "content": [
+                    {
+                        "content": [
+                            "autumn",
+                            "fall",
+
+                            "lift",
+                            "elevator",
+
+                            "football",
+                            "soccer",
+
+                            "crisps",
+                            "chips"
+                        ]
+                    },
+                    {
+                        "content": [
+                            { "title": "Describe", "description": "" },
+                            {
+                                "title": "",
+                                "description": "Completely different words"
+                            },
+                            {
+                                "title": "",
+                                "description": "Different terms for the same object"
+                            },
+                            {
+                                "title": "",
+                                "description": "Different meanings: In the United States, the word “football” means primarily American football, while \"soccer\" refers to the global round-ball sport."
+                            },
+                            {
+                                "title": "",
+                                "description": "In the US, \"chips\" are thin, crunchy, bagged snacks (British \"crisps\"), while in the UK, \"chips\" are thick-cut fried potatoes (American \"fries\")."
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
     }
 }
