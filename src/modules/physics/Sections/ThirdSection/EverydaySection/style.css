@@ -1,0 +1,34 @@
+.physics-everyday-section {
+    margin: 2.5rem 0;
+}
+
+.physics-everyday-cards {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.physics-everyday-card {
+    max-width: 390px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.physics-everyday-card p {
+    white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+    .physics-everyday-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .physics-everyday-last-card {
+        grid-column: 1 / -1;
+    }
+    
+    .physics-everyday-card {
+        max-width: none;
+    }
+}

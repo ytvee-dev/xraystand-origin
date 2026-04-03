@@ -1,13 +1,26 @@
 import React, { type ReactElement } from "react";
-import type { MathSectionProps } from "@modules/math/types";
-import { useLocaleContent } from "@hooks/useLocale";
 import CubeCard from "@modules/math/components/CubeCard";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import * as paths from "@modules/physics/locales/paths.json";
-import * as textContentKz from "@modules/physics/locales/kaz.json";
-import * as textContentRu from "@modules/physics/locales/rus.json";
 import { svg } from "@modules/math/locales/paths.json";
 import "./style.css";
+
+interface ICardsContent {
+    title: string
+    subTitle: string
+    description: string
+}
+
+interface IFirstContent {
+    title: string,
+    subTitle: string,
+    description: string,
+    content: ICardsContent[]
+}
+
+interface IFirstSectionProps {
+    content: IFirstContent
+}
 
 type TPhysicsCard = {
     id: string;
@@ -17,13 +30,11 @@ type TPhysicsCard = {
     image: string;
 };
 
-const FirstSection: React.FC<MathSectionProps> = ({ className }: MathSectionProps): ReactElement => {
-    const textContent = useLocaleContent(textContentRu, textContentKz);
-    const content = textContent.physicsBranchesSection.content;
-
+const FirstSection: React.FC<IFirstSectionProps> = ({ content }: IFirstSectionProps): ReactElement => {
+    const cardsContent: ICardsContent[] = content.content
     const cards: TPhysicsCard[] = [];
 
-    content.forEach((item) => {
+    cardsContent.forEach((item) => {
         if (item.title) {
             cards.push({
                 id: `card-${cards.length + 1}`,
@@ -41,7 +52,7 @@ const FirstSection: React.FC<MathSectionProps> = ({ className }: MathSectionProp
     });
 
     return (
-        <section className={`physics-first-section ${className || ""}`}>
+        <section className={`physics-first-section first-section`}>
             <div className="physics-first-section-background">
                 <img src={svg.heroBg} alt="background" className="bg-img-1" />
                 <img src={svg.heroBg} alt="background" className="bg-img-2" /> 
@@ -49,8 +60,8 @@ const FirstSection: React.FC<MathSectionProps> = ({ className }: MathSectionProp
 
             <div className="physics-first-section-content-wrapper">
                 <BackgroundedTitle
-                    title={textContent.physicsBranchesSection.title}
-                    description={textContent.physicsBranchesSection.description}
+                    title={content.title}
+                    description={content.description}
                     bgColor="#ee7630"
                     titleFontWeight="700"
                     fullWidth

@@ -3,9 +3,11 @@ import './style.css'
 
 interface IBackgroundedTitleProps{
     title: string;
+    subtitle?: string;
     description?: string,
     bgColor?: string,
     titleFontWeight?: '400' | '700',
+    subtitleFontSize?: string,
     fullWidth?: boolean;
 }
 
