@@ -1,37 +1,35 @@
 import React from "react";
 import './style.css';
-import SpriteIcon from "@components/common/Other/SpriteIcon";
-import Card from "@mui/material/Card";
-import CardActionArea from "@mui/material/CardActionArea";
-import CardMedia from "@mui/material/CardMedia";
+import SoundCards, {type ISoundCard} from "@modules/KazMusInstruments/components/SoundCard";
+import * as path from "@modules/KazMusInstruments/locales/paths.json"
 
-const imagePath = 'https://res.cloudinary.com/dy6zg8dhs/image/upload/v1771159897/card_bg_1_k5q9r9.webp';
+const cards: ISoundCard[] = [
+    {
+        "title": "Домбра",
+        "description": "Главный символ казахской музыки — двухструнный инструмент с длинным грифом и чистым проникновенным тембром. Народная домбра — без ладов, концертная — с ладами. В кюях домбра передаёт легенды, события и настроение степи.",
+        "soundDescription": "Звучание: яркое, звонкое, выразительное.",
+        "img": path.pluckedInstruments.dombra
+    },
+    {
+        "title": "Жетыген",
+        "description": "Древний многострунный щипковый инструмент (от 7 до 23 струн), по форме напоминает гусли/цитру. В легенде каждая из первых 7 струн — память о сыновьях, каждая звучит по-особому.",
+        "soundDescription": "Звучание: яркое, звонкое, выразительное.",
+        "img": path.pluckedInstruments.jetigen
+    }
+]
 
-// const listTempalte = [
-//     'Нельзя паниковать — хаотичные действия только мешают спасению.',
-//     'Нельзя возвращаться за вещами — главное сохранить жизнь.',
-//     'Нельзя самостоятельно тушить крупный пожар, если пламя уже распространилось — нужно срочно эвакуироваться.',
-//     'Нельзя открывать окна и двери без необходимости — это усиливает приток кислорода и раздувает пламя.',
-// ]
 
 const Implementation: React.FC = () => {
     return (
         <div className={"implementation-page"}>
-            <Card className="card">
-                <CardActionArea className="card-area">
-                    <CardMedia
-                        className="background-card"
-                        component="img"
-                        height="140"
-                        image={imagePath}
-                        alt="green iguana"
-                    />
-                </CardActionArea>
-                <div className="card-content">
-                    <SpriteIcon iconId="logo" color="white" />
-                    <p style={{color: 'white', fontWeight: 700}}>Название</p>
-                </div>
-            </Card>
+        {cards.map(card => (
+            <SoundCards 
+                key={card.title} 
+                cardContent={card}
+                theme="light"
+                bgImg={path.backgrounds.pluckedInstruments}
+            />
+        ))}
         </div>
     );
 };

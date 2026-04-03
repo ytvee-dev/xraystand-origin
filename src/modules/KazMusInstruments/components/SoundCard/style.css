@@ -1,0 +1,61 @@
+.sound-card-wrapper {
+    display: flex;
+    gap: 24px;
+    padding: 44px 0;
+    color: #e6bb86;
+
+    --sound-card-img-size: 242px;
+    --sound-card-instrument-size: 200px;
+}
+
+.light h3,
+.light .sound-card-content > p {
+    color: #522f1b;
+}
+
+.sound-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    max-width: 886px;
+}
+
+.sound-card-content h3 {
+    font-size: 48px;
+}
+
+.sound-card-img-wrapper {
+    width: var(--sound-card-img-size);
+    height: var(--sound-card-img-size);
+    overflow: hidden;
+    position: relative;
+}
+
+.bg-img {
+    position: absolute;
+    z-index: 0;
+    width: var(--sound-card-img-size);
+    height: var(--sound-card-img-size);
+}
+
+.instrument {
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--sound-card-instrument-size);
+    height: var(--sound-card-instrument-size);
+    object-fit: cover;
+}
+
+@media (max-width: 420px) {
+    .sound-card-wrapper {
+        --sound-card-img-size: 150px;
+    }
+
+    .sound-card-content h3 {
+        font-size: 30px;
+    }
+
+}

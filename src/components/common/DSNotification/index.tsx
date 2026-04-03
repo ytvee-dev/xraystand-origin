@@ -7,11 +7,8 @@ export type TNotificationTypes = "warning" | "info";
 
 type Label = string;
 type List = string[];
-
 type ListTypes = "none" | "mark" | "number";
-
 type WidthTypes = "small" | "middle" | "large";
-
 type ImgPosition = "flex-start" | "center" | "flex-end";
 
 export interface IFlexibleAlertProps {
@@ -35,6 +32,7 @@ export interface IFlexibleAlertProps {
     className?: string;
     style?: CSSProperties;
     alertStyle?: CSSProperties;
+    paragraphWeight?: number;
 }
 
 export enum NotificationBackgroundColors {
@@ -70,6 +68,7 @@ const DSNotification = ({
     cardGap = "5px",
     className,
     alertStyle,
+    paragraphWeight = 400,
 }: IFlexibleAlertProps): ReactElement => {
     const dsBorderColor = borderColor ? borderColor : backgroundColor;
 
@@ -125,7 +124,13 @@ const DSNotification = ({
                     />
                 }
             >
-                {!isArray && content}
+                {!isArray && 
+                <p style={{
+                    fontWeight: paragraphWeight
+                }}
+                >
+                    {content}
+                </p>}
 
                 {isArray && listMark === "number" && (
                     <ol className="list">
