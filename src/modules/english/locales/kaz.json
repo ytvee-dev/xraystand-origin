@@ -447,7 +447,8 @@
                         "description": "Әдетте бір дауыссыз дыбыс қолданылады (traveling, canceled)."
                     }
                 ]
-            }
+            },
+            { "title": "ЛЕКСИКА", "content": [] }
         ]
     }
 }

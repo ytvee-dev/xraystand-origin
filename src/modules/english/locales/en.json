@@ -447,7 +447,8 @@
                         "description": "usually uses a single consonant (traveling, canceled)."
                     }
                 ]
-            }
+            },
+            { "title": "VOCABULARY", "content": [] }
         ]
     }
 }

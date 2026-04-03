@@ -447,7 +447,8 @@
                         "description": "обычно используется одна согласная (traveling, canceled)."
                     }
                 ]
-            }
+            },
+            { "title": "ЛЕКСИКА", "content": [] }
         ]
     }
 }
