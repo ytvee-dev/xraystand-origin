@@ -1,6 +1,14 @@
 {
-    "backgrounds": { "coverSection": [] },
+    "backgrounds": {
+        "coverSection": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224164/town_v3fjbb.webp"
+    },
     "other": {
-        "coverSection": []
+        "coverSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224229/first-block_zkya2l.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224230/second-block_g8ov3r.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224229/third-block_rqoyoy.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224228/fourth-block_srwdlz.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224230/fifth-block_cp1xyu.webp"
+        ]
     }
 }

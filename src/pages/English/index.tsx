@@ -1,5 +1,6 @@
 import Spinner from "@components/common/Spinner";
 import BrightnessLayout from "@layout/Brightness";
+import CoverSection from "@modules/english/Sections/CoverSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import type { TRootState } from "@store/index";
@@ -33,6 +34,7 @@ const English = (): ReactElement => {
         >
             <div className="english-page">
                 {!isContentLoaded && <Spinner />}
+                <CoverSection className="english-section english-cover-section" />
             </div>
         </BrightnessLayout>
     );
