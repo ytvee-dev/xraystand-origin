@@ -1,0 +1,29 @@
+.music-cover-section {
+    position: relative;
+}
+
+.music-cover-background-content {
+    position: relative;
+}
+
+.music-cover-background-content img {
+    width: 100%;
+    height: auto;
+}
+
+.music-cover-text-content {
+    position: absolute;
+    bottom: 81px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.music-cover-text-content h1 {
+    font-size: 48px;
+    background-color: #E6BB86;
+    padding: 36px 24px;
+    max-width: 779px;
+    width: 100%;
+    color: #522F1B;
+}
