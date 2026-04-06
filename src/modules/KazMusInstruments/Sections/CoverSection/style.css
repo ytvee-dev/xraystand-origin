@@ -8,7 +8,8 @@
 
 .music-cover-background-content img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
 }
 
 .music-cover-text-content {
@@ -62,4 +63,3 @@
         max-width: 200px;
     }
 }
-
