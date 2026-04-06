@@ -127,7 +127,6 @@ const routes: RouteObject[] = [
     {
         ...paths.KAZ_MUSIC,
         element: <KazMusic />,
-        // element: <InProgress />,
     },
     {
         ...paths.FIRE_SAFETY,

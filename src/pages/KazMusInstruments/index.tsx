@@ -34,12 +34,6 @@ const KazMusic: React.FC = () => {
     // const { isContentLoaded } = usePageData();
     const textContent = useLocaleContent(contentRu, contentKz);
 
-    // const scrollTo = (id: string) => {
-    //     const el = document.getElementById(id);
-    //     if (!el) return;
-    //     el.scrollIntoView({ behavior: "smooth", block: "start" });
-    // };
-
     return(
        <div className="kaz-music-container">
             <BrightnessLayout
