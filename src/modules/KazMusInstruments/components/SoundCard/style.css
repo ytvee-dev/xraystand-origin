@@ -13,6 +13,15 @@
     color: #522f1b;
 }
 
+.sound-card-wrapper.img-right {
+    flex-direction: row-reverse;
+}
+
+.sound-card-img {
+    width: 242px;
+    height: 242px;
+}
+
 .sound-card-content {
     display: flex;
     flex-direction: column;
@@ -24,38 +33,33 @@
     font-size: 48px;
 }
 
-.sound-card-img-wrapper {
-    width: var(--sound-card-img-size);
-    height: var(--sound-card-img-size);
-    overflow: hidden;
-    position: relative;
-}
+@media (max-width: 768px) {
+    .sound-card-img {
+        width: 185px;
+        height: 185px;
+    }
 
-.bg-img {
-    position: absolute;
-    z-index: 0;
-    width: var(--sound-card-img-size);
-    height: var(--sound-card-img-size);
-}
-
-.instrument {
-    position: absolute;
-    z-index: 20;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: var(--sound-card-instrument-size);
-    height: var(--sound-card-instrument-size);
-    object-fit: cover;
+    .sound-card-content {
+        gap: 24px;
+    }
 }
 
 @media (max-width: 420px) {
     .sound-card-wrapper {
         --sound-card-img-size: 150px;
+        gap: 12px;
+    }
+
+    .sound-card-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .sound-card-content {
+        gap: 12px;
     }
 
     .sound-card-content h3 {
         font-size: 30px;
     }
-
 }

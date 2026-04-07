@@ -22,14 +22,24 @@ const cards: ISoundCard[] = [
 const Implementation: React.FC = () => {
     return (
         <div className={"implementation-page"}>
-        {cards.map(card => (
-            <SoundCards 
-                key={card.title} 
-                cardContent={card}
-                theme="light"
-                bgImg={path.backgrounds.pluckedInstruments}
-            />
-        ))}
+            <div className="left-card-wrapper">
+                {cards.map(card => (
+                <SoundCards 
+                    key={card.title} 
+                    cardContent={card}
+                />
+            ))}
+            </div>
+            <div className="right-card-wrapper">
+                {cards.map(card => (
+                <SoundCards 
+                    key={card.title} 
+                    cardContent={card}
+                    theme="light"
+                    imgSide="right"
+                />
+            ))}
+            </div>
         </div>
     );
 };

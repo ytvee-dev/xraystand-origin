@@ -1,7 +1,14 @@
 .implementation-page {
-    background-color: #a99058;
     display: flex;
     flex-direction: column;
     width: fit-content;
     margin-inline: auto;
+}
+
+.left-card-wrapper {
+    background-color: #522F1B;
+}
+
+.right-card-wrapper {
+    background-color: #E6BB86;
 }

@@ -12,7 +12,7 @@ export interface ISoundCard {
 interface ISoundCardsProps {
     cardContent: ISoundCard,
     theme?: "dark" | "light",
-    bgImg: string
+    imgSide?: "left" | "right"
 }
 
 interface ISoundDescriptionStyle {
@@ -23,7 +23,7 @@ interface ISoundDescriptionStyle {
 const SoundCards = ({
     cardContent,
     theme = "dark",
-    bgImg
+    imgSide="left"
 }: ISoundCardsProps): ReactElement => {
     const soundDescriptionStyle: ISoundDescriptionStyle = {
         bgColor: "#e6bb86",
@@ -40,13 +40,10 @@ const SoundCards = ({
 
     return (
         <div 
-            className={`sound-card-wrapper ${theme == "light" ? "light" : ""}`} 
+            className={`sound-card-wrapper ${theme == "light" ? "light" : ""} ${imgSide == "right" ? "img-right" : ""}`} 
             key={cardContent.title}
         >
-            <div className='sound-card-img-wrapper'>
-                <img  className='bg-img' src={bgImg} alt=""/>
-                <img  className='instrument' src={cardContent.img} alt={cardContent.title}/>
-            </div>
+            <img  className='sound-card-img' src={cardContent.img} alt={cardContent.title}/>
 
             <div className="sound-card-content">
                 <h3>{cardContent.title}</h3>
