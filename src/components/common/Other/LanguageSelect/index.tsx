@@ -38,12 +38,12 @@ const LanguageSelect = ({
 
     return (
         <div className={`language-select-container ${className}`}>
-            <Box sx={{ minWidth: 120 }}>
+            <Box sx={{ minWidth: 95 }}>
                 <FormControl fullWidth>
                     <InputLabel
                         variant="standard"
                         htmlFor="uncontrolled-native"
-                        sx={{ color: "#40b9dd" }}
+                        sx={{ color: "#ffffff" }}
                     >
                         {currentLocaleLabel}
                     </InputLabel>
@@ -54,6 +54,7 @@ const LanguageSelect = ({
                             name: currentLocale,
                             id: "uncontrolled-native",
                         }}
+                        sx={{ color: "#ffffff" }}
                     >
                         {languageSelectOptions.map(
                             (option: ISelectOption, index) => (

@@ -1,0 +1,495 @@
+{
+    "coverSection": {
+        "title": "BASIC ENGLISH GRAMMAR"
+    },
+    "firstSection": {
+        "title": "Артикль (Article)",
+        "content": [
+            {
+                "title": "НӨЛДІК АРТИКЛЬ (ZERO ARTICLE)",
+                "description": "Жалпы заттар туралы айтқан кезде қолданылады.",
+                "content": [
+                    {
+                        "subtitle": "Жинақтық, жалпылай айтылатын зат есімдердің алдында",
+                        "description": "Мысалы: Cats are independent."
+                    },
+                    {
+                        "subtitle": "Ел-жер, адам аттарының алдында",
+                        "description": "Мысалы: He lives in London."
+                    },
+                    {
+                        "subtitle": "Ойындардың, спорттың және оқу пәндерінің атауларымен немесе кейбір сөздер мен сөз тіркестерімен: work, home, TV, to have breakfast/lunch/dinner.",
+                        "description": "Мысалы: I go to work by bus."
+                    }
+                ]
+            },
+            {
+                "title": "БЕЛГІЛІЛІК АРТИКЛІ: THE",
+                "description": "Әңгімелесушілер белгілі бір зат немесе мекен-жай туралы сөйлескенде саналатын және саналмайтын зат есімдермен қолданылады.",
+                "content": [
+                    {
+                        "subtitle": "Сөз (әңгіме) белгілі зат жайында болғанда",
+                        "description": "Мысалы: Look at the moon."
+                    },
+                    {
+                        "subtitle": "Әңгіме барысында затты екінші рет қайталаған кезде ол белгілі зат болып есептеледі.",
+                        "description": "Мысалы: I saw a movie. The movie was long."
+                    },
+                    {
+                        "subtitle": "Асырмалы шырайдағы зат есімдер",
+                        "description": "Мысалы: He is the best student."
+                    }
+                ]
+            },
+            {
+                "title": "БЕЛГІСІЗДІК АРТИКЛІ: A / AN",
+                "description": "Саналатын (жекеше) зат есімдермен қолданылады. Ол зат жайлы алдын-ала айтылмаған. Әңгімелеуші адам алғаш рет айтып, таныстырып отыр.",
+                "content": [
+                    {
+                        "subtitle": "A - Дауыссыз дыбыстан басталатын сөздердің алдында.",
+                        "description": "Мысалы: a book, a horse"
+                    },
+                    {
+                        "subtitle": "An - Дауысты дыбыстан басталатын сөздердің алдында.",
+                        "description": "Мысалы:  an apple, an hour"
+                    }
+                ]
+            }
+        ]
+    },
+    "secondSection": {
+        "title": "Сын есім (Adjective)",
+        "description": "Ағылшын тіліндегі сын есім де қазақ тіліндегі секілді анықтамаға ие, яғни, заттың сипатын, сынын, сапасын білдіреді.",
+        "content": [
+            {
+                "title": "АТРИБУТИВТІ СЫН ЕСІМ (ATTRIBUTIVE):",
+                "content": [
+                    {
+                        "description": "зат есімнің алдына қойылады"
+                    },
+                    {
+                        "description": "Adjective + Noun"
+                    },
+                    {
+                        "description": "Fast overtaking"
+                    }
+                ]
+            },
+            {
+                "title": "ПОСТПОЗИТИВТІ СЫН ЕСІМ(POSTPOSITIVE):",
+                "content": [
+                    {
+                        "description": "зат есімнен кейін қойылады"
+                    },
+                    {
+                        "description": "Pronoun + Adjective"
+                    },
+                    {
+                        "description": "Something scary"
+                    }
+                ]
+            },
+            {
+                "title": "ПРЕДИКАТИВТІ СЫН ЕСІМ (PREDICATIVE):",
+                "content": [
+                    {
+                        "description": "зат есімнен кейін қойылады және байланыстырушы етістікті аяқтайды"
+                    },
+                    {
+                        "description": "Noun + linking verb + adjective"
+                    },
+                    {
+                        "description": "Tina is smart"
+                    }
+                ]
+            }
+        ]
+    },
+    "thirdSection": {
+        "title": "Зат есім (Noun)",
+        "description": "Зат есім - заттардың атын, нәрселерді табиғат пен қоғамдық құбылыстарды, уақиғаларды, ұғымдар мен түсініктерді білдіретін сөз табы.",
+        "content": [
+            {
+                "title": "ЖАЛҚЫ ЕСІМДЕР",
+                "subtitle": "(PROPER: London, Monday)",
+                "description": "Адамдардың, орындардың немесе заттардың нақты атаулары."
+            },
+            {
+                "title": "ЖАЛПЫ ЕСІМДЕР",
+                "subtitle": "(COMMON: park, mom)",
+                "description": "Адамдардың, орындардың немесе заттардың жалпы атаулары."
+            },
+            {
+                "title": "НАҚТЫ ЕСІМДЕР",
+                "subtitle": "(CONCRETE: tree, cat)",
+                "description": "Көруге, ұстауға, естуге, иіскеуге немесе дәм татуға болатын нәрселер."
+            },
+            {
+                "title": "АБСТРАКТІЛІ ЕСІМДЕР",
+                "subtitle": "(ABSTRACT: happiness, bravery)",
+                "description": "Сезімдер арқылы қабылданбайтын идеялар, сезімдер немесе қасиеттер."
+            },
+            {
+                "title": "ҰЖЫМДЫҚ ЕСІМДЕР",
+                "subtitle": "(COLLECTIVE: family, team)",
+                "description": "Адамдар немесе заттар топтары немесе ұжымдары."
+            },
+            {
+                "title": "ІЛІКТІК ЕСІМДЕР",
+                "subtitle": "(POSSESSIVE: Tom’s dog, John’s car)",
+                "description": "Тиесілігін немесе иеленуін көрсетеді."
+            },
+            {
+                "title": "САНАЛАТЫН",
+                "subtitle": "(COUNTABLE: books, dollars)",
+                "description": "Саналатын зат есімдерге санауға болатын зат есімдер жатады."
+            },
+            {
+                "title": "САНАЛМАЙТЫН",
+                "subtitle": "(UNCOUNTABLE: water, sand)",
+                "description": "Дерексіз зат есімдер жатады."
+            }
+        ]
+    },
+    "fourthSection": {
+        "title": "Етістік (Verb)",
+        "description": "Іс-әрекет пен қимыл-сынды білдіретін сөз табы.",
+        "content": [
+            {
+                "title": "ІС-ҚИМЫЛ ЕТІСТІКТЕРІ (ACTION VERBS):",
+                "subtitle": "физикалық немесе ойлау әрекетерін көрсетеді.",
+                "description": "Мысалы: She runs every morning."
+            },
+            {
+                "title": "КҮЙ ЕТІСТІКТЕРІ (STATIVE VERBS):",
+                "subtitle": "күй немесе сезімді сипаттайды.",
+                "description": "Мысалы: He knows the correct answer. He still believes that story."
+            },
+            {
+                "title": "ТҰРАҚТЫ ЕТІСТІКТЕР (REGULAR VERBS):",
+                "subtitle": "өткен шақта \"-ed\" жалғауымен толықтырылады.",
+                "description": "Мысалы: work → worked → worked"
+            },
+            {
+                "title": "ТҰРАҚСЫЗ ЕТІСТІКТЕР(IRREGULAR VERBS):",
+                "subtitle": "өткен шаққа қарай сөзді өзгертеді.",
+                "description": "Мысалы: go → went → gone"
+            },
+            {
+                "title": "БАЙЛАНЫСТЫРУШЫ ЕТІСТІКТЕР (LINKING VERBS):",
+                "subtitle": "заттың әрекетін сипаттау үшін етістікті байланыстырады.",
+                "description": "Мысалы: She seems nervous."
+            },
+            {
+                "title": "ӨТПЕЛІ ЕТІСТІКТЕР (TRANSITIVE VERBS):",
+                "subtitle": "тікелей қосымшаны қажет етеді.",
+                "description": "Мысалы: He reads a book."
+            },
+            {
+                "title": "ИНТРАНСИВТІ ЕТІСТІКТЕР (INTRANSITIVE VERBS):",
+                "subtitle": "тікелей қосымшаны қажет етпейді.",
+                "description": "Мысалы: They arrived late."
+            }
+        ]
+    },
+    "fifthSection": {
+        "title": "Етістік шақтары (Tenses)",
+        "description": "Қимыл мен әрекеттің жүзеге асу кезеңін етістік білдіретін және оның ұзақтығы немесе аяқталуы туралы толық ақпарат беретін етістік формалары.",
+        "content": [
+            {
+                "title": "НЕГІЗГІ ШАҚТАР",
+                "content": [
+                    {
+                        "title": "Өткен шақ(Past):",
+                        "subtitle": "Өткен шақта болған іс-әрекеттер",
+                        "description": "Мысалы: walked, was eating"
+                    },
+                    {
+                        "title": "Осы шақ (Present):",
+                        "subtitle": "Белгісіз жалпы осы шақ, күнделікті дағдылы жалпы қозғалысты, қайталанып тұратын әдеттегі іс-қимыл әрекетті білдіру үшін қолданылады",
+                        "description": "Мысалы: walks, is eating"
+                    },
+                    {
+                        "title": "Келер шақ(Future):",
+                        "subtitle": "Келешекте болатын іс-әрекетер",
+                        "description": "Мысалы: will walk, will be eating"
+                    }
+                ]
+            },
+            {
+                "title": "АСПЕКТІЛЕР (УАҚЫТТЫ ҚАБЫЛДАУ)",
+                "description": "Олар негізгі уақыттармен біріктіріліп, іс-әрекеттің ұзақтығын немесе аяқталуын толық сипаттайды.",
+                "content": [
+                    {
+                        "title": "Simple:",
+                        "subtitle": "Факт, әдет",
+                        "description": "Мысалы: He runs"
+                    },
+                    {
+                        "title": "Continuous (Progressive):",
+                        "subtitle": "Болып жатқан әрекет, процесс",
+                        "description": "Мысалы: He is running"
+                    },
+                    {
+                        "title": "Perfect:",
+                        "subtitle": "Аяқталған әрекет, көбінесе уақыт бойынша белгілі бір мезетке дейі",
+                        "description": "Мысалы: He has run"
+                    },
+                    {
+                        "title": "Perfect Continuous:",
+                        "subtitle": "Іс-әрекет өткен шақта басталып, қазіргі кезде жалғасып жатыр немесе белгілі бір мезетте аяқталды",
+                        "description": "Мысалы: He has been running"
+                    }
+                ]
+            }
+        ]
+    },
+    "sixthSection": {
+        "title": "12 НЕГІЗГІ ФОРМАЛАРЫН ҚАЛЫПТАРТЫРАДЫ",
+        "description": "Уақытты аспектілермен біріктіру арқылы жасалған",
+        "content": [
+            {
+                "title": "PAST",
+                "content": [
+                    {
+                        "title": "Past Simple:",
+                        "subtitle": "S + V2 (or irregular V)",
+                        "description": "I wrote a book yesterday."
+                    },
+                    {
+                        "title": "Past Continuous:",
+                        "subtitle": "S + was/were + V-ing",
+                        "description": "I was writing a book all day long."
+                    },
+                    {
+                        "title": "Past Perfect:",
+                        "subtitle": "S + had + V3",
+                        "description": "I had written a book."
+                    },
+                    {
+                        "title": "Past Perfect Continuous:",
+                        "subtitle": "S + had + been + V-ing",
+                        "description": "I had been writing."
+                    }
+                ]
+            },
+            {
+                "title": "PRESENT",
+                "content": [
+                    {
+                        "title": "Present Simple:",
+                        "subtitle": "S + V +(s/es)",
+                        "description": "I write books. She writes books."
+                    },
+                    {
+                        "title": "Present Continuous:",
+                        "subtitle": "S + am/is/are + V-ing",
+                        "description": "I am writing a book now."
+                    },
+                    {
+                        "title": "Present Perfect:",
+                        "subtitle": "S + have/has + V3",
+                        "description": "I have written a book."
+                    },
+                    {
+                        "title": "Present Perfect Continuous:",
+                        "subtitle": "S + have/has + been + V-ing (+ since/for)",
+                        "description": "I have been writing a book."
+                    }
+                ]
+            },
+            {
+                "title": "FUTURE",
+                "content": [
+                    {
+                        "title": "Future Simple:",
+                        "subtitle": "S + will/shall + V",
+                        "description": "I will write a book."
+                    },
+                    {
+                        "title": "Future Continuous:",
+                        "subtitle": "S + will/shall be + V-ing",
+                        "description": "I will be writing a book."
+                    },
+                    {
+                        "title": "Future Perfect:",
+                        "subtitle": "S + will have + V3",
+                        "description": "I will have written a book by the end of the week."
+                    },
+                    {
+                        "title": "Future Perfect Continuous:",
+                        "subtitle": "S + will have been + V-ing",
+                        "description": "I will have been writing a book."
+                    }
+                ]
+            }
+        ]
+    },
+    "seventhSection": {
+        "title": "Үстеу (Adverb)",
+        "description": "Үстеу – қимыл, іс-әрекеттің жай-күйін, мекенін, мезгілін, мөлшерін, мақсатын тағы басқа белгілерін білдіреді.",
+        "content": [
+            {
+                "title": "ҮСТЕУ ЕТІСТІКТІ СИПАТТАЙДЫ(ADVERBS DESCRIBE VERBS)",
+                "description": "Мысалы: Abdullah finished his test hastily."
+            },
+            {
+                "title": "ҮСТЕУ СЫН ЕСІМДІ СИПАТТАЙДЫ(ADVERBS DESCRIBE ADJECTIVES)",
+                "description": "Мысалы: Mount Ranier is quite tall."
+            },
+            {
+                "title": "ҮСТЕУ ҮСТЕУДІСИПАТТАЙДЫ (ADVERBS DESCRIBE ADVERBS)",
+                "description": "Мысалы: The hotel is almost fully booked."
+            }
+        ]
+    },
+    "eighthSection": {
+        "title": "Үстеулер - келесі СҰРАКТАРҒА жауап береді:",
+        "content": [
+            {
+                "title": "HOW (ҚАЛАЙ?):",
+                "subtitle": "quickly, speedily, happily etc.",
+                "description": "Dinner arrived swiftly."
+            },
+            {
+                "title": "WHERE (ҚАЙДА?):",
+                "subtitle": "outside, inside, near etc.",
+                "description": "The car is outside."
+            },
+            {
+                "title": "WHEN (ҚАШАН?):",
+                "subtitle": "last month, last week, now, later etc.",
+                "description": "My project is due soon."
+            },
+            {
+                "title": "HOW MUCH (ҚАНШАЛЫҚТЫ?):",
+                "subtitle": "fully, almost, rather etc.",
+                "description": "Lennie is quite strong."
+            },
+            {
+                "title": "HOW OFTEN (ҚАНШАЛЫҚТЫ ЖИІ?):",
+                "subtitle": "never, sometimes, often etc.",
+                "description": "She never misses class."
+            }
+        ]
+    },
+    "ninethSection": {
+        "title": "Тіл айырмашылықтары: американдық және британдық",
+        "description": "Американдық және британдық ағылшын тілдерінің арасындағы айырмашылықтар орфографияда, сөздіктерінде, грамматикаларында, айтылуында және мәдени нормаларында (тіктік немесе ұстамдылық) көрінеді. Британдық ағылшын тілі көбінесе дәстүрлі формаларды сақтайды, ал Американдық ағылшын тілі жеңілдетуді қалайды, бірақ екеуі де бір-біріне ұқсас.",
+        "content": [
+            {
+                "title": "ПРОИЗНОШЕНИЕ",
+                "content": [
+                    {
+                        "title": "R - әріп екпіні(Rhoticity):",
+                        "description": "(Non-Rhotic): \"r\" алдындағы дауысты дыбыстар жиі ұзарады немесе өзгереді, және \"r\" әрпі дауысты дыбыстан кейін айтылмайды (car /kː/)."
+                    },
+                    {
+                        "title": "",
+                        "description": "(Rhotic): \"r\" дыбысы дауысты дыбыстан кейін айтылады (car /kɑːr/)."
+                    },
+                    {
+                        "title": "Короткий звук \"О\" (ɒ):",
+                        "description": "Hot, lot, box сияқты сөздер /ɒ/ дыбысты қолданады."
+                    },
+                    {
+                        "title": "",
+                        "description": "“O” становится /ɑː/ (как в слове father) или /ɔː/ (как в слове bought) (Мысалы, hot /hɑːt/ или /hɔːt/)."
+                    },
+                    {
+                        "title": "Дифтонги:",
+                        "description": "Дифтонгиялық ауысулар сақталады, Мысалы: near /nɪər/."
+                    },
+                    {
+                        "title": "",
+                        "description": "/ə / дыбысы жиі жоғалып, оның орнына ұзақ дауысты немесе монофтонг айтылады. Мысалы: near / nɪr/."
+                    }
+                ]
+            },
+            {
+                "title": "ГРАММАТИКА",
+                "content": [
+                    {
+                        "title": "Число",
+                        "description": "Саналмайтын зат есімдерге жекеше is және көпше are етістіктері қолданылады (The team is/are winning)."
+                    },
+                    {
+                        "title": "",
+                        "description": "Тек ғана жекеше түрдегі етістектер қолданылады (The team is winning)."
+                    },
+                    {
+                        "title": "Глаголы",
+                        "description": "Көбінесе аяқталған осы шақ колданады (present perfect): I've just eaten. "
+                    },
+                    {
+                        "title": "",
+                        "description": "Оның орнына өткен шақта айтады (simple past): I just ate."
+                    }
+                ]
+            },
+            {
+                "title": "ЕМЛЕ",
+                "content": [
+                    {
+                        "title": "Окончания слов",
+                        "description": "Емлесінде Француз тамырлары сақталған -our, -ise, -re, -ce (colour, organise, centre, defence)."
+                    },
+                    {
+                        "title": "",
+                        "description": "Жеңілдетіп және саралап жазады: -or, -ize, -er, -se (color, organize, center, defense)."
+                    },
+                    {
+                        "title": "Двойные согласные",
+                        "description": "Жалғауларды қосқанда етістіктердегі дауыссыз дыбыс екі рет қайталануы мүмкін (travelling, cancelled)"
+                    },
+                    {
+                        "title": "",
+                        "description": "Әдетте бір дауыссыз дыбыс қолданылады (traveling, canceled)."
+                    }
+                ]
+            },
+            {
+                "title": "ЛЕКСИКА",
+                "content": [
+                    {
+                        "content": [
+                            "күз",
+                            "autumn",
+                            "fall",
+                            "лифт",
+                            "lift",
+                            "elevator",
+                            "футбол",
+                            "football",
+                            "soccer",
+                            "чипсы",
+                            "crisps",
+                            "chips"
+                        ]
+                    },
+                    {
+                        "content": [
+                            { "title": "Сипаттама", "description": "" },
+                            {
+                                "title": "",
+                                "description": "Мүлдем әртүрлі емле."
+                            },
+                            {
+                                "title": "",
+                                "description": "Бір затты әртүрлі терминдер сипаттайды."
+                            },
+                            {
+                                "title": "",
+                                "description": "Мағынасы әртүрлі: АҚШ-та  \"football\" сөзі ең алдымен американдық футболды білдіреді, ал \"soccer\" сөзімен сфералық доппен ойналатын әлемдік спорт түрін атайды."
+                            },
+                            {
+                                "title": "",
+                                "description": "АҚШ-та \"chips\" - ол қаптамадағы жұқа қытырлақ тағам (Британдық \"crisps\"), ал Ұлыбританияда \"chips\" - бұл қуырылған фри картобы (американдық \"fries\")."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
