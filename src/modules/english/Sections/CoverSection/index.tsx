@@ -16,9 +16,7 @@ const CoverSection = ({
             />
 
             <div className="english-cover-section-content">
-                <h1 className="english-cover-section-title">
-                    {content.coverSection.title}
-                </h1>
+                <h1 className="english-cover-section-title">{content.title}</h1>
 
                 <div className="english-cover-section-blocks-container">
                     {paths.other.coverSection.map(
