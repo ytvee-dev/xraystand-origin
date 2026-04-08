@@ -19,7 +19,6 @@ const FirstSection = ({
                     {content.content.map(
                         (contentData: IBlockData, index: number) => (
                             <InfoBlock
-                                id={`english-first-section-block-${index}`}
                                 className="english-first-section-block"
                                 key={index}
                                 title={contentData.title}
