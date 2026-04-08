@@ -58,14 +58,14 @@
         ]
     },
     "secondSection": {
-        "title": "Сын есім (Adjective)",
+        "title": "СЫН ЕСІМ (ADJECTIVE)",
         "description": "Ағылшын тіліндегі сын есім де қазақ тіліндегі секілді анықтамаға ие, яғни, заттың сипатын, сынын, сапасын білдіреді.",
         "content": [
             {
                 "title": "АТРИБУТИВТІ СЫН ЕСІМ (ATTRIBUTIVE):",
                 "content": [
                     {
-                        "description": "зат есімнің алдына қойылады"
+                        "description": "Зат есімнің алдына қойылады"
                     },
                     {
                         "description": "Adjective + Noun"
@@ -79,7 +79,7 @@
                 "title": "ПОСТПОЗИТИВТІ СЫН ЕСІМ(POSTPOSITIVE):",
                 "content": [
                     {
-                        "description": "зат есімнен кейін қойылады"
+                        "description": "Зат есімнен кейін қойылады"
                     },
                     {
                         "description": "Pronoun + Adjective"
@@ -93,7 +93,7 @@
                 "title": "ПРЕДИКАТИВТІ СЫН ЕСІМ (PREDICATIVE):",
                 "content": [
                     {
-                        "description": "зат есімнен кейін қойылады және байланыстырушы етістікті аяқтайды"
+                        "description": "Зат есімнен кейін қойылады және байланыстырушы етістікті аяқтайды"
                     },
                     {
                         "description": "Noun + linking verb + adjective"
@@ -157,37 +157,37 @@
         "content": [
             {
                 "title": "ІС-ҚИМЫЛ ЕТІСТІКТЕРІ (ACTION VERBS):",
-                "subtitle": "физикалық немесе ойлау әрекетерін көрсетеді.",
+                "subtitle": "Физикалық немесе ойлау әрекетерін көрсетеді.",
                 "description": "Мысалы: She runs every morning."
             },
             {
                 "title": "КҮЙ ЕТІСТІКТЕРІ (STATIVE VERBS):",
-                "subtitle": "күй немесе сезімді сипаттайды.",
+                "subtitle": "Күй немесе сезімді сипаттайды.",
                 "description": "Мысалы: He knows the correct answer. He still believes that story."
             },
             {
                 "title": "ТҰРАҚТЫ ЕТІСТІКТЕР (REGULAR VERBS):",
-                "subtitle": "өткен шақта \"-ed\" жалғауымен толықтырылады.",
+                "subtitle": "Өткен шақта \"-ed\" жалғауымен толықтырылады.",
                 "description": "Мысалы: work → worked → worked"
             },
             {
                 "title": "ТҰРАҚСЫЗ ЕТІСТІКТЕР(IRREGULAR VERBS):",
-                "subtitle": "өткен шаққа қарай сөзді өзгертеді.",
+                "subtitle": "Өткен шаққа қарай сөзді өзгертеді.",
                 "description": "Мысалы: go → went → gone"
             },
             {
                 "title": "БАЙЛАНЫСТЫРУШЫ ЕТІСТІКТЕР (LINKING VERBS):",
-                "subtitle": "заттың әрекетін сипаттау үшін етістікті байланыстырады.",
+                "subtitle": "Заттың әрекетін сипаттау үшін етістікті байланыстырады.",
                 "description": "Мысалы: She seems nervous."
             },
             {
                 "title": "ӨТПЕЛІ ЕТІСТІКТЕР (TRANSITIVE VERBS):",
-                "subtitle": "тікелей қосымшаны қажет етеді.",
+                "subtitle": "Тікелей қосымшаны қажет етеді.",
                 "description": "Мысалы: He reads a book."
             },
             {
                 "title": "ИНТРАНСИВТІ ЕТІСТІКТЕР (INTRANSITIVE VERBS):",
-                "subtitle": "тікелей қосымшаны қажет етпейді.",
+                "subtitle": "Тікелей қосымшаны қажет етпейді.",
                 "description": "Мысалы: They arrived late."
             }
         ]
@@ -348,27 +348,27 @@
         "content": [
             {
                 "title": "HOW (ҚАЛАЙ?):",
-                "subtitle": "quickly, speedily, happily etc.",
+                "subtitle": "Quickly, speedily, happily etc.",
                 "description": "Dinner arrived swiftly."
             },
             {
                 "title": "WHERE (ҚАЙДА?):",
-                "subtitle": "outside, inside, near etc.",
+                "subtitle": "Outside, inside, near etc.",
                 "description": "The car is outside."
             },
             {
                 "title": "WHEN (ҚАШАН?):",
-                "subtitle": "last month, last week, now, later etc.",
+                "subtitle": "Last month, last week, now, later etc.",
                 "description": "My project is due soon."
             },
             {
                 "title": "HOW MUCH (ҚАНШАЛЫҚТЫ?):",
-                "subtitle": "fully, almost, rather etc.",
+                "subtitle": "Fully, almost, rather etc.",
                 "description": "Lennie is quite strong."
             },
             {
                 "title": "HOW OFTEN (ҚАНШАЛЫҚТЫ ЖИІ?):",
-                "subtitle": "never, sometimes, often etc.",
+                "subtitle": "Never, sometimes, often etc.",
                 "description": "She never misses class."
             }
         ]

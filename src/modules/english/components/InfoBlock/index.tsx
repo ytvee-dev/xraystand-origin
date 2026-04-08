@@ -37,14 +37,14 @@ const InfoBlock = ({
 }: IInfoBlockProps): ReactElement => {
     return (
         <div id={id || ""} className={`info-block ${className || ""}`}>
+            <div className="info-block-title" style={titleStyles}>
+                {title}
+            </div>
+
             <div
                 className="info-block-content"
                 style={{ flexDirection: flexDirection }}
             >
-                <div className="info-block-title" style={titleStyles}>
-                    {title}
-                </div>
-
                 {imagePath && (
                     <div className="info-block-image-wrapper">
                         <img
