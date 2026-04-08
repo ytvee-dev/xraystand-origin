@@ -18,8 +18,7 @@ const SafetyPrecautions = lazy(() => import("@pages/SafetyPrecautions"));
 const FireSafety = lazy(() => import("@pages/FireSafety"));
 const Physics = lazy(() => import("@pages/Physics"));
 const English = lazy(() => import("@pages/English"));
-
-// const KazMusic = lazy(() => import("@pages/KazMusic"));
+const KazMusic = lazy(() => import("@pages/KazMusInstruments"));
 
 export const paths = {
     HOME: {
@@ -127,8 +126,7 @@ const routes: RouteObject[] = [
     },
     {
         ...paths.KAZ_MUSIC,
-        // element: <KazMusic />,
-        element: <InProgress />,
+        element: <KazMusic />,
     },
     {
         ...paths.FIRE_SAFETY,
