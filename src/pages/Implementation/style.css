@@ -1,52 +1,14 @@
 .implementation-page {
-    background-color: #0a1e32;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.card {
-    position: relative;
-    width: 100%;
-    max-width: 275px;
-    min-width: 174px;
-
-    height: 100%;
-    min-height: 127px;
-    max-height: 224px;
-
-    border-radius: 0 !important;
-    border: 2px solid white;
-    transition: transform 0.2s ease-in-out !important;
-}
-
-.card:active {
-    transform: scale(0.98);
-
-}
-
-.card button,
-[class*="MuiCardMedia-img"]  {
-    height: 100%;
-}
-
-.card-content {
-    padding: 24px;
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+    width: fit-content;
+    margin-inline: auto;
+}
 
-    pointer-events: none;
+.left-card-wrapper {
+    background-color: #522F1B;
+}
+
+.right-card-wrapper {
+    background-color: #E6BB86;
 }
