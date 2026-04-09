@@ -36,6 +36,9 @@ const SecondSection = ({
                                 titleStyles={{
                                     backgroundColor: "#E0B53D",
                                 }}
+                                imageWrapperStyles={{
+                                    width: "21%",
+                                }}
                             />
                         ),
                     )}

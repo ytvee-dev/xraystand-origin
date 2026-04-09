@@ -34,7 +34,7 @@
 
 .english-second-section-block .info-block-title {
     width: 100%;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.375rem;
 }
 
 .english-second-section-block {
@@ -44,12 +44,15 @@
     max-height: 11rem;
 }
 
-.english-second-section-block .info-block-content {
-    gap: 5.188rem;
+.english-second-section-block .info-block-labels-container {
+    position: relative;
+    padding: 0;
 }
 
-.english-second-section-block .info-block-labels-container {
-    padding: 0;
+.english-second-section-block .info-block-label-wrapper {
+    position: relative;
+    width: 65%;
+    left: 13%;
 }
 
 .english-second-section-blocks-container {
@@ -64,7 +67,7 @@
 
     margin-bottom: 4%;
 
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .english-second-section-header .english-section-description {
@@ -82,4 +85,12 @@
 
 #english-second-section-block-1 {
     left: 18%;
+}
+
+#english-second-section-block-2 .info-block-image-wrapper {
+    width: 15% !important;
+}
+
+#english-second-section-block-1 .info-block-label-wrapper {
+    left: 5%;
 }

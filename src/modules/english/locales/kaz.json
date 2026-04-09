@@ -62,10 +62,10 @@
         "description": "Ағылшын тіліндегі сын есім де қазақ тіліндегі секілді анықтамаға ие, яғни, заттың сипатын, сынын, сапасын білдіреді.",
         "content": [
             {
-                "title": "АТРИБУТИВТІ СЫН ЕСІМ (ATTRIBUTIVE):",
+                "title": "АТРИБУТИВТІ СЫН ЕСІМ (ATTRIBUTIVE)",
                 "content": [
                     {
-                        "description": "Зат есімнің алдына қойылады"
+                        "subtitle": "Зат есімнің алдына қойылады"
                     },
                     {
                         "description": "Adjective + Noun"
@@ -76,10 +76,10 @@
                 ]
             },
             {
-                "title": "ПОСТПОЗИТИВТІ СЫН ЕСІМ(POSTPOSITIVE):",
+                "title": "ПОСТПОЗИТИВТІ СЫН ЕСІМ(POSTPOSITIVE)",
                 "content": [
                     {
-                        "description": "Зат есімнен кейін қойылады"
+                        "subtitle": "Зат есімнен кейін қойылады"
                     },
                     {
                         "description": "Pronoun + Adjective"
@@ -90,10 +90,10 @@
                 ]
             },
             {
-                "title": "ПРЕДИКАТИВТІ СЫН ЕСІМ (PREDICATIVE):",
+                "title": "ПРЕДИКАТИВТІ СЫН ЕСІМ (PREDICATIVE)",
                 "content": [
                     {
-                        "description": "Зат есімнен кейін қойылады және байланыстырушы етістікті аяқтайды"
+                        "subtitle": "Зат есімнен кейін қойылады және байланыстырушы етістікті аяқтайды"
                     },
                     {
                         "description": "Noun + linking verb + adjective"

@@ -58,6 +58,14 @@
     gap: 0.125rem;
 }
 
+.info-block-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
 .info-block-subtitle {
     font-size: 0.875rem;
     font-weight: bold;
