@@ -1,0 +1,59 @@
+.sound-card-wrapper {
+    display: flex;
+    gap: 24px;
+    padding: 44px 0;
+    color: #e6bb86;
+
+    --sound-card-img-size: 242px;
+}
+
+.light h3,
+.light .sound-card-content > p {
+    color: #522f1b;
+}
+
+.sound-card-wrapper.img-right {
+    flex-direction: row-reverse;
+}
+
+.sound-card-img {
+    width: var(--sound-card-img-size);
+    height: var(--sound-card-img-size);
+}
+
+.sound-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    max-width: 886px;
+}
+
+.sound-card-content h3 {
+    font-size: 48px;
+}
+
+@media (max-width: 768px) {
+    .sound-card-wrapper {
+        --sound-card-img-size: 185px;
+    }
+
+    .sound-card-content {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 420px) {
+    .sound-card-wrapper {
+        --sound-card-img-size: 140px;
+        
+        gap: 12px;
+    }
+
+    .sound-card-content {
+        gap: 12px;
+    }
+
+    .sound-card-content h3 {
+        font-size: 30px;
+    }
+}

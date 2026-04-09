@@ -14,6 +14,8 @@ export interface CenteredHeaderProps {
     languageSwitcherClassName?: string;
 }
 
+const ZERO_INDENT: number = 0;
+
 const CenteredHeader: React.FC<CenteredHeaderProps> = ({
     logo = null,
     navigation = null,
@@ -29,9 +31,9 @@ const CenteredHeader: React.FC<CenteredHeaderProps> = ({
             className="centered-header-wrapper"
             style={{
                 position: stickyHeader ? "fixed" : "relative",
-                top: stickyHeader ? "0" : undefined,
-                left: stickyHeader ? "0" : undefined,
-                right: stickyHeader ? "0" : undefined,
+                top: stickyHeader ? ZERO_INDENT : undefined,
+                left: stickyHeader ? ZERO_INDENT : undefined,
+                right: stickyHeader ? ZERO_INDENT : undefined,
                 backgroundColor: backgroundColor,
             }}
         >
