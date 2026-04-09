@@ -106,53 +106,86 @@
         ]
     },
     "thirdSection": {
-        "title": "Зат есім (Noun)",
+        "title": "ЗАТ ЕСIМ (NOUN)",
         "description": "Зат есім - заттардың атын, нәрселерді табиғат пен қоғамдық құбылыстарды, уақиғаларды, ұғымдар мен түсініктерді білдіретін сөз табы.",
         "content": [
             {
                 "title": "ЖАЛҚЫ ЕСІМДЕР",
-                "subtitle": "(PROPER: London, Monday)",
-                "description": "Адамдардың, орындардың немесе заттардың нақты атаулары."
-            },
-            {
-                "title": "ЖАЛПЫ ЕСІМДЕР",
-                "subtitle": "(COMMON: park, mom)",
-                "description": "Адамдардың, орындардың немесе заттардың жалпы атаулары."
-            },
-            {
-                "title": "НАҚТЫ ЕСІМДЕР",
-                "subtitle": "(CONCRETE: tree, cat)",
-                "description": "Көруге, ұстауға, естуге, иіскеуге немесе дәм татуға болатын нәрселер."
-            },
-            {
-                "title": "АБСТРАКТІЛІ ЕСІМДЕР",
-                "subtitle": "(ABSTRACT: happiness, bravery)",
-                "description": "Сезімдер арқылы қабылданбайтын идеялар, сезімдер немесе қасиеттер."
+                "content": [
+                    {
+                        "subtitle": "(PROPER: London, Monday)",
+                        "description": "Адамдардың, орындардың немесе заттардың нақты атаулары."
+                    }
+                ]
             },
             {
                 "title": "ҰЖЫМДЫҚ ЕСІМДЕР",
-                "subtitle": "(COLLECTIVE: family, team)",
-                "description": "Адамдар немесе заттар топтары немесе ұжымдары."
+                "content": [
+                    {
+                        "subtitle": "(COLLECTIVE: family, team)",
+                        "description": "Адамдар немесе заттар топтары немесе ұжымдары."
+                    }
+                ]
+            },
+            {
+                "title": "ЖАЛПЫ ЕСІМДЕР",
+                "content": [
+                    {
+                        "subtitle": "(COMMON: park, mom)",
+                        "description": "Адамдардың, орындардың немесе заттардың жалпы атаулары."
+                    }
+                ]
             },
             {
                 "title": "ІЛІКТІК ЕСІМДЕР",
-                "subtitle": "(POSSESSIVE: Tom’s dog, John’s car)",
-                "description": "Тиесілігін немесе иеленуін көрсетеді."
+                "content": [
+                    {
+                        "subtitle": "(POSSESSIVE: Tom’s dog, John’s car)",
+                        "description": "Тиесілігін немесе иеленуін көрсетеді."
+                    }
+                ]
+            },
+            {
+                "title": "НАҚТЫ ЕСІМДЕР",
+                "content": [
+                    {
+                        "subtitle": "(CONCRETE: tree, cat)",
+                        "description": "Көруге, ұстауға, естуге, иіскеуге немесе дәм татуға болатын нәрселер."
+                    }
+                ]
             },
             {
                 "title": "САНАЛАТЫН",
-                "subtitle": "(COUNTABLE: books, dollars)",
-                "description": "Саналатын зат есімдерге санауға болатын зат есімдер жатады."
+                "content": [
+                    {
+                        "subtitle": "(COUNTABLE: books, dollars)",
+                        "description": "Саналатын зат есімдерге санауға болатын зат есімдер жатады."
+                    }
+                ]
             },
             {
+                "title": "АБСТРАКТІЛІ ЕСІМДЕР",
+                "content": [
+                    {
+                        "subtitle": "(ABSTRACT: happiness, bravery)",
+                        "description": "Сезімдер арқылы қабылданбайтын идеялар, сезімдер немесе қасиеттер."
+                    }
+                ]
+            },
+
+            {
                 "title": "САНАЛМАЙТЫН",
-                "subtitle": "(UNCOUNTABLE: water, sand)",
-                "description": "Дерексіз зат есімдер жатады."
+                "content": [
+                    {
+                        "subtitle": "(UNCOUNTABLE: water, sand)",
+                        "description": "Дерексіз зат есімдер жатады."
+                    }
+                ]
             }
         ]
     },
     "fourthSection": {
-        "title": "Етістік (Verb)",
+        "title": "ЕТIСТIК (VERB)",
         "description": "Іс-әрекет пен қимыл-сынды білдіретін сөз табы.",
         "content": [
             {
@@ -193,7 +226,7 @@
         ]
     },
     "fifthSection": {
-        "title": "Етістік шақтары (Tenses)",
+        "title": "ЕТIСТIК ШАҚТАРЫ (TENSES)",
         "description": "Қимыл мен әрекеттің жүзеге асу кезеңін етістік білдіретін және оның ұзақтығы немесе аяқталуы туралы толық ақпарат беретін етістік формалары.",
         "content": [
             {
