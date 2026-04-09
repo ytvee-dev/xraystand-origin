@@ -1,19 +1,12 @@
 import * as paths from "@modules/english/locales/paths.json";
-import * as textContentKz from "@modules/english/locales/kaz.json";
-import * as textContentRu from "@modules/english/locales/rus.json";
-import * as textContentEn from "@modules/english/locales/en.json";
-import type { BiologySectionProps } from "@modules/biology/types";
-import { useLocaleContent } from "@hooks/useLocale";
+import type { IEnglishSectionProps } from "@modules/english/types";
 import type { ReactElement } from "react";
 import "./style.css";
 
-const CoverSection = ({ className }: BiologySectionProps): ReactElement => {
-    const textContent = useLocaleContent(
-        textContentRu,
-        textContentKz,
-        textContentEn,
-    );
-
+const CoverSection = ({
+    className,
+    content,
+}: IEnglishSectionProps): ReactElement => {
     return (
         <section className={className}>
             <img
@@ -23,9 +16,7 @@ const CoverSection = ({ className }: BiologySectionProps): ReactElement => {
             />
 
             <div className="english-cover-section-content">
-                <h1 className="english-cover-section-title">
-                    {textContent.coverSection.title}
-                </h1>
+                <h1 className="english-cover-section-title">{content.title}</h1>
 
                 <div className="english-cover-section-blocks-container">
                     {paths.other.coverSection.map(
