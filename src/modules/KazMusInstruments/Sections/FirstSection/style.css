@@ -1,0 +1,17 @@
+.music-section {
+    background-color: rgba(82, 47, 27, 1);
+    padding: 2.75rem 9rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.music-section-title {
+    color: rgba(230, 187, 134, 1);
+    font-size: 48px;
+    margin-bottom: 36px;
+}
+
+.music-top-cards {
+    display: flex;
+    gap: 24px;
+}
