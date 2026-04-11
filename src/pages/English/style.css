@@ -28,5 +28,14 @@
     line-height: 3.25rem;
     letter-spacing: 0;
 
+    text-align: center;
+
     color: #ffffff;
+}
+
+.english-section-description {
+    font-size: 1rem;
+    letter-spacing: 0px;
+    line-height: 133.4%;
+    text-align: center;
 }

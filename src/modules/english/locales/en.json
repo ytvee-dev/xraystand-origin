@@ -152,43 +152,71 @@
         ]
     },
     "fourthSection": {
-        "title": "Verb",
+        "title": "VERB",
         "description": "A verb is a word that expresses an action, occurrence, or state of being, forming the core of a sentence and indicating what the subject is doing or experiencing.",
         "content": [
             {
-                "title": "ACTION VERBS:",
-                "subtitle": "show physical or mental action",
-                "description": "Example: She runs every morning."
+                "title": "ACTION VERBS",
+                "content": [
+                    {
+                        "subtitle": "Show physical or mental action",
+                        "description": "Example: She runs every morning."
+                    }
+                ]
             },
             {
-                "title": "STATIVE VERBS:",
-                "subtitle": "describe a state or feeling",
-                "description": "Example: He knows the correct answer. He still believes that story."
+                "title": "STATIVE VERBS",
+                "content": [
+                    {
+                        "subtitle": "Describe a state or feeling",
+                        "description": "Example: He knows the correct answer. He still believes that story."
+                    }
+                ]
             },
             {
-                "title": "REGULAR VERBS:",
-                "subtitle": "add “-ed” for past tense",
-                "description": "Example: work → worked → worked"
+                "title": "REGULAR VERBS",
+                "content": [
+                    {
+                        "subtitle": "Add “-ed” for past tense",
+                        "description": "Example: work → worked → worked"
+                    }
+                ]
             },
             {
-                "title": "IRREGULAR VERBS:",
-                "subtitle": "change form in past tense",
-                "description": "Example: go → went → gone"
+                "title": "IRREGULAR VERBS",
+                "content": [
+                    {
+                        "subtitle": "Change form in past tense",
+                        "description": "Example: go → went → gone"
+                    }
+                ]
             },
             {
-                "title": "LINKING VERBS:",
-                "subtitle": "connect the subject to more info",
-                "description": "Example: She seems nervous."
+                "title": "LINKING VERBS",
+                "content": [
+                    {
+                        "subtitle": "Connect the subject to more info",
+                        "description": "Example: She seems nervous."
+                    }
+                ]
             },
             {
-                "title": "TRANSITIVE VERBS:",
-                "subtitle": "need a direct object",
-                "description": "Example: He reads a book."
+                "title": "TRANSITIVE VERBS",
+                "content": [
+                    {
+                        "subtitle": "Need a direct object",
+                        "description": "Example: He reads a book."
+                    }
+                ]
             },
             {
-                "title": "INTRANSITIVE VERBS:",
-                "subtitle": "don't need a direct object",
-                "description": "Example: They arrived late."
+                "title": "INTRANSITIVE VERBS",
+                "content": [
+                    {
+                        "subtitle": "don't need a direct object",
+                        "description": "Example: They arrived late."
+                    }
+                ]
             }
         ]
     },
