@@ -55,9 +55,19 @@
     left: 13%;
 }
 
+.english-second-section-block .info-block-image-wrapper {
+    width: 21%;
+    max-width: 9.688rem;
+}
+
+.english-second-section-block .info-block-content {
+    flex-direction: row-reverse;
+}
+
 .english-second-section-blocks-container {
     position: relative;
 
+    height: 100%;
     width: 100%;
 
     display: flex;
@@ -67,7 +77,7 @@
 
     margin-bottom: 4%;
 
-    gap: 2.5rem;
+    gap: 2.75rem;
 }
 
 .english-second-section-header .english-section-description {
@@ -75,7 +85,7 @@
 }
 
 #english-second-section-block-1 .info-block-content {
-    flex-direction: row !important;
+    flex-direction: row;
 }
 
 #english-second-section-block-0,
@@ -88,7 +98,7 @@
 }
 
 #english-second-section-block-2 .info-block-image-wrapper {
-    width: 15% !important;
+    width: 15%;
 }
 
 #english-second-section-block-1 .info-block-label-wrapper {

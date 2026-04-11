@@ -32,12 +32,8 @@ const SecondSection = ({
                                 description={contentData.description}
                                 labels={contentData.content}
                                 imagePath={paths.blocks.secondSection[index]}
-                                flexDirection="row-reverse"
                                 titleStyles={{
                                     backgroundColor: "#E0B53D",
-                                }}
-                                imageWrapperStyles={{
-                                    width: "21%",
                                 }}
                             />
                         ),
