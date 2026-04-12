@@ -43,9 +43,11 @@ const FirstSection = ({ content }: Props): ReactElement => {
             <div className="music-top-cards">
                 {topCards.map((item, index) => (
                     <Card
+                        className="music-top-card"
                         key={item.title}
                         sx={{
-                            width: 368,
+                            width: "100%",
+                            maxWidth: 368,
                             backgroundColor: "#E6BB86",
                             color: "#000000DE",
                         }}
@@ -55,8 +57,14 @@ const FirstSection = ({ content }: Props): ReactElement => {
                                 component="img"
                                 image={images[index]}
                                 sx={{
-                                    height: 400,
-                                    objectFit: "cover"
+                                    width: "100%",
+                                    height: {
+                                        sm: 350,
+                                        md: 390,
+                                        lg: 400,
+                                    },
+                                    objectFit: "cover",
+                                    backgroundColor: "#fff"
                                 }}
                             />
                             <CardContent>
@@ -71,6 +79,7 @@ const FirstSection = ({ content }: Props): ReactElement => {
             <div className="music-sound-cards">
                 {content.content.map((item, index) => (
                     <SoundCards
+                    
                         key={item.title}
                         cardContent={{
                             title: item.title,
