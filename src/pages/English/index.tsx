@@ -13,6 +13,7 @@ import { useSelector } from "react-redux";
 import type { ReactElement } from "react";
 import { paths } from "@router/routes";
 import "./style.css";
+import SecondSection from "@modules/english/Sections/SecondSection";
 
 const EnglishLogo = () => {
     return (
@@ -52,6 +53,10 @@ const English = (): ReactElement => {
                 <FirstSection
                     className="english-section english-first-section"
                     content={textContent.firstSection}
+                />
+                <SecondSection
+                    className="english-section english-second-section"
+                    content={textContent.secondSection}
                 />
             </div>
         </BrightnessLayout>
