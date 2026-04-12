@@ -1,6 +1,6 @@
 .music-section {
     background-color: rgba(82, 47, 27, 1);
-    padding: 2.75rem 9rem;
+    padding: 44px 90px 36px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -14,4 +14,13 @@
 .music-top-cards {
     display: flex;
     gap: 24px;
+}
+
+.music-top-cards
+.music-sound-cards {
+    margin-top: 44px;
+}
+
+.sound-description {
+    text-align: left;
 }

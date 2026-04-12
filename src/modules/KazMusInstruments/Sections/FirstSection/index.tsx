@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
+import SoundCards from "@modules/KazMusInstruments/components/SoundCard";
 import "./style.css";
 
 type Instrument = {
@@ -43,23 +44,23 @@ const FirstSection = ({ content }: Props): ReactElement => {
                 {topCards.map((item, index) => (
                     <Card
                         key={item.title}
-                        sx={{ 
-                            width: 360, 
-                            backgroundColor: "#E6BB86", 
+                        sx={{
+                            width: 368,
+                            backgroundColor: "#E6BB86",
                             color: "#000000DE",
-                         }}
+                        }}
                     >
                         <CardActionArea>
                             <CardMedia
                                 component="img"
                                 image={images[index]}
                                 sx={{
-                                    height: 430,
+                                    height: 400,
                                     objectFit: "cover"
                                 }}
                             />
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="div" fontSize={20}>
+                                <Typography gutterBottom variant="h5" component="div" fontSize={20} fontWeight={700}>
                                     {item.title}
                                 </Typography>
                             </CardContent>
@@ -67,7 +68,20 @@ const FirstSection = ({ content }: Props): ReactElement => {
                     </Card>
                 ))}
             </div>
-
+            <div className="music-sound-cards">
+                {content.content.map((item, index) => (
+                    <SoundCards
+                        key={item.title}
+                        cardContent={{
+                            title: item.title,
+                            description: item.description,
+                            soundDescription: item.soundDescription || "",
+                            img: images[index]
+                        }}
+                        imgSide="left"
+                    />
+                ))}
+            </div>
         </section>
     );
 };
