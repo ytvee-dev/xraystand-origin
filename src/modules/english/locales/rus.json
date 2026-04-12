@@ -58,14 +58,14 @@
         ]
     },
     "secondSection": {
-        "title": "Прилагательное (Adjective)",
+        "title": "ПРИЛАГАТЕЛЬНОЕ (ADJECTIVE)",
         "description": "Прилагательное - это слово, которое описывает или изменяет существительное или местоимение, добавляя подробности о его качествах, характеристиках, количестве или степени.",
         "content": [
             {
-                "title": "АТРИБУТИВНЫЙ ГЛАГОЛ (ATTRIBUTIVE):",
+                "title": "АТРИБУТИВНЫЙ ГЛАГОЛ (ATTRIBUTIVE)",
                 "content": [
                     {
-                        "description": "ставится перед существительным"
+                        "subtitle": "Ставится перед существительным"
                     },
                     {
                         "description": "Adjective + Noun"
@@ -76,10 +76,10 @@
                 ]
             },
             {
-                "title": "ПОСТПОЗИТИВНОЕ ПРИЛАГАТЕЛЬНОЕ (POSTPOSITIVE):",
+                "title": "ПОСТПОЗИТИВНОЕ ПРИЛАГАТЕЛЬНОЕ (POSTPOSITIVE)",
                 "content": [
                     {
-                        "description": "следует сразу за существительным"
+                        "subtitle": "Следует сразу за существительным"
                     },
                     {
                         "description": "Pronoun + Adjective"
@@ -90,10 +90,10 @@
                 ]
             },
             {
-                "title": "ПРЕДИКАТИВНОЕ ПРИЛАГАТЕЛЬНОЕ (PREDICATIVE):",
+                "title": "ПРЕДИКАТИВНОЕ ПРИЛАГАТЕЛЬНОЕ (PREDICATIVE)",
                 "content": [
                     {
-                        "description": "следует за существительным и завершает связующий глагол"
+                        "subtitle": "Следует за существительным и завершает связующий глагол"
                     },
                     {
                         "description": "Noun + linking verb + adjective"
@@ -157,37 +157,37 @@
         "content": [
             {
                 "title": "ГЛАГОЛЫ ДЕЙСТВИЯ (ACTION VERBS):",
-                "subtitle": "показывают физическое или умственное действие",
+                "subtitle": "Показывают физическое или умственное действие",
                 "description": "Пример: She runs every morning."
             },
             {
                 "title": "ГЛАГОЛЫ СОСТОЯНИЯ (STATIVE VERBS):",
-                "subtitle": "описывают состояние или чувство ",
+                "subtitle": "Описывают состояние или чувство ",
                 "description": "Пример: He knows the correct answer. He still believes that story."
             },
             {
                 "title": "ПРАВИЛЬНЫЕ ГЛАГОЛЫ (REGULAR VERBS):",
-                "subtitle": "дополняются окончанием “-ed” в прошедшем времени",
+                "subtitle": "Дополняются окончанием “-ed” в прошедшем времени",
                 "description": "Пример: work → worked → worked"
             },
             {
                 "title": "НЕПРАВИЛЬНЫЕ ГЛАГОЛЫ (IRREGULAR VERBS):",
-                "subtitle": "изменяют форму в прошедшем времени",
+                "subtitle": "Изменяют форму в прошедшем времени",
                 "description": "Пример: go → went → gone"
             },
             {
                 "title": "СВЯЗУЮЩИЕ ГЛАГОЛЫ (LINKING VERBS):",
-                "subtitle": "связывает глагол для описания действия предмета",
+                "subtitle": "Связывает глагол для описания действия предмета",
                 "description": "Пример: She seems nervous"
             },
             {
                 "title": "ПЕРЕХОДНЫЕ ГЛАГОЛЫ (TRANSITIVE VERBS):",
-                "subtitle": "требуют прямого дополнения",
+                "subtitle": "Требуют прямого дополнения",
                 "description": "Пример: He reads a book."
             },
             {
                 "title": "НЕПЕРЕХОДНЫЕ ГЛАГОЛЫ (INTRANSITIVE VERBS):",
-                "subtitle": "не требуют прямого дополнения",
+                "subtitle": "Не требуют прямого дополнения",
                 "description": "Пример: They arrived late."
             }
         ]
@@ -222,7 +222,7 @@
                 "content": [
                     {
                         "title": "Simple:",
-                        "subtitle": "факт, привычка",
+                        "subtitle": "Факт, привычка",
                         "description": "Пример: He runs"
                     },
                     {
@@ -237,7 +237,7 @@
                     },
                     {
                         "title": "Perfect Continuous:",
-                        "subtitle": "действие началось в прошлом и продолжается или только что завершилось",
+                        "subtitle": "Действие началось в прошлом и продолжается или только что завершилось",
                         "description": "Пример: He has been running"
                     }
                 ]
@@ -411,19 +411,19 @@
                 "content": [
                     {
                         "title": "Число",
-                        "description": "используется единственное или множественное число (The team is/are winning)."
+                        "description": "Используется единственное или множественное число (The team is/are winning)."
                     },
                     {
                         "title": "",
-                        "description": "используется единственное число (The team is winning)."
+                        "description": "Используется единственное число (The team is winning)."
                     },
                     {
                         "title": "Глаголы",
-                        "description": "чаще используется настоящее совершенное время (present perfect): I've just eaten"
+                        "description": "Чаще используется настоящее совершенное время (present perfect): I've just eaten"
                     },
                     {
                         "title": "",
-                        "description": "чаще используется простое прошедшее время (simple past): I just ate."
+                        "description": "Чаще используется простое прошедшее время (simple past): I just ate."
                     }
                 ]
             },
@@ -432,19 +432,19 @@
                 "content": [
                     {
                         "title": "Окончания слов",
-                        "description": "сохраняет французские корни: -our, -ise, -re, -ce (colour, organise, centre, defence)."
+                        "description": "Сохраняет французские корни: -our, -ise, -re, -ce (colour, organise, centre, defence)."
                     },
                     {
                         "title": "",
-                        "description": "упрощенное и дифференцированное написание: -or, -ize, -er, -se (color, organize, center, defense)."
+                        "description": "Упрощенное и дифференцированное написание: -or, -ize, -er, -se (color, organize, center, defense)."
                     },
                     {
                         "title": "Двойные согласные",
-                        "description": "часто удваивается согласная в глаголах при добавлении окончаний (travelling, cancelled)"
+                        "description": "Часто удваивается согласная в глаголах при добавлении окончаний (travelling, cancelled)"
                     },
                     {
                         "title": "",
-                        "description": "обычно используется одна согласная (traveling, canceled)."
+                        "description": "Обычно используется одна согласная (traveling, canceled)."
                     }
                 ]
             },
