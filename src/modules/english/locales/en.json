@@ -58,14 +58,14 @@
         ]
     },
     "secondSection": {
-        "title": "Adjective",
+        "title": "ADJECTIVE",
         "description": "An adjective is a word that describes or modifies a noun or pronoun, adding details about its qualities, characteristics, quantity, or extent.",
         "content": [
             {
-                "title": "ATTRIBUTIVE:",
+                "title": "ATTRIBUTIVE",
                 "content": [
                     {
-                        "description": "go before the noun "
+                        "subtitle": "Go before the noun "
                     },
                     {
                         "description": "Adjective + Noun"
@@ -76,10 +76,10 @@
                 ]
             },
             {
-                "title": "POSTPOSITIVE:",
+                "title": "POSTPOSITIVE",
                 "content": [
                     {
-                        "description": "go immediately after the noun"
+                        "subtitle": "Go immediately after the noun"
                     },
                     {
                         "description": "Pronoun + Adjective"
@@ -90,10 +90,10 @@
                 ]
             },
             {
-                "title": "PREDICATIVE:",
+                "title": "PREDICATIVE",
                 "content": [
                     {
-                        "description": "go after the noun and complete a linking verb"
+                        "subtitle": "Go after the noun and complete a linking verb"
                     },
                     {
                         "description": "Noun + linking verb + adjective"
@@ -189,37 +189,37 @@
         "content": [
             {
                 "title": "ACTION VERBS:",
-                "subtitle": "show physical or mental action",
+                "subtitle": "Show physical or mental action",
                 "description": "Example: She runs every morning."
             },
             {
                 "title": "STATIVE VERBS:",
-                "subtitle": "describe a state or feeling",
+                "subtitle": "Describe a state or feeling",
                 "description": "Example: He knows the correct answer. He still believes that story."
             },
             {
                 "title": "REGULAR VERBS:",
-                "subtitle": "add “-ed” for past tense",
+                "subtitle": "Add “-ed” for past tense",
                 "description": "Example: work → worked → worked"
             },
             {
                 "title": "IRREGULAR VERBS:",
-                "subtitle": "change form in past tense",
+                "subtitle": "Change form in past tense",
                 "description": "Example: go → went → gone"
             },
             {
                 "title": "LINKING VERBS:",
-                "subtitle": "connect the subject to more info",
+                "subtitle": "Connect the subject to more info",
                 "description": "Example: She seems nervous."
             },
             {
                 "title": "TRANSITIVE VERBS:",
-                "subtitle": "need a direct object",
+                "subtitle": "Need a direct object",
                 "description": "Example: He reads a book."
             },
             {
                 "title": "INTRANSITIVE VERBS:",
-                "subtitle": "don't need a direct object",
+                "subtitle": "Don't need a direct object",
                 "description": "Example: They arrived late."
             }
         ]
@@ -380,27 +380,27 @@
         "content": [
             {
                 "title": "HOW:",
-                "subtitle": "quickly, speedily, happily etc.",
+                "subtitle": "Quickly, speedily, happily etc.",
                 "description": "Dinner arrived swiftly."
             },
             {
                 "title": "WHERE:",
-                "subtitle": "outside, inside, near etc.",
+                "subtitle": "Outside, inside, near etc.",
                 "description": "The car is outside."
             },
             {
                 "title": "WHEN:",
-                "subtitle": "last month, last week, now, later etc. ",
+                "subtitle": "Last month, last week, now, later etc. ",
                 "description": "My project is due soon."
             },
             {
                 "title": "HOW MUCH:",
-                "subtitle": "fully, almost, rather etc.",
+                "subtitle": "Fully, almost, rather etc.",
                 "description": "Lennie is quite strong."
             },
             {
                 "title": "HOW OFTEN:",
-                "subtitle": "never, sometimes, often etc.",
+                "subtitle": "Never, sometimes, often etc.",
                 "description": "She never misses class."
             }
         ]
@@ -443,19 +443,19 @@
                 "content": [
                     {
                         "title": "Collective Nouns",
-                        "description": "use singular/plural (The team is/are winning)."
+                        "description": "Use singular/plural (The team is/are winning)."
                     },
                     {
                         "title": "",
-                        "description": "use singular (The team is winning)."
+                        "description": "Use singular (The team is winning)."
                     },
                     {
                         "title": "Verbs",
-                        "description": "use present perfect more (\"I've just eaten\")."
+                        "description": "Use present perfect more (\"I've just eaten\")."
                     },
                     {
                         "title": "",
-                        "description": "use simple past tense (\"I just ate\")."
+                        "description": "Use simple past tense (\"I just ate\")."
                     }
                 ]
             },
@@ -464,19 +464,19 @@
                 "content": [
                     {
                         "title": "Word endings",
-                        "description": "retains French roots: -our, -ise, -re, -ce (colour, organise, centre, defence)."
+                        "description": "Retains French roots: -our, -ise, -re, -ce (colour, organise, centre, defence)."
                     },
                     {
                         "title": "",
-                        "description": "simplified and differentiated spellings: -or, -ize, -er, -se (color, organize, center, defense)."
+                        "description": "Simplified and differentiated spellings: -or, -ize, -er, -se (color, organize, center, defense)."
                     },
                     {
                         "title": "Double consonants",
-                        "description": "often doubles consonant in verbs when adding endings (travelling, cancelled)"
+                        "description": "Often doubles consonant in verbs when adding endings (travelling, cancelled)"
                     },
                     {
                         "title": "",
-                        "description": "usually uses a single consonant (traveling, canceled)."
+                        "description": "Usually uses a single consonant (traveling, canceled)."
                     }
                 ]
             },
@@ -487,13 +487,10 @@
                         "content": [
                             "autumn",
                             "fall",
-
                             "lift",
                             "elevator",
-
                             "football",
                             "soccer",
-
                             "crisps",
                             "chips"
                         ]
