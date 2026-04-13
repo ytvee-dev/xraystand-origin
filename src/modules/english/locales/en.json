@@ -106,53 +106,85 @@
         ]
     },
     "thirdSection": {
-        "title": "Noun",
+        "title": "NOUN",
         "description": "A noun is a word that names a person, place, thing, or idea (concept, quality, state, action) and serves as a fundamental building block in language, often acting as the subject or object in a sentence.",
         "content": [
             {
                 "title": "PROPER",
-                "subtitle": "(London, Monday)",
-                "description": "Specific names for people, places or things."
-            },
-            {
-                "title": "COMMON",
-                "subtitle": "(park, mom)",
-                "description": "General names for people, places or things."
-            },
-            {
-                "title": "CONCRETE",
-                "subtitle": "(tree, cat)",
-                "description": "Things that you can see, touch, hear, smell or taste."
-            },
-            {
-                "title": "ABSTRACT",
-                "subtitle": "(happiness, bravery)",
-                "description": "Ideas, feelings or qualities you cannot perceive with your senses."
+                "content": [
+                    {
+                        "subtitle": "(London, Monday)",
+                        "description": "Specific names for people, places or things."
+                    }
+                ]
             },
             {
                 "title": "COLLECTIVE",
-                "subtitle": "(family, team)",
-                "description": "Groups or collectives of people or things."
+                "content": [
+                    {
+                        "subtitle": "(family, team)",
+                        "description": "Groups or collectives of people or things."
+                    }
+                ]
+            },
+            {
+                "title": "COMMON",
+                "content": [
+                    {
+                        "subtitle": "(park, mom)",
+                        "description": "General names for people, places or things."
+                    }
+                ]
             },
             {
                 "title": "POSSESSIVE",
-                "subtitle": "(Tom’s dog, John’s car)",
-                "description": "Shows ownership or possession."
+                "content": [
+                    {
+                        "subtitle": "(Tom’s dog, John’s car)",
+                        "description": "Shows ownership or possession."
+                    }
+                ]
+            },
+            {
+                "title": "CONCRETE",
+                "content": [
+                    {
+                        "subtitle": "(tree, cat)",
+                        "description": "Things that you can see, touch, hear, smell or taste."
+                    }
+                ]
             },
             {
                 "title": "COUNTABLE",
-                "subtitle": "(books, dollars)",
-                "description": "Things that can be counted."
+                "content": [
+                    {
+                        "subtitle": "(books, dollars)",
+                        "description": "Things that can be counted."
+                    }
+                ]
+            },
+            {
+                "title": "ABSTRACT",
+                "content": [
+                    {
+                        "subtitle": "(happiness, bravery)",
+                        "description": "Ideas, feelings or qualities you cannot perceive with your senses."
+                    }
+                ]
             },
             {
                 "title": "UNCOUNTABLE",
-                "subtitle": "(water, sand)",
-                "description": "Things that cannot be counted."
+                "content": [
+                    {
+                        "subtitle": "(water, sand)",
+                        "description": "Things that cannot be counted."
+                    }
+                ]
             }
         ]
     },
     "fourthSection": {
-        "title": "Verb",
+        "title": "VERB",
         "description": "A verb is a word that expresses an action, occurrence, or state of being, forming the core of a sentence and indicating what the subject is doing or experiencing.",
         "content": [
             {
@@ -193,7 +225,7 @@
         ]
     },
     "fifthSection": {
-        "title": "Tenses",
+        "title": "TENSES",
         "description": "Tenses are verb forms that show when an action or state occurs (past, present, future) and provide details about its duration or completion.",
         "content": [
             {

@@ -2,9 +2,11 @@ import Spinner from "@components/common/Spinner";
 import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/english/Sections/CoverSection";
 import FirstSection from "@modules/english/Sections/FirstSection";
+import ThirdSection from "@modules/english/Sections/ThirdSection";
 import * as textContentEn from "@modules/english/locales/en.json";
 import * as textContentKz from "@modules/english/locales/kaz.json";
 import * as textContentRu from "@modules/english/locales/rus.json";
+import SecondSection from "@modules/english/Sections/SecondSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -13,7 +15,6 @@ import { useSelector } from "react-redux";
 import type { ReactElement } from "react";
 import { paths } from "@router/routes";
 import "./style.css";
-import SecondSection from "@modules/english/Sections/SecondSection";
 
 const EnglishLogo = () => {
     return (
@@ -57,6 +58,10 @@ const English = (): ReactElement => {
                 <SecondSection
                     className="english-section english-second-section"
                     content={textContent.secondSection}
+                />
+                <ThirdSection
+                    className="english-section english-third-section"
+                    content={textContent.thirdSection}
                 />
             </div>
         </BrightnessLayout>

@@ -16,6 +16,8 @@
 }
 
 .info-block-title {
+    width: 100%;
+
     padding: 0.75rem;
 
     border: 0.125rem solid #ffffff;
@@ -29,6 +31,14 @@
     margin-bottom: 1.5rem;
 
     color: #ffffff;
+}
+
+.info-block-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
 }
 
 .info-block-image {
