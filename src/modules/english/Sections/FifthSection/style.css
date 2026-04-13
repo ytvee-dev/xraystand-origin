@@ -1,0 +1,67 @@
+.english-fifth-section {
+    width: 100%;
+
+    background: linear-gradient(
+        to right,
+        #a6cc6b 0%,
+        #b4d37f 50%,
+        #a6cc6b 100%
+    );
+
+    color: #ffffff;
+}
+
+.english-fifth-section-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.english-fifth-section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2%;
+
+    gap: 1.5rem;
+}
+
+.english-fifth-section-header .english-section-description {
+    width: 40%;
+}
+
+.english-fifth-section-blocks-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    margin-bottom: 2%;
+
+    gap: 2.5rem;
+}
+
+.english-fifth-section-block {
+    width: 20%;
+}
+
+.english-fifth-section-block .info-block-title {
+    /* height: 5rem; */
+    margin-bottom: 1rem;
+}
+
+.english-fifth-section-block .info-block-labels-container {
+    padding: 0 0.75rem;
+}
+
+.english-fifth-section-block .info-block-label-wrapper {
+    gap: 1rem;
+}

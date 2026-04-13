@@ -232,18 +232,15 @@
                 "title": "MAIN TENSES (TIME)",
                 "content": [
                     {
-                        "title": "Past:",
-                        "subtitle": "Happened before now",
+                        "subtitle": "Past: Happened before now",
                         "description": "e.g. walked, was eating"
                     },
                     {
-                        "title": "Present:",
-                        "subtitle": "Happening now or usually",
+                        "subtitle": "Present: Happening now or usually",
                         "description": "e.g. walks, is eating"
                     },
                     {
-                        "title": "Future:",
-                        "subtitle": "Will happen later",
+                        "subtitle": "Future: Will happen later",
                         "description": "e.g. will walk, will be eating"
                     }
                 ]
@@ -253,23 +250,19 @@
                 "description": "These combine with the main tenses to add nuance.",
                 "content": [
                     {
-                        "title": "Simple:",
-                        "subtitle": "Basic action",
+                        "subtitle": "Simple: Basic action",
                         "description": "e.g. He runs"
                     },
                     {
-                        "title": "Continuous (Progressive):",
-                        "subtitle": "Ongoing action",
+                        "subtitle": "Continuous (Progressive): Ongoing action",
                         "description": "e.g. He is running"
                     },
                     {
-                        "title": "Perfect:",
-                        "subtitle": "Completed action, often with present relevance",
+                        "subtitle": "Perfect: Completed action, often with present relevance",
                         "description": "e.g. He has run"
                     },
                     {
-                        "title": "Perfect Continuous:",
-                        "subtitle": "Ongoing action that started in the past",
+                        "subtitle": "Perfect Continuous: Ongoing action that started in the past",
                         "description": "e.g. He has been running"
                     }
                 ]

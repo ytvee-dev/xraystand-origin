@@ -232,18 +232,15 @@
                 "title": "ОСНОВНЫЕ ВРЕМЕНА",
                 "content": [
                     {
-                        "title": "Прошедшее (Past):",
-                        "subtitle": "Произошло до текущего времени ",
+                        "subtitle": "Прошедшее (Past): Произошло до текущего времени",
                         "description": "Пример: walked, was eating."
                     },
                     {
-                        "title": "Настоящее (Present):",
-                        "subtitle": "Происходит сейчас или обычно (периодически)",
+                        "subtitle": "Настоящее (Present): Происходит сейчас или обычно (периодически)",
                         "description": "Пример: walks, is eating"
                     },
                     {
-                        "title": "Будущее (Future):",
-                        "subtitle": "Произойдет после текущего времени ",
+                        "subtitle": "Будущее (Future): Произойдет после текущего времени",
                         "description": "Пример: will walk, will be eating"
                     }
                 ]
@@ -253,23 +250,20 @@
                 "description": "Они сочетаются с основными временами, чтобы добавить дополнить продолжительность или завершенность.",
                 "content": [
                     {
-                        "title": "Simple:",
-                        "subtitle": "Факт, привычка",
+                        "subtitle": "Simple: Факт, привычка",
                         "description": "Пример: He runs"
                     },
                     {
-                        "title": "Continuous (Progressive):",
-                        "subtitle": "Происходящее действие, процесс",
+                        "subtitle": "Continuous (Progressive): Происходящее действие, процесс",
                         "description": "Пример: He is running"
                     },
+
                     {
-                        "title": "Perfect:",
-                        "subtitle": "Завершенное действие, часто к определенному моменту во времени",
+                        "subtitle": "Perfect: Завершенное действие, часто к определенному моменту во времени",
                         "description": "Пример: He has run"
                     },
                     {
-                        "title": "Perfect Continuous:",
-                        "subtitle": "Действие началось в прошлом и продолжается или только что завершилось",
+                        "subtitle": "Perfect Continuous: Действие началось в прошлом и продолжается или только что завершилось",
                         "description": "Пример: He has been running"
                     }
                 ]
