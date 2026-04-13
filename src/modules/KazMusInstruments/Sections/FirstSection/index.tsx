@@ -54,18 +54,9 @@ const FirstSection = ({ content }: Props): ReactElement => {
                     >
                         <CardActionArea>
                             <CardMedia
+								className="kaz-card-media"
                                 component="img"
                                 image={images[index]}
-                                sx={{
-                                    width: "100%",
-                                    height: {
-                                        sm: 350,
-                                        md: 390,
-                                        lg: 400,
-                                    },
-                                    objectFit: "cover",
-                                    backgroundColor: "#fff"
-                                }}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div" fontSize={20} fontWeight={700}>
