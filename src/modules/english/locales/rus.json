@@ -58,14 +58,14 @@
         ]
     },
     "secondSection": {
-        "title": "Прилагательное (Adjective)",
+        "title": "ПРИЛАГАТЕЛЬНОЕ (ADJECTIVE)",
         "description": "Прилагательное - это слово, которое описывает или изменяет существительное или местоимение, добавляя подробности о его качествах, характеристиках, количестве или степени.",
         "content": [
             {
-                "title": "АТРИБУТИВНЫЙ ГЛАГОЛ (ATTRIBUTIVE):",
+                "title": "АТРИБУТИВНЫЙ ГЛАГОЛ (ATTRIBUTIVE)",
                 "content": [
                     {
-                        "description": "ставится перед существительным"
+                        "subtitle": "Ставится перед существительным"
                     },
                     {
                         "description": "Adjective + Noun"
@@ -76,10 +76,10 @@
                 ]
             },
             {
-                "title": "ПОСТПОЗИТИВНОЕ ПРИЛАГАТЕЛЬНОЕ (POSTPOSITIVE):",
+                "title": "ПОСТПОЗИТИВНОЕ ПРИЛАГАТЕЛЬНОЕ (POSTPOSITIVE)",
                 "content": [
                     {
-                        "description": "следует сразу за существительным"
+                        "subtitle": "Следует сразу за существительным"
                     },
                     {
                         "description": "Pronoun + Adjective"
@@ -90,10 +90,10 @@
                 ]
             },
             {
-                "title": "ПРЕДИКАТИВНОЕ ПРИЛАГАТЕЛЬНОЕ (PREDICATIVE):",
+                "title": "ПРЕДИКАТИВНОЕ ПРИЛАГАТЕЛЬНОЕ (PREDICATIVE)",
                 "content": [
                     {
-                        "description": "следует за существительным и завершает связующий глагол"
+                        "subtitle": "Следует за существительным и завершает связующий глагол"
                     },
                     {
                         "description": "Noun + linking verb + adjective"
@@ -106,48 +106,80 @@
         ]
     },
     "thirdSection": {
-        "title": "Существительное (Noun)",
+        "title": "СУЩЕСТВИТЕЛЬНОЕ (NOUN)",
         "description": "Существительное - это слово, которое обозначает человека, место, вещь или идею (концепцию, качество, состояние, действие) и служит фундаментальным строительным блоком в языке, часто выступая в качестве субъекта или объекта в предложении.",
         "content": [
             {
                 "title": "ИМЯ СОБСТВЕННОЕ ",
-                "subtitle": "(PROPER: London, Monday)",
-                "description": "Конкретные названия людей, мест или вещей."
-            },
-            {
-                "title": "НАРИЦАТЕЛЬНОЕ",
-                "subtitle": "(COMMON: park, mom)",
-                "description": "Общие названия людей, мест или предметов."
-            },
-            {
-                "title": "КОНКРЕТНОЕ",
-                "subtitle": "(CONCRETE: tree, cat)",
-                "description": "Вещи, которые вы можете увидеть, потрогать, услышать, понюхать или попробовать на вкус."
-            },
-            {
-                "title": "АБСТРАКТНОЕ",
-                "subtitle": "(ABSTRACT: happiness, bravery)",
-                "description": "Идеи, чувства или качества, которые нельзя воспринять с помощью органов чувств."
+                "content": [
+                    {
+                        "subtitle": "(PROPER: London, Monday)",
+                        "description": "Конкретные названия людей, мест или вещей."
+                    }
+                ]
             },
             {
                 "title": "СОБИРАТЕЛЬНОЕ",
-                "subtitle": "(COLLECTIVE: family, team)",
-                "description": "Группы или коллективы людей или вещей."
+                "content": [
+                    {
+                        "subtitle": "(COLLECTIVE: family, team)",
+                        "description": "Группы или коллективы людей или вещей."
+                    }
+                ]
+            },
+            {
+                "title": "НАРИЦАТЕЛЬНОЕ",
+                "content": [
+                    {
+                        "subtitle": "(COMMON: park, mom)",
+                        "description": "Общие названия людей, мест или предметов."
+                    }
+                ]
             },
             {
                 "title": "ПРИТЯЖАТЕЛЬНОЕ",
-                "subtitle": "(POSSESSIVE: Tom’s dog, John’s car)",
-                "description": "Показывает принадлежность или обладание."
+                "content": [
+                    {
+                        "subtitle": "(POSSESSIVE: Tom’s dog, John’s car)",
+                        "description": "Показывает принадлежность или обладание."
+                    }
+                ]
+            },
+            {
+                "title": "КОНКРЕТНОЕ",
+                "content": [
+                    {
+                        "subtitle": "(CONCRETE: tree, cat)",
+                        "description": "Вещи, которые вы можете увидеть, потрогать, услышать, понюхать или попробовать на вкус."
+                    }
+                ]
             },
             {
                 "title": "ИСЧИСЛЯЕМОЕ",
-                "subtitle": "(COUNTABLE: books, dollars)",
-                "description": "Вещи, которые можно посчитать."
+                "content": [
+                    {
+                        "subtitle": "(COUNTABLE: books, dollars)",
+                        "description": "Вещи, которые можно посчитать."
+                    }
+                ]
+            },
+            {
+                "title": "АБСТРАКТНОЕ",
+                "content": [
+                    {
+                        "subtitle": "(ABSTRACT: happiness, bravery)",
+                        "description": "Идеи, чувства или качества, которые нельзя воспринять с помощью органов чувств."
+                    }
+                ]
             },
             {
                 "title": "НЕИСЧИСЛЯЕМОЕ",
-                "subtitle": "(UNCOUNTABL: water, sand)",
-                "description": "Вещи, которые нельзя посчитать."
+                "content": [
+                    {
+                        "subtitle": "(UNCOUNTABL: water, sand)",
+                        "description": "Вещи, которые нельзя посчитать."
+                    }
+                ]
             }
         ]
     },
@@ -221,7 +253,7 @@
         ]
     },
     "fifthSection": {
-        "title": "Времена глаголов (Tenses)",
+        "title": "ВРЕМЕНА ГЛАГОЛОВ (TENSES)",
         "description": "Времена глаголов — это формы глаголов, которые показывают, когда происходит действие или состояние (прошлое, настоящее, будущее) и предоставляют подробную информацию о его продолжительности или завершении.",
         "content": [
             {
@@ -250,7 +282,7 @@
                 "content": [
                     {
                         "title": "Simple:",
-                        "subtitle": "факт, привычка",
+                        "subtitle": "Факт, привычка",
                         "description": "Пример: He runs"
                     },
                     {
@@ -265,7 +297,7 @@
                     },
                     {
                         "title": "Perfect Continuous:",
-                        "subtitle": "действие началось в прошлом и продолжается или только что завершилось",
+                        "subtitle": "Действие началось в прошлом и продолжается или только что завершилось",
                         "description": "Пример: He has been running"
                     }
                 ]
@@ -439,19 +471,19 @@
                 "content": [
                     {
                         "title": "Число",
-                        "description": "используется единственное или множественное число (The team is/are winning)."
+                        "description": "Используется единственное или множественное число (The team is/are winning)."
                     },
                     {
                         "title": "",
-                        "description": "используется единственное число (The team is winning)."
+                        "description": "Используется единственное число (The team is winning)."
                     },
                     {
                         "title": "Глаголы",
-                        "description": "чаще используется настоящее совершенное время (present perfect): I've just eaten"
+                        "description": "Чаще используется настоящее совершенное время (present perfect): I've just eaten"
                     },
                     {
                         "title": "",
-                        "description": "чаще используется простое прошедшее время (simple past): I just ate."
+                        "description": "Чаще используется простое прошедшее время (simple past): I just ate."
                     }
                 ]
             },
@@ -460,19 +492,19 @@
                 "content": [
                     {
                         "title": "Окончания слов",
-                        "description": "сохраняет французские корни: -our, -ise, -re, -ce (colour, organise, centre, defence)."
+                        "description": "Сохраняет французские корни: -our, -ise, -re, -ce (colour, organise, centre, defence)."
                     },
                     {
                         "title": "",
-                        "description": "упрощенное и дифференцированное написание: -or, -ize, -er, -se (color, organize, center, defense)."
+                        "description": "Упрощенное и дифференцированное написание: -or, -ize, -er, -se (color, organize, center, defense)."
                     },
                     {
                         "title": "Двойные согласные",
-                        "description": "часто удваивается согласная в глаголах при добавлении окончаний (travelling, cancelled)"
+                        "description": "Часто удваивается согласная в глаголах при добавлении окончаний (travelling, cancelled)"
                     },
                     {
                         "title": "",
-                        "description": "обычно используется одна согласная (traveling, canceled)."
+                        "description": "Обычно используется одна согласная (traveling, canceled)."
                     }
                 ]
             },

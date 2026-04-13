@@ -58,14 +58,14 @@
         ]
     },
     "secondSection": {
-        "title": "Сын есім (Adjective)",
+        "title": "СЫН ЕСІМ (ADJECTIVE)",
         "description": "Ағылшын тіліндегі сын есім де қазақ тіліндегі секілді анықтамаға ие, яғни, заттың сипатын, сынын, сапасын білдіреді.",
         "content": [
             {
-                "title": "АТРИБУТИВТІ СЫН ЕСІМ (ATTRIBUTIVE):",
+                "title": "АТРИБУТИВТІ СЫН ЕСІМ (ATTRIBUTIVE)",
                 "content": [
                     {
-                        "description": "зат есімнің алдына қойылады"
+                        "subtitle": "Зат есімнің алдына қойылады"
                     },
                     {
                         "description": "Adjective + Noun"
@@ -76,10 +76,10 @@
                 ]
             },
             {
-                "title": "ПОСТПОЗИТИВТІ СЫН ЕСІМ(POSTPOSITIVE):",
+                "title": "ПОСТПОЗИТИВТІ СЫН ЕСІМ(POSTPOSITIVE)",
                 "content": [
                     {
-                        "description": "зат есімнен кейін қойылады"
+                        "subtitle": "Зат есімнен кейін қойылады"
                     },
                     {
                         "description": "Pronoun + Adjective"
@@ -90,10 +90,10 @@
                 ]
             },
             {
-                "title": "ПРЕДИКАТИВТІ СЫН ЕСІМ (PREDICATIVE):",
+                "title": "ПРЕДИКАТИВТІ СЫН ЕСІМ (PREDICATIVE)",
                 "content": [
                     {
-                        "description": "зат есімнен кейін қойылады және байланыстырушы етістікті аяқтайды"
+                        "subtitle": "Зат есімнен кейін қойылады және байланыстырушы етістікті аяқтайды"
                     },
                     {
                         "description": "Noun + linking verb + adjective"
@@ -106,48 +106,81 @@
         ]
     },
     "thirdSection": {
-        "title": "Зат есім (Noun)",
+        "title": "ЗАТ ЕСIМ (NOUN)",
         "description": "Зат есім - заттардың атын, нәрселерді табиғат пен қоғамдық құбылыстарды, уақиғаларды, ұғымдар мен түсініктерді білдіретін сөз табы.",
         "content": [
             {
                 "title": "ЖАЛҚЫ ЕСІМДЕР",
-                "subtitle": "(PROPER: London, Monday)",
-                "description": "Адамдардың, орындардың немесе заттардың нақты атаулары."
-            },
-            {
-                "title": "ЖАЛПЫ ЕСІМДЕР",
-                "subtitle": "(COMMON: park, mom)",
-                "description": "Адамдардың, орындардың немесе заттардың жалпы атаулары."
-            },
-            {
-                "title": "НАҚТЫ ЕСІМДЕР",
-                "subtitle": "(CONCRETE: tree, cat)",
-                "description": "Көруге, ұстауға, естуге, иіскеуге немесе дәм татуға болатын нәрселер."
-            },
-            {
-                "title": "АБСТРАКТІЛІ ЕСІМДЕР",
-                "subtitle": "(ABSTRACT: happiness, bravery)",
-                "description": "Сезімдер арқылы қабылданбайтын идеялар, сезімдер немесе қасиеттер."
+                "content": [
+                    {
+                        "subtitle": "(PROPER: London, Monday)",
+                        "description": "Адамдардың, орындардың немесе заттардың нақты атаулары."
+                    }
+                ]
             },
             {
                 "title": "ҰЖЫМДЫҚ ЕСІМДЕР",
-                "subtitle": "(COLLECTIVE: family, team)",
-                "description": "Адамдар немесе заттар топтары немесе ұжымдары."
+                "content": [
+                    {
+                        "subtitle": "(COLLECTIVE: family, team)",
+                        "description": "Адамдар немесе заттар топтары немесе ұжымдары."
+                    }
+                ]
+            },
+            {
+                "title": "ЖАЛПЫ ЕСІМДЕР",
+                "content": [
+                    {
+                        "subtitle": "(COMMON: park, mom)",
+                        "description": "Адамдардың, орындардың немесе заттардың жалпы атаулары."
+                    }
+                ]
             },
             {
                 "title": "ІЛІКТІК ЕСІМДЕР",
-                "subtitle": "(POSSESSIVE: Tom’s dog, John’s car)",
-                "description": "Тиесілігін немесе иеленуін көрсетеді."
+                "content": [
+                    {
+                        "subtitle": "(POSSESSIVE: Tom’s dog, John’s car)",
+                        "description": "Тиесілігін немесе иеленуін көрсетеді."
+                    }
+                ]
+            },
+            {
+                "title": "НАҚТЫ ЕСІМДЕР",
+                "content": [
+                    {
+                        "subtitle": "(CONCRETE: tree, cat)",
+                        "description": "Көруге, ұстауға, естуге, иіскеуге немесе дәм татуға болатын нәрселер."
+                    }
+                ]
             },
             {
                 "title": "САНАЛАТЫН",
-                "subtitle": "(COUNTABLE: books, dollars)",
-                "description": "Саналатын зат есімдерге санауға болатын зат есімдер жатады."
+                "content": [
+                    {
+                        "subtitle": "(COUNTABLE: books, dollars)",
+                        "description": "Саналатын зат есімдерге санауға болатын зат есімдер жатады."
+                    }
+                ]
             },
             {
+                "title": "АБСТРАКТІЛІ ЕСІМДЕР",
+                "content": [
+                    {
+                        "subtitle": "(ABSTRACT: happiness, bravery)",
+                        "description": "Сезімдер арқылы қабылданбайтын идеялар, сезімдер немесе қасиеттер."
+                    }
+                ]
+            },
+
+            {
                 "title": "САНАЛМАЙТЫН",
-                "subtitle": "(UNCOUNTABLE: water, sand)",
-                "description": "Дерексіз зат есімдер жатады."
+                "content": [
+                    {
+                        "subtitle": "(UNCOUNTABLE: water, sand)",
+                        "description": "Дерексіз зат есімдер жатады."
+                    }
+                ]
             }
         ]
     },
@@ -221,7 +254,7 @@
         ]
     },
     "fifthSection": {
-        "title": "Етістік шақтары (Tenses)",
+        "title": "ЕТIСТIК ШАҚТАРЫ (TENSES)",
         "description": "Қимыл мен әрекеттің жүзеге асу кезеңін етістік білдіретін және оның ұзақтығы немесе аяқталуы туралы толық ақпарат беретін етістік формалары.",
         "content": [
             {
@@ -376,27 +409,27 @@
         "content": [
             {
                 "title": "HOW (ҚАЛАЙ?):",
-                "subtitle": "quickly, speedily, happily etc.",
+                "subtitle": "Quickly, speedily, happily etc.",
                 "description": "Dinner arrived swiftly."
             },
             {
                 "title": "WHERE (ҚАЙДА?):",
-                "subtitle": "outside, inside, near etc.",
+                "subtitle": "Outside, inside, near etc.",
                 "description": "The car is outside."
             },
             {
                 "title": "WHEN (ҚАШАН?):",
-                "subtitle": "last month, last week, now, later etc.",
+                "subtitle": "Last month, last week, now, later etc.",
                 "description": "My project is due soon."
             },
             {
                 "title": "HOW MUCH (ҚАНШАЛЫҚТЫ?):",
-                "subtitle": "fully, almost, rather etc.",
+                "subtitle": "Fully, almost, rather etc.",
                 "description": "Lennie is quite strong."
             },
             {
                 "title": "HOW OFTEN (ҚАНШАЛЫҚТЫ ЖИІ?):",
-                "subtitle": "never, sometimes, often etc.",
+                "subtitle": "Never, sometimes, often etc.",
                 "description": "She never misses class."
             }
         ]

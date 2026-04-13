@@ -58,14 +58,14 @@
         ]
     },
     "secondSection": {
-        "title": "Adjective",
+        "title": "ADJECTIVE",
         "description": "An adjective is a word that describes or modifies a noun or pronoun, adding details about its qualities, characteristics, quantity, or extent.",
         "content": [
             {
-                "title": "ATTRIBUTIVE:",
+                "title": "ATTRIBUTIVE",
                 "content": [
                     {
-                        "description": "go before the noun "
+                        "subtitle": "Go before the noun "
                     },
                     {
                         "description": "Adjective + Noun"
@@ -76,10 +76,10 @@
                 ]
             },
             {
-                "title": "POSTPOSITIVE:",
+                "title": "POSTPOSITIVE",
                 "content": [
                     {
-                        "description": "go immediately after the noun"
+                        "subtitle": "Go immediately after the noun"
                     },
                     {
                         "description": "Pronoun + Adjective"
@@ -90,10 +90,10 @@
                 ]
             },
             {
-                "title": "PREDICATIVE:",
+                "title": "PREDICATIVE",
                 "content": [
                     {
-                        "description": "go after the noun and complete a linking verb"
+                        "subtitle": "Go after the noun and complete a linking verb"
                     },
                     {
                         "description": "Noun + linking verb + adjective"
@@ -106,48 +106,80 @@
         ]
     },
     "thirdSection": {
-        "title": "Noun",
+        "title": "NOUN",
         "description": "A noun is a word that names a person, place, thing, or idea (concept, quality, state, action) and serves as a fundamental building block in language, often acting as the subject or object in a sentence.",
         "content": [
             {
                 "title": "PROPER",
-                "subtitle": "(London, Monday)",
-                "description": "Specific names for people, places or things."
-            },
-            {
-                "title": "COMMON",
-                "subtitle": "(park, mom)",
-                "description": "General names for people, places or things."
-            },
-            {
-                "title": "CONCRETE",
-                "subtitle": "(tree, cat)",
-                "description": "Things that you can see, touch, hear, smell or taste."
-            },
-            {
-                "title": "ABSTRACT",
-                "subtitle": "(happiness, bravery)",
-                "description": "Ideas, feelings or qualities you cannot perceive with your senses."
+                "content": [
+                    {
+                        "subtitle": "(London, Monday)",
+                        "description": "Specific names for people, places or things."
+                    }
+                ]
             },
             {
                 "title": "COLLECTIVE",
-                "subtitle": "(family, team)",
-                "description": "Groups or collectives of people or things."
+                "content": [
+                    {
+                        "subtitle": "(family, team)",
+                        "description": "Groups or collectives of people or things."
+                    }
+                ]
+            },
+            {
+                "title": "COMMON",
+                "content": [
+                    {
+                        "subtitle": "(park, mom)",
+                        "description": "General names for people, places or things."
+                    }
+                ]
             },
             {
                 "title": "POSSESSIVE",
-                "subtitle": "(Tom’s dog, John’s car)",
-                "description": "Shows ownership or possession."
+                "content": [
+                    {
+                        "subtitle": "(Tom’s dog, John’s car)",
+                        "description": "Shows ownership or possession."
+                    }
+                ]
+            },
+            {
+                "title": "CONCRETE",
+                "content": [
+                    {
+                        "subtitle": "(tree, cat)",
+                        "description": "Things that you can see, touch, hear, smell or taste."
+                    }
+                ]
             },
             {
                 "title": "COUNTABLE",
-                "subtitle": "(books, dollars)",
-                "description": "Things that can be counted."
+                "content": [
+                    {
+                        "subtitle": "(books, dollars)",
+                        "description": "Things that can be counted."
+                    }
+                ]
+            },
+            {
+                "title": "ABSTRACT",
+                "content": [
+                    {
+                        "subtitle": "(happiness, bravery)",
+                        "description": "Ideas, feelings or qualities you cannot perceive with your senses."
+                    }
+                ]
             },
             {
                 "title": "UNCOUNTABLE",
-                "subtitle": "(water, sand)",
-                "description": "Things that cannot be counted."
+                "content": [
+                    {
+                        "subtitle": "(water, sand)",
+                        "description": "Things that cannot be counted."
+                    }
+                ]
             }
         ]
     },
@@ -221,7 +253,7 @@
         ]
     },
     "fifthSection": {
-        "title": "Tenses",
+        "title": "TENSES",
         "description": "Tenses are verb forms that show when an action or state occurs (past, present, future) and provide details about its duration or completion.",
         "content": [
             {
@@ -376,27 +408,27 @@
         "content": [
             {
                 "title": "HOW:",
-                "subtitle": "quickly, speedily, happily etc.",
+                "subtitle": "Quickly, speedily, happily etc.",
                 "description": "Dinner arrived swiftly."
             },
             {
                 "title": "WHERE:",
-                "subtitle": "outside, inside, near etc.",
+                "subtitle": "Outside, inside, near etc.",
                 "description": "The car is outside."
             },
             {
                 "title": "WHEN:",
-                "subtitle": "last month, last week, now, later etc. ",
+                "subtitle": "Last month, last week, now, later etc. ",
                 "description": "My project is due soon."
             },
             {
                 "title": "HOW MUCH:",
-                "subtitle": "fully, almost, rather etc.",
+                "subtitle": "Fully, almost, rather etc.",
                 "description": "Lennie is quite strong."
             },
             {
                 "title": "HOW OFTEN:",
-                "subtitle": "never, sometimes, often etc.",
+                "subtitle": "Never, sometimes, often etc.",
                 "description": "She never misses class."
             }
         ]
@@ -439,19 +471,19 @@
                 "content": [
                     {
                         "title": "Collective Nouns",
-                        "description": "use singular/plural (The team is/are winning)."
+                        "description": "Use singular/plural (The team is/are winning)."
                     },
                     {
                         "title": "",
-                        "description": "use singular (The team is winning)."
+                        "description": "Use singular (The team is winning)."
                     },
                     {
                         "title": "Verbs",
-                        "description": "use present perfect more (\"I've just eaten\")."
+                        "description": "Use present perfect more (\"I've just eaten\")."
                     },
                     {
                         "title": "",
-                        "description": "use simple past tense (\"I just ate\")."
+                        "description": "Use simple past tense (\"I just ate\")."
                     }
                 ]
             },
@@ -460,19 +492,19 @@
                 "content": [
                     {
                         "title": "Word endings",
-                        "description": "retains French roots: -our, -ise, -re, -ce (colour, organise, centre, defence)."
+                        "description": "Retains French roots: -our, -ise, -re, -ce (colour, organise, centre, defence)."
                     },
                     {
                         "title": "",
-                        "description": "simplified and differentiated spellings: -or, -ize, -er, -se (color, organize, center, defense)."
+                        "description": "Simplified and differentiated spellings: -or, -ize, -er, -se (color, organize, center, defense)."
                     },
                     {
                         "title": "Double consonants",
-                        "description": "often doubles consonant in verbs when adding endings (travelling, cancelled)"
+                        "description": "Often doubles consonant in verbs when adding endings (travelling, cancelled)"
                     },
                     {
                         "title": "",
-                        "description": "usually uses a single consonant (traveling, canceled)."
+                        "description": "Usually uses a single consonant (traveling, canceled)."
                     }
                 ]
             },
@@ -483,13 +515,10 @@
                         "content": [
                             "autumn",
                             "fall",
-
                             "lift",
                             "elevator",
-
                             "football",
                             "soccer",
-
                             "crisps",
                             "chips"
                         ]

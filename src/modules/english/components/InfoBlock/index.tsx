@@ -23,6 +23,7 @@ interface IInfoBlockProps {
     imagePath?: string;
     flexDirection?: TFlexDirection;
     titleStyles?: CSSProperties;
+    imageWrapperStyles?: CSSProperties;
 }
 
 const InfoBlock = ({
@@ -34,6 +35,7 @@ const InfoBlock = ({
     imagePath,
     flexDirection,
     titleStyles,
+    imageWrapperStyles,
 }: IInfoBlockProps): ReactElement => {
     return (
         <div id={id || ""} className={`info-block ${className || ""}`}>
@@ -46,7 +48,10 @@ const InfoBlock = ({
                 style={{ flexDirection: flexDirection }}
             >
                 {imagePath && (
-                    <div className="info-block-image-wrapper">
+                    <div
+                        className="info-block-image-wrapper"
+                        style={imageWrapperStyles}
+                    >
                         <img
                             className="info-block-image"
                             src={imagePath}
