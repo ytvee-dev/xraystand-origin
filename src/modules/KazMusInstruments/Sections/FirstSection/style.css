@@ -56,7 +56,6 @@
 
     .sound-card-wrapper {
         flex-direction: column !important;
-        align-items: center;
         width: 100%;
     }
 
