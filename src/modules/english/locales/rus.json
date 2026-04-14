@@ -284,24 +284,40 @@
                 "title": "PAST",
                 "content": [
                     {
-                        "title": "Past Simple:",
-                        "subtitle": "S + V2 (or irregular V)",
-                        "description": "I wrote a book yesterday."
+                        "title": "PAST SIMPLE",
+                        "content": [
+                            {
+                                "subtitle": "S + V2 (or irregular V)",
+                                "description": "I wrote a book yesterday."
+                            }
+                        ]
                     },
                     {
-                        "title": "Past Continuous:",
-                        "subtitle": "S + was/were + V-ing",
-                        "description": "I was writing a book all day long."
+                        "title": "PAST CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + was/were + V-ing",
+                                "description": "I was writing a book all day long."
+                            }
+                        ]
                     },
                     {
-                        "title": "Past Perfect:",
-                        "subtitle": "S + had + V3",
-                        "description": "I had written a book."
+                        "title": "PAST PERFECT",
+                        "content": [
+                            {
+                                "subtitle": "S + had + V3",
+                                "description": "I had written a book."
+                            }
+                        ]
                     },
                     {
-                        "title": "Past Perfect Continuous:",
-                        "subtitle": "S + had + been + V-ing",
-                        "description": "I had been writing."
+                        "title": "PAST PERFECT CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + had + been + V-ing",
+                                "description": "I had been writing."
+                            }
+                        ]
                     }
                 ]
             },
@@ -309,24 +325,40 @@
                 "title": "PRESENT",
                 "content": [
                     {
-                        "title": "Present Simple:",
-                        "subtitle": "S + V +(s/es)",
-                        "description": "I write books. She writes books."
+                        "title": "PRESENT SIMPLE",
+                        "content": [
+                            {
+                                "subtitle": "S + V +(s/es)",
+                                "description": "I write books. She writes books."
+                            }
+                        ]
                     },
                     {
-                        "title": "Present Continuous:",
-                        "subtitle": "S + am/is/are + V-ing",
-                        "description": "I am writing a book now."
+                        "title": "PRESENT CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + am/is/are + V-ing",
+                                "description": "I am writing a book now."
+                            }
+                        ]
                     },
                     {
-                        "title": "Present Perfect:",
-                        "subtitle": "S + have/has + V3",
-                        "description": "I have written a book."
+                        "title": "PRESENT PERFECT",
+                        "content": [
+                            {
+                                "subtitle": "S + have/has + V3",
+                                "description": "I have written a book."
+                            }
+                        ]
                     },
                     {
-                        "title": "Present Perfect Continuous:",
-                        "subtitle": "S + have/has + been + V-ing (+ since/for)",
-                        "description": "I have been writing a book."
+                        "title": "PRESENT PERFECT CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + have/has + been + V-ing (+ since/for)",
+                                "description": "I have been writing a book."
+                            }
+                        ]
                     }
                 ]
             },
@@ -334,24 +366,40 @@
                 "title": "FUTURE",
                 "content": [
                     {
-                        "title": "Future Simple:",
-                        "subtitle": "S + will/shall + V",
-                        "description": "I will write a book."
+                        "title": "FUTURE SIMPLE",
+                        "content": [
+                            {
+                                "subtitle": "S + will/shall + V",
+                                "description": "I will write a book."
+                            }
+                        ]
                     },
                     {
-                        "title": "Future Continuous:",
-                        "subtitle": "S + will/shall be + V-ing",
-                        "description": "I will be writing a book."
+                        "title": "FUTURE CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + will/shall be + V-ing",
+                                "description": "I will be writing a book."
+                            }
+                        ]
                     },
                     {
-                        "title": "Future Perfect:",
-                        "subtitle": "S + will have + V3",
-                        "description": "I will have written a book by the end of the week."
+                        "title": "FUTURE PERFECT",
+                        "content": [
+                            {
+                                "subtitle": "S + will have + V3",
+                                "description": "I will have written a book by the end of the week."
+                            }
+                        ]
                     },
                     {
-                        "title": "Future Perfect Continuous:",
-                        "subtitle": "S + will have been + V-ing",
-                        "description": "I will have been writing a book."
+                        "title": "FUTURE PERFECT CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + will have been + V-ing",
+                                "description": "I will have been writing a book."
+                            }
+                        ]
                     }
                 ]
             }
