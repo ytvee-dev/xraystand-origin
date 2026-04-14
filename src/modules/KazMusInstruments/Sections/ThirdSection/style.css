@@ -1,4 +1,4 @@
-.music-first-section {
+.music-third-section {
     background-color: rgba(82, 47, 27, 1);
     padding: 44px 90px 36px;
     display: flex;
@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-.music-first-section-title {
+.music-third-section-title {
     color: rgba(230, 187, 134, 1);
     font-size: 48px;
     margin-bottom: 36px;
@@ -26,11 +26,11 @@
 }
 
 @media (max-width: 768px) {
-    .music-first-section {
+    .music-third-section {
         padding: 32px 20px;
     }
 
-    .music-first-section-title {
+    .music-third-section-title {
         font-size: 28px;
     }
 
@@ -41,7 +41,7 @@
 
 
 @media (max-width:480px) {
-     .music-first-section {
+     .music-third-section {
         padding: 18px 10px;
     }
 

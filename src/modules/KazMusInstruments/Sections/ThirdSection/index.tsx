@@ -15,30 +15,29 @@ type Instrument = {
     soundDescription?: string;
 };
 
-type SectionProps = {
+type ThirdSectionProps = {
     title: string;
     content: Instrument[];
 };
 
 interface Props {
-    content: SectionProps;
+    content: ThirdSectionProps;
 }
 
-const FirstSection = ({ content }: Props): ReactElement => {
-
+const ThirdSection = ({ content }: Props): ReactElement => {
     const topCards = content.content.map((item) => ({
         title: item.title,
     }));
 
     const images = [
-        paths.pluckedInstruments.dombra,
-        paths.pluckedInstruments.jetigen,
-        paths.pluckedInstruments.sherter
+        paths.percussionInstruments.daulpaz,
+        paths.percussionInstruments.shyn,
+        paths.percussionInstruments.asa_tayak
     ];
 
     return (
-        <section className="music-first-section">
-            <h2 className="music-first-section-title">{content.title}</h2>
+        <section className="music-third-section">
+            <h2 className="music-third-section-title">{content.title}</h2>
 
             <div className="music-top-cards">
                 {topCards.map((item, index) => (
@@ -85,4 +84,4 @@ const FirstSection = ({ content }: Props): ReactElement => {
     );
 };
 
-export default FirstSection;
+export default ThirdSection;
