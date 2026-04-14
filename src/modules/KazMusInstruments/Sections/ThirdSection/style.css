@@ -1,6 +1,5 @@
 .music-third-section {
     background-color: rgba(82, 47, 27, 1);
-    padding: 44px 90px 36px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -25,6 +24,9 @@
     margin-top: 44px;
 }
 
+.sound-card-content {
+    width: 100%;
+}
 @media (max-width: 768px) {
     .music-third-section {
         padding: 32px 20px;
