@@ -50,7 +50,7 @@
 
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 
     flex-wrap: wrap;
@@ -58,4 +58,16 @@
     gap: 2.688rem;
 
     margin-bottom: 3%;
+}
+
+.english-fourth-section-block .info-block-title {
+    margin-bottom: 0.75rem;
+}
+
+.english-fourth-section-block .info-block-labels-container {
+    padding: 0 0 0 1.5rem;
+}
+
+.info-block-image-wrapper {
+    margin-right: 8%;
 }

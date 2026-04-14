@@ -1,7 +1,7 @@
 import InfoBlock, {
     type IBlockData,
 } from "@modules/english/components/InfoBlock";
-// import * as paths from "@modules/english/locales/paths.json";
+import * as paths from "@modules/english/locales/paths.json";
 import type { IEnglishSectionProps } from "@modules/english/types";
 import type { ReactElement } from "react";
 import "./style.css";
@@ -34,7 +34,7 @@ const FourthSection = ({
                                 titleStyles={{
                                     backgroundColor: "#97BD66",
                                 }}
-                                // imagePath={}
+                                imagePath={paths.blocks.fourthSection[index]}
                             />
                         ),
                     )}
