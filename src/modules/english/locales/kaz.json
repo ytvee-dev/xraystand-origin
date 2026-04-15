@@ -185,43 +185,71 @@
         ]
     },
     "fourthSection": {
-        "title": "ЕТIСТIК (VERB)",
+        "title": "ЕТІСТІК (VERB)",
         "description": "Іс-әрекет пен қимыл-сынды білдіретін сөз табы.",
         "content": [
             {
-                "title": "ІС-ҚИМЫЛ ЕТІСТІКТЕРІ (ACTION VERBS):",
-                "subtitle": "Физикалық немесе ойлау әрекетерін көрсетеді.",
-                "description": "Мысалы: She runs every morning."
+                "title": "ІС-ҚИМЫЛ ЕТІСТІКТЕРІ (ACTION VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Физикалық немесе ойлау әрекетерін көрсетеді.",
+                        "description": "Мысалы: She runs every morning."
+                    }
+                ]
             },
             {
-                "title": "КҮЙ ЕТІСТІКТЕРІ (STATIVE VERBS):",
-                "subtitle": "Күй немесе сезімді сипаттайды.",
-                "description": "Мысалы: He knows the correct answer. He still believes that story."
+                "title": "КҮЙ ЕТІСТІКТЕРІ (STATIVE VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Күй немесе сезімді сипаттайды.",
+                        "description": "Мысалы: He knows the correct answer. He still believes that story."
+                    }
+                ]
             },
             {
-                "title": "ТҰРАҚТЫ ЕТІСТІКТЕР (REGULAR VERBS):",
-                "subtitle": "Өткен шақта \"-ed\" жалғауымен толықтырылады.",
-                "description": "Мысалы: work → worked → worked"
+                "title": "ТҰРАҚТЫ ЕТІСТІКТЕР (REGULAR VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Өткен шақта \"-ed\" жалғауымен толықтырылады.",
+                        "description": "Мысалы: work → worked → worked"
+                    }
+                ]
             },
             {
-                "title": "ТҰРАҚСЫЗ ЕТІСТІКТЕР(IRREGULAR VERBS):",
-                "subtitle": "Өткен шаққа қарай сөзді өзгертеді.",
-                "description": "Мысалы: go → went → gone"
+                "title": "ТҰРАҚСЫЗ ЕТІСТІКТЕР(IRREGULAR VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Өткен шаққа қарай сөзді өзгертеді.",
+                        "description": "Мысалы: go → went → gone"
+                    }
+                ]
             },
             {
-                "title": "БАЙЛАНЫСТЫРУШЫ ЕТІСТІКТЕР (LINKING VERBS):",
-                "subtitle": "Заттың әрекетін сипаттау үшін етістікті байланыстырады.",
-                "description": "Мысалы: She seems nervous."
+                "title": "БАЙЛАНЫСТЫРУШЫ ЕТІСТІКТЕР (LINKING VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Заттың әрекетін сипаттау үшін етістікті байланыстырады.",
+                        "description": "Мысалы: She seems nervous."
+                    }
+                ]
             },
             {
-                "title": "ӨТПЕЛІ ЕТІСТІКТЕР (TRANSITIVE VERBS):",
-                "subtitle": "Тікелей қосымшаны қажет етеді.",
-                "description": "Мысалы: He reads a book."
+                "title": "ӨТПЕЛІ ЕТІСТІКТЕР (TRANSITIVE VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Тікелей қосымшаны қажет етеді.",
+                        "description": "Мысалы: He reads a book."
+                    }
+                ]
             },
             {
-                "title": "ИНТРАНСИВТІ ЕТІСТІКТЕР (INTRANSITIVE VERBS):",
-                "subtitle": "Тікелей қосымшаны қажет етпейді.",
-                "description": "Мысалы: They arrived late."
+                "title": "ИНТРАНСИВТІ ЕТІСТІКТЕР (INTRANSITIVE VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Тікелей қосымшаны қажет етпейді.",
+                        "description": "Мысалы: They arrived late."
+                    }
+                ]
             }
         ]
     },
