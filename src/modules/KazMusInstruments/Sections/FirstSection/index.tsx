@@ -6,26 +6,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import SoundCards from "@modules/KazMusInstruments/components/SoundCard";
-import "./style.css";
+import { type kazMuzInstrumentProps } from "@modules/KazMusInstruments/types";
 
-type Instrument = {
-    title: string;
-    subTitle?: string;
-    description: string;
-    soundDescription?: string;
-};
-
-type SectionProps = {
-    title: string;
-    content: Instrument[];
-};
-
-interface Props {
-    content: SectionProps;
-}
-
-const FirstSection = ({ content }: Props): ReactElement => {
-
+const FirstSection = ({ content }: kazMuzInstrumentProps): ReactElement => {
     const topCards = content.content.map((item) => ({
         title: item.title,
     }));
@@ -37,8 +20,8 @@ const FirstSection = ({ content }: Props): ReactElement => {
     ];
 
     return (
-        <section className="music-first-section">
-            <h2 className="music-first-section-title">{content.title}</h2>
+        <section className="music-instruments-section music-dark">
+            <h2>{content.title}</h2>
 
             <div className="music-top-cards">
                 {topCards.map((item, index) => (
@@ -54,7 +37,6 @@ const FirstSection = ({ content }: Props): ReactElement => {
                     >
                         <CardActionArea>
                             <CardMedia
-								className="kaz-card-media"
                                 component="img"
                                 image={images[index]}
                             />
@@ -77,7 +59,6 @@ const FirstSection = ({ content }: Props): ReactElement => {
                             soundDescription: item.soundDescription || "",
                             img: images[index]
                         }}
-                        imgSide="left"
                     />
                 ))}
             </div>

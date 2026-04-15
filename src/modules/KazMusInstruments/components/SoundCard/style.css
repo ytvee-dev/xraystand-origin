@@ -42,11 +42,16 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     .sound-card-wrapper {
         --sound-card-img-size: 140px;
         
         gap: 12px;
+    }
+
+    .sound-card-img {
+        margin-top: 40px;
+        border-radius: 5px;
     }
 
     .sound-card-content {
