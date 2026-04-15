@@ -9,6 +9,8 @@ import * as contentKz from "@modules/KazMusInstruments/locales/kaz.json";
 import * as paths from "@modules/KazMusInstruments/locales/paths.json";
 // import {svgSpriteSrcPrefix} from "@utils/constants";
 import CoverSection from "@modules/KazMusInstruments/Sections/CoverSection";
+import FirstSection from "@modules/KazMusInstruments/Sections/FirstSection";
+import ThirdSection from "@modules/KazMusInstruments/Sections/ThirdSection";
 import './style.css';
 import BrightnessLayout from "@layout/Brightness";
 
@@ -45,6 +47,8 @@ const KazMusic: React.FC = () => {
             languageSwitcherClassName="kaz-music-language-switcher"
             >
                 <CoverSection backgroundImage={paths.backgrounds.cover} content={textContent.coverSection} />
+                <FirstSection content={textContent.PluckedInstrumentsSection} />
+                <ThirdSection content={textContent.PercussionInstrumentsSection} />
             </BrightnessLayout>
        </div>
     );
