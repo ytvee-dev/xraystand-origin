@@ -37,7 +37,7 @@ const SixthSection = ({
                             </h1>
 
                             <div className="english-sixth-section-blocks-container">
-                                {paragraphData.content.map(
+                                {paragraphData.content?.map(
                                     (
                                         contentData: IBlockData,
                                         index: number,
