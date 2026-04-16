@@ -188,39 +188,67 @@
         "description": "Глагол — это самостоятельная часть речи, которая выражает действие предмета или лица или их состояние.",
         "content": [
             {
-                "title": "ГЛАГОЛЫ ДЕЙСТВИЯ (ACTION VERBS):",
-                "subtitle": "Показывают физическое или умственное действие",
-                "description": "Пример: She runs every morning."
+                "title": "ГЛАГОЛЫ ДЕЙСТВИЯ (ACTION VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Показывают физическое или умственное действие",
+                        "description": "Пример: She runs every morning."
+                    }
+                ]
             },
             {
-                "title": "ГЛАГОЛЫ СОСТОЯНИЯ (STATIVE VERBS):",
-                "subtitle": "Описывают состояние или чувство ",
-                "description": "Пример: He knows the correct answer. He still believes that story."
+                "title": "ГЛАГОЛЫ СОСТОЯНИЯ (STATIVE VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Описывают состояние или чувство ",
+                        "description": "Пример: He knows the correct answer. He still believes that story."
+                    }
+                ]
             },
             {
-                "title": "ПРАВИЛЬНЫЕ ГЛАГОЛЫ (REGULAR VERBS):",
-                "subtitle": "Дополняются окончанием “-ed” в прошедшем времени",
-                "description": "Пример: work → worked → worked"
+                "title": "ПРАВИЛЬНЫЕ ГЛАГОЛЫ (REGULAR VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Дополняются окончанием “-ed” в прошедшем времени",
+                        "description": "Пример: work → worked → worked"
+                    }
+                ]
             },
             {
-                "title": "НЕПРАВИЛЬНЫЕ ГЛАГОЛЫ (IRREGULAR VERBS):",
-                "subtitle": "Изменяют форму в прошедшем времени",
-                "description": "Пример: go → went → gone"
+                "title": "НЕПРАВИЛЬНЫЕ ГЛАГОЛЫ (IRREGULAR VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Изменяют форму в прошедшем времени",
+                        "description": "Пример: go → went → gone"
+                    }
+                ]
             },
             {
-                "title": "СВЯЗУЮЩИЕ ГЛАГОЛЫ (LINKING VERBS):",
-                "subtitle": "Связывает глагол для описания действия предмета",
-                "description": "Пример: She seems nervous"
+                "title": "СВЯЗУЮЩИЕ ГЛАГОЛЫ (LINKING VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Связывает глагол для описания действия предмета",
+                        "description": "Пример: She seems nervous"
+                    }
+                ]
             },
             {
-                "title": "ПЕРЕХОДНЫЕ ГЛАГОЛЫ (TRANSITIVE VERBS):",
-                "subtitle": "Требуют прямого дополнения",
-                "description": "Пример: He reads a book."
+                "title": "ПЕРЕХОДНЫЕ ГЛАГОЛЫ (TRANSITIVE VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Требуют прямого дополнения",
+                        "description": "Пример: He reads a book."
+                    }
+                ]
             },
             {
-                "title": "НЕПЕРЕХОДНЫЕ ГЛАГОЛЫ (INTRANSITIVE VERBS):",
-                "subtitle": "Не требуют прямого дополнения",
-                "description": "Пример: They arrived late."
+                "title": "НЕПЕРЕХОДНЫЕ ГЛАГОЛЫ (INTRANSITIVE VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Не требуют прямого дополнения",
+                        "description": "Пример: They arrived late."
+                    }
+                ]
             }
         ]
     },

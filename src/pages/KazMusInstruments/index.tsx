@@ -1,16 +1,14 @@
-// import React, { useMemo } from "react";
-import {usePreloadImages} from "@hooks/usePreloadImages.ts";
-import {collectFromPathsJson} from "@utils/collectAssetUrls.ts";
-// import {usePageData} from "@hooks/usePageData";
-import {useLocaleContent} from "@hooks/useLocale";
-// import Spinner from "@components/common/Spinner";
+import { useLocaleContent } from "@hooks/useLocale";
 import * as contentRu from "@modules/KazMusInstruments/locales/rus.json";
 import * as contentKz from "@modules/KazMusInstruments/locales/kaz.json";
 import * as paths from "@modules/KazMusInstruments/locales/paths.json";
-// import {svgSpriteSrcPrefix} from "@utils/constants";
-import CoverSection from "@modules/KazMusInstruments/Sections/CoverSection";
-import './style.css';
 import BrightnessLayout from "@layout/Brightness";
+import CoverSection from "@modules/KazMusInstruments/Sections/CoverSection";
+import FirstSection from "@modules/KazMusInstruments/Sections/FirstSection";
+import SecondSection from "@modules/KazMusInstruments/Sections/SecondSection";
+import ThirdSection from "@modules/KazMusInstruments/Sections/ThirdSection";
+import FourthSection from "@modules/KazMusInstruments/Sections/FourthSection";
+import './style.css';
 
 const pageLayoutSX = {
     backgroundColor: "#181818",
@@ -22,16 +20,12 @@ const pageLayoutSX = {
 };
 
 const MainLogo = () => {
-    // const { isMobile } = usePageData();
     return (
         <div className="kaz-music-logo">Музыкальные инструменты</div>
     );
 };
 
 const KazMusic: React.FC = () => {
-    const imgUrls = collectFromPathsJson(paths)
-    usePreloadImages(imgUrls);
-    // const { isContentLoaded } = usePageData();
     const textContent = useLocaleContent(contentRu, contentKz);
 
     return(
@@ -45,6 +39,10 @@ const KazMusic: React.FC = () => {
             languageSwitcherClassName="kaz-music-language-switcher"
             >
                 <CoverSection backgroundImage={paths.backgrounds.cover} content={textContent.coverSection} />
+                <FirstSection content={textContent.PluckedInstrumentsSection} />
+                <SecondSection content={textContent.BowedInstrumentsSection}/>
+                <ThirdSection content={textContent.PercussionInstrumentsSection} />
+                <FourthSection content={textContent.WindInstrumentsSection} />
             </BrightnessLayout>
        </div>
     );
