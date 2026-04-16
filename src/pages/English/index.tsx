@@ -5,6 +5,7 @@ import FirstSection from "@modules/english/Sections/FirstSection";
 import ThirdSection from "@modules/english/Sections/ThirdSection";
 import FifthSection from "@modules/english/Sections/FifthSection";
 import * as textContentEn from "@modules/english/locales/en.json";
+import SixthSection from "@modules/english/Sections/SixthSection";
 import * as textContentKz from "@modules/english/locales/kaz.json";
 import * as textContentRu from "@modules/english/locales/rus.json";
 import SecondSection from "@modules/english/Sections/SecondSection";
@@ -72,6 +73,10 @@ const English = (): ReactElement => {
                 <FifthSection
                     className="english-section english-fifth-section"
                     content={textContent.fifthSection}
+                />
+                <SixthSection
+                    className="english-section english-sixth-section"
+                    content={textContent.sixthSection}
                 />
             </div>
         </BrightnessLayout>
