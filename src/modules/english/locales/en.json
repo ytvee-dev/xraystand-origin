@@ -397,32 +397,52 @@
         ]
     },
     "eighthSection": {
-        "title": "Adverbs are words that answer QUESTIONS like:",
+        "title": "ADVERBS ARE WORDS THAT ANSWER QUESTIONS LIKE:",
         "content": [
             {
                 "title": "HOW:",
-                "subtitle": "Quickly, speedily, happily etc.",
-                "description": "Dinner arrived swiftly."
+                "content": [
+                    {
+                        "subtitle": "Quickly, speedily, happily etc.",
+                        "description": "Dinner arrived swiftly."
+                    }
+                ]
             },
             {
                 "title": "WHERE:",
-                "subtitle": "Outside, inside, near etc.",
-                "description": "The car is outside."
+                "content": [
+                    {
+                        "subtitle": "Outside, inside, near etc.",
+                        "description": "The car is outside."
+                    }
+                ]
             },
             {
                 "title": "WHEN:",
-                "subtitle": "Last month, last week, now, later etc. ",
-                "description": "My project is due soon."
+                "content": [
+                    {
+                        "subtitle": "Last month, last week, now, later etc. ",
+                        "description": "My project is due soon."
+                    }
+                ]
             },
             {
                 "title": "HOW MUCH:",
-                "subtitle": "Fully, almost, rather etc.",
-                "description": "Lennie is quite strong."
+                "content": [
+                    {
+                        "subtitle": "Fully, almost, rather etc.",
+                        "description": "Lennie is quite strong."
+                    }
+                ]
             },
             {
                 "title": "HOW OFTEN:",
-                "subtitle": "Never, sometimes, often etc.",
-                "description": "She never misses class."
+                "content": [
+                    {
+                        "subtitle": "Never, sometimes, often etc.",
+                        "description": "She never misses class."
+                    }
+                ]
             }
         ]
     },

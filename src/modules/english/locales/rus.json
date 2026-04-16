@@ -398,32 +398,52 @@
         ]
     },
     "eighthSection": {
-        "title": "Наречия - это слова, которые отвечают на такие ВОПРОСЫ:",
+        "title": "НАРЕЧИЯ - ЭТО СЛОВА, КОТОРЫЕ ОТВЕЧАЮТ НА ТАКИЕ ВОПРОСЫ:",
         "content": [
             {
                 "title": "HOW (КАК?):",
-                "subtitle": "quickly, speedily, happily etc.",
-                "description": "Dinner arrived swiftly."
+                "content": [
+                    {
+                        "subtitle": "quickly, speedily, happily etc.",
+                        "description": "Dinner arrived swiftly."
+                    }
+                ]
             },
             {
                 "title": "WHERE (ГДЕ?):",
-                "subtitle": "outside, inside, near etc.",
-                "description": "The car is outside."
+                "content": [
+                    {
+                        "subtitle": "outside, inside, near etc.",
+                        "description": "The car is outside."
+                    }
+                ]
             },
             {
                 "title": "WHEN (КОГДА?):",
-                "subtitle": "last month, last week, now, later etc.",
-                "description": "My project is due soon."
+                "content": [
+                    {
+                        "subtitle": "last month, last week, now, later etc.",
+                        "description": "My project is due soon."
+                    }
+                ]
             },
             {
                 "title": "HOW MUCH (НАСКОЛЬКО?):",
-                "subtitle": "fully, almost, rather etc.",
-                "description": "Lennie is quite strong."
+                "content": [
+                    {
+                        "subtitle": "fully, almost, rather etc.",
+                        "description": "Lennie is quite strong."
+                    }
+                ]
             },
             {
                 "title": "HOW OFTEN (КАК ЧАСТО?):",
-                "subtitle": "never, sometimes, often etc.",
-                "description": "She never misses class."
+                "content": [
+                    {
+                        "subtitle": "never, sometimes, often etc.",
+                        "description": "She never misses class."
+                    }
+                ]
             }
         ]
     },
