@@ -34,11 +34,17 @@
 
 @media (max-width: 768px) {
     .sound-card-wrapper {
+		display: block;
         --sound-card-img-size: 185px;
     }
 
     .sound-card-content {
         gap: 24px;
+    }
+	
+	.sound-card-img {
+        width: 100%;
+		height: auto;
     }
 }
 
