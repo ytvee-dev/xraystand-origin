@@ -34,19 +34,30 @@
 
 @media (max-width: 768px) {
     .sound-card-wrapper {
+		display: block;
         --sound-card-img-size: 185px;
     }
 
     .sound-card-content {
         gap: 24px;
     }
+	
+	.sound-card-img {
+        width: 100%;
+		height: auto;
+    }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     .sound-card-wrapper {
         --sound-card-img-size: 140px;
         
         gap: 12px;
+    }
+
+    .sound-card-img {
+        margin-top: 40px;
+        border-radius: 5px;
     }
 
     .sound-card-content {

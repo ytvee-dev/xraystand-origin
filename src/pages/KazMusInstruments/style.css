@@ -8,3 +8,82 @@
     user-select: none;
     color: #000000;
 }
+
+.music-instruments-section {
+    padding: 44px 20px 36px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.music-dark {
+    background-color: rgba(82, 47, 27, 1);
+}
+
+.music-light {
+    background-color: rgb(230, 187, 134);
+}
+
+.music-instruments-section h2 {
+    font-size: 48px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.music-instruments-section.music-dark h2 {
+    color: rgb(230, 187, 134);
+}
+
+.music-instruments-section.music-light h2 {
+    color: rgb(82, 47, 27);
+}
+
+.music-top-cards {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.music-sound-cards {
+    margin-top: 44px;
+}
+
+.sound-card-content {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .music-instruments-section {
+        padding: 32px 20px;
+    }
+
+    .music-instruments-section h2 {
+        font-size: 28px;
+    }
+
+    .music-top-cards {
+        gap: 16px;
+    }
+}
+
+@media (max-width:480px) {
+    .music-instruments-section {
+        padding: 18px 10px;
+    }
+
+    .music-sound-cards {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px;
+        align-items: stretch;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .sound-card-content {
+        width: 100%;
+    }
+}

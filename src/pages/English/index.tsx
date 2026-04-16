@@ -8,6 +8,7 @@ import * as textContentEn from "@modules/english/locales/en.json";
 import * as textContentKz from "@modules/english/locales/kaz.json";
 import * as textContentRu from "@modules/english/locales/rus.json";
 import SecondSection from "@modules/english/Sections/SecondSection";
+import FourthSection from "@modules/english/Sections/FourthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -63,6 +64,10 @@ const English = (): ReactElement => {
                 <ThirdSection
                     className="english-section english-third-section"
                     content={textContent.thirdSection}
+                />
+                <FourthSection
+                    className="english-section english-fourth-section"
+                    content={textContent.fourthSection}
                 />
                 <FifthSection
                     className="english-section english-fifth-section"
