@@ -1,0 +1,600 @@
+{
+    "coverSection": {
+        "title": "BASIC ENGLISH GRAMMAR"
+    },
+    "firstSection": {
+        "title": "АРТИКЛЬ (ARTICLE)",
+        "content": [
+            {
+                "title": "НУЛЕВОЙ АРТИКЛЬ (ZERO ARTICLE)",
+                "description": "Используется, когда мы говорим о вещах в общем смысле или с использованием конкретных категорий.",
+                "content": [
+                    {
+                        "subtitle": "Существительные во множественном числе и неисчисляемые",
+                        "description": "Пример: Cats are independent."
+                    },
+                    {
+                        "subtitle": "Имена собственные",
+                        "description": "Пример: He lives in London."
+                    },
+                    {
+                        "subtitle": "С названиями игр, видов спорта и учебных предметов или с некоторыми словами и выражениями: work, home, TV, to have breakfast/lunch/dinner.",
+                        "description": "Пример: I go to work by bus."
+                    }
+                ]
+            },
+            {
+                "title": "ОПРЕДЕЛЕННЫЙ АРТИКЛЬ: THE",
+                "description": "Используется с исчисляемыми (единственное и множественное число) и неисчисляемыми существительными, когда и говорящий, и слушающий точно знают, о чем идет речь.",
+                "content": [
+                    {
+                        "subtitle": "Конкретные предметы",
+                        "description": "Пример: Look at the moon."
+                    },
+                    {
+                        "subtitle": "Повторное упоминание",
+                        "description": "Пример: I saw a movie. The movie was long."
+                    },
+                    {
+                        "subtitle": "Превосходная степень",
+                        "description": "Пример: He is the best student."
+                    }
+                ]
+            },
+            {
+                "title": "НЕОПРЕДЕЛЕННЫЙ АРТИКЛЬ: A / AN",
+                "description": "Используется со счетными существительными единственного числа при первом упоминании чего-либо или при разговоре о вещах в целом.",
+                "content": [
+                    {
+                        "subtitle": "A - Перед словами, начинающимися с согласного звука.",
+                        "description": "Пример: a book, a horse"
+                    },
+                    {
+                        "subtitle": "An - Перед словами, начинающимися с гласного звука.",
+                        "description": "Пример:  an apple, an hour"
+                    }
+                ]
+            }
+        ]
+    },
+    "secondSection": {
+        "title": "ПРИЛАГАТЕЛЬНОЕ (ADJECTIVE)",
+        "description": "Прилагательное - это слово, которое описывает или изменяет существительное или местоимение, добавляя подробности о его качествах, характеристиках, количестве или степени.",
+        "content": [
+            {
+                "title": "АТРИБУТИВНЫЙ ГЛАГОЛ (ATTRIBUTIVE)",
+                "content": [
+                    {
+                        "subtitle": "Ставится перед существительным"
+                    },
+                    {
+                        "description": "Adjective + Noun"
+                    },
+                    {
+                        "description": "Fast overtaking"
+                    }
+                ]
+            },
+            {
+                "title": "ПОСТПОЗИТИВНОЕ ПРИЛАГАТЕЛЬНОЕ (POSTPOSITIVE)",
+                "content": [
+                    {
+                        "subtitle": "Следует сразу за существительным"
+                    },
+                    {
+                        "description": "Pronoun + Adjective"
+                    },
+                    {
+                        "description": "Something scary"
+                    }
+                ]
+            },
+            {
+                "title": "ПРЕДИКАТИВНОЕ ПРИЛАГАТЕЛЬНОЕ (PREDICATIVE)",
+                "content": [
+                    {
+                        "subtitle": "Следует за существительным и завершает связующий глагол"
+                    },
+                    {
+                        "description": "Noun + linking verb + adjective"
+                    },
+                    {
+                        "description": "Tina is smart"
+                    }
+                ]
+            }
+        ]
+    },
+    "thirdSection": {
+        "title": "СУЩЕСТВИТЕЛЬНОЕ (NOUN)",
+        "description": "Существительное - это слово, которое обозначает человека, место, вещь или идею (концепцию, качество, состояние, действие) и служит фундаментальным строительным блоком в языке, часто выступая в качестве субъекта или объекта в предложении.",
+        "content": [
+            {
+                "title": "ИМЯ СОБСТВЕННОЕ ",
+                "content": [
+                    {
+                        "subtitle": "(PROPER: London, Monday)",
+                        "description": "Конкретные названия людей, мест или вещей."
+                    }
+                ]
+            },
+            {
+                "title": "СОБИРАТЕЛЬНОЕ",
+                "content": [
+                    {
+                        "subtitle": "(COLLECTIVE: family, team)",
+                        "description": "Группы или коллективы людей или вещей."
+                    }
+                ]
+            },
+            {
+                "title": "НАРИЦАТЕЛЬНОЕ",
+                "content": [
+                    {
+                        "subtitle": "(COMMON: park, mom)",
+                        "description": "Общие названия людей, мест или предметов."
+                    }
+                ]
+            },
+            {
+                "title": "ПРИТЯЖАТЕЛЬНОЕ",
+                "content": [
+                    {
+                        "subtitle": "(POSSESSIVE: Tom’s dog, John’s car)",
+                        "description": "Показывает принадлежность или обладание."
+                    }
+                ]
+            },
+            {
+                "title": "КОНКРЕТНОЕ",
+                "content": [
+                    {
+                        "subtitle": "(CONCRETE: tree, cat)",
+                        "description": "Вещи, которые вы можете увидеть, потрогать, услышать, понюхать или попробовать на вкус."
+                    }
+                ]
+            },
+            {
+                "title": "ИСЧИСЛЯЕМОЕ",
+                "content": [
+                    {
+                        "subtitle": "(COUNTABLE: books, dollars)",
+                        "description": "Вещи, которые можно посчитать."
+                    }
+                ]
+            },
+            {
+                "title": "АБСТРАКТНОЕ",
+                "content": [
+                    {
+                        "subtitle": "(ABSTRACT: happiness, bravery)",
+                        "description": "Идеи, чувства или качества, которые нельзя воспринять с помощью органов чувств."
+                    }
+                ]
+            },
+            {
+                "title": "НЕИСЧИСЛЯЕМОЕ",
+                "content": [
+                    {
+                        "subtitle": "(UNCOUNTABL: water, sand)",
+                        "description": "Вещи, которые нельзя посчитать."
+                    }
+                ]
+            }
+        ]
+    },
+    "fourthSection": {
+        "title": "ГЛАГОЛ (VERB)",
+        "description": "Глагол — это самостоятельная часть речи, которая выражает действие предмета или лица или их состояние.",
+        "content": [
+            {
+                "title": "ГЛАГОЛЫ ДЕЙСТВИЯ (ACTION VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Показывают физическое или умственное действие",
+                        "description": "Пример: She runs every morning."
+                    }
+                ]
+            },
+            {
+                "title": "ГЛАГОЛЫ СОСТОЯНИЯ (STATIVE VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Описывают состояние или чувство ",
+                        "description": "Пример: He knows the correct answer. He still believes that story."
+                    }
+                ]
+            },
+            {
+                "title": "ПРАВИЛЬНЫЕ ГЛАГОЛЫ (REGULAR VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Дополняются окончанием “-ed” в прошедшем времени",
+                        "description": "Пример: work → worked → worked"
+                    }
+                ]
+            },
+            {
+                "title": "НЕПРАВИЛЬНЫЕ ГЛАГОЛЫ (IRREGULAR VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Изменяют форму в прошедшем времени",
+                        "description": "Пример: go → went → gone"
+                    }
+                ]
+            },
+            {
+                "title": "СВЯЗУЮЩИЕ ГЛАГОЛЫ (LINKING VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Связывает глагол для описания действия предмета",
+                        "description": "Пример: She seems nervous"
+                    }
+                ]
+            },
+            {
+                "title": "ПЕРЕХОДНЫЕ ГЛАГОЛЫ (TRANSITIVE VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Требуют прямого дополнения",
+                        "description": "Пример: He reads a book."
+                    }
+                ]
+            },
+            {
+                "title": "НЕПЕРЕХОДНЫЕ ГЛАГОЛЫ (INTRANSITIVE VERBS)",
+                "content": [
+                    {
+                        "subtitle": "Не требуют прямого дополнения",
+                        "description": "Пример: They arrived late."
+                    }
+                ]
+            }
+        ]
+    },
+    "fifthSection": {
+        "title": "ВРЕМЕНА ГЛАГОЛОВ (TENSES)",
+        "description": "Времена глаголов — это формы глаголов, которые показывают, когда происходит действие или состояние (прошлое, настоящее, будущее) и предоставляют подробную информацию о его продолжительности или завершении.",
+        "content": [
+            {
+                "title": "ОСНОВНЫЕ ВРЕМЕНА",
+                "content": [
+                    {
+                        "subtitle": "Прошедшее (Past): Произошло до текущего времени",
+                        "description": "Пример: walked, was eating."
+                    },
+                    {
+                        "subtitle": "Настоящее (Present): Происходит сейчас или обычно (периодически)",
+                        "description": "Пример: walks, is eating"
+                    },
+                    {
+                        "subtitle": "Будущее (Future): Произойдет после текущего времени",
+                        "description": "Пример: will walk, will be eating"
+                    }
+                ]
+            },
+            {
+                "title": "АСПЕКТЫ (ВОСПРИЯТИЕ ВРЕМЕНИ)",
+                "description": "Они сочетаются с основными временами, чтобы добавить дополнить продолжительность или завершенность.",
+                "content": [
+                    {
+                        "subtitle": "Simple: Факт, привычка",
+                        "description": "Пример: He runs"
+                    },
+                    {
+                        "subtitle": "Continuous (Progressive): Происходящее действие, процесс",
+                        "description": "Пример: He is running"
+                    },
+
+                    {
+                        "subtitle": "Perfect: Завершенное действие, часто к определенному моменту во времени",
+                        "description": "Пример: He has run"
+                    },
+                    {
+                        "subtitle": "Perfect Continuous: Действие началось в прошлом и продолжается или только что завершилось",
+                        "description": "Пример: He has been running"
+                    }
+                ]
+            }
+        ]
+    },
+    "sixthSection": {
+        "title": "12 ОСНОВНЫХ ВРЕМЕННЫХ ФОРМ",
+        "description": "Создаются сочетанием времён с аспектами",
+        "content": [
+            {
+                "title": "PAST",
+                "content": [
+                    {
+                        "title": "PAST SIMPLE",
+                        "content": [
+                            {
+                                "subtitle": "S + V2 (or irregular V)",
+                                "description": "I wrote a book yesterday."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "PAST CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + was/were + V-ing",
+                                "description": "I was writing a book all day long."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "PAST PERFECT",
+                        "content": [
+                            {
+                                "subtitle": "S + had + V3",
+                                "description": "I had written a book."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "PAST PERFECT CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + had + been + V-ing",
+                                "description": "I had been writing."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "PRESENT",
+                "content": [
+                    {
+                        "title": "PRESENT SIMPLE",
+                        "content": [
+                            {
+                                "subtitle": "S + V +(s/es)",
+                                "description": "I write books. She writes books."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "PRESENT CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + am/is/are + V-ing",
+                                "description": "I am writing a book now."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "PRESENT PERFECT",
+                        "content": [
+                            {
+                                "subtitle": "S + have/has + V3",
+                                "description": "I have written a book."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "PRESENT PERFECT CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + have/has + been + V-ing (+ since/for)",
+                                "description": "I have been writing a book."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "FUTURE",
+                "content": [
+                    {
+                        "title": "FUTURE SIMPLE",
+                        "content": [
+                            {
+                                "subtitle": "S + will/shall + V",
+                                "description": "I will write a book."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "FUTURE CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + will/shall be + V-ing",
+                                "description": "I will be writing a book."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "FUTURE PERFECT",
+                        "content": [
+                            {
+                                "subtitle": "S + will have + V3",
+                                "description": "I will have written a book by the end of the week."
+                            }
+                        ]
+                    },
+                    {
+                        "title": "FUTURE PERFECT CONTINUOUS",
+                        "content": [
+                            {
+                                "subtitle": "S + will have been + V-ing",
+                                "description": "I will have been writing a book."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "seventhSection": {
+        "title": "Наречие (Adverb)",
+        "description": "Наречие - это слово, которое описывает глагол, прилагательное, другое наречие для усиления или придания более детального описания.",
+        "content": [
+            {
+                "title": "НАРЕЧИЯ ОПИСЫВАЮТ ГЛАГОЛЫ (ADVERBS DESCRIBE VERBS)",
+                "description": "Пример: Abdullah finished his test hastily."
+            },
+            {
+                "title": "НАРЕЧИЯ ОПИСЫВАЮТ ПРИЛАГАТЕЛЬНЫЕ (ADVERBS DESCRIBE ADJECTIVES)",
+                "description": "Пример: Mount Ranier is quite tall."
+            },
+            {
+                "title": "НАРЕЧИЯ ОПИСЫВАЮТ НАРЕЧИЯ (ADVERBS DESCRIBE ADVERBS) ",
+                "description": "Пример: The hotel is almost fully booked."
+            }
+        ]
+    },
+    "eighthSection": {
+        "title": "Наречия - это слова, которые отвечают на такие ВОПРОСЫ:",
+        "content": [
+            {
+                "title": "HOW (КАК?):",
+                "subtitle": "quickly, speedily, happily etc.",
+                "description": "Dinner arrived swiftly."
+            },
+            {
+                "title": "WHERE (ГДЕ?):",
+                "subtitle": "outside, inside, near etc.",
+                "description": "The car is outside."
+            },
+            {
+                "title": "WHEN (КОГДА?):",
+                "subtitle": "last month, last week, now, later etc.",
+                "description": "My project is due soon."
+            },
+            {
+                "title": "HOW MUCH (НАСКОЛЬКО?):",
+                "subtitle": "fully, almost, rather etc.",
+                "description": "Lennie is quite strong."
+            },
+            {
+                "title": "HOW OFTEN (КАК ЧАСТО?):",
+                "subtitle": "never, sometimes, often etc.",
+                "description": "She never misses class."
+            }
+        ]
+    },
+    "ninethSection": {
+        "title": "Различия в языке: американский и британский",
+        "description": "Различия между американским и британским английским проявляются в правописании, словарных запасах, грамматике, произношении и культурных нормах (прямота или сдержанность). Британский английский часто сохраняет более традиционные формы, в то время как американский английский предпочитает упрощение, хотя оба они понятны друг другу.",
+        "content": [
+            {
+                "title": "ПРОИЗНОШЕНИЕ",
+                "content": [
+                    {
+                        "title": "Акцент буквы “R” (Rhoticity):",
+                        "description": "(Non-Rhotic): Гласные перед \"r\" часто удлиняются или изменяются, а \"r\" не произносится после другой гласной (car /kɑː/)."
+                    },
+                    {
+                        "title": "",
+                        "description": "(Rhotic): Звук \"r\" произносится после гласной (car /kɑːr/)."
+                    },
+                    {
+                        "title": "Короткий звук \"О\" (ɒ):",
+                        "description": "В таких словах, как hot, lot, box, используется звук /ɒ/."
+                    },
+                    {
+                        "title": "",
+                        "description": "“O” становится /ɑː/ (как в слове father) или /ɔː/ (как в слове bought) (например, hot /hɑːt/ или /hɔːt/)."
+                    },
+                    {
+                        "title": "Дифтонги:",
+                        "description": "Сохраняются дифтонгические переходы, например: near /nɪər/."
+                    },
+                    {
+                        "title": "",
+                        "description": "Звук /ə/ часто исчезает, образуя долгий гласный или монофтонг, например: near /nɪr/."
+                    }
+                ]
+            },
+            {
+                "title": "ГРАММАТИКА",
+                "content": [
+                    {
+                        "title": "Число",
+                        "description": "Используется единственное или множественное число (The team is/are winning)."
+                    },
+                    {
+                        "title": "",
+                        "description": "Используется единственное число (The team is winning)."
+                    },
+                    {
+                        "title": "Глаголы",
+                        "description": "Чаще используется настоящее совершенное время (present perfect): I've just eaten"
+                    },
+                    {
+                        "title": "",
+                        "description": "Чаще используется простое прошедшее время (simple past): I just ate."
+                    }
+                ]
+            },
+            {
+                "title": "НАПИСАНИЕ",
+                "content": [
+                    {
+                        "title": "Окончания слов",
+                        "description": "Сохраняет французские корни: -our, -ise, -re, -ce (colour, organise, centre, defence)."
+                    },
+                    {
+                        "title": "",
+                        "description": "Упрощенное и дифференцированное написание: -or, -ize, -er, -se (color, organize, center, defense)."
+                    },
+                    {
+                        "title": "Двойные согласные",
+                        "description": "Часто удваивается согласная в глаголах при добавлении окончаний (travelling, cancelled)"
+                    },
+                    {
+                        "title": "",
+                        "description": "Обычно используется одна согласная (traveling, canceled)."
+                    }
+                ]
+            },
+            {
+                "title": "ЛЕКСИКА",
+                "content": [
+                    {
+                        "content": [
+                            "осень",
+                            "autumn",
+                            "fall",
+                            "лифт",
+                            "lift",
+                            "elevator",
+                            "футбол",
+                            "football",
+                            "soccer",
+                            "чипсы",
+                            "crisps",
+                            "chips"
+                        ]
+                    },
+                    {
+                        "content": [
+                            {
+                                "title": "Описание",
+                                "description": ""
+                            },
+                            {
+                                "title": "",
+                                "description": "Совершенно разное написание."
+                            },
+                            {
+                                "title": "",
+                                "description": "Разные термины для одного и того же объекта."
+                            },
+                            {
+                                "title": "",
+                                "description": "Различные значения: В Соединенных Штатах слово “футбол” означает в первую очередь американский футбол, в то время как \"soccer\" относится к мировому виду спорта, со сферическим мячом."
+                            },
+                            {
+                                "title": "",
+                                "description": "В США \"chips\" - это тонкие, хрустящие закуски в пакетиках (британские \"crisps\"), в то время как в Великобритании \"chips\" - это жареный картофель фри (американский \"fries\")."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

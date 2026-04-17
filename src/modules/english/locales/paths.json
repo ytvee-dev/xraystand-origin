@@ -1,0 +1,56 @@
+{
+    "backgrounds": {
+        "coverSection": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224164/town_v3fjbb.webp"
+    },
+    "blocks": {
+        "firstSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775644321/first-image_tcezpp.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775644320/second-image_bkrug0.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775644321/third-image_bpk8ec.webp"
+        ],
+        "secondSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775644321/bicycle_dunat6.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775644321/second-section-image_mpjk7a.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775644321/learning-web_vxefdz.webp"
+        ],
+        "fourthSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096595/fourth-sec-first-image_zlh5c9.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096595/fourth-sec-second-image_tx6krl.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096596/fourth-sec-third-image_gydesw.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096595/fourth-sec-fourth-image_wxy7mz.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096595/fourth-sec-fifth-image_r78dwk.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096595/fourth-sec-sixth-image_ywhep7.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096595/fourth-sec-seventh-image_znulki.webp"
+        ],
+        "sixthSection": [
+            [
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096610/sixth-section-first-image_jidmd3.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096611/sixth-section-second-image_pg1qvf.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096611/sixth-section-fifth-image_jkf7ok.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096611/sixth-section-sixth-image_sxaejn.webp"
+            ],
+            [
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096612/sixth-section-third-image_tmlrep.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096611/sixth-section-fourth-image_uvolpi.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096611/sixth-section-seventh-image_bchv3d.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096611/sixth-section-seventh-image_bchv3d.webp"
+            ],
+            [
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096611/sixth-section-tenth-image_abcjy3.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096613/sixth-section-thirteenth-image_zxwlvf.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096613/sixth-section-twelve-image_l8ccf3.webp",
+                "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776096610/sixth-section-eleven-image_f3mums.webp"
+            ]
+        ]
+    },
+    "other": {
+        "coverSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224229/first-block_zkya2l.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224230/second-block_g8ov3r.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224229/third-block_rqoyoy.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224228/fourth-block_srwdlz.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775224230/fifth-block_cp1xyu.webp"
+        ],
+        "thirdSection": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1775644321/third-section-image_esyu1z.webp"
+    }
+}

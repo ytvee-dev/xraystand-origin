@@ -16,6 +16,7 @@ export interface IDefaultLayoutProps {
     navigation?: ReactElement | null;
     stickyHeader?: boolean;
     isLanguageSwitcher?: boolean;
+    isLanguageSelect?: boolean;
     switcherColor?: string;
     sx?: IBrightnessLayoutSX;
     headerBackgroundColor?: string;
@@ -48,13 +49,14 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
     navigation,
     stickyHeader = false,
     isLanguageSwitcher = false,
+    isLanguageSelect = false,
     switcherColor,
     sx = DEFAULT_SX,
     headerBackgroundColor,
-    languageSwitcherClassName
+    languageSwitcherClassName,
 }: IDefaultLayoutProps) => {
     const currentLocale: Languages = useSelector(
-        (state: TRootState) => state.locale.locale
+        (state: TRootState) => state.locale.locale,
     );
     const language = strictLanguage ?? currentLocale;
 
@@ -65,6 +67,7 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
                 navigation={navigation || null}
                 stickyHeader={stickyHeader}
                 isLanguageSwitcher={isLanguageSwitcher}
+                isLanguageSelect={isLanguageSelect}
                 switcherColor={switcherColor && switcherColor}
                 backgroundColor={headerBackgroundColor}
                 languageSwitcherClassName={languageSwitcherClassName}
@@ -74,9 +77,9 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
 
             <StrictFooter
                 meta={
-                    language === 'ru' ?
-                        trafficLawsFooterMeta.ru :
-                        trafficLawsFooterMeta.kz
+                    language === "ru"
+                        ? trafficLawsFooterMeta.ru
+                        : trafficLawsFooterMeta.kz
                 }
                 sx={sx}
             />

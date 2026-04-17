@@ -1,0 +1,52 @@
+.english-first-section {
+    width: 100%;
+    max-height: 50.875rem;
+
+    background: linear-gradient(
+        to right,
+        #d75d5a -20%,
+        #e79797 50%,
+        #d75d5a 120%
+    );
+    color: #ffffff;
+}
+
+.english-first-section-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2.25rem;
+}
+
+.english-section-title {
+    margin-top: 4%;
+}
+
+.english-first-section-blocks-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+
+    margin-bottom: 4%;
+
+    gap: 3.125rem;
+}
+
+.english-first-section-block {
+    width: 22%;
+    max-height: 37.313rem;
+
+    padding: 1.563rem 1rem 1rem 1rem;
+}
+
+.english-first-section-block .info-block-title {
+    margin-bottom: 1.5rem;
+}

@@ -1,27 +1,23 @@
 {
     "backgrounds": {
-        "cover": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774870481/cover_bg_y9s9dq.webp",
-        "pluckedInstruments": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774871738/plucked_string_bg_xsi7mi.webp",
-        "bowedInstruments": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774871991/bowed_instruments_bg_egyzd3.webp",
-        "percussionInstruments": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774872170/percussion_instruments_bg_1_b1slh5.png",
-        "wind_instruments": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774872464/wind_instruments_bg_kry2wa.webp"
+        "cover": "https://res.cloudinary.com/dy6zg8dhs/image/upload/q_auto/f_auto/v1774870481/cover_bg_y9s9dq.webp"
     },
     "pluckedInstruments": {
-        "dombra": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774872774/dombra_nuams2.webp",
-        "sherter": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774872884/sherter_nycruu.webp",
-        "jetigen": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774872760/jetigen_c7kqzi.webp"
+        "dombra": "https://res.cloudinary.com/dy6zg8dhs/image/upload/q_auto/f_auto/v1776070339/%D1%88%D0%B5%D1%80_jfpkrl.webp",
+        "sherter": "https://res.cloudinary.com/dy6zg8dhs/image/upload/q_auto/f_auto/v1776070338/%D1%88%D0%B5%D1%80%D1%82%D0%B5%D1%80_yppiqw.webp",
+        "jetigen": "https://res.cloudinary.com/dy6zg8dhs/image/upload/q_auto/f_auto/v1776069429/she_lisdw1.webp"
     },
     "bowedInstruments": {
-        "kobiz": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774873081/kobiz_xly5bf.webp",
-        "nar_kobiz": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774873166/nar_kobiz_1_royfld.png"
+        "kobiz": "https://res.cloudinary.com/dy6zg8dhs/image/upload/q_auto/f_auto/v1775573061/kobyz-_1__h7zdzc.webp",
+        "nar_kobiz": "https://res.cloudinary.com/dy6zg8dhs/image/upload/q_auto/f_auto/v1775573154/nar_kobyz_1_c2wlsp.webp"
     },
     "percussionInstruments": {
-        "asa_tayak": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774873635/asa_tayak_feqojc.webp",
-        "shyn": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774873528/shyn_gqja2l.webp",
-        "daulpaz": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774873390/daulpaz_1_mzx6vz.webp"
+        "asa_tayak": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776163637/Group_161_1_jmcvtk.webp",
+        "shyn": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776163644/Group_162_1_fww5ir.webp",
+        "daulpaz": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776163652/Group_163_1_yfxdka.webp"
     },
     "windInstruments": {
-        "urmeliKerney": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774873974/urmeli_kerney_kobkmg.webp",
-        "sybyzgy": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1774873799/sybyzgy_jlz8am.webp"
+        "urmeliKerney": "https://res.cloudinary.com/dy6zg8dhs/image/upload/q_auto/f_auto/v1775573904/kernei_1_gv3std.webp",
+        "sybyzgy": "https://res.cloudinary.com/dy6zg8dhs/image/upload/q_auto/f_auto/v1775573923/sibizgi_1_ebmdw7.webp"
     }
 }

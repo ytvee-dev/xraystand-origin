@@ -1,4 +1,5 @@
 import React, { type ReactElement } from "react";
+import LanguageSelect from "../Other/LanguageSelect";
 import LanguageSwitcher from "@components/common/Other/LanguageSwitcher";
 import "./style.css";
 
@@ -7,29 +8,35 @@ export interface CenteredHeaderProps {
     navigation?: ReactElement | null;
     stickyHeader?: boolean;
     isLanguageSwitcher?: boolean;
+    isLanguageSelect?: boolean;
     switcherColor?: string;
     backgroundColor?: string;
     languageSwitcherClassName?: string;
-};
+}
+
+const ZERO_INDENT: number = 0;
 
 const CenteredHeader: React.FC<CenteredHeaderProps> = ({
     logo = null,
     navigation = null,
     stickyHeader = false,
     isLanguageSwitcher = false,
+    isLanguageSelect = false,
     switcherColor,
     backgroundColor = "rgba(255, 255, 255, 0.97)",
-    languageSwitcherClassName = ''
+    languageSwitcherClassName = "",
 }: CenteredHeaderProps): ReactElement => {
-
     return (
-        <div className="centered-header-wrapper" style={{
-            position: stickyHeader ? "fixed" : "relative",
-            top: stickyHeader ? 0 : undefined,
-            left: stickyHeader ? 0 : undefined,
-            right: stickyHeader ? 0 : undefined,
-            backgroundColor: backgroundColor,
-        }}>
+        <div
+            className="centered-header-wrapper"
+            style={{
+                position: stickyHeader ? "fixed" : "relative",
+                top: stickyHeader ? ZERO_INDENT : undefined,
+                left: stickyHeader ? ZERO_INDENT : undefined,
+                right: stickyHeader ? ZERO_INDENT : undefined,
+                backgroundColor: backgroundColor,
+            }}
+        >
             <header className="centered-application-header">
                 <div className="centered-application-header-left">{logo}</div>
                 <div className="centered-application-header-center">
@@ -37,9 +44,16 @@ const CenteredHeader: React.FC<CenteredHeaderProps> = ({
                 </div>
 
                 <div className="centered-application-header-right">
-                    <div className="centered-application-header-right-nav">{navigation}</div>
-                    {isLanguageSwitcher && (<LanguageSwitcher color={switcherColor && switcherColor} className={languageSwitcherClassName}/>)}
-                    
+                    <div className="centered-application-header-right-nav">
+                        {navigation}
+                    </div>
+                    {isLanguageSwitcher && (
+                        <LanguageSwitcher
+                            color={switcherColor && switcherColor}
+                            className={languageSwitcherClassName}
+                        />
+                    )}
+                    {isLanguageSelect && <LanguageSelect />}
                 </div>
             </header>
         </div>
