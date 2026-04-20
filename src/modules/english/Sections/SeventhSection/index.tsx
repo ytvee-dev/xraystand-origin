@@ -1,7 +1,7 @@
 import InfoBlock, {
     type IBlockData,
 } from "@modules/english/components/InfoBlock";
-// import * as paths from "@modules/english/locales/paths.json";
+import * as paths from "@modules/english/locales/paths.json";
 import type { IEnglishSectionProps } from "@modules/english/types";
 import type { ReactElement } from "react";
 import "./style.css";
@@ -41,13 +41,13 @@ const SeventhSection = ({
                         )}
                     </div>
 
-                    {/* <div className="english-seventh-section-image-wrapper">
+                    <div className="english-seventh-section-image-wrapper">
                         <img
                             className="english-seventh-section-image"
                             src={paths.other.seventhSection}
                             alt="image"
                         />
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </section>

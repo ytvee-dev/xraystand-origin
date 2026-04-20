@@ -9,6 +9,7 @@ import * as textContentKz from "@modules/english/locales/kaz.json";
 import * as textContentRu from "@modules/english/locales/rus.json";
 import SecondSection from "@modules/english/Sections/SecondSection";
 import FourthSection from "@modules/english/Sections/FourthSection";
+import SeventhSection from "@modules/english/Sections/SeventhSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -17,7 +18,6 @@ import { useSelector } from "react-redux";
 import type { ReactElement } from "react";
 import { paths } from "@router/routes";
 import "./style.css";
-import SeventhSection from "@modules/english/Sections/SeventhSection";
 
 const EnglishLogo = () => {
     return (
