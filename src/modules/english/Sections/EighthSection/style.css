@@ -1,0 +1,68 @@
+.english-eighth-section {
+    width: 100%;
+
+    background: linear-gradient(
+        to right,
+        #d16f9f 0%,
+        #d675a8 50%,
+        #d16f9f 100%
+    );
+
+    color: #ffffff;
+}
+
+.english-eighth-section-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.english-eighth-section-header {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 2%;
+}
+
+.english-eighth-section-block {
+    width: 25%;
+}
+
+.english-eighth-section-block .info-block-label-wrapper {
+    gap: 0.5rem;
+}
+
+.english-eighth-section-block .info-block-labels-container {
+    align-items: start;
+    padding: 0;
+}
+
+.english-eighth-section-blocks-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 2.688rem;
+
+    margin-bottom: 3%;
+}
+
+.english-eighth-section-block .info-block-subtitle {
+    font-weight: normal;
+}
+
+.english-eighth-section-block .info-block-title {
+    margin-bottom: 0.75rem;
+}
