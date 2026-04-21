@@ -495,14 +495,14 @@
         ]
     },
     "ninethSection": {
-        "title": "American and British English differences",
+        "title": "AMERICAN AND BRITISH ENGLISH DIFFERENCES",
         "description": "American and British language differences relate to spelling, vocabulary, grammar, pronunciation, and cultural norms (directness versus restraint). British English often retains more traditional forms, while American English prefers simplification, although both are mutually intelligible.",
         "content": [
             {
                 "title": "PRONUNCIATION",
                 "content": [
                     {
-                        "title": "R-Coloring (Rhoticity):",
+                        "title": "R-Coloring (Rhoticity)",
                         "description": "(Non-Rhotic): Vowels before 'r' often lengthen or change, but the 'r' isn't pronounced unless followed by another vowel (e.g., car /kɑː/)."
                     },
                     {
@@ -510,7 +510,7 @@
                         "description": "(Rhotic): The 'r' sound is pronounced after the vowel (e.g., car /kɑːr/, bird /bɜːrd/)."
                     },
                     {
-                        "title": "\"Short O\" (ɒ) Sound:",
+                        "title": "\"Short O\" (ɒ) Sound",
                         "description": "Words like hot, lot, box use the /ɒ/ sound."
                     },
                     {
@@ -518,7 +518,7 @@
                         "description": "“O” becomes /ɑː/ (like father) or /ɔː/ (like bought) (e.g., hot /hɑːt/ or /hɔːt/)."
                     },
                     {
-                        "title": "Diphthongs (Vowel + 'r'):",
+                        "title": "Diphthongs (Vowel + 'r')",
                         "description": "Diphthongic transitions are preserved, for example: near /nɪər/."
                     },
                     {

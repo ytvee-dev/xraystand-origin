@@ -1,0 +1,47 @@
+.english-nineth-section {
+    width: 100%;
+
+    background-color: #92a9c1;
+
+    color: #ffffff;
+}
+
+.english-nineth-section-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.english-nineth-section-header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2%;
+
+    gap: 1.5rem;
+}
+
+.english-nineth-section-blocks-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+
+    margin-bottom: 2%;
+
+    gap: 2.688rem;
+}
+
+.english-nineth-section-block {
+    width: 25%;
+}

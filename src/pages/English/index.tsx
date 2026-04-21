@@ -8,6 +8,7 @@ import * as textContentEn from "@modules/english/locales/en.json";
 import SixthSection from "@modules/english/Sections/SixthSection";
 import * as textContentKz from "@modules/english/locales/kaz.json";
 import * as textContentRu from "@modules/english/locales/rus.json";
+import NinethSection from "@modules/english/Sections/NinethSection";
 import SecondSection from "@modules/english/Sections/SecondSection";
 import FourthSection from "@modules/english/Sections/FourthSection";
 import EighthSection from "@modules/english/Sections/EighthSection";
@@ -87,6 +88,10 @@ const English = (): ReactElement => {
                 <EighthSection
                     className="english-section english-eighth-section"
                     content={textContent.eighthSection}
+                />
+                <NinethSection
+                    className="english-section english-nineth-section"
+                    content={textContent.ninethSection}
                 />
             </div>
         </BrightnessLayout>
