@@ -37,9 +37,11 @@
     align-items: baseline;
     justify-content: center;
 
-    margin-bottom: 2%;
+    flex-wrap: wrap;
 
     gap: 2.688rem;
+
+    margin-bottom: 3%;
 }
 
 .english-nineth-section-block {

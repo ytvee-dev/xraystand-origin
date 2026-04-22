@@ -505,27 +505,42 @@
                 "content": [
                     {
                         "title": "R - әріп екпіні(Rhoticity)",
-                        "description": "(Non-Rhotic): \"r\" алдындағы дауысты дыбыстар жиі ұзарады немесе өзгереді, және \"r\" әрпі дауысты дыбыстан кейін айтылмайды (car /kː/)."
-                    },
-                    {
-                        "title": "",
-                        "description": "(Rhotic): \"r\" дыбысы дауысты дыбыстан кейін айтылады (car /kɑːr/)."
+                        "content": [
+                            {
+                                "subtitle": "",
+                                "description": "(Non-Rhotic): \"r\" алдындағы дауысты дыбыстар жиі ұзарады немесе өзгереді, және \"r\" әрпі дауысты дыбыстан кейін айтылмайды (car /kː/)."
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "(Rhotic): \"r\" дыбысы дауысты дыбыстан кейін айтылады (car /kɑːr/)."
+                            }
+                        ]
                     },
                     {
                         "title": "Короткий звук \"О\" (ɒ)",
-                        "description": "Hot, lot, box сияқты сөздер /ɒ/ дыбысты қолданады."
-                    },
-                    {
-                        "title": "",
-                        "description": "“O” становится /ɑː/ (как в слове father) или /ɔː/ (как в слове bought) (Мысалы, hot /hɑːt/ или /hɔːt/)."
+                        "content": [
+                            {
+                                "subtitle": "",
+                                "description": "Hot, lot, box сияқты сөздер /ɒ/ дыбысты қолданады."
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "“O” становится /ɑː/ (как в слове father) или /ɔː/ (как в слове bought) (Мысалы, hot /hɑːt/ или /hɔːt/)."
+                            }
+                        ]
                     },
                     {
                         "title": "Дифтонги",
-                        "description": "Дифтонгиялық ауысулар сақталады, Мысалы: near /nɪər/."
-                    },
-                    {
-                        "title": "",
-                        "description": "/ə / дыбысы жиі жоғалып, оның орнына ұзақ дауысты немесе монофтонг айтылады. Мысалы: near / nɪr/."
+                        "content": [
+                            {
+                                "subtitle": "",
+                                "description": "Дифтонгиялық ауысулар сақталады, Мысалы: near /nɪər/."
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "/ə / дыбысы жиі жоғалып, оның орнына ұзақ дауысты немесе монофтонг айтылады. Мысалы: near / nɪr/."
+                            }
+                        ]
                     }
                 ]
             },
@@ -534,19 +549,29 @@
                 "content": [
                     {
                         "title": "Число",
-                        "description": "Саналмайтын зат есімдерге жекеше is және көпше are етістіктері қолданылады (The team is/are winning)."
-                    },
-                    {
-                        "title": "",
-                        "description": "Тек ғана жекеше түрдегі етістектер қолданылады (The team is winning)."
+                        "content": [
+                            {
+                                "subtitle": "",
+                                "description": "Саналмайтын зат есімдерге жекеше is және көпше are етістіктері қолданылады (The team is/are winning)."
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "Тек ғана жекеше түрдегі етістектер қолданылады (The team is winning)."
+                            }
+                        ]
                     },
                     {
                         "title": "Глаголы",
-                        "description": "Көбінесе аяқталған осы шақ колданады (present perfect): I've just eaten. "
-                    },
-                    {
-                        "title": "",
-                        "description": "Оның орнына өткен шақта айтады (simple past): I just ate."
+                        "content": [
+                            {
+                                "subtitle": "",
+                                "description": "Көбінесе аяқталған осы шақ колданады (present perfect): I've just eaten. "
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "Оның орнына өткен шақта айтады (simple past): I just ate."
+                            }
+                        ]
                     }
                 ]
             },
@@ -555,64 +580,75 @@
                 "content": [
                     {
                         "title": "Окончания слов",
-                        "description": "Емлесінде Француз тамырлары сақталған -our, -ise, -re, -ce (colour, organise, centre, defence)."
-                    },
-                    {
-                        "title": "",
-                        "description": "Жеңілдетіп және саралап жазады: -or, -ize, -er, -se (color, organize, center, defense)."
-                    },
-                    {
-                        "title": "Двойные согласные",
-                        "description": "Жалғауларды қосқанда етістіктердегі дауыссыз дыбыс екі рет қайталануы мүмкін (travelling, cancelled)"
-                    },
-                    {
-                        "title": "",
-                        "description": "Әдетте бір дауыссыз дыбыс қолданылады (traveling, canceled)."
-                    }
-                ]
-            },
-            {
-                "title": "ЛЕКСИКА",
-                "content": [
-                    {
                         "content": [
-                            "күз",
-                            "autumn",
-                            "fall",
-                            "лифт",
-                            "lift",
-                            "elevator",
-                            "футбол",
-                            "football",
-                            "soccer",
-                            "чипсы",
-                            "crisps",
-                            "chips"
+                            {
+                                "subtitle": "",
+                                "description": "Емлесінде Француз тамырлары сақталған -our, -ise, -re, -ce (colour, organise, centre, defence)."
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "Жеңілдетіп және саралап жазады: -or, -ize, -er, -se (color, organize, center, defense)."
+                            }
                         ]
                     },
+
                     {
+                        "title": "Двойные согласные",
                         "content": [
-                            { "title": "Сипаттама", "description": "" },
                             {
-                                "title": "",
-                                "description": "Мүлдем әртүрлі емле."
+                                "subtitle": "",
+                                "description": "Жалғауларды қосқанда етістіктердегі дауыссыз дыбыс екі рет қайталануы мүмкін (travelling, cancelled)"
                             },
                             {
-                                "title": "",
-                                "description": "Бір затты әртүрлі терминдер сипаттайды."
-                            },
-                            {
-                                "title": "",
-                                "description": "Мағынасы әртүрлі: АҚШ-та  \"football\" сөзі ең алдымен американдық футболды білдіреді, ал \"soccer\" сөзімен сфералық доппен ойналатын әлемдік спорт түрін атайды."
-                            },
-                            {
-                                "title": "",
-                                "description": "АҚШ-та \"chips\" - ол қаптамадағы жұқа қытырлақ тағам (Британдық \"crisps\"), ал Ұлыбританияда \"chips\" - бұл қуырылған фри картобы (американдық \"fries\")."
+                                "subtitle": "",
+                                "description": "Әдетте бір дауыссыз дыбыс қолданылады (traveling, canceled)."
                             }
                         ]
                     }
                 ]
             }
-        ]
+        ],
+        "tableContent": {
+            "title": "ЛЕКСИКА",
+            "content": [
+                {
+                    "content": [
+                        "күз",
+                        "autumn",
+                        "fall",
+                        "лифт",
+                        "lift",
+                        "elevator",
+                        "футбол",
+                        "football",
+                        "soccer",
+                        "чипсы",
+                        "crisps",
+                        "chips"
+                    ]
+                },
+                {
+                    "title": "Сипаттама",
+                    "content": [
+                        {
+                            "subtitle": "",
+                            "description": "Мүлдем әртүрлі емле."
+                        },
+                        {
+                            "subtitle": "",
+                            "description": "Бір затты әртүрлі терминдер сипаттайды."
+                        },
+                        {
+                            "subtitle": "",
+                            "description": "Мағынасы әртүрлі: АҚШ-та  \"football\" сөзі ең алдымен американдық футболды білдіреді, ал \"soccer\" сөзімен сфералық доппен ойналатын әлемдік спорт түрін атайды."
+                        },
+                        {
+                            "subtitle": "",
+                            "description": "АҚШ-та \"chips\" - ол қаптамадағы жұқа қытырлақ тағам (Британдық \"crisps\"), ал Ұлыбританияда \"chips\" - бұл қуырылған фри картобы (американдық \"fries\")."
+                        }
+                    ]
+                }
+            ]
+        }
     }
 }

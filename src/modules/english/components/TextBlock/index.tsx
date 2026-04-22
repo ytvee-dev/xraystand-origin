@@ -4,14 +4,13 @@ import type { ReactElement } from "react";
 import "./style.css";
 
 interface ITextBlock {
-    className?: string;
     title?: string;
     labels?: IBlockLabel[];
 }
 
-const TextBlock = ({ className, title, labels }: ITextBlock): ReactElement => {
+const TextBlock = ({ title, labels }: ITextBlock): ReactElement => {
     return (
-        <div className={`text-block ${className || ""}`}>
+        <div className="text-block">
             <span className="text-block-title">{title}</span>
 
             <div className="text-block-content">
@@ -31,7 +30,6 @@ const TextBlock = ({ className, title, labels }: ITextBlock): ReactElement => {
                 {labels && (
                     <div className="text-block-labels">
                         {labels.map((labelData: IBlockLabel, index: number) => (
-                            
                             <span
                                 className="info-block-description"
                                 key={index}

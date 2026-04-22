@@ -1,6 +1,7 @@
-import type { IBlockData } from "@modules/english/components/InfoBlock";
 import TextBlock from "@modules/english/components/TextBlock";
+import TableBlock from "@modules/english/components/TableBlock";
 import TextBlockWrapper from "@modules/english/components/TextBlockWrapper";
+import type { IBlockData } from "@modules/english/components/InfoBlock";
 import type { IEnglishSectionProps } from "@modules/english/types";
 import type { ReactElement } from "react";
 import "./style.css";
@@ -40,6 +41,12 @@ const NinethSection = ({
                             </TextBlockWrapper>
                         ),
                     )}
+
+                    <TableBlock
+                        title={content.tableContent.title}
+                        tableText={content.tableContent.content[0].content}
+                        labelsData={content.tableContent.content[1]}
+                    />
                 </div>
             </div>
         </section>
