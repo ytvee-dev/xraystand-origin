@@ -495,35 +495,52 @@
         ]
     },
     "ninethSection": {
-        "title": "American and British English differences",
+        "title": "AMERICAN AND BRITISH ENGLISH DIFFERENCES",
         "description": "American and British language differences relate to spelling, vocabulary, grammar, pronunciation, and cultural norms (directness versus restraint). British English often retains more traditional forms, while American English prefers simplification, although both are mutually intelligible.",
         "content": [
             {
                 "title": "PRONUNCIATION",
                 "content": [
                     {
-                        "title": "R-Coloring (Rhoticity):",
-                        "description": "(Non-Rhotic): Vowels before 'r' often lengthen or change, but the 'r' isn't pronounced unless followed by another vowel (e.g., car /kɑː/)."
+                        "title": "R-Coloring (Rhoticity)",
+                        "content": [
+                            {
+                                "subtitle": "",
+                                "description": "(Non-Rhotic): Vowels before 'r' often lengthen or change, but the 'r' isn't pronounced unless followed by another vowel (e.g., car /kɑː/)."
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "(Rhotic): The 'r' sound is pronounced after the vowel (e.g., car /kɑːr/, bird /bɜːrd/)."
+                            }
+                        ]
                     },
+
                     {
-                        "title": "",
-                        "description": "(Rhotic): The 'r' sound is pronounced after the vowel (e.g., car /kɑːr/, bird /bɜːrd/)."
+                        "title": "\"Short O\" (ɒ) Sound",
+                        "content": [
+                            {
+                                "subtitle": "",
+                                "description": "Words like hot, lot, box use the /ɒ/ sound."
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "“O” becomes /ɑː/ (like father) or /ɔː/ (like bought) (e.g., hot /hɑːt/ or /hɔːt/)."
+                            }
+                        ]
                     },
+
                     {
-                        "title": "\"Short O\" (ɒ) Sound:",
-                        "description": "Words like hot, lot, box use the /ɒ/ sound."
-                    },
-                    {
-                        "title": "",
-                        "description": "“O” becomes /ɑː/ (like father) or /ɔː/ (like bought) (e.g., hot /hɑːt/ or /hɔːt/)."
-                    },
-                    {
-                        "title": "Diphthongs (Vowel + 'r'):",
-                        "description": "Diphthongic transitions are preserved, for example: near /nɪər/."
-                    },
-                    {
-                        "title": "",
-                        "description": "The /ə/ sound often disappears to form a long vowel or monophthong, for example: near /nɪr/."
+                        "title": "Diphthongs (Vowel + 'r')",
+                        "content": [
+                            {
+                                "subtitle": "",
+                                "description": "Diphthongic transitions are preserved, for example: near /nɪər/."
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "The /ə/ sound often disappears to form a long vowel or monophthong, for example: near /nɪr/."
+                            }
+                        ]
                     }
                 ]
             },
@@ -532,19 +549,29 @@
                 "content": [
                     {
                         "title": "Collective Nouns",
-                        "description": "Use singular/plural (The team is/are winning)."
-                    },
-                    {
-                        "title": "",
-                        "description": "Use singular (The team is winning)."
+                        "content": [
+                            {
+                                "subtitle": "",
+                                "description": "Use singular/plural (The team is/are winning)."
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "Use singular (The team is winning)."
+                            }
+                        ]
                     },
                     {
                         "title": "Verbs",
-                        "description": "Use present perfect more (\"I've just eaten\")."
-                    },
-                    {
-                        "title": "",
-                        "description": "Use simple past tense (\"I just ate\")."
+                        "content": [
+                            {
+                                "subtitle": "",
+                                "description": "Use present perfect more (\"I've just eaten\")."
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "Use simple past tense (\"I just ate\")."
+                            }
+                        ]
                     }
                 ]
             },
@@ -553,60 +580,70 @@
                 "content": [
                     {
                         "title": "Word endings",
-                        "description": "Retains French roots: -our, -ise, -re, -ce (colour, organise, centre, defence)."
-                    },
-                    {
-                        "title": "",
-                        "description": "Simplified and differentiated spellings: -or, -ize, -er, -se (color, organize, center, defense)."
-                    },
-                    {
-                        "title": "Double consonants",
-                        "description": "Often doubles consonant in verbs when adding endings (travelling, cancelled)"
-                    },
-                    {
-                        "title": "",
-                        "description": "Usually uses a single consonant (traveling, canceled)."
-                    }
-                ]
-            },
-            {
-                "title": "VOCABULARY",
-                "content": [
-                    {
                         "content": [
-                            "autumn",
-                            "fall",
-                            "lift",
-                            "elevator",
-                            "football",
-                            "soccer",
-                            "crisps",
-                            "chips"
+                            {
+                                "subtitle": "",
+                                "description": "Retains French roots: -our, -ise, -re, -ce (colour, organise, centre, defence)."
+                            },
+                            {
+                                "subtitle": "",
+                                "description": "Simplified and differentiated spellings: -or, -ize, -er, -se (color, organize, center, defense)."
+                            }
                         ]
                     },
                     {
+                        "title": "Double consonants",
                         "content": [
-                            { "title": "Describe", "description": "" },
                             {
-                                "title": "",
-                                "description": "Completely different words"
+                                "subtitle": "",
+                                "description": "Often doubles consonant in verbs when adding endings (travelling, cancelled)"
                             },
                             {
-                                "title": "",
-                                "description": "Different terms for the same object"
-                            },
-                            {
-                                "title": "",
-                                "description": "Different meanings: In the United States, the word “football” means primarily American football, while \"soccer\" refers to the global round-ball sport."
-                            },
-                            {
-                                "title": "",
-                                "description": "In the US, \"chips\" are thin, crunchy, bagged snacks (British \"crisps\"), while in the UK, \"chips\" are thick-cut fried potatoes (American \"fries\")."
+                                "subtitle": "",
+                                "description": "Usually uses a single consonant (traveling, canceled)."
                             }
                         ]
                     }
                 ]
             }
-        ]
+        ],
+        "tableContent": {
+            "title": "VOCABULARY",
+            "content": [
+                {
+                    "content": [
+                        "autumn",
+                        "fall",
+                        "lift",
+                        "elevator",
+                        "football",
+                        "soccer",
+                        "crisps",
+                        "chips"
+                    ]
+                },
+                {
+                    "title": "Describe",
+                    "content": [
+                        {
+                            "subtitle": "",
+                            "description": "Completely different words"
+                        },
+                        {
+                            "subtitle": "",
+                            "description": "Different terms for the same object"
+                        },
+                        {
+                            "subtitle": "",
+                            "description": "Different meanings: In the United States, the word “football” means primarily American football, while \"soccer\" refers to the global round-ball sport."
+                        },
+                        {
+                            "subtitle": "",
+                            "description": "In the US, \"chips\" are thin, crunchy, bagged snacks (British \"crisps\"), while in the UK, \"chips\" are thick-cut fried potatoes (American \"fries\")."
+                        }
+                    ]
+                }
+            ]
+        }
     }
 }
