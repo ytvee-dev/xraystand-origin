@@ -63,3 +63,41 @@
   color: #1E3B8F;
 }
 
+@media (max-width: 480px) {
+  .card-with-image {
+    padding: 15px 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .card {
+    height: auto;
+    width: 100%;
+  }
+
+  .card-text h3 {
+    font-size: 20px;
+  }
+
+  .card-text p {
+    font-size: 15px;
+  }
+
+  .card-text {
+    padding: 0px;
+  }
+
+  .card-with-image {
+    padding: 24px 20px;
+  }
+
+  .card-image img {
+    padding: 10px;
+  }
+
+  .card-only-text {
+    padding: 24px 20px;
+  }
+
+}
+
