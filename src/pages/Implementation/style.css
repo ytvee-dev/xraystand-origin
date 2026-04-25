@@ -1,14 +1,10 @@
-.implementation-page {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    margin-inline: auto;
+.cards {
+  display: block;
+  justify-content: center; 
+  gap: 20px;
+  padding: 20px;
 }
 
-.left-card-wrapper {
-    background-color: #522F1B;
-}
-
-.right-card-wrapper {
-    background-color: #E6BB86;
+.card {
+    margin: 10px auto;
 }
