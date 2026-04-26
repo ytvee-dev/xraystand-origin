@@ -1,0 +1,69 @@
+{
+    "texturedBg": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776683839/cover_bg_1_1_vxzrdh.webp",
+    "coverSun": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776684048/sun_1_m9pltc.webp",
+    "winter": {
+        "logo": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776684180/winter_img_1_foezd8.webp",
+        "snowman": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776685030/snowman_3_rfubdd.webp",
+        "spruce": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776684877/spruce_ejbh95.webp",
+        "rowanBranch": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776684819/rowan_branch_1_x3odhx.webp",
+        "snowBear": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776684606/snow_beer_1_dec7hm.webp",
+        "snowflake": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776684295/snowflake_lcbl0d.webp",
+        "snowCards": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776685801/snow_card_3-_1__vlpz9i.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776685600/snow_card_2_3_jdhuil.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776685425/snowCard_1_d3pbxd.webp"
+        ],
+        "winterAnimals": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776685958/penguin-_1__1_eccssv.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776686084/snow_bear-_2__qcu4p0.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776686251/deer-_1__l5un5a.webp"
+        ]
+    },
+    "spring": {
+        "logo": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776686491/spring_1_zxvmv3.png",
+        "lion": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776686672/lion-_1__myhfso.webp",
+        "purpleLeaf": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776697239/purple_flowers-_2__wc0jhn.webp",
+        "greenLeaf": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776697366/green_flowers-_1__vxzxea.webp",
+        "yellowFlowers": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776697763/yellow_flowers_1_z4aww6.webp",
+        "yellowFlowersInPot": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776779116/yellow_flowers_in_pot_fmmkey.webp",
+        "flowerCards": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776698266/flower_1_sw8hm9.webp",
+        "springAnimals": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776686672/lion-_1__myhfso.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776697984/hedgehog_gvwxu4.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776698086/fox_1_xqjg0s.webp"
+        ]
+    },
+    "summer": {
+        "logo": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776775758/summer_3_ujyjze.webp",
+        "fox": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776699312/fox_mon7uw.webp",
+        "giraffe": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776699520/giraffe_avzmpc.webp",
+        "bee": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776699578/bee_lranug.webp",
+        "darkYellowButterfly": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776698713/yellow_butterfly_1_ymy7jx.webp",
+        "yellowButterfly": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776698878/light_yellow_butterfly_1_emscal.webp",
+        "lightPinkButterfly": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776699118/light_pink_butterfly_1_vww9lg.webp",
+        "pinkButterfly": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776699410/pink_butterfly_adogfk.webp",
+        "sun": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776699738/sun_dpdgcu.webp",
+        "summerAnimals": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776699818/elephant_dag0xl.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776699919/pink_fox_coraw4.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776699312/fox_mon7uw.webp"
+        ]
+    },
+    "autumn": {
+        "logo": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776700075/autumn_a5ch8k.webp",
+        "yellowLeaf": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776700544/yellow_leaf_tfnuyi.webp",
+        "greenLeaf": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776700317/green_leaf_efgqkf.webp",
+        "redLeaf": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776700178/red_leaf_rfrgar.webp",
+        "bear": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776700942/bear_uwyzke.webp",
+        "bird": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776700685/bird_glr8wn.webp",
+        "deer": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776779475/deer_xasvts.webp",
+        "umbrella": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776701264/umbrella_wg3k3g.webp",
+        "sweater": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776701588/sweater_n5d5it.webp",
+        "leaf": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776701396/leaf_v9zcs6.webp",
+        "autumnAnimals": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776701700/fox_btsxz1.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776701801/deer_iontwi.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1776701872/raccoon_ybjknc.webp"
+        ]
+    }
+}
