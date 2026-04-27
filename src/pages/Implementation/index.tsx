@@ -1,47 +1,42 @@
-import React from "react";
-import './style.css';
-import SoundCards, {type ISoundCard} from "@modules/KazMusInstruments/components/SoundCard";
-import * as path from "@modules/KazMusInstruments/locales/paths.json"
+import Card from "@modules/seasons/components/Card";
+import path from "@modules/fireSafety/locales/paths.json";
+import textContentRu from "@modules/seasons/locales/rus.json";
+import textContentKz from "@modules/seasons/locales/kaz.json";
+import { useLocaleContent } from "@hooks/useLocale";
+import "./style.css";
 
-const cards: ISoundCard[] = [
-    {
-        "title": "Домбра",
-        "description": "Главный символ казахской музыки — двухструнный инструмент с длинным грифом и чистым проникновенным тембром. Народная домбра — без ладов, концертная — с ладами. В кюях домбра передаёт легенды, события и настроение степи.",
-        "soundDescription": "Звучание: яркое, звонкое, выразительное.",
-        "img": path.pluckedInstruments.dombra
-    },
-    {
-        "title": "Жетыген",
-        "description": "Древний многострунный щипковый инструмент (от 7 до 23 струн), по форме напоминает гусли/цитру. В легенде каждая из первых 7 струн — память о сыновьях, каждая звучит по-особому.",
-        "soundDescription": "Звучание: яркое, звонкое, выразительное.",
-        "img": path.pluckedInstruments.jetigen
-    }
-]
+const SeasonPage = () => {
+    const textContent = useLocaleContent(textContentRu, textContentKz);
 
-
-const Implementation: React.FC = () => {
     return (
-        <div className={"implementation-page"}>
-            <div className="left-card-wrapper">
-                {cards.map(card => (
-                <SoundCards 
-                    key={card.title} 
-                    cardContent={card}
-                />
-            ))}
-            </div>
-            <div className="right-card-wrapper">
-                {cards.map(card => (
-                <SoundCards 
-                    key={card.title} 
-                    cardContent={card}
-                    theme="light"
-                    imgSide="right"
-                />
-            ))}
-            </div>
+        <div className="cards">
+            <Card
+                className="card"
+                season="spring"
+                title={textContent.springSection.content[0].subTitle}
+                description={textContent.springSection.content[0].description}
+            />
+
+            <Card
+                className="card"
+                season="winter"
+                reverse={true} 
+                subTitle={textContent.winterSection.content[0].subTitle}
+                description={textContent.winterSection.content[0].description}
+                imagePath={path.images.phone}
+            />
+
+            <Card
+                className="card"
+                season="summer"
+                reverse={false}
+                subTitle={textContent.summerSection.content[0].subTitle}
+                description={textContent.summerSection.content[0].description}
+                imagePath={path.images.call}
+            />
+
         </div>
     );
 };
 
-export default Implementation;
+export default SeasonPage;
