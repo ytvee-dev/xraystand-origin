@@ -1,0 +1,103 @@
+.card {
+  height: 195px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.card-with-image {
+  max-width: 628px;
+  padding: 20px 30px;
+}
+
+.card-only-text {
+  max-width: 467px;
+  text-align: center;
+}
+
+.card-text {
+  text-align: left;
+  padding: 48px 30px;
+}
+
+.card-reverse {
+  flex-direction: row-reverse;
+}
+
+.card-reverse .card-text {
+  text-align: left;
+}
+
+.card-text h3 {
+  font-size: 24px;
+}
+
+.card-text p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card-image img {
+  width: 80px;
+  height: auto;
+}
+
+.card-spring {
+  background-color: #FCF8FF;
+  color: #59168B;
+}
+
+.card-summer {
+  background-color: #EEFDF4;
+  color: #0D542B;
+}
+
+.card-autumn {
+  background-color: #FFF9F1;
+  color: #7E2A0C;
+}
+
+.card-winter {
+  background-color: #F0F7FF;
+  color: #1E3B8F;
+}
+
+@media (max-width: 480px) {
+  .card-with-image {
+    padding: 15px 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .card {
+    height: auto;
+    width: 100%;
+  }
+
+  .card-text h3 {
+    font-size: 20px;
+  }
+
+  .card-text p {
+    font-size: 15px;
+  }
+
+  .card-text {
+    padding: 0px;
+  }
+
+  .card-with-image {
+    padding: 24px 20px;
+  }
+
+  .card-image img {
+    padding: 10px;
+  }
+
+  .card-only-text {
+    padding: 24px 20px;
+  }
+
+}
+
