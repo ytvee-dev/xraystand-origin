@@ -50,7 +50,7 @@
     text-align: center;
 }
 
-@media screen and (width <= 390px) {
+@media (max-width: 390px) {
     .english-cover-section-content {
         flex-direction: column;
         margin-top: 3rem;
@@ -328,7 +328,7 @@
     }
 }
 
-@media screen and (390px < width <= 600px) {
+@media ((min-width: 390px) and (max-width: 600px)) {
     .english-cover-section-title {
         width: 100%;
         font-size: 4rem;
@@ -606,7 +606,7 @@
     }
 }
 
-@media screen and (600px < width <= 800px) {
+@media screen and ((min-width: 600px) and (max-width: 800px)) {
     .english-cover-section-title {
         width: 100%;
         font-size: 5rem;
@@ -840,7 +840,7 @@
     }
 }
 
-@media screen and (800px < width <= 1000px) {
+@media screen and ((min-width: 800px) and (max-width: 1000px)) {
     .english-cover-section-title {
         width: 100%;
         font-size: 6rem;
@@ -1025,7 +1025,7 @@
     }
 }
 
-@media screen and (1000px < width <= 1200px) {
+@media screen and ((min-width: 1000px) and (max-width: 1200px)) {
     .english-cover-section-title {
         margin-left: 2%;
     }
@@ -1106,7 +1106,7 @@
     }
 }
 
-@media screen and (1200px < width < 1400px) {
+@media screen and ((min-width: 1200px) and (max-width:  1400px)) {
     .english-cover-section-blocks-container {
         left: 10%;
     }
