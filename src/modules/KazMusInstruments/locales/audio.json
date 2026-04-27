@@ -1,6 +1,20 @@
 {
-    "firstSection": [],
-    "secondSection": [],
-    "thirdSection": [],
-    "fourthSection": []
+    "firstSection": [
+        "https://res.cloudinary.com/dy6zg8dhs/video/upload/v1777301473/dombyra_vuz9wv.mp3",
+        "https://res.cloudinary.com/dy6zg8dhs/video/upload/v1777301473/zhetigen_bpdvbb.mp3",
+        "https://res.cloudinary.com/dy6zg8dhs/video/upload/v1777301474/sheter_h1glpz.mp3"
+    ],
+    "secondSection": [
+        "https://res.cloudinary.com/dy6zg8dhs/video/upload/v1777301473/kobyz_bmnvdc.mp3",
+        "https://res.cloudinary.com/dy6zg8dhs/video/upload/v1777301474/nar_kobyz_vidoc6.mp3"
+    ],
+    "thirdSection": [
+        "https://res.cloudinary.com/dy6zg8dhs/video/upload/v1777301473/daulpaz_p5kuio.mp3",
+        "https://res.cloudinary.com/dy6zg8dhs/video/upload/v1777301474/shyn_lsfvwl.mp3",
+        "https://res.cloudinary.com/dy6zg8dhs/video/upload/v1777301473/asatayak_yiajq0.mp3"
+    ],
+    "fourthSection": [
+        "https://res.cloudinary.com/dy6zg8dhs/video/upload/v1777301474/sybyzgy_aqbyld.mp3",
+        "https://res.cloudinary.com/dy6zg8dhs/video/upload/v1777301473/kernei_mnfgfq.mp3"
+    ]
 }
