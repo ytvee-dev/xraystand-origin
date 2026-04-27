@@ -12,9 +12,7 @@ const EighthSection = ({
     return (
         <section className={className}>
             <div className="english-eighth-section-content">
-                <div className="english-eighth-section-header">
-                    <h1 className="english-section-title">{content.title}</h1>
-                </div>
+                <h1 className="english-section-title">{content.title}</h1>
 
                 <div className="english-eighth-section-blocks-container">
                     {content.content.map(
