@@ -21,11 +21,8 @@
     justify-content: center;
 }
 
-.english-eighth-section-header {
+.english-eighth-section .english-section-title {
     width: 50%;
-
-    display: flex;
-    flex-direction: column;
 
     margin-bottom: 2%;
 }
