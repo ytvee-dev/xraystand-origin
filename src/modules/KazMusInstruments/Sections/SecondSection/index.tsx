@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import * as paths from "@modules/KazMusInstruments/locales/paths.json";
-import * as audioPaths from "@modules/KazMusInstruments/locales/audio.json";
+import * as audioPaths from "@modules/KazMusInstruments/audios/audio.json";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";

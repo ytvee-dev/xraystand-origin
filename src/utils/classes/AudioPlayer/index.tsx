@@ -3,9 +3,7 @@ class AudioPlayer {
 
     static playAudio(src: string): Promise<void> {
         if (this.currentAudio) {
-            this.currentAudio.pause();
-            this.currentAudio.currentTime = 0;
-            this.currentAudio = null;
+            this.stopAudio();
         }
 
         const audio = new Audio(src);
@@ -18,6 +16,7 @@ class AudioPlayer {
     static stopAudio(): void {
         if (this.currentAudio) {
             this.currentAudio.pause();
+            this.currentAudio.currentTime = 0;
             this.currentAudio = null;
         }
     }

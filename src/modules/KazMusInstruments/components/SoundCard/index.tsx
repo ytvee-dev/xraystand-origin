@@ -12,7 +12,7 @@ export interface ISoundCard {
 
 interface ISoundCardsProps {
     cardContent: ISoundCard;
-    audioPath?: string;
+    audioPath: string;
     theme?: "dark" | "light";
     imgSide?: "left" | "right";
 }
@@ -42,9 +42,7 @@ const SoundCards = ({
     }
 
     const handlePlaySound = () => {
-        if (audioPath) {
-            AudioPlayer.playAudio(audioPath);
-        }
+        AudioPlayer.playAudio(audioPath);
     };
 
     return (
