@@ -1,22 +1,23 @@
 import type { ReactElement } from "react";
 import * as paths from "@modules/KazMusInstruments/locales/paths.json";
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import CardActionArea from '@mui/material/CardActionArea';
+import * as audioPaths from "@modules/KazMusInstruments/audios/audio.json";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import CardActionArea from "@mui/material/CardActionArea";
 import SoundCards from "@modules/KazMusInstruments/components/SoundCard";
 import { type kazMuzInstrumentProps } from "@modules/KazMusInstruments/types";
 
-const FourthSection = ({content}: kazMuzInstrumentProps): ReactElement => {
-    const topCards = content.content.map(item => ({
-        title: item.title
-    }))
+const FourthSection = ({ content }: kazMuzInstrumentProps): ReactElement => {
+    const topCards = content.content.map((item) => ({
+        title: item.title,
+    }));
 
     const images = [
         paths.windInstruments.sybyzgy,
-        paths.windInstruments.urmeliKerney
-    ]
+        paths.windInstruments.urmeliKerney,
+    ];
 
     return (
         <section className="music-instruments-section music-light">
@@ -35,12 +36,15 @@ const FourthSection = ({content}: kazMuzInstrumentProps): ReactElement => {
                         }}
                     >
                         <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                image={images[index]}
-                            />
+                            <CardMedia component="img" image={images[index]} />
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="div" fontSize={20} fontWeight={700}>
+                                <Typography
+                                    gutterBottom
+                                    variant="h5"
+                                    component="div"
+                                    fontSize={20}
+                                    fontWeight={700}
+                                >
                                     {item.title}
                                 </Typography>
                             </CardContent>
@@ -56,15 +60,16 @@ const FourthSection = ({content}: kazMuzInstrumentProps): ReactElement => {
                             title: item.title,
                             description: item.description,
                             soundDescription: item.soundDescription || "",
-                            img: images[index]
+                            img: images[index],
                         }}
                         imgSide="right"
                         theme="light"
+                        audioPath={audioPaths.fourthSection[index]}
                     />
                 ))}
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default FourthSection
+export default FourthSection;
