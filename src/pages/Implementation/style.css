@@ -1,4 +1,4 @@
-.cards {
+/* .cards {
   display: block;
   justify-content: center; 
   gap: 20px;
@@ -8,3 +8,11 @@
 .card {
     margin: 10px auto;
 }
+ */
+
+.cards {
+  background-color: #ff7c7c;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+ }
