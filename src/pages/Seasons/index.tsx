@@ -1,5 +1,6 @@
 import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/seasons/sections/CoverSection";
+import './style.css';
 
 const pageLayoutSX = {
     backgroundColor: "#FCF1EB",
@@ -12,11 +13,11 @@ const pageLayoutSX = {
 
 const MainLogo = () => {
     return (
-        <div className="kaz-music-logo">Времена года</div>
+        <div className="seasons-logo">Времена года</div>
     );
 };
 
-const KazMusic: React.FC = () => {
+const Seasons: React.FC = () => {
     // const textContent = useLocaleContent(contentRu, contentKz);
 
     return(
@@ -35,4 +36,4 @@ const KazMusic: React.FC = () => {
     );
 };
 
-export default KazMusic;
+export default Seasons;
