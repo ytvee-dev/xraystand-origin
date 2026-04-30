@@ -1,13 +1,13 @@
-import {type ReactElement, type ReactNode} from "react";
-import {useSelector} from "react-redux";
-import type {TRootState} from "@store/index";
-import Button from '@mui/material/Button';
-import DialogTitle from '@mui/material/DialogTitle';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import {Languages} from "@domains/Translate";
-import "./style.css"
+import { type ReactElement, type ReactNode } from "react";
+import { useSelector } from "react-redux";
+import type { TRootState } from "@store/index";
+import Button from "@mui/material/Button";
+import DialogTitle from "@mui/material/DialogTitle";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import { Languages } from "@domains/Translate";
+import "./style.css";
 
 export interface IFlexibleModal {
     modalHeader?: string;
@@ -16,9 +16,14 @@ export interface IFlexibleModal {
     children: ReactElement | ReactNode;
 }
 
-const FlexibleModal = ({children, modalHeader, isModalOpened, closeAction}: IFlexibleModal): ReactElement => {
+const FlexibleModal = ({
+    children,
+    modalHeader,
+    isModalOpened,
+    closeAction,
+}: IFlexibleModal): ReactNode => {
     const currentLocale: Languages = useSelector(
-        (state: TRootState) => state.locale.locale
+        (state: TRootState) => state.locale.locale,
     );
 
     const handleClose = () => {
@@ -26,11 +31,7 @@ const FlexibleModal = ({children, modalHeader, isModalOpened, closeAction}: IFle
     };
 
     return (
-        <Dialog
-            open={isModalOpened}
-            keepMounted
-            onClose={handleClose}
-        >
+        <Dialog open={isModalOpened} keepMounted transitionDuration={0}>
             {modalHeader && <DialogTitle>{modalHeader}</DialogTitle>}
             <DialogContent>{children}</DialogContent>
             <DialogActions>
