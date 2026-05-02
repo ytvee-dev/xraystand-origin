@@ -1,0 +1,66 @@
+.seasons-autumn-first-section {
+    width: 100vw;
+    margin-inline: auto;
+    position: relative;
+    height: 751px;
+}
+
+.seasons-autumn-textured-bg {
+    position: absolute;
+    z-index: 1;
+    filter: hue-rotate(200deg);
+    width: 100vw;
+    height: 100%;
+}
+
+.seasons-autumn-first-section-content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seasons-autumn-logo {
+    width: 135px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.seasons-autumn-first-section-content h1,
+.seasons-autumn-first-section-content > p {
+    font-size: 45px;
+    color: white;
+    font-family: Roboto;
+    max-width: 522px;
+    text-align: center;
+}
+
+.seasons-autumn-first-section-content h1 {
+    margin-bottom: 15px;
+}
+
+.seasons-autumn-first-section-content > p {
+    margin-bottom: 44px;
+}
+
+.seasons-autumn-first-section-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 968px;
+    gap: 8px 30px;
+    margin-bottom: 99px;
+}
+
+.seasons-autumn-first-section-cards {
+    padding-inline: 30px;
+    height: 125px;
+    width: 465px;
+    color: #7E2A0C;
+    border-radius: 50px;
+    background-color: #FFF9F1;
+}
