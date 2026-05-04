@@ -1,4 +1,4 @@
-type SeasonsCard = {
+export type SeasonsCard = {
     title: string,
     subTitle: string,
     description: string
