@@ -4,19 +4,7 @@
     position: relative;
     height: 751px;
     background-size: cover;
-}
-
-.seasons-autumn-textured-bg {
-    position: absolute;
-    z-index: 1;
-    filter: hue-rotate(200deg);
-    width: 100vw;
-    height: 100%;
-}
-
-.seasons-autumn-bg-img {
-    position: absolute;
-    z-index: 2;
+    overflow: hidden;
 }
 
 .seasons-autumn-yellow-leaf {
@@ -92,10 +80,121 @@
 .seasons-autumn-first-section-cards-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 990px;
+    width: fit-content;
     gap: 8px 30px;
     margin-bottom: 99px;
 }
 
-@media(max-width: )
+@media(min-width: 1920px) {
+    .seasons-autumn-yellow-leaf {
+        left: 17%;
+    }
+
+    .seasons-autumn-green-leaf {
+        left: 7%;
+    }
+
+    .seasons-autumn-red-leaf {
+        left: 12%;
+    }
+
+    .seasons-autumn-bird {
+        left: 83%;
+    }
+
+    .seasons-autumn-bear {
+        left: 60%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .seasons-autumn-first-section {
+        height: 1020px;
+    }
+
+    .seasons-autumn-yellow-leaf {
+        width: 100px;
+        height: 130px;
+        top: 5%;
+        left: 2%;
+    }
+
+    .seasons-autumn-green-leaf {
+        width: 150px;
+        height: 200px;
+        top: 25%;
+        left: 7%;
+    }
+
+    .seasons-autumn-bear {
+        width: 450px;
+        height: 445px;
+        top: 45%;
+        left: 50%;
+    }
+}
+
+@media(max-width: 680px) {
+    .seasons-autumn-green-leaf {
+        top: 14%;
+        left: 70%;
+    }
+
+    .seasons-autumn-bear,
+    .seasons-autumn-bird {
+        display: none;
+    }
+}
+
+@media(max-width: 520px) {
+    .seasons-autumn-first-section {
+        height: 890px;
+    }
+
+    .seasons-autumn-yellow-leaf {
+        width: 62px;
+        height: 80px;
+        top: 2%;
+        left: 80%;
+    }
+
+    .seasons-autumn-green-leaf {
+        height: 160px;
+        width: 140px;
+    }
+
+    .seasons-autumn-red-leaf {
+        height: 190px;
+        width: 210px;
+        top: 4%;
+        left: 2%;
+        transform: rotateZ(30deg);
+    }
+
+    .seasons-autumn-bear,
+    .seasons-autumn-bird {
+        display: none;
+    }
+
+    .seasons-autumn-logo {
+        width: 71px;
+        margin-bottom: 11px;
+    }
+
+    .seasons-autumn-first-section-content h2 {
+        font-size: 36px;
+        margin-bottom: 9px;
+    }
+
+    .seasons-autumn-first-section-content > p {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 480px) {
+    .seasons-autumn-red-leaf {
+        left: -20%;
+    }
+}

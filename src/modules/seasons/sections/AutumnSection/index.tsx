@@ -8,12 +8,12 @@ const AutumnSection = ({content}: SeasonsProps): ReactElement => {
     console.log(content.content)
     const cards = content.content;
     const firstSectionCards = cards.slice(0, 4);
-    const secondSectionCards = cards.slice(4, 8);
+    const secondSectionCards = cards.slice(5, 8);
 
     return (
         <section className="seasons-autumn-section">
             <FirstSection title={content.title} description={content.description} content={firstSectionCards}/>
-            <SecondSection title={secondSectionCards[0].title} cards={secondSectionCards}/>
+            <SecondSection title={content.content[4].title} cards={secondSectionCards}/>
         </section>
     );
 };

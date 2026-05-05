@@ -8,6 +8,7 @@ export interface ICardProps {
   reverse?: boolean;
   season?: "spring" | "summer" | "autumn" | "winter";
   className?: string;
+  height?: "min" | "max"
 }
 
 const Card = ({
@@ -18,11 +19,16 @@ const Card = ({
   reverse = false,
   season = "summer",
   className = "",
+  height = "max"
 }: ICardProps) => {
   const hasImage = !!imagePath;
 
   return (
-    <div className={`card card-${season} ${reverse ? "card-reverse" : ""} ${hasImage ? "card-with-image" : "card-only-text"} ${className}`}>
+    <div 
+      className={`card card-${season} ${reverse ? "card-reverse" : ""} 
+      ${hasImage ? "card-with-image" : "card-only-text"} ${className}
+      ${height}`}
+    >
       <div className="card-text">
         <h3>{title}</h3>
         <h3>{subTitle}</h3>

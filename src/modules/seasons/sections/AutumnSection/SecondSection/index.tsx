@@ -1,7 +1,7 @@
 import {type ReactElement} from "react";
 import * as paths from '@modules/seasons/locales/paths.json';
 import { type SeasonsCard } from "@modules/seasons/types";
-import Card from "@modules/fireSafety/components/Card";
+import Card from "@modules/seasons/components/Card";
 import "./style.css";
 
 interface ISecondSectionProps {
@@ -10,28 +10,23 @@ interface ISecondSectionProps {
 }
 
 const SecondSection = ({title, cards}: ISecondSectionProps): ReactElement => {
-    console.log(cards)
     return (
-        <div className="seasons-autumn-first-section">
+        <div className="seasons-autumn-second-section">
             <img src={paths.texturedBg} alt="" className="seasons-autumn-textured-bg"/>
-            <img src={paths.autumn.yellowLeaf} alt="" className="seasons-autumn-yellow-leaf seasons-autumn-bg-img"/>
-            <img src={paths.autumn.greenLeaf} alt="" className="seasons-autumn-green-leaf seasons-autumn-bg-img"/>
-            <img src={paths.autumn.redLeaf} alt="" className="seasons-autumn-red-leaf seasons-autumn-bg-img"/>
-            <img src={paths.autumn.bird} alt="" className="seasons-autumn-bird seasons-autumn-bg-img"/>
-            <img src={paths.autumn.bear} alt="" className="seasons-autumn-bear seasons-autumn-bg-img"/>
+            <img src={paths.autumn.deer} alt="" className="seasons-autumn-deer seasons-autumn-bg-img"/>
+            <img src={paths.autumn.umbrella} alt="" className="seasons-autumn-umbrella seasons-autumn-bg-img"/>
 
-            <div className="seasons-autumn-first-section-content">
+            <div className="seasons-autumn-second-section-content">
                 <p>{title}</p>
 
-                <div className="seasons-autumn-first-section-cards-wrapper">
-                    {cards.map((card) => (
+                <div className="seasons-autumn-second-section-cards-wrapper">
+                    {cards.map((card, index) => (
                         <Card 
                             title={card.subTitle}
                             description={card.description}
-                            flexDirection="column"
-                            className="seasons-autumn-first-section-card"
                             key={card.subTitle}
-                            style={{color: "#7E2A0C"}}
+                            imagePath={paths.autumn.autumnAnimals[index]}
+                            reverse={index % 2 == 1 ? false : true}
                         />
                     ))}
                 </div>

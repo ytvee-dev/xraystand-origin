@@ -1,0 +1,55 @@
+.seasons-autumn-second-section {
+    width: 100vw;
+    margin-inline: auto;
+    position: relative;
+    height: 850px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.seasons-autumn-deer {
+    position: relative;
+    z-index: 3 !important;
+    height: 740px;
+    width: 605px;
+    bottom: 0;
+    left: -8%;
+}
+
+.seasons-autumn-umbrella {
+    height: 430px;
+    width: 417px;
+    top: 30%;
+    left: 78%
+}
+
+.seasons-autumn-second-section-content {
+    position: relative;
+    z-index: 2;
+}
+
+.seasons-autumn-second-section-content > p {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin-top: 74px;
+    margin-bottom: 39px;
+}
+
+.seasons-autumn-second-section-cards-wrapper {
+    margin-inline: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media(min-width: 1920px) {
+    .seasons-autumn-deer {
+        left: 10%;
+    }
+
+    .seasons-autumn-umbrella {
+        left: 70%;
+    }
+}

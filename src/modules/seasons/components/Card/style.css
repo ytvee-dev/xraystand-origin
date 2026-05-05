@@ -1,5 +1,4 @@
 .card {
-  height: 195px;
   display: flex;
   align-items: center;
   border-radius: 50px;
@@ -14,6 +13,14 @@
 .card-only-text {
   max-width: 467px;
   text-align: center;
+}
+
+.max {
+  height: 195px;
+}
+
+.min {
+  height: 125px;
 }
 
 .card-text {
@@ -39,7 +46,7 @@
 }
 
 .card-image img {
-  width: 80px;
+  width: 150px;
   height: auto;
 }
 
@@ -100,4 +107,3 @@
   }
 
 }
-

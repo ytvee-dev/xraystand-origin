@@ -2,14 +2,16 @@
     background: linear-gradient(135deg, #ff9631 0%, #ffcc73 100%);
 }
 
-/* .seasons-autumn-textured-bg {
+.seasons-autumn-textured-bg {
     position: absolute;
     z-index: 1;
     filter: hue-rotate(200deg);
     width: 100vw;
+    height: 100%;
+    object-fit: cover;
 }
 
-.seasons-autumn-sections {
+.seasons-autumn-bg-img {
     position: absolute;
     z-index: 2;
-} */
+}

@@ -7,6 +7,7 @@ import "./style.css";
 
 const FirstSection = ({title, description, content}: SeasonContent): ReactElement => {
     console.log(content)
+
     return (
         <div className="seasons-autumn-first-section">
             <img src={paths.texturedBg} alt="" className="seasons-autumn-textured-bg"/>
@@ -28,6 +29,7 @@ const FirstSection = ({title, description, content}: SeasonContent): ReactElemen
                             description={card.description}
                             season="autumn"
                             key={card.subTitle}
+                            height="min"
                         />
                     ))}
                 </div>
