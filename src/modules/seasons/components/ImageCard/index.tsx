@@ -1,14 +1,16 @@
-import './style.css';
+import "./style.css";
 
 export interface IImageCardProps {
-  title: string;
-  description: string;
-  imagePath: string;
-  season?: 'spring' | 'summer' | 'autumn' | 'winter';
-  className?: string;
+    id?: string;
+    title: string;
+    description: string;
+    imagePath: string;
+    season?: "spring" | "summer" | "autumn" | "winter";
+    className?: string;
 }
 
 const ImageCard = ({
+    id,
     title,
     description,
     imagePath,
@@ -16,7 +18,10 @@ const ImageCard = ({
     className = "",
 }: IImageCardProps) => {
     return (
-        <div className={`image-card ${season ? `image-card-${season}` : ''} ${className}`}>
+        <div
+            id={id ?? ""}
+            className={`image-card ${season ? `image-card-${season}` : ""} ${className}`}
+        >
             <div className="image-card-image">
                 <img src={imagePath} alt="" />
             </div>
@@ -26,6 +31,6 @@ const ImageCard = ({
             </div>
         </div>
     );
-}
+};
 
 export default ImageCard;

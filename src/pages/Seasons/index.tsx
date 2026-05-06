@@ -5,6 +5,7 @@ import * as contentRu from "@modules/seasons/locales/rus.json";
 import * as contentKz from "@modules/seasons/locales/kaz.json";
 import CoverSection from "@modules/seasons/sections/CoverSection";
 import FifthSection from "@modules/seasons/sections/FifthSection";
+import SixthSection from "@modules/seasons/sections/SixthSection";
 import FourthSection from "@modules/seasons/sections/FourthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
@@ -55,6 +56,10 @@ const Seasons: React.FC = () => {
                 <FifthSection
                     className="seasons-fifth-section"
                     content={textContent.springSection.fifthSection}
+                />
+                <SixthSection
+                    className="seasons-sixth-section"
+                    content={textContent.springSection.sixthSection.content}
                 />
             </BrightnessLayout>
         </div>
