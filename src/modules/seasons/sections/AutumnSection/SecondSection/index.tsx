@@ -11,13 +11,15 @@ interface ISecondSectionProps {
 
 const SecondSection = ({title, cards}: ISecondSectionProps): ReactElement => {
     return (
-        <div className="seasons-autumn-second-section">
+        <div className="seasons-autumn-section">
             <img src={paths.texturedBg} alt="" className="seasons-autumn-textured-bg"/>
             <img src={paths.autumn.deer} alt="" className="seasons-autumn-deer seasons-autumn-bg-img"/>
             <img src={paths.autumn.umbrella} alt="" className="seasons-autumn-umbrella seasons-autumn-bg-img"/>
+            <img src={paths.autumn.greenLeaf} alt="" className="seasons-autumn-second-green-leaf seasons-autumn-bg-img"/>
+            <img src={paths.autumn.yellowLeaf} alt="" className="seasons-autumn-second-yellow-leaf seasons-autumn-bg-img"/>
 
-            <div className="seasons-autumn-second-section-content">
-                <p>{title}</p>
+            <div className="seasons-autumn-second-section-content seasons-autumn-section-content">
+                <p className="seasons-autumn-subtitle">{title}</p>
 
                 <div className="seasons-autumn-second-section-cards-wrapper">
                     {cards.map((card, index) => (
@@ -27,6 +29,7 @@ const SecondSection = ({title, cards}: ISecondSectionProps): ReactElement => {
                             key={card.subTitle}
                             imagePath={paths.autumn.autumnAnimals[index]}
                             reverse={index % 2 == 1 ? false : true}
+                            height="fit-content"
                         />
                     ))}
                 </div>

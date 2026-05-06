@@ -1,7 +1,8 @@
 export type SeasonsCard = {
     title: string,
     subTitle: string,
-    description: string
+    description: string,
+    securityMeasures?: string
 }
 
 export type SeasonContent = {

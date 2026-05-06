@@ -1,12 +1,3 @@
-.seasons-autumn-first-section {
-    width: 100vw;
-    margin-inline: auto;
-    position: relative;
-    height: 751px;
-    background-size: cover;
-    overflow: hidden;
-}
-
 .seasons-autumn-yellow-leaf {
     width: 113px;
     height: 154px;
@@ -43,38 +34,14 @@
     left: 65%;
 }
 
-.seasons-autumn-first-section-content {
-    position: relative;
-    z-index: 5;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .seasons-autumn-logo {
     width: 135px;
     margin-top: 25px;
     margin-bottom: 15px;
 }
 
-.seasons-autumn-first-section-content h2,
-.seasons-autumn-first-section-content > p {
-    font-size: 45px;
-    color: white;
-    font-family: Roboto;
-    max-width: 522px;
-    text-align: center;
-}
-
-.seasons-autumn-first-section-content h2 {
+.seasons-autumn-title {
     margin-bottom: 15px;
-}
-
-.seasons-autumn-first-section-content > p {
-    margin-bottom: 44px;
 }
 
 .seasons-autumn-first-section-cards-wrapper {
@@ -110,10 +77,6 @@
 }
 
 @media(max-width: 1024px) {
-    .seasons-autumn-first-section {
-        height: 1020px;
-    }
-
     .seasons-autumn-yellow-leaf {
         width: 100px;
         height: 130px;
@@ -146,13 +109,15 @@
     .seasons-autumn-bird {
         display: none;
     }
+
+    .seasons-autumn-title {
+        font-size: 36px;
+        margin-bottom: 9px;
+    }
 }
 
-@media(max-width: 520px) {
-    .seasons-autumn-first-section {
-        height: 890px;
-    }
 
+@media(max-width: 520px) {
     .seasons-autumn-yellow-leaf {
         width: 62px;
         height: 80px;
@@ -181,15 +146,6 @@
     .seasons-autumn-logo {
         width: 71px;
         margin-bottom: 11px;
-    }
-
-    .seasons-autumn-first-section-content h2 {
-        font-size: 36px;
-        margin-bottom: 9px;
-    }
-
-    .seasons-autumn-first-section-content > p {
-        font-size: 30px;
     }
 }
 

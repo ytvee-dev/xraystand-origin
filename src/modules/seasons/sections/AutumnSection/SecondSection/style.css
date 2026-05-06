@@ -1,12 +1,3 @@
-.seasons-autumn-second-section {
-    width: 100vw;
-    margin-inline: auto;
-    position: relative;
-    height: 850px;
-    background-size: cover;
-    overflow: hidden;
-}
-
 .seasons-autumn-deer {
     position: relative;
     z-index: 3 !important;
@@ -20,19 +11,25 @@
     height: 430px;
     width: 417px;
     top: 30%;
-    left: 78%
+    left: 78%;
 }
 
-.seasons-autumn-second-section-content {
-    position: relative;
-    z-index: 2;
+.seasons-autumn-second-green-leaf {
+    width: 120px;
+    top: 5%;
+    left: 9%;
+    transform: rotateZ(40deg);
+    display: none;
 }
 
-.seasons-autumn-second-section-content > p {
-    font-size: 45px;
-    color: white;
-    text-align: center;
-    margin-top: 74px;
+.seasons-autumn-second-yellow-leaf {
+    width: 100px;
+    top: 75%;
+    left: 1%;
+    display: none;
+}
+
+.seasons-autumn-second-section-content .seasons-autumn-subtitle {
     margin-bottom: 39px;
 }
 
@@ -42,6 +39,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-bottom: 90px;
 }
 
 @media(min-width: 1920px) {
@@ -51,5 +49,54 @@
 
     .seasons-autumn-umbrella {
         left: 70%;
+    }
+}
+
+@media(max-width: 1250px) {
+    .seasons-autumn-deer {
+        height: 450px;
+        width: 380px;
+    }
+
+    .seasons-autumn-second-green-leaf {
+        display: block;
+        transform: rotateZ(0);
+    }
+}
+
+@media(max-width: 1000px) {
+    .seasons-autumn-deer {
+        display: none;
+    }
+
+    .seasons-autumn-umbrella {
+        height: 250px;
+        width: 217px;
+        top: 7%;
+    }
+
+    .seasons-autumn-second-yellow-leaf {
+        display: block;
+    }
+}
+
+@media(max-width: 680px) {
+    .seasons-autumn-umbrella {
+        height: 200px;
+        width: 175px;
+        top: 0;
+    }
+
+    .seasons-autumn-second-section-cards-wrapper {
+        padding: 10px;
+    }
+}
+
+@media(max-width: 460px) {
+    .seasons-autumn-second-green-leaf {
+        height: 99px;
+        width: 73px;
+        top: 5%;
+        left: -5%;
     }
 }

@@ -8,7 +8,7 @@ export interface ICardProps {
   reverse?: boolean;
   season?: "spring" | "summer" | "autumn" | "winter";
   className?: string;
-  height?: "min" | "max"
+  height?: "min" | "max" | "fit-content"
 }
 
 const Card = ({

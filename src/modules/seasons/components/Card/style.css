@@ -15,14 +15,17 @@
   text-align: center;
 }
 
-.max {
-  height: 195px;
-}
-
 .min {
   height: 125px;
 }
 
+.max {
+  height: 195px;
+}
+
+.fit-content {
+  height: fit-content;
+}
 .card-text {
   text-align: left;
   padding: 48px 30px;
