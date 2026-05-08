@@ -148,3 +148,29 @@
     top: 609px;
     left: 347px;
 }
+
+@media (max-width: 1024px) {
+    .seasons-winter-second-snowflake-16 {
+        width: 80px;
+        height: 80px;
+        top: 200px;
+        left: 300px;
+    }
+
+    .seasons-winter-romanBranch {
+        width: 340px;
+        height: 240px;
+        left: -20px;
+        top: 20px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .seasons-winter-romanBranch {
+        width: 180px;
+        height: 190px;
+        left: -20px;
+        top: 5px;
+    }
+}

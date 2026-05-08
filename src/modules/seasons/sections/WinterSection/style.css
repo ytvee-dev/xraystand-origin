@@ -54,16 +54,27 @@
     background-color: #65ACFC;
 }
 
+@media (max-width: 425px) {
+    .seasons-winter-title{
+        font-size: 35px;
+    }
+
+    .seasons-winter-subtitle {
+        font-size: 30px;
+        width: 270px;
+    }
+}
+
+
 @media (max-width: 320px) {
 
     .seasons-winter-title{
-    font-size: 36px;
+        font-size: 36px;
     }
 
     .seasons-winter-subtitle {
         font-size: 28px;
         width: 270px;
-        font-weight: 700;
     }
 
     .seasons-winter-logo {

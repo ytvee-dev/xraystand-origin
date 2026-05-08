@@ -2,6 +2,7 @@ import { type ReactElement } from "react";
 import * as paths from "@modules/seasons/locales/paths.json";
 import ImageCard from "@modules/seasons/components/ImageCard";
 import DSNotification from "@components/common/DSNotification";
+import snowflakeIcon from "../../../../../../public/assets/icons/logo/snowflake.svg";
 import "./style.css";
 
 interface CardContent {
@@ -21,6 +22,7 @@ interface ThirdSectionSectionProps {
 const ThirdSection = ({ title, secondTitle, cards }: ThirdSectionSectionProps): ReactElement => {
     const imageCards = cards.slice(9, 12);
     const securityMeasuresCards = cards.slice(13);
+
     return (
         <div className="seasons-winter-section-container">
 
@@ -69,16 +71,23 @@ const ThirdSection = ({ title, secondTitle, cards }: ThirdSectionSectionProps): 
                             type="info"
                             backgroundColor="#085FB9"
                             textColor="#FFFFFF"
-                            iconName={paths.winter.snowflake}
+                            iconName="snowflake"
+                            iconColor="#FFFFFF"
                             iconHeight="41"
                             iconWidth="40"
                             borderRadius="50px"
-                            padding="24px"
+                            padding="24px 25px"
                             borderColor="none"
                             fontSize="24px"
+                            alertStyle={{
+                                fontSize: "24px",
+                                letterSpacing: "0px",
+                                fontWeight: "700",
+                            }}
                         />
                     ))}
-                    
+
+
                 </div>
 
             </div>

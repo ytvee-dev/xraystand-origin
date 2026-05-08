@@ -9,20 +9,34 @@
     margin-bottom: 80px;
 }
 
+.winter-third-card {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
 .seasons-winter-third-subtitle {
     margin-top: 40px;
 }
 
-.seasons-winter-third-subtitle2{
+.seasons-winter-third-subtitle2 {
     margin-bottom: 35px;
 }
 
 .seasons-winter-third-section-cards {
     display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 586px);
     gap: 15px 25px;
     max-width: 100%;
     margin-bottom: 28px;
+}
+
+.winter-third-card {
+    height: 100px !important;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .seasons-winter-third-section-card {
@@ -105,4 +119,105 @@
     height: 89px;
     top: 510px;
     left: -10px;
+}
+
+@media (max-width: 1024px) {
+    .seasons-winter-third-section-cards {
+        grid-template-columns: repeat(2, 480px);
+        justify-content: center;
+    }
+
+    .winter-third-card p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seasons-winter-third-section-image-cards {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+     .seasons-winter-third-section-cards {
+        grid-template-columns: repeat(1, 480px);
+        justify-items: center;
+    }
+
+    .seasons-winter-third-snowflake-1 {
+        width: 26px;
+        height: 27px;
+        top: 25px;
+        left: 40px;
+    }
+
+    .seasons-winter-third-snowflake-2 {
+        width: 39px;
+        height: 41px;
+        top: 122px;
+        left: 19px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .seasons-winter-third-section-image-cards {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+     .seasons-winter-third-section-cards {
+        grid-template-columns: repeat(1, 420px);
+    }
+}
+
+@media (max-width:375px) {
+    .seasons-winter-third-section-cards {
+        grid-template-columns: repeat(1, 365px);
+        padding: 0px;
+    }
+}
+
+@media (max-width:320px) {
+    .seasons-winter-third-snowflake-1 {
+        width: 80px;
+        height: 83px;
+        top: -5px;
+        left: 267px;
+    }
+
+    .seasons-winter-third-section-cards {
+        grid-template-columns: repeat(1, 320px);
+    }
+
+    .winter-third-card p {
+        font-size: 18px;
+    }
+
+    .seasons-winter-third-snowflake-1 {
+        width: 26px;
+        height: 27px;
+        top: 10px;
+        left: 40px;
+    }
+
+    .seasons-winter-third-snowflake-2 {
+        width: 39px;
+        height: 41px;
+        top: 122px;
+        left: 19px;
+    }
+
+    .seasons-winter-third-snowflake-7 {
+        width: 90px;
+        height: 90px;
+        top: 330px;
+        left: -10px;
+    }
+
+    .seasons-winter-third-snowflake-10 {
+        width: 50px;
+        height: 60px;
+        top: 550px;
+        left: -30px;
+    }
 }

@@ -1,3 +1,7 @@
+.seasons-winter-section-container {
+    padding-bottom: 40px;
+}
+
 .seasons-winter-bear {
     bottom: 35px;
     left: 63px;
@@ -46,15 +50,96 @@
     margin: 20px 0px 108px 0px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     .seasons-winter-bear {
-    top: 990px;
-    left: 60px;
-    width: 239px;
-    z-index:3;
+        top: 800px;
+        left: 10px;
+        width: 300px;
+        z-index: 2;
+    }
+
+    .seasons-winter-first-snowflake-4 {
+        width: 68px;
+        top: 80px;
+        left: 580px;
+    }
+
+    .seasons-winter-first-snowflake-3 {
+        width: 26px;
+        height: 26px;
+        top: 205px;
+        left: 660px;
+    }
+
+    .seasons-winter-first-snowflake-2 {
+        width: 40px;
+        height: 41px;
+        top: 175px;
+        left: 80px;
+    }
+
+    .seasons-winter-first-snowflake-1 {
+        width: 26px;
+        height: 26px;
+        top: 80px;
+        left: 80px;
+    }
 }
 
-    .seasons-winter-first-snowflake-4{
+@media (max-width: 425px) {
+    .seasons-winter-bear {
+        top: 870px;
+        left: 150px;
+        width: 210px;
+        z-index: 3;
+    }
+
+    .seasons-winter-first-snowflake-4 {
+        width: 68px;
+        top: 24px;
+        left: 280px;
+    }
+
+    .seasons-winter-first-snowflake-3 {
+        width: 26px;
+        height: 26px;
+        top: 140px;
+        left: 300px;
+    }
+
+    .seasons-winter-first-snowflake-2 {
+        width: 40px;
+        height: 41px;
+        top: 150px;
+        left: 50px;
+    }
+
+    .seasons-winter-first-snowflake-1 {
+        width: 26px;
+        height: 26px;
+        top: 50px;
+        left: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .seasons-winter-bear {
+        top: 910px;
+        left: 100px;
+        width: 190px;
+        z-index: 3;
+    }
+}
+
+@media (max-width: 320px) {
+    .seasons-winter-bear {
+        top: 950px;
+        left: 60px;
+        width: 210px;
+        z-index: 3;
+    }
+
+    .seasons-winter-first-snowflake-4 {
         width: 68px;
         top: 24px;
         left: 220px;
