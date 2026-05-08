@@ -46,6 +46,7 @@
 
 .seasons-fourth-section-card {
     z-index: 2;
+    max-width: none;
 }
 
 .seasons-fourth-section-logo {

@@ -27,10 +27,10 @@
     font-size: 16px;
 }
 
-/* .image-card-spring {
+.image-card-spring .image-card-image img {
     width: 540px;
     height: 530px;
-} */
+}
 
 .image-card-summer .image-card-image img {
     width: 474px;
@@ -94,10 +94,10 @@
 }
 
 @media (max-width: 1267px) {
-    /* .image-card-spring  {
+    .image-card-spring .image-card-image img {
         width: 500px;
         height: 500px;
-    } */
+    }
 
     .image-card-summer .image-card-image img {
         width: 400px;
@@ -116,10 +116,10 @@
 }
 
 @media (max-width: 1200px) {
-    /* .image-card-spring  {
+    .image-card-spring .image-card-image img {
         width: 480px;
         height: 480px;
-    } */
+    }
 
     .image-card-summer .image-card-image img {
         width: 370px;
@@ -138,10 +138,10 @@
 }
 
 @media (max-width: 320px) {
-    /* .image-card-spring  {
+    .image-card-spring .image-card-image img {
         width: 370px;
         height: 380px;
-    } */
+    }
 
     .image-card-summer .image-card-image img {
         width: 320px;

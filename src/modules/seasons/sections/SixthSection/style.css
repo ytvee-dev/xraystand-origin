@@ -15,8 +15,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    gap: 2rem;
 }
 
 .seasons-sixth-section-first-part .seasons-section-description {
@@ -85,15 +83,6 @@
     position: relative;
 }
 
-.seasons-sixth-section-card {
-    width: 35%;
-}
-
-.seasons-sixth-section-card .image-card-image {
-    width: 100%;
-    height: 100%;
-}
-
 .seasons-sixth-section-notification-block {
     width: 35% !important;
     z-index: 2;
@@ -104,11 +93,9 @@
 }
 
 #seasons-sixth-section-card-0 {
-    position: relative;
     left: 12%;
 }
 
 #seasons-sixth-section-card-2 {
-    position: relative;
     right: 10%;
 }
