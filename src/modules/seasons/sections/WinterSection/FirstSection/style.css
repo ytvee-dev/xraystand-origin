@@ -1,0 +1,83 @@
+.seasons-winter-bear {
+    bottom: 35px;
+    left: 63px;
+    width: 412px;
+    z-index: 1;
+}
+
+.seasons-winter-first-subtitle,
+.seasons-winter-first-title {
+    width: 450px;
+}
+
+.seasons-winter-first-snowflake-1 {
+    top: 187px;
+    left: 1144px;
+    width: 27px;
+}
+
+.seasons-winter-first-snowflake-2 {
+    top: 241px;
+    left: 1305px;
+    width: 68px;
+    height: 70px;
+}
+
+.seasons-winter-first-snowflake-3 {
+    top: 511px;
+    left: 1209px;
+    width: 40px;
+}
+
+.seasons-winter-first-snowflake-4 {
+    top: 703px;
+    left: 1193px;
+    width: 106px;
+}
+
+.seasons-winter-first-section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 8px;
+    max-width: 968px;
+    margin: 20px 0px 108px 0px;
+}
+
+@media (max-width: 320px) {
+    .seasons-winter-bear {
+    top: 990px;
+    left: 60px;
+    width: 239px;
+    z-index:3;
+}
+
+    .seasons-winter-first-snowflake-4{
+        width: 68px;
+        top: 24px;
+        left: 220px;
+    }
+
+    .seasons-winter-first-snowflake-3 {
+        width: 26px;
+        height: 26px;
+        top: 185px;
+        left: 280px;
+    }
+
+    .seasons-winter-first-snowflake-2 {
+        width: 40px;
+        height: 41px;
+        top: 175px;
+        left: 10px;
+    }
+
+    .seasons-winter-first-snowflake-1 {
+        width: 26px;
+        height: 26px;
+        top: 80px;
+        left: 26px;
+    }
+}

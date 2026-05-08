@@ -1,6 +1,10 @@
 import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/seasons/sections/CoverSection";
+import WinterSection from "@modules/seasons/sections/WinterSection";
 import './style.css';
+import { useLocaleContent } from "@hooks/useLocale";
+import textContentRu from "@modules/seasons/locales/rus.json";
+import textContentKz from "@modules/seasons/locales/kaz.json";
 
 const pageLayoutSX = {
     backgroundColor: "#FCF1EB",
@@ -18,7 +22,7 @@ const MainLogo = () => {
 };
 
 const Seasons: React.FC = () => {
-    // const textContent = useLocaleContent(contentRu, contentKz);
+    const textContent = useLocaleContent(textContentRu, textContentKz);
 
     return(
        <div className="seasons-container">
@@ -31,6 +35,7 @@ const Seasons: React.FC = () => {
             languageSwitcherClassName="seasons-switcher"
             >
                 <CoverSection />
+                <WinterSection content={textContent.winterSection}/>
             </BrightnessLayout>
        </div>
     );

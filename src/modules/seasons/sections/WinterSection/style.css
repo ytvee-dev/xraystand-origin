@@ -1,0 +1,73 @@
+.seasons-winter-logo {
+    position: relative;
+    width: 98px;
+    height: 98px;
+    display: block;
+    margin: 52px auto 11px;
+    z-index: 3;
+}
+
+.seasons-winter-title,
+.seasons-winter-subtitle {
+    color: #ffff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.seasons-winter-title {
+    font-weight: 700;
+}
+
+.seasons-winter-subtitle {
+    font-weight: 400;
+}
+
+.seasons-winter-section-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.seasons-winter-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+
+.seasons-winter-bg-image,
+.seasons-winter-texture-bg {
+    position: absolute;
+}
+
+.seasons-winter-texture-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    background-color: #65ACFC;
+}
+
+@media (max-width: 320px) {
+
+    .seasons-winter-title{
+    font-size: 36px;
+    }
+
+    .seasons-winter-subtitle {
+        font-size: 28px;
+        width: 270px;
+        font-weight: 700;
+    }
+
+    .seasons-winter-logo {
+        width: 71px;
+        height: 71px;
+    }
+}
