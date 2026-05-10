@@ -2,7 +2,7 @@ import { type ReactElement } from "react";
 import * as paths from "@modules/seasons/locales/paths.json";
 import ImageCard from "@modules/seasons/components/ImageCard";
 import DSNotification from "@components/common/DSNotification";
-import snowflakeIcon from "../../../../../../public/assets/icons/logo/snowflake.svg";
+// import snowflakeIcon from "../../../../../../public/assets/icons/logo/snowflake.svg";
 import "./style.css";
 
 interface CardContent {
@@ -41,9 +41,7 @@ const ThirdSection = ({ title, secondTitle, cards }: ThirdSectionSectionProps): 
             <img className="seasons-winter-third-snowman seasons-winter-bg-image" src={paths.winter.snowman} alt="" />
 
             <div className="seasons-winter-first-section-content seasons-winter-section-content">
-
                 <h2 className="seasons-winter-subtitle seasons-winter-third-subtitle">{title}</h2>
-
                 <div className="seasons-winter-third-section-image-cards">
                     {imageCards.map((card, index) => (
                         <ImageCard
@@ -72,24 +70,20 @@ const ThirdSection = ({ title, secondTitle, cards }: ThirdSectionSectionProps): 
                             backgroundColor="#085FB9"
                             textColor="#FFFFFF"
                             iconName="snowflake"
-                            iconColor="#FFFFFF"
                             iconHeight="41"
                             iconWidth="40"
                             borderRadius="50px"
                             padding="24px 25px"
                             borderColor="none"
                             fontSize="24px"
+                            cardGap="20px"
                             alertStyle={{
-                                fontSize: "24px",
                                 letterSpacing: "0px",
                                 fontWeight: "700",
                             }}
                         />
                     ))}
-
-
                 </div>
-
             </div>
         </div>
     );
