@@ -2,7 +2,6 @@ import { type ReactElement } from "react";
 import * as paths from "@modules/seasons/locales/paths.json";
 import ImageCard from "@modules/seasons/components/ImageCard";
 import DSNotification from "@components/common/DSNotification";
-// import snowflakeIcon from "../../../../../../public/assets/icons/logo/snowflake.svg";
 import "./style.css";
 
 interface CardContent {

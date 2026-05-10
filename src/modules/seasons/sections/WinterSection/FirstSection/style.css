@@ -3,8 +3,8 @@
 }
 
 .seasons-winter-bear {
-    bottom: 35px;
-    left: 63px;
+    bottom: 4%;
+    left: 4%;
     width: 412px;
     z-index: 1;
 }
@@ -15,27 +15,27 @@
 }
 
 .seasons-winter-first-snowflake-1 {
-    top: 187px;
-    left: 1144px;
+    top: 13%;
+    left: 79%;
     width: 27px;
 }
 
 .seasons-winter-first-snowflake-2 {
-    top: 241px;
-    left: 1305px;
+    top: 17%;
+    left: 90%;
     width: 68px;
     height: 70px;
 }
 
 .seasons-winter-first-snowflake-3 {
-    top: 511px;
-    left: 1209px;
+    top: 36%;
+    left: 84%;
     width: 40px;
 }
 
 .seasons-winter-first-snowflake-4 {
-    top: 703px;
-    left: 1193px;
+    top: 50%;
+    left: 83%;
     width: 106px;
 }
 
@@ -50,82 +50,91 @@
     margin: 20px 0px 108px 0px;
 }
 
+@media (max-width:1024px) {
+    .seasons-winter-bear {
+        width: 230px;
+        z-index: 3;
+        top: 75%;
+    }
+}
+
+
 @media (max-width: 768px) {
     .seasons-winter-bear {
-        top: 800px;
-        left: 10px;
+        top: 72%;
+        left: 2%;
         width: 300px;
         z-index: 2;
     }
 
     .seasons-winter-first-snowflake-4 {
         width: 68px;
-        top: 80px;
-        left: 580px;
+        top: 7%;
+        left: 76%;
     }
 
     .seasons-winter-first-snowflake-3 {
         width: 26px;
         height: 26px;
-        top: 205px;
-        left: 660px;
+        top: 18%;
+        left: 86%;
     }
 
     .seasons-winter-first-snowflake-2 {
         width: 40px;
         height: 41px;
-        top: 175px;
-        left: 80px;
+        top: 15%;
+        left: 10%;
     }
 
     .seasons-winter-first-snowflake-1 {
         width: 26px;
         height: 26px;
-        top: 80px;
-        left: 80px;
+        top: 7%;
+        left: 10%;
     }
 }
 
 @media (max-width: 425px) {
     .seasons-winter-bear {
-        top: 870px;
-        left: 150px;
+        top: 81%;
+        left: 35%;
         width: 210px;
         z-index: 3;
     }
 
     .seasons-winter-first-snowflake-4 {
         width: 68px;
-        top: 24px;
-        left: 280px;
+        top: 2%;
+        left: 72%;
     }
 
     .seasons-winter-first-snowflake-3 {
         width: 26px;
         height: 26px;
-        top: 140px;
-        left: 300px;
+        top: 12%;
+        left: 78%;
     }
 
     .seasons-winter-first-snowflake-2 {
         width: 40px;
         height: 41px;
-        top: 150px;
-        left: 50px;
+        top: 13%;
+        left: 12%;
     }
 
     .seasons-winter-first-snowflake-1 {
         width: 26px;
         height: 26px;
-        top: 50px;
-        left: 50px;
+        top: 4%;
+        left: 12%;
     }
 }
 
 @media (max-width: 375px) {
     .seasons-winter-bear {
-        top: 910px;
-        left: 100px;
+        top: 84%;
+        left: 27%;
         width: 190px;
         z-index: 3;
     }
@@ -133,36 +142,36 @@
 
 @media (max-width: 320px) {
     .seasons-winter-bear {
-        top: 950px;
-        left: 60px;
+        top: 85%;
+        left: 18%;
         width: 210px;
         z-index: 3;
     }
 
     .seasons-winter-first-snowflake-4 {
         width: 68px;
-        top: 24px;
-        left: 220px;
+        top: 2%;
+        left: 69%;
     }
 
     .seasons-winter-first-snowflake-3 {
         width: 26px;
         height: 26px;
-        top: 185px;
-        left: 280px;
+        top: 16%;
+        left: 82%;
     }
 
     .seasons-winter-first-snowflake-2 {
         width: 40px;
         height: 41px;
-        top: 175px;
-        left: 10px;
+        top: 15%;
+        left: 3%;
     }
 
     .seasons-winter-first-snowflake-1 {
         width: 26px;
         height: 26px;
-        top: 80px;
-        left: 26px;
+        top: 7%;
+        left: 8%;
     }
 }
