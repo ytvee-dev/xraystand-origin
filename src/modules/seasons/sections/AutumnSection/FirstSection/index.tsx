@@ -4,16 +4,40 @@ import { type SeasonContent } from "@modules/seasons/types";
 import Card from "@modules/seasons/components/Card";
 import "./style.css";
 
+const imgPaths = [
+    {
+        path: paths.texturedBg,
+        class: "seasons-autumn-textured-bg"
+    },
+    {
+        path: paths.autumn.yellowLeaf,
+        class: "seasons-autumn-yellow-leaf seasons-autumn-bg-img"
+    },
+    {
+        path: paths.autumn.greenLeaf,
+        class: "seasons-autumn-green-leaf seasons-autumn-bg-img"
+    },
+    {
+        path: paths.autumn.redLeaf,
+        class: "seasons-autumn-red-leaf seasons-autumn-bg-img"
+    },
+    {
+        path: paths.autumn.bird,
+        class: "seasons-autumn-bird seasons-autumn-bg-img"
+    },
+    {
+        path: paths.autumn.bear,
+        class: "seasons-autumn-bear seasons-autumn-bg-img"
+    }
+]
 
 const FirstSection = ({title, description, content}: SeasonContent): ReactElement => {
+
     return (
         <div className="seasons-autumn-section">
-            <img src={paths.texturedBg} alt="" className="seasons-autumn-textured-bg"/>
-            <img src={paths.autumn.yellowLeaf} alt="" className="seasons-autumn-yellow-leaf seasons-autumn-bg-img"/>
-            <img src={paths.autumn.greenLeaf} alt="" className="seasons-autumn-green-leaf seasons-autumn-bg-img"/>
-            <img src={paths.autumn.redLeaf} alt="" className="seasons-autumn-red-leaf seasons-autumn-bg-img"/>
-            <img src={paths.autumn.bird} alt="" className="seasons-autumn-bird seasons-autumn-bg-img"/>
-            <img src={paths.autumn.bear} alt="" className="seasons-autumn-bear seasons-autumn-bg-img"/>
+            {imgPaths.map(img => (
+                <img src={img.path} alt="" className={img.class} key={img.path}/>
+            ))}
 
             <div className="seasons-autumn-first-section-content seasons-autumn-section-content">
                 <img src={paths.autumn.logo} alt="autumn" className="seasons-autumn-logo"/>

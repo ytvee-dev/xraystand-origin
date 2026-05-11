@@ -9,14 +9,35 @@ interface ISecondSectionProps {
     cards: SeasonsCard[]
 }
 
+const imgPaths = [
+    {
+        path: paths.texturedBg,
+        class: "seasons-autumn-textured-bg"
+    },
+    {
+        path: paths.autumn.deer,
+        class: "seasons-autumn-deer seasons-autumn-bg-img"
+    },
+    {
+        path: paths.autumn.umbrella,
+        class: "seasons-autumn-umbrella seasons-autumn-bg-img"
+    },
+    {
+        path: paths.autumn.greenLeaf,
+        class: "seasons-autumn-second-green-leaf seasons-autumn-bg-img"
+    },
+    {
+        path: paths.autumn.yellowLeaf,
+        class: "seasons-autumn-second-yellow-leaf seasons-autumn-bg-img"
+    },
+]
+
 const SecondSection = ({title, cards}: ISecondSectionProps): ReactElement => {
     return (
         <div className="seasons-autumn-section">
-            <img src={paths.texturedBg} alt="" className="seasons-autumn-textured-bg"/>
-            <img src={paths.autumn.deer} alt="" className="seasons-autumn-deer seasons-autumn-bg-img"/>
-            <img src={paths.autumn.umbrella} alt="" className="seasons-autumn-umbrella seasons-autumn-bg-img"/>
-            <img src={paths.autumn.greenLeaf} alt="" className="seasons-autumn-second-green-leaf seasons-autumn-bg-img"/>
-            <img src={paths.autumn.yellowLeaf} alt="" className="seasons-autumn-second-yellow-leaf seasons-autumn-bg-img"/>
+            {imgPaths.map(img => (
+                <img src={img.path} alt="" className={img.class} key={img.path}/>
+            ))}
 
             <div className="seasons-autumn-second-section-content seasons-autumn-section-content">
                 <p className="seasons-autumn-subtitle">{title}</p>
