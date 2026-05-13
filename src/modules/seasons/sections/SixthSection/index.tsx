@@ -24,14 +24,14 @@ const SixthSection = ({
             <div className="seasons-sixth-section-content">
                 <div className="seasons-sixth-section-first-part">
                     <h1 className="seasons-section-description">
-                        {content[0].title}
+                        {content.firstPart.title}
                     </h1>
 
                     <div className="seasons-sixth-section-blocks-container">
-                        {content[0].content.map(
+                        {content.firstPart.content.map(
                             (blockData: IBlockLabel, index: number) => (
                                 <ImageCard
-                                    key={index}
+                                    key={`image-card-${index}`}
                                     id={`seasons-sixth-section-card-${index}`}
                                     imagePath={paths.spring.flowerCards}
                                     className="seasons-sixth-section-card"
@@ -46,14 +46,14 @@ const SixthSection = ({
 
                 <div className="seasons-sixth-section-second-part">
                     <h1 className="seasons-section-description">
-                        {content[1].title}
+                        {content.secondPart.title}
                     </h1>
 
                     <div className="seasons-sixth-section-blocks-container">
-                        {content[1].content.map(
+                        {content.secondPart.content.map(
                             (blockData: IBlockLabel, index: number) => (
                                 <DSNotification
-                                    key={index}
+                                    key={`block-${index}`}
                                     className="seasons-sixth-section-notification-block"
                                     content={blockData.description}
                                     borderColor=""

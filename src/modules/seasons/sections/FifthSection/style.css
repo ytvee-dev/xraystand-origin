@@ -5,6 +5,8 @@
     background: linear-gradient(to right, #f96fbf 0%, #deb5ff 100%);
 
     color: #ffffff;
+
+    overflow: hidden;
 }
 
 .seasons-fifth-section-content {

@@ -60,7 +60,7 @@ const Seasons: React.FC = () => {
                 />
                 <SixthSection
                     className="seasons-sixth-section"
-                    content={textContent.springSection.sixthSection.content}
+                    content={textContent.springSection.sixthSection}
                 />
                 <AutumnSection content={textContent.autumnSection} />
             </BrightnessLayout>

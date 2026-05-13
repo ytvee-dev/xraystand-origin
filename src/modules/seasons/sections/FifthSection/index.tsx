@@ -37,12 +37,12 @@ const FifthSection = ({
                     {content.content.map(
                         (blockData: IBlockLabel, index: number) => (
                             <Card
-                                key={index}
+                                key={`card-${index}`}
                                 id={`seasons-fifth-section-card-${index}`}
                                 imagePath={paths.spring.springAnimals[index]}
                                 className="seasons-fifth-section-card"
                                 title={blockData.subtitle}
-                                description={blockData.description}
+                                description={blockData.description || ""}
                                 season="spring"
                             />
                         ),

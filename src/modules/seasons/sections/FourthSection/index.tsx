@@ -48,7 +48,7 @@ const FourthSection = ({
                                 key={index}
                                 className="seasons-fourth-section-card"
                                 subTitle={blockData.subtitle}
-                                description={blockData.description}
+                                description={blockData.description || ""}
                                 season="spring"
                             />
                         ),
