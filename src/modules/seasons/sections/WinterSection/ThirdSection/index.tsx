@@ -18,6 +18,49 @@ interface ThirdSectionSectionProps {
     cards: CardContent[];
 }
 
+const snowflakes = [
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-third-snowflake-1 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-third-snowflake-2 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-third-snowflake-3 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-third-snowflake-4 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-third-snowflake-5 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-third-snowflake-6 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-third-snowflake-7 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-third-snowflake-8 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-third-snowflake-9 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-third-snowflake-10 seasons-winter-bg-image",
+    },
+];
+
 const ThirdSection = ({ title, secondTitle, cards }: ThirdSectionSectionProps): ReactElement => {
     const imageCards = cards.slice(9, 12);
     const securityMeasuresCards = cards.slice(13);
@@ -26,17 +69,11 @@ const ThirdSection = ({ title, secondTitle, cards }: ThirdSectionSectionProps): 
         <div className="seasons-winter-section-container">
 
             <img className="seasons-winter-texture-bg" src={paths.texturedBg} alt="" />
-
             <img className="seasons-winter-third-snowflake-1 seasons-winter-bg-image" src={paths.winter.snowflake} alt="" />
-            <img className="seasons-winter-third-snowflake-2 seasons-winter-bg-image" src={paths.winter.snowflake} alt="" />
-            <img className="seasons-winter-third-snowflake-3 seasons-winter-bg-image" src={paths.winter.snowflake} alt="" />
-            <img className="seasons-winter-third-snowflake-4 seasons-winter-bg-image" src={paths.winter.snowflake} alt="" />
-            <img className="seasons-winter-third-snowflake-5 seasons-winter-bg-image" src={paths.winter.snowflake} alt="" />
-            <img className="seasons-winter-third-snowflake-6 seasons-winter-bg-image" src={paths.winter.snowflake} alt="" />
-            <img className="seasons-winter-third-snowflake-7 seasons-winter-bg-image" src={paths.winter.snowflake} alt="" />
-            <img className="seasons-winter-third-snowflake-8 seasons-winter-bg-image" src={paths.winter.snowflake} alt="" />
-            <img className="seasons-winter-third-snowflake-9 seasons-winter-bg-image" src={paths.winter.snowflake} alt="" />
-            <img className="seasons-winter-third-snowflake-10 seasons-winter-bg-image" src={paths.winter.snowflake} alt="" />
+
+            {snowflakes.map((snowflake) => (
+                <img key={snowflake.className} className={snowflake.className} src={snowflake.path} alt="" />
+            ))}
             <img className="seasons-winter-third-snowman seasons-winter-bg-image" src={paths.winter.snowman} alt="" />
 
             <div className="seasons-winter-first-section-content seasons-winter-section-content">

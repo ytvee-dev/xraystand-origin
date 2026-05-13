@@ -14,6 +14,26 @@ interface SeasonContent {
     content: CardContent[];
 }
 
+
+const snowflakes = [
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-first-snowflake-1 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-first-snowflake-2 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-first-snowflake-3 seasons-winter-bg-image",
+    },
+    {
+        path: paths.winter.snowflake,
+        className: "seasons-winter-first-snowflake-4 seasons-winter-bg-image",
+    },
+];
+
 const FirstSection = ({
     title,
     description,
@@ -23,13 +43,12 @@ const FirstSection = ({
         <div className="seasons-winter-section-container">
 
             <img className="seasons-winter-texture-bg" src={paths.texturedBg} alt=""/>
-
             <img className="seasons-winter-bear seasons-winter-bg-image" src={paths.winter.snowBear} alt=""/>
-            <img className="seasons-winter-first-snowflake-1 seasons-winter-bg-image" src={paths.winter.snowflake} alt="" />
-            <img className="seasons-winter-first-snowflake-2 seasons-winter-bg-image" src={paths.winter.snowflake} alt=""/>
-            <img className="seasons-winter-first-snowflake-3 seasons-winter-bg-image" src={paths.winter.snowflake} alt=""/>
-            <img className="seasons-winter-first-snowflake-4 seasons-winter-bg-image" src={paths.winter.snowflake} alt=""/>
 
+            {snowflakes.map((image) => (
+                <img key={image.className} className={image.className} src={image.path} alt=""
+ />
+            ))}
             <div className="seasons-winter-first-section-content seasons-winter-section-content">
 
                 <img className="seasons-winter-logo" src={paths.winter.logo} alt="" />
