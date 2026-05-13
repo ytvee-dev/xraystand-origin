@@ -1,0 +1,181 @@
+.seasons-autumn-redLeaf-top,
+.seasons-autumn-redLeaf-bottom {
+    width: 207px;
+    height: 180px;
+}
+
+.seasons-autumn-redLeaf-bottom {
+    top: 85%;
+    left: 90%;
+}
+
+.seasons-autumn-third-bird {
+    width: 291px;
+    height: 213px;
+    transform: rotateZ(-45deg);
+    left: 76%;
+    top: 50%;
+    z-index: 3 !important;
+}
+
+.seasons-autumn-sweater {
+    width: 378px;
+    height: 261px;
+    top: 44%;
+    left: -2%;
+    z-index: 3 !important;
+}
+
+.seasons-autumn-third-content .seasons-autumn-subtitle {
+    margin-top: 65px;
+}
+
+.seasons-autumn-third-img-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    margin-bottom: 40px;
+    margin-inline: 20px;
+}
+
+.autumn-third-img-cards-1,
+.autumn-third-img-cards-2,
+.autumn-third-img-cards-3{
+    margin-inline: -35px;
+}
+
+.autumn-third-img-cards-2 img{
+    transform: rotateZ(-40deg);
+}
+
+.autumn-third-img-cards-3 img{
+    transform: rotateZ(-25deg);
+}
+
+.seasons-autumn-third-cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 25px;
+    max-width: 1200px;
+    margin-bottom: 28px;
+}
+
+.seasons-autumn-third-card {
+    width: 586px !important;
+    margin-inline: auto;
+}
+
+.seasons-autumn-third-content .seasons-autumn-security-subtitle {
+    margin: 0 0 35px 0;
+}
+
+@media(min-width: 1920px) {
+    .seasons-autumn-redLeaf-top {
+        left: 15%;
+    }
+
+    .seasons-autumn-sweater {
+        left: 10%;
+    }
+
+    .seasons-autumn-third-bird {
+        left: 70%;
+    }
+    
+    .seasons-autumn-redLeaf-bottom {
+        left: 80%;
+    }
+}
+
+@media(max-width: 1280px) {
+    .seasons-autumn-sweater {
+        width:  250px;
+        height: 215px;
+    }
+
+    .autumn-third-img-cards-1,
+    .autumn-third-img-cards-2,
+    .autumn-third-img-cards-3{
+        margin-inline: -25px;
+    }
+    
+    .seasons-autumn-third-cards-wrapper {
+        gap: 5px 15px;
+    }
+
+    .seasons-autumn-third-card {
+        width: 450px !important;
+    }
+}
+
+@media(max-width: 1090px) {
+    .autumn-third-img-cards-1,
+    .autumn-third-img-cards-2,
+    .autumn-third-img-cards-3{
+        margin-inline: -25px;
+        margin-bottom:  -90px;
+    }
+}
+
+@media(max-width: 960px) {
+    .seasons-autumn-sweater {
+        top: 35%;
+    }
+
+    .seasons-autumn-third-card {
+        width: 350px !important;
+    }
+}
+
+@media(max-width: 768px) {
+    .seasons-autumn-third-cards-wrapper {
+        grid-template-columns: 1fr;
+        gap: 21px;
+        margin-inline: 10px;
+    }
+
+    .seasons-autumn-third-card {
+        width: auto !important;
+        max-width: 600px;
+    }
+
+    .seasons-autumn-third-bird {
+        width: 231px;
+        height: 160px;
+        top: 23%;
+        left: 60%;
+    }
+
+    .seasons-autumn-redLeaf-top,
+    .seasons-autumn-redLeaf-bottom {
+        display: none;
+    }
+
+    .autumn-third-img-cards-1,
+    .autumn-third-img-cards-2,
+    .autumn-third-img-cards-3{
+        margin-inline: -25px;
+        margin-bottom:  -60px;
+    }
+}
+
+@media(max-width: 490px ) {
+    .seasons-autumn-sweater {
+        width: 240px;
+        height: 167px;
+    }
+
+    .seasons-autumn-third-bird {
+        top: 20%;
+        left: 45%;
+    }
+}
+
+@media(max-width: 320px ) {
+    .seasons-autumn-sweater {
+        top: 14%;
+        width: 200px;
+        height: 137px;
+    }
+}

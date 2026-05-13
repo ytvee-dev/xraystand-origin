@@ -1,0 +1,54 @@
+.seasons-autumn-sections-bg {
+    background: linear-gradient(135deg, #ff9631 0%, #ffcc73 100%);
+}
+
+.seasons-autumn-section {
+    width: 100vw;
+    margin-inline: auto;
+    position: relative;
+    display: flex;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+}
+
+.seasons-autumn-textured-bg {
+    position: absolute;
+    z-index: 1;
+    filter: hue-rotate(200deg);
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seasons-autumn-bg-img {
+    position: absolute;
+    z-index: 2;
+}
+
+.seasons-autumn-section-content {
+    position: relative;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.seasons-autumn-title,
+.seasons-autumn-subtitle  {
+    font-size: 45px;
+    color: white;
+    font-family: Roboto;
+    max-width: 700px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media(max-width: 680px) {
+    .seasons-autumn-subtitle {
+        font-size: 30px;
+    }
+}

@@ -1,5 +1,4 @@
 .card {
-  height: 195px;
   display: flex;
   align-items: center;
   border-radius: 50px;
@@ -16,6 +15,17 @@
   text-align: center;
 }
 
+.min {
+  height: 125px;
+}
+
+.max {
+  height: 195px;
+}
+
+.fit-content {
+  height: fit-content;
+}
 .card-text {
   text-align: left;
   padding: 48px 30px;
@@ -39,7 +49,7 @@
 }
 
 .card-image img {
-  width: 80px;
+  width: 150px;
   height: auto;
 }
 
@@ -100,4 +110,3 @@
   }
 
 }
-

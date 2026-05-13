@@ -11,7 +11,8 @@ const CoverSection = (): ReactElement => {
 
             <img src={paths.coverSun} className="seasons-cover-sun" alt="времена года"/>
             <img src={paths.summer.logo} className="seasons-cover-summer" alt="лето"/>
-            <img src={paths.spring.logo} className="seasons-cover-spring" alt="весна"/>                <img src={paths.autumn.logo} className="seasons-cover-autumn" alt="осень"/>
+            <img src={paths.spring.logo} className="seasons-cover-spring" alt="весна"/>                
+            <img src={paths.autumn.logo} className="seasons-cover-autumn" alt="осень"/>
             <img src={paths.winter.logo} className="seasons-cover-winter" alt="зима"/>
         </section>
     );
