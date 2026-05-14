@@ -1,0 +1,74 @@
+.seasons-ninth-section {
+    width: 100%;
+    position: relative;
+
+    background-color: #62b76d;
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+.seasons-ninth-section-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seasons-ninth-section-first-part .seasons-section-description {
+    margin-top: 3rem;
+    font-weight: normal;
+}
+
+.seasons-ninth-section-second-part .seasons-section-description {
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.seasons-ninth-section-first-part .seasons-ninth-section-blocks-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+}
+
+.seasons-ninth-section-second-part .seasons-ninth-section-blocks-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    gap: 1.5rem;
+}
+
+.seasons-ninth-section-first-part,
+.seasons-ninth-section-second-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+}
+
+.seasons-ninth-section-first-part {
+    position: relative;
+}
+
+.seasons-ninth-section-notification-block {
+    width: 35% !important;
+    z-index: 2;
+}
