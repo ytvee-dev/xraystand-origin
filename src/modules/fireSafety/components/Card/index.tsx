@@ -37,7 +37,7 @@ const Card: React.FC<ICardProps> = ({
                 ...style,
             }}
         >
-            <div className={"math-card-text"}>
+            <div className={"firesafety-card-text"}>
                 {title && (
                     <h3 style={{ textAlign: !isMobile ? textAlign : "center" }}>
                         {title}
