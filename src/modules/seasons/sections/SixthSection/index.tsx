@@ -23,9 +23,9 @@ const SixthSection = ({
 
             <div className="seasons-sixth-section-content">
                 <div className="seasons-sixth-section-first-part">
-                    <h1 className="seasons-section-description">
+                    <span className="seasons-section-description">
                         {content.firstPart.title}
-                    </h1>
+                    </span>
 
                     <div className="seasons-sixth-section-blocks-container">
                         {content.firstPart.content.map(
@@ -45,9 +45,9 @@ const SixthSection = ({
                 </div>
 
                 <div className="seasons-sixth-section-second-part">
-                    <h1 className="seasons-section-description">
+                    <span className="seasons-section-description">
                         {content.secondPart.title}
-                    </h1>
+                    </span>
 
                     <div className="seasons-sixth-section-blocks-container">
                         {content.secondPart.content.map(
