@@ -42,7 +42,6 @@ const imgPaths = [
 
 const SeventhSection = ({content}: SummerNumberSectionOnlyContent): ReactElement => {
     const cards = content.content;
-    console.log(cards);
     
     return (
         <section className="seasons-summer-seventh-section">

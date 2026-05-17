@@ -2,6 +2,7 @@ import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/seasons/sections/CoverSection";
 import AutumnSection from "@modules/seasons/sections/AutumnSection";
 import SeventhSection from "@modules/seasons/sections/SeventhSection";
+import EighthSection from "@modules/seasons/sections/EighthSection";
 import { useLocaleContent } from "@hooks/useLocale";
 import * as contentRu from "@modules/seasons/locales/rus.json";
 import * as contentKz from "@modules/seasons/locales/kaz.json";
@@ -38,6 +39,7 @@ const Seasons: React.FC = () => {
                 <CoverSection />
                 <AutumnSection content={textContent.autumnSection}/>
                 <SeventhSection content={textContent.summerSection.seventhSection}/>
+                <EighthSection content={textContent.summerSection.eighthSection}/>
             </BrightnessLayout>
        </div>
     );

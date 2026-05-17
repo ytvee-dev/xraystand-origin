@@ -1,0 +1,115 @@
+.seasons-summer-eighth-section {
+    width: 100vw;
+    margin-inline: auto;
+    position: relative;
+    display: flex;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    background: #62B76D;
+}
+
+.seasons-summer-eighth-textured-bg {
+    position: absolute;
+    z-index: 1;
+    filter: hue-rotate(200deg);
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seasons-summer-eighth-bg-img {
+    position: absolute;
+    z-index: 2;
+}
+
+.seasons-summer-eighth-dark-yellow-butterfly {
+    width: 205px;
+    height: 195px;
+    top: 2%;
+}
+
+.seasons-summer-eighth-yellow-butterfly {
+    width: 104px;
+    height: 100px;
+    left: 3%;
+    top: 30%;
+}
+
+.seasons-summer-eighth-light-pink-butterfly {
+    width: 70px;
+    height: 67px;
+    top: 17%;
+    left: 18%;
+}
+
+.seasons-summer-eighth-bee {
+    width: 270px;
+    height: 270px;
+    bottom: 10%;
+    left: 4%;
+}
+
+.seasons-summer-eighth-giraffe {
+    width: 571px;
+    height: 404px;
+    bottom: 0;
+    right: 0;
+}
+
+.seasons-summer-eighth-section-content {
+    position: relative;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.seasons-summer-eighth-logo {
+    width: 114px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.seasons-summer-eighth-subtitle  {
+    font-size: 45px;
+    color: white;
+    font-family: Roboto;
+    max-width: 700px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.seasons-summer-eighth-section-cards-wrapper {
+    margin-inline: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 90px;
+    padding-inline: 10px;
+}
+
+@media (max-width: 960px) {
+    .seasons-summer-eighth-dark-yellow-butterfly {
+        top: -1%;
+    }
+
+    .seasons-summer-eighth-bee {
+        display: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .seasons-summer-eighth-giraffe {
+        display: none;
+    }
+
+    .seasons-summer-eighth-yellow-butterfly {
+        display: none;
+    }
+}
