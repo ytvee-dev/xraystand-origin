@@ -39,7 +39,7 @@ const ThirdSection = ({title, cards}: IThirdSectionProps): ReactElement => {
     return (
         <div className="seasons-autumn-section">
             {imgPaths.map(img => (
-                <img src={img.path} alt="" className={img.class} key={img.path}/>
+                <img src={img.path} alt="" className={img.class} key={img.class}/>
             ))}
             
             <div className="seasons-autumn-third-content seasons-autumn-section-content">
