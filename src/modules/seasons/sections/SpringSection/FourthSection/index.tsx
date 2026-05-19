@@ -1,16 +1,16 @@
 import Card from "@modules/seasons/components/Card";
 import * as paths from "@modules/seasons/locales/paths.json";
-import type { IBlockLabel } from "@modules/english/components/InfoBlock";
-import type { IEnglishSectionProps } from "@modules/english/types";
+import type { SeasonContent, SeasonsCard } from "@modules/seasons/types";
 import type { ReactElement } from "react";
 import "./style.css";
 
 const FourthSection = ({
-    className,
+    title,
+    description,
     content,
-}: IEnglishSectionProps): ReactElement => {
+}: SeasonContent): ReactElement => {
     return (
-        <section className={className}>
+        <div className="seasons-fourth-section">
             <div className="seasons-fourth-section-background-images">
                 <img
                     id="seasons-fourth-section-img-1"
@@ -34,28 +34,26 @@ const FourthSection = ({
                         alt="seasons-image"
                     />
 
-                    <h1 className="seasons-section-title">{content.title}</h1>
+                    <h1 className="seasons-section-title">{title}</h1>
 
                     <span className="seasons-section-description">
-                        {content.description}
+                        {description}
                     </span>
                 </div>
 
                 <div className="seasons-fourth-section-blocks-container">
-                    {content.content.map(
-                        (blockData: IBlockLabel, index: number) => (
-                            <Card
-                                key={index}
-                                className="seasons-fourth-section-card"
-                                subTitle={blockData.subtitle}
-                                description={blockData.description || ""}
-                                season="spring"
-                            />
-                        ),
-                    )}
+                    {content.map((blockData: SeasonsCard, index: number) => (
+                        <Card
+                            key={`seasons-card-${index}`}
+                            className="seasons-fourth-section-card"
+                            subTitle={blockData.subTitle}
+                            description={blockData.description || ""}
+                            season="spring"
+                        />
+                    ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

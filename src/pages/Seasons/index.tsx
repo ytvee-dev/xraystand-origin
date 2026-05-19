@@ -4,10 +4,8 @@ import * as paths from "@modules/seasons/locales/paths.json";
 import * as contentRu from "@modules/seasons/locales/rus.json";
 import * as contentKz from "@modules/seasons/locales/kaz.json";
 import CoverSection from "@modules/seasons/sections/CoverSection";
-import FifthSection from "@modules/seasons/sections/FifthSection";
-import SixthSection from "@modules/seasons/sections/SixthSection";
 import AutumnSection from "@modules/seasons/sections/AutumnSection";
-import FourthSection from "@modules/seasons/sections/FourthSection";
+import SpringSection from "@modules/seasons/sections/SpringSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -50,19 +48,8 @@ const Seasons: React.FC = () => {
             >
                 {!isContentLoaded && <Spinner />}
                 <CoverSection />
-                <FourthSection
-                    className="seasons-fourth-section"
-                    content={textContent.springSection.fourthSection}
-                />
-                <FifthSection
-                    className="seasons-fifth-section"
-                    content={textContent.springSection.fifthSection}
-                />
-                <SixthSection
-                    className="seasons-sixth-section"
-                    content={textContent.springSection.sixthSection}
-                />
                 <AutumnSection content={textContent.autumnSection} />
+                <SpringSection content={textContent.springSection} />
             </BrightnessLayout>
         </div>
     );

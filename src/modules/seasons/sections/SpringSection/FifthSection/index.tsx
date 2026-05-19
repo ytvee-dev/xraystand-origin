@@ -1,16 +1,15 @@
 import Card from "@modules/seasons/components/Card";
 import * as paths from "@modules/seasons/locales/paths.json";
-import type { IBlockLabel } from "@modules/english/components/InfoBlock";
-import type { IEnglishSectionProps } from "@modules/english/types";
+import type { SeasonContent, SeasonsCard } from "@modules/seasons/types";
 import type { ReactElement } from "react";
 import "./style.css";
 
 const FifthSection = ({
-    className,
+    description,
     content,
-}: IEnglishSectionProps): ReactElement => {
+}: SeasonContent): ReactElement => {
     return (
-        <section className={className}>
+        <div className="seasons-fifth-section">
             <div className="seasons-fifth-section-background-images">
                 <img
                     id="seasons-fifth-section-img-1"
@@ -29,27 +28,25 @@ const FifthSection = ({
             <div className="seasons-fifth-section-content">
                 <div className="seasons-fifth-section-header">
                     <span className="seasons-section-description">
-                        {content.description}
+                        {description}
                     </span>
                 </div>
 
                 <div className="seasons-fifth-section-blocks-container">
-                    {content.content.map(
-                        (blockData: IBlockLabel, index: number) => (
-                            <Card
-                                key={`card-${index}`}
-                                id={`seasons-fifth-section-card-${index}`}
-                                imagePath={paths.spring.springAnimals[index]}
-                                className="seasons-fifth-section-card"
-                                title={blockData.subtitle}
-                                description={blockData.description || ""}
-                                season="spring"
-                            />
-                        ),
-                    )}
+                    {content.map((blockData: SeasonsCard, index: number) => (
+                        <Card
+                            key={`card-${index}`}
+                            id={`seasons-fifth-section-card-${index}`}
+                            imagePath={paths.spring.springAnimals[index]}
+                            className="seasons-fifth-section-card"
+                            title={blockData.subTitle}
+                            description={blockData.description || ""}
+                            season="spring"
+                        />
+                    ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

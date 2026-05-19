@@ -1,16 +1,15 @@
 export type SeasonsCard = {
-    title: string,
-    subTitle: string,
-    description: string,
-    securityMeasures?: string
-}
+    title: string;
+    subTitle: string;
+    description: string;
+};
 
 export type SeasonContent = {
-    title: string,
-    description: string,
-    content: SeasonsCard[]
-}
+    title: string;
+    description: string;
+    content: SeasonsCard[];
+};
 
 export interface SeasonsProps {
-    content: SeasonContent
+    content: SeasonContent;
 }
