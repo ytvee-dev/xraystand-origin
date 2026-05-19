@@ -35,7 +35,7 @@ const SeventhSection = ({
     return (
         <div className="seasons-summer-section">
             {imgPaths.map(img => (
-                <img src={img.path} alt="" className={img.class} key={img.class}/>
+                <img src={img.path} alt="" className={img.class} key={img.class}/>  
             ))}
 
             <div className="seasons-summer-section-content">

@@ -48,6 +48,28 @@
     padding-inline: 10px;
 }
 
+@media (min-width: 1920px) {
+    .seasons-summer-second-dark-yellow-butterfly {
+        left: 8%;
+    }
+
+    .seasons-summer-second-yellow-butterfly {
+        left: 7%;
+    }
+    
+    .seasons-summer-second-light-pink-butterfly {
+        left: 23%;
+    }
+
+    .seasons-summer-second-bee {
+        left: 17%;
+    }
+
+    .seasons-summer-second-giraffe {
+        right: 4%;
+    }
+}
+
 @media (max-width: 960px) {
     .seasons-summer-second-dark-yellow-butterfly {
         top: 0;
