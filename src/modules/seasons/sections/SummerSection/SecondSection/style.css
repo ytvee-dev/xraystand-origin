@@ -50,7 +50,7 @@
 
 @media (max-width: 960px) {
     .seasons-summer-second-dark-yellow-butterfly {
-        top: -1%;
+        top: 0;
     }
 
     .seasons-summer-second-bee {
@@ -65,5 +65,14 @@
 
     .seasons-summer-second-yellow-butterfly {
         display: none;
+    }
+
+    .seasons-summer-second-dark-yellow-butterfly {
+        width: 140px;
+        height: 134px;
+    }
+
+    .seasons-summer-second-section-cards-wrapper {
+        margin-bottom: 38px;
     }
 }
