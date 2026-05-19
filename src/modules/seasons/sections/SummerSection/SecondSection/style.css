@@ -1,0 +1,69 @@
+.seasons-summer-second-dark-yellow-butterfly {
+    width: 205px;
+    height: 195px;
+    top: 2%;
+}
+
+.seasons-summer-second-yellow-butterfly {
+    width: 104px;
+    height: 100px;
+    left: 3%;
+    top: 30%;
+}
+
+.seasons-summer-second-light-pink-butterfly {
+    width: 70px;
+    height: 67px;
+    top: 17%;
+    left: 18%;
+}
+
+.seasons-summer-second-bee {
+    width: 270px;
+    height: 270px;
+    bottom: 10%;
+    left: 4%;
+}
+
+.seasons-summer-second-giraffe {
+    width: 571px;
+    height: 404px;
+    bottom: 0;
+    right: 0;
+}
+
+.seasons-summer-second-logo {
+    width: 114px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.seasons-summer-second-section-cards-wrapper {
+    margin-inline: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 90px;
+    padding-inline: 10px;
+}
+
+@media (max-width: 960px) {
+    .seasons-summer-second-dark-yellow-butterfly {
+        top: -1%;
+    }
+
+    .seasons-summer-second-bee {
+        display: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .seasons-summer-second-giraffe {
+        display: none;
+    }
+
+    .seasons-summer-second-yellow-butterfly {
+        display: none;
+    }
+}

@@ -1,0 +1,97 @@
+.seasons-summer-first-yellow-butterfly {
+    width: 180px;
+    height: 182px;
+    top: 5%;
+    left: 7%;
+}
+
+.seasons-summer-first-fox {
+    width: 431px;
+    height: 360px;
+    top: 3%;
+    left: 70%;
+}
+
+.seasons-summer-first-pink-butterfly {
+    width: 205px;
+    height: 194px;
+    top: 70%;
+    left: 75%;
+    z-index: 3;
+}
+
+.seasons-summer-first-yellow-butterfly-mobile {
+    width: 150px;
+    height: 152px;
+    transform: rotateZ(-135deg);
+    left: 80%;
+    display: none;
+}
+
+.seasons-summer-first-logo {
+    width: 114px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.seasons-summer-title {
+    margin-bottom: 15px;
+}
+
+.seasons-summer-first-section-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1064px;
+    gap: 18px;
+    margin-bottom: 99px;
+    padding: 10px;
+}
+
+@media(min-width: 1680px) {
+    .seasons-summer-first-yellow-butterfly {
+        left: 15%;
+    }
+}
+
+@media(min-width: 1920px) {
+    .seasons-summer-first-yellow-butterfly {
+        left: 22%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .seasons-summer-first-fox {
+        left: 58%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .seasons-summer-first-fox {
+        display: none;
+    }
+
+    .seasons-summer-first-yellow-butterfly-mobile {
+        display: block;
+    }
+}
+
+@media(max-width: 680px) {
+    .seasons-summer-first-subtitle {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 520px) {
+    .seasons-summer-first-yellow-butterfly {
+        left: -10%;
+    }
+}
+
+@media(max-width: 320px) {
+    .seasons-summer-first-pink-butterfly {
+        width: 155px;
+        height: 145px;
+        top: 86%;
+    }
+}
