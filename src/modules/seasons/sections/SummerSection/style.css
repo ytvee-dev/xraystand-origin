@@ -70,3 +70,9 @@
         max-width: 290px;
     }
 }
+
+@media (max-width: 600px){
+    .seasons-summer-textured-bg {
+        display: none;
+    }
+}
