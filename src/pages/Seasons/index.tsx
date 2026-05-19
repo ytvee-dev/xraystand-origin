@@ -23,6 +23,8 @@ const MainLogo = () => {
 const Seasons: React.FC = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
 
+    const ninthSectionCards = textContent.summerSection.content.slice(8);
+
     return (
         <div className="seasons-container">
             <BrightnessLayout
@@ -36,8 +38,8 @@ const Seasons: React.FC = () => {
                 <CoverSection />
                 <AutumnSection content={textContent.autumnSection} />
                 <NinthSection
-                    className="seasons-ninth-section"
-                    content={textContent.summerSection.ninthSection}
+                    title={textContent.summerSection.content[8].title}
+                    cards={ninthSectionCards}
                 />
             </BrightnessLayout>
         </div>
