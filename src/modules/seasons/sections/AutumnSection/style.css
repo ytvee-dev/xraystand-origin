@@ -3,20 +3,16 @@
 }
 
 .seasons-autumn-section {
-    width: 100vw;
-    margin-inline: auto;
     position: relative;
     display: flex;
-    background-size: cover;
     overflow: hidden;
-    display: flex;
 }
 
 .seasons-autumn-textured-bg {
     position: absolute;
     z-index: 1;
     filter: hue-rotate(200deg);
-    width: 100vw;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -47,8 +43,24 @@
     font-weight: bold;
 }
 
-@media(max-width: 680px) {
+@media (max-width: 960px){
+    .seasons-autumn-title{
+        font-size: 42px;
+    }
+
+    .seasons-autumn-subtitle {
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px){
+    .seasons-autumn-title{
+        font-size: 36px;
+    }
+
     .seasons-autumn-subtitle {
         font-size: 30px;
+        max-width: 290px;
     }
 }

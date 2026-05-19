@@ -1,12 +1,12 @@
 .seasons-cover-section {
     background-color: #e7dfd7;
     position: relative;
+    overflow: hidden;
 }
 
 .cover-textured-bg {
     filter: hue-rotate(80deg);
     width: 100vw;
-    /* position: absolute; */
     z-index: 1;
 }
 
