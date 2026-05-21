@@ -22,29 +22,3 @@
 .seasons-logo {
     font-weight: 700;
 }
-
-@media screen and (max-width: 1200px) {
-    .seasons-ninth-section-first-part .seasons-ninth-section-blocks-container {
-        flex-wrap: wrap;
-
-        gap: 0;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .seasons-ninth-section-second-part .seasons-ninth-section-blocks-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .seasons-ninth-section-notification-block {
-        width: 80% !important;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .seasons-ninth-section-first-part .seasons-section-description {
-        width: 90%;
-    }
-}

@@ -34,7 +34,7 @@
 }
 
 .seasons-autumn-title,
-.seasons-autumn-subtitle  {
+.seasons-autumn-subtitle {
     font-size: 45px;
     color: white;
     font-family: Roboto;
@@ -43,8 +43,8 @@
     font-weight: bold;
 }
 
-@media (max-width: 960px){
-    .seasons-autumn-title{
+@media (max-width: 960px) {
+    .seasons-autumn-title {
         font-size: 42px;
     }
 
@@ -54,19 +54,13 @@
     }
 }
 
-@media (max-width: 768px){
-    .seasons-autumn-title{
+@media (max-width: 768px) {
+    .seasons-autumn-title {
         font-size: 36px;
     }
 
     .seasons-autumn-subtitle {
         font-size: 30px;
         max-width: 290px;
-    }
-}
-
-@media (max-width: 600px){
-    .seasons-autumn-textured-bg {
-        display: none;
     }
 }

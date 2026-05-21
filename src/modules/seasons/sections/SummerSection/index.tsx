@@ -23,7 +23,7 @@ const SummerSection = ({ content }: SeasonsProps): ReactElement => {
                 cards={secondSectionCards}
             />
             <ThirdSection
-                title={content.content[8].title}
+                title={content.content[7].title}
                 cards={thirdSectionCards}
             />
         </section>

@@ -25,6 +25,7 @@ const ImageCard = ({
             <div className="image-card-image">
                 <img src={imagePath} alt="" />
             </div>
+
             <div className="image-card-text">
                 <h3>{title}</h3>
 
