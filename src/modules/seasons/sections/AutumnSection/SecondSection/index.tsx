@@ -56,6 +56,7 @@ const SecondSection = ({ title, cards }: ISecondSectionProps): ReactElement => {
                             imagePath={paths.autumn.autumnAnimals[index]}
                             reverse={index % 2 == 1 ? false : true}
                             height="fit-content"
+                            season="autumn"
                         />
                     ))}
                 </div>

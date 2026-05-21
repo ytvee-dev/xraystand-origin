@@ -27,6 +27,7 @@ const ImageCard = ({
             </div>
             <div className="image-card-text">
                 <h3>{title}</h3>
+
                 <p>{description}</p>
             </div>
         </div>
