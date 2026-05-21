@@ -2,8 +2,8 @@ import BrightnessLayout from "@layout/Brightness";
 import * as contentRu from "@modules/seasons/locales/rus.json";
 import * as contentKz from "@modules/seasons/locales/kaz.json";
 import CoverSection from "@modules/seasons/sections/CoverSection";
-import NinthSection from "@modules/seasons/sections/NinethSection";
 import AutumnSection from "@modules/seasons/sections/AutumnSection";
+import SummerSection from "@modules/seasons/sections/SummerSection";
 import { useLocaleContent } from "@hooks/useLocale";
 import "./style.css";
 
@@ -23,8 +23,6 @@ const MainLogo = () => {
 const Seasons: React.FC = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
 
-    const ninthSectionCards = textContent.summerSection.content.slice(8);
-
     return (
         <div className="seasons-container">
             <BrightnessLayout
@@ -36,11 +34,8 @@ const Seasons: React.FC = () => {
                 languageSwitcherClassName="seasons-switcher"
             >
                 <CoverSection />
+                <SummerSection content={textContent.summerSection} />
                 <AutumnSection content={textContent.autumnSection} />
-                <NinthSection
-                    title={textContent.summerSection.content[8].title}
-                    cards={ninthSectionCards}
-                />
             </BrightnessLayout>
         </div>
     );

@@ -40,6 +40,7 @@
     flex-direction: column;
     gap: 8px;
     margin-bottom: 90px;
+    padding: 10px;
 }
 
 @media(min-width: 1920px) {
@@ -77,7 +78,22 @@
 
     .seasons-autumn-second-yellow-leaf {
         display: block;
+        top: 89%;
+        width: 63px;
+        height: 87px;
+        z-index: 3 !important;
     }
+}
+
+@media (max-width: 768px) {
+    .seasons-autumn-second-section-cards-wrapper {
+        margin-bottom: 67px;
+    }
+
+    .seasons-autumn-second-section-content .seasons-autumn-subtitle {
+        margin-bottom: 0;
+    }
+
 }
 
 @media(max-width: 680px) {
@@ -85,10 +101,6 @@
         height: 200px;
         width: 175px;
         top: 0;
-    }
-
-    .seasons-autumn-second-section-cards-wrapper {
-        padding: 10px;
     }
 }
 
