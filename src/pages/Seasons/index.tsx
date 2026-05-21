@@ -16,29 +16,27 @@ const pageLayoutSX = {
 };
 
 const MainLogo = () => {
-    return (
-        <div className="seasons-logo">Времена года</div>
-    );
+    return <div className="seasons-logo">Времена года</div>;
 };
 
 const Seasons: React.FC = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
 
-    return(
-       <div className="seasons-container">
+    return (
+        <div className="seasons-container">
             <BrightnessLayout
-            logo={<MainLogo/>}
-            isLanguageSwitcher={true}
-            switcherColor="#fcc10c"
-            sx={pageLayoutSX}
-            headerBackgroundColor="#e9dbde"
-            languageSwitcherClassName="seasons-switcher"
+                logo={<MainLogo />}
+                isLanguageSwitcher={true}
+                switcherColor="#fcc10c"
+                sx={pageLayoutSX}
+                headerBackgroundColor="#e9dbde"
+                languageSwitcherClassName="seasons-switcher"
             >
                 <CoverSection />
-                <AutumnSection content={textContent.autumnSection}/>
-                <SummerSection content={textContent.summerSection}/>
+                <SummerSection content={textContent.summerSection} />
+                <AutumnSection content={textContent.autumnSection} />
             </BrightnessLayout>
-       </div>
+        </div>
     );
 };
 
