@@ -44,7 +44,7 @@ const SixthSection = ({ title, cards }: IThirdSectionProps): ReactElement => {
 
                 <div className="seasons-sixth-section-second-part">
                     <span className="seasons-section-description">
-                        {cards[4].title}
+                        {cards[3].title}
                     </span>
 
                     <div className="seasons-sixth-section-blocks-container">

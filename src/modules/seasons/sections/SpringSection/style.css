@@ -46,15 +46,6 @@
         bottom: 10%;
         right: auto;
     }
-
-    /* .seasons-sixth-section-card .image-card-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        gap: 0.188rem;
-    } */
 }
 
 @media screen and (max-width: 1000px) {
@@ -104,23 +95,18 @@
     .seasons-sixth-section-notification-block {
         width: 80% !important;
     }
-
-    /* .seasons-sixth-section-card .image-card-text h3,
-    .seasons-sixth-section-card .image-card-text p {
-        width: 14.063rem;
-    } */
 }
 
-@media screen and (max-width: 964px) {
+@media screen and (max-width: 1004px) {
     .seasons-sixth-section-first-part .seasons-sixth-section-blocks-container {
-        height: 90rem;
+        height: 75rem;
         flex-wrap: wrap;
 
         gap: 0;
     }
 
     #seasons-sixth-section-card-0 {
-        top: 5%;
+        bottom: 5%;
         left: auto;
     }
     #seasons-sixth-section-card-1 .image-card-image img {
@@ -128,11 +114,12 @@
     }
 
     #seasons-sixth-section-card-1 {
+        bottom: 16%;
         right: auto;
     }
 
     #seasons-sixth-section-card-2 {
-        bottom: 5%;
+        bottom: 26%;
         right: auto;
     }
 }
@@ -261,11 +248,28 @@
         padding: 0 1rem;
     }
 
-    /* .seasons-section-description {
+    .seasons-section-description {
         font-size: 1.875rem;
         font-weight: 600;
         line-height: 1.625rem;
-    } */
+    }
+
+    .seasons-sixth-section-first-part .seasons-sixth-section-blocks-container {
+        height: 60rem;
+        flex-wrap: wrap;
+
+        gap: 0;
+    }
+
+    .seasons-sixth-section-notification-block p {
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+
+    .seasons-sixth-section-notification-block {
+        width: 90% !important;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -289,27 +293,8 @@
         width: 95%;
     }
 
-    /* .seasons-fifth-section-card .card-text h3 {
-        line-height: 1.25rem;
-        letter-spacing: 0px;
-        font-size: 1.25rem;
-    }
-
-    .seasons-fifth-section-card .card-text p {
-        line-height: 1rem;
-        letter-spacing: 0px;
-        font-size: 0.875rem;
-    } */
-
-    /* .seasons-fifth-section-card .card-text {
-        display: flex;
-        flex-direction: column;
-
-        gap: 0.188rem;
-    } */
-
     .seasons-sixth-section-first-part .seasons-sixth-section-blocks-container {
-        height: 68.75rem;
+        height: 60rem;
     }
 
     #seasons-sixth-section-card-0 {
@@ -317,20 +302,10 @@
     }
 
     #seasons-sixth-section-card-1 {
-        bottom: 19%;
+        bottom: 15%;
     }
 
     #seasons-sixth-section-card-2 {
-        bottom: 34%;
+        bottom: 25%;
     }
-
-    .seasons-sixth-section-notification-block {
-        width: 90% !important;
-    }
-
-    /* .seasons-sixth-section-notification-block p {
-        font-size: 1.25rem;
-        line-height: 1.25rem;
-        letter-spacing: 0px;
-    } */
 }
