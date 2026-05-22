@@ -147,6 +147,10 @@
         left: 60%;
     }
 
+    .seasons-autumn-sweater {
+        top: 38%;
+    }
+
     .seasons-autumn-redLeaf-top,
     .seasons-autumn-redLeaf-bottom {
         display: none;
@@ -157,6 +161,10 @@
     .autumn-third-img-cards-3{
         margin-inline: -25px;
         margin-bottom:  -60px;
+    }
+
+    .seasons-autumn-third-content .seasons-autumn-subtitle {
+        margin-top: 24px;
     }
 }
 
@@ -169,6 +177,12 @@
     .seasons-autumn-third-bird {
         top: 20%;
         left: 45%;
+    }
+}
+
+@media(max-width: 390px ) {
+    .seasons-autumn-sweater {
+        top: 35%;
     }
 }
 

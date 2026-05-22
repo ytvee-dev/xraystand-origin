@@ -1,10 +1,10 @@
 import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/seasons/sections/CoverSection";
-import AutumnSection from "@modules/seasons/sections/AutumnSection"
+import AutumnSection from "@modules/seasons/sections/AutumnSection";
+import SummerSection from "@modules/seasons/sections/SummerSection";
 import { useLocaleContent } from "@hooks/useLocale";
 import * as contentRu from "@modules/seasons/locales/rus.json";
 import * as contentKz from "@modules/seasons/locales/kaz.json";
-import './style.css';
 
 const pageLayoutSX = {
     backgroundColor: "#FCF1EB",
@@ -16,28 +16,27 @@ const pageLayoutSX = {
 };
 
 const MainLogo = () => {
-    return (
-        <div className="seasons-logo">Времена года</div>
-    );
+    return <div className="seasons-logo">Времена года</div>;
 };
 
 const Seasons: React.FC = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
 
-    return(
-       <div className="seasons-container">
+    return (
+        <div className="seasons-container">
             <BrightnessLayout
-            logo={<MainLogo/>}
-            isLanguageSwitcher={true}
-            switcherColor="#fcc10c"
-            sx={pageLayoutSX}
-            headerBackgroundColor="#e9dbde"
-            languageSwitcherClassName="seasons-switcher"
+                logo={<MainLogo />}
+                isLanguageSwitcher={true}
+                switcherColor="#fcc10c"
+                sx={pageLayoutSX}
+                headerBackgroundColor="#e9dbde"
+                languageSwitcherClassName="seasons-switcher"
             >
                 <CoverSection />
-                <AutumnSection content={textContent.autumnSection}/>
+                <SummerSection content={textContent.summerSection} />
+                <AutumnSection content={textContent.autumnSection} />
             </BrightnessLayout>
-       </div>
+        </div>
     );
 };
 
