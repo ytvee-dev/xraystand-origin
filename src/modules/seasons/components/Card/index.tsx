@@ -1,6 +1,7 @@
 import "./style.css";
 
 export interface ICardProps {
+    id?: string;
     title?: string;
     subTitle?: string;
     description: string;
@@ -9,7 +10,6 @@ export interface ICardProps {
     season?: "spring" | "summer" | "autumn" | "winter";
     className?: string;
     height?: "min" | "max" | "fit-content";
-    id?: string;
 }
 
 const Card = ({
@@ -28,11 +28,13 @@ const Card = ({
     return (
         <div
             id={id ?? ""}
-            className={`card card-${season} ${reverse ? "card-reverse" : ""} ${hasImage ? "card-with-image" : "card-only-text"} ${className}  ${height}`}
+            className={`card card-${season} ${reverse ? "card-reverse" : ""} 
+      ${hasImage ? "card-with-image" : "card-only-text"} ${className}
+      ${height}`}
         >
             <div className="card-text">
                 <h3>{title}</h3>
-                <h3>{subTitle}</h3>
+                {subTitle && <h3>{subTitle}</h3>}
                 <p>{description}</p>
             </div>
 

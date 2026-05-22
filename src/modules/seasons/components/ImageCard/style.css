@@ -12,6 +12,10 @@
 }
 
 .image-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
     position: absolute;
     top: 52%;
     left: 50%;
@@ -21,10 +25,14 @@
 
 .image-card-text h3 {
     font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0px;
 }
 
 .image-card-text p {
     font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
 }
 
 .image-card-spring .image-card-image img {
@@ -50,7 +58,7 @@
 .image-card-spring h3,
 .image-card-spring p {
     color: #59168b;
-    width: 320px;
+    width: 225px;
 }
 
 .image-card-summer h3,
@@ -62,13 +70,13 @@
 .image-card-autumn h3,
 .image-card-autumn p {
     color: #7e2a0c;
-    width: 270px;
+    width: 225px;
 }
 
 .image-card-winter h3,
 .image-card-winter p {
     color: #085fb9;
-    width: 230px;
+    width: 225px;
 }
 
 @media (max-width: 1555px) {
@@ -82,14 +90,6 @@
     .image-card-autumn .image-card-image img {
         width: 440px;
         height: 400px;
-    }
-
-    .image-card-text h3 {
-        font-size: 22px;
-    }
-
-    .image-card-text p {
-        font-size: 15px;
     }
 }
 
@@ -159,11 +159,13 @@
     }
 
     .image-card-text h3 {
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 20px;
     }
 
     .image-card-text p {
         font-size: 14px;
+        line-height: 16px;
     }
 
     .image-card-summer h3,

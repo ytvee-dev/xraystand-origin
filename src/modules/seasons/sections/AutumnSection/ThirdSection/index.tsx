@@ -69,8 +69,8 @@ const ThirdSection = ({ title, cards }: IThirdSectionProps): ReactElement => {
                 <div className="seasons-autumn-third-cards-wrapper">
                     {securityMeasuresCards.map((card) => (
                         <DSNotification
-                            content={card.securityMeasures}
-                            key={card.securityMeasures}
+                            content={card.description}
+                            key={card.description}
                             type="info"
                             backgroundColor="#7E2A0C"
                             textColor="#FFFFFF"

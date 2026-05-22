@@ -39,7 +39,7 @@ const FirstSection = ({title, description, content}: SeasonContent): ReactElemen
                 <img src={img.path} alt="" className={img.class} key={img.path}/>
             ))}
 
-            <div className="seasons-autumn-first-section-content seasons-autumn-section-content">
+            <div className="seasons-autumn-section-content">
                 <img src={paths.autumn.logo} alt="autumn" className="seasons-autumn-logo"/>
                 <h2 className="seasons-autumn-title">{title}</h2>
                 <p className="seasons-autumn-subtitle">{description}</p>
