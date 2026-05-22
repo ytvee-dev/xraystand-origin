@@ -90,7 +90,7 @@
     color: #085fb9;
 }
 
-.image-card-spring.image-card-text {
+.image-card-spring .image-card-text {
     width: 50%;
 }
 
@@ -106,9 +106,9 @@
     width: 50%;
 }
 
-/* .image-card-winter .image-card-text {
+.image-card-winter .image-card-text {
     width: 50%;
-} */
+}
 
 @media (max-width: 1555px) {
     .image-card-autumn {
