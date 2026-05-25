@@ -91,6 +91,12 @@
     }
 }
 
+@media (max-width: 600px) {
+    .seasons-summer-textured-bg {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 440px) {
     .seasons-third-section-first-part .seasons-section-description {
         width: 90%;
