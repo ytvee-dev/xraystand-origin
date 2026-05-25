@@ -36,7 +36,6 @@ const imgPaths = [
 const ThirdSection = ({ title, cards }: IThirdSectionProps): ReactElement => {
     const imgCards = cards.slice(0, 3);
     const securityMeasuresCards = cards.slice(4);
-    console.log(securityMeasuresCards);
 
     return (
         <div className="seasons-autumn-section">
