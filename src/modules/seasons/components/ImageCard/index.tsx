@@ -1,6 +1,7 @@
 import "./style.css";
 
 export interface IImageCardProps {
+    id?: string;
     title: string;
     description: string;
     imagePath: string;
@@ -9,6 +10,7 @@ export interface IImageCardProps {
 }
 
 const ImageCard = ({
+    id,
     title,
     description,
     imagePath,
@@ -17,6 +19,7 @@ const ImageCard = ({
 }: IImageCardProps) => {
     return (
         <div
+            id={id ?? ""}
             className={`image-card ${season ? `image-card-${season}` : ""} ${className}`}
         >
             <div className="image-card-image">
