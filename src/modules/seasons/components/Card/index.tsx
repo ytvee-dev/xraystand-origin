@@ -1,6 +1,7 @@
 import "./style.css";
 
 export interface ICardProps {
+    id?: string;
     title?: string;
     subTitle?: string;
     description: string;
@@ -12,6 +13,7 @@ export interface ICardProps {
 }
 
 const Card = ({
+    id,
     title,
     subTitle,
     description,
@@ -25,6 +27,7 @@ const Card = ({
 
     return (
         <div
+            id={id ?? ""}
             className={`card card-${season} ${reverse ? "card-reverse" : ""} 
       ${hasImage ? "card-with-image" : "card-only-text"} ${className}
       ${height}`}
