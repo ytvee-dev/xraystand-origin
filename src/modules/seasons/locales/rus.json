@@ -76,20 +76,17 @@
             {
                 "title": "",
                 "subTitle": "",
-                "description": "",
-                "securityMeasures": "Осторожно ходи по гололёду. Мелкими шагами, в нескользящей обуви"
+                "description": "Осторожно ходи по гололёду. Мелкими шагами, в нескользящей обуви"
             },
             {
                 "title": "",
                 "subTitle": "",
-                "description": "",
-                "securityMeasures": "Не бросайся снежками в лицо другим"
+                "description": "Не бросайся снежками в лицо другим"
             },
             {
                 "title": "",
                 "subTitle": "",
-                "description": "",
-                "securityMeasures": "Не ходи в мокрой одежде, иначе заболеешь"
+                "description": "Не ходи в мокрой одежде, иначе заболеешь"
             }
         ],
         "notificationLabel": "",

@@ -4,7 +4,7 @@ import { type SeasonsCard } from "@modules/seasons/types";
 import Card from "@modules/seasons/components/Card";
 import "./style.css";
 
-interface ISecondSectionProps {
+export interface ISecondSectionProps {
     title: string;
     cards: SeasonsCard[];
 }
