@@ -5,7 +5,7 @@ import ImageCard from "@modules/seasons/components/ImageCard";
 import DSNotification from "@components/common/DSNotification";
 import "./style.css";
 
-interface IThirdSectionProps {
+export interface IThirdSectionProps {
     title: string;
     cards: SeasonsCard[];
 }
@@ -36,8 +36,6 @@ const imgPaths = [
 const ThirdSection = ({ title, cards }: IThirdSectionProps): ReactElement => {
     const imgCards = cards.slice(0, 3);
     const securityMeasuresCards = cards.slice(4);
-    console.log(securityMeasuresCards);
-
     return (
         <div className="seasons-autumn-section">
             {imgPaths.map((img) => (
@@ -45,7 +43,7 @@ const ThirdSection = ({ title, cards }: IThirdSectionProps): ReactElement => {
                     src={img.path}
                     alt=""
                     className={img.class}
-                    key={img.class}
+                    key={img.path}
                 />
             ))}
 
