@@ -64,3 +64,9 @@
         max-width: 290px;
     }
 }
+
+@media (max-width: 600px) {
+    .seasons-autumn-textured-bg {
+        display: none;
+    }
+}
