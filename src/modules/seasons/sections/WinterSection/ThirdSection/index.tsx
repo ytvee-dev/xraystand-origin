@@ -1,4 +1,4 @@
-import type { ReactElement } from "react";
+import type { CSSProperties, ReactElement } from "react";
 import DSNotification from "@components/common/DSNotification";
 import SnowCard from "@modules/seasons/components/SnowCard";
 import * as paths from "@modules/seasons/locales/paths.json";
@@ -15,8 +15,12 @@ export interface IWinterThirdSectionProps {
 
 const snowflakeClasses = [
     "seasons-winter-snowflake-top",
+    "seasons-winter-snowflake-top-small",
+    "seasons-winter-snowflake-top-tiny",
     "seasons-winter-snowflake-left-small",
+    "seasons-winter-snowflake-card-small",
     "seasons-winter-snowflake-left-large",
+    "seasons-winter-snowflake-middle-tiny",
     "seasons-winter-snowflake-left-lower",
     "seasons-winter-snowflake-left-bottom",
     "seasons-winter-snowflake-right-small",
@@ -27,6 +31,17 @@ const snowCardClasses = [
     "seasons-winter-snow-card-second",
     "seasons-winter-snow-card-third",
 ];
+
+const notificationStyle: CSSProperties = {
+    border: "none",
+};
+
+const notificationAlertStyle: CSSProperties = {
+    fontSize: "24px",
+    lineHeight: "26px",
+    letterSpacing: "0",
+    fontWeight: "700",
+};
 
 const ThirdSection = ({
     title,
@@ -82,6 +97,7 @@ const ThirdSection = ({
                             content={card.description}
                             type="info"
                             borderColor=""
+                            style={notificationStyle}
                             textColor="#ffffff"
                             iconName={SvgSpriteIds.SNOW_LEAF}
                             iconColor="#ffffff"
@@ -89,14 +105,9 @@ const ThirdSection = ({
                             borderRadius="50px"
                             cardGap="20px"
                             padding="18px 24px"
-                            iconWidth="52px"
-                            iconHeight="52px"
-                            alertStyle={{
-                                fontSize: "24px",
-                                lineHeight: "26px",
-                                letterSpacing: "0",
-                                fontWeight: "700",
-                            }}
+                            iconWidth="44"
+                            iconHeight="46"
+                            alertStyle={notificationAlertStyle}
                             paragraphWeight={700}
                         />
                     ))}
