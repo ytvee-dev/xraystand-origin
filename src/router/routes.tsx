@@ -20,6 +20,7 @@ const Physics = lazy(() => import("@pages/Physics"));
 const English = lazy(() => import("@pages/English"));
 const KazMusic = lazy(() => import("@pages/KazMusInstruments"));
 const Seasons = lazy(() => import("@pages/Seasons"));
+const KazTarih = lazy(() => import("@pages/KazTarih"));
 
 export const paths = {
     HOME: {
@@ -77,6 +78,10 @@ export const paths = {
     SEASONS: {
         id: "seasons",
         path: "/primary-ed"
+    },
+    KAZ_TARIH: {
+        id: "seasons",
+        path: "/kaztarih"
     },
     PAGES: {
         id: "pages",
@@ -152,6 +157,10 @@ const routes: RouteObject[] = [
     {
         ...paths.SEASONS,
         element: <Seasons/>
+    },
+    {
+        ...paths.KAZ_TARIH,
+        element: <KazTarih/>
     },
     {
         ...paths.PAGES,
