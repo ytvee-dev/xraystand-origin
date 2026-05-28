@@ -1,0 +1,13 @@
+.seasons-winter-sections-bg {
+    background: #65acfc;
+}
+
+.seasons-winter-section {
+    width: 100vw;
+    margin-inline: auto;
+    position: relative;
+    display: flex;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+}
