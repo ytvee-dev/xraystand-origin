@@ -76,7 +76,7 @@ export const paths = {
     },
     SEASONS: {
         id: "seasons",
-        path: "/seasons"
+        path: "/primary-ed"
     },
     PAGES: {
         id: "pages",
