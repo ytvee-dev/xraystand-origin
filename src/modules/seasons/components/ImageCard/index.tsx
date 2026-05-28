@@ -19,12 +19,13 @@ const ImageCard = ({
 }: IImageCardProps) => {
     return (
         <div
-            id={id ?? ""}
+            id={id || ""}
             className={`image-card ${season ? `image-card-${season}` : ""} ${className}`}
         >
             <div className="image-card-image">
                 <img src={imagePath} alt="" />
             </div>
+
             <div className="image-card-text">
                 <h3>{title}</h3>
 

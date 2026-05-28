@@ -32,7 +32,6 @@ const imgPaths = [
 ]
 
 const FirstSection = ({title, description, content}: SeasonContent): ReactElement => {
-
     return (
         <div className="seasons-autumn-section">
             {imgPaths.map(img => (
