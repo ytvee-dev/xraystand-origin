@@ -7,6 +7,7 @@ import CoverSection from "@modules/seasons/sections/CoverSection";
 import AutumnSection from "@modules/seasons/sections/AutumnSection";
 import SummerSection from "@modules/seasons/sections/SummerSection";
 import SpringSection from "@modules/seasons/sections/SpringSection";
+import WinterSection from "@modules/seasons/sections/WinterSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -49,6 +50,7 @@ const Seasons: React.FC = () => {
             >
                 {!isContentLoaded && <Spinner />}
                 <CoverSection />
+                <WinterSection content={textContent.winterSection} />
                 <SpringSection content={textContent.springSection} />
                 <SummerSection content={textContent.summerSection} />
                 <AutumnSection content={textContent.autumnSection} />

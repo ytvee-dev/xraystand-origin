@@ -15,4 +15,5 @@ export const enum SvgSpriteIds {
     BIOLOGY_CELL = "biologyCell",
     SEASONS_FLOWER = "flower",
     SUMMER_SUN = "summerSun",
+    SNOW_LEAF = "snow-leaf",
 }

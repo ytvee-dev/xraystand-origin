@@ -1,0 +1,335 @@
+.seasons-winter-third-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 938px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #65acfc 0%, #9fceff 100%);
+    color: #ffffff;
+}
+
+.seasons-winter-textured-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: hue-rotate(178deg) saturate(1.35) brightness(1.08);
+    opacity: 0.72;
+}
+
+.seasons-winter-third-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 90px 24px 48px;
+}
+
+.seasons-winter-third-title,
+.seasons-winter-safety-title {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.seasons-winter-third-title {
+    margin-bottom: 40px;
+}
+
+.seasons-winter-safety-title {
+    margin: 42px 0 30px;
+}
+
+.seasons-winter-snow-cards {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    width: 100%;
+}
+
+.seasons-winter-notifications {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px 25px;
+    width: 100%;
+    max-width: 1115px;
+}
+
+.seasons-winter-notification {
+    width: 545px !important;
+    max-width: 545px !important;
+}
+
+.seasons-winter-notification p {
+    font-family: Roboto, sans-serif;
+}
+
+.seasons-winter-snowman {
+    position: absolute;
+    z-index: 2;
+    right: clamp(-170px, -8vw, -95px);
+    bottom: -12px;
+    width: clamp(320px, 28vw, 410px);
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+.seasons-winter-snowflake {
+    position: absolute;
+    z-index: 2;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+.seasons-winter-snowflake-top {
+    top: 10px;
+    left: 18.5%;
+    width: 81px;
+}
+
+.seasons-winter-snowflake-left-small {
+    top: 171px;
+    left: 7.6%;
+    width: 61px;
+}
+
+.seasons-winter-snowflake-left-large {
+    top: 395px;
+    left: 2.6%;
+    width: 135px;
+}
+
+.seasons-winter-snowflake-left-lower {
+    top: 548px;
+    left: 0;
+    width: 84px;
+}
+
+.seasons-winter-snowflake-left-bottom {
+    top: 790px;
+    left: 21%;
+    width: 54px;
+}
+
+.seasons-winter-snowflake-right-small {
+    top: 100px;
+    right: 1.5%;
+    width: 54px;
+}
+
+@media (min-width: 1920px) {
+    .seasons-winter-snowman {
+        right: 8%;
+    }
+
+    .seasons-winter-snowflake-top {
+        left: 27%;
+    }
+
+    .seasons-winter-snowflake-left-small {
+        left: 14%;
+    }
+
+    .seasons-winter-snowflake-left-large {
+        left: 10%;
+    }
+
+    .seasons-winter-snowflake-left-lower {
+        left: 9%;
+    }
+}
+
+@media (max-width: 1320px) {
+    .seasons-winter-snow-cards {
+        gap: 16px;
+    }
+
+    .seasons-winter-notification {
+        width: 500px !important;
+        max-width: 500px !important;
+    }
+}
+
+@media (max-width: 1120px) {
+    .seasons-winter-third-section {
+        min-height: 1040px;
+    }
+
+    .seasons-winter-snow-cards {
+        flex-wrap: wrap;
+        max-width: 760px;
+    }
+
+    .seasons-winter-notification {
+        width: 430px !important;
+        max-width: 430px !important;
+    }
+}
+
+@media (max-width: 920px) {
+    .seasons-winter-notifications {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .seasons-winter-notification {
+        width: min(620px, calc(100vw - 48px)) !important;
+        max-width: min(620px, calc(100vw - 48px)) !important;
+    }
+
+    .seasons-winter-snowman {
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 720px) {
+    .seasons-winter-third-section {
+        min-height: 1405px;
+    }
+
+    .seasons-winter-textured-bg {
+        opacity: 0.78;
+    }
+
+    .seasons-winter-third-content {
+        padding: 24px 0 48px;
+    }
+
+    .seasons-winter-third-title,
+    .seasons-winter-safety-title {
+        width: 288px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .seasons-winter-third-title {
+        width: 270px;
+        margin-bottom: 18px;
+        line-height: 26px;
+    }
+
+    .seasons-winter-snow-cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0;
+        max-width: none;
+    }
+
+    .seasons-winter-snow-card-first {
+        margin-top: -2px;
+    }
+
+    .seasons-winter-snow-card-second {
+        margin-top: -14px;
+    }
+
+    .seasons-winter-snow-card-third {
+        margin-top: -8px;
+    }
+
+    .seasons-winter-safety-title {
+        margin: 8px 0 12px;
+    }
+
+    .seasons-winter-notifications {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .seasons-winter-notification {
+        width: calc(100% - 44px) !important;
+        max-width: calc(100% - 44px) !important;
+    }
+
+    .seasons-winter-notification .ds-mui-alert {
+        gap: 16px !important;
+        border-radius: 34px !important;
+        padding: 15px 22px !important;
+        font-size: 18px !important;
+        line-height: 20px !important;
+    }
+
+    .seasons-winter-notification svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .seasons-winter-snowman {
+        display: none;
+    }
+
+    .seasons-winter-snowflake-top {
+        top: 26px;
+        left: 7%;
+        width: 31px;
+    }
+
+    .seasons-winter-snowflake-left-small {
+        top: 135px;
+        left: 7%;
+        width: 61px;
+    }
+
+    .seasons-winter-snowflake-left-large {
+        top: 365px;
+        left: -9px;
+        width: 135px;
+    }
+
+    .seasons-winter-snowflake-left-lower {
+        top: 533px;
+        left: -24px;
+        width: 86px;
+    }
+
+    .seasons-winter-snowflake-left-bottom {
+        top: 613px;
+        left: 23%;
+        width: 42px;
+    }
+
+    .seasons-winter-snowflake-right-small {
+        top: 155px;
+        right: 4%;
+        width: 36px;
+    }
+}
+
+@media (max-width: 390px) {
+    .seasons-winter-notification .ds-mui-alert {
+        padding: 14px 20px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .seasons-winter-third-section {
+        min-height: 1320px;
+    }
+
+    .seasons-winter-notification .ds-mui-alert {
+        font-size: 16px !important;
+        line-height: 18px !important;
+    }
+}
