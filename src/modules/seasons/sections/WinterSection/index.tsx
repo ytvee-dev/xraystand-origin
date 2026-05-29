@@ -3,8 +3,6 @@ import type { SeasonsProps } from "@modules/seasons/types";
 import ThirdSection from "./ThirdSection";
 import FirstSection from "./FirstSection";
 import SecondSection from "./SecondSection";
-// import { type SeasonsProps } from "@modules/seasons/types";
-// import { type ReactElement } from "react";
 import "./style.css";
 
 const WinterSection = ({ content }: SeasonsProps): ReactElement => {
