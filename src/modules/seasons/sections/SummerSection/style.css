@@ -1,0 +1,113 @@
+.seasons-summer-section {
+    margin-inline: auto;
+    position: relative;
+    display: flex;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    background: #62b76d;
+}
+
+.seasons-summer-textured-bg {
+    position: absolute;
+    z-index: 1;
+    filter: hue-rotate(200deg);
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.seasons-summer-bg-img {
+    position: absolute;
+    z-index: 2;
+}
+
+.seasons-summer-section-content {
+    position: relative;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.seasons-summer-title,
+.seasons-summer-subtitle {
+    font-size: 45px;
+    color: white;
+    font-family: Roboto;
+    max-width: 700px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 580px;
+}
+
+.seasons-summer-subtitle {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .seasons-third-section-first-part .seasons-third-section-blocks-container {
+        flex-wrap: wrap;
+
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .seasons-third-section-second-part .seasons-third-section-blocks-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seasons-third-section-notification-block {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .seasons-summer-title {
+        font-size: 42px;
+    }
+
+    .seasons-summer-subtitle {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seasons-summer-title {
+        font-size: 36px;
+    }
+
+    .seasons-summer-subtitle {
+        font-size: 30px;
+        max-width: 290px;
+    }
+}
+
+@media (max-width: 600px) {
+    .seasons-summer-textured-bg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .seasons-third-section-first-part .seasons-section-description {
+        width: 90%;
+    }
+
+    .seasons-third-section-notification-block p {
+        font-size: 1.25rem;
+        line-height: 20px;
+    }
+
+    .seasons-third-section-notification-block {
+        width: 90% !important;
+    }
+}

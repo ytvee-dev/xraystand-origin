@@ -1,0 +1,199 @@
+.image-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.image-card-image {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.image-card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-card-text {
+    position: relative;
+
+    top: 2%;
+    left: 1%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    text-align: center;
+    z-index: 2;
+}
+
+.image-card-text h3 {
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+
+.image-card-text p {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+
+.image-card-spring {
+    width: 540px;
+    height: 530px;
+}
+
+.image-card-summer {
+    width: 521px;
+    height: 495px;
+}
+
+.image-card-autumn {
+    width: 530px;
+    height: 448px;
+}
+
+.image-card-winter {
+    width: 390px;
+    height: 305px;
+}
+
+.image-card-spring h3,
+.image-card-spring p {
+    color: #59168b;
+}
+
+.image-card-summer h3,
+.image-card-summer p {
+    color: #ffffff;
+}
+
+.image-card-autumn h3,
+.image-card-autumn p {
+    color: #7e2a0c;
+}
+
+.image-card-winter h3,
+.image-card-winter p {
+    color: #085fb9;
+}
+
+.image-card-spring .image-card-text {
+    width: 50%;
+}
+
+.image-card-spring p {
+    width: 90%;
+}
+
+.image-card-spring h3 {
+    width: 70%;
+}
+
+.image-card-summer .image-card-text {
+    width: 50%;
+}
+
+.image-card-summer p {
+    width: 90%;
+}
+
+.image-card-autumn .image-card-text {
+    width: 50%;
+}
+
+.image-card-winter .image-card-text {
+    width: 50%;
+}
+
+@media (max-width: 1555px) {
+    .image-card-autumn {
+        width: 460px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1375px) {
+    .image-card-autumn {
+        width: 440px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1267px) {
+    .image-card-spring {
+        width: 500px;
+        height: 500px;
+    }
+
+    .image-card-summer {
+        width: 400px;
+        height: 400px;
+    }
+
+    .image-card-autumn {
+        width: 420px;
+        height: 390px;
+    }
+
+    .image-card-winter {
+        width: 370px;
+        height: 290px;
+    }
+
+    .image-card-text h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .image-card-text p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 440px) {
+    .image-card-spring {
+        width: 370px;
+        height: 380px;
+    }
+
+    .image-card-summer {
+        width: 380px;
+        height: 360px;
+    }
+
+    .image-card-autumn {
+        width: 360px;
+        height: 336px;
+    }
+
+    .image-card-winter {
+        width: 300px;
+        height: 250px;
+    }
+
+    .image-card-text h3 {
+        font-size: 18px;
+    }
+
+    .image-card-text p {
+        font-size: 12px;
+    }
+
+    .image-card-spring h3 {
+        width: 90%;
+    }
+}

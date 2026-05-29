@@ -1,0 +1,114 @@
+.seasons-autumn-deer {
+    position: relative;
+    z-index: 3 !important;
+    height: 740px;
+    width: 605px;
+    bottom: 0;
+    left: -8%;
+}
+
+.seasons-autumn-umbrella {
+    height: 430px;
+    width: 417px;
+    top: 30%;
+    left: 78%;
+}
+
+.seasons-autumn-second-green-leaf {
+    width: 120px;
+    top: 5%;
+    left: 9%;
+    transform: rotateZ(40deg);
+    display: none;
+}
+
+.seasons-autumn-second-yellow-leaf {
+    width: 100px;
+    top: 75%;
+    left: 1%;
+    display: none;
+}
+
+.seasons-autumn-second-section-content .seasons-autumn-subtitle {
+    margin-bottom: 39px;
+}
+
+.seasons-autumn-second-section-cards-wrapper {
+    margin-inline: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 90px;
+    padding: 10px;
+}
+
+@media(min-width: 1920px) {
+    .seasons-autumn-deer {
+        left: 10%;
+    }
+
+    .seasons-autumn-umbrella {
+        left: 70%;
+    }
+}
+
+@media(max-width: 1250px) {
+    .seasons-autumn-deer {
+        height: 450px;
+        width: 380px;
+    }
+
+    .seasons-autumn-second-green-leaf {
+        display: block;
+        transform: rotateZ(0);
+    }
+}
+
+@media(max-width: 1000px) {
+    .seasons-autumn-deer {
+        display: none;
+    }
+
+    .seasons-autumn-umbrella {
+        height: 250px;
+        width: 217px;
+        top: 7%;
+    }
+
+    .seasons-autumn-second-yellow-leaf {
+        display: block;
+        top: 89%;
+        width: 63px;
+        height: 87px;
+        z-index: 3 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .seasons-autumn-second-section-cards-wrapper {
+        margin-bottom: 67px;
+    }
+
+    .seasons-autumn-second-section-content .seasons-autumn-subtitle {
+        margin-bottom: 0;
+    }
+
+}
+
+@media(max-width: 680px) {
+    .seasons-autumn-umbrella {
+        height: 200px;
+        width: 175px;
+        top: 0;
+    }
+}
+
+@media(max-width: 460px) {
+    .seasons-autumn-second-green-leaf {
+        height: 99px;
+        width: 73px;
+        top: 5%;
+        left: -5%;
+    }
+}

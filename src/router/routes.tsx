@@ -7,7 +7,7 @@ const HomePage = lazy(() => import("@pages/Home"));
 const NotFoundPage = lazy(() => import("@pages/NotFound"));
 const TrafficsLawsPage = lazy(() => import("@pages/TrafficsLaws"));
 const KazakhAdebiet = lazy(() => import("@pages/KazakhAdebiet"));
-const InProgress = lazy(() => import("@pages/InProgress"));
+// const InProgress = lazy(() => import("@pages/InProgress"));
 const Chemistry = lazy(() => import("@pages/Chemistry"));
 const RusLit = lazy(() => import("@pages/RusLit"));
 const Nutrition = lazy(() => import("@pages/Nutrition"));
@@ -19,6 +19,8 @@ const FireSafety = lazy(() => import("@pages/FireSafety"));
 const Physics = lazy(() => import("@pages/Physics"));
 const English = lazy(() => import("@pages/English"));
 const KazMusic = lazy(() => import("@pages/KazMusInstruments"));
+const Seasons = lazy(() => import("@pages/Seasons"));
+const KazTarih = lazy(() => import("@pages/KazTarih"));
 
 export const paths = {
     HOME: {
@@ -72,6 +74,14 @@ export const paths = {
     BIOLOGY: {
         id: "biology",
         path: "/bio",
+    },
+    SEASONS: {
+        id: "seasons",
+        path: "/primary-ed",
+    },
+    KAZ_TARIH: {
+        id: "kaztarih",
+        path: "/kaztarih",
     },
     PAGES: {
         id: "pages",
@@ -144,7 +154,14 @@ const routes: RouteObject[] = [
         ...paths.BIOLOGY,
         element: <Biology />,
     },
-
+    {
+        ...paths.SEASONS,
+        element: <Seasons />,
+    },
+    {
+        ...paths.KAZ_TARIH,
+        element: <KazTarih />,
+    },
     {
         ...paths.PAGES,
         element: <Pages />,

@@ -1,0 +1,85 @@
+.english-seventh-section {
+    width: 100%;
+
+    background: linear-gradient(
+        to right,
+        #d16f9f 0%,
+        #d675a8 50%,
+        #d16f9f 100%
+    );
+
+    color: #ffffff;
+}
+
+.english-seventh-section-wrapper {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.english-seventh-section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2%;
+
+    gap: 1.5rem;
+}
+
+.english-seventh-section-header .english-section-description {
+    width: 65%;
+}
+
+.english-seventh-section-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2%;
+
+    gap: 1.5rem;
+}
+
+.english-seventh-section-blocks-container {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    transform: translateX(-6%);
+
+    gap: 1.5rem;
+}
+
+.english-seventh-section-block .info-block-labels-container {
+    padding: 0;
+}
+
+.english-seventh-section-block .info-block-labels-container {
+    align-items: start;
+}
+
+.english-seventh-section-image-wrapper {
+    width: 35%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.english-seventh-section-image {
+    width: 100%;
+    height: 100%;
+}

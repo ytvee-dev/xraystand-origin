@@ -1,0 +1,135 @@
+.seasons-summer-first-yellow-butterfly {
+    width: 180px;
+    height: 182px;
+    top: 5%;
+    left: 7%;
+}
+
+.seasons-summer-first-fox {
+    width: 431px;
+    height: 360px;
+    top: 3%;
+    left: 70%;
+}
+
+.seasons-summer-first-pink-butterfly {
+    width: 205px;
+    height: 194px;
+    top: 70%;
+    left: 75%;
+    z-index: 3;
+}
+
+.seasons-summer-first-yellow-butterfly-mobile {
+    width: 110px;
+    height: 103px;
+    transform: rotateZ(-135deg);
+    left: 80%;
+    display: none;
+}
+
+.seasons-summer-first-logo {
+    width: 114px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.seasons-summer-title {
+    margin-bottom: 15px;
+}
+
+.seasons-summer-first-section-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1064px;
+    gap: 18px;
+    margin-bottom: 99px;
+    padding: 10px;
+}
+
+@media(min-width: 1680px) {
+    .seasons-summer-first-yellow-butterfly {
+        left: 15%;
+    }
+}
+
+@media(min-width: 1920px) {
+    .seasons-summer-first-yellow-butterfly {
+        left: 18%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .seasons-summer-first-fox {
+        left: 58%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .seasons-summer-first-yellow-butterfly {
+        width: 150px;
+        height: 152px;
+    }
+    
+    .seasons-summer-first-fox {
+        display: none;
+    }
+
+    .seasons-summer-first-pink-butterfly {
+        width: 140px;
+        height: 142px;
+    }
+
+    .seasons-summer-first-yellow-butterfly-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 768px){
+    .seasons-summer-title{
+        margin-bottom: 5px;
+    }
+    
+    .seasons-summer-first-logo {
+        width: 80px;
+        margin-top: 21px;
+        margin-bottom: 11px;
+    }
+
+    .seasons-summer-first-pink-butterfly {
+        width: 80px;
+        height: 82px;
+        top: 86%;
+        z-index: 3 !important;
+    }
+
+    .seasons-summer-first-section-cards-wrapper {
+        margin-bottom: 33px;
+    }
+}
+
+@media(max-width: 680px) {
+    .seasons-summer-first-subtitle {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 520px) {
+    .seasons-summer-first-yellow-butterfly {
+        left: -10%;
+    }
+    
+    .seasons-summer-first-logo {
+        width: 71px;
+    }
+}
+
+@media(max-width: 360px) {
+     .seasons-summer-first-pink-butterfly {
+        width: 50px;
+        height: 52px;
+        top: 92%;
+        left: 80%;
+    }
+}

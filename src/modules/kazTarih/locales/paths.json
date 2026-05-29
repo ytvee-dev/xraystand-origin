@@ -1,0 +1,23 @@
+{
+    "cover": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779952882/cover_bg_1_y3arbg.webp",
+    "bg": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779955552/bg_1_cktomb.webp",
+    "lambs": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779953580/lambs_2_ky31cz.webp",
+    "axe": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779953667/axe_1_pomv4j.webp",
+    "spearAndArrows": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779953849/spearAndArrows_2_nn86vm.webp",
+    "sword": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779953921/sword_1_1_v4dytl.webp",
+    "heroes": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779954027/heroes_1_q7ka3f.webp",
+    "smallCards": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779954155/Burunduk_1_vil6km.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779954223/Kasim_1_wtej4q.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779958331/time_of_troubles_hvgeyu.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779958472/Halnazar_3_yjg2vh.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779954558/Shigay_1_vfkzli.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779954738/Tauekel_2_pvxf6d.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779954839/Esim_2_hq7omj.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779954952/Janibek_1_nuaw4u.webp"
+    ],
+    "largeCards": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779958603/Jangir_2_kocbpb.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1779955162/Tauke_1_qpiym3.webp"
+    ]
+}

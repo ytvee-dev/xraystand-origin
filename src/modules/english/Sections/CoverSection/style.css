@@ -3,8 +3,6 @@
     width: 100%;
     height: 46.875rem;
 
-    margin-top: 4.75rem;
-
     background-color: #92a9c1;
     color: #ffffff;
 }
@@ -33,7 +31,7 @@
 
     margin-left: 8%;
 
-    width: 42.688rem;
+    width: 40%;
 
     line-height: 100%;
     font-size: 7.5rem;
@@ -45,8 +43,8 @@
 .english-cover-section-blocks-container {
     width: 50%;
     height: 100%;
-
     position: relative;
+
     z-index: 2;
 }
 

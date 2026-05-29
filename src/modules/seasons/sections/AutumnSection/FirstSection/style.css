@@ -1,0 +1,156 @@
+.seasons-autumn-yellow-leaf {
+    width: 113px;
+    height: 154px;
+    top: 5%;
+    left: 2%;
+}
+
+.seasons-autumn-green-leaf {
+    width: 193px;
+    height: 263px;
+    top: 20%;
+    left: 7%;
+}
+
+.seasons-autumn-red-leaf {
+    width: 353px;
+    height: 340px;
+    top: 55%;
+    left: 3%;
+}
+
+.seasons-autumn-bird {
+    width: 291px;
+    height: 213px;
+    top: 3%;
+    left: 65%;
+    transform: rotateZ(30deg);
+}
+
+.seasons-autumn-bear {
+    width: 550px;
+    height: 548px;
+    top: 25%;
+    left: 65%;
+}
+
+.seasons-autumn-logo {
+    width: 135px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.seasons-autumn-title {
+    margin-bottom: 15px;
+}
+
+.seasons-autumn-first-section-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 30px;
+    margin-bottom: 99px;
+    padding-inline: 10px;
+}
+
+@media(min-width: 1920px) {
+    .seasons-autumn-yellow-leaf {
+        left: 17%;
+    }
+
+    .seasons-autumn-green-leaf {
+        left: 7%;
+    }
+
+    .seasons-autumn-red-leaf {
+        left: 12%;
+    }
+
+    .seasons-autumn-bird {
+        left: 83%;
+    }
+
+    .seasons-autumn-bear {
+        left: 60%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .seasons-autumn-yellow-leaf {
+        width: 100px;
+        height: 130px;
+        top: 5%;
+        left: 2%;
+    }
+
+    .seasons-autumn-green-leaf {
+        width: 150px;
+        height: 200px;
+        top: 25%;
+        left: 7%;
+    }
+
+    .seasons-autumn-bear {
+        width: 450px;
+        height: 445px;
+        top: 45%;
+        left: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .seasons-autumn-first-section-cards-wrapper {
+        margin-bottom: 18px;
+    }   
+}
+
+@media(max-width: 680px) {
+    .seasons-autumn-green-leaf {
+        top: 14%;
+        left: 70%;
+    }
+
+    .seasons-autumn-bear,
+    .seasons-autumn-bird {
+        display: none;
+    }
+
+    .seasons-autumn-title {
+        font-size: 36px;
+        margin-bottom: 9px;
+    }
+}
+
+
+@media(max-width: 520px) {
+    .seasons-autumn-yellow-leaf {
+        width: 63px;
+        height: 87px;
+        top: 2%;
+        left: 80%;
+    }
+
+    .seasons-autumn-green-leaf {
+        height: 150px;
+        width: 109px;
+    }
+
+    .seasons-autumn-red-leaf {
+        height: 161px;
+        width: 137px;
+        top: 4%;
+        left: -10%;
+        transform: rotateZ(10deg);
+    }
+
+    .seasons-autumn-bear,
+    .seasons-autumn-bird {
+        display: none;
+    }
+
+    .seasons-autumn-logo {
+        width: 71px;
+        margin-bottom: 11px;
+    }
+}

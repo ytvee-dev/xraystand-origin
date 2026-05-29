@@ -1,0 +1,90 @@
+.winter-second-section {
+    width: 100%;
+    position: relative;
+
+    color: #ffffff;
+
+    overflow: hidden;
+
+    z-index: 3;
+}
+
+.winter-second-section-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.winter-second-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 3rem;
+
+    z-index: 1;
+}
+
+.winter-second-section-blocks-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+
+    gap: 0.5rem;
+
+    z-index: 1;
+}
+
+.winter-second-section-background-images {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.winter-second-section-img {
+    position: absolute;
+
+    z-index: 1;
+}
+
+#winter-second-section-card-0 {
+    flex-direction: row-reverse;
+}
+
+#winter-second-section-card-2 {
+    flex-direction: row-reverse;
+}
+
+#winter-second-section-img-1 {
+    width: 25%;
+
+    top: 5%;
+}
+
+#winter-second-section-img-2 {
+    width: 25%;
+
+    bottom: 0;
+    right: 2%;
+}
+
+#winter-second-section-img-3 {
+    z-index: 1;
+
+    width: 100%;
+}
