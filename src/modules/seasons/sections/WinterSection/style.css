@@ -1,3 +1,228 @@
 .seasons-winter-sections-bg {
     background: linear-gradient(135deg, #65acfc 0%, #9fceff 100%);
+    background: #65acfc;
+}
+
+.seasons-winter-section {
+    width: 100vw;
+    margin-inline: auto;
+    position: relative;
+    display: flex;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+    .winter-first-section-blocks-container {
+        width: 65%;
+
+        column-gap: 1rem;
+    }
+
+    .winter-first-section-card .card-text {
+        padding: 2.25rem 1.406rem;
+    }
+
+    #winter-second-section-img-2 {
+        width: 20%;
+
+        right: 1%;
+    }
+
+    .winter-second-section .card-with-image .card-text {
+        padding: 0 0 0 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .winter-first-section-blocks-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 1rem;
+
+        width: 50%;
+    }
+
+    .winter-first-section-card .card-text {
+        padding: 2.25rem 22.5px;
+    }
+
+    .winter-second-section-card {
+        width: 65%;
+    }
+
+    #winter-bear-img {
+        top: 50%;
+        left: 0;
+        width: 45%;
+    }
+
+    #winter-second-section-img-1 {
+        width: 20%;
+
+        top: 5%;
+    }
+
+    #winter-second-section-img-2 {
+        width: 20%;
+
+        bottom: 0;
+        right: 0;
+    }
+
+    .winter-second-section .seasons-section-description {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .winter-first-section-blocks-container {
+        width: 60%;
+    }
+
+    .winter-second-section .card-with-image {
+        padding: 0.625rem 0.938rem;
+    }
+
+    .winter-second-section .card-with-image.max {
+        height: fit-content;
+    }
+
+    #winter-second-section-img-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .winter-first-section-blocks-container {
+        width: 80%;
+
+        padding-bottom: 10rem;
+    }
+
+    .winter-second-section-card {
+        width: 90%;
+    }
+
+    .winter-second-section-header {
+        width: 80%;
+    }
+
+    #winter-bear-img {
+        top: auto;
+        bottom: 0;
+        left: 25%;
+        width: 50%;
+        z-index: 3;
+    }
+
+    #winter-second-section-img-2 {
+        display: none;
+    }
+
+    #winter-second-section-img-3 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .winter-first-section-blocks-container {
+        width: 90%;
+
+        padding-bottom: 14rem;
+    }
+
+    .winter-second-section-card {
+        width: 95%;
+    }
+
+    .winter-first-section-card .card-text {
+        padding: 0 1rem;
+    }
+
+    .winter-first-section-header .seasons-section-title {
+        font-size: 36px;
+
+        line-height: 52px;
+    }
+
+    .winter-first-section .seasons-section-description,
+    .winter-second-section .seasons-section-description {
+        font-size: 1.875rem !important;
+        font-weight: 600;
+        line-height: 1.625rem !important;
+    }
+
+    #winter-bear-img {
+        width: 70%;
+        left: 20%;
+    }
+
+    #winter-section-snowflake-0 {
+        width: 5%;
+
+        top: 6%;
+        left: 4%;
+    }
+
+    #winter-section-snowflake-1 {
+        width: 20%;
+
+        top: 2%;
+        right: 4%;
+    }
+
+    #winter-section-snowflake-2 {
+        width: 10%;
+
+        top: 16%;
+        left: 5%;
+    }
+
+    #winter-section-snowflake-3 {
+        width: 5%;
+
+        top: 17%;
+        right: 5%;
+    }
+
+    #winter-section-snowflake-4 {
+        display: none;
+    }
+
+    .winter-first-section-header .seasons-section-description {
+        width: 70%;
+    }
+
+    .winter-second-section .card-image img {
+        width: 125px;
+    }
+
+    .winter-second-section .card-with-image .card-text {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .winter-first-section-blocks-container {
+        padding-bottom: 12rem;
+    }
+
+    .seasons-second-section-card {
+        padding: 0.938rem 1.25rem 0.938rem 0.938rem !important;
+    }
+
+    .seasons-second-section-card .card-image img {
+        padding: 0.625rem;
+    }
+
+    #seasons-second-section-card-0 .card-image {
+        width: 90%;
+    }
+
+    #seasons-second-section-card-2 .card-image {
+        width: 95%;
+    }
 }
