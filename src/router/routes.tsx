@@ -77,11 +77,11 @@ export const paths = {
     },
     SEASONS: {
         id: "seasons",
-        path: "/primary-ed"
+        path: "/seasons",
     },
     KAZ_TARIH: {
-        id: "seasons",
-        path: "/kaztarih"
+        id: "kaztarih",
+        path: "/kaztarih",
     },
     PAGES: {
         id: "pages",
@@ -156,11 +156,11 @@ const routes: RouteObject[] = [
     },
     {
         ...paths.SEASONS,
-        element: <Seasons/>
+        element: <Seasons />,
     },
     {
         ...paths.KAZ_TARIH,
-        element: <KazTarih/>
+        element: <KazTarih />,
     },
     {
         ...paths.PAGES,
