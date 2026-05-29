@@ -1,3 +1,7 @@
+.seasons-container {
+	overflow-x: hidden;
+}
+
 .seasons-section-title {
     font-size: 2.813rem;
     font-weight: bold;

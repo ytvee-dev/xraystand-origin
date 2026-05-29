@@ -7,7 +7,7 @@ const HomePage = lazy(() => import("@pages/Home"));
 const NotFoundPage = lazy(() => import("@pages/NotFound"));
 const TrafficsLawsPage = lazy(() => import("@pages/TrafficsLaws"));
 const KazakhAdebiet = lazy(() => import("@pages/KazakhAdebiet"));
-const InProgress = lazy(() => import("@pages/InProgress"));
+// const InProgress = lazy(() => import("@pages/InProgress"));
 const Chemistry = lazy(() => import("@pages/Chemistry"));
 const RusLit = lazy(() => import("@pages/RusLit"));
 const Nutrition = lazy(() => import("@pages/Nutrition"));
@@ -77,7 +77,7 @@ export const paths = {
     },
     SEASONS: {
         id: "seasons",
-        path: "/seasons",
+        path: "/primary-ed",
     },
     KAZ_TARIH: {
         id: "kaztarih",
