@@ -1,22 +1,18 @@
-import Card from "@modules/seasons/components/Card";
-import path from "@modules/seasons/locales/paths.json";
-import textContentRu from "@modules/seasons/locales/rus.json";
-import textContentKz from "@modules/seasons/locales/kaz.json";
-import { useLocaleContent } from "@hooks/useLocale";
-import ImageCard from "@modules/seasons/components/ImageCard";
+import * as content from "@modules/kazTarih/locales/rus.json";
 import "./style.css";
+import TextFormatterCard from '@modules/kazTarih/components/TextFormatterCard'
 
 const SeasonPage = () => {
-    const textContent = useLocaleContent(textContentRu, textContentKz);
+    const cards = content.firstSection.cards;
+    const CardsMap = Object.values(cards);
 
     return (
-        <div className="cards">
-            <ImageCard
-                season="winter"
-                title={textContent.winterSection.content[9].subTitle}
-                description={textContent.winterSection.content[9].description}
-                imagePath={path.winter.snowCards[0]}
-            />
+        <div className="implementation">
+            {CardsMap.map((card, index) => 
+                <TextFormatterCard items={card} 
+                theme={index % 2 == 0 ? "dark" : "light"} 
+                key={index}/>
+            )}
         </div>
     );
 };
