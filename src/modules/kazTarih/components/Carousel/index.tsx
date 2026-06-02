@@ -8,16 +8,16 @@ interface ICarouselProps {
 }
 
 const Carousel = ({ children, padding }: ICarouselProps): ReactElement => {
-    const [emblaRef] = useEmblaCarousel({ containScroll: "trimSnaps" });
+    const [emblaRef] = useEmblaCarousel();
 
     return (
-        <div className="kaz-carousel embla">
+        <div className="kaz-tarih-carousel">
             <div
-                className="embla__viewport"
+                className="kaz-tarih-carousel-viewport"
                 ref={emblaRef}
                 style={{ padding: padding }}
             >
-                <div className="embla__container">{children}</div>
+                <div className="kaz-tarih-carousel-container">{children}</div>
             </div>
         </div>
     );

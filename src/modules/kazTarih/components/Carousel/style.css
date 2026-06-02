@@ -1,19 +1,19 @@
-.kaz-carousel.embla {
+.kaz-tarih-carousel {
     width: 100%;
 }
 
-.kaz-carousel .embla__viewport {
+.kaz-tarih-carousel-viewport {
     overflow: hidden;
 }
 
-.kaz-carousel .embla__container {
+.kaz-tarih-carousel-container {
     display: flex;
     touch-action: pan-y pinch-zoom;
 
     margin-left: calc(1.5rem * -1);
 }
 
-.embla__slide {
+.kaz-tarih-carousel-container .kaz-tarih-carousel-card {
     min-width: 0;
     transform: translate3d(0, 0, 0);
 
