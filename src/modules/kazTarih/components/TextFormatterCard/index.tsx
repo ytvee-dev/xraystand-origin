@@ -9,13 +9,22 @@ interface ContentItem {
 
 interface TextFormatterProps {
   items: ContentItem[];
-  theme: "light" | "dark";
+  theme?: "light" | "dark";
+  className?: string;
+  style?: React.CSSProperties;
 }
 
 const TextFormatterCard: React.FC<TextFormatterProps> = 
-  ({ items, theme }: TextFormatterProps) => {
+  ({items,
+    theme = "light",
+    className,
+    style }: TextFormatterProps) => {
+
   return (
-    <div className={`text-formatter text-formatter-${theme}`}>
+    <div 
+      className={`text-formatter text-formatter-${theme} ${className}`} 
+      style={style}
+    >
       {items.map((item, index) => (
         <div key={index} className="text-formatter-block">
 
