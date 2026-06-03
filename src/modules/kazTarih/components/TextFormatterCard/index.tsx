@@ -1,4 +1,4 @@
-import React from "react";
+import React, { type CSSProperties } from "react";
 import './style.css'
 
 interface ContentItem {
@@ -11,7 +11,7 @@ interface TextFormatterProps {
   items: ContentItem[];
   theme?: "light" | "dark";
   className?: string;
-  style?: React.CSSProperties;
+  style?: CSSProperties;
 }
 
 const TextFormatterCard: React.FC<TextFormatterProps> = 
