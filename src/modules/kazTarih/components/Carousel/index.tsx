@@ -1,21 +1,27 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { type ReactElement, type ReactNode } from "react";
+import type { CSSProperties } from "@mui/material";
 import "./style.css";
 
 interface ICarouselProps {
+    className?: string;
     children?: ReactNode | ReactElement;
-    padding?: string;
+    style?: CSSProperties;
 }
 
-const Carousel = ({ children, padding }: ICarouselProps): ReactElement => {
+const Carousel = ({
+    children,
+    className,
+    style,
+}: ICarouselProps): ReactElement => {
     const [emblaRef] = useEmblaCarousel();
 
     return (
-        <div className="kaz-tarih-carousel">
+        <div className={`kaz-tarih-carousel ${className}`}>
             <div
                 className="kaz-tarih-carousel-viewport"
                 ref={emblaRef}
-                style={{ padding: padding }}
+                style={style}
             >
                 <div className="kaz-tarih-carousel-container">{children}</div>
             </div>
