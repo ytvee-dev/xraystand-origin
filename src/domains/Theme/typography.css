@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Gunny Rewritten";
+    src: url("@assets/fonts/GunnyRewritten.woff") format("woff");
+    font-style: normal;
+}
+
 .common-text {
     font-weight: 400;
     font-size: 1.5rem;
@@ -42,8 +48,6 @@
     color: #ffffffde;
 }
 
-@font-face {
+.kaz-tarih-title {
     font-family: "Gunny Rewritten";
-    src: url("@assets/fonts/GunnyRewritten.woff") format("woff");
-    font-style: normal;
 }
