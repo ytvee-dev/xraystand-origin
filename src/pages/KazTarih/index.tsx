@@ -10,6 +10,7 @@ import { useLocaleContent } from "@hooks/useLocale";
 import type { TRootState } from "@store/index";
 import { useSelector } from "react-redux";
 import "./style.css";
+import SeventhSection from "@modules/kazTarih/Sections/SeventhSection";
 
 const pageLayoutSX = {
     backgroundColor: "#FCF1EB",
@@ -48,6 +49,10 @@ const KazHistory: React.FC = () => {
                 <CoverSection
                     className="kt-cover-section"
                     content={textContent.coverSection}
+                />
+                <SeventhSection
+                    className="kt-seventh-section"
+                    content={textContent.seventhSection}
                 />
             </BrightnessLayout>
         </div>

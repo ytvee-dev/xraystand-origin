@@ -1,0 +1,86 @@
+.kt-seventh-section {
+    width: 100%;
+
+    background-color: #d7af76;
+    color: #ffffff;
+}
+
+.kt-seventh-section-content {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+.kt-seventh-section-header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 2.5rem;
+
+    gap: 1.5rem;
+
+    z-index: 2;
+}
+
+.kt-seventh-section-header .kt-title {
+    width: 50%;
+    text-align: center;
+}
+
+.kt-seventh-section-header .kt-description {
+    width: 80%;
+}
+
+.kt-seventh-section-block-with-image {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+
+    z-index: 2;
+}
+
+.kt-seventh-section-img {
+    width: 40%;
+}
+
+.kt-seventh-section-blocks-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+
+    gap: 2rem;
+}
+
+.kt-text-block-with-list {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.kt-text-block-with-list span,
+.kt-text-block-with-list li {
+    font-size: 1.25rem;
+    line-height: auto;
+    letter-spacing: 0%;
+}
+
+.kt-text-block-with-list li {
+    margin-left: 5%;
+}
