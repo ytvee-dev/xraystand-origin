@@ -1,0 +1,58 @@
+.kt-cover-section {
+    width: 100%;
+    background-color: #d2af83;
+
+    color: #ffffff;
+}
+
+.kt-cover-section-content {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kt-background-img {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 1;
+}
+
+.kt-cover-section-img {
+    width: 90%;
+    z-index: 2;
+}
+
+.kt-cover-section-title {
+    position: absolute;
+    width: 90%;
+
+    z-index: 3;
+
+    text-align: center;
+
+    font-size: 4.375rem;
+    letter-spacing: 50%;
+
+    text-shadow: 0.25rem 0.25rem 0.25rem #892f17;
+}
+
+.kt-cover-section-description {
+    position: absolute;
+    bottom: 17%;
+
+    width: 75%;
+    z-index: 3;
+
+    font-size: 1.875rem;
+    font-weight: bold;
+    letter-spacing: 0%;
+}
