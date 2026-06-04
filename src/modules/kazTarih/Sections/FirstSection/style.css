@@ -1,0 +1,49 @@
+.kaz-tarih-first-section {
+    overflow-x: hidden;
+    background-color: #ba7c31;
+    position: relative;
+    height: fit-content;
+    padding-top: 75px;
+}
+
+.kaz-tarih-bg-img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+.kaz-tarih-first-section-content-wrapper {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: fit-content;
+}
+
+.kaz-tarih-first-section-title {
+    margin-bottom: 14px;
+    font-size: 50px;
+    color: white;
+    max-width: 833px;
+    text-align: center;
+    margin-inline: auto;
+}
+
+.kaz-tarih-first-section-subtitle {
+    font-size: 30px;
+    color: #64462D;
+    max-width: 960px;
+    text-align: justify;
+    margin-inline: auto;
+    margin-bottom: 77px;
+}
+
+.kaz-tarih-cards-wrapper {
+    display: flex;
+    gap: 34px;
+    margin-bottom: 48px;
+    margin-left: 36px;
+}
