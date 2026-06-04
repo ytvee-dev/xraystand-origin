@@ -1,0 +1,21 @@
+.kaz-tarih-carousel {
+    width: 100%;
+}
+
+.kaz-tarih-carousel-viewport {
+    overflow: hidden;
+}
+
+.kaz-tarih-carousel-container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+
+    margin-left: calc(1.5rem * -1);
+}
+
+.kaz-tarih-carousel-container .kaz-tarih-carousel-card {
+    min-width: 0;
+    transform: translate3d(0, 0, 0);
+
+    margin-left: 1.5rem;
+}
