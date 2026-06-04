@@ -1,5 +1,5 @@
 .text-formatter {
-    max-width: 577px;
+    width: 577px;
     padding: 41px 45px;
     font-size: 20px;
     display: flex;
@@ -34,7 +34,7 @@
 
 @media(max-width: 768px) {
     .text-formatter {
-        max-width: 422px;
+        width: 422px;
         padding: 38px 33px;
         font-size: 18px;
     }
@@ -42,8 +42,20 @@
 
 @media(max-width: 420px) {
     .text-formatter {
-        max-width: 275px;
+        width: 360px;
         padding: 24px;
         font-size: 16px;
+    }
+}
+
+@media(max-width: 370px) {
+    .text-formatter {
+        width: 340px;
+    }
+}
+
+@media(max-width: 320px) {
+    .text-formatter {
+        width: 290px;
     }
 }
