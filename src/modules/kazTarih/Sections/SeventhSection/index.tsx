@@ -1,10 +1,11 @@
+import Carousel from "@modules/kazTarih/components/Carousel";
 import * as paths from "@modules/kazTarih/locales/paths.json";
+import DSNotification from "@components/common/DSNotification";
+import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
 import type { IEnglishSectionProps } from "@modules/english/types";
 import type { ICardsParagraphs } from "@modules/kazTarih/types";
 import type { ReactElement } from "react";
 import "./style.css";
-import Carousel from "@modules/kazTarih/components/Carousel";
-import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
 
 const SeventhSection = ({
     className,
@@ -59,7 +60,11 @@ const SeventhSection = ({
                     </div>
                 </div>
 
-                <Carousel style={{ padding: "1rem" }}>
+                <Carousel
+                    style={{
+                        padding: "0 4rem",
+                    }}
+                >
                     {content.cards.map(
                         (cardData: ICardsParagraphs[], index: number) => (
                             <TextFormatterCard
@@ -67,11 +72,27 @@ const SeventhSection = ({
                                 key={`kt-seventh-section-${index}`}
                                 items={cardData}
                                 theme="light"
-                                style={{ flex: "0 0 550px" }}
+                                style={{
+                                    flex: "0 0 550px",
+                                    color: "#744C32",
+                                    backgroundColor: "#F4E0BF",
+                                }}
                             />
                         ),
                     )}
                 </Carousel>
+
+                <DSNotification
+                    className="kt-seventh-section-ds"
+                    content={content.summaryCard}
+                    iconWidth="36px"
+                    cardGap="0.5rem"
+                    backgroundColor="#F4E0BF"
+                    borderColor="#724f35"
+                    textColor="#744C32"
+                    fontSize="20px"
+                    style={{ maxWidth: "none", width: "80%" }}
+                />
             </div>
         </section>
     );

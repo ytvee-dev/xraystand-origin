@@ -4,13 +4,13 @@ import * as paths from "@modules/kazTarih/locales/paths.json";
 import * as contentRu from "@modules/kazTarih/locales/rus.json";
 import * as contentKz from "@modules/kazTarih/locales/kaz.json";
 import CoverSection from "@modules/kazTarih/Sections/CoverSection";
+import SeventhSection from "@modules/kazTarih/Sections/SeventhSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
 import type { TRootState } from "@store/index";
 import { useSelector } from "react-redux";
 import "./style.css";
-import SeventhSection from "@modules/kazTarih/Sections/SeventhSection";
 
 const pageLayoutSX = {
     backgroundColor: "#FCF1EB",

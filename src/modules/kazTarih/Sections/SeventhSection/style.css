@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
 
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .kt-seventh-section-header {
@@ -83,4 +83,18 @@
 
 .kt-text-block-with-list li {
     margin-left: 5%;
+}
+
+.kt-seventh-section-ds {
+    z-index: 2;
+
+    margin-bottom: 2rem;
+}
+
+.kt-seventh-section-ds .list {
+    gap: 0;
+}
+
+.css-1oymmvh-MuiPaper-root-MuiAlert-root {
+    max-width: none !important;
 }
