@@ -1,4 +1,4 @@
-.kaz-tarih-first-section {
+.kt-first-section {
     overflow-x: hidden;
     background-color: #ba7c31;
     position: relative;
@@ -6,7 +6,7 @@
     padding-top: 75px;
 }
 
-.kaz-tarih-bg-img {
+.kt-bg-img {
     position: absolute;
     z-index: 0;
     top: 0;
@@ -15,25 +15,22 @@
     transform: translateX(-50%);
 }
 
-.kaz-tarih-first-section-content-wrapper {
+.kt-first-section-content-wrapper {
     position: relative;
     z-index: 1;
-    top: 0;
-    left: 0;
-    height: fit-content;
 }
 
-.kaz-tarih-first-section-title {
+.kt-first-section-title {
     margin-bottom: 14px;
-    font-size: 50px;
     color: white;
-    max-width: 833px;
+    max-width: 700px;
     text-align: center;
     margin-inline: auto;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
-.kaz-tarih-first-section-subtitle {
-    font-size: 30px;
+.kt-first-section-subtitle {
     color: #64462D;
     max-width: 960px;
     text-align: justify;
@@ -41,9 +38,11 @@
     margin-bottom: 77px;
 }
 
-.kaz-tarih-cards-wrapper {
-    display: flex;
-    gap: 34px;
+.kt-formatter-card-wrapper {
     margin-bottom: 48px;
-    margin-left: 36px;
+}
+
+.kt-formatter-card {
+    margin-left: 38px;
+    flex-shrink: 0;
 }

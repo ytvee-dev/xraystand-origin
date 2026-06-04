@@ -11,18 +11,17 @@ const CoverSection = ({content}: IKazTarihProps): ReactElement => {
     // const summaryCard = content.summaryCard;
 
     return (
-        <section className="kaz-tarih-first-section">
-            <img src={paths.bg} alt="" className="kaz-tarih-bg-img"/>
+        <section className="kt-first-section">
+            <img src={paths.bg} alt="" className="kt-bg-img"/>
 
-            <div className="kaz-tarih-first-section-content-wrapper">
-                <h2 className="kaz-tarih-first-section-title">{content.title}</h2>
-                <p className="kaz-tarih-first-section-subtitle">{content.description}</p>
-                <Carousel>
-                    <div className="kaz-tarih-cards-wrapper">
-                        {cards.map((card, index) =>
-                            <TextFormatterCard items={card} key={index}/>
-                        )}
-                    </div>
+            <div className="kt-first-section-content-wrapper">
+                <h2 className="kt-title gr-font-family kt-first-section-title">{content.title}</h2>
+                <p className="kt-description kt-first-section-subtitle">{content.description}</p>
+
+                <Carousel className="kt-formatter-card-wrapper">
+                    {cards.map((card, index) =>
+                        <TextFormatterCard items={card} key={index} className="kt-formatter-card"/>
+                    )}
                 </Carousel>
                 {/* <DSNotification content={summaryCard}/> */}
             </div>
