@@ -6,45 +6,52 @@ import type { ICardData } from "@modules/kazTarih/types";
 import type { ReactElement } from "react";
 import "./style.css";
 
-const EighthSection = ({
+const NinthSection = ({
     className,
     content,
 }: IEnglishSectionProps): ReactElement => {
     return (
         <section className={className}>
-            <div className="kt-eighth-section-content">
+            <div className="kt-ninth-section-content">
                 <img
                     className="kt-background-img"
                     src={paths.bg}
                     alt="background-img"
                 />
 
-                <div className="kt-eighth-section-header">
+                <div className="kt-ninth-section-header">
                     <span className="gr-font-family kt-title">
                         {content.title}
                     </span>
 
-                    <span className="kt-description">
-                        {content.description}
-                    </span>
+                    <div className="kt-ninth-section-description-list">
+                        {content.descriptionText.map(
+                            (text: string, index: number) => (
+                                <span
+                                    key={`kt-ninth-section-description-${index}`}
+                                    className="kt-ninth-section-description"
+                                >
+                                    {text}
+                                </span>
+                            ),
+                        )}
+                    </div>
                 </div>
 
-                <div className="kt-eighth-section-cards-container">
+                <div className="kt-ninth-section-cards-container">
                     {content.cards.map((cardData: ICardData, index: number) => (
                         <DSCard
-                            id={`kt-eighth-section-card-${index}`}
-                            key={`kt-card-index-${index}`}
-                            imageName={paths.smallCards[index]}
+                            key={`kt-ninth-section-card-index-${index}`}
                             title={cardData.title}
                             label={cardData.description}
-                            backgroundColor="#3D2F2C"
+                            backgroundColor="#C1B399"
                             sxText={{
                                 titleColor: "#F9F8F7",
-                                labelColor: "#817065",
+                                labelColor: "#F9F8F7",
                                 titleFontSize: "20px",
                                 labelFontSize: "16px",
                                 titleLineHeight: "160%",
-                                labelLineHeight: "160%",
+                                labelLineHeight: "150%",
                             }}
                             imageHeight="300px"
                         />
@@ -52,19 +59,19 @@ const EighthSection = ({
                 </div>
 
                 <DSNotification
-                    className="kt-eighth-section-ds"
+                    className="kt-ninth-section-ds"
                     content={content.summaryCard}
                     iconWidth="36px"
                     cardGap="0.5rem"
                     backgroundColor="#FEFCF3"
-                    borderColor="#FEFCF3"
                     textColor="#3D2F2C"
                     fontSize="20px"
-                    style={{ maxWidth: "none", width: "70%" }}
+                    style={{ maxWidth: "none", width: "60%" }}
+                    borderColor="#FEFCF3"
                 />
             </div>
         </section>
     );
 };
 
-export default EighthSection;
+export default NinthSection;
