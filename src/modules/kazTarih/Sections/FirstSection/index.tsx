@@ -7,7 +7,7 @@ import { type ReactElement } from "react";
 import useWindowWidth from '@hooks/useScreenWidth'
 import "./style.css";
 
-const CoverSection = ({content}: IKazTarihProps): ReactElement => {
+const FirstSection = ({content}: IKazTarihProps): ReactElement => {
     const cards = Object.values(content.cards);
     const summaryCard = content.summaryCard;
 
@@ -47,4 +47,4 @@ const CoverSection = ({content}: IKazTarihProps): ReactElement => {
     );
 };
 
-export default CoverSection;
+export default FirstSection;
