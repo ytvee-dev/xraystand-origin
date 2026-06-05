@@ -30,3 +30,8 @@ export interface IKazTarih {
 export interface IKazTarihProps {
     content: IKazTarih;
 }
+
+export interface ICardData {
+    title: string;
+    description: string;
+}

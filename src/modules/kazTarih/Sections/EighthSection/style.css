@@ -1,0 +1,85 @@
+.kt-eighth-section {
+    width: 100%;
+
+    background-color: #5e4d43;
+    color: #ffffff;
+}
+
+.kt-eighth-section-content {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.kt-eighth-section-header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 2.5rem;
+
+    gap: 1.5rem;
+
+    z-index: 2;
+}
+
+.kt-eighth-section-header .kt-title {
+    width: 50%;
+    text-align: center;
+}
+
+.kt-eighth-section-header .kt-description {
+    width: 70%;
+}
+
+.kt-eighth-section-cards-container {
+    width: 80%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 1.5rem;
+
+    z-index: 2;
+}
+
+.kt-eighth-section-ds {
+    z-index: 2;
+
+    margin-bottom: 2rem;
+}
+
+.kt-eighth-section-ds .list {
+    gap: 0;
+}
+
+.css-1oymmvh-MuiPaper-root-MuiAlert-root {
+    max-width: none !important;
+}
+
+.css-1kuwa16-MuiCardMedia-root {
+    padding: 1rem;
+}
+
+#kt-eighth-section-card-8,
+#kt-eighth-section-card-9 {
+    max-width: none;
+    width: 564px;
+}
+
+#kt-eighth-section-card-8 .css-1kuwa16-MuiCardMedia-root,
+#kt-eighth-section-card-9 .css-1kuwa16-MuiCardMedia-root {
+    width: 50%;
+}
