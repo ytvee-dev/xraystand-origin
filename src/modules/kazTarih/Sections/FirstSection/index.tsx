@@ -16,7 +16,7 @@ const CoverSection = ({content}: IKazTarihProps): ReactElement => {
 
             <div className="kt-first-section-content-wrapper">
                 <h2 className="kt-title gr-font-family kt-first-section-title">{content.title}</h2>
-                <p className="kt-description kt-first-section-subtitle">{content.description}</p>
+                <p className="kt-description kt-first-section-description">{content.description}</p>
 
                 <Carousel className="kt-formatter-card-wrapper">
                     {cards.map((card, index) =>

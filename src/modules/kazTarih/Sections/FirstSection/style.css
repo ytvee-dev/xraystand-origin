@@ -30,7 +30,7 @@
     text-transform: uppercase;
 }
 
-.kt-first-section-subtitle {
+.kt-first-section-description {
     color: #64462D;
     max-width: 960px;
     text-align: justify;
@@ -45,4 +45,40 @@
 .kt-formatter-card {
     margin-left: 38px;
     flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+    .kt-first-section-description {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kt-first-section {
+        padding-top: 40px;
+    }
+
+    .kt-first-section-title {
+        max-width: 500px;
+        text-transform: none;
+        margin-bottom: 24px;
+        padding-inline: 20px;
+    }
+
+    .kt-first-section-description {
+        max-width: 600px;
+        text-align: center;
+        margin-bottom: 24px;
+        padding-inline: 20px;
+    }
+
+    .kt-formatter-card-wrapper {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .kt-first-section-title {
+        max-width: 350;
+    }
 }
