@@ -1,14 +1,9 @@
 import React, { type CSSProperties } from "react";
+import { type ICardsParagraphs } from '@modules/kazTarih/types/index'
 import './style.css'
 
-export interface ContentItem {
-  title: string;
-  description: string;
-  content: string[];
-}
-
 interface TextFormatterProps {
-  items: ContentItem[];
+  items: ICardsParagraphs[];
   theme?: "light" | "dark";
   className?: string;
   style?: CSSProperties;
@@ -37,6 +32,7 @@ const TextFormatterCard: React.FC<TextFormatterProps> =
 
           {item.description && (
             <p className="text-formatter-description">
+              <strong>{item.highlightedText}</strong>
               {item.description}
             </p>
           )}
