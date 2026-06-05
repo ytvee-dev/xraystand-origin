@@ -2,9 +2,11 @@ import DSCard from "@components/common/Cards/DSCard";
 import * as paths from "@modules/kazTarih/locales/paths.json";
 import DSNotification from "@components/common/DSNotification";
 import type { IEnglishSectionProps } from "@modules/english/types";
-import type { ICardData } from "@modules/kazTarih/types";
+import type { ICardData, ICardsParagraphs } from "@modules/kazTarih/types";
 import type { ReactElement } from "react";
 import "./style.css";
+import Carousel from "@modules/kazTarih/components/Carousel";
+import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
 
 const NinthSection = ({
     className,
@@ -64,10 +66,45 @@ const NinthSection = ({
                     iconWidth="36px"
                     cardGap="0.5rem"
                     backgroundColor="#FEFCF3"
-                    textColor="#3D2F2C"
+                    textColor="#907D68"
                     fontSize="20px"
                     style={{ maxWidth: "none", width: "60%" }}
                     borderColor="#FEFCF3"
+                    iconColor="#906877"
+                />
+
+                <Carousel
+                    style={{
+                        padding: "0 4rem",
+                    }}
+                >
+                    {content.secondCards.map(
+                        (cardData: ICardsParagraphs[], index: number) => (
+                            <TextFormatterCard
+                                className="kaz-tarih-carousel-card"
+                                key={`kt-ninth-section-${index}`}
+                                items={cardData}
+                                style={{
+                                    flex: "0 0 550px",
+                                    color: "#F9F8F7",
+                                    backgroundColor: "#8D714C",
+                                }}
+                            />
+                        ),
+                    )}
+                </Carousel>
+
+                <DSNotification
+                    className="kt-ninth-section-ds"
+                    content={content.secondSummaryCard}
+                    iconWidth="36px"
+                    cardGap="0.5rem"
+                    backgroundColor="#FEFCF3"
+                    textColor="#907D68"
+                    fontSize="20px"
+                    style={{ maxWidth: "none", width: "60%" }}
+                    borderColor="#FEFCF3"
+                    iconColor="#906877"
                 />
             </div>
         </section>
