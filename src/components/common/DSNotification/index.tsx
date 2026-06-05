@@ -1,4 +1,4 @@
-import { type CSSProperties, type ReactElement, type ReactNode } from "react";
+import { type CSSProperties, type ReactElement } from "react";
 import { type ISummaryCardContent } from "@modules/kazTarih/types/index"
 import { Alert } from "@mui/material";
 import SpriteIcon from "@components/common/Other/SpriteIcon";
@@ -8,12 +8,19 @@ export type TNotificationTypes = "warning" | "info";
 
 type Label = string;
 type List = string[];
+type Summary = ISummaryCardContent[];
 type ListTypes = "none" | "mark" | "number";
 type WidthTypes = "small" | "middle" | "large";
 type ImgPosition = "flex-start" | "center" | "flex-end";
 
+enum DSNotificationsContentTypes {
+    STRING = "string",
+    LIST = "list",
+    SUMMARY = "summary",
+}
+
 export interface IFlexibleAlertProps {
-    content: List | Label | ReactNode | ISummaryCardContent[];
+    content: Label | List | Summary;
     listMark?: ListTypes;
     type?: TNotificationTypes;
     backgroundColor?: string;
@@ -72,8 +79,25 @@ const DSNotification = ({
     paragraphWeight = 400,
 }: IFlexibleAlertProps): ReactElement => {
     const dsBorderColor = borderColor ? borderColor : backgroundColor;
-    const isString = typeof content === 'string'; 
-    const isArray = Array.isArray(content) && content.every(item => typeof item === 'string');
+
+    function getContentType(
+        content: Label | List | Summary
+    ): DSNotificationsContentTypes {
+        if (typeof content === "string") {
+            return DSNotificationsContentTypes.STRING;
+        }
+
+        if (
+            Array.isArray(content) &&
+            content.every(item => typeof item === "string")
+        ) {
+            return DSNotificationsContentTypes.LIST;
+        }
+
+        return DSNotificationsContentTypes.SUMMARY;
+    }
+
+    const currentContentType = getContentType(content);
 
     const widthSizes = {
         small: 387,
@@ -82,18 +106,6 @@ const DSNotification = ({
     };
 
     const currentWidth = widthSizes[cardWidth];
-
-    function isContentItemArray(content: unknown): content is ISummaryCardContent[] {
-        return (
-            Array.isArray(content) && content.every(
-                item =>
-                    typeof item === 'object' &&
-                    item !== null &&
-                    'content' in item &&
-                    Array.isArray(item.content)
-            )
-        );
-    }
 
     return (
         <div
@@ -137,35 +149,36 @@ const DSNotification = ({
                     />
                 }
             >
-                {isString && 
+                {currentContentType === DSNotificationsContentTypes.STRING && (
                 <p style={{
                     fontWeight: paragraphWeight
                 }}
                 >
-                    {content}
-                </p>}
+                    {content as Label}
+                </p>)}
 
-                {isArray && listMark === "number" && (
+                {currentContentType === DSNotificationsContentTypes.LIST &&
+                listMark === "number" && (
                     <ol className="list">
-                        {content.map((item) => (
+                        {(content as List).map((item) => (
                             <li key={item}> {item} </li>
                         ))}
                     </ol>
                 )}
 
-                {isArray && (listMark === "mark" || "none") && (
+                {currentContentType === DSNotificationsContentTypes.LIST && (listMark === "mark" || "none") && (
                     <ul
                         className={`list ${listMark === "none" ? "mark-none" : ""}`}
                     >
-                        {content.map((item) => (
+                        {(content as List).map((item) => (
                             <li key={item}> {item} </li>
                         ))}
                     </ul>
                 )}
 
-                {isContentItemArray(content) && (
+                {currentContentType === DSNotificationsContentTypes.SUMMARY && (
                     <div className="ds-notification-block-wrapper">
-                        {content.map((item, index) => (
+                        {(content as Summary).map((item, index) => (
                             <div key={index} className="ds-notification-block">
                                 {item.description && (
                                     <p className="text-formatter-description">
@@ -174,9 +187,9 @@ const DSNotification = ({
                                 )}
 
                                 {item.content?.length > 0 && (
-                                    <ul className="text-formatter-list">
+                                    <ul className="ds-notification-block-list">
                                     {item.content.map((contentItem, contentIndex) => (
-                                        <li key={contentIndex} className="text-formatter-list-item">
+                                        <li key={contentIndex} className="ds-notification-block-item">
                                             {contentItem}
                                         </li>
                                     ))}
