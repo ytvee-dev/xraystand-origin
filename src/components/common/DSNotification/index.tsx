@@ -1,4 +1,5 @@
 import { type CSSProperties, type ReactElement, type ReactNode } from "react";
+import { type ISummaryCardContent } from "@modules/kazTarih/types/index"
 import { Alert } from "@mui/material";
 import SpriteIcon from "@components/common/Other/SpriteIcon";
 import "./style.css";
@@ -12,7 +13,7 @@ type WidthTypes = "small" | "middle" | "large";
 type ImgPosition = "flex-start" | "center" | "flex-end";
 
 export interface IFlexibleAlertProps {
-    content: List | Label | ReactNode;
+    content: List | Label | ReactNode | ISummaryCardContent[];
     listMark?: ListTypes;
     type?: TNotificationTypes;
     backgroundColor?: string;
@@ -71,8 +72,8 @@ const DSNotification = ({
     paragraphWeight = 400,
 }: IFlexibleAlertProps): ReactElement => {
     const dsBorderColor = borderColor ? borderColor : backgroundColor;
-
-    const isArray = Array.isArray(content);
+    const isString = typeof content === 'string'; 
+    const isArray = Array.isArray(content) && content.every(item => typeof item === 'string');
 
     const widthSizes = {
         small: 387,
@@ -81,6 +82,18 @@ const DSNotification = ({
     };
 
     const currentWidth = widthSizes[cardWidth];
+
+    function isContentItemArray(content: unknown): content is ISummaryCardContent[] {
+        return (
+            Array.isArray(content) && content.every(
+                item =>
+                    typeof item === 'object' &&
+                    item !== null &&
+                    'content' in item &&
+                    Array.isArray(item.content)
+            )
+        );
+    }
 
     return (
         <div
@@ -124,7 +137,7 @@ const DSNotification = ({
                     />
                 }
             >
-                {!isArray && 
+                {isString && 
                 <p style={{
                     fontWeight: paragraphWeight
                 }}
@@ -148,6 +161,30 @@ const DSNotification = ({
                             <li key={item}> {item} </li>
                         ))}
                     </ul>
+                )}
+
+                {isContentItemArray(content) && (
+                    <div className="ds-notification-block-wrapper">
+                        {content.map((item, index) => (
+                            <div key={index} className="ds-notification-block">
+                                {item.description && (
+                                    <p className="text-formatter-description">
+                                        {item.description}
+                                    </p>
+                                )}
+
+                                {item.content?.length > 0 && (
+                                    <ul className="text-formatter-list">
+                                    {item.content.map((contentItem, contentIndex) => (
+                                        <li key={contentIndex} className="text-formatter-list-item">
+                                            {contentItem}
+                                        </li>
+                                    ))}
+                                    </ul>
+                                )}
+                            </div>
+                        ))}
+                    </div>
                 )}
             </Alert>
         </div>

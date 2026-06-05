@@ -18,3 +18,9 @@
     padding-left: 0;
     margin-left: none;
 }
+
+.ds-notification-block-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

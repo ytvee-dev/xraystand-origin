@@ -2,13 +2,18 @@ import * as paths from "@modules/kazTarih/locales/paths.json";
 import { type IKazTarihProps } from '@modules/kazTarih/types/index';
 import Carousel from "@modules/kazTarih/components/Carousel";
 import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
-// import DSNotification from '@components/common/DSNotification';
-import type { ReactElement } from "react";
+import DSNotification from '@components/common/DSNotification';
+import { type ReactElement } from "react";
+import useWindowWidth from '@hooks/useScreenWidth'
 import "./style.css";
 
 const CoverSection = ({content}: IKazTarihProps): ReactElement => {
     const cards = Object.values(content.cards);
-    // const summaryCard = content.summaryCard;
+    const summaryCard = content.summaryCard;
+
+    const screenWidth = useWindowWidth();
+
+    const fontSize = String(screenWidth <= 768 ? 14 : 20);
 
     return (
         <section className="kt-first-section">
@@ -23,7 +28,20 @@ const CoverSection = ({content}: IKazTarihProps): ReactElement => {
                         <TextFormatterCard items={card} key={index} className="kt-formatter-card"/>
                     )}
                 </Carousel>
-                {/* <DSNotification content={summaryCard}/> */}
+                <div className="kt-summary-card-wrapper">
+                    <DSNotification 
+                        content={summaryCard}
+                        type="info"
+                        iconColor="white"
+                        backgroundColor="rgba(255, 255, 255, 0.2)"
+                        textColor="white"
+                        borderColor="#724f35"
+                        borderRadius="0"
+                        fontSize={`${fontSize}px`}
+                        fullWidth
+                        cardGap="10px"
+                    />
+                </div>
             </div>
         </section>
     );

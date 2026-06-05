@@ -1,7 +1,7 @@
 import React, { type CSSProperties } from "react";
 import './style.css'
 
-interface ContentItem {
+export interface ContentItem {
   title: string;
   description: string;
   content: string[];
@@ -50,7 +50,6 @@ const TextFormatterCard: React.FC<TextFormatterProps> =
               ))}
             </ul>
           )}
-
         </div>
       ))}
     </div>
