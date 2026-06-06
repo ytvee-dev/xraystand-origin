@@ -5,6 +5,7 @@ import * as contentRu from "@modules/kazTarih/locales/rus.json";
 import * as contentKz from "@modules/kazTarih/locales/kaz.json";
 import CoverSection from "@modules/kazTarih/Sections/CoverSection";
 import NinthSection from "@modules/kazTarih/Sections/NinthSection";
+import TenthSection from "@modules/kazTarih/Sections/TenthSection";
 import EighthSection from "@modules/kazTarih/Sections/EighthSection";
 import SeventhSection from "@modules/kazTarih/Sections/SeventhSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
@@ -63,6 +64,10 @@ const KazHistory: React.FC = () => {
                 <NinthSection
                     className="kt-ninth-section"
                     content={textContent.ninthSection}
+                />
+                <TenthSection
+                    className="kt-tenth-section"
+                    content={textContent.tenthSection}
                 />
             </BrightnessLayout>
         </div>

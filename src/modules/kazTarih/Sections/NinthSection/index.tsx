@@ -1,12 +1,12 @@
 import DSCard from "@components/common/Cards/DSCard";
+import Carousel from "@modules/kazTarih/components/Carousel";
 import * as paths from "@modules/kazTarih/locales/paths.json";
 import DSNotification from "@components/common/DSNotification";
-import type { IEnglishSectionProps } from "@modules/english/types";
+import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
 import type { ICardData, ICardsParagraphs } from "@modules/kazTarih/types";
+import type { IEnglishSectionProps } from "@modules/english/types";
 import type { ReactElement } from "react";
 import "./style.css";
-import Carousel from "@modules/kazTarih/components/Carousel";
-import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
 
 const NinthSection = ({
     className,
