@@ -22,7 +22,7 @@ const CoverSection = ({
                     alt="kaz-tarih-img"
                 />
 
-                <span className="kt-cover-section-title kaz-tarih-title">
+                <span className="kt-cover-section-title gr-font-family">
                     {content.title}
                 </span>
 

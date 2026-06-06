@@ -1,3 +1,13 @@
+.kt-title {
+    font-size: 3.125rem;
+    line-height: 2.813rem;
+}
+
+.kt-description {
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+}
+
 @media screen and (max-width: 1200px) {
     .kt-cover-section-title {
         font-size: 3.5rem;
@@ -6,6 +16,15 @@
 
     .kt-cover-section-description {
         font-size: 1.5rem;
+    }
+    
+    .kt-title {
+        font-size: 2.8rem;
+        line-height: 2.9rem;
+    }
+
+    .kt-description {
+        font-size: 1.7rem;
     }
 }
 
@@ -17,6 +36,16 @@
 
     .kt-cover-section-description {
         font-size: 1.188rem;
+    }
+    
+    .kt-title {
+        font-size: 2.6rem;
+        line-height: 2.7rem;
+    }
+
+    .kt-description {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
     }
 }
 
@@ -40,6 +69,16 @@
 
         font-size: 1rem;
     }
+
+    .kt-title {
+        font-size: 2.4rem;
+        line-height: 2.5rem;
+    }
+
+    .kt-description {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -54,11 +93,31 @@
     .kt-cover-section-description {
         font-size: 1rem;
     }
+
+    .kt-title {
+        font-size: 2.3rem;
+        line-height: 2.31rem;
+    }
+
+    .kt-description {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .kt-cover-section-title {
         top: 25%;
+    }
+    
+    .kt-title {
+        font-size: 2.25rem;
+        line-height: 2.26rem;
+    }
+
+    .kt-description {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -75,5 +134,15 @@
 @media screen and (max-width: 390px) {
     .kt-cover-section-title {
         letter-spacing: 40%;
+    }
+
+    .kt-title {
+        font-size: 2.18rem;
+        line-height: 2.19rem;
+    }
+
+    .kt-description {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }
