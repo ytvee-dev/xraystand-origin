@@ -4,11 +4,16 @@ import Carousel from "@modules/kazTarih/components/Carousel";
 import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
 import DSNotification from '@components/common/DSNotification';
 import { type ReactElement } from "react";
+import useWindowWidth from '@hooks/useScreenWidth'
 import "./style.css";
 
-const FirstSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElement => {
-    const cards = content.cards;
+const FourthSection = ({content}: IKazTarihProps): ReactElement => {
+    const cards = Object.values(content.cards);
     const summaryCard = content.summaryCard;
+
+    const screenWidth = useWindowWidth();
+
+    const fontSize = String(screenWidth <= 768 ? 14 : 20);
 
     return (
         <section className="kt-first-section">
@@ -32,7 +37,7 @@ const FirstSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElem
                         textColor="white"
                         borderColor="#724f35"
                         borderRadius="0"
-                        fontSize={`${summaryCardFontSize}px`}
+                        fontSize={`${fontSize}px`}
                         fullWidth
                         cardGap="10px"
                     />
@@ -42,4 +47,4 @@ const FirstSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElem
     );
 };
 
-export default FirstSection;
+export default FourthSection;

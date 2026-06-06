@@ -1,4 +1,4 @@
-.kt-first-section {
+.kt-second-section {
     overflow-x: hidden;
     background-color: #ba7c31;
     position: relative;
@@ -6,12 +6,37 @@
     padding-top: 75px;
 }
 
-.kt-first-section-content-wrapper {
+.kt-bg-img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+.kt-bg-lambs {
+    position: absolute;
+    width: 680px;
+}
+
+.kt-top-lambs {
+    top: 2%;
+    right: -15%;
+}
+
+.kt-bottom-lambs {
+    bottom: 10%;
+    left: -15%;
+    transform: scaleX(-1);
+}
+
+.kt-second-section-content-wrapper {
     position: relative;
     z-index: 1;
 }
 
-.kt-first-section-title {
+.kt-second-section-title {
     margin-bottom: 14px;
     color: white;
     max-width: 700px;
@@ -21,7 +46,7 @@
     text-transform: uppercase;
 }
 
-.kt-first-section-description {
+.kt-second-section-description {
     color: #64462D;
     max-width: 960px;
     text-align: justify;
@@ -38,35 +63,61 @@
     flex-shrink: 0;
 }
 
-.kt-summary-card-wrapper {
+.kt-second-section .kt-summary-card-wrapper {
     max-width: 960px;
     margin-inline: auto;
     margin-bottom: 63px;
 }
 
+@media (max-width: 1370px) {
+    .kt-bg-lambs {
+        width: 550px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .kt-bottom-lambs {
+        bottom: -1%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .kt-second-section .kt-summary-card-wrapper {
+        margin-bottom: 280px;
+    }
+
+    .kt-second-section-description {
+        max-width: 600;
+    }
+}
+
 @media (max-width: 1024px) {
-    .kt-first-section-description {
+    .kt-second-section-description {
         max-width: 700px;
     }
 
-    .kt-summary-card-wrapper {
+    .kt-second-section .kt-summary-card-wrapper {
         max-width: 700px;
     }
 }
 
 @media (max-width: 768px) {
-    .kt-first-section {
+    .kt-second-section {
         padding-top: 40px;
     }
 
-    .kt-first-section-title {
+    .kt-top-lambs {
+        display: none;
+    }
+
+    .kt-second-section-title {
         max-width: 500px;
         text-transform: none;
         margin-bottom: 24px;
         padding-inline: 20px;
     }
 
-    .kt-first-section-description {
+    .kt-second-section-description {
         max-width: 600px;
         text-align: center;
         margin-bottom: 24px;
@@ -77,19 +128,19 @@
         margin-bottom: 24px;
     }
 
-    .kt-summary-card-wrapper {
+    .kt-second-section .kt-summary-card-wrapper {
         max-width: 500px;
     }
 }
 
 @media (max-width: 500px) {
-    .kt-first-section-title {
+    .kt-second-section-title {
         max-width: 350;
     }
 
-    .kt-summary-card-wrapper {
+    .kt-second-section .kt-summary-card-wrapper {
         max-width: 350px;
         padding-inline: 20px;
-        margin-bottom: 29px;
+        margin-bottom: 280px;
     }
 }

@@ -6,6 +6,21 @@
     padding-top: 75px;
 }
 
+.kt-bg-lambs {
+    position: absolute;
+    width: 738px;
+}
+
+.kt-top-lambs {
+    top: 2%;
+    right: 20%;
+}
+
+.kt-bottom-lambs {
+    bottom: 2%;
+    left: 20%;
+}
+
 .kt-first-section-content-wrapper {
     position: relative;
     z-index: 1;

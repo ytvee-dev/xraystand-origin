@@ -5,16 +5,6 @@ export interface ICardsParagraphs {
     content: string[]
 }
 
-type CardsKeys = 'firstCard' |
-                'secondCard' | 
-                'thirdCard'  | 
-                'fourthCard' |
-                'fifthCard'
-
-export type CardsObj = {
-    [key in CardsKeys]: ICardsParagraphs[];
-}
-
 export interface ISummaryCardContent {
     description: string,
     content: string[]
@@ -23,10 +13,11 @@ export interface ISummaryCardContent {
 export interface IKazTarih {
     title: string,
     description: string, 
-    cards: CardsObj,
+    cards: ICardsParagraphs[][],
     summaryCard: ISummaryCardContent[]
 }
 
 export interface IKazTarihProps {
     content: IKazTarih;
+    summaryCardFontSize: string;
 }
