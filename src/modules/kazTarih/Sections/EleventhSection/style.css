@@ -1,0 +1,67 @@
+.kt-eleventh-section {
+    width: 100%;
+
+    background-color: #ff002f;
+}
+
+.kt-eleventh-section-content {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.kt-eleventh-section-header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 2.5rem;
+
+    gap: 1.5rem;
+
+    z-index: 2;
+}
+
+.kt-eleventh-section-header .kt-title {
+    width: 50%;
+    text-align: center;
+    color: #e2e6ea;
+}
+
+.kt-eleventh-section-header .kt-description {
+    width: 80%;
+    color: #e2e6ea;
+}
+
+.kt-eleventh-section-ds {
+    z-index: 2;
+
+    margin-bottom: 2rem;
+}
+
+.kt-eleventh-section-ds .text-formatter-title {
+    color: #af2128;
+}
+
+.kt-eleventh-section-ds .ds-notification-block-list {
+    padding-left: 2rem;
+}
+
+.kt-eleventh-section-ds .ds-notification-block-wrapper {
+    gap: 0;
+}
+
+.css-1oymmvh-MuiPaper-root-MuiAlert-root {
+    max-width: none !important;
+}
