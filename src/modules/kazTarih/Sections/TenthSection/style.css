@@ -1,7 +1,7 @@
 .kt-tenth-section {
     width: 100%;
 
-    background-color: #b63b52;
+    background-color: #ff002f;
     color: #ffffff;
 }
 
@@ -82,4 +82,12 @@
 
 .css-1oymmvh-MuiPaper-root-MuiAlert-root {
     max-width: none !important;
+}
+
+.kt-tenth-section-ds .ds-notification-block-list {
+    padding-left: 2rem;
+}
+
+.kt-tenth-section-ds .ds-notification-block-wrapper {
+    gap: 0;
 }

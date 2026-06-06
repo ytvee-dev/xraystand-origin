@@ -36,12 +36,6 @@ const TextFormatterCard: React.FC<TextFormatterProps> = ({
                             {item.description}
                         </p>
                     )}
-                    {item.description && (
-                        <p className="text-formatter-description">
-                            <strong>{item.highlightedText}</strong>
-                            {item.description}
-                        </p>
-                    )}
 
                     {item.content?.length > 0 && (
                         <ul className="text-formatter-list">

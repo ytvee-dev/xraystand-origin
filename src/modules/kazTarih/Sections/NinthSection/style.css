@@ -1,7 +1,7 @@
 .kt-ninth-section {
     width: 100%;
 
-    background-color: #907d68;
+    background-color: #694316;
 }
 
 .kt-ninth-section-content {
@@ -87,4 +87,12 @@
 
 .kt-ninth-section .text-formatter {
     padding: 20px;
+}
+
+.kt-ninth-section-ds .ds-notification-block-list {
+    padding-left: 2rem;
+}
+
+.kt-ninth-section-ds .ds-notification-block-wrapper {
+    gap: 0;
 }

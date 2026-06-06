@@ -94,7 +94,11 @@
     margin-bottom: 2rem;
 }
 
-.kt-seventh-section-ds .list {
+.kt-seventh-section-ds .ds-notification-block-list {
+    padding-left: 2rem;
+}
+
+.kt-seventh-section-ds .ds-notification-block-wrapper {
     gap: 0;
 }
 
