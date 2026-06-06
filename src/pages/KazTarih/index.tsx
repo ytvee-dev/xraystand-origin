@@ -3,6 +3,7 @@ import BrightnessLayout from "@layout/Brightness";
 import * as paths from "@modules/kazTarih/locales/paths.json";
 import * as contentRu from "@modules/kazTarih/locales/rus.json";
 import * as contentKz from "@modules/kazTarih/locales/kaz.json";
+import FirstSection from "@modules/kazTarih/Sections/FirstSection";
 import CoverSection from "@modules/kazTarih/Sections/CoverSection";
 import NinthSection from "@modules/kazTarih/Sections/NinthSection";
 import TenthSection from "@modules/kazTarih/Sections/TenthSection";
@@ -53,6 +54,7 @@ const KazHistory: React.FC = () => {
                     className="kt-cover-section"
                     content={textContent.coverSection}
                 />
+                <FirstSection content={textContent.firstSection} />
                 <SeventhSection
                     className="kt-seventh-section"
                     content={textContent.seventhSection}

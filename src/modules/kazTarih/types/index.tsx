@@ -1,5 +1,6 @@
 export interface ICardsParagraphs {
     title: string;
+    highlightedText?: string;
     description: string;
     content: string[];
 }

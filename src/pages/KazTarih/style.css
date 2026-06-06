@@ -1,13 +1,10 @@
 .kt-title {
     font-size: 3.125rem;
     line-height: 2.813rem;
-    letter-spacing: 0px;
 }
-
 .kt-description {
     font-size: 1.875rem;
     line-height: 1.875rem;
-    letter-spacing: 0px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -19,12 +16,10 @@
     .kt-cover-section-description {
         font-size: 1.5rem;
     }
-
     .kt-title {
         font-size: 2.8rem;
         line-height: 2.9rem;
     }
-
     .kt-description {
         font-size: 1.7rem;
     }
@@ -39,12 +34,10 @@
     .kt-cover-section-description {
         font-size: 1.188rem;
     }
-
     .kt-title {
         font-size: 2.6rem;
         line-height: 2.7rem;
     }
-
     .kt-description {
         font-size: 1.5rem;
         line-height: 1.8rem;
@@ -69,12 +62,10 @@
 
         font-size: 1rem;
     }
-
     .kt-title {
         font-size: 2.4rem;
         line-height: 2.5rem;
     }
-
     .kt-description {
         font-size: 1.3rem;
         line-height: 1.7rem;
@@ -93,7 +84,6 @@
     .kt-cover-section-description {
         font-size: 1rem;
     }
-
     .kt-title {
         font-size: 2.3rem;
         line-height: 2.31rem;
@@ -109,12 +99,10 @@
     .kt-cover-section-title {
         top: 25%;
     }
-
     .kt-title {
         font-size: 2.25rem;
         line-height: 2.26rem;
     }
-
     .kt-description {
         font-size: 1.1rem;
         line-height: 1.5rem;
