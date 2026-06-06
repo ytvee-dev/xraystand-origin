@@ -34,6 +34,7 @@ export interface INestedCardSx {
 
 export interface IContentImageCardProps {
     id?: string;
+    className?: string;
     imageName?: string;
     title?: string;
     subTitle?: string;

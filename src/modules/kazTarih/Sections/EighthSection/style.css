@@ -2,7 +2,6 @@
     width: 100%;
 
     background-color: #5e4d43;
-    color: #ffffff;
 }
 
 .kt-eighth-section-content {
@@ -37,10 +36,14 @@
 .kt-eighth-section-header .kt-title {
     width: 50%;
     text-align: center;
+
+    color: #ffffff;
 }
 
 .kt-eighth-section-header .kt-description {
     width: 70%;
+
+    color: #f9f8f7;
 }
 
 .kt-eighth-section-cards-container {

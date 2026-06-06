@@ -2,7 +2,6 @@
     width: 100%;
 
     background-color: #c47912;
-    color: #ffffff;
 }
 
 .kt-seventh-section-content {
@@ -37,10 +36,12 @@
 .kt-seventh-section-header .kt-title {
     width: 50%;
     text-align: center;
+    color: #ffffff;
 }
 
 .kt-seventh-section-header .kt-description {
     width: 80%;
+    color: #f4e0bf;
 }
 
 .kt-seventh-section-block-with-image {
@@ -79,6 +80,8 @@
     font-size: 1.25rem;
     line-height: auto;
     letter-spacing: 0%;
+
+    color: #f4e0bf;
 }
 
 .kt-text-block-with-list li {

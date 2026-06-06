@@ -12,6 +12,7 @@ import "./style.css";
 
 const DSCard = ({
     id,
+    className,
     imageName = "",
     title = "",
     label = "",
@@ -28,7 +29,7 @@ const DSCard = ({
     return (
         <Card
             id={id || ""}
-            className={"ds-card"}
+            className={`ds-card ${className || ""}`}
             sx={{
                 minWidth: minWidth,
                 maxWidth: maxWidth,

@@ -2,7 +2,6 @@
     width: 100%;
 
     background-color: #907d68;
-    color: #ffffff;
 }
 
 .kt-ninth-section-content {
@@ -37,10 +36,14 @@
 .kt-ninth-section-header .kt-title {
     width: 50%;
     text-align: center;
+
+    color: #f9f8f7;
 }
 
 .kt-ninth-section-header .kt-description {
     width: 70%;
+
+    color: #f9f8f7;
 }
 
 .kt-ninth-section-cards-container {
@@ -80,4 +83,8 @@
     display: flex;
     flex-direction: column;
     width: 80%;
+}
+
+.kt-ninth-section .text-formatter {
+    padding: 20px;
 }

@@ -4,6 +4,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Ubuntu";
+    src: url("@assets/fonts/Ubuntu-Light.woff") format("woff");
+    font-style: normal;
+}
+
 .common-text {
     font-weight: 400;
     font-size: 1.5rem;
@@ -50,4 +56,8 @@
 
 .gr-font-family {
     font-family: "Gunny Rewritten";
+}
+
+.ub-font-family {
+    font-family: "Ubuntu";
 }

@@ -34,6 +34,7 @@ const EighthSection = ({
                         <DSCard
                             id={`kt-eighth-section-card-${index}`}
                             key={`kt-card-index-${index}`}
+                            className="ub-font-family"
                             imageName={paths.smallCards[index]}
                             title={cardData.title}
                             label={cardData.description}
@@ -61,6 +62,7 @@ const EighthSection = ({
                     textColor="#3D2F2C"
                     fontSize="20px"
                     style={{ maxWidth: "none", width: "70%" }}
+                    iconColor="#817065"
                 />
             </div>
         </section>

@@ -70,7 +70,7 @@ const NinthSection = ({
                     fontSize="20px"
                     style={{ maxWidth: "none", width: "60%" }}
                     borderColor="#FEFCF3"
-                    iconColor="#906877"
+                    iconColor="#907D68"
                 />
 
                 <Carousel
