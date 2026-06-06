@@ -4,24 +4,19 @@ import Carousel from "@modules/kazTarih/components/Carousel";
 import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
 import DSNotification from '@components/common/DSNotification';
 import { type ReactElement } from "react";
-import useWindowWidth from '@hooks/useScreenWidth'
 import "./style.css";
 
-const FourthSection = ({content}: IKazTarihProps): ReactElement => {
-    const cards = Object.values(content.cards);
+const FourthSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElement => {
+    const cards = content.cards;
     const summaryCard = content.summaryCard;
 
-    const screenWidth = useWindowWidth();
-
-    const fontSize = String(screenWidth <= 768 ? 14 : 20);
-
     return (
-        <section className="kt-first-section">
+        <section className="kt-fourth-section">
             <img src={paths.bg} alt="" className="kt-bg-img"/>
 
-            <div className="kt-first-section-content-wrapper">
-                <h2 className="kt-title gr-font-family kt-first-section-title">{content.title}</h2>
-                <p className="kt-description kt-first-section-description">{content.description}</p>
+            <div className="kt-fourth-section-content-wrapper">
+                <h2 className="kt-title gr-font-family kt-fourth-section-title">{content.title}</h2>
+                <p className="kt-description kt-fourth-section-description">{content.description}</p>
 
                 <Carousel className="kt-formatter-card-wrapper">
                     {cards.map((card, index) =>
@@ -37,7 +32,7 @@ const FourthSection = ({content}: IKazTarihProps): ReactElement => {
                         textColor="white"
                         borderColor="#724f35"
                         borderRadius="0"
-                        fontSize={`${fontSize}px`}
+                        fontSize={`${summaryCardFontSize}px`}
                         fullWidth
                         cardGap="10px"
                     />
