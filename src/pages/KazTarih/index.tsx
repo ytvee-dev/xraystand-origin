@@ -3,16 +3,17 @@ import BrightnessLayout from "@layout/Brightness";
 import * as paths from "@modules/kazTarih/locales/paths.json";
 import * as contentRu from "@modules/kazTarih/locales/rus.json";
 import * as contentKz from "@modules/kazTarih/locales/kaz.json";
+import ThirdSection from "@modules/kazTarih/Sections/ThirdSection";
 import CoverSection from "@modules/kazTarih/Sections/CoverSection";
 import FirstSection from "@modules/kazTarih/Sections/FirstSection";
+import TwelfthSection from "@modules/kazTarih/Sections/TwelfthSection";
+import EleventhSection from "@modules/kazTarih/Sections/EleventhSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
 import type { TRootState } from "@store/index";
 import { useSelector } from "react-redux";
 import "./style.css";
-import EleventhSection from "@modules/kazTarih/Sections/EleventhSection";
-import TwelfthSection from "@modules/kazTarih/Sections/TwelfthSection";
 
 const pageLayoutSX = {
     backgroundColor: "#FCF1EB",
@@ -53,6 +54,10 @@ const KazHistory: React.FC = () => {
                     content={textContent.coverSection}
                 />
                 <FirstSection content={textContent.firstSection} />
+                <ThirdSection
+                    className="kt-third-section"
+                    content={textContent.thirdSection}
+                />
                 <EleventhSection
                     className="kt-eleventh-section"
                     content={textContent.eleventhSection}

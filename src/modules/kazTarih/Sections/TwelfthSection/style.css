@@ -41,6 +41,10 @@
 
 .kt-twelfth-section-description {
     width: 80%;
+
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.15px;
 }
 
 .kt-twelfth-section-ds {
@@ -80,10 +84,11 @@
 
 .kt-twelfth-section-block {
     width: 80%;
-    padding: 0.5rem;
+
+    padding: 1rem;
 
     border-radius: 0.25rem;
-    border: 0.0625rem solid #ffffff;
+    border: 0.125rem solid #ffffff;
     background-color: #28a9e0;
     color: #ffffff;
 

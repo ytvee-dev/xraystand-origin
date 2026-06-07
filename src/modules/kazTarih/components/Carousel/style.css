@@ -1,6 +1,7 @@
 .kaz-tarih-carousel {
     width: 100%;
     cursor: pointer;
+    z-index: 2;
 }
 
 .kaz-tarih-carousel-viewport {
