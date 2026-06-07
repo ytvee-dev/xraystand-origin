@@ -29,6 +29,11 @@
     margin-bottom: 20px;
 }
 
+.text-formatter-paragraph-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .text-formatter-list {
     padding-left: 20px;
 }
