@@ -6,15 +6,6 @@
     padding-top: 75px;
 }
 
-.kt-bg-img {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 50%;
-    height: 100%;
-    transform: translateX(-50%);
-}
-
 .kt-bg-lambs {
     position: absolute;
     width: 680px;
