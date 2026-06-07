@@ -7,6 +7,7 @@ import CoverSection from "@modules/kazTarih/Sections/CoverSection";
 import FirstSection from "@modules/kazTarih/Sections/FirstSection";
 import SecondSection from "@modules/kazTarih/Sections/SecondSection";
 import FourthSection from "@modules/kazTarih/Sections/FourthSection";
+import SixthSection from "@modules/kazTarih/Sections/SixthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -60,6 +61,7 @@ const KazHistory: React.FC = () => {
                 <FirstSection content={textContent.firstSection} summaryCardFontSize={summaryFontSize}/>
                 <SecondSection content={textContent.secondSection} summaryCardFontSize={summaryFontSize}/>
                 <FourthSection content={textContent.fourthSection} summaryCardFontSize={summaryFontSize}/>
+                <SixthSection content={textContent.sixthSection} summaryCardFontSize={summaryFontSize}/>
             </BrightnessLayout>
         </div>
     );
