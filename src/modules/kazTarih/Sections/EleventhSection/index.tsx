@@ -26,7 +26,7 @@ const EleventhSection = ({
                         {content.title}
                     </span>
 
-                    <span className="kt-description">
+                    <span className="kt-eleventh-section-description">
                         {content.description}
                     </span>
                 </div>

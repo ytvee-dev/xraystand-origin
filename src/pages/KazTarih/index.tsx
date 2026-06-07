@@ -12,6 +12,7 @@ import type { TRootState } from "@store/index";
 import { useSelector } from "react-redux";
 import "./style.css";
 import EleventhSection from "@modules/kazTarih/Sections/EleventhSection";
+import TwelfthSection from "@modules/kazTarih/Sections/TwelfthSection";
 
 const pageLayoutSX = {
     backgroundColor: "#FCF1EB",
@@ -53,8 +54,12 @@ const KazHistory: React.FC = () => {
                 />
                 <FirstSection content={textContent.firstSection} />
                 <EleventhSection
-                    className=".kt-eleventh-section"
+                    className="kt-eleventh-section"
                     content={textContent.eleventhSection}
+                />
+                <TwelfthSection
+                    className="kt-twelfth-section"
+                    content={textContent.twelfthSection}
                 />
             </BrightnessLayout>
         </div>
