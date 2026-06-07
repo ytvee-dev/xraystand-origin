@@ -7,6 +7,7 @@ import CoverSection from "@modules/kazTarih/Sections/CoverSection";
 import FirstSection from "@modules/kazTarih/Sections/FirstSection";
 import SecondSection from "@modules/kazTarih/Sections/SecondSection";
 import FourthSection from "@modules/kazTarih/Sections/FourthSection";
+import FifthSection from "@modules/kazTarih/Sections/FifthSection";
 import SixthSection from "@modules/kazTarih/Sections/SixthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
@@ -17,7 +18,7 @@ import { useSelector } from "react-redux";
 import "./style.css";
 
 const pageLayoutSX = {
-    backgroundColor: "#FCF1EB",
+    backgroundColor: "#28A9E1",
     boldTextColor: "#474747",
     textColor: "#474747",
     copyrightColor: "#474747",
@@ -47,20 +48,18 @@ const KazHistory: React.FC = () => {
             <BrightnessLayout
                 logo={<MainLogo />}
                 isLanguageSwitcher={true}
-                switcherColor="#fcc10c"
+                switcherColor="#61361E"
                 sx={pageLayoutSX}
-                headerBackgroundColor="#e9dbde"
+                headerBackgroundColor="#cebda7"
                 languageSwitcherClassName="kt-switcher"
             >
                 {!isContentLoaded && <Spinner />}
 
-                <CoverSection
-                    className="kt-cover-section"
-                    content={textContent.coverSection}
-                />
+                <CoverSection className="kt-cover-section" content={textContent.coverSection}/>
                 <FirstSection content={textContent.firstSection} summaryCardFontSize={summaryFontSize}/>
                 <SecondSection content={textContent.secondSection} summaryCardFontSize={summaryFontSize}/>
                 <FourthSection content={textContent.fourthSection} summaryCardFontSize={summaryFontSize}/>
+                <FifthSection content={textContent.fifthSection} summaryCardFontSize={summaryFontSize}/>
                 <SixthSection content={textContent.sixthSection} summaryCardFontSize={summaryFontSize}/>
             </BrightnessLayout>
         </div>
