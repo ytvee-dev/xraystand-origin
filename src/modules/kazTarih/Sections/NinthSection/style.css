@@ -1,0 +1,98 @@
+.kt-ninth-section {
+    width: 100%;
+
+    background-color: #694316;
+}
+
+.kt-ninth-section-content {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.kt-ninth-section-header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 2.5rem;
+
+    gap: 1.5rem;
+
+    z-index: 2;
+}
+
+.kt-ninth-section-header .kt-title {
+    width: 50%;
+    text-align: center;
+
+    color: #f9f8f7;
+}
+
+.kt-ninth-section-header .kt-description {
+    width: 70%;
+
+    color: #f9f8f7;
+}
+
+.kt-ninth-section-cards-container {
+    width: 80%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 1.5rem;
+
+    z-index: 2;
+}
+
+.kt-ninth-section-ds {
+    z-index: 2;
+
+    margin-bottom: 2rem;
+}
+
+.kt-ninth-section-ds .list {
+    gap: 0;
+}
+
+.css-1oymmvh-MuiPaper-root-MuiAlert-root {
+    max-width: none !important;
+}
+
+.kt-ninth-section-description {
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+    color: #f9f8f7;
+}
+
+.kt-ninth-section-description-list {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.kt-ninth-section .text-formatter {
+    padding: 20px;
+}
+
+.kt-ninth-section-ds .ds-notification-block-list {
+    padding-left: 2rem;
+}
+
+.kt-ninth-section-ds .ds-notification-block-wrapper {
+    gap: 0;
+}

@@ -1,12 +1,12 @@
 import React, { type CSSProperties } from "react";
-import { type ICardsParagraphs } from '@modules/kazTarih/types/index'
-import './style.css'
+import { type ICardsParagraphs } from "@modules/kazTarih/types/index";
+import "./style.css";
 
 interface TextFormatterProps {
-  items: ICardsParagraphs[];
-  theme?: "light" | "dark";
-  className?: string;
-  style?: CSSProperties;
+    items: ICardsParagraphs[];
+    theme?: "light" | "dark";
+    className?: string;
+    style?: CSSProperties;
 }
   
 interface CardsWithParagraphs {
@@ -16,12 +16,13 @@ interface CardsWithParagraphs {
   content: string[]
 }
 
-const TextFormatterCard: React.FC<TextFormatterProps> = 
-  ({items,
+const TextFormatterCard: React.FC<TextFormatterProps> = ({
+    items,
     theme = "light",
     className,
-    style }: TextFormatterProps) => {
-
+    style,
+}: TextFormatterProps) => {
+  
   const itemsWithParagraphs: CardsWithParagraphs[] = items.map(item => ({
     title: item.title,
     highlightedText: item.highlightedText,
@@ -61,7 +62,10 @@ const TextFormatterCard: React.FC<TextFormatterProps> =
           {item.content?.length > 0 && (
             <ul className="text-formatter-list">
               {item.content.map((contentItem, contentIndex) => (
-                <li key={contentIndex} className="text-formatter-list-item">
+                <li
+                  key={contentIndex}
+                  className="text-formatter-list-item"
+                >
                   {contentItem}
                 </li>
               ))}
@@ -70,7 +74,7 @@ const TextFormatterCard: React.FC<TextFormatterProps> =
         </div>
       ))}
     </div>
-  );
+    );
 };
 
 export default TextFormatterCard;

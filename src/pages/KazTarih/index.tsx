@@ -9,6 +9,10 @@ import SecondSection from "@modules/kazTarih/Sections/SecondSection";
 import FourthSection from "@modules/kazTarih/Sections/FourthSection";
 import FifthSection from "@modules/kazTarih/Sections/FifthSection";
 import SixthSection from "@modules/kazTarih/Sections/SixthSection";
+import SeventhSection from "@modules/kazTarih/Sections/SeventhSection";
+import EighthSection from "@modules/kazTarih/Sections/EighthSection";
+import NinthSection from "@modules/kazTarih/Sections/NinthSection";
+import TenthSection from "@modules/kazTarih/Sections/TenthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -54,13 +58,46 @@ const KazHistory: React.FC = () => {
                 languageSwitcherClassName="kt-switcher"
             >
                 {!isContentLoaded && <Spinner />}
-
-                <CoverSection className="kt-cover-section" content={textContent.coverSection}/>
-                <FirstSection content={textContent.firstSection} summaryCardFontSize={summaryFontSize}/>
-                <SecondSection content={textContent.secondSection} summaryCardFontSize={summaryFontSize}/>
-                <FourthSection content={textContent.fourthSection} summaryCardFontSize={summaryFontSize}/>
-                <FifthSection content={textContent.fifthSection} summaryCardFontSize={summaryFontSize}/>
-                <SixthSection content={textContent.sixthSection} summaryCardFontSize={summaryFontSize}/>
+                <CoverSection
+                    className="kt-cover-section"
+                    content={textContent.coverSection}
+                />
+                <FirstSection 
+                    content={textContent.firstSection}  
+                    summaryCardFontSize={summaryFontSize}
+                />
+                <SecondSection 
+                    content={textContent.secondSection} 
+                    summaryCardFontSize={summaryFontSize}
+                />
+                <FourthSection 
+                    content={textContent.fourthSection} 
+                    summaryCardFontSize={summaryFontSize}
+                />
+                <FifthSection  
+                    content={textContent.fifthSection} 
+                    summaryCardFontSize={summaryFontSize}
+                />
+                <SixthSection   
+                    content={textContent.sixthSection} 
+                    summaryCardFontSize={summaryFontSize}
+                />
+                <SeventhSection
+                    className="kt-seventh-section"
+                    content={textContent.seventhSection}
+                />
+                <EighthSection
+                    className="kt-eighth-section"
+                    content={textContent.eighthSection}
+                />
+                <NinthSection
+                    className="kt-ninth-section"
+                    content={textContent.ninthSection}
+                />
+                <TenthSection
+                    className="kt-tenth-section"
+                    content={textContent.tenthSection}
+                />
             </BrightnessLayout>
         </div>
     );
