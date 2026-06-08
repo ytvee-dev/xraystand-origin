@@ -9,7 +9,6 @@ import type { INestedCardProps } from "@components/common/Cards/CardsTypes.ts";
 import { type ReactElement } from "react";
 import {
     defaultDSCardSX,
-    dsCardImagePathPrefix,
     nestedDSCardSX,
 } from "@components/common/Cards/cardsMeta.tsx";
 import "./style.css";
@@ -34,7 +33,7 @@ const NestedCard = ({
     labelDescriptionStyle,
     nestedCardsStyle,
 }: INestedCardProps): ReactElement => {
-    const imagePath = dsCardImagePathPrefix + imageName;
+    const imagePath = imageName;
     const nestedCardTitleColor = sxNestedCards.titleColor;
     const nestedCardLabelColor = sxNestedCards.labelColor;
 

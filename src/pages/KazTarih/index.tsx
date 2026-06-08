@@ -3,8 +3,12 @@ import BrightnessLayout from "@layout/Brightness";
 import * as paths from "@modules/kazTarih/locales/paths.json";
 import * as contentRu from "@modules/kazTarih/locales/rus.json";
 import * as contentKz from "@modules/kazTarih/locales/kaz.json";
-import CoverSection from "@modules/kazTarih/Sections/CoverSection";
 import FirstSection from "@modules/kazTarih/Sections/FirstSection";
+import CoverSection from "@modules/kazTarih/Sections/CoverSection";
+import NinthSection from "@modules/kazTarih/Sections/NinthSection";
+import TenthSection from "@modules/kazTarih/Sections/TenthSection";
+import EighthSection from "@modules/kazTarih/Sections/EighthSection";
+import SeventhSection from "@modules/kazTarih/Sections/SeventhSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -50,7 +54,23 @@ const KazHistory: React.FC = () => {
                     className="kt-cover-section"
                     content={textContent.coverSection}
                 />
-                <FirstSection content={textContent.firstSection}/>
+                <FirstSection content={textContent.firstSection} />
+                <SeventhSection
+                    className="kt-seventh-section"
+                    content={textContent.seventhSection}
+                />
+                <EighthSection
+                    className="kt-eighth-section"
+                    content={textContent.eighthSection}
+                />
+                <NinthSection
+                    className="kt-ninth-section"
+                    content={textContent.ninthSection}
+                />
+                <TenthSection
+                    className="kt-tenth-section"
+                    content={textContent.tenthSection}
+                />
             </BrightnessLayout>
         </div>
     );

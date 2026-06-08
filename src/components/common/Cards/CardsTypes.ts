@@ -13,6 +13,8 @@ export interface IDefaultCardSxText {
     titleFontSize?: number | string;
     subTitleFontSize?: number | string;
     labelFontSize?: number | string;
+    titleLineHeight?: number | string;
+    labelLineHeight?: number | string;
 }
 
 export interface INestedCardSx {
@@ -31,6 +33,8 @@ export interface INestedCardSx {
 }
 
 export interface IContentImageCardProps {
+    id?: string;
+    className?: string;
     imageName?: string;
     title?: string;
     subTitle?: string;
