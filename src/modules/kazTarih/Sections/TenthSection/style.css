@@ -64,6 +64,8 @@
 
     background-color: #e2e6ea;
     color: #000000;
+    border-color: #e2e6ea;
+    border-radius: 0.25rem;
 }
 
 .kt-tenth-section-card .text-formatter-title {

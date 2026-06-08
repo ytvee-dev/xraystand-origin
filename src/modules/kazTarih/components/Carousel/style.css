@@ -17,6 +17,7 @@
 .kaz-tarih-carousel-container {
     display: flex;
     touch-action: pan-y pinch-zoom;
+    align-items: flex-start;
 
     margin-left: calc(1.5rem * -1);
 }
