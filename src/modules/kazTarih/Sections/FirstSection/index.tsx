@@ -12,7 +12,7 @@ const FirstSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElem
 
     return (
         <section className="kt-first-section">
-            <img src={paths.bg} alt="" className="kt-bg-img"/>
+            <img src={paths.bg} alt="" className="kt-bg-img kt-bg-light-img"/>
 
             <div className="kt-first-section-content-wrapper">
                 <h2 className="kt-title gr-font-family kt-first-section-title">{content.title}</h2>

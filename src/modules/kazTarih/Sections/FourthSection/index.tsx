@@ -12,7 +12,7 @@ const FourthSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactEle
 
     return (
         <section className="kt-fourth-section">
-            <img src={paths.bg} alt="" className="kt-bg-img"/>
+            <img src={paths.bg} alt="" className="kt-bg-img kt-bg-light-img"/>
 
             <div className="kt-fourth-section-content-wrapper">
                 <h2 className="kt-title gr-font-family kt-fourth-section-title">{content.title}</h2>

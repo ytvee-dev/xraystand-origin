@@ -12,7 +12,7 @@ const Second = ({content, summaryCardFontSize}: IKazTarihProps): ReactElement =>
 
     return (
         <section className="kt-second-section">
-            <img src={paths.bg} alt="" className="kt-bg-img"/>
+            <img src={paths.bg} alt="" className="kt-bg-img kt-bg-light-img"/>
             <img src={paths.lambs} alt="" className="kt-bg-lambs kt-top-lambs"/>
             <img src={paths.lambs} alt="" className="kt-bg-lambs kt-bottom-lambs"/>
 

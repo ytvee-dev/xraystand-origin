@@ -11,7 +11,7 @@ const CoverSection = ({
         <section className={className}>
             <div className="kt-cover-section-content">
                 <img
-                    className="kt-background-img"
+                    className="kt-background-img  kt-bg-light-img"
                     src={paths.bg}
                     alt="background-img"
                 />

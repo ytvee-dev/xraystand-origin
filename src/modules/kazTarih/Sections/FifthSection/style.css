@@ -1,12 +1,12 @@
 .kt-fifth-section {
     overflow-x: hidden;
-    background-color: #714517;
+    background-color: #90653E;
     position: relative;
     height: fit-content;
     padding-top: 75px;
 }
 
-.kt-fifth-section-content-wrapper {
+.kt-fifth-section-content-wrapper { 
     position: relative;
     z-index: 1;
 }
