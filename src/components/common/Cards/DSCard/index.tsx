@@ -1,17 +1,18 @@
-import {type ReactElement} from "react";
-import type {IContentImageCardProps} from "@components/common/Cards/CardsTypes.ts";
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import CardActionArea from '@mui/material/CardActionArea';
-import CardActions from '@mui/material/CardActions';
-import {defaultDSCardSX, dsCardImagePathPrefix} from "@components/common/Cards/cardsMeta.tsx";
+import { type ReactElement } from "react";
+import type { IContentImageCardProps } from "@components/common/Cards/CardsTypes.ts";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import CardActionArea from "@mui/material/CardActionArea";
+import CardActions from "@mui/material/CardActions";
+import { defaultDSCardSX } from "@components/common/Cards/cardsMeta.tsx";
 import "./style.css";
 
-
 const DSCard = ({
+    id,
+    className,
     imageName = "",
     title = "",
     label = "",
@@ -23,18 +24,20 @@ const DSCard = ({
     imageHeight = "150px",
     sxText = defaultDSCardSX,
 }: IContentImageCardProps): ReactElement => {
-
-    const imagePath = dsCardImagePathPrefix + imageName;
+    const imagePath = imageName;
 
     return (
-        <Card className={'ds-card'} sx={{
-            minWidth: minWidth,
-            maxWidth: maxWidth,
-            width: "100%",
-            backgroundColor: backgroundColor,
-        }}>
-            <CardActionArea onClick={action} sx={{height: "100%"}}>
-
+        <Card
+            id={id || ""}
+            className={`ds-card ${className || ""}`}
+            sx={{
+                minWidth: minWidth,
+                maxWidth: maxWidth,
+                width: "100%",
+                backgroundColor: backgroundColor,
+            }}
+        >
+            <CardActionArea onClick={action} sx={{ height: "100%" }}>
                 {imageName && (
                     <CardMedia
                         component="img"
@@ -51,19 +54,32 @@ const DSCard = ({
                 <CardContent>
                     {title && (
                         <Typography
-                            gutterBottom variant="h5"
+                            gutterBottom
+                            variant="h5"
                             component="h5"
-                            sx={{color: sxText.titleColor, fontWeight: sxText.fontWeight}}
-                        >{title}</Typography>
+                            sx={{
+                                color: sxText.titleColor,
+                                fontWeight: sxText.fontWeight,
+                                fontSize: sxText.titleFontSize,
+                                lineHeight: sxText.titleLineHeight,
+                            }}
+                        >
+                            {title}
+                        </Typography>
                     )}
 
                     {label && (
                         <Typography
                             variant="body2"
-                            sx={{color: sxText.labelColor}}
-                        >{label}</Typography>
+                            sx={{
+                                color: sxText.labelColor,
+                                fontSize: sxText.labelFontSize,
+                                lineHeight: sxText.labelLineHeight,
+                            }}
+                        >
+                            {label}
+                        </Typography>
                     )}
-
                 </CardContent>
             </CardActionArea>
 
@@ -72,8 +88,10 @@ const DSCard = ({
                     <Button
                         size="small"
                         onClick={action}
-                        sx={{color: sxText.linkColor}}
-                    >{linkedText}</Button>
+                        sx={{ color: sxText.linkColor }}
+                    >
+                        {linkedText}
+                    </Button>
                 </CardActions>
             )}
         </Card>

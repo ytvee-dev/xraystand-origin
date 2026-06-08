@@ -17,7 +17,7 @@ const Carousel = ({
     const [emblaRef] = useEmblaCarousel();
 
     return (
-        <div className={`kaz-tarih-carousel ${className}`}>
+        <div className={`kaz-tarih-carousel ${className || ""}`}>
             <div
                 className="kaz-tarih-carousel-viewport"
                 ref={emblaRef}
