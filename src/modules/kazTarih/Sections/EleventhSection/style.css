@@ -51,10 +51,10 @@
 .kt-eleventh-section-ds {
     z-index: 2;
 
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
 }
 
-.kt-eleventh-section-ds .text-formatter-title {
+.kt-eleventh-section-content .text-formatter-title {
     color: #af2128;
 }
 
@@ -68,4 +68,20 @@
 
 .css-1oymmvh-MuiPaper-root-MuiAlert-root {
     max-width: none !important;
+}
+
+.kt-eleventh-section-content .kaz-tarih-carousel-card {
+    border-color: #e2e6ea;
+    border-radius: 0.25rem;
+    padding: 15px;
+}
+
+.kt-eleventh-section-content .text-formatter-list-item {
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+}
+
+.kt-eleventh-section-content .text-formatter-title {
+    margin-bottom: 10px;
 }

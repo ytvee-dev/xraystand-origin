@@ -1,7 +1,7 @@
 .kt-twelfth-section {
     width: 100%;
 
-    background-color: #28a9e1;
+    background-color: #00a8f0;
     color: #ffffff;
 }
 
@@ -53,16 +53,17 @@
     margin-bottom: 2rem;
 }
 
-.kt-twelfth-section-ds .text-formatter-title {
-    color: #af2128;
-}
-
 .kt-twelfth-section-ds .ds-notification-block-list {
     padding-left: 2rem;
 }
 
 .kt-twelfth-section-ds .ds-notification-block-wrapper {
     gap: 0;
+}
+
+.kt-twelfth-section-ds p {
+    line-height: 150%;
+    letter-spacing: 0.15px;
 }
 
 .css-1oymmvh-MuiPaper-root-MuiAlert-root {

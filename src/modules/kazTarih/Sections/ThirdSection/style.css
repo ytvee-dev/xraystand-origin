@@ -47,7 +47,7 @@
 .kt-third-section-ds {
     z-index: 2;
 
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .kt-third-section-ds .ds-notification-block-list {
@@ -79,13 +79,13 @@
 }
 
 #kt-third-section-background-img-1 {
-    left: -2%;
-    bottom: 0;
+    left: -3%;
+    bottom: -5%;
     width: 25%;
 }
 
 #kt-third-section-background-img-2 {
-    bottom: 0;
+    bottom: -5%;
     right: 2%;
     height: 40%;
 }

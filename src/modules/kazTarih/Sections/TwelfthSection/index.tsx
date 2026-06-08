@@ -45,8 +45,9 @@ const TwelfthSection = ({
                     cardGap="0.5rem"
                     backgroundColor="#FEFEFE"
                     borderColor="#FEFEFE"
+                    padding="5px 10px"
                     textColor="#28A9E1"
-                    fontSize="20px"
+                    fontSize="16px"
                     style={{ maxWidth: "none", width: "80%" }}
                     iconColor="#28A9E1"
                 />
