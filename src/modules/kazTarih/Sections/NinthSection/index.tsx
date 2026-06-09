@@ -5,6 +5,7 @@ import DSNotification from "@components/common/DSNotification";
 import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
 import type { ICardData, ICardsParagraphs } from "@modules/kazTarih/types";
 import type { IEnglishSectionProps } from "@modules/english/types";
+import { usePageData } from "@hooks/usePageData";
 import type { ReactElement } from "react";
 import "./style.css";
 
@@ -12,6 +13,8 @@ const NinthSection = ({
     className,
     content,
 }: IEnglishSectionProps): ReactElement => {
+    const { isMobile } = usePageData();
+
     return (
         <section className={className}>
             <div className="kt-ninth-section-content">
@@ -40,25 +43,52 @@ const NinthSection = ({
                     </div>
                 </div>
 
-                <div className="kt-ninth-section-cards-container">
-                    {content.cards.map((cardData: ICardData, index: number) => (
-                        <DSCard
-                            key={`kt-ninth-section-card-index-${index}`}
-                            title={cardData.title}
-                            label={cardData.description}
-                            backgroundColor="#C1B399"
-                            sxText={{
-                                titleColor: "#F9F8F7",
-                                labelColor: "#F9F8F7",
-                                titleFontSize: "20px",
-                                labelFontSize: "16px",
-                                titleLineHeight: "160%",
-                                labelLineHeight: "150%",
-                            }}
-                            imageHeight="300px"
-                        />
-                    ))}
-                </div>
+                {isMobile ? (
+                    <Carousel style={{ padding: "0 2rem" }}>
+                        {content.cards.map(
+                            (cardData: ICardData, index: number) => (
+                                <DSCard
+                                    key={`kt-ninth-section-card-index-${index}`}
+                                    className="kaz-tarih-carousel-card"
+                                    title={cardData.title}
+                                    label={cardData.description}
+                                    backgroundColor="#C1B399"
+                                    sxText={{
+                                        titleColor: "#F9F8F7",
+                                        labelColor: "#F9F8F7",
+                                        titleFontSize: "20px",
+                                        labelFontSize: "16px",
+                                        titleLineHeight: "160%",
+                                        labelLineHeight: "150%",
+                                    }}
+                                    imageHeight="300px"
+                                />
+                            ),
+                        )}
+                    </Carousel>
+                ) : (
+                    <div className="kt-ninth-section-cards-container">
+                        {content.cards.map(
+                            (cardData: ICardData, index: number) => (
+                                <DSCard
+                                    key={`kt-ninth-section-card-index-${index}`}
+                                    title={cardData.title}
+                                    label={cardData.description}
+                                    backgroundColor="#C1B399"
+                                    sxText={{
+                                        titleColor: "#F9F8F7",
+                                        labelColor: "#F9F8F7",
+                                        titleFontSize: "20px",
+                                        labelFontSize: "16px",
+                                        titleLineHeight: "160%",
+                                        labelLineHeight: "150%",
+                                    }}
+                                    imageHeight="300px"
+                                />
+                            ),
+                        )}
+                    </div>
+                )}
 
                 <DSNotification
                     className="kt-ninth-section-ds"
@@ -104,7 +134,7 @@ const NinthSection = ({
                     fontSize="20px"
                     style={{ maxWidth: "none", width: "60%" }}
                     borderColor="#FEFCF3"
-                    iconColor="#906877"
+                    iconColor="#907D68"
                 />
             </div>
         </section>

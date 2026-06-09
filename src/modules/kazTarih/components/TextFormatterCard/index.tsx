@@ -37,6 +37,12 @@ const TextFormatterCard: React.FC<TextFormatterProps> = ({
     >
       {itemsWithParagraphs.map((item, index) => (
         <div key={index} className="text-formatter-block">
+          {item.description && (
+            <p className="text-formatter-description">
+              <strong>{item.highlightedText}</strong>
+                {item.description}
+            </p>
+      )}
 
           {item.title && (
             <p className={`text-formatter-title

@@ -6,6 +6,7 @@ import * as contentKz from "@modules/kazTarih/locales/kaz.json";
 import CoverSection from "@modules/kazTarih/Sections/CoverSection";
 import FirstSection from "@modules/kazTarih/Sections/FirstSection";
 import SecondSection from "@modules/kazTarih/Sections/SecondSection";
+import ThirdSection from "@modules/kazTarih/Sections/ThirdSection";
 import FourthSection from "@modules/kazTarih/Sections/FourthSection";
 import FifthSection from "@modules/kazTarih/Sections/FifthSection";
 import SixthSection from "@modules/kazTarih/Sections/SixthSection";
@@ -13,6 +14,8 @@ import SeventhSection from "@modules/kazTarih/Sections/SeventhSection";
 import EighthSection from "@modules/kazTarih/Sections/EighthSection";
 import NinthSection from "@modules/kazTarih/Sections/NinthSection";
 import TenthSection from "@modules/kazTarih/Sections/TenthSection";
+import EleventhSection from "@modules/kazTarih/Sections/EleventhSection";
+import TwelfthSection from "@modules/kazTarih/Sections/TwelfthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -70,6 +73,10 @@ const KazHistory: React.FC = () => {
                     content={textContent.secondSection} 
                     summaryCardFontSize={summaryFontSize}
                 />
+                <ThirdSection
+                    className="kt-third-section"
+                    content={textContent.thirdSection}
+                />
                 <FourthSection 
                     content={textContent.fourthSection} 
                     summaryCardFontSize={summaryFontSize}
@@ -97,6 +104,14 @@ const KazHistory: React.FC = () => {
                 <TenthSection
                     className="kt-tenth-section"
                     content={textContent.tenthSection}
+                />
+                <EleventhSection
+                    className="kt-eleventh-section"
+                    content={textContent.eleventhSection}
+                />
+                <TwelfthSection
+                    className="kt-twelfth-section"
+                    content={textContent.twelfthSection}
                 />
             </BrightnessLayout>
         </div>

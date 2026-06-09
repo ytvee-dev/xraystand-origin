@@ -18,9 +18,21 @@
     gap: 2rem;
 }
 
+<<<<<<< HEAD
 .kt-ninth-bg-img {
     mix-blend-mode: soft-light;
     opacity: 0.8;
+=======
+.kt-ninth-section .kt-background-img {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 1;
+
+    opacity: 0.5;
+>>>>>>> 7e0506c40f22ad22dc81c912a2a1d581ad68db13
 }
 
 .kt-ninth-section-header {
@@ -71,10 +83,6 @@
 
 .kt-ninth-section-ds .list {
     gap: 0;
-}
-
-.css-1oymmvh-MuiPaper-root-MuiAlert-root {
-    max-width: none !important;
 }
 
 .kt-ninth-section-description {

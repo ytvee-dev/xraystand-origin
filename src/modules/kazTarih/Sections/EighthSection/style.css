@@ -1,7 +1,11 @@
 .kt-eighth-section {
     width: 100%;
 
+<<<<<<< HEAD
     background-color: #4d2811;
+=======
+    background-color: #5e3013;
+>>>>>>> 7e0506c40f22ad22dc81c912a2a1d581ad68db13
 }
 
 .kt-eighth-section-content {
@@ -22,6 +26,17 @@
 .kt-eight-bg-img {
     mix-blend-mode: multiply;
     opacity: 0.4;
+}
+
+.kt-eighth-section .kt-background-img {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 1;
+
+    opacity: 0.5;
 }
 
 .kt-eighth-section-header {
@@ -72,10 +87,6 @@
 
 .kt-eighth-section-ds .list {
     gap: 0;
-}
-
-.css-1oymmvh-MuiPaper-root-MuiAlert-root {
-    max-width: none !important;
 }
 
 .css-1kuwa16-MuiCardMedia-root {
