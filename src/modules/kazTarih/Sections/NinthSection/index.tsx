@@ -16,7 +16,7 @@ const NinthSection = ({
         <section className={className}>
             <div className="kt-ninth-section-content">
                 <img
-                    className="kt-background-img"
+                    className="kt-background-img kt-ninth-bg-img"
                     src={paths.bg}
                     alt="background-img"
                 />

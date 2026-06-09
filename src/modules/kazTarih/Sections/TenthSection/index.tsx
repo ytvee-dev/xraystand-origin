@@ -14,7 +14,7 @@ const TenthSection = ({
         <section className={className}>
             <div className="kt-tenth-section-content">
                 <img
-                    className="kt-background-img"
+                    className="kt-background-img kt-tenth-bg-img"
                     src={paths.bg}
                     alt="background-img"
                 />

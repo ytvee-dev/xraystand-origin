@@ -29,7 +29,7 @@ export type CardsObj = {
 export interface IKazTarih {
     title: string;
     description: string;
-    cards: CardsObj | ICardsParagraphs[][];
+    cards: ICardsParagraphs[][];
     summaryCard: ISummaryCardContent[];
 }
 

@@ -15,10 +15,9 @@ const SeventhSection = ({
         <section className={className}>
             <div className="kt-seventh-section-content">
                 <img
-                    className="kt-background-img"
+                    className="kt-bg-img kt-bg-light-img"
                     src={paths.bg}
-                    alt="background-im
-                g"
+                    alt="background-img"
                 />
 
                 <div className="kt-seventh-section-header">

@@ -1,7 +1,7 @@
 .kt-tenth-section {
     width: 100%;
 
-    background-color: #ff002f;
+    background-color: #c52945;
     color: #ffffff;
 }
 
@@ -17,6 +17,11 @@
     justify-content: center;
 
     gap: 2rem;
+}
+
+.kt-tenth-bg-img {
+    mix-blend-mode: multiply;
+    opacity: 0.9;
 }
 
 .kt-tenth-section-header {

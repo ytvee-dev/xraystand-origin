@@ -1,7 +1,7 @@
 .kt-ninth-section {
     width: 100%;
 
-    background-color: #694316;
+    background-color: #5b4a35;
 }
 
 .kt-ninth-section-content {
@@ -16,6 +16,11 @@
     justify-content: center;
 
     gap: 2rem;
+}
+
+.kt-ninth-bg-img {
+    mix-blend-mode: soft-light;
+    opacity: 0.8;
 }
 
 .kt-ninth-section-header {
