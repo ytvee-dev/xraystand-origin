@@ -24,3 +24,7 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.ds-notification-block-list {
+    padding-left: 2rem
+}

@@ -6,17 +6,17 @@ import DSNotification from '@components/common/DSNotification';
 import { type ReactElement } from "react";
 import "./style.css";
 
-const FirstSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElement => {
+const FourthSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElement => {
     const cards = content.cards;
     const summaryCard = content.summaryCard;
 
     return (
-        <section className="kt-first-section">
+        <section className="kt-fourth-section">
             <img src={paths.bg} alt="" className="kt-bg-img kt-bg-light-img"/>
 
-            <div className="kt-first-section-content-wrapper">
-                <h2 className="kt-title gr-font-family kt-first-section-title">{content.title}</h2>
-                <p className="kt-description kt-first-section-description">{content.description}</p>
+            <div className="kt-fourth-section-content-wrapper">
+                <h2 className="kt-title gr-font-family kt-fourth-section-title">{content.title}</h2>
+                <p className="kt-description kt-fourth-section-description">{content.description}</p>
 
                 <Carousel className="kt-formatter-card-wrapper">
                     {cards.map((card, index) =>
@@ -42,4 +42,4 @@ const FirstSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElem
     );
 };
 
-export default FirstSection;
+export default FourthSection;

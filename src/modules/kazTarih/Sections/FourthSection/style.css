@@ -1,4 +1,4 @@
-.kt-first-section {
+.kt-fourth-section {
     overflow-x: hidden;
     background-color: #b28e5c;
     position: relative;
@@ -6,24 +6,24 @@
     padding-top: 75px;
 }
 
-.kt-first-section-content-wrapper {
+.kt-fourth-section-content-wrapper {
     position: relative;
     z-index: 1;
 }
 
-.kt-first-section-title {
+.kt-fourth-section-title {
     margin-bottom: 14px;
     color: white;
-    max-width: 700px;
+    max-width: 1050px;
     text-align: center;
     margin-inline: auto;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-.kt-first-section-description {
+.kt-fourth-section-description {
     color: #64462D;
-    max-width: 960px;
+    max-width: 1050px;
     text-align: justify;
     margin-inline: auto;
     margin-bottom: 77px;
@@ -45,7 +45,7 @@
 }
 
 @media (max-width: 1024px) {
-    .kt-first-section-description {
+    .kt-fourth-section-description {
         max-width: 700px;
     }
 
@@ -55,18 +55,18 @@
 }
 
 @media (max-width: 768px) {
-    .kt-first-section {
+    .kt-fourth-section {
         padding-top: 40px;
     }
 
-    .kt-first-section-title {
+    .kt-fourth-section-title {
         max-width: 500px;
         text-transform: none;
         margin-bottom: 24px;
         padding-inline: 20px;
     }
 
-    .kt-first-section-description {
+    .kt-fourth-section-description {
         max-width: 600px;
         text-align: center;
         margin-bottom: 24px;
@@ -83,7 +83,7 @@
 }
 
 @media (max-width: 500px) {
-    .kt-first-section-title {
+    .kt-fourth-section-title {
         max-width: 350;
     }
 
