@@ -33,6 +33,7 @@ const TextFormatterCard: React.FC<TextFormatterProps> = ({
 
                     {item.description && (
                         <p className="text-formatter-description">
+                            <strong>{item.highlightedText}</strong>
                             {item.description}
                         </p>
                     )}

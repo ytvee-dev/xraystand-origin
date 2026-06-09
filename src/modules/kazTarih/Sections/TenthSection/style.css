@@ -19,6 +19,17 @@
     gap: 2rem;
 }
 
+.kt-tenth-section .kt-background-img {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 1;
+
+    opacity: 0.5;
+}
+
 .kt-tenth-section-header {
     width: 100%;
 
@@ -64,6 +75,8 @@
 
     background-color: #e2e6ea;
     color: #000000;
+    border-color: #e2e6ea;
+    border-radius: 0.25rem;
 }
 
 .kt-tenth-section-card .text-formatter-title {
@@ -78,10 +91,6 @@
 
 .kt-tenth-section-ds .list {
     gap: 0;
-}
-
-.css-1oymmvh-MuiPaper-root-MuiAlert-root {
-    max-width: none !important;
 }
 
 .kt-tenth-section-ds .ds-notification-block-list {

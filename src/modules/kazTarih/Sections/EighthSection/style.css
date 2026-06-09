@@ -1,7 +1,7 @@
 .kt-eighth-section {
     width: 100%;
 
-    background-color: #5e3115;
+    background-color: #5e3013;
 }
 
 .kt-eighth-section-content {
@@ -16,6 +16,17 @@
     justify-content: center;
 
     gap: 2rem;
+}
+
+.kt-eighth-section .kt-background-img {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 1;
+
+    opacity: 0.5;
 }
 
 .kt-eighth-section-header {
@@ -66,10 +77,6 @@
 
 .kt-eighth-section-ds .list {
     gap: 0;
-}
-
-.css-1oymmvh-MuiPaper-root-MuiAlert-root {
-    max-width: none !important;
 }
 
 .css-1kuwa16-MuiCardMedia-root {
