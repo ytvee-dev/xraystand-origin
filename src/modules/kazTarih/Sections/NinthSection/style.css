@@ -18,11 +18,11 @@
     gap: 2rem;
 }
 
-<<<<<<< HEAD
 .kt-ninth-bg-img {
     mix-blend-mode: soft-light;
     opacity: 0.8;
-=======
+}
+
 .kt-ninth-section .kt-background-img {
     position: absolute;
     width: 100vw;
@@ -32,7 +32,6 @@
     z-index: 1;
 
     opacity: 0.5;
->>>>>>> 7e0506c40f22ad22dc81c912a2a1d581ad68db13
 }
 
 .kt-ninth-section-header {
