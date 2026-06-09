@@ -18,6 +18,17 @@
     gap: 2rem;
 }
 
+.kt-eleventh-section .kt-background-img {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 1;
+
+    opacity: 0.5;
+}
+
 .kt-eleventh-section-header {
     width: 100%;
 
@@ -64,10 +75,6 @@
 
 .kt-eleventh-section-ds .ds-notification-block-wrapper {
     gap: 0;
-}
-
-.css-1oymmvh-MuiPaper-root-MuiAlert-root {
-    max-width: none !important;
 }
 
 .kt-eleventh-section-content .kaz-tarih-carousel-card {

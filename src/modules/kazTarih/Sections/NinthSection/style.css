@@ -18,6 +18,17 @@
     gap: 2rem;
 }
 
+.kt-ninth-section .kt-background-img {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 1;
+
+    opacity: 0.5;
+}
+
 .kt-ninth-section-header {
     width: 100%;
 
@@ -66,10 +77,6 @@
 
 .kt-ninth-section-ds .list {
     gap: 0;
-}
-
-.css-1oymmvh-MuiPaper-root-MuiAlert-root {
-    max-width: none !important;
 }
 
 .kt-ninth-section-description {

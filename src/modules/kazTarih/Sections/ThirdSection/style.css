@@ -18,6 +18,17 @@
     gap: 2rem;
 }
 
+.kt-third-section .kt-background-img {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 1;
+
+    opacity: 0.5;
+}
+
 .kt-third-section-header {
     width: 100%;
 
@@ -56,10 +67,6 @@
 
 .kt-third-section-ds .ds-notification-block-wrapper {
     gap: 0;
-}
-
-.css-1oymmvh-MuiPaper-root-MuiAlert-root {
-    max-width: none !important;
 }
 
 .kt-third-section-background-images {
