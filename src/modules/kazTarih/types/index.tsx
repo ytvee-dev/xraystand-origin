@@ -10,22 +10,6 @@ export interface ISummaryCardContent {
     content: string[]
 }
 
-export interface IKazTarihProps {
-    content: IKazTarih;
-    summaryCardFontSize: string;
-}
-
-type CardsKeys =
-    | "firstCard"
-    | "secondCard"
-    | "thirdCard"
-    | "fourthCard"
-    | "fifthCard";
-
-export type CardsObj = {
-    [key in CardsKeys]: ICardsParagraphs[];
-};
-
 export interface IKazTarih {
     title: string;
     description: string;
@@ -33,11 +17,12 @@ export interface IKazTarih {
     summaryCard: ISummaryCardContent[];
 }
 
-export interface IKazTarihProps {
-    content: IKazTarih;
-}
-
 export interface ICardData {
     title: string;
     description: string;
+}
+
+export interface IKazTarihProps {
+    content: IKazTarih;
+    summaryCardFontSize: string;
 }
