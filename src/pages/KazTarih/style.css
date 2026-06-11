@@ -26,6 +26,11 @@
     mix-blend-mode: multiply;
 }
 
+.kt-container .css-1oymmvh-MuiPaper-root-MuiAlert-root {
+    width: 100% !important;
+    max-width: none !important;
+}
+
 @media screen and (max-width: 1200px) {
     .kt-cover-section-title {
         font-size: 3.5rem;
@@ -172,7 +177,6 @@
         font-size: 1.25rem;
         line-height: 150%;
         letter-spacing: 0.15px;
-        color: #f4e0bf;
     }
 
     .kt-seventh-section .kt-description,
@@ -266,6 +270,18 @@
         font-size: 16px;
         line-height: 150%;
         letter-spacing: 0.15px;
+    }
+
+    .kt-third-section .text-formatter,
+    .kt-seventh-section .text-formatter {
+        font-size: 16px;
+        line-height: auto;
+        letter-spacing: 0%;
+    }
+
+    .kt-text-block-with-list span,
+    .kt-text-block-with-list li {
+        font-size: 1rem;
     }
 }
 
