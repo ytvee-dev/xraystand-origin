@@ -106,3 +106,12 @@
 .kt-eighth-section-ds .ds-notification-block-wrapper {
     gap: 0;
 }
+
+.kt-eighth-section .css-a1m80h-MuiTypography-root,
+.kt-eighth-section .css-kminll-MuiTypography-root {
+    font-family: "Ubuntu";
+}
+
+.kt-eighth-section .css-a1m80h-MuiTypography-root {
+    font-weight: 500;
+}
