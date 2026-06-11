@@ -1,0 +1,147 @@
+.kt-second-section {
+    overflow: hidden;
+    background-color: #b28e5c;
+    position: relative;
+    height: fit-content;
+    padding-top: 75px;
+}
+
+.kt-bg-lambs {
+    position: absolute;
+    width: 680px;
+}
+
+.kt-top-lambs {
+    top: 2%;
+    right: -15%;
+}
+
+.kt-bottom-lambs {
+    bottom: 10%;
+    left: -15%;
+    transform: scaleX(-1);
+}
+
+.kt-second-section-content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.kt-second-section-title {
+    margin-bottom: 14px;
+    color: white;
+    max-width: 700px;
+    text-align: center;
+    margin-inline: auto;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.kt-second-section-description {
+    color: #64462D;
+    max-width: 960px;
+    text-align: justify;
+    margin-inline: auto;
+    margin-bottom: 77px;
+}
+
+.kt-formatter-card-wrapper {
+    margin-bottom: 48px;
+}
+
+.kt-formatter-card {
+    margin-left: 38px;
+    flex-shrink: 0;
+}
+
+.kt-second-section .kt-summary-card-wrapper {
+    max-width: 960px;
+    margin-inline: auto;
+    margin-bottom: 63px;
+}
+
+@media (min-width: 1920px) {
+    .kt-top-lambs {
+    right: -5%;
+}
+
+.kt-bottom-lambs {
+    left: -5%;
+}
+}
+
+@media (max-width: 1370px) {
+    .kt-bg-lambs {
+        width: 550px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .kt-bottom-lambs {
+        bottom: -1%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .kt-second-section .kt-summary-card-wrapper {
+        margin-bottom: 280px;
+    }
+
+    .kt-second-section-description {
+        max-width: 600;
+    }
+}
+
+@media (max-width: 1024px) {
+    .kt-second-section-description {
+        max-width: 700px;
+    }
+
+    .kt-second-section .kt-summary-card-wrapper {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kt-second-section {
+        padding-top: 40px;
+    }
+
+    .kt-top-lambs {
+        display: none;
+    }
+
+    .kt-second-section-title {
+        max-width: 500px;
+        text-transform: none;
+        margin-bottom: 24px;
+        padding-inline: 20px;
+    }
+
+    .kt-second-section-description {
+        max-width: 600px;
+        text-align: center;
+        margin-bottom: 24px;
+        padding-inline: 20px;
+    }
+
+    .kt-formatter-card-wrapper {
+        margin-bottom: 24px;
+    }
+
+    .kt-second-section .kt-summary-card-wrapper {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .kt-second-section-title {
+        max-width: 350;
+    }
+
+    .kt-second-section .kt-summary-card-wrapper {
+        max-width: 350px;
+        padding-inline: 20px;
+        margin-bottom: 280px;
+    }
+}

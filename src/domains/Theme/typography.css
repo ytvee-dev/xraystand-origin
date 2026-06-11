@@ -1,9 +1,21 @@
+@font-face {
+    font-family: "Gunny Rewritten";
+    src: url("@assets/fonts/GunnyRewritten.woff") format("woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("@assets/fonts/Ubuntu-Regular.woff") format("woff");
+    font-style: normal;
+}
+
 .common-text {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 133%;
     letter-spacing: 0;
-    color: #FFFFFFDE;
+    color: #ffffffde;
 }
 
 .centered-text {
@@ -15,7 +27,7 @@
     font-size: 3rem;
     line-height: 3.25rem;
     letter-spacing: 0;
-    color: #FFFFFFDE;
+    color: #ffffffde;
 }
 
 .title-text {
@@ -23,7 +35,7 @@
     font-size: 2rem;
     line-height: 3.25rem;
     letter-spacing: 0;
-    color: #FFFFFFDE;
+    color: #ffffffde;
 }
 
 .header-text-bold {
@@ -31,7 +43,7 @@
     font-size: 4rem;
     line-height: 100%;
     letter-spacing: -0.1rem;
-    color: #FFFFFFDE;
+    color: #ffffffde;
 }
 
 .caption-text {
@@ -39,5 +51,13 @@
     font-size: 1rem;
     line-height: 133%;
     letter-spacing: 0;
-    color: #FFFFFFDE;
+    color: #ffffffde;
+}
+
+.gr-font-family {
+    font-family: "Gunny Rewritten";
+}
+
+.ub-font-family {
+    font-family: "Ubuntu";
 }

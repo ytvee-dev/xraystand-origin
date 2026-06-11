@@ -1,0 +1,95 @@
+.kt-fourth-section {
+    overflow: hidden;
+    background-color: #b28e5c;
+    position: relative;
+    height: fit-content;
+    padding-top: 75px;
+}
+
+.kt-fourth-section-content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.kt-fourth-section-title {
+    margin-bottom: 14px;
+    color: white;
+    max-width: 1050px;
+    text-align: center;
+    margin-inline: auto;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.kt-fourth-section-description {
+    color: #64462D;
+    max-width: 1050px;
+    text-align: justify;
+    margin-inline: auto;
+    margin-bottom: 77px;
+}
+
+.kt-formatter-card-wrapper {
+    margin-bottom: 48px;
+}
+
+.kt-formatter-card {
+    margin-left: 38px;
+    flex-shrink: 0;
+}
+
+.kt-summary-card-wrapper {
+    max-width: 960px;
+    margin-inline: auto;
+    margin-bottom: 63px;
+}
+
+@media (max-width: 1024px) {
+    .kt-fourth-section-description {
+        max-width: 700px;
+    }
+
+    .kt-summary-card-wrapper {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kt-fourth-section {
+        padding-top: 40px;
+    }
+
+    .kt-fourth-section-title {
+        max-width: 500px;
+        text-transform: none;
+        margin-bottom: 24px;
+        padding-inline: 20px;
+    }
+
+    .kt-fourth-section-description {
+        max-width: 600px;
+        text-align: center;
+        margin-bottom: 24px;
+        padding-inline: 20px;
+    }
+
+    .kt-formatter-card-wrapper {
+        margin-bottom: 24px;
+    }
+
+    .kt-summary-card-wrapper {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .kt-fourth-section-title {
+        max-width: 350;
+    }
+
+    .kt-summary-card-wrapper {
+        max-width: 350px;
+        padding-inline: 20px;
+        margin-bottom: 29px;
+    }
+}

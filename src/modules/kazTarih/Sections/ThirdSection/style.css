@@ -1,0 +1,214 @@
+.kt-third-section {
+    overflow: hidden;
+    background-color: #b28e5c;
+    position: relative;
+    height: fit-content;
+    padding-top: 75px;
+}
+
+.kt-third-weapons-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+    z-index: 1;
+}
+
+.kt-weapons-0 {
+    width: 330px;
+    height: 530px;
+    top: 0;
+    left: 1%;
+}
+
+.kt-weapons-1 {
+    width: 312px;
+    height: 690px;
+    top: 63%;
+    left: -1%;
+}
+
+.kt-weapons-2 {
+    width: 200px;
+    height: 660px;
+    top: 66%;
+    left: 85%;
+}
+
+.kt-third-section-content-wrapper {
+    position: relative;
+    z-index: 3;
+}
+
+.kt-third-section-title {
+    margin-bottom: 14px;
+    color: white;
+    max-width: 700px;
+    text-align: center;
+    margin-inline: auto;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.kt-third-section-description {
+    color: #64462D;
+    max-width: 70vw;
+    text-align: justify;
+    margin-inline: auto;
+    margin-bottom: 77px;
+}
+
+.kt-formatter-card-wrapper {
+    margin-bottom: 48px;
+    margin-inline: auto;
+    width: fit-content;
+}
+
+.kt-formatter-card {
+    margin-left: 38px;
+    flex-shrink: 0;
+}
+
+.kt-summary-card-wrapper {
+    max-width: 960px;
+    margin-inline: auto;
+    margin-bottom: 63px;
+}
+
+@media (min-width: 1920px) {
+    .kt-third-section-description {
+        max-width: 960px;
+    }
+
+    .kt-weapons-0 {
+        left: 8%;
+    }
+    
+    .kt-weapons-1 {
+        left: 12%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .kt-weapons-0 {
+        width: 290px;
+        height: 490px;
+    }
+    
+    .kt-weapons-1 {
+        width: 222px;
+        height: 620px;
+    }
+
+    .kt-weapons-2 {
+        width: 180px;
+        height: 620px;
+    }
+
+    .kt-third-section-description {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .kt-third-section-description {
+        max-width: 600px;
+    }
+
+    .kt-summary-card-wrapper {
+        max-width: 700px;
+    }
+
+    .kt-weapons-0 {
+        width: 260px;
+        height: 420px;
+    }
+    
+    .kt-weapons-1 {
+        width: 182px;
+        height: 560px;
+    }
+}
+
+@media (max-width: 800px) {
+    .kt-weapons-0 {
+        width: 240px;
+        height: 380px;
+    }
+
+    .kt-weapons-1 {
+        display: none;
+    }
+
+    .kt-weapons-2 {
+        left: -10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .kt-third-section {
+        padding-top: 40px;
+    }
+
+    .kt-weapons-0 {
+        display: none;
+    }
+    .kt-third-section-title {
+        max-width: 500px;
+        text-transform: none;
+        margin-bottom: 24px;
+        padding-inline: 20px;
+    }
+
+    .kt-third-section-description {
+        max-width: 600px;
+        text-align: center;
+        margin-bottom: 24px;
+        padding-inline: 20px;
+    }
+
+    .kt-formatter-card-wrapper {
+        margin-bottom: 24px;
+    }
+
+    .kt-summary-card-wrapper {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) {      
+    .kt-third-weapons-images {
+        z-index: 4;
+    }
+
+    .kt-weapons-2 {
+        top: 65%;
+        left: -18%;
+    }
+}
+
+@media (max-width: 520px) {
+    .kt-third-section-title {
+        max-width: 350;
+    }
+
+    .kt-summary-card-wrapper {
+        max-width: 350px;
+        padding-inline: 20px;
+        margin-bottom: 29px;
+    }
+
+    .kt-weapons-0 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .kt-weapons-2 {
+        left: -28%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+}

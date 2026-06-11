@@ -1,4 +1,5 @@
-import { type CSSProperties, type ReactElement, type ReactNode } from "react";
+import { type CSSProperties, type ReactElement } from "react";
+import { type ISummaryCardContent } from "@modules/kazTarih/types/index"
 import { Alert } from "@mui/material";
 import SpriteIcon from "@components/common/Other/SpriteIcon";
 import "./style.css";
@@ -7,12 +8,19 @@ export type TNotificationTypes = "warning" | "info";
 
 type Label = string;
 type List = string[];
+type Summary = ISummaryCardContent[];
 type ListTypes = "none" | "mark" | "number";
 type WidthTypes = "small" | "middle" | "large";
 type ImgPosition = "flex-start" | "center" | "flex-end";
 
+enum DSNotificationsContentTypes {
+    STRING = "string",
+    LIST = "list",
+    SUMMARY = "summary",
+}
+
 export interface IFlexibleAlertProps {
-    content: List | Label | ReactNode;
+    content: Label | List | Summary;
     listMark?: ListTypes;
     type?: TNotificationTypes;
     backgroundColor?: string;
@@ -72,7 +80,24 @@ const DSNotification = ({
 }: IFlexibleAlertProps): ReactElement => {
     const dsBorderColor = borderColor ? borderColor : backgroundColor;
 
-    const isArray = Array.isArray(content);
+    function getContentType(
+        content: Label | List | Summary
+    ): DSNotificationsContentTypes {
+        if (typeof content === "string") {
+            return DSNotificationsContentTypes.STRING;
+        }
+
+        if (
+            Array.isArray(content) &&
+            content.every(item => typeof item === "string")
+        ) {
+            return DSNotificationsContentTypes.LIST;
+        }
+
+        return DSNotificationsContentTypes.SUMMARY;
+    }
+
+    const currentContentType = getContentType(content);
 
     const widthSizes = {
         small: 387,
@@ -124,30 +149,55 @@ const DSNotification = ({
                     />
                 }
             >
-                {!isArray && 
+                {currentContentType === DSNotificationsContentTypes.STRING && (
                 <p style={{
                     fontWeight: paragraphWeight
                 }}
                 >
-                    {content}
-                </p>}
+                    {content as Label}
+                </p>)}
 
-                {isArray && listMark === "number" && (
+                {currentContentType === DSNotificationsContentTypes.LIST &&
+                listMark === "number" && (
                     <ol className="list">
-                        {content.map((item) => (
+                        {(content as List).map((item) => (
                             <li key={item}> {item} </li>
                         ))}
                     </ol>
                 )}
 
-                {isArray && (listMark === "mark" || "none") && (
+                {currentContentType === DSNotificationsContentTypes.LIST && (listMark === "mark" || "none") && (
                     <ul
                         className={`list ${listMark === "none" ? "mark-none" : ""}`}
                     >
-                        {content.map((item) => (
+                        {(content as List).map((item) => (
                             <li key={item}> {item} </li>
                         ))}
                     </ul>
+                )}
+
+                {currentContentType === DSNotificationsContentTypes.SUMMARY && (
+                    <div className="ds-notification-block-wrapper">
+                        {(content as Summary).map((item, index) => (
+                            <div key={index} className="ds-notification-block">
+                                {item.description && (
+                                    <p className="text-formatter-description">
+                                        {item.description}
+                                    </p>
+                                )}
+
+                                {item.content?.length > 0 && (
+                                    <ul className="ds-notification-block-list">
+                                    {item.content.map((contentItem, contentIndex) => (
+                                        <li key={contentIndex} className="ds-notification-block-item">
+                                            {contentItem}
+                                        </li>
+                                    ))}
+                                    </ul>
+                                )}
+                            </div>
+                        ))}
+                    </div>
                 )}
             </Alert>
         </div>

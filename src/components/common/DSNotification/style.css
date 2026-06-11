@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.list{
+.list {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -13,8 +13,18 @@
     padding-left: 20px;
 }
 
-.mark-none{
+.mark-none {
     list-style-type: none;
     padding-left: 0;
     margin-left: none;
+}
+
+.ds-notification-block-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ds-notification-block-list {
+    padding-left: 2rem
 }

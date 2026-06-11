@@ -1,0 +1,306 @@
+.kt-title {
+    font-size: 3.125rem;
+    line-height: 2.813rem;
+}
+.kt-description {
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+}
+
+.kt-bg-img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    width: 100vw;
+}
+
+.kt-bg-light-img {
+    mix-blend-mode: hard-light;
+    opacity: 0.5;
+}
+
+.kt-bg-dark-img {
+    mix-blend-mode: multiply;
+}
+
+.kt-container .css-1oymmvh-MuiPaper-root-MuiAlert-root {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .kt-cover-section-title {
+        font-size: 3.5rem;
+        letter-spacing: 40%;
+    }
+
+    .kt-cover-section-description {
+        font-size: 1.5rem;
+    }
+    .kt-title {
+        font-size: 2.8rem;
+        line-height: 2.9rem;
+    }
+    .kt-description {
+        font-size: 1.7rem;
+    }
+
+    .kt-eleventh-section .kaz-tarih-carousel-viewport {
+        padding: 0 2rem 0 7rem !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .kt-cover-section-title {
+        font-size: 2.75rem;
+        letter-spacing: 50%;
+    }
+
+    .kt-cover-section-description {
+        font-size: 1.188rem;
+    }
+    .kt-title {
+        font-size: 2.6rem;
+        line-height: 2.7rem;
+    }
+    .kt-description {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    .kt-eleventh-section .kaz-tarih-carousel-viewport {
+        padding: 0 2rem 0 5rem !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .kt-cover-section-title {
+        font-size: 2.625rem;
+
+        width: 70%;
+
+        top: 30%;
+    }
+
+    .kt-cover-section-description {
+        width: 80%;
+
+        position: relative;
+        bottom: auto;
+        padding-bottom: 2rem;
+
+        font-size: 1rem;
+    }
+    .kt-title {
+        font-size: 2.4rem;
+        line-height: 2.5rem;
+    }
+    .kt-description {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+
+    #kt-eighth-section-card-8 .css-1kuwa16-MuiCardMedia-root,
+    #kt-eighth-section-card-9 .css-1kuwa16-MuiCardMedia-root {
+        width: 100%;
+    }
+
+    .kt-eighth-section-ds {
+        width: 90% !important;
+    }
+
+    .kt-ninth-section-ds {
+        width: 80% !important;
+    }
+
+    .kt-tenth-section-ds {
+        width: 90% !important;
+    }
+
+    .kt-tenth-section-card {
+        width: auto;
+        flex: 0 0 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .kt-cover-section-title {
+        letter-spacing: 40%;
+
+        width: 80%;
+
+        top: 30%;
+    }
+
+    .kt-cover-section-description {
+        font-size: 1rem;
+    }
+
+    .kt-title {
+        font-size: 2.3rem;
+        line-height: 2.31rem;
+    }
+
+    .kt-description {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .kt-seventh-section-img {
+        width: 90%;
+    }
+
+    .kt-seventh-section-block-with-image {
+        flex-direction: column;
+    }
+
+    .kt-seventh-section-blocks-container {
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    .kt-seventh-section .text-formatter,
+    .kt-ninth-section .text-formatter {
+        flex: 0 0 344px !important;
+    }
+
+    .kt-seventh-section .kaz-tarih-carousel-viewport,
+    .kt-ninth-section .kaz-tarih-carousel-viewport {
+        padding: 0 1rem !important;
+    }
+
+    .kt-text-block-with-list span,
+    .kt-text-block-with-list li {
+        font-size: 1.25rem;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+    }
+
+    .kt-seventh-section .kt-description,
+    .kt-eighth-section .kt-description,
+    .kt-tenth-section .kt-description {
+        text-align: center;
+        width: 90%;
+    }
+
+    .kt-eleventh-section-description,
+    .kt-twelfth-section-description,
+    .kt-ninth-section .kt-ninth-section-description-list {
+        text-align: center;
+        width: 80%;
+    }
+
+    .kt-eleventh-section .kaz-tarih-carousel-viewport {
+        padding: 0 2rem 0 3rem !important;
+    }
+
+    .kt-eleventh-section-ds {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .kt-cover-section-title {
+        top: 25%;
+    }
+    .kt-title {
+        font-size: 2.25rem;
+        line-height: 2.26rem;
+    }
+    .kt-description {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .kt-cover-section-title {
+        width: 100%;
+
+        letter-spacing: 50%;
+
+        top: 20%;
+    }
+
+    .kt-seventh-section-header .kt-title,
+    .kt-eighth-section-header .kt-title,
+    .kt-ninth-section-header .kt-title,
+    .kt-tenth-section-header .kt-title,
+    .kt-eleventh-section-header .kt-title,
+    .kt-twelfth-section-header .kt-title {
+        width: 70%;
+    }
+
+    .kt-eleventh-section .kaz-tarih-carousel-viewport {
+        padding: 0 2rem 0 2rem !important;
+    }
+
+    .kt-twelfth-section-block {
+        width: 90%;
+    }
+
+    .kt-twelfth-section-ds {
+        width: 90% !important;
+    }
+
+    .kt-twelfth-section-content {
+        gap: 1rem;
+    }
+
+    .kt-seventh-section-ds p,
+    .kt-seventh-section-ds li,
+    .kt-eighth-section-ds p,
+    .kt-eighth-section-ds li,
+    .kt-tenth-section-ds p,
+    .kt-tenth-section-ds li,
+    .kt-eleventh-section-ds p,
+    .kt-eleventh-section-ds li,
+    .kt-twelfth-section-ds p,
+    .kt-twelfth-section-ds li {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0%;
+    }
+
+    .kt-ninth-section-ds p,
+    .kt-ninth-section-ds li {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.15px;
+    }
+
+    .kt-third-section .text-formatter,
+    .kt-seventh-section .text-formatter {
+        font-size: 16px;
+        line-height: auto;
+        letter-spacing: 0%;
+    }
+
+    .kt-text-block-with-list span,
+    .kt-text-block-with-list li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .kt-cover-section-title {
+        letter-spacing: 40%;
+    }
+
+    .kt-title {
+        font-size: 2.18rem;
+        line-height: 2.19rem;
+    }
+
+    .kt-description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .kt-ninth-section .ds-notification {
+        width: 90% !important;
+    }
+}
