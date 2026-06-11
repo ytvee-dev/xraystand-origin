@@ -1,5 +1,5 @@
 .kt-first-section {
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: #b28e5c;
     position: relative;
     height: fit-content;
