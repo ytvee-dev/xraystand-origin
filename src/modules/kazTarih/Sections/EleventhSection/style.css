@@ -1,7 +1,7 @@
 .kt-eleventh-section {
     width: 100%;
 
-    background-color: #ff002f;
+    background-color: #c52945;
 }
 
 .kt-eleventh-section-content {
@@ -16,6 +16,11 @@
     justify-content: center;
 
     gap: 2rem;
+}
+
+.kt-eleventh-bg-img {
+    mix-blend-mode: multiply;
+    opacity: 0.9;
 }
 
 .kt-eleventh-section .kt-background-img {

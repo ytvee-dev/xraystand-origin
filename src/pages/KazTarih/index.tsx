@@ -74,8 +74,8 @@ const KazHistory: React.FC = () => {
                     summaryCardFontSize={summaryFontSize}
                 />
                 <ThirdSection
-                    className="kt-third-section"
                     content={textContent.thirdSection}
+                    summaryCardFontSize={summaryFontSize}
                 />
                 <FourthSection 
                     content={textContent.fourthSection} 

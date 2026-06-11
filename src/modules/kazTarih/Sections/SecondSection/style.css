@@ -1,5 +1,5 @@
 .kt-second-section {
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: #b28e5c;
     position: relative;
     height: fit-content;
@@ -58,6 +58,16 @@
     max-width: 960px;
     margin-inline: auto;
     margin-bottom: 63px;
+}
+
+@media (min-width: 1920px) {
+    .kt-top-lambs {
+    right: -5%;
+}
+
+.kt-bottom-lambs {
+    left: -5%;
+}
 }
 
 @media (max-width: 1370px) {

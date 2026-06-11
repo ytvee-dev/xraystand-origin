@@ -1,88 +1,53 @@
-import Carousel from "@modules/kazTarih/components/Carousel";
 import * as paths from "@modules/kazTarih/locales/paths.json";
-import DSNotification from "@components/common/DSNotification";
+import { type IKazTarihProps } from '@modules/kazTarih/types/index';
+import Carousel from "@modules/kazTarih/components/Carousel";
 import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
-import type { IEnglishSectionProps } from "@modules/english/types";
-import type { ICardsParagraphs } from "@modules/kazTarih/types";
-import type { ReactElement } from "react";
+import DSNotification from '@components/common/DSNotification';
+import { type ReactElement } from "react";
 import "./style.css";
 
-const ThirdSection = ({
-    className,
-    content,
-}: IEnglishSectionProps): ReactElement => {
+const ThirdSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElement => {
+    const cards = content.cards;
+    const summaryCard = content.summaryCard;
+
     return (
-        <section className={className}>
-            <div className="kt-third-section-content">
-                <img
-                    className="kt-background-img"
-                    src={paths.bg}
-                    alt="background-im
-                g"
-                />
+        <section className="kt-third-section">
+            <img src={paths.bg} alt="" className="kt-bg-img kt-bg-light-img"/>
 
-                <div className="kt-third-section-background-images">
-                    <img
-                        id="kt-third-section-background-img-0"
-                        src={paths.axe}
-                        alt="kt-img"
+            <div className="kt-third-weapons-images-wrapper">
+                {paths.weapons.map((weapon, index) => 
+                    <img 
+                        src={weapon} 
+                        alt="" 
+                        key={index}
+                        className={`kt-third-weapons-images kt-weapons-${index}`}
                     />
-                    <img
-                        id="kt-third-section-background-img-1"
-                        src={paths.spearAndArrows}
-                        alt="kt-img"
-                    />
-                    <img
-                        id="kt-third-section-background-img-2"
-                        src={paths.sword}
-                        alt="kt-img"
-                    />
-                </div>
+                )}
+            </div>
 
-                <div className="kt-third-section-header">
-                    <span className="gr-font-family kt-title">
-                        {content.title}
-                    </span>
+            <div className="kt-third-section-content-wrapper">
+                <h2 className="kt-title gr-font-family kt-third-section-title">{content.title}</h2>
+                <p className="kt-description kt-third-section-description">{content.description}</p>
 
-                    <span className="kt-description">
-                        {content.description}
-                    </span>
-                </div>
-
-                <Carousel
-                    style={{
-                        padding: "0 4rem",
-                    }}
-                >
-                    {content.cards.map(
-                        (cardData: ICardsParagraphs[], index: number) => (
-                            <TextFormatterCard
-                                className="kaz-tarih-carousel-card"
-                                key={`kt-third-section-${index}`}
-                                items={cardData}
-                                theme="light"
-                                style={{
-                                    flex: "0 0 667px",
-                                    color: "#FFFFFF",
-                                }}
-                            />
-                        ),
+                <Carousel className="kt-formatter-card-wrapper">
+                    {cards.map((card, index) =>
+                        <TextFormatterCard items={card} key={index} className="kt-formatter-card"/>
                     )}
                 </Carousel>
-
-                <DSNotification
-                    className="kt-third-section-ds"
-                    content={content.summaryCard}
-                    iconWidth="36px"
-                    cardGap="0.5rem"
-                    backgroundColor="#D2AF83"
-                    borderColor="#724F35"
-                    textColor="#FFFFFF"
-                    fontSize="20px"
-                    borderRadius="0"
-                    style={{ maxWidth: "none", width: "70%" }}
-                    iconColor="#FFFFFF"
-                />
+                <div className="kt-summary-card-wrapper">
+                    <DSNotification 
+                        content={summaryCard}
+                        type="info"
+                        iconColor="white"
+                        backgroundColor="rgba(255, 255, 255, 0.2)"
+                        textColor="white"
+                        borderColor="#724f35"
+                        borderRadius="0"
+                        fontSize={`${summaryCardFontSize}px`}
+                        fullWidth
+                        cardGap="10px"
+                    />
+                </div>
             </div>
         </section>
     );
