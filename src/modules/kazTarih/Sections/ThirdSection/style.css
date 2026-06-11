@@ -1,5 +1,5 @@
 .kt-third-section {
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: #b28e5c;
     position: relative;
     height: fit-content;
@@ -25,8 +25,8 @@
 .kt-weapons-1 {
     width: 312px;
     height: 690px;
-    top: 66%;
-    left: 2%;
+    top: 63%;
+    left: -1%;
 }
 
 .kt-weapons-2 {
@@ -53,7 +53,7 @@
 
 .kt-third-section-description {
     color: #64462D;
-    max-width: 960px;
+    max-width: 70vw;
     text-align: justify;
     margin-inline: auto;
     margin-bottom: 77px;
@@ -61,6 +61,8 @@
 
 .kt-formatter-card-wrapper {
     margin-bottom: 48px;
+    margin-inline: auto;
+    width: fit-content;
 }
 
 .kt-formatter-card {
@@ -74,13 +76,73 @@
     margin-bottom: 63px;
 }
 
+@media (min-width: 1920px) {
+    .kt-third-section-description {
+        max-width: 960px;
+    }
+
+    .kt-weapons-0 {
+        left: 8%;
+    }
+    
+    .kt-weapons-1 {
+        left: 12%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .kt-weapons-0 {
+        width: 290px;
+        height: 490px;
+    }
+    
+    .kt-weapons-1 {
+        width: 222px;
+        height: 620px;
+    }
+
+    .kt-weapons-2 {
+        width: 180px;
+        height: 620px;
+    }
+
+    .kt-third-section-description {
+        max-width: 750px;
+    }
+}
+
 @media (max-width: 1024px) {
     .kt-third-section-description {
-        max-width: 700px;
+        max-width: 600px;
     }
 
     .kt-summary-card-wrapper {
         max-width: 700px;
+    }
+
+    .kt-weapons-0 {
+        width: 260px;
+        height: 420px;
+    }
+    
+    .kt-weapons-1 {
+        width: 182px;
+        height: 560px;
+    }
+}
+
+@media (max-width: 800px) {
+    .kt-weapons-0 {
+        width: 240px;
+        height: 380px;
+    }
+
+    .kt-weapons-1 {
+        display: none;
+    }
+
+    .kt-weapons-2 {
+        left: -10%;
     }
 }
 
@@ -89,6 +151,9 @@
         padding-top: 40px;
     }
 
+    .kt-weapons-0 {
+        display: none;
+    }
     .kt-third-section-title {
         max-width: 500px;
         text-transform: none;
@@ -112,7 +177,18 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {      
+    .kt-third-weapons-images {
+        z-index: 4;
+    }
+
+    .kt-weapons-2 {
+        top: 65%;
+        left: -18%;
+    }
+}
+
+@media (max-width: 520px) {
     .kt-third-section-title {
         max-width: 350;
     }
@@ -122,4 +198,17 @@
         padding-inline: 20px;
         margin-bottom: 29px;
     }
+
+    .kt-weapons-0 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .kt-weapons-2 {
+        left: -28%;
+    }
+}
+
+@media screen and (max-width: 390px) {
 }

@@ -61,23 +61,23 @@ const KazHistory: React.FC = () => {
                 languageSwitcherClassName="kt-switcher"
             >
                 {!isContentLoaded && <Spinner />}
-                {/* <CoverSection
+                <CoverSection
                     className="kt-cover-section"
                     content={textContent.coverSection}
                 />
                 <FirstSection 
                     content={textContent.firstSection}  
                     summaryCardFontSize={summaryFontSize}
-                /> */}
-                {/* <SecondSection 
+                />
+                <SecondSection 
                     content={textContent.secondSection} 
                     summaryCardFontSize={summaryFontSize}
-                /> */}
+                />
                 <ThirdSection
                     content={textContent.thirdSection}
                     summaryCardFontSize={summaryFontSize}
                 />
-                {/* <FourthSection 
+                <FourthSection 
                     content={textContent.fourthSection} 
                     summaryCardFontSize={summaryFontSize}
                 />
@@ -112,7 +112,7 @@ const KazHistory: React.FC = () => {
                 <TwelfthSection
                     className="kt-twelfth-section"
                     content={textContent.twelfthSection}
-                /> */}
+                />
             </BrightnessLayout>
         </div>
     );

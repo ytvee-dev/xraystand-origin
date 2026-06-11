@@ -14,6 +14,7 @@
     left: 50%;
     height: 100%;
     transform: translateX(-50%);
+    width: 100vw;
 }
 
 .kt-bg-light-img {
@@ -68,23 +69,6 @@
     .kt-eleventh-section .kaz-tarih-carousel-viewport {
         padding: 0 2rem 0 5rem !important;
     }
-
-    #kt-third-section-background-img-0 {
-        top: 0;
-        width: 30%;
-    }
-
-    #kt-third-section-background-img-1 {
-        left: -5%;
-        bottom: -5%;
-        width: 30%;
-    }
-
-    #kt-third-section-background-img-2 {
-        bottom: -5%;
-        right: 0;
-        height: 40%;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -135,16 +119,6 @@
         width: auto;
         flex: 0 0 90%;
     }
-
-    #kt-third-section-background-img-0 {
-        top: 0;
-        left: -1%;
-        width: 35%;
-    }
-
-    #kt-third-section-background-img-1 {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -183,7 +157,6 @@
         padding-left: 2rem;
     }
 
-    .kt-third-section .text-formatter,
     .kt-seventh-section .text-formatter,
     .kt-ninth-section .text-formatter {
         flex: 0 0 344px !important;
@@ -209,11 +182,6 @@
         width: 90%;
     }
 
-    .kt-third-section .kt-description {
-        text-align: center;
-        width: 70%;
-    }
-
     .kt-eleventh-section-description,
     .kt-twelfth-section-description,
     .kt-ninth-section .kt-ninth-section-description-list {
@@ -227,21 +195,6 @@
 
     .kt-eleventh-section-ds {
         width: 90% !important;
-    }
-
-    .kt-third-section .kaz-tarih-carousel-viewport {
-        padding: 0 2rem !important;
-    }
-
-    #kt-third-section-background-img-2 {
-        bottom: 0;
-        right: auto;
-        left: -15%;
-        height: 30%;
-    }
-
-    .kt-third-section-background-images {
-        z-index: 3;
     }
 }
 
@@ -257,31 +210,9 @@
         font-size: 1.1rem;
         line-height: 1.5rem;
     }
-
-    #kt-third-section-background-img-0 {
-        display: none;
-    }
-
-    #kt-third-section-background-img-2 {
-        bottom: -1%;
-        right: auto;
-        left: -25%;
-        height: 30%;
-    }
-
-    .kt-third-section-ds {
-        width: 90% !important;
-    }
 }
 
 @media screen and (max-width: 440px) {
-    #kt-third-section-background-img-2 {
-        bottom: -1%;
-        right: auto;
-        left: -20%;
-        height: 30%;
-    }
-
     .kt-cover-section-title {
         width: 100%;
 
@@ -290,7 +221,6 @@
         top: 20%;
     }
 
-    .kt-third-section-header .kt-title,
     .kt-seventh-section-header .kt-title,
     .kt-eighth-section-header .kt-title,
     .kt-ninth-section-header .kt-title,
@@ -316,8 +246,6 @@
         gap: 1rem;
     }
 
-    .kt-third-section-ds p,
-    .kt-third-section-ds li,
     .kt-seventh-section-ds p,
     .kt-seventh-section-ds li,
     .kt-eighth-section-ds p,
@@ -358,16 +286,5 @@
 
     .kt-ninth-section .ds-notification {
         width: 90% !important;
-    }
-
-    .kt-third-section .kaz-tarih-carousel-viewport {
-        padding: 0 1rem 0 1rem !important;
-    }
-
-    #kt-third-section-background-img-2 {
-        bottom: 0;
-        right: auto;
-        left: -25%;
-        height: 30%;
     }
 }
