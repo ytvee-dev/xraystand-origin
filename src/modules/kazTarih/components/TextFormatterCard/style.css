@@ -29,9 +29,10 @@
     margin-bottom: 20px;
 }
 
-.text-formatter-paragraph-wrapper {
-    display: flex;
-    flex-direction: column;
+.text-formatter-highlighted-text {
+  float: left; 
+  width: fit-content; 
+  margin-right: 5px;
 }
 
 .text-formatter-list {
