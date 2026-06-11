@@ -37,33 +37,27 @@ const TextFormatterCard: React.FC<TextFormatterProps> = ({
     >
       {itemsWithParagraphs.map((item, index) => (
         <div key={index} className="text-formatter-block">
-          {item.description && (
-            <p className="text-formatter-description">
-              <strong>{item.highlightedText}</strong>
-                {item.description}
-            </p>
-      )}
-
           {item.title && (
             <p className={`text-formatter-title
                 ${index === 0 && "text-formatter-first-title"}`}>
               {item.title}
             </p>
           )}
-
-          {item.description.length > 0 && (
-            <div className="text-formatter-paragraph-wrapper">
-              <strong>{item.highlightedText}</strong>
-
-              <div className="text-formatter-description-wrapper">
-                {item.description.map(str => (
-                  <p key={str}>
-                    {str}
-                  </p>
-                ))}
-              </div>
-            </div>
-          )}
+          
+          <div className="text-formatter-paragraph-wrapper">
+            {item.highlightedText.length > 0 && 
+              item.description.length > 0 &&
+                <strong className="text-formatter-highlighted-text">
+                  {item.highlightedText}
+                </strong>
+            }
+              
+            {item.description.length > 0 && item.description.map(item => 
+                <p key={item}>
+                  {item}
+                </p>
+            )}
+          </div>
 
           {item.content?.length > 0 && (
             <ul className="text-formatter-list">
