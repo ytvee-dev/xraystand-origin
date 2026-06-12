@@ -22,7 +22,7 @@
 }
 
 .kt-fourth-section-description {
-    color: #64462D;
+    color: #64462d;
     max-width: 1050px;
     text-align: justify;
     margin-inline: auto;
@@ -91,5 +91,9 @@
         max-width: 350px;
         padding-inline: 20px;
         margin-bottom: 29px;
+    }
+
+    .kt-fourth-section {
+        padding-top: 20px;
     }
 }

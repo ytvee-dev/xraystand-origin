@@ -52,17 +52,11 @@
 }
 
 .kt-third-section-description {
-    color: #64462D;
+    color: #64462d;
     max-width: 70vw;
     text-align: justify;
     margin-inline: auto;
     margin-bottom: 77px;
-}
-
-.kt-formatter-card-wrapper {
-    margin-bottom: 48px;
-    margin-inline: auto;
-    width: fit-content;
 }
 
 .kt-formatter-card {
@@ -74,6 +68,7 @@
     max-width: 960px;
     margin-inline: auto;
     margin-bottom: 63px;
+    margin-top: 48px;
 }
 
 @media (min-width: 1920px) {
@@ -84,7 +79,7 @@
     .kt-weapons-0 {
         left: 8%;
     }
-    
+
     .kt-weapons-1 {
         left: 12%;
     }
@@ -95,7 +90,7 @@
         width: 290px;
         height: 490px;
     }
-    
+
     .kt-weapons-1 {
         width: 222px;
         height: 620px;
@@ -124,7 +119,7 @@
         width: 260px;
         height: 420px;
     }
-    
+
     .kt-weapons-1 {
         width: 182px;
         height: 560px;
@@ -177,7 +172,7 @@
     }
 }
 
-@media (max-width: 600px) {      
+@media (max-width: 600px) {
     .kt-third-weapons-images {
         z-index: 4;
     }
@@ -197,6 +192,7 @@
         max-width: 350px;
         padding-inline: 20px;
         margin-bottom: 29px;
+        margin-top: 24px;
     }
 
     .kt-weapons-0 {
@@ -208,7 +204,4 @@
     .kt-weapons-2 {
         left: -28%;
     }
-}
-
-@media screen and (max-width: 390px) {
 }
