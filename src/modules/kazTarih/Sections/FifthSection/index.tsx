@@ -1,16 +1,19 @@
 import * as paths from "@modules/kazTarih/locales/paths.json";
-import { type IKazTarihProps } from '@modules/kazTarih/types/index';
+import { type IKazTarihProps } from "@modules/kazTarih/types/index";
 import Carousel from "@modules/kazTarih/components/Carousel";
 import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
-import DSNotification from '@components/common/DSNotification';
+import DSNotification from "@components/common/DSNotification";
 import { type ReactElement } from "react";
 import "./style.css";
 
-const FifthSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElement => {
+const FifthSection = ({
+    content,
+    summaryCardFontSize,
+}: IKazTarihProps): ReactElement => {
     const cards = content.cards;
     const summaryCard = content.summaryCard;
-    
-    const descriptionParts = content.description.split('\n');
+
+    const descriptionParts = content.description.split("\n");
 
     const descriptionObj = {
         startParagraphs: descriptionParts.slice(0, 2),
@@ -20,23 +23,23 @@ const FifthSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElem
 
     return (
         <section className="kt-fifth-section">
-            <img src={paths.bg} alt="" className="kt-bg-img kt-bg-dark-img"/>
+            <img src={paths.bg} alt="" className="kt-bg-img kt-bg-dark-img" />
 
             <div className="kt-fifth-section-content-wrapper">
-                <h2 className="kt-title gr-font-family kt-fifth-section-title">{content.title}</h2>
+                <h2 className="kt-title gr-font-family kt-fifth-section-title">
+                    {content.title}
+                </h2>
 
                 <div className="kt-fifth-description-wrapper kt-description">
-                    {descriptionObj.startParagraphs.map(item => (
+                    {descriptionObj.startParagraphs.map((item) => (
                         <p className="kt-fifth-description-text" key={item}>
-                            { item }
+                            {item}
                         </p>
                     ))}
 
-                    <ul  className="kt-fifth-description-list">
-                        {descriptionObj.list.map(item => (
-                            <li key={item}>
-                                {item}
-                            </li>
+                    <ul className="kt-fifth-description-list">
+                        {descriptionObj.list.map((item) => (
+                            <li key={item}>{item}</li>
                         ))}
                     </ul>
 
@@ -45,18 +48,19 @@ const FifthSection = ({content, summaryCardFontSize}: IKazTarihProps): ReactElem
                     </p>
                 </div>
 
-                <Carousel className="kt-formatter-card-wrapper">
-                    {cards.map((card, index) =>
-                        <TextFormatterCard 
-                            items={card} 
-                            theme="dark" key={index} 
-                            className="kt-formatter-card"
+                <Carousel style={{ padding: "0 1rem 0 0" }}>
+                    {cards.map((card, index) => (
+                        <TextFormatterCard
+                            items={card}
+                            theme="dark"
+                            key={index}
+                            className="kt-formatter-card kaz-tarih-carousel-card"
                         />
-                    )}
+                    ))}
                 </Carousel>
-                
+
                 <div className="kt-summary-card-wrapper">
-                    <DSNotification 
+                    <DSNotification
                         content={summaryCard}
                         type="info"
                         iconColor="#61361E"

@@ -1,12 +1,12 @@
 .kt-fifth-section {
     overflow: hidden;
-    background-color: #90653E;
+    background-color: #90653e;
     position: relative;
     height: fit-content;
     padding-top: 75px;
 }
 
-.kt-fifth-section-content-wrapper { 
+.kt-fifth-section-content-wrapper {
     position: relative;
     z-index: 1;
 }
@@ -22,7 +22,7 @@
 }
 
 .kt-fifth-description-wrapper {
-    color: #F4E0BF;
+    color: #f4e0bf;
     max-width: 1108px;
     text-align: justify;
     margin-inline: auto;
@@ -31,10 +31,6 @@
 
 .kt-fifth-description-list {
     padding-left: 30px;
-}
-
-.kt-formatter-card-wrapper {
-    margin-bottom: 48px;
 }
 
 .kt-formatter-card {
@@ -48,7 +44,7 @@
     margin-bottom: 63px;
 }
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
     .kt-fifth-description-wrapper {
         max-width: 960px;
     }
