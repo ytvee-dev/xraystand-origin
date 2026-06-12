@@ -22,15 +22,11 @@
 }
 
 .kt-first-section-description {
-    color: #64462D;
+    color: #64462d;
     max-width: 960px;
     text-align: justify;
     margin-inline: auto;
     margin-bottom: 77px;
-}
-
-.kt-formatter-card-wrapper {
-    margin-bottom: 48px;
 }
 
 .kt-formatter-card {
@@ -38,10 +34,11 @@
     flex-shrink: 0;
 }
 
-.kt-summary-card-wrapper {
+.kt-first-section .kt-summary-card-wrapper {
     max-width: 960px;
     margin-inline: auto;
     margin-bottom: 63px;
+    margin-top: 48px;
 }
 
 @media (max-width: 1024px) {
@@ -73,10 +70,6 @@
         padding-inline: 20px;
     }
 
-    .kt-formatter-card-wrapper {
-        margin-bottom: 24px;
-    }
-
     .kt-summary-card-wrapper {
         max-width: 500px;
     }
@@ -87,9 +80,14 @@
         max-width: 350;
     }
 
-    .kt-summary-card-wrapper {
+    .kt-first-section {
+        padding-top: 20px;
+    }
+
+    .kt-first-section .kt-summary-card-wrapper {
         max-width: 350px;
         padding-inline: 20px;
-        margin-bottom: 29px;
+        margin-top: 24px;
+        margin-bottom: 0;
     }
 }

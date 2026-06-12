@@ -1,3 +1,7 @@
+.kt-container {
+    overflow-x: hidden;
+}
+
 .kt-title {
     font-size: 3.125rem;
     line-height: 2.813rem;
@@ -213,6 +217,15 @@
     .kt-description {
         font-size: 1.1rem;
         line-height: 1.5rem;
+    }
+
+    .kt-eleventh-section-header {
+        padding-top: 1.25rem;
+    }
+
+    .kt-eleventh-section-ds {
+        z-index: 2;
+        margin-bottom: 3rem;
     }
 }
 
