@@ -10,17 +10,8 @@ import type { TRootState } from "@store/index";
 import { useSelector } from "react-redux";
 import "./style.css";
 
-const pageLayoutSX = {
-    backgroundColor: "#FCF1EB",
-    boldTextColor: "#474747",
-    textColor: "#474747",
-    copyrightColor: "#474747",
-    logoColorMode: "dark",
-    madeByColorMode: "light",
-};
-
 const MainLogo = () => {
-    return <div className="nvp-logo">Времена года</div>;
+    return <div className="nvp-logo">Гражданская безопасность (ОБЖ)</div>;
 };
 
 const NVP: React.FC = () => {
@@ -38,8 +29,7 @@ const NVP: React.FC = () => {
             <BrightnessLayout
                 logo={<MainLogo />}
                 isLanguageSwitcher={true}
-                sx={pageLayoutSX}
-                headerBackgroundColor="#e9dbde"
+                headerBackgroundColor=""
                 languageSwitcherClassName="nvp-switcher"
             >
                 {!isContentLoaded && <Spinner />}
