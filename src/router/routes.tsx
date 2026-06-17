@@ -21,6 +21,7 @@ const English = lazy(() => import("@pages/English"));
 const KazMusic = lazy(() => import("@pages/KazMusInstruments"));
 const Seasons = lazy(() => import("@pages/Seasons"));
 const KazTarih = lazy(() => import("@pages/KazTarih"));
+const NVP = lazy(() => import("@pages/NVP"));
 
 export const paths = {
     HOME: {
@@ -83,6 +84,7 @@ export const paths = {
         id: "kaztarih",
         path: "/kaztarih",
     },
+    NVP: { id: "nvpPage", path: "/nvp" },
     PAGES: {
         id: "pages",
         path: "/pages",
@@ -162,6 +164,7 @@ const routes: RouteObject[] = [
         ...paths.KAZ_TARIH,
         element: <KazTarih />,
     },
+    { ...paths.NVP, element: <NVP /> },
     {
         ...paths.PAGES,
         element: <Pages />,
