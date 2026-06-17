@@ -1,0 +1,414 @@
+{
+    "coverSection": {
+        "title": "Основы начальной военной подготовки (НВП)",
+        "description": "",
+        "content": [
+            "«Қазақстан Республикасын қорғау - оның әрбір азаматының қасиетті парызы және міндеті.",
+            "«Защита Республики Казахстан является священным долгом и обязанностью каждого ее гражданина»",
+            "(Статья 36 Конституции Республики Казахстан)"
+        ]
+    },
+    "firstSection": {
+        "title": "Военная символика, знаки различия и звания",
+        "description": "Идентификация военнослужащего — важнейший элемент армейской дисциплины и организации. На форме солдата и офицера размещается ряд обязательных знаков:",
+        "content": {
+            "firstPart": {
+                "title": "Государственная принадлежность",
+                "description": "Знак различия в виде флага Республики Казахстан (в стандартном или камуфляжном цвете)."
+            },
+            "secondPart": {
+                "title": "Ведомственная принадлежность",
+                "description": "Нарукавные знаки различия, обозначающие принадлежность к органам военного управления, соединениям, частям или военным учебным заведениям ВС РК."
+            }
+        },
+        "emblemsContent": [
+            "Повседневная форма",
+            "Парадная форма",
+            "Полевая форма",
+            "Верховного Главнокомандующего",
+            "Вооруженных Сил",
+            "Служба государственной охраны",
+            "Органы военной прокуратуры",
+            "Авиационная служба КНБ",
+            "Пограничная служба КНБ",
+            "Военно-следственные органы МВД",
+            "МЧС (Министерство по чрезвычайным ситуациям",
+            "Национальная Гвардия"
+        ]
+    },
+    "secondSection": {
+        "title": "Квалификация",
+        "description": "Нагрудные и нарукавные знаки, обозначающие классную квалификацию специалистов.",
+        "content": [
+            {
+                "title": "Знаки классной квалификации специалистов (кроме ВМС и СВО)",
+                "content": [
+                    {
+                        "description": "специалист 1 класса – наставник (мастер)",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713698/stripe-1_w0vchu.webp"
+                    },
+                    {
+                        "description": "специалист 1 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713699/stripe-2_qshdus.webp"
+                    },
+                    {
+                        "description": "специалист 2 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713701/stripe-3_spyevu.webp"
+                    },
+                    {
+                        "description": "специалист 3 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713701/stripe-4_mztnen.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Знаки классной квалификации специалистов СВО (кроме летного и штурманского составов СВО)",
+                "content": [
+                    {
+                        "description": "специалист 1 класса – наставник (мастер)",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713702/stripe-5_lrb9ll.webp"
+                    },
+                    {
+                        "description": "специалист 1 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713703/stripe-6_qn9yao.webp"
+                    },
+                    {
+                        "description": "специалист 2 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713704/stripe-7_o5doiy.webp"
+                    },
+                    {
+                        "description": "специалист 3 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713705/stripe-8_feozv1.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Знаки классной квалификации специалистов летного состава СВО",
+                "content": [
+                    {
+                        "description": "военный летчик – снайпер",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713706/stripe-9_c0ctkp.webp"
+                    },
+                    {
+                        "description": "военный летчик 1 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713707/stripe-10_ohkxyy.webp"
+                    },
+                    {
+                        "description": "военный летчик 2 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713708/stripe-11_vymsfz.webp"
+                    },
+                    {
+                        "description": "военный летчик 3 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713708/stripe-12_chzubg.webp"
+                    },
+                    {
+                        "description": "военный летчик без класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713709/stripe-13_tpolx6.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Знаки классной квалификации специалистов штурманского состава СВО",
+                "content": [
+                    {
+                        "description": "военный штурман – снайпер",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713710/stripe-14_chrwqs.webp"
+                    },
+                    {
+                        "description": "военный штурман 1 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713729/stripe-15_uxcfzy.webp"
+                    },
+                    {
+                        "description": "военный штурман 2 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713730/stripe-16_filyc8.webp"
+                    },
+                    {
+                        "description": "военный штурман 3 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713685/stripe-17_nq8txu.webp"
+                    },
+                    {
+                        "description": "военный штурман без класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713686/stripe-18_yl7med.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Знаки классной квалификации специалистов ВМС",
+                "content": [
+                    {
+                        "description": "специалист 1 класса – наставник (мастер)",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713686/stripe-19_yh10t4.webp"
+                    },
+                    {
+                        "description": "специалист 1 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713686/stripe-20_xd6254.webp"
+                    },
+                    {
+                        "description": "специалист 2 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713689/stripe-21_it0j77.webp"
+                    },
+                    {
+                        "description": "специалист 3 класса",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713689/stripe-22_xefgg5.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Нагрудные нашиваемые знаки отличия военнослужащих, совершивших прыжки на людских-десантных парашютных системах",
+                "content": [
+                    {
+                        "description": "совершивших от 1 до 50 прыжков с парашютом",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713690/stripe-23_r9olok.webp"
+                    },
+                    {
+                        "description": "совершивших от 50 до 100 прыжков с парашютом",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713691/stripe-24_y10qno.webp"
+                    },
+                    {
+                        "description": "совершивших свыше 100 прыжков с парашютом",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713692/stripe-25_sh9gs1.webp"
+                    },
+                    {
+                        "description": "Инструктор воздушно-десантной подготовки",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713693/stripe-26_v69zph.webp"
+                    },
+                    {
+                        "description": "совершивших прыжки с парашютом в боевых условиях",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713694/stripe-27_ag5s6p.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Нагрудные нашиваемые знаки отличия военнослужащих, совершивших прыжки с парашютных систем специального назначения и спортивных парашютов",
+                "content": [
+                    {
+                        "description": "совершивших от 1 до 50 прыжков с парашютом",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713695/stripe-28_m1zg88.webp"
+                    },
+                    {
+                        "description": "совершивших от 50 до 100 прыжков с парашютом",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713696/stripe-29_kmaaey.webp"
+                    },
+                    {
+                        "description": "совершивших свыше 100 прыжков с парашютом",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713697/stripe-30_vo2bkz.webp"
+                    },
+                    {
+                        "description": "Инструктор воздушно-десантной подготовки",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713697/stripe-31_pk68ta.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    "thirdSection": {
+        "title": "Группа крови",
+        "description": "Нагрудные нашивки группы крови к специальному обмундированию, что критически важно для оказания первой медицинской помощи в полевых условиях. Они содержат международное обозначение системы AB0 (O, A, B, AB), номер группы (I-IV) и резус-фактор (Rh+/Rh-).",
+        "content": [
+            {
+                "title": "",
+                "content": [
+                    {
+                        "description": "Первая положительная",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714735/blood-1_wed0kf.webp"
+                    },
+                    {
+                        "description": "Вторая положительная",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714737/blood-2_sucowx.webp"
+                    },
+                    {
+                        "description": "Третья положительная",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714738/blood-3_tmzhw3.webp"
+                    },
+                    {
+                        "description": "Четвертая положительная",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714739/blood-4_fdtlud.webp"
+                    }
+                ]
+            },
+            {
+                "title": "",
+                "content": [
+                    {
+                        "description": "Первая отрицательная",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714731/blood-5_wt946h.webp"
+                    },
+                    {
+                        "description": "Вторая отрицательная",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714731/blood-6_zcctxw.webp"
+                    },
+                    {
+                        "description": "Третья отрицательная",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714732/blood-7_rhc1qj.webp"
+                    },
+                    {
+                        "description": "Четвертая отрицательная",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714734/blood-8_y9jp9y.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    "fourthSection": {
+        "title": "Звания в Вооруженных Силах Казахстана",
+        "description": "Воинские звания обозначаются наплечными знаками — погоны и погончики. Они подразделяются: по предназначению — для парадного, повседневного, по способу крепления — нашивные, вшивные, съёмные (на муфтах), у корабельных офицеров, по традиции, на парадной и повседневной форме они дополняются нарукавными галунами по званиям. К полевому и рабочему обмундированию предусмотрены петлицы, а также нарукавные и нагрудные нашивки со знаками различия.",
+        "content": [
+            {
+                "title": "Войсковые звания. Высший офицерский состав",
+                "content": [
+                    {
+                        "description": "Верховный главнокомандующий ВС РК",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715269/shoulder-1_d0ljpa.webp"
+                    },
+                    {
+                        "description": "Генерал армии",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715270/shoulder-2_g5wqhh.webp"
+                    },
+                    {
+                        "description": "Генерал-полковник",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715272/shoulder-3_t36ech.webp"
+                    },
+                    {
+                        "description": "Генерал-лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715273/shoulder-4_l9ljb4.webp"
+                    },
+                    {
+                        "description": "Генерал-майор",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715283/shoulder-5_ghvyql.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Старший и младший офицерский состав",
+                "content": [
+                    {
+                        "description": "Полковник",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715284/shoulder-6_ufqdgi.webp"
+                    },
+                    {
+                        "description": "Подполковник",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715286/shoulder-7_uome7e.webp"
+                    },
+                    {
+                        "description": "Майор",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715289/shoulder-8_k5bije.webp"
+                    },
+                    {
+                        "description": "Капитан",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715290/shoulder-9_vl40eb.webp"
+                    },
+                    {
+                        "description": "Старший лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715905/polkovnik_hqpuev.webp"
+                    },
+                    {
+                        "description": "Лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715257/shoulder-10_ybjim3.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Корабельные звания. Высший офицерский состав",
+                "content": [
+                    {
+                        "description": "Адмирал",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715257/shoulder-11_vzrbn4.webp"
+                    },
+                    {
+                        "description": "Вице-адмирал",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715259/shoulder-12_lavqwk.webp"
+                    },
+                    {
+                        "description": "Контр-адмирал",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715260/shoulder-13_ti78io.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Старший и младший офицерский состав",
+                "content": [
+                    {
+                        "description": "Капитан первого ранга",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715261/shoulder-14_lexx0w.webp"
+                    },
+                    {
+                        "description": "Капитан второго ранга",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715262/shoulder-15_h2cw3o.webp"
+                    },
+                    {
+                        "description": "Капитан третьего ранга",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715264/shoulder-16_a6sofw.webp"
+                    },
+                    {
+                        "description": "Капитан-лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715265/shoulder-17_f8ubk4.webp"
+                    },
+                    {
+                        "description": "Старший лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715266/shoulder-18_xoz8xx.webp"
+                    },
+                    {
+                        "description": "Лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715267/shoulder-19_vdgbpd.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    "fifthSection": { "title": "", "description": "", "content": [] },
+    "sixthSection": {
+        "title": "Вооружение",
+        "description": "",
+        "content": [
+            {
+                "title": "Ручные гранаты",
+                "description": "В арсенале пехотинца присутствуют ручные гранаты, предназначенные для поражения живой силы противника в ближнем бою.",
+                "content": [
+                    {
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715916/%D0%93%D1%80%D0%B0%D0%BD%D0%B0%D1%82%D0%B0_2_oluow3.webp",
+                        "content": [
+                            "Ф-1",
+                            "Оборонительная",
+                            "Ручная осколочная граната, имеющая характерный ребристый корпус. Радиус разлета осколков велик, поэтому бросать ее разрешается строго из укрытия (окопа, бронетехники)."
+                        ]
+                    },
+                    {
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715904/%D0%93%D1%80%D0%B0%D0%BD%D1%82%D0%B0_%D0%A0%D0%93%D0%94_1_xyhswv.webp",
+                        "content": [
+                            "РГД-5",
+                            "Наступательная",
+                            "Имеет гладкий корпус и меньший радиус разлета осколков, что позволяет применять ее при наступлении на открытой местности без риска поражения самого себя."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Стрелковое оружие: Автомат Калашникова (АК-47)",
+                "description": "Автомат Калашникова является основным индивидуальным оружием военнослужащего. Изучение его устройства начинается с главного правила безопасности: ВСЕГДА ПРОВЕРЯЙ ПАТРОННИК!",
+                "content": [
+                    {
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715915/AK-47_rdnvgt.webp",
+                        "content": [
+                            "Порядок неполной разборки:",
+                            "Производится для чистки, смазки и осмотра оружия.",
+                            "Отделить магазин",
+                            "Проверить отсутствие патрона в патроннике",
+                            "Вынуть пенал с принадлежностями",
+                            "Отделить шомпол",
+                            "Отделить крышку ствольной коробки",
+                            "Отделить возвратный механизм",
+                            "Отделить затворную раму с затвором",
+                            "Отделить затвор от затворной рамы",
+                            "Отделить газовую трубку со ствольной накладкой",
+                            "Сборка производится в строго обратной последовательности"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "additionalInfo": [
+            "*Данный текст носит ознакомительный характер. Для закрепления информации проконсультируйтесь с преподавателем, инструктором или куратором.",
+            "*Материал составлен на базе Приказа Министра обороны Республики Казахстан от 24 апреля 2024 года № 414, СМИ и открытых источников информации."
+        ]
+    }
+}
