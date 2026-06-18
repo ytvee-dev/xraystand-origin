@@ -8,6 +8,7 @@
     font-size: 36px;
     line-height: auto;
     letter-spacing: 0%;
+    text-align: center;
 }
 
 .nvp-description {
@@ -15,4 +16,5 @@
     font-size: 18px;
     line-height: auto;
     letter-spacing: 0%;
+    text-align: center;
 }

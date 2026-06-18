@@ -3,6 +3,7 @@ import BrightnessLayout from "@layout/Brightness";
 import * as paths from "@modules/nvp/locales/paths.json";
 import * as contentRu from "@modules/nvp/locales/rus.json";
 import * as contentKz from "@modules/nvp/locales/kaz.json";
+import FirstSection from "@modules/nvp/Sections/FirstSection";
 import CoverSection from "@modules/nvp/Sections/CoverSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
@@ -37,6 +38,10 @@ const NVP: React.FC = () => {
                 <CoverSection
                     className="nvp-cover-section"
                     content={textContent.coverSection}
+                />
+                <FirstSection
+                    className="nvp-first-section"
+                    content={textContent.firstSection}
                 />
             </BrightnessLayout>
         </div>
