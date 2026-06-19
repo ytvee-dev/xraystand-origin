@@ -9,6 +9,8 @@
     line-height: auto;
     letter-spacing: 0%;
     text-align: center;
+
+    z-index: 3;
 }
 
 .nvp-description {
@@ -17,4 +19,13 @@
     line-height: auto;
     letter-spacing: 0%;
     text-align: center;
+
+    z-index: 3;
+}
+
+.nvp-background-img {
+    width: 100%;
+
+    position: absolute;
+    z-index: 2;
 }

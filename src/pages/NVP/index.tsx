@@ -12,10 +12,6 @@ import type { TRootState } from "@store/index";
 import { useSelector } from "react-redux";
 import "./style.css";
 
-const MainLogo = () => {
-    return <div className="nvp-logo">НАЧАЛЬНАЯ ВОЕННАЯ ПОДГОТОВКА</div>;
-};
-
 const NVP: React.FC = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
 
@@ -30,11 +26,11 @@ const NVP: React.FC = () => {
         <div className="nvp-container">
             <BrightnessLayout
                 isLanguageSwitcher={true}
-                logo={<MainLogo />}
                 headerBackgroundColor="#697855"
                 languageSwitcherClassName="nvp-switcher"
             >
                 {!isContentLoaded && <Spinner />}
+
                 <CoverSection
                     className="nvp-cover-section"
                     content={textContent.coverSection}
