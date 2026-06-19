@@ -1,10 +1,11 @@
 import Spinner from "@components/common/Spinner";
-import BrightnessLayout from "@layout/Brightness";
 import * as paths from "@modules/nvp/locales/paths.json";
 import * as contentRu from "@modules/nvp/locales/rus.json";
 import * as contentKz from "@modules/nvp/locales/kaz.json";
 import FirstSection from "@modules/nvp/Sections/FirstSection";
 import CoverSection from "@modules/nvp/Sections/CoverSection";
+import SecondSection from "@modules/nvp/Sections/SecondSection";
+import CustomLayout from "@modules/nvp/components/CustomLayout";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -24,7 +25,7 @@ const NVP: React.FC = () => {
 
     return (
         <div className="nvp-container">
-            <BrightnessLayout
+            <CustomLayout
                 isLanguageSwitcher={true}
                 headerBackgroundColor="#697855"
                 languageSwitcherClassName="nvp-switcher"
@@ -39,7 +40,11 @@ const NVP: React.FC = () => {
                     className="nvp-first-section"
                     content={textContent.firstSection}
                 />
-            </BrightnessLayout>
+                <SecondSection
+                    className="nvp-second-section"
+                    content={textContent.secondSection}
+                />
+            </CustomLayout>
         </div>
     );
 };
