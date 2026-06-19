@@ -2,10 +2,23 @@
     overflow-x: hidden;
 }
 
-/* .nvp-title {
-    
+.nvp-title {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: auto;
+    letter-spacing: 0%;
+    text-align: center;
+
+    z-index: 3;
 }
 
 .nvp-description {
-  
-} */
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: auto;
+    letter-spacing: 0%;
+    text-align: center;
+
+    z-index: 3;
+}
