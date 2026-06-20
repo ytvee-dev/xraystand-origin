@@ -3,14 +3,14 @@ import type { IEnglishSectionProps } from "@modules/english/types";
 import type { ReactElement } from "react";
 import "./style.css";
 
-const SecondSection = ({
+const ThirdSection = ({
     className,
     content,
 }: IEnglishSectionProps): ReactElement => {
     return (
         <section className={className}>
-            <div className="nvp-second-section-content">
-                <div className="nvp-second-section-header-block">
+            <div className="nvp-third-section-content">
+                <div className="nvp-third-section-header-block">
                     <span className="nvp-title">{content.title}</span>
 
                     <span className="nvp-description">
@@ -18,34 +18,30 @@ const SecondSection = ({
                     </span>
                 </div>
 
-                <div className="nvp-second-section-paragraphs-container">
+                <div className="nvp-third-section-paragraphs-container">
                     {content.content.map(
                         (paragraphData: IParagraphData, index: number) => (
                             <div
-                                className="nvp-second-section-paragraph"
+                                className="nvp-third-section-paragraph"
                                 key={`nvp-${index}`}
                             >
-                                <span className="nvp-second-section-paragraph-title">
-                                    {paragraphData.title}
-                                </span>
-
-                                <div className="nvp-shoulder-cards-container">
+                                <div className="nvp-blood-cards-container">
                                     {paragraphData.content.map(
                                         (
                                             cardData: ICardData,
                                             index: number,
                                         ) => (
                                             <div
-                                                className="nvp-second-section-card"
-                                                key={`nvp-second-section-${index}`}
+                                                className="nvp-third-section-card"
+                                                key={`nvp-third-section-${index}`}
                                             >
                                                 <img
-                                                    className="nvp-second-section-card-img"
+                                                    className="nvp-third-section-card-img"
                                                     src={cardData.path}
                                                     alt="nvp-img"
                                                 />
 
-                                                <span className="nvp-second-section-card-text">
+                                                <span className="nvp-third-section-card-text">
                                                     {cardData.description}
                                                 </span>
                                             </div>
@@ -61,4 +57,4 @@ const SecondSection = ({
     );
 };
 
-export default SecondSection;
+export default ThirdSection;

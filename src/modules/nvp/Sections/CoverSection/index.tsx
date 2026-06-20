@@ -1,4 +1,3 @@
-import * as paths from "@modules/nvp/locales/paths.json";
 import type { IEnglishSectionProps } from "@modules/english/types";
 import type { ReactElement } from "react";
 import "./style.css";
