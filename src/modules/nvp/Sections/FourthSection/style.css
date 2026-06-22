@@ -40,6 +40,8 @@
 
     margin-top: 2rem;
     gap: 1rem;
+
+    z-index: 3;
 }
 
 .nvp-fourth-section-header-block .nvp-description {
@@ -89,6 +91,8 @@
     padding: 0.5rem;
 
     border: 0.0625rem solid #ffffff;
+    border-bottom: none;
+
     background-color: #60654d;
 
     font-family: "Roboto";
@@ -123,4 +127,8 @@
     letter-spacing: 0%;
 
     text-align: center;
+}
+
+.nvp-fourth-section-card-text {
+    overflow-wrap: break-word;
 }

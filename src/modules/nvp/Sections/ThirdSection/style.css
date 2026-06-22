@@ -40,6 +40,8 @@
 
     margin-top: 2rem;
     gap: 1rem;
+
+    z-index: 3;
 }
 
 .nvp-third-section-header-block .nvp-description {
@@ -120,8 +122,6 @@
     width: 90%;
 
     font-size: 1rem;
-    line-height: auto;
     letter-spacing: 0%;
-
     text-align: center;
 }

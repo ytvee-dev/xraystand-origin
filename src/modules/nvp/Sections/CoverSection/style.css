@@ -29,10 +29,11 @@
 
 .cover-section-nvp-logo {
     width: 292px;
-    padding: 0.25rem 0;
+
+    padding: 0.375rem 0;
 
     margin-top: 1rem;
-    background-color: #27272a;
+    background-color: #292c26;
     border-radius: 1rem;
 
     font-size: 14px;

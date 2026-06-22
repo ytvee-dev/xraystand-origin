@@ -35,7 +35,7 @@ const SixthSection = ({
                                         {cardData.content?.map(
                                             (text: string, index: number) => (
                                                 <span
-                                                    id={`nvp-sixth-section-text-${index}`}
+                                                    id={`nvp-sixth-section-block-text-${index}`}
                                                     key={`nvp-img-${index}`}
                                                 >
                                                     {text}
@@ -69,14 +69,17 @@ const SixthSection = ({
                     {content.content.secondPart.content.map(
                         (cardData: ICardData, index: number) => (
                             <div
-                                id={`nvp-sixth-section-card-${index}`}
                                 className="nvp-sixth-section-card"
                                 key={`nvp-sixth-section-card-${index}`}
                             >
                                 <div className="nvp-sixth-section-text-container">
                                     {cardData.content?.map(
                                         (text: string, index: number) => (
-                                            <span key={`nvp-img-${index}`}>
+                                            <span
+                                                className="nvp-sixth-section-card-text"
+                                                id={`nvp-sixth-section-card-text-${index}`}
+                                                key={`nvp-img-${index}`}
+                                            >
                                                 {text}
                                             </span>
                                         ),
