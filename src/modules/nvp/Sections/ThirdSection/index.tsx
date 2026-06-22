@@ -13,8 +13,8 @@ const ThirdSection = ({
 
     return (
         <section className={className}>
-            <div className="nvp-third-section-content">
-                <div className="nvp-third-section-header-block">
+            <div className="nvp-third-section-content nvp-frame">
+                <div className="nvp-third-section-header-block nvp-frame">
                     <span className="nvp-title">{content.title}</span>
 
                     <span className="nvp-description">

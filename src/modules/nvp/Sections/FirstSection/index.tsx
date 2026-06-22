@@ -13,8 +13,8 @@ const FirstSection = ({
 
     return (
         <section className={className}>
-            <div className="nvp-first-section-content">
-                <div className="nvp-first-section-header-block">
+            <div className="nvp-first-section-content nvp-frame">
+                <div className="nvp-first-section-header-block nvp-frame">
                     <span className="nvp-title">{content.title}</span>
 
                     <span className="nvp-description">

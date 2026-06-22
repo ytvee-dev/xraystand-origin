@@ -9,8 +9,10 @@ const SixthSection = ({
 }: IEnglishSectionProps): ReactElement => {
     return (
         <section className={className}>
-            <div className="nvp-sixth-section-content">
-                <div className="nvp-header nvp-title">{content.title}</div>
+            <div className="nvp-sixth-section-content nvp-frame">
+                <div className="nvp-header nvp-title nvp-frame">
+                    {content.title}
+                </div>
 
                 <div className="nvp-sixth-section-first-part">
                     <div className="nvp-sixth-section-part-header">

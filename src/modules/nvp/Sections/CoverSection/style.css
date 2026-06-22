@@ -14,6 +14,8 @@
     height: 100%;
     width: 90%;
 
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +24,8 @@
     border: 0.0625rem solid #ffffff;
     background-color: #414838;
 
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1px;
 
     gap: 2rem;
 }

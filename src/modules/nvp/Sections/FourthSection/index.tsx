@@ -12,8 +12,8 @@ const FourthSection = ({
     const { isMobile } = usePageData();
     return (
         <section className={className}>
-            <div className="nvp-fourth-section-content">
-                <div className="nvp-fourth-section-header-block">
+            <div className="nvp-fourth-section-content nvp-frame">
+                <div className="nvp-fourth-section-header-block nvp-frame">
                     <span className="nvp-title">{content.title}</span>
 
                     <span className="nvp-description">
