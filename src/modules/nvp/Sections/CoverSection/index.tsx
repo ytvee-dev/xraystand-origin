@@ -1,4 +1,3 @@
-import * as paths from "@modules/nvp/locales/paths.json";
 import type { IEnglishSectionProps } from "@modules/english/types";
 import type { ReactElement } from "react";
 import "./style.css";
@@ -17,7 +16,7 @@ const CoverSection = ({
 }: IEnglishSectionProps): ReactElement => {
     return (
         <section className={className}>
-            <div className="nvp-cover-section-content">
+            <div className="nvp-cover-section-content nvp-frame">
                 <CoverSectionLogo />
 
                 <h1 className="nvp-cover-section-title">{content.title}</h1>

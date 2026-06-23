@@ -5,7 +5,7 @@ import { usePageData } from "@hooks/usePageData";
 import type { ReactElement } from "react";
 import "./style.css";
 
-const SecondSection = ({
+const ThirdSection = ({
     className,
     content,
 }: IEnglishSectionProps): ReactElement => {
@@ -13,8 +13,8 @@ const SecondSection = ({
 
     return (
         <section className={className}>
-            <div className="nvp-second-section-content nvp-frame">
-                <div className="nvp-second-section-header-block nvp-frame">
+            <div className="nvp-third-section-content nvp-frame">
+                <div className="nvp-third-section-header-block nvp-frame">
                     <span className="nvp-title">{content.title}</span>
 
                     <span className="nvp-description">
@@ -22,22 +22,18 @@ const SecondSection = ({
                     </span>
                 </div>
 
-                <div className="nvp-second-section-paragraphs-container">
+                <div className="nvp-third-section-paragraphs-container">
                     {content.content.map(
                         (paragraphData: IParagraphData, index: number) => (
                             <div
-                                className="nvp-second-section-paragraph"
+                                className="nvp-third-section-paragraph"
                                 key={`nvp-${index}`}
                             >
-                                <span className="nvp-second-section-paragraph-title">
-                                    {paragraphData.title}
-                                </span>
-
                                 {isMobile ? (
                                     <Carousel
                                         style={{
                                             padding: "1rem",
-                                            backgroundColor: "#292c26",
+                                            backgroundColor: "#60654d",
                                             border: "0.0625rem solid #ffffff",
                                         }}
                                     >
@@ -47,17 +43,17 @@ const SecondSection = ({
                                                 index: number,
                                             ) => (
                                                 <div
-                                                    className="nvp-second-section-card kaz-tarih-carousel-card"
-                                                    key={`nvp-second-section-${index}`}
-                                                    style={{ flex: "0 0 30%" }}
+                                                    className="nvp-third-section-card kaz-tarih-carousel-card"
+                                                    key={`nvp-third-section-${index}`}
+                                                    style={{ flex: "0 0 25%" }}
                                                 >
                                                     <img
-                                                        className="nvp-second-section-card-img"
+                                                        className="nvp-third-section-card-img"
                                                         src={cardData.path}
                                                         alt="nvp-img"
                                                     />
 
-                                                    <span className="nvp-second-section-card-text">
+                                                    <span className="nvp-third-section-card-text">
                                                         {cardData.description}
                                                     </span>
                                                 </div>
@@ -65,23 +61,23 @@ const SecondSection = ({
                                         )}
                                     </Carousel>
                                 ) : (
-                                    <div className="nvp-shoulder-cards-container">
+                                    <div className="nvp-blood-cards-container">
                                         {paragraphData.content.map(
                                             (
                                                 cardData: ICardData,
                                                 index: number,
                                             ) => (
                                                 <div
-                                                    className="nvp-second-section-card"
-                                                    key={`nvp-second-section-${index}`}
+                                                    className="nvp-third-section-card"
+                                                    key={`nvp-third-section-${index}`}
                                                 >
                                                     <img
-                                                        className="nvp-second-section-card-img"
+                                                        className="nvp-third-section-card-img"
                                                         src={cardData.path}
                                                         alt="nvp-img"
                                                     />
 
-                                                    <span className="nvp-second-section-card-text">
+                                                    <span className="nvp-third-section-card-text">
                                                         {cardData.description}
                                                     </span>
                                                 </div>
@@ -98,4 +94,4 @@ const SecondSection = ({
     );
 };
 
-export default SecondSection;
+export default ThirdSection;

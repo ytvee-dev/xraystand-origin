@@ -84,7 +84,7 @@ export const paths = {
         id: "kaztarih",
         path: "/kaztarih",
     },
-    NVP: { id: "nvpPage", path: "/nvp" },
+    NVP: { id: "nvpPage", path: "/kazarmy" },
     PAGES: {
         id: "pages",
         path: "/pages",

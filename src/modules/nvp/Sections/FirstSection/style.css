@@ -19,9 +19,10 @@
     align-items: center;
     justify-content: center;
 
+    border: 0.0625rem solid #ffffff;
     background-color: #414838;
 
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     gap: 2rem;
 }
@@ -35,10 +36,12 @@
     justify-content: center;
 
     padding: 0.5rem 3rem;
-    background-color: #7f8363;
+    background-color: #60654d;
 
     margin-top: 2rem;
     gap: 1rem;
+
+    z-index: 3;
 }
 
 .nvp-first-section-header-block .nvp-description {
@@ -122,6 +125,23 @@
     width: 100%;
     padding: 0.5rem;
     background-color: #8a9066;
+    overflow-wrap: break-word;
 
     text-align: center;
+}
+
+#nvp-emblem-card-3 {
+    width: 20%;
+}
+
+#nvp-emblem-card-3 .nvp-first-section-emblem-img {
+    width: 60%;
+}
+
+#nvp-emblem-card-10 {
+    width: 20%;
+}
+
+#nvp-emblem-card-10 .nvp-first-section-emblem-img {
+    width: 60%;
 }

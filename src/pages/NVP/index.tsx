@@ -4,7 +4,11 @@ import * as contentRu from "@modules/nvp/locales/rus.json";
 import * as contentKz from "@modules/nvp/locales/kaz.json";
 import FirstSection from "@modules/nvp/Sections/FirstSection";
 import CoverSection from "@modules/nvp/Sections/CoverSection";
+import ThirdSection from "@modules/nvp/Sections/ThirdSection";
+import SixthSection from "@modules/nvp/Sections/SixthSection";
+import FourthSection from "@modules/nvp/Sections/FourthSection";
 import SecondSection from "@modules/nvp/Sections/SecondSection";
+import FifthSection from "@modules/nvp/Sections/FifthSection";
 import CustomLayout from "@modules/nvp/components/CustomLayout";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
@@ -43,6 +47,22 @@ const NVP: React.FC = () => {
                 <SecondSection
                     className="nvp-second-section"
                     content={textContent.secondSection}
+                />
+                <ThirdSection
+                    className="nvp-third-section"
+                    content={textContent.thirdSection}
+                />
+                <FourthSection
+                    className="nvp-fourth-section"
+                    content={textContent.fourthSection}
+                />
+                <FifthSection
+                    className="nvp-fifth-section"
+                    content={textContent.fifthSection}
+                />
+                <SixthSection
+                    className="nvp-sixth-section"
+                    content={textContent.sixthSection}
                 />
             </CustomLayout>
         </div>

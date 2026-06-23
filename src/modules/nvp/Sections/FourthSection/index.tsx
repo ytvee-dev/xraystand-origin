@@ -1,20 +1,19 @@
-import Carousel from "@modules/kazTarih/components/Carousel";
 import type { ICardData, IParagraphData } from "@modules/nvp/types";
 import type { IEnglishSectionProps } from "@modules/english/types";
 import { usePageData } from "@hooks/usePageData";
 import type { ReactElement } from "react";
 import "./style.css";
+import Carousel from "@modules/kazTarih/components/Carousel";
 
-const SecondSection = ({
+const FourthSection = ({
     className,
     content,
 }: IEnglishSectionProps): ReactElement => {
     const { isMobile } = usePageData();
-
     return (
         <section className={className}>
-            <div className="nvp-second-section-content nvp-frame">
-                <div className="nvp-second-section-header-block nvp-frame">
+            <div className="nvp-fourth-section-content nvp-frame">
+                <div className="nvp-fourth-section-header-block nvp-frame">
                     <span className="nvp-title">{content.title}</span>
 
                     <span className="nvp-description">
@@ -22,14 +21,14 @@ const SecondSection = ({
                     </span>
                 </div>
 
-                <div className="nvp-second-section-paragraphs-container">
+                <div className="nvp-fourth-section-paragraphs-container">
                     {content.content.map(
                         (paragraphData: IParagraphData, index: number) => (
                             <div
-                                className="nvp-second-section-paragraph"
+                                className="nvp-fourth-section-paragraph"
                                 key={`nvp-${index}`}
                             >
-                                <span className="nvp-second-section-paragraph-title">
+                                <span className="nvp-fourth-section-paragraph-title">
                                     {paragraphData.title}
                                 </span>
 
@@ -47,17 +46,17 @@ const SecondSection = ({
                                                 index: number,
                                             ) => (
                                                 <div
-                                                    className="nvp-second-section-card kaz-tarih-carousel-card"
-                                                    key={`nvp-second-section-${index}`}
-                                                    style={{ flex: "0 0 30%" }}
+                                                    className="nvp-fourth-section-card kaz-tarih-carousel-card"
+                                                    key={`nvp-fourth-section-${index}`}
+                                                    style={{ flex: "0 0 20%" }}
                                                 >
                                                     <img
-                                                        className="nvp-second-section-card-img"
+                                                        className="nvp-fourth-section-card-img"
                                                         src={cardData.path}
                                                         alt="nvp-img"
                                                     />
 
-                                                    <span className="nvp-second-section-card-text">
+                                                    <span className="nvp-fourth-section-card-text">
                                                         {cardData.description}
                                                     </span>
                                                 </div>
@@ -65,23 +64,23 @@ const SecondSection = ({
                                         )}
                                     </Carousel>
                                 ) : (
-                                    <div className="nvp-shoulder-cards-container">
+                                    <div className="nvp-fourth-section-cards-container">
                                         {paragraphData.content.map(
                                             (
                                                 cardData: ICardData,
                                                 index: number,
                                             ) => (
                                                 <div
-                                                    className="nvp-second-section-card"
-                                                    key={`nvp-second-section-${index}`}
+                                                    className="nvp-fourth-section-card"
+                                                    key={`nvp-fourth-section-${index}`}
                                                 >
                                                     <img
-                                                        className="nvp-second-section-card-img"
+                                                        className="nvp-fourth-section-card-img"
                                                         src={cardData.path}
                                                         alt="nvp-img"
                                                     />
 
-                                                    <span className="nvp-second-section-card-text">
+                                                    <span className="nvp-fourth-section-card-text">
                                                         {cardData.description}
                                                     </span>
                                                 </div>
@@ -98,4 +97,4 @@ const SecondSection = ({
     );
 };
 
-export default SecondSection;
+export default FourthSection;
