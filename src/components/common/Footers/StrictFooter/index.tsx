@@ -6,12 +6,14 @@ import { useDispatch } from "react-redux";
 import "./style.css";
 
 interface IStrictFooterSX {
+    position?: string;
     backgroundColor?: string;
     boldTextColor?: string;
     textColor?: string;
     copyrightColor?: string;
     logoColorMode?: string; // light | dark
     madeByColorMode?: string; // light | dark
+    zIndex?: string;
 }
 
 interface IStrictFooterProps {
@@ -49,7 +51,11 @@ const Footer = ({
     return (
         <footer
             className="footer"
-            style={{ backgroundColor: sx?.backgroundColor }}
+            style={{
+                backgroundColor: sx?.backgroundColor,
+                zIndex: sx?.zIndex,
+                position: sx?.position,
+            }}
         >
             <div className="footer-content-wrapper">
                 <div className="footer-logo-container">

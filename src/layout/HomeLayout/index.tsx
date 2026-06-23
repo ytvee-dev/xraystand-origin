@@ -1,4 +1,4 @@
-import React, {type ReactElement, type ReactNode} from "react";
+import React, { type ReactElement, type ReactNode } from "react";
 import CenteredHeader from "@components/common/CenteredHeader";
 import HomeFooter from "@components/common/Footers/HomeFooter";
 import PrivacyPolicyModal from "@components/common/PrivacyPolicyModal";
@@ -15,6 +15,7 @@ export interface IDefaultLayoutProps {
     switcherColor?: string;
     sx?: IBrightnessLayoutSX;
     headerBackgroundColor?: string;
+    languageSwitcherClassName?: string;
 }
 
 export interface IBrightnessLayoutSX {
@@ -31,12 +32,11 @@ const HomeLayout: React.FC<IDefaultLayoutProps> = ({
     children,
     logo,
     navigation,
-    stickyHeader=false,
+    stickyHeader = false,
     isLanguageSwitcher = false,
     switcherColor,
     headerBackgroundColor,
 }: IDefaultLayoutProps) => {
-
     return (
         <div className={`home-layout ${disabled ? "disabled" : ""}`}>
             <CenteredHeader

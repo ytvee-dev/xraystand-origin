@@ -1,0 +1,42 @@
+{
+    "flags": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712327/kz-flag-_1_oqvhrp.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712357/kz-flag-_2_s3t29f.webp"
+    ],
+    "emblems": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712883/emblem-1_a6hbmk.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712874/emblem-2_xbbq3b.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712874/emblem-3_ku3js7.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712875/emblem-4_hyqsaf.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712875/emblem-5_szb7rc.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712877/emblem-6_uv4unj.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712877/emblem-7_nk8ayv.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712878/emblem-8_yy2phu.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712879/emblem-9_syksaf.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712880/emblem-10_evhryn.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712881/emblem-11_r1exlh.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781712881/emblem-12_uw0etm.webp"
+    ],
+    "fifthSection": {
+        "soldiers": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225890/man1_hynpnx.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225889/man2_vjokeb.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225890/man3_w2sjxq.webp"
+        ],
+        "target": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225889/target_agsqfr.webp",
+        "mapFlag": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225891/Mapa_olcs92.webp",
+        "equipmentCards": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225889/boots_qmbrv8.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225862/o4ki_girbux.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225862/nochvid_ohwwax.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225862/zhilet_ypue0b.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225863/shlem_naxtox.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225863/granat_cyznrf.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782227329/magaz_cha8nb.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225863/ratsia_wmpbz6.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782227329/protivogaz_rl8ase.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1782225864/apte4ka_ijr32h.webp"
+        ]
+    },
+    "background": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781790901/%D0%BF%D0%B0%D1%82%D1%82%D0%B5%D1%80%D0%BD_1_1_1_qqfp5w.webp"
+}

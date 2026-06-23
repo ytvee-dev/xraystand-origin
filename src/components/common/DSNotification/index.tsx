@@ -1,5 +1,5 @@
-import { type CSSProperties, type ReactElement } from "react";
-import { type ISummaryCardContent } from "@modules/kazTarih/types/index"
+import { isValidElement, type CSSProperties, type ReactElement } from "react";
+import { type ISummaryCardContent } from "@modules/kazTarih/types/index";
 import { Alert } from "@mui/material";
 import SpriteIcon from "@components/common/Other/SpriteIcon";
 import "./style.css";
@@ -9,18 +9,20 @@ export type TNotificationTypes = "warning" | "info";
 type Label = string;
 type List = string[];
 type Summary = ISummaryCardContent[];
+type Content = Label | List | Summary | ReactElement;
 type ListTypes = "none" | "mark" | "number";
 type WidthTypes = "small" | "middle" | "large";
 type ImgPosition = "flex-start" | "center" | "flex-end";
 
 enum DSNotificationsContentTypes {
+    REACT_ELEMENT = "reactElement",
     STRING = "string",
     LIST = "list",
     SUMMARY = "summary",
 }
 
 export interface IFlexibleAlertProps {
-    content: Label | List | Summary;
+    content: Content;
     listMark?: ListTypes;
     type?: TNotificationTypes;
     backgroundColor?: string;
@@ -80,9 +82,11 @@ const DSNotification = ({
 }: IFlexibleAlertProps): ReactElement => {
     const dsBorderColor = borderColor ? borderColor : backgroundColor;
 
-    function getContentType(
-        content: Label | List | Summary
-    ): DSNotificationsContentTypes {
+    function getContentType(content: Content): DSNotificationsContentTypes {
+        if (isValidElement(content)) {
+            return DSNotificationsContentTypes.REACT_ELEMENT;
+        }
+
         if (typeof content === "string") {
             return DSNotificationsContentTypes.STRING;
         }
@@ -149,6 +153,10 @@ const DSNotification = ({
                     />
                 }
             >
+                {currentContentType === DSNotificationsContentTypes.REACT_ELEMENT &&
+                    isValidElement(content) &&
+                    content}
+
                 {currentContentType === DSNotificationsContentTypes.STRING && (
                 <p style={{
                     fontWeight: paragraphWeight
@@ -166,7 +174,8 @@ const DSNotification = ({
                     </ol>
                 )}
 
-                {currentContentType === DSNotificationsContentTypes.LIST && (listMark === "mark" || "none") && (
+                {currentContentType === DSNotificationsContentTypes.LIST &&
+                (listMark === "mark" || listMark === "none") && (
                     <ul
                         className={`list ${listMark === "none" ? "mark-none" : ""}`}
                     >

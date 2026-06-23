@@ -1,6 +1,7 @@
 import React, { type ReactElement } from "react";
 import LanguageSelect from "../Other/LanguageSelect";
 import LanguageSwitcher from "@components/common/Other/LanguageSwitcher";
+import type { CSSProperties } from "@mui/material";
 import "./style.css";
 
 export interface CenteredHeaderProps {
@@ -12,6 +13,7 @@ export interface CenteredHeaderProps {
     switcherColor?: string;
     backgroundColor?: string;
     languageSwitcherClassName?: string;
+    zIndex?: string;
 }
 
 const ZERO_INDENT: number = 0;
@@ -25,6 +27,7 @@ const CenteredHeader: React.FC<CenteredHeaderProps> = ({
     switcherColor,
     backgroundColor = "rgba(255, 255, 255, 0.97)",
     languageSwitcherClassName = "",
+    zIndex = "1",
 }: CenteredHeaderProps): ReactElement => {
     return (
         <div
@@ -35,6 +38,7 @@ const CenteredHeader: React.FC<CenteredHeaderProps> = ({
                 left: stickyHeader ? ZERO_INDENT : undefined,
                 right: stickyHeader ? ZERO_INDENT : undefined,
                 backgroundColor: backgroundColor,
+                zIndex: zIndex,
             }}
         >
             <header className="centered-application-header">

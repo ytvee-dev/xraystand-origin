@@ -1,0 +1,147 @@
+.nvp-first-section {
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #697855;
+    color: #ffffff;
+}
+
+.nvp-first-section-content {
+    height: 100%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 0.0625rem solid #ffffff;
+    background-color: #414838;
+
+    margin-bottom: 1rem;
+
+    gap: 2rem;
+}
+
+.nvp-first-section-header-block {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5rem 3rem;
+    background-color: #60654d;
+
+    margin-top: 2rem;
+    gap: 1rem;
+
+    z-index: 3;
+}
+
+.nvp-first-section-header-block .nvp-description {
+    width: 90%;
+    line-height: 28px;
+}
+
+.nvp-first-section-first-part,
+.nvp-first-section-second-part {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+.nvp-first-section-part-header {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+}
+
+.nvp-first-section-part-header .nvp-description {
+    width: 70%;
+}
+
+.nvp-first-section-flags-container {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6%;
+}
+
+.nvp-first-section-flag {
+    width: 30%;
+
+    z-index: 3;
+}
+
+.nvp-first-section-emblem-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+
+    margin-bottom: 2rem;
+}
+
+.nvp-emblem-card {
+    width: 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+
+    z-index: 3;
+}
+
+.nvp-first-section-emblem-img {
+    background-color: #ffffff;
+    width: 80%;
+}
+
+.nvp-emblem-card span {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #8a9066;
+    overflow-wrap: break-word;
+
+    text-align: center;
+}
+
+#nvp-emblem-card-3 {
+    width: 20%;
+}
+
+#nvp-emblem-card-3 .nvp-first-section-emblem-img {
+    width: 60%;
+}
+
+#nvp-emblem-card-10 {
+    width: 20%;
+}
+
+#nvp-emblem-card-10 .nvp-first-section-emblem-img {
+    width: 60%;
+}

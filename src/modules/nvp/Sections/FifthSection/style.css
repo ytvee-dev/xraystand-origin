@@ -1,0 +1,389 @@
+.nvp-fifth-section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #697855;
+    color: #ffffff;
+}
+
+.nvp-fifth-section-content {
+    width: 90%;
+    min-height: 70rem;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.0625rem solid #ffffff;
+    background-color: #414838;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
+    padding: 2rem 1.25rem;
+    gap: 1.5rem;
+    overflow: hidden;
+}
+
+.nvp-fifth-section-header {
+    width: min(80%, 64.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 3.25rem;
+    background-color: rgba(127, 131, 99, 0.5);
+    z-index: 4;
+}
+
+.nvp-fifth-section-header .nvp-title {
+    font-size: 2rem;
+}
+
+.nvp-fifth-section-header .nvp-description {
+    max-width: 45rem;
+    font-size: 1rem;
+    line-height: 1.45;
+}
+
+.nvp-equipment-stage {
+    width: min(100%, 72rem);
+    min-height: 48rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem 0 0;
+    z-index: 2;
+}
+
+.nvp-equipment-map {
+    width: min(88%, 62rem);
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.72;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.nvp-equipment-soldier-map {
+    display: none;
+}
+
+.nvp-equipment-soldiers {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.9fr 1fr 1fr;
+    align-items: end;
+    justify-items: center;
+    gap: clamp(1.25rem, 3vw, 3rem);
+    position: relative;
+    z-index: 2;
+}
+
+.nvp-equipment-soldier {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nvp-equipment-soldier-visual {
+    height: clamp(35rem, 56vw, 50rem);
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.nvp-equipment-soldier-img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    object-fit: contain;
+    object-position: bottom center;
+    filter: drop-shadow(0 1.5rem 1.5rem rgba(0, 0, 0, 0.18));
+    user-select: none;
+}
+
+.nvp-equipment-hotspot-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+
+.nvp-equipment-hotspot {
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+.nvp-equipment-hotspot img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.nvp-equipment-hotspot:hover,
+.nvp-equipment-hotspot:focus-visible,
+.nvp-equipment-hotspot.active {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 0.45rem rgba(255, 255, 255, 0.55));
+    outline: none;
+}
+
+.nvp-equipment-tooltip {
+    min-width: 8.5rem;
+    max-width: 13rem;
+    position: absolute;
+    top: 50%;
+    padding: 0.55rem 0.75rem;
+    border: 0.0625rem solid #ffffff;
+    background-color: rgba(96, 101, 77, 0.96);
+    color: #ffffff;
+    font-family: var(--text-font);
+    font-size: 0.95rem;
+    line-height: 1.25;
+    text-align: center;
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+    z-index: 8;
+}
+
+.nvp-equipment-tooltip-left {
+    left: 50%;
+    transform: translate(calc(-100% - 1rem), -50%);
+}
+
+.nvp-equipment-tooltip-right {
+    left: 50%;
+    transform: translate(1rem, -50%);
+}
+
+.nvp-equipment-note {
+    width: fit-content;
+    max-width: min(85%, 62rem);
+    padding: 0.45rem 0.8rem;
+    border: 0.0625rem solid #ffffff;
+    background-color: rgba(96, 101, 77, 0.92);
+    font-family: var(--text-font);
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.35;
+    text-align: center;
+    z-index: 4;
+}
+
+.nvp-equipment-carousel {
+    width: min(82%, 64rem);
+    margin-bottom: 1rem;
+}
+
+.nvp-equipment-card {
+    min-height: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border: 0.125rem solid #ffffff;
+    background-color: rgba(24, 24, 27, 0.5);
+}
+
+.nvp-equipment-card-image-wrap {
+    width: 100%;
+    height: 8.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nvp-equipment-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nvp-equipment-card-text {
+    width: 100%;
+    min-height: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.45rem;
+    border: 0.125rem solid #ffffff;
+    background-color: #7f8363;
+    font-family: var(--text-font);
+    font-size: 0.9rem;
+    line-height: 1.2;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.nvp-equipment-card-title {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+    .nvp-fifth-section-header {
+        width: 88%;
+        padding: 1rem 1.5rem;
+    }
+
+    .nvp-equipment-stage {
+        min-height: 42rem;
+    }
+
+    .nvp-equipment-soldier-visual {
+        height: clamp(29rem, 56vw, 42rem);
+    }
+
+    .nvp-equipment-carousel {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nvp-fifth-section-content {
+        min-height: auto;
+        padding: 1.5rem 0.75rem;
+        gap: 1.25rem;
+    }
+
+    .nvp-fifth-section-header {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .nvp-fifth-section-header .nvp-title {
+        font-size: 1.875rem;
+    }
+
+    .nvp-fifth-section-header .nvp-description {
+        font-size: 0.95rem;
+    }
+
+    .nvp-equipment-stage {
+        width: 100%;
+        min-height: auto;
+        padding: 0;
+    }
+
+    .nvp-equipment-map {
+        display: none;
+    }
+
+    .nvp-equipment-soldiers {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .nvp-equipment-soldier {
+        width: min(100%, 24rem);
+        position: relative;
+        z-index: 3;
+    }
+
+    .nvp-equipment-soldier-visual {
+        height: 34rem;
+        overflow: hidden;
+    }
+
+    .nvp-equipment-soldier-map {
+        width: 145%;
+        height: 90%;
+        display: block;
+        position: absolute;
+        top: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: contain;
+        opacity: 0.45;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .nvp-equipment-hotspot {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .nvp-equipment-tooltip {
+        width: min(100%, 18rem);
+        max-width: 18rem;
+        margin-top: 0.75rem;
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+        pointer-events: auto;
+    }
+
+    .nvp-equipment-note {
+        max-width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .nvp-equipment-carousel {
+        width: 95%;
+    }
+
+    .nvp-equipment-card {
+        min-height: 15rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .nvp-fifth-section-content {
+        width: 90%;
+    }
+
+    .nvp-fifth-section-header {
+        width: 92%;
+    }
+
+    .nvp-fifth-section-header .nvp-title {
+        font-size: 1.625rem;
+    }
+
+    .nvp-equipment-soldier {
+        width: min(100%, 19rem);
+    }
+
+    .nvp-equipment-soldier-visual {
+        height: 28rem;
+    }
+
+    .nvp-equipment-hotspot {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    .nvp-equipment-card {
+        min-height: 14rem;
+    }
+
+    .nvp-equipment-card-image-wrap {
+        height: 7rem;
+    }
+}

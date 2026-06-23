@@ -1,0 +1,371 @@
+.nvp-container {
+    overflow-x: hidden;
+}
+
+.nvp-title {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 0%;
+    text-align: center;
+
+    z-index: 3;
+}
+
+.nvp-description {
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 0%;
+    text-align: center;
+
+    z-index: 3;
+}
+
+.nvp-frame {
+    position: relative;
+}
+
+.nvp-frame::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+}
+
+.nvp-frame::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 25px;
+    height: 25px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+    .nvp-first-section-flag {
+        width: 35%;
+    }
+
+    .nvp-first-section-part-header,
+    .nvp-sixth-section-part-header {
+        width: 80%;
+    }
+
+    .nvp-first-section-header-block {
+        width: 80%;
+        padding: 0.5rem 1rem;
+    }
+
+    .nvp-second-section-paragraph,
+    .nvp-third-section-paragraph,
+    .nvp-fourth-section-paragraph {
+        width: 80%;
+    }
+
+    .nvp-second-section-card {
+        width: 25%;
+    }
+
+    .nvp-second-section-header-block,
+    .nvp-third-section-header-block {
+        width: 60%;
+        padding: 0.5rem 1rem;
+    }
+
+    .nvp-second-section-header-block,
+    .nvp-third-section-header-block {
+        gap: 0.5rem;
+    }
+
+    .nvp-fourth-section-header-block {
+        width: 70%;
+        padding: 0.5rem 1rem;
+    }
+
+    .nvp-sixth-section-block {
+        position: relative;
+
+        justify-content: start;
+    }
+
+    .nvp-sixth-section-block-img {
+        width: 40%;
+        right: 0;
+        position: absolute;
+
+        z-index: 3;
+    }
+
+    .nvp-sixth-section-text-container {
+        width: 100%;
+        position: relative;
+        z-index: 4;
+    }
+
+    .nvp-sixth-section-additional-info-container {
+        padding-left: 1.5rem;
+    }
+
+    .nvp-sixth-section-additional-info-container span {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nvp-cover-section-text-container {
+        width: 70%;
+    }
+
+    .nvp-first-section-flag {
+        width: 45%;
+    }
+
+    .nvp-first-section-part-header {
+        width: 80%;
+    }
+
+    .nvp-first-section-second-part {
+        padding-bottom: 2rem;
+    }
+
+    .nvp-first-section-header-block .nvp-description {
+        width: 100%;
+    }
+
+    .nvp-fourth-section-card {
+        flex: 0 0 30% !important;
+    }
+
+    .nvp-sixth-section-blocks-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nvp-sixth-section-block {
+        width: 70%;
+    }
+
+    .nvp-sixth-section-block-img {
+        width: 25%;
+        top: 0;
+    }
+
+    .nvp-sixth-section-card {
+        flex-direction: column-reverse;
+    }
+
+    .nvp-sixth-section-card-img {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nvp-cover-section-text-container {
+        width: 80%;
+
+        right: auto;
+    }
+
+    .nvp-cover-section-title {
+        width: 80%;
+    }
+
+    .nvp-first-section-part-header {
+        width: 90%;
+    }
+
+    .nvp-first-section-flags-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nvp-first-section-flag {
+        width: 70%;
+    }
+
+    .nvp-first-section-header-block {
+        gap: 1rem;
+    }
+
+    .nvp-title {
+        font-size: 30px;
+    }
+
+    .nvp-description {
+        font-size: 16px;
+    }
+
+    .nvp-first-section-part-header .nvp-title {
+        font-size: 30px;
+    }
+
+    .nvp-first-section-part-header .nvp-description {
+        font-size: 16px;
+    }
+
+    .nvp-emblem-card.kaz-tarih-carousel-card {
+        flex: 0 0 30% !important;
+    }
+
+    .nvp-second-section-paragraph,
+    .nvp-third-section-paragraph,
+    .nvp-fourth-section-paragraph {
+        width: 90%;
+    }
+
+    .nvp-second-section-card,
+    .nvp-third-section-card {
+        flex: 0 0 40% !important;
+    }
+
+    .nvp-second-section-header-block,
+    .nvp-third-section-header-block {
+        width: 70%;
+    }
+
+    .nvp-fourth-section-header-block {
+        width: 90%;
+        gap: 0.5rem;
+    }
+
+    .nvp-sixth-section-block {
+        width: 90%;
+    }
+
+    .nvp-sixth-section-block-img {
+        width: 30%;
+        top: 0;
+    }
+
+    .nvp-header.nvp-title {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .nvp-cover-section-content {
+        gap: 1rem;
+    }
+
+    .nvp-first-section-flag {
+        width: 90%;
+    }
+
+    .nvp-cover-section-title {
+        width: 80%;
+
+        font-size: 42px;
+        line-height: 72px;
+        letter-spacing: -1.8px;
+    }
+
+    #nvp-cover-section-text-0,
+    #nvp-cover-section-text-1 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    #nvp-cover-section-text-2 {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1.4px;
+    }
+
+    .nvp-cover-section-text-container {
+        gap: 1rem;
+    }
+
+    .nvp-emblem-card.kaz-tarih-carousel-card {
+        flex: 0 0 40% !important;
+    }
+
+    .nvp-first-section-header-block,
+    .nvp-sixth-section-part-header {
+        width: 90%;
+    }
+
+    .nvp-second-section-card,
+    .nvp-third-section-card {
+        flex: 0 0 45% !important;
+    }
+
+    .nvp-second-section-header-block,
+    .nvp-third-section-header-block {
+        width: 90%;
+        gap: 0.5rem;
+    }
+
+    .nvp-second-section-header-block .nvp-description,
+    .nvp-third-section-header-block .nvp-description,
+    .nvp-fourth-section-header-block .nvp-description {
+        line-height: normal;
+    }
+
+    .nvp-fourth-section-card {
+        flex: 0 0 40% !important;
+    }
+
+    .nvp-sixth-section-part-header .nvp-description {
+        line-height: 28px;
+    }
+
+    #nvp-sixth-section-text-0 {
+        font-size: 20px;
+    }
+
+    #nvp-sixth-section-text-11 {
+        font-size: 14px;
+    }
+
+    .nvp-sixth-section-text-container {
+        gap: 0.5rem;
+    }
+
+    .nvp-sixth-section-card {
+        width: 95%;
+    }
+
+    .nvp-sixth-section-card-img {
+        width: 85%;
+    }
+
+    #nvp-emblem-card-3 .nvp-first-section-emblem-img {
+        width: 80%;
+    }
+
+    #nvp-emblem-card-10 .nvp-first-section-emblem-img {
+        width: 80%;
+    }
+
+    .nvp-second-section-paragraph-title,
+    .nvp-fourth-section-paragraph-title {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .nvp-sixth-section-blocks-container {
+        gap: 1rem;
+    }
+
+    .nvp-sixth-section-part-header {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .nvp-emblem-card.kaz-tarih-carousel-card {
+        flex: 0 0 60% !important;
+    }
+
+    .nvp-sixth-section-block-img {
+        width: 40%;
+    }
+}

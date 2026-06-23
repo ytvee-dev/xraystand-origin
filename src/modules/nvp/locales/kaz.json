@@ -1,0 +1,470 @@
+{
+    "coverSection": {
+        "title": "Бастапқы АӘД",
+        "description": "",
+        "content": [
+            "«Қазақстан Республикасын қорғау - оның әрбір азаматының қасиетті парызы және міндеті.",
+            "«Защита Республики Казахстан является священным долгом и обязанностью каждого ее гражданина» ",
+            "ҚАЗАҚСТАН РЕСПУБЛИКАСЫ КОНСТИТУЦИЯСЫНЫҢ 36-БАБЫ"
+        ]
+    },
+    "firstSection": {
+        "title": "Әскери рәміздер, айырым белгілері мен шендері",
+        "description": "Әскери қызметшіні сәйкестендіру армиядағы тәртіп пен ұйымның маңызды элементі болып табылады. Солдат пен офицердің формасында бірқатар міндетті белгілер ілінеді:",
+        "content": {
+            "firstPart": {
+                "title": "Мемлекеттік тиесілілігі",
+                "description": "Қазақстан Республикасының туы түріндегі айырым белгілері (стандартты немесе бүркеніш түсті)."
+            },
+            "secondPart": {
+                "title": "Бөлімдік тиесілілігі",
+                "description": "Қазақстан Республикасы Қарулы Күштерінің әскери басқару органдарына, құрамаларына, бөлімшелеріне немесе әскери оқу орындарына қатыстылығын білдіретін жеңдегі айырым белгілері."
+            }
+        },
+        "emblemsContent": [
+            "Күнделікті киім",
+            "Киім формасы",
+            "Далалық киім",
+            "Жоғарғы Бас қолбасшы",
+            "Қарулы Күштер",
+            "Мемлекеттік қауіпсіздік қызметі",
+            "Әскери прокуратуралар",
+            "Ұлттық қауіпсіздік комитетінің авиация қызметі",
+            "Ұлттық қауіпсіздік комитетінің Шекара қызметі",
+            "Ішкі істер министрлігінің әскери тергеу органдары",
+            "Төтенше жағдайлар министрлігі",
+            "Ұлттық гвардия"
+        ]
+    },
+    "secondSection": {
+        "title": "Біліктілік",
+        "description": "Мамандардың сыныптық біліктілігін білдіретін төсбелгі және жең белгілері.",
+        "content": [
+            {
+                "title": "Мамандардың сыныптық біліктілік белгілері (ӘТК және ӘҚК-нен басқа)",
+                "content": [
+                    {
+                        "description": "1–сынып маманы - тәлімгер (шебер)",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713698/stripe-1_w0vchu.webp"
+                    },
+                    {
+                        "description": "1-сыныпты маман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713699/stripe-2_qshdus.webp"
+                    },
+                    {
+                        "description": "2-сыныпты маман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713701/stripe-3_spyevu.webp"
+                    },
+                    {
+                        "description": "3-сыныпты маман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713701/stripe-4_mztnen.webp"
+                    }
+                ]
+            },
+            {
+                "title": "ӘҚК мамандарының сыныптық біліктілік белгілері (ӘҚК ұшу және штурмандық құрамдарынан басқа)",
+                "content": [
+                    {
+                        "description": "1–сынып мұғалімі - тәлімгер (шебер)",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713702/stripe-5_lrb9ll.webp"
+                    },
+                    {
+                        "description": "1-сыныпты маман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713703/stripe-6_qn9yao.webp"
+                    },
+                    {
+                        "description": "2-сыныпты маман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713704/stripe-7_o5doiy.webp"
+                    },
+                    {
+                        "description": "3-сыныпты маман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713705/stripe-8_feozv1.webp"
+                    }
+                ]
+            },
+            {
+                "title": "ӘҚК ұшқыштар құрамы мамандарының сыныптық біліктілік белгілері",
+                "content": [
+                    {
+                        "description": "әскери ұшқыш – мерген",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713706/stripe-9_c0ctkp.webp"
+                    },
+                    {
+                        "description": "1-сыныпты әскери ұшқыш",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713707/stripe-10_ohkxyy.webp"
+                    },
+                    {
+                        "description": "2-сыныпты әскери ұшқыш",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713708/stripe-11_vymsfz.webp"
+                    },
+                    {
+                        "description": "3-сыныпты әскери ұшқыш",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713708/stripe-12_chzubg.webp"
+                    },
+                    {
+                        "description": "сыныбы жоқ әскери ұшқыш",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713709/stripe-13_tpolx6.webp"
+                    }
+                ]
+            },
+            {
+                "title": "ӘҚК штурмандық құрамы мамандарының сыныптық біліктілік белгілері",
+                "content": [
+                    {
+                        "description": "әскери штурман – мерген",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713710/stripe-14_chrwqs.webp"
+                    },
+                    {
+                        "description": "1-сыныпты әскери штурман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713729/stripe-15_uxcfzy.webp"
+                    },
+                    {
+                        "description": "2-сыныпты әскери штурман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713730/stripe-16_filyc8.webp"
+                    },
+                    {
+                        "description": "3-сыныпты әскери штурман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713685/stripe-17_nq8txu.webp"
+                    },
+                    {
+                        "description": "сыныбы жоқ әскери штурман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713686/stripe-18_yl7med.webp"
+                    }
+                ]
+            },
+            {
+                "title": "ӘТК мамандарының сыныптық біліктілік белгілері",
+                "content": [
+                    {
+                        "description": "1–сынып маманы - тәлімгер (шебер)",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713686/stripe-19_yh10t4.webp"
+                    },
+                    {
+                        "description": "1-сыныпты маман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713686/stripe-20_xd6254.webp"
+                    },
+                    {
+                        "description": "2-сыныпты маман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713689/stripe-21_it0j77.webp"
+                    },
+                    {
+                        "description": "3-сыныпты маман",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713689/stripe-22_xefgg5.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Адамдық-десанттық парашюттік жүйелерде секірген әскери қызметшілердің тігілетін омырауға тағатын айырым белгілері",
+                "content": [
+                    {
+                        "description": "парашютпен 1-ден 50-ге дейін секіргендер",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713690/stripe-23_r9olok.webp"
+                    },
+                    {
+                        "description": "парашютпен 50-ден 100-ге дейін секірген",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713691/stripe-24_y10qno.webp"
+                    },
+                    {
+                        "description": "парашютпен 100-ден астам секіріс жасаған",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713692/stripe-25_sh9gs1.webp"
+                    },
+                    {
+                        "description": "Әуе-десанттық дайындық нұсқаушысы",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713693/stripe-26_v69zph.webp"
+                    },
+                    {
+                        "description": "жауынгерлік жағдайларда парашютпен секіргендер",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713694/stripe-27_ag5s6p.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Арнайы мақсаттағы парашюттік жүйелерден және спорттық парашюттерден секірген әскери қызметшілердің тігілген төсбелгілері",
+                "content": [
+                    {
+                        "description": "парашютпен 1-ден 50-ге дейін секіргендер",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713695/stripe-28_m1zg88.webp"
+                    },
+                    {
+                        "description": "парашютпен 50-ден 100-ге дейін секірген",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713696/stripe-29_kmaaey.webp"
+                    },
+                    {
+                        "description": "парашютпен 100-ден астам секіріс жасаған",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713697/stripe-30_vo2bkz.webp"
+                    },
+                    {
+                        "description": "Әуе-десанттық дайындық нұсқаушысы",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781713697/stripe-31_pk68ta.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    "thirdSection": {
+        "title": "Қан тобы",
+        "description": "Арнайы киім-кешектерге арналған қан тобының төсбелгілері, бұл далада алғашқы медициналық көмек көрсету үшін өте маңызды. Олар AB0 жүйесінің халықаралық белгісін (O, A, B, AB), топ нөмірін (I-IV) және Rh факторын (Rh+/Rh-) қамтиды. ",
+        "content": [
+            {
+                "title": "",
+                "content": [
+                    {
+                        "description": "Бірінші оң",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714735/blood-1_wed0kf.webp"
+                    },
+                    {
+                        "description": "Екінші оң",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714737/blood-2_sucowx.webp"
+                    },
+                    {
+                        "description": "Үшінші оң",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714738/blood-3_tmzhw3.webp"
+                    },
+                    {
+                        "description": "Төртінші оң",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714739/blood-4_fdtlud.webp"
+                    }
+                ]
+            },
+            {
+                "title": "",
+                "content": [
+                    {
+                        "description": "Бірінші теріс",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714731/blood-5_wt946h.webp"
+                    },
+                    {
+                        "description": "Екінші теріс",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714731/blood-6_zcctxw.webp"
+                    },
+                    {
+                        "description": "Үшінші теріс",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714732/blood-7_rhc1qj.webp"
+                    },
+                    {
+                        "description": "Төртінші теріс",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781714734/blood-8_y9jp9y.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    "fourthSection": {
+        "title": "Қазақстан Республикасының Қарулы Күштеріндегі әскери атақтар",
+        "description": "Әскери атақтар иық белгілерімен — погондар мен шағын табандармен белгіленеді. Олар бөлінеді: мақсаты бойынша — салтанатты, күнделікті, бекіту әдісі бойынша — тігілген, тігілген, алынбалы (муфталарда), кеме офицерлері арасында, дәстүр бойынша, салтанатты және күнделікті формада олар дәрежелері бойынша жеңдермен оқтармен толықтырылады. . Далалық және жұмыс киімдеріне ілмектер, сондай-ақ айырым белгілері бар жеңдер мен төсбелгілер беріледі.",
+        "content": [
+            {
+                "title": "Әскери шендері. Аға офицерлер",
+                "content": [
+                    {
+                        "description": "Қазақстан Республикасы Қарулы Күштерінің Жоғарғы Бас қолбасшысы",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715269/shoulder-1_d0ljpa.webp"
+                    },
+                    {
+                        "description": "Армия генералы",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715270/shoulder-2_g5wqhh.webp"
+                    },
+                    {
+                        "description": "Генерал-полковник",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715272/shoulder-3_t36ech.webp"
+                    },
+                    {
+                        "description": "Генерал-лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715273/shoulder-4_l9ljb4.webp"
+                    },
+                    {
+                        "description": "Генерал-майор",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715283/shoulder-5_ghvyql.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Аға және кіші офицерлер",
+                "content": [
+                    {
+                        "description": "Полковник",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715284/shoulder-6_ufqdgi.webp"
+                    },
+                    {
+                        "description": "Подполковник",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715286/shoulder-7_uome7e.webp"
+                    },
+                    {
+                        "description": "Майор",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715289/shoulder-8_k5bije.webp"
+                    },
+                    {
+                        "description": "Капитан",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715290/shoulder-9_vl40eb.webp"
+                    },
+                    {
+                        "description": "Аға лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715905/polkovnik_hqpuev.webp"
+                    },
+                    {
+                        "description": "Лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715257/shoulder-10_ybjim3.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Әскери-теңіз шендері. Аға офицерлер",
+                "content": [
+                    {
+                        "description": "Адмирал",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715257/shoulder-11_vzrbn4.webp"
+                    },
+                    {
+                        "description": "Вице-адмирал",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715259/shoulder-12_lavqwk.webp"
+                    },
+                    {
+                        "description": "Контр-адмирал",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715260/shoulder-13_ti78io.webp"
+                    }
+                ]
+            },
+            {
+                "title": "Аға және кіші офицерлер",
+                "content": [
+                    {
+                        "description": "Бірінші дәрежелі капитан",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715261/shoulder-14_lexx0w.webp"
+                    },
+                    {
+                        "description": "Екінші дәрежелі капитан",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715262/shoulder-15_h2cw3o.webp"
+                    },
+                    {
+                        "description": "Үшінші дәрежелі капитан",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715264/shoulder-16_a6sofw.webp"
+                    },
+                    {
+                        "description": "Капитан-лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715265/shoulder-17_f8ubk4.webp"
+                    },
+                    {
+                        "description": "Аға лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715266/shoulder-18_xoz8xx.webp"
+                    },
+                    {
+                        "description": "Лейтенант",
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715267/shoulder-19_vdgbpd.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    "fifthSection": {
+        "title": "Жабдық және киім-кешек",
+        "description": "Заманауи сарбаз бейімделген камуфляжды (Multicam түсі) және жауынгерлік міндеттерді орындауда қорғаныс пен ыңғайлылық беретін модульдік жабдықты қолданады.",
+        "equipmentNote": "Жағдайға және сарбаздың міндетіне қарай бронежилетке, белдікке және сан бөлігіне мыналар бекітілуі мүмкін:",
+        "hotspots": [
+            { "label": "Кеуде белгісі" },
+            { "label": "Иық белгісі" },
+            { "label": "Қолғап" },
+            { "label": "Түнгі көру құралы" },
+            { "label": "Бронежилет" },
+            { "label": "Әскери етік" },
+            { "label": "Шлем" },
+            { "label": "Тактикалық көзілдірік" }
+        ],
+        "cards": [
+            {
+                "title": "Аяқ киім",
+                "description": "Биік қонышты әскери етік тобықты жарақаттан қорғау үшін қажет."
+            },
+            {
+                "title": "Тактикалық көзілдірік",
+                "description": "Көзді жарықшақтан, шаңнан және желден қорғауға арналған."
+            },
+            {
+                "title": "Түнгі көру құралы",
+                "description": "ТКҚ: қараңғыда бақылауға арналған оптикалық құрал."
+            },
+            {
+                "title": "Бронежилет",
+                "description": "Бронеплиталармен және MOLLE жүйесіндегі қосымша қалталарға арналған бекітпелермен жабдықталған."
+            },
+            {
+                "title": "Баллистикалық шлем",
+                "description": "Басты жарықшақтар мен соққыдан қорғайды."
+            },
+            {
+                "title": "Гранатаға арналған подсумок",
+                "description": "Гранаталарды алып жүруге арналған."
+            },
+            {
+                "title": "Оқжатарға арналған подсумок",
+                "description": "Қосымша оқжатарларды алып жүруге арналған."
+            },
+            {
+                "title": "Рацияға арналған подсумок",
+                "description": "Радиостанцияны алып жүруге арналған."
+            },
+            {
+                "title": "Газтұмылдырыққа арналған подсумок",
+                "description": "Газтұмылдырықты алып жүруге арналған."
+            },
+            {
+                "title": "Медициналық құралдарға арналған подсумок",
+                "description": "Жеке дәрі қобдишасына арналған."
+            }
+        ]
+    },
+    "sixthSection": {
+        "title": "Қару-жарақ: Қол гранаталары",
+        "description": "Жаяу әскердің арсеналында қарсыластың жұмыс күшін жақын қашықтықтағы ұрыста жеңуге арналған қол гранаталары бар.",
+        "content": {
+            "firstPart": {
+                "title": "Қол гранаталары",
+                "description": "Жаяу әскердің арсеналында жаудың жеке құрамын жақын ұрыста жеңуге арналған қол гранаталары бар.",
+                "content": [
+                    {
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715916/%D0%93%D1%80%D0%B0%D0%BD%D0%B0%D1%82%D0%B0_2_oluow3.webp",
+                        "content": [
+                            "F-1",
+                            "Қорғаныс",
+                            "Қолға ұсталатын, ерекше қабырғалы корпусы бар сынық граната. Оның сынық радиусы үлкен, сондықтан оны тек жасырын жерден (окоп немесе брондалған көлік сияқты) лақтыру керек."
+                        ]
+                    },
+                    {
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715904/%D0%93%D1%80%D0%B0%D0%BD%D1%82%D0%B0_%D0%A0%D0%93%D0%94_1_xyhswv.webp",
+                        "content": [
+                            "RGD-5",
+                            "Шабуылшы",
+                            "Оның тегіс корпусы және кішірек фрагментация радиусы бар, бұл оны ашық жерлерде шабуыл кезінде өзін-өзі жарақаттау қаупінсіз пайдалануға мүмкіндік береді."
+                        ]
+                    }
+                ]
+            },
+            "secondPart": {
+                "title": "Кіші қару-жарақ: Калашников автоматы (АК-47)",
+                "description": "Калашников автоматы әскери қызметшінің негізгі жеке қаруы болып табылады. Оның қалай жұмыс істейтінін білу ең маңызды қауіпсіздік ережесінен басталады: ӘРҚАШАН КАМЕРАҒА ТЕКСЕРІҢІЗ!",
+                "content": [
+                    {
+                        "path": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1781715915/AK-47_rdnvgt.webp",
+                        "content": [
+                            "Ішінара бөлшектеу процедурасы:",
+                            "Ол қаруды тазалау, майлау және тексеру үшін шығарылады.",
+                            "Дүкенді бөлек қойыңыз",
+                            "Камерада картридж жоқ екеніне көз жеткізіңіз.",
+                            "Қарындаш қалтасын аксессуарларымен бірге алыңыз",
+                            "Тазалау шыбығын ажыратыңыз",
+                            "Қабылдағыш қақпағын бөліңіз",
+                            "Қайтару механизмін бөліңіз",
+                            "Болт ұстағышын болттан бөліңіз",
+                            "Болтты болт ұстағышынан бөліңіз",
+                            "Газ түтігін цилиндр төсенішінен бөліңіз",
+                            "* Сборка производится в строго обратной последовательности"
+                        ]
+                    }
+                ]
+            }
+        },
+        "additionalInfo": [
+            "*Бұл мәтін тек ақпараттық мақсаттарға арналған. Ақпаратты бекіту үшін оқытушымен, нұсқаушымен немесе куратормен кеңесіңіз.",
+            "*Материал Қазақстан Республикасы Қорғаныс министрінің 2024 жылғы 24 сәуірдегі № 414 бұйрығы, БАҚ және ашық ақпарат көздері негізінде құрастырылған."
+        ]
+    }
+}
