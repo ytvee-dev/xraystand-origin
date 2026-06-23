@@ -8,6 +8,7 @@ import ThirdSection from "@modules/nvp/Sections/ThirdSection";
 import SixthSection from "@modules/nvp/Sections/SixthSection";
 import FourthSection from "@modules/nvp/Sections/FourthSection";
 import SecondSection from "@modules/nvp/Sections/SecondSection";
+import FifthSection from "@modules/nvp/Sections/FifthSection";
 import CustomLayout from "@modules/nvp/components/CustomLayout";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
@@ -54,6 +55,10 @@ const NVP: React.FC = () => {
                 <FourthSection
                     className="nvp-fourth-section"
                     content={textContent.fourthSection}
+                />
+                <FifthSection
+                    className="nvp-fifth-section"
+                    content={textContent.fifthSection}
                 />
                 <SixthSection
                     className="nvp-sixth-section"
