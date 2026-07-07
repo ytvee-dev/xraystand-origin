@@ -1,0 +1,29 @@
+{
+    "backgrounds": {
+        "cover_rus": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783417129/cover_rus_img_sa5b8m.webp",
+        "cover_kaz": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783417198/cover_kaz_img_jnkrbl.webp",
+        "circles_group_1": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783417776/Group_1_svvhe6.png",
+        "circles_group_2": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783418241/circles_2_1_fi4meo.webp",
+        "blue_circle": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783417868/Vector_1_aptqzv.webp",
+        "yellow_circle": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783418452/yellow_circle_1_jifbyr.webp",
+        "red_circle": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783418576/red_circle_1_ykngky.webp",
+        "orange_circle": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783418362/orange_circle_1_jbpdrr.webp",
+        "pink_circle": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783417918/Group_2_1_d4yc8t.webp",
+        "pink_figure": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783417922/Group_3_1_vrebi9.webp",
+        "orange_figure": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783418118/orange_figure_fohevy.webp",
+        "yellow_figure": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783418231/yellow_figure_q0cwv3.webp"
+    },
+    "people": {
+        "people": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783419072/people_1_1_km5jeg.webp",
+        "boy": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783419085/boy_1_y7xnha.webp",
+        "girl": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783419102/girl_1_y9vh8f.webp",
+        "children": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783419091/children_1_pf47lg.webp"
+    },
+    "cards": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783419324/card_1_1_obdb5i.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783419329/card_2_1_ogbqwt.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783419336/card_4_1_jnwwtg.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783419341/card_3_1_gut170.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783419345/card_5_1_lrzuta.webp"
+    ]
+}
