@@ -1,0 +1,74 @@
+.ei-cover-section {
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+    height: 937px;
+}
+
+.ei-cover-section::before {
+    content: "";
+    position: absolute;
+    inset: -80px;
+    background-image:
+        linear-gradient(rgba(180, 180, 180, 0.18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(180, 180, 180, 0.18) 1px, transparent 1px);
+    background-size: 50px 50px;
+    transform: rotate(-2.5deg);
+    transform-origin: center;
+    z-index: 0;
+}
+
+.ei-right-content {
+    position: absolute;
+    top: 265px;
+    left: 775px;
+}
+
+.ei-right-content img {
+    width: 616px;
+    height: 505px;
+}
+
+.ei-img-circle {
+    position: absolute;
+    top: 72px;
+    left: 1184px;
+    width: 205px;
+    height: 231px;
+}
+
+.ei-left-content {
+    position: absolute;
+    top: 200px;
+    left: 72px;
+    width: 672px;
+}
+
+.ei-cover-title {
+    font-family: 'Roboto';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.ei-cover-title-highlight {
+    color: #1878C4;
+    white-space: pre-line;
+}
+
+.ei-cover-description {
+    padding-top: 31px;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #474747;
+}
+
+.ei-img-circle-blue {
+    width: 308px;
+    height: 308px;
+    position: absolute;
+    top: 609px;
+}
