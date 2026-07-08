@@ -1,7 +1,6 @@
 import React, { type ReactElement } from "react";
 import LanguageSelect from "../Other/LanguageSelect";
 import LanguageSwitcher from "@components/common/Other/LanguageSwitcher";
-import type { CSSProperties } from "@mui/material";
 import "./style.css";
 
 export interface CenteredHeaderProps {
@@ -27,7 +26,7 @@ const CenteredHeader: React.FC<CenteredHeaderProps> = ({
     switcherColor,
     backgroundColor = "rgba(255, 255, 255, 0.97)",
     languageSwitcherClassName = "",
-    zIndex = "1",
+    zIndex = "5000",
 }: CenteredHeaderProps): ReactElement => {
     return (
         <div
