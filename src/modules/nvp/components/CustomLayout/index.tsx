@@ -55,7 +55,6 @@ const CustomLayout: React.FC<IDefaultLayoutProps> = ({
                 switcherColor={switcherColor && switcherColor}
                 backgroundColor={headerBackgroundColor}
                 languageSwitcherClassName={languageSwitcherClassName}
-                zIndex="1"
             />
 
             <main>{children}</main>

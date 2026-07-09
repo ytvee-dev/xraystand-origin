@@ -22,6 +22,9 @@ const KazMusic = lazy(() => import("@pages/KazMusInstruments"));
 const Seasons = lazy(() => import("@pages/Seasons"));
 const KazTarih = lazy(() => import("@pages/KazTarih"));
 const NVP = lazy(() => import("@pages/NVP"));
+const EmotionalIntelligence = lazy(
+    () => import("@pages/EmotionalIntelligence"),
+);
 
 export const paths = {
     HOME: {
@@ -85,6 +88,10 @@ export const paths = {
         path: "/kaztarih",
     },
     NVP: { id: "nvpPage", path: "/kazarmy" },
+    EMOTIONAL_INTELLIGENCE: {
+        id: "emotionalIntelligencePage",
+        path: "/ei",
+    },
     PAGES: {
         id: "pages",
         path: "/pages",
@@ -165,6 +172,10 @@ const routes: RouteObject[] = [
         element: <KazTarih />,
     },
     { ...paths.NVP, element: <NVP /> },
+    {
+        ...paths.EMOTIONAL_INTELLIGENCE,
+        element: <EmotionalIntelligence />,
+    },
     {
         ...paths.PAGES,
         element: <Pages />,

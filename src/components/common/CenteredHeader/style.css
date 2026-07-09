@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    z-index: 200;
+    z-index: 5000;
     transition: transform .25s ease, opacity .25s ease;
     will-change: transform;
 }

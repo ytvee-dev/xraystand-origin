@@ -15,7 +15,7 @@ export const homeFooterMeta: IHomeFooterMeta = {
     madeBy: {
       link: "https://ytdev.me",
       label: "Made by",
-      author: "YTVEE",
+      author: "YTDEV",
     },
     privacyPolicyText: {
       title: "Политика конфиденциальности",
@@ -77,7 +77,7 @@ export const homeFooterMeta: IHomeFooterMeta = {
     madeBy: {
       link: "https://ytdev.me",
       label: "Made by",
-      author: "YTVEE",
+      author: "YTDEV",
     },
     privacyPolicyText: {
       title: "Құпиялық саясаты",
