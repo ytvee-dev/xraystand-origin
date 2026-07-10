@@ -199,3 +199,62 @@ img {
         flex-wrap: wrap;
     }
 }
+
+.footer.emotional-intelligence-footer {
+    padding: 92px 20px 56px;
+    background: linear-gradient(
+        90deg,
+        #dff2fe 0%,
+        #fbf5fc 29%,
+        #fcf1eb 62%,
+        #fef6eb 100%
+    ) !important;
+}
+
+.footer.emotional-intelligence-footer .footer-content-wrapper,
+.footer.emotional-intelligence-footer .footer-labels-container {
+    width: 100%;
+    max-width: 1152px;
+}
+
+.footer.emotional-intelligence-footer .footer-content-wrapper {
+    display: grid;
+    grid-template-columns: 172px minmax(280px, 445px) minmax(170px, 1fr);
+    align-items: start;
+    column-gap: clamp(48px, 7vw, 112px);
+}
+
+.footer.emotional-intelligence-footer .footer-divider {
+    max-width: 1440px;
+    margin: 90px auto 20px;
+    border-color: #688eab !important;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer.emotional-intelligence-footer {
+        padding-top: 72px;
+        padding-bottom: 48px;
+    }
+
+    .footer.emotional-intelligence-footer .footer-content-wrapper {
+        column-gap: 48px;
+    }
+
+    .footer.emotional-intelligence-footer .footer-divider {
+        margin-top: 64px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer.emotional-intelligence-footer {
+        padding: 48px 20px 40px;
+    }
+
+    .footer.emotional-intelligence-footer .footer-content-wrapper {
+        display: flex;
+    }
+
+    .footer.emotional-intelligence-footer .footer-divider {
+        margin-top: 35px;
+    }
+}

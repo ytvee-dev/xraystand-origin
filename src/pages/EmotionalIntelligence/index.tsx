@@ -49,6 +49,15 @@ const EmotionalIntelligence = (): ReactElement => {
             isLanguageSwitcher={true}
             headerBackgroundColor="#FFFFFF"
             switcherColor="#474747"
+            footerClassName="emotional-intelligence-footer"
+            sx={{
+                backgroundColor: "transparent",
+                boldTextColor: "#474747",
+                textColor: "#474747",
+                copyrightColor: "#474747",
+                logoColorMode: "dark",
+                madeByColorMode: "dark",
+            }}
         >
             <div className="emotional-intelligence-page">
                 {!isContentLoaded && <Spinner />}
