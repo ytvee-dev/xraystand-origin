@@ -2,7 +2,6 @@ import Spinner from "@components/common/Spinner";
 import { usePageData } from "@hooks/usePageData";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
-import HomeLayout from "@layout/HomeLayout";
 import CoverSection from "@modules/emotionalIntelligence/Sections/CoverSection";
 import FirstSection from "@modules/emotionalIntelligence/Sections/FirstSection";
 import ThirdSection from "@modules/emotionalIntelligence/Sections/ThirdSection";
@@ -14,6 +13,7 @@ import { svgSpriteSrcPrefix } from "@utils/constants";
 import { useMemo, type ReactElement } from "react";
 import { useLocale } from "@hooks/useLocale";
 import "./style.css";
+import BrightnessLayout from "@layout/Brightness";
 
 const EmotionalIntelligenceLogo = (): ReactElement => {
     const { isMobile } = usePageData();
@@ -43,7 +43,7 @@ const EmotionalIntelligence = (): ReactElement => {
             : pathData.backgrounds.cover_kaz;
 
     return (
-        <HomeLayout
+        <BrightnessLayout
             logo={<EmotionalIntelligenceLogo />}
             stickyHeader={true}
             isLanguageSwitcher={true}
@@ -63,7 +63,7 @@ const EmotionalIntelligence = (): ReactElement => {
                 <FirstSection content={content.firstSection} />
                 <ThirdSection content={content.thirdSection} />
             </div>
-        </HomeLayout>
+        </BrightnessLayout>
     );
 };
 

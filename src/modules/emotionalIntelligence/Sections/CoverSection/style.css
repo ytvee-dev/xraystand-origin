@@ -1,198 +1,189 @@
 .ei-cover-section {
     position: relative;
+    width: 100%;
+    min-height: 937px;
     overflow: hidden;
-    background: #FFFFFF;
-    height: 937px;
+    padding: 160px 0 120px;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #474747;
 }
 
 .ei-cover-section::before {
     content: "";
     position: absolute;
-    inset: -80px;
+    inset: -12%;
     background-image:
-        linear-gradient(rgba(180, 180, 180, 0.18) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(180, 180, 180, 0.18) 1px, transparent 1px);
-    background-size: 50px 50px;
-    transform: rotate(-2.5deg);
+        linear-gradient(rgba(123, 123, 123, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(123, 123, 123, 0.12) 1px, transparent 1px);
+    background-size: 42px 42px;
+    transform: rotate(-2deg);
     transform-origin: center;
+    pointer-events: none;
     z-index: 0;
 }
 
-.ei-right-content {
-    position: absolute;
-    top: 265px;
-    left: 775px;
-}
-
-.ei-right-content img {
-    width: 616px;
-    height: 505px;
-}
-
-.ei-img-circle {
-    position: absolute;
-    top: 72px;
-    left: 1184px;
-    width: 205px;
-    height: 231px;
+.ei-cover-section-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    align-items: center;
+    gap: clamp(36px, 6vw, 92px);
+    width: min(calc(100% - 40px), 1200px);
+    margin: 0 auto;
 }
 
 .ei-left-content {
-    position: absolute;
-    top: 200px;
-    left: 72px;
-    width: 672px;
+    grid-column: 1;
+    text-align: left;
+}
+
+.ei-right-content {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.ei-cover-background {
+    display: block;
+    width: 100%;
+    max-width: 616px;
+    height: auto;
 }
 
 .ei-cover-title {
-    font-family: 'Roboto';
-    font-style: bold;
-    font-weight: 700;
+    margin: 0;
+    color: #474747;
+    font-family: "Roboto", sans-serif;
     font-size: 36px;
+    font-weight: 700;
     line-height: 46px;
 }
 
 .ei-cover-title-highlight {
-    color: #1878C4;
+    color: #1878c4;
     white-space: pre-line;
 }
 
 .ei-cover-description {
-    padding-top: 31px;
-    font-size: 24px;
-    line-height: 30px;
-    font-family: 'Roboto';
-    font-weight: 400;
+    margin: 31px 0 0;
     color: #474747;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.ei-img-circle,
+.ei-img-circle-blue {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.ei-img-circle {
+    top: clamp(48px, 5vw, 72px);
+    right: clamp(20px, 5vw, 72px);
+    width: clamp(150px, 14vw, 205px);
+    height: auto;
 }
 
 .ei-img-circle-blue {
-    width: 308px;
-    height: 308px;
-    position: absolute;
-    top: 609px;
+    bottom: clamp(16px, 3vw, 44px);
+    left: clamp(-86px, -4vw, -20px);
+    width: clamp(220px, 22vw, 308px);
+    height: auto;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .ei-cover-section {
-        position: relative;
-        overflow: hidden;
-        height: 800px;
+        min-height: 800px;
+        padding: 132px 0 96px;
     }
 
-    .ei-right-content {
-        left: 600px;
-    }
-
-    .ei-right-content img {
-        width: 400px;
-        height: 360px;
-    }
-
-    .ei-img-circle {
-        top: 50px;
-        left: 1000px;
-        width: 150px;
-        height: 180px;
-    }
-
-    .ei-left-content {
-        width: 540px;
+    .ei-cover-section-content {
+        gap: clamp(32px, 4vw, 56px);
     }
 
     .ei-cover-title {
         font-size: 30px;
-        line-height: 30px;
+        line-height: 36px;
     }
 
     .ei-cover-description {
-        padding-top: 20px;
+        margin-top: 24px;
         font-size: 20px;
         line-height: 26px;
     }
-
-    .ei-img-circle {
-        position: absolute;
-        top: 75px;
-        left: 800px;
-        width: 160px;
-        height: 200px;
-    }
-
-    .ei-img-circle-blue {
-        width: 250px;
-        height: 250px;
-        position: absolute;
-        top: 500px;
-        left: -45px;
-    }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .ei-cover-section {
-        position: relative;
-        overflow: hidden;
-        background: #FFFFFF;
-        height: 1000px;
+        min-height: 0;
+        padding: 92px 0 88px;
+    }
+
+    .ei-cover-section::before {
+        inset: -6%;
+        background-size: 31px 31px;
+        transform: rotate(-1deg);
+    }
+
+    .ei-cover-section-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 40px;
+        width: calc(100% - 48px);
     }
 
     .ei-right-content {
-        top: 96px;
-        left: 180px;
-    }
-
-    .ei-right-content img {
-        width: 420px;
-        height: 380px;
+        grid-column: 1;
+        grid-row: 1;
     }
 
     .ei-left-content {
-        top: 510px;
-        left: 120px;
-        width: 580px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .ei-cover-background {
+        max-width: 420px;
     }
 
     .ei-cover-title {
         font-size: 32px;
-        line-height: 30px;
+        line-height: 36px;
     }
 
     .ei-cover-description {
-        padding-top: 20px;
+        margin-top: 20px;
         font-size: 20px;
         line-height: 26px;
     }
 
     .ei-img-circle {
-        position: absolute;
-        top: 538px;
-        left: 570px;
-        width: 180px;
-        height: 200px;
+        top: 40px;
+        right: -48px;
+        width: 150px;
+        opacity: 0.65;
     }
 
     .ei-img-circle-blue {
-        width: 230px;
-        height: 230px;
-        top: 750px;
+        bottom: 24px;
+        left: -72px;
+        width: 220px;
+        opacity: 0.7;
     }
 }
 
-@media (max-width: 425px) {
-    .ei-right-content {
-        top: 96px;
-        left: 55px;
+@media screen and (max-width: 425px) {
+    .ei-cover-section {
+        padding: 80px 0 72px;
     }
 
-    .ei-right-content img {
-        width: 320px;
-        height: 267px;
-    }
-
-    .ei-left-content {
-        top: 383px;
-        left: 51px;
-        width: 341px;
+    .ei-cover-section-content {
+        gap: 32px;
     }
 
     .ei-cover-title {
@@ -201,103 +192,33 @@
     }
 
     .ei-cover-description {
-        padding-top: 20px;
         font-size: 16px;
         line-height: 26px;
     }
 
     .ei-img-circle {
-        top: 538px;
-        left: 280px;
-        width: 130px;
-        height: 150px;
+        display: none;
+    }
+
+    .ei-img-circle-blue {
+        bottom: 16px;
+        left: -92px;
+        width: 190px;
     }
 }
 
-@media (max-width: 390px) {
-    .ei-right-content {
-        top: 96px;
-        left: 29px;
-    }
-
-    .ei-right-content img {
-        width: 320px;
-        height: 267px;
-    }
-
-    .ei-img-circle {
-        top: 50px;
-        left: 1000px;
-        width: 150px;
-        height: 180px;
-    }
-
-    .ei-left-content {
-        top: 383px;
-        left: 29px;
-        width: 341px;
-    }
-
-    .ei-cover-title {
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    .ei-cover-description {
-        padding-top: 20px;
-        font-size: 16px;
-        line-height: 26px;
-    }
-
-    .ei-img-circle {
-        position: absolute;
-        top: 538px;
-        left: 265px;
-        width: 100px;
-        height: 130px;
-    }
-}
-
-@media (max-width: 320px) {
-    .ei-right-content {
-        top: 96px;
-        left: 15px;
-    }
-
-    .ei-right-content img {
-        width: 290px;
-        height: 230px;
-    }
-
-    .ei-img-circle {
-        top: 50px;
-        left: 1000px;
-        width: 150px;
-        height: 180px;
-    }
-
-    .ei-left-content {
-        top: 383px;
-        left: 17px;
-        width: 300px;
+@media screen and (max-width: 320px) {
+    .ei-cover-section-content {
+        width: calc(100% - 32px);
     }
 
     .ei-cover-title {
         font-size: 20px;
-        line-height: 30px;
+        line-height: 28px;
     }
 
     .ei-cover-description {
-        padding-top: 20px;
         font-size: 15px;
-        line-height: 26px;
-    }
-
-    .ei-img-circle {
-        position: absolute;
-        top: 538px;
-        left: 200px;
-        width: 100px;
-        height: 130px;
+        line-height: 24px;
     }
 }
