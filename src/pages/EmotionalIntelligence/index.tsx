@@ -2,9 +2,9 @@ import Spinner from "@components/common/Spinner";
 import { usePageData } from "@hooks/usePageData";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
-import HomeLayout from "@layout/HomeLayout";
 import CoverSection from "@modules/emotionalIntelligence/Sections/CoverSection";
 import FirstSection from "@modules/emotionalIntelligence/Sections/FirstSection";
+import ThirdSection from "@modules/emotionalIntelligence/Sections/ThirdSection";
 import * as contentKz from "@modules/emotionalIntelligence/locales/kaz.json";
 import * as pathData from "@modules/emotionalIntelligence/locales/path.json";
 import * as contentRu from "@modules/emotionalIntelligence/locales/rus.json";
@@ -13,6 +13,7 @@ import { svgSpriteSrcPrefix } from "@utils/constants";
 import { useMemo, type ReactElement } from "react";
 import { useLocale } from "@hooks/useLocale";
 import "./style.css";
+import BrightnessLayout from "@layout/Brightness";
 
 const EmotionalIntelligenceLogo = (): ReactElement => {
     const { isMobile } = usePageData();
@@ -42,12 +43,21 @@ const EmotionalIntelligence = (): ReactElement => {
             : pathData.backgrounds.cover_kaz;
 
     return (
-        <HomeLayout
+        <BrightnessLayout
             logo={<EmotionalIntelligenceLogo />}
             stickyHeader={true}
             isLanguageSwitcher={true}
             headerBackgroundColor="#FFFFFF"
             switcherColor="#474747"
+            footerClassName="emotional-intelligence-footer"
+            sx={{
+                backgroundColor: "transparent",
+                boldTextColor: "#474747",
+                textColor: "#474747",
+                copyrightColor: "#474747",
+                logoColorMode: "dark",
+                madeByColorMode: "dark",
+            }}
         >
             <div className="emotional-intelligence-page">
                 {!isContentLoaded && <Spinner />}
@@ -60,8 +70,9 @@ const EmotionalIntelligence = (): ReactElement => {
                     }}
                 />
                 <FirstSection content={content.firstSection} />
+                <ThirdSection content={content.thirdSection} />
             </div>
-        </HomeLayout>
+        </BrightnessLayout>
     );
 };
 
