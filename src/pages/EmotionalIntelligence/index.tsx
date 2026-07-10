@@ -5,6 +5,7 @@ import { useLocaleContent } from "@hooks/useLocale";
 import HomeLayout from "@layout/HomeLayout";
 import CoverSection from "@modules/emotionalIntelligence/Sections/CoverSection";
 import FirstSection from "@modules/emotionalIntelligence/Sections/FirstSection";
+import ThirdSection from "@modules/emotionalIntelligence/Sections/ThirdSection";
 import * as contentKz from "@modules/emotionalIntelligence/locales/kaz.json";
 import * as pathData from "@modules/emotionalIntelligence/locales/path.json";
 import * as contentRu from "@modules/emotionalIntelligence/locales/rus.json";
@@ -60,6 +61,7 @@ const EmotionalIntelligence = (): ReactElement => {
                     }}
                 />
                 <FirstSection content={content.firstSection} />
+                <ThirdSection content={content.thirdSection} />
             </div>
         </HomeLayout>
     );
