@@ -1,0 +1,238 @@
+.ei-second-section {
+    position: relative;
+    width: 100%;
+    min-height: 1373px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    color: #474747;
+}
+
+.ei-second-section::before {
+    content: "";
+    position: absolute;
+    inset: -12%;
+    background-image:
+        linear-gradient(rgba(123, 123, 123, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(123, 123, 123, 0.12) 1px, transparent 1px);
+    background-size: 42px 42px;
+    transform: rotate(-2deg);
+    transform-origin: center;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.ei-second-section-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 85px auto 0;
+    padding: 0 20px;
+}
+
+.ei-second-section-circles_2 {
+    position: absolute;
+    top: -60px;
+    right: -120px;
+    width: 506px;
+    height: 586px;
+    object-fit: contain;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ei-second-section-circles_1 {
+    position: absolute;
+    top: 838px;
+    left: -130px;
+    width: 318px;
+    height: 358px;
+    z-index: 1;
+}
+
+.ei-second-section-title {
+    margin: 0;
+    color: #474747;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.ei-second-section-subtitle {
+    margin: 33px 0 0;
+    max-width: 1008px;
+    color: #474747;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    z-index: 2;
+}
+
+.ei-second-section-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+.ei-second-section-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ei-second-card {
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+.ei-second-card p {
+    color: #474747;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 10px;
+}
+
+.ei-second-card h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.ei-second-card-1 {
+    border: 1px solid #79CAEF;
+    color: #79CAEF;
+    background-color: #F6F8F8;
+}
+
+.ei-second-card-2 {
+    border: 1px solid #7CC7CD;
+    color: #7CC7CD;
+    background-color: #EFF6F3;
+}
+
+.ei-second-card-3 {
+    border: 1px solid #F79776;
+    color: #F79776;
+    background-color: #FDF5F1;
+}
+
+.ei-second-card-4 {
+    border: 1px solid #493C8B;
+    color: #493C8B;
+    background-color: #F9F3F7;
+}
+
+.ei-second-card-5 {
+    border: 1px solid #FCC056;
+    color: #FCC056;
+    background-color: #FDF8F2;
+}
+
+.ei-second-card-6 {
+    border: 1px solid #D65470;
+    color: #D65470;
+    background-color: #FEF8F5;
+}
+
+@media (max-width: 1024px) {
+    .ei-second-section-cards {
+        display: grid;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .ei-second-section-column {
+        display: contents;
+    }
+
+    .ei-second-section-circles_1 {
+        display: none;
+    }
+
+    .ei-second-section-circles_2 {
+        width: 388px;
+        height: 388px;
+        top: -120px;
+        right: -150px;
+    }
+}
+
+@media (max-width: 425px) {
+    .ei-second-section-title {
+        font-size: 36px;
+    }
+
+    .ei-second-section-circles_2 {
+        width: 280px;
+        height: 280px;
+        right: -100px;
+    }
+
+    .ei-second-card h3 {
+        font-size: 26px;
+    }
+
+    .ei-second-card p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .ei-second-section-subtitle {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .ei-second-section-cards {
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .ei-second-section-title {
+        font-size: 24px;
+    }
+
+    .ei-second-section-subtitle {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 10px;
+    }
+
+    .ei-second-card h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .ei-second-card p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .ei-second-section-cards {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .ei-second-section-circles_2 {
+        width: 188px;
+        height: 188px;
+        right: -70px;
+        top: -100px;
+    }
+}

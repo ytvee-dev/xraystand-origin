@@ -4,6 +4,7 @@ import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
 import CoverSection from "@modules/emotionalIntelligence/Sections/CoverSection";
 import FirstSection from "@modules/emotionalIntelligence/Sections/FirstSection";
+import SecondSection from "@modules/emotionalIntelligence/Sections/SecondSection";
 import ThirdSection from "@modules/emotionalIntelligence/Sections/ThirdSection";
 import FourthSection from "@modules/emotionalIntelligence/Sections/FourthSection";
 import * as contentKz from "@modules/emotionalIntelligence/locales/kaz.json";
@@ -71,6 +72,7 @@ const EmotionalIntelligence = (): ReactElement => {
                     }}
                 />
                 <FirstSection content={content.firstSection} />
+                <SecondSection content={content.secondSection} />
                 <ThirdSection content={content.thirdSection} />
                 <FourthSection
                     introContent={content.fourthSection}
