@@ -172,7 +172,7 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 475px) {
     .ei-second-section-title {
         font-size: 36px;
     }
@@ -200,6 +200,38 @@
     .ei-second-section-cards {
         gap: 15px;
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .ei-second-section-title {
+        font-size: 24px;
+        line-height: 30px;
+        /* max-width: 200px; */
+    }
+
+    .ei-second-section-subtitle {
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 10px;
+    }
+
+    .ei-second-card h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+
+    .ei-second-card p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .ei-second-section-circles_2 {
+        width: 220px;
+        height: 220px;
+        right: -100px;
+        top: -100px;
     }
 }
 
