@@ -1,0 +1,224 @@
+.ei-cover-section {
+    position: relative;
+    width: 100%;
+    min-height: 937px;
+    overflow: hidden;
+    padding: 160px 0 120px;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #474747;
+}
+
+.ei-cover-section::before {
+    content: "";
+    position: absolute;
+    inset: -12%;
+    background-image:
+        linear-gradient(rgba(123, 123, 123, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(123, 123, 123, 0.12) 1px, transparent 1px);
+    background-size: 42px 42px;
+    transform: rotate(-2deg);
+    transform-origin: center;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.ei-cover-section-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    align-items: center;
+    gap: clamp(36px, 6vw, 92px);
+    width: min(calc(100% - 40px), 1200px);
+    margin: 0 auto;
+}
+
+.ei-left-content {
+    grid-column: 1;
+    text-align: left;
+}
+
+.ei-right-content {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.ei-cover-background {
+    display: block;
+    width: 100%;
+    max-width: 616px;
+    height: auto;
+}
+
+.ei-cover-title {
+    margin: 0;
+    color: #474747;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.ei-cover-title-highlight {
+    color: #1878c4;
+    white-space: pre-line;
+}
+
+.ei-cover-description {
+    margin: 31px 0 0;
+    color: #474747;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.ei-img-circle,
+.ei-img-circle-blue {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.ei-img-circle {
+    top: clamp(48px, 5vw, 72px);
+    right: clamp(20px, 5vw, 72px);
+    width: clamp(150px, 14vw, 205px);
+    height: auto;
+}
+
+.ei-img-circle-blue {
+    bottom: clamp(16px, 3vw, 44px);
+    left: clamp(-86px, -4vw, -20px);
+    width: clamp(220px, 22vw, 308px);
+    height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .ei-cover-section {
+        min-height: 800px;
+        padding: 132px 0 96px;
+    }
+
+    .ei-cover-section-content {
+        gap: clamp(32px, 4vw, 56px);
+    }
+
+    .ei-cover-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .ei-cover-description {
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ei-cover-section {
+        min-height: 0;
+        padding: 92px 0 88px;
+    }
+
+    .ei-cover-section::before {
+        inset: -6%;
+        background-size: 31px 31px;
+        transform: rotate(-1deg);
+    }
+
+    .ei-cover-section-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 40px;
+        width: calc(100% - 48px);
+    }
+
+    .ei-right-content {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .ei-left-content {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .ei-cover-background {
+        max-width: 420px;
+    }
+
+    .ei-cover-title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .ei-cover-description {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .ei-img-circle {
+        top: 40px;
+        right: -48px;
+        width: 150px;
+        opacity: 0.65;
+    }
+
+    .ei-img-circle-blue {
+        bottom: 24px;
+        left: -72px;
+        width: 220px;
+        opacity: 0.7;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .ei-cover-section {
+        padding: 80px 0 72px;
+    }
+
+    .ei-cover-section-content {
+        gap: 32px;
+    }
+
+    .ei-cover-title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .ei-cover-description {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .ei-img-circle {
+        display: none;
+    }
+
+    .ei-img-circle-blue {
+        bottom: 16px;
+        left: -92px;
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .ei-cover-section-content {
+        width: calc(100% - 32px);
+    }
+
+    .ei-cover-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .ei-cover-description {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}

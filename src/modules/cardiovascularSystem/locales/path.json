@@ -1,0 +1,20 @@
+{
+    "backgrounds": {
+        "cover": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783422942/cover_1_d0nurq.webp",
+        "cover_pulse": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783422944/cover-pulse_1_kerzdm.webp"
+    },
+    "cards": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783423332/1_tkhxfz.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783423334/2_gyekcq.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783423339/3_rs1cu5.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783423347/4_mf0vm1.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783423353/5_qlh3sm.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783423357/6_otsxxk.webp"
+    ],
+    "images": {
+        "heart": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783422965/heart_1_mtpjau.webp",
+        "pulse_red": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783422954/pulse-red_1_t0ddka.webp",
+        "pulse_white_first_section": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783422949/pulse-white_1_yhohao.webp",
+        "pulse_white_third_section": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783422968/pulse-white-third-section_1_ds65gb.webp"
+    }
+}

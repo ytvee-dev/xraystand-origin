@@ -157,6 +157,15 @@ const pagesInfo: IPageInfo[] = [
         isClickable: true,
     },
     {
+        id: paths.EMOTIONAL_INTELLIGENCE.id,
+        path: paths.EMOTIONAL_INTELLIGENCE.path,
+        title: "Эмоциональный интеллект",
+        description:
+            "Интерактивные материалы о распознавании, понимании и управлении эмоциями",
+        status: "active",
+        isClickable: true,
+    },
+    {
         id: paths.IMPLEMENTATION.id,
         path: paths.IMPLEMENTATION.path,
         title: "Implementation",

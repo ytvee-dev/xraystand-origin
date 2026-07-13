@@ -1,0 +1,55 @@
+import React from "react";
+import * as paths from "../../locales/path.json";
+import { type ReactElement } from "react";
+import "./style.css";
+
+interface CoverSectionProps {
+    backgroundImage: string;
+    content: EmotionProps;
+}
+
+interface EmotionProps {
+    title: string;
+    titleHighlight?: string;
+    description: string[];
+}
+
+const CoverSection: React.FC<CoverSectionProps> = ({ backgroundImage, content }: CoverSectionProps & { content: EmotionProps }): ReactElement => {
+    return (
+        <section className="ei-cover-section">
+            <img
+                className="ei-img-circle"
+                src={paths.backgrounds.circles_group_1}
+                alt=""
+                aria-hidden="true"
+            />
+            <img
+                className="ei-img-circle-blue"
+                src={paths.backgrounds.blue_circle}
+                alt=""
+                aria-hidden="true"
+            />
+
+            <div className="ei-cover-section-content">
+                <div className="ei-left-content">
+                    <h1 className="ei-cover-title">
+                        <span className="ei-cover-title-highlight">
+                            {content.titleHighlight}
+                        </span>{" "}
+                        {content.title}
+                    </h1>
+
+                    <p className="ei-cover-description">{content.description[0]}</p>
+
+                    <p className="ei-cover-description">{content.description[1]}</p>
+                </div>
+
+                <div className="ei-right-content">
+                    <img className="ei-cover-background" src={backgroundImage} alt="" aria-hidden="true" />
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default CoverSection;

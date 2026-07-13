@@ -19,6 +19,7 @@ interface IStrictFooterSX {
 interface IStrictFooterProps {
     meta: IStrictFooterContent;
     sx?: IStrictFooterSX;
+    className?: string;
 }
 
 const Footer = ({
@@ -31,6 +32,7 @@ const Footer = ({
         logoColorMode: "light",
         madeByColorMode: "light",
     },
+    className,
 }: IStrictFooterProps): ReactElement => {
     const dispatch = useDispatch();
     const madeBySrc =
@@ -50,7 +52,7 @@ const Footer = ({
 
     return (
         <footer
-            className="footer"
+            className={`footer${className ? ` ${className}` : ""}`}
             style={{
                 backgroundColor: sx?.backgroundColor,
                 zIndex: sx?.zIndex,

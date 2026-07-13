@@ -21,6 +21,7 @@ export interface IDefaultLayoutProps {
     sx?: IBrightnessLayoutSX;
     headerBackgroundColor?: string;
     languageSwitcherClassName?: string;
+    footerClassName?: string;
 }
 
 export interface IBrightnessLayoutSX {
@@ -54,6 +55,7 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
     sx = DEFAULT_SX,
     headerBackgroundColor,
     languageSwitcherClassName,
+    footerClassName,
 }: IDefaultLayoutProps) => {
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale,
@@ -82,6 +84,7 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
                         : trafficLawsFooterMeta.kz
                 }
                 sx={sx}
+                className={footerClassName}
             />
 
             <PrivacyPolicyModal />

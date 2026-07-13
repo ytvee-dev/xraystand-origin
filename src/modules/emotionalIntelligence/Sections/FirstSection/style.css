@@ -1,0 +1,438 @@
+.ei-first-section {
+    --ei-section-top-padding: 104px;
+
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: var(--ei-section-top-padding);
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #474747;
+}
+
+.ei-first-section::before {
+    content: "";
+    position: absolute;
+    inset: -12%;
+    background-image:
+        linear-gradient(rgba(123, 123, 123, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(123, 123, 123, 0.12) 1px, transparent 1px);
+    background-size: 42px 42px;
+    transform: rotate(-2deg);
+    transform-origin: center;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.ei-first-section-content {
+    width: min(calc(100% - 40px), 1200px);
+    min-height: 1136px;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 0 0 72px;
+    box-sizing: border-box;
+}
+
+.ei-first-section-title {
+    width: min(988px, 78%);
+    margin: 0 auto 42px;
+    padding: 0;
+    color: #474747;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+
+.ei-competencies-desktop-grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 46px;
+    position: relative;
+    z-index: 2;
+}
+
+.ei-competencies-column {
+    width: calc((100% - 46px) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ei-competency-card {
+    box-sizing: border-box;
+    width: 100%;
+    height: 505px;
+    padding: 40px 25px;
+    border: 2px solid currentColor;
+    border-radius: 25px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.ei-competency-card::-webkit-scrollbar {
+    display: none;
+}
+
+.ei-competency-card-self-awareness {
+    background-color: #DDA7C5;
+    border-color: #CF8CB5;
+}
+
+.ei-competency-card-self-management {
+    height: 790px;
+    background-color: #68B9DA;
+    border-color: #329BBB;
+}
+
+.ei-competency-card-relationship {
+    height: 790px;
+    background-color: #EFBB30;
+    border-color: #E4951E;
+}
+
+.ei-competency-card-social {
+    height: 560px;
+    background-color: #E08167;
+    border-color: #D96052;
+}
+
+.ei-competency-card h3 {
+    max-width: 100%;
+    margin: 0;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    overflow-wrap: anywhere;
+}
+
+.ei-card-subtitle {
+    max-width: 560px;
+    margin: 8px 0 24px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.ei-competency-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding-left: 28px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.ei-competency-list li::marker {
+    font-size: 0.75em;
+}
+
+.ei-competency-list strong {
+    font-weight: 700;
+}
+
+.ei-competencies-note {
+    position: relative;
+    z-index: 2;
+    margin: 40px auto 0;
+    box-sizing: border-box;
+    overflow: visible;
+    max-height: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.ei-competencies-note .ds-mui-alert {
+    min-height: 168px;
+    box-sizing: border-box;
+    align-items: center;
+    overflow: visible;
+    max-height: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.ei-competencies-note .MuiAlert-message {
+    padding: 0;
+    overflow: visible;
+    max-height: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.ei-competencies-note *::-webkit-scrollbar {
+    display: none;
+}
+
+.ei-competencies-note p {
+    margin: 0;
+    color: #2f2f2f;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 1.15;
+}
+
+.ei-first-section-decor,
+.ei-decor {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+}
+
+.ei-first-section-decor {
+    inset: 0;
+    z-index: auto;
+}
+
+.ei-decor {
+    object-fit: contain;
+    z-index: 1;
+}
+
+.ei-decor-pink-circle {
+    width: 206px;
+    top: 50px;
+    left: 112px;
+    opacity: 0.65;
+}
+
+.ei-decor-pink-figure {
+    width: 312px;
+    top: 100px;
+    left: -15px;
+    transform: rotate(57deg);
+    opacity: 0.65;
+    z-index: 3;
+}
+
+.ei-decor-blue-circle {
+    display: none;
+    width: 206px;
+    right: 130px;
+    bottom: -60px;
+    opacity: 0.45;
+}
+
+.ei-decor-red-figure {
+    width: 203px;
+    left: 64px;
+    bottom: 76px;
+    transform: rotate(8deg);
+}
+
+.ei-decor-yellow-figure {
+    width: 226px;
+    right: 56px;
+    bottom: 20px;
+    transform: rotate(-28deg);
+}
+
+.ei-decor-orange-figure {
+    width: 95px;
+    left: -28px;
+    bottom: 232px;
+}
+
+@media screen and (max-width: 1200px) {
+    .ei-competencies-column {
+        width: calc((100% - 32px) / 2);
+    }
+
+    .ei-competencies-desktop-grid {
+        gap: 32px;
+    }
+
+    .ei-card-subtitle,
+    .ei-competency-list {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ei-first-section {
+        --ei-section-top-padding: 72px;
+    }
+
+    .ei-first-section::before {
+        inset: -6%;
+        background-size: 31px 31px;
+        transform: rotate(-1deg);
+    }
+
+    .ei-first-section-content {
+        width: 100%;
+        min-height: 959px;
+        padding: 0 0 64px;
+    }
+
+    .ei-first-section-title {
+        width: calc(100% - 48px);
+        margin-bottom: 36px;
+        font-size: 28px;
+        line-height: 1.24;
+    }
+
+    .ei-competencies-desktop-grid {
+        display: none;
+    }
+
+    .ei-competencies-carousel {
+        position: relative;
+        z-index: 2;
+    }
+
+    .ei-competencies-carousel .kaz-tarih-carousel-container {
+        margin-left: -24px;
+    }
+
+    .ei-competencies-slide {
+        flex: 0 0 calc(100% - 48px);
+        margin-left: 24px;
+        box-sizing: border-box;
+    }
+
+    .ei-competency-card {
+        height: 505px;
+        min-height: 505px;
+        padding: 24px 18px 28px;
+        border-radius: 25px;
+    }
+
+    .ei-competency-card-self-management,
+    .ei-competency-card-relationship,
+    .ei-competency-card-social {
+        height: 505px;
+        min-height: 505px;
+    }
+
+    .ei-competency-card h3 {
+        font-size: 30px;
+        line-height: 1.05;
+    }
+
+    .ei-card-subtitle {
+        margin: 16px 0 24px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .ei-competency-list {
+        gap: 20px;
+        padding-left: 28px;
+        font-size: 20px;
+        line-height: 1.16;
+    }
+
+    .ei-competencies-note {
+        margin-top: 32px;
+    }
+
+    .ei-competencies-note .ds-mui-alert {
+        min-height: 292px;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 22px !important;
+        padding: 32px 18px 24px !important;
+    }
+
+    .ei-competencies-note .MuiAlert-icon {
+        align-self: center !important;
+    }
+
+    .ei-competencies-note p {
+        font-size: 22px;
+        line-height: 1.14;
+    }
+
+    .ei-decor-pink-circle,
+    .ei-decor-pink-figure,
+    .ei-decor-red-figure {
+        display: none;
+    }
+
+    .ei-decor-blue-circle {
+        display: block;
+        width: 185px;
+        top: 0;
+        right: -50px;
+        bottom: auto;
+        opacity: 0.35;
+    }
+
+    .ei-decor-yellow-figure {
+        width: 95px;
+        top: 688px;
+        right: auto;
+        left: -37px;
+        bottom: auto;
+        transform: rotate(0deg);
+    }
+
+    .ei-decor-orange-figure {
+        width: 84px;
+        top: 662px;
+        left: -38px;
+        bottom: auto;
+        opacity: 0.65;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .ei-first-section {
+        --ei-section-top-padding: 68px;
+    }
+
+    .ei-first-section-title {
+        font-size: 20px;
+        line-height: 1.28;
+    }
+
+    .ei-competency-card {
+        min-height: 505px;
+        padding: 18px 18px 24px;
+    }
+
+    .ei-competency-card h3 {
+        font-size: 30px;
+    }
+
+    .ei-card-subtitle {
+        font-size: 20px;
+    }
+
+    .ei-competency-list {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .ei-first-section-title {
+        width: calc(100% - 40px);
+    }
+
+    .ei-competency-card h3 {
+        font-size: 27px;
+    }
+
+    .ei-card-subtitle,
+    .ei-competency-list {
+        font-size: 18px;
+    }
+
+    .ei-competencies-note p {
+        font-size: 20px;
+    }
+}
