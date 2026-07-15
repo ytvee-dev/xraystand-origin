@@ -110,6 +110,60 @@
     }
 }
 
+@media (max-width: 990px) {
+    .cardiovascular-system-cover-title-container {
+        top: 389px;
+        left: 40px;
+    }
+
+    .title-first-line,
+    .title-second-line {
+        font-size: 60px;
+    }
+
+    .cardiovascular-system-cover-heart {
+        width: 280px;
+        height: 500px;
+        top: 170px;
+        left: 620px;
+    }
+
+    .cardiovascular-system-cover-pulse {
+        top: 350px;
+        left: 440px;
+        width: 580px;
+        height: 200;
+    }
+}
+
+@media (max-width: 900px) {
+    .cardiovascular-system-cover-title-container {
+        top: 350px;
+        left: 60px;
+        width: 280px;
+        gap: 29px;
+    }
+
+    .title-first-line,
+    .title-second-line {
+        font-size: 65px;
+    }
+
+    .cardiovascular-system-cover-heart {
+        width: 250px;
+        height: 430px;
+        top: 240px;
+        left: 475px;
+    }
+
+    .cardiovascular-system-cover-pulse {
+        top: 400px;
+        left: 290px;
+        width: 580px;
+        height: 200;
+    }
+}
+
 @media (max-width: 768px) {
     .cardiovascular-system-cover-title-container {
         top: 350px;
@@ -135,6 +189,92 @@
         left: 240px;
         width: 530px;
         height: 200;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .cardiovascular-system-cover-title-container {
+        top: 350px;
+        left: 30px;
+        width: 280px;
+        gap: 29px;
+    }
+
+    .title-first-line,
+    .title-second-line {
+        font-size: 60px;
+    }
+
+    .cardiovascular-system-cover-heart {
+        width: 230px;
+        height: 410px;
+        top: 240px;
+        left: 365px;
+    }
+
+    .cardiovascular-system-cover-pulse {
+        top: 410px;
+        left: 230px;
+        width: 470px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardiovascular-system-cover-title-container {
+        top: 350px;
+        left: 30px;
+        width: 280px;
+        gap: 29px;
+    }
+
+    .title-first-line,
+    .title-second-line {
+        font-size: 50px;
+    }
+
+    .cardiovascular-system-cover-heart {
+        width: 210px;
+        height: 380px;
+        top: 240px;
+        left: 310px;
+    }
+
+    .cardiovascular-system-cover-pulse {
+        top: 395px;
+        left: 180px;
+        width: 430px;
+        height: 170px;
+    }
+}
+
+
+@media (max-width: 525px) {
+    .cardiovascular-system-cover-title-container {
+        top: 350px;
+        left: 30px;
+        width: 280px;
+        gap: 29px;
+    }
+
+    .title-first-line,
+    .title-second-line {
+        font-size: 50px;
+    }
+
+    .cardiovascular-system-cover-heart {
+        width: 200px;
+        height: 350px;
+        top: 260px;
+        left: 290px;
+    }
+
+    .cardiovascular-system-cover-pulse {
+        top: 405px;
+        left: 180px;
+        width: 380px;
+        height: 150px;
     }
 }
 
