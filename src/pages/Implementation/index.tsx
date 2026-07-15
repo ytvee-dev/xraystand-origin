@@ -1,10 +1,10 @@
 import "./style.css";
-import SecondSection from "@modules/emotionalIntelligence/Sections/SecondSection";
-import * as path from "../../modules/emotionalIntelligence/locales/path.json";
-import * as contentRu from "../../modules/emotionalIntelligence/locales/rus.json";
-import * as contentKz from "../../modules/emotionalIntelligence/locales/kaz.json";
+import * as path from "../../modules/cardiovascularSystem/locales/path.json";
+import * as contentRu from "../../modules/cardiovascularSystem/locales/rus.json";
+import * as contentKz from "../../modules/cardiovascularSystem/locales/kaz.json";
 import { useLocaleContent } from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
+import CoverSection from "../../modules/cardiovascularSystem/Sections/CoverSection"
 
 
 const pageLayoutSX = {
@@ -18,7 +18,7 @@ const pageLayoutSX = {
 
 const MainLogo = () => {
     return (
-        <div className="kaz-music-logo">Эмоциональный интеллект</div>
+        <div className="kaz-music-logo">Сердечно сосудистая система</div>
     );
 };
 
@@ -26,19 +26,19 @@ const MainLogo = () => {
 const SeasonPage = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
     return (
-        // <BrightnessLayout
-        //     logo={<MainLogo />}
-        //     isLanguageSwitcher={true}
-        //     switcherColor="#181818"
-        //     sx={pageLayoutSX}
-        //     headerBackgroundColor="rgb(255, 255, 255)"
-        //     languageSwitcherClassName="kaz-music-language-switcher"
-        // >
+        <BrightnessLayout
+            logo={<MainLogo />}
+            isLanguageSwitcher={true}
+            switcherColor="#181818"
+            sx={pageLayoutSX}
+            headerBackgroundColor="rgb(255, 255, 255)"
+            languageSwitcherClassName="kaz-music-language-switcher"
+        >
             <div className="implementation">
-                <SecondSection content={textContent.secondSection} />
+                <CoverSection content={textContent.coverSection} />
             
             </div>
-        // </BrightnessLayout>
+        </BrightnessLayout>
     );
 };
 
