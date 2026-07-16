@@ -5,6 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google tag (gtag.js) -->
+  <script>
+    if (["xraystand.com", "www.xraystand.com"].includes(window.location.hostname)) {
+      const googleTag = document.createElement("script");
+      googleTag.async = true;
+      googleTag.src = "https://www.googletagmanager.com/gtag/js?id=G-LQELMBWG7Y";
+      document.head.appendChild(googleTag);
+
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function gtag() {
+        window.dataLayer.push(arguments);
+      };
+      window.gtag("js", new Date());
+      window.gtag("config", "G-LQELMBWG7Y");
+    }
+  </script>
+
   <link rel="icon" type="image/png" href="public/assets/favicon/favicon-96x96.avif" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="public/assets/favicon/favicon.svg" />
   <link rel="shortcut icon" href="public/assets/favicon/favicon.ico" />
