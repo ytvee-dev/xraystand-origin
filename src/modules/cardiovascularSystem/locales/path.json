@@ -15,7 +15,8 @@
     "images": {
         "heart": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783422965/heart_1_mtpjau.webp",
         "pulse_red": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783422954/pulse-red_1_t0ddka.webp",
-        "pulse_white_first_section": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783422949/pulse-white_1_yhohao.webp",
+        "pulse_white_first_section_left": "cardiovascular-system/pulse-left.svg",
+        "pulse_white_first_section_right": "cardiovascular-system/pulse-right.svg",
         "pulse_white_third_section": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1783422968/pulse-white-third-section_1_ds65gb.webp"
     }
 }

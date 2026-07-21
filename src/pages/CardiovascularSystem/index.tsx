@@ -3,6 +3,7 @@ import * as paths from "@modules/cardiovascularSystem/locales/path.json";
 import * as contentRu from "@modules/cardiovascularSystem/locales/rus.json";
 import * as contentKz from "@modules/cardiovascularSystem/locales/kaz.json";
 import CoverSection from "@modules/cardiovascularSystem/Sections/CoverSection";
+import FirstSection from "@modules/cardiovascularSystem/Sections/FirstSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -45,7 +46,8 @@ const CardiovascularSystem: React.FC = () => {
                 headerBackgroundColor="#ffffff"
             >
                 {!isContentLoaded && <Spinner />}
-                <CoverSection content={textContent.coverSection}/>
+                <CoverSection content={textContent.coverSection} />
+                <FirstSection content={textContent.firstSection} />
             </BrightnessLayout>
         </div>
     );
