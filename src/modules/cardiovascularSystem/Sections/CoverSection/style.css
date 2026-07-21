@@ -368,3 +368,13 @@
         height: 75px;
     }
 }
+
+.cardiovascular-system-cover-title-container {
+    left: max(
+        var(--cardiovascular-header-inline-offset, 20px),
+        calc(
+            (100vw - 1540px) / 2 +
+                var(--cardiovascular-header-inline-offset, 20px)
+        )
+    );
+}

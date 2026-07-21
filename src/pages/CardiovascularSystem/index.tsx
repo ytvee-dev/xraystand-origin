@@ -1,8 +1,13 @@
 import Spinner from "@components/common/Spinner";
+import SpriteIcon from "@components/common/Other/SpriteIcon";
 import * as paths from "@modules/cardiovascularSystem/locales/path.json";
 import * as contentRu from "@modules/cardiovascularSystem/locales/rus.json";
 import * as contentKz from "@modules/cardiovascularSystem/locales/kaz.json";
 import CoverSection from "@modules/cardiovascularSystem/Sections/CoverSection";
+import FirstSection from "@modules/cardiovascularSystem/Sections/FirstSection";
+import SecondSection from "@modules/cardiovascularSystem/Sections/SecondSection";
+import ThirdSection from "@modules/cardiovascularSystem/Sections/ThirdSection";
+import FourthSection from "@modules/cardiovascularSystem/Sections/FourthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -21,7 +26,16 @@ const pageLayoutSX = {
 };
 
 const MainLogo = () => {
-    return <div className="cardiovascular-logo">Сердечно Сосудистая Система</div>;
+    return (
+        <div className="cardiovascular-logo">
+            <SpriteIcon
+                iconId="logo-color"
+                width="100%"
+                height="100%"
+                color="#474747"
+            />
+        </div>
+    );
 };
 
 const CardiovascularSystem: React.FC = () => {
@@ -42,10 +56,17 @@ const CardiovascularSystem: React.FC = () => {
                 isLanguageSwitcher={true}
                 switcherColor="#C85B72"
                 sx={pageLayoutSX}
-                headerBackgroundColor="#ffffff"
+                headerBackgroundColor="transparent"
             >
                 {!isContentLoaded && <Spinner />}
-                <CoverSection content={textContent.coverSection}/>
+                <CoverSection content={textContent.coverSection} />
+                <FirstSection content={textContent.firstSection} />
+                <SecondSection content={textContent.secondSection} />
+                <ThirdSection content={textContent.thirdSection} />
+                <FourthSection
+                    content={textContent.fourthSection}
+                    schedule={textContent.fifthSection}
+                />
             </BrightnessLayout>
         </div>
     );

@@ -1,0 +1,436 @@
+.cardiovascular-first-section {
+    --cardiovascular-first-pattern-size: 240px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 104px 0 92px;
+    box-sizing: border-box;
+    background-color: #c34c67;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+.cardiovascular-first-section::before,
+.cardiovascular-first-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.cardiovascular-first-section::before {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+    background-size:
+        var(--cardiovascular-first-pattern-size)
+        var(--cardiovascular-first-pattern-size);
+    z-index: 0;
+}
+
+.cardiovascular-first-section::after {
+    inset: calc(var(--cardiovascular-first-pattern-size) / -2);
+    background-color: rgba(255, 255, 255, 0.24);
+    -webkit-mask-image:
+        linear-gradient(45deg, transparent 47%, #000 47% 53%, transparent 53%),
+        linear-gradient(-45deg, transparent 47%, #000 47% 53%, transparent 53%);
+    -webkit-mask-size:
+        var(--cardiovascular-first-pattern-size)
+        var(--cardiovascular-first-pattern-size);
+    -webkit-mask-composite: source-in;
+    mask-image:
+        linear-gradient(45deg, transparent 47%, #000 47% 53%, transparent 53%),
+        linear-gradient(-45deg, transparent 47%, #000 47% 53%, transparent 53%);
+    mask-size:
+        var(--cardiovascular-first-pattern-size)
+        var(--cardiovascular-first-pattern-size);
+    mask-composite: intersect;
+    opacity: 0.65;
+    z-index: 0;
+}
+
+.cardiovascular-first-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.cardiovascular-first-intro {
+    width: min(calc(100% - 48px), 1008px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cardiovascular-first-title {
+    margin: 0;
+    font-size: clamp(36px, 3.2vw, 46px);
+    font-weight: 700;
+    line-height: 1.09;
+    text-transform: uppercase;
+}
+
+.cardiovascular-first-description {
+    margin: 38px 0 0;
+    font-size: clamp(20px, 1.67vw, 24px);
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.cardiovascular-first-facts {
+    display: grid;
+    grid-template-columns: minmax(0, 561px) minmax(0, 439px);
+    gap: clamp(42px, 5.9vw, 85px);
+    align-items: start;
+    width: min(calc(100% - 80px), 1085px);
+    margin: 42px auto 55px;
+}
+
+.cardiovascular-first-mortality-title {
+    max-width: 465px;
+    margin: 0 0 34px;
+    font-size: clamp(30px, 2.5vw, 36px);
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.cardiovascular-first-statistics {
+    display: grid;
+    grid-template-columns: 1fr 1.45fr;
+    gap: 30px 28px;
+}
+
+.cardiovascular-first-statistic {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+}
+
+.cardiovascular-first-statistic-3 {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(145px, 0.7fr) minmax(0, 1.45fr);
+    gap: 28px;
+}
+
+.cardiovascular-first-statistic-value {
+    font-size: clamp(30px, 2.5vw, 36px);
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.cardiovascular-first-statistic-label {
+    margin-top: 6px;
+    font-size: clamp(18px, 1.67vw, 24px);
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.cardiovascular-first-statistic-3 .cardiovascular-first-statistic-label {
+    margin-top: 0;
+}
+
+.cardiovascular-first-overview {
+    margin: 0;
+    font-size: clamp(20px, 1.67vw, 24px);
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.cardiovascular-first-overview strong {
+    font-weight: 700;
+}
+
+.cardiovascular-first-divider {
+    --cardiovascular-first-divider-title-width: min(
+        748px,
+        calc(100vw - 120px)
+    );
+    --cardiovascular-first-divider-pulse-width: min(453px, 31.46vw);
+    --cardiovascular-first-divider-pulse-height: min(122px, 8.47vw);
+    position: relative;
+    min-height: 122px;
+    width: 100%;
+    margin: 0 auto 15px;
+}
+
+.cardiovascular-first-divider-pulse {
+    position: absolute;
+    top: 50%;
+    width: var(--cardiovascular-first-divider-pulse-width);
+    height: var(--cardiovascular-first-divider-pulse-height);
+    object-fit: fill;
+    transform: translateY(-50%);
+}
+
+.cardiovascular-first-divider-pulse-left {
+    left: calc(
+        (100% - var(--cardiovascular-first-divider-title-width)) / 2 -
+            var(--cardiovascular-first-divider-pulse-width) - 20px
+    );
+}
+
+.cardiovascular-first-divider-pulse-right {
+    right: calc(
+        (100% - var(--cardiovascular-first-divider-title-width)) / 2 -
+            var(--cardiovascular-first-divider-pulse-width) - 20px
+    );
+}
+
+.cardiovascular-first-divider-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: var(--cardiovascular-first-divider-title-width);
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-size: clamp(30px, 3.2vw, 46px);
+    font-weight: 700;
+    line-height: 1.09;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.cardiovascular-first-diseases {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 19px;
+    width: min(calc(100% - 52px), 1360px);
+    margin: 0 auto;
+    padding: 20px 24px;
+    box-sizing: border-box;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+}
+
+.cardiovascular-first-disease-column {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardiovascular-first-disease-card {
+    display: flex;
+    min-height: 0;
+    flex: 0 0 auto;
+    flex-direction: column;
+    padding: 14px 24px 18px;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cardiovascular-first-disease-title {
+    margin: 0;
+    font-size: clamp(24px, 2.08vw, 30px);
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.cardiovascular-first-disease-rule {
+    width: 55%;
+    height: 1px;
+    margin: 12px 0 18px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cardiovascular-first-disease-description {
+    margin: 0;
+    font-size: clamp(19px, 1.67vw, 24px);
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+@media (max-width: 1024px) {
+    .cardiovascular-first-section {
+        padding-top: 80px;
+    }
+
+    .cardiovascular-first-facts {
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.9fr);
+        gap: 40px;
+    }
+
+    .cardiovascular-first-diseases {
+        width: calc(100% - 40px);
+    }
+
+    .cardiovascular-first-disease-card {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardiovascular-first-section {
+        --cardiovascular-first-pattern-size: 70px;
+        padding: 32px 0 48px;
+    }
+
+    .cardiovascular-first-intro {
+        width: min(calc(100% - 48px), 420px);
+    }
+
+    .cardiovascular-first-title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .cardiovascular-first-description {
+        margin-top: 18px;
+        font-size: 18px;
+        line-height: 1.12;
+        text-align: center;
+    }
+
+    .cardiovascular-first-facts {
+        display: flex;
+        width: min(calc(100% - 56px), 420px);
+        flex-direction: column;
+        gap: 38px;
+        margin: 38px auto 26px;
+    }
+
+    .cardiovascular-first-mortality-title {
+        margin-bottom: 28px;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .cardiovascular-first-statistics {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .cardiovascular-first-statistic,
+    .cardiovascular-first-statistic-3 {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .cardiovascular-first-statistic-value {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .cardiovascular-first-statistic-label,
+    .cardiovascular-first-statistic-3 .cardiovascular-first-statistic-label {
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 1.12;
+    }
+
+    .cardiovascular-first-overview {
+        font-size: 18px;
+        line-height: 1.12;
+    }
+
+    .cardiovascular-first-divider {
+        --cardiovascular-first-divider-title-width: min(
+            332px,
+            calc(100vw - 52px)
+        );
+        --cardiovascular-first-divider-pulse-width: 218px;
+        --cardiovascular-first-divider-pulse-height: 59px;
+        min-height: 72px;
+        margin-bottom: 16px;
+    }
+
+    .cardiovascular-first-divider-pulse-left {
+        left: calc(
+            (100% - var(--cardiovascular-first-divider-title-width)) / 2 +
+                30px - var(--cardiovascular-first-divider-pulse-width)
+        );
+    }
+
+    .cardiovascular-first-divider-pulse-right {
+        right: calc(
+            (100% - var(--cardiovascular-first-divider-title-width)) / 2 +
+                30px - var(--cardiovascular-first-divider-pulse-width)
+        );
+    }
+
+    .cardiovascular-first-divider-title {
+        font-size: 30px;
+        line-height: 1.2;
+        white-space: normal;
+    }
+
+    .cardiovascular-first-diseases {
+        display: flex;
+        width: min(calc(100% - 56px), 420px);
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px;
+    }
+
+    .cardiovascular-first-disease-column {
+        gap: 16px;
+    }
+
+    .cardiovascular-first-disease-card {
+        flex: none;
+        padding: 12px 24px 16px;
+    }
+
+    .cardiovascular-first-disease-title {
+        max-width: 100%;
+        font-size: 28px;
+        line-height: 1.29;
+        overflow-wrap: anywhere;
+        word-break: normal;
+        white-space: normal;
+    }
+
+    .cardiovascular-first-disease-rule {
+        width: 100%;
+        margin: 10px 0 14px;
+    }
+
+    .cardiovascular-first-disease-description {
+        font-size: 18px;
+        line-height: 1.12;
+    }
+}
+
+@media (max-width: 374px) {
+    .cardiovascular-first-intro,
+    .cardiovascular-first-facts,
+    .cardiovascular-first-diseases {
+        width: calc(100% - 32px);
+    }
+
+    .cardiovascular-first-title,
+    .cardiovascular-first-mortality-title,
+    .cardiovascular-first-statistic-value {
+        font-size: 26px;
+    }
+
+    .cardiovascular-first-divider-title {
+        font-size: 28px;
+    }
+
+    .cardiovascular-first-diseases {
+        padding: 16px;
+    }
+
+    .cardiovascular-first-disease-card {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .cardiovascular-first-disease-title {
+        font-size: 24px;
+    }
+}
