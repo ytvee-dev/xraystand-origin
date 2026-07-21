@@ -5,6 +5,7 @@ import * as contentKz from "@modules/cardiovascularSystem/locales/kaz.json";
 import CoverSection from "@modules/cardiovascularSystem/Sections/CoverSection";
 import FirstSection from "@modules/cardiovascularSystem/Sections/FirstSection";
 import SecondSection from "@modules/cardiovascularSystem/Sections/SecondSection";
+import ThirdSection from "@modules/cardiovascularSystem/Sections/ThirdSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -50,6 +51,7 @@ const CardiovascularSystem: React.FC = () => {
                 <CoverSection content={textContent.coverSection} />
                 <FirstSection content={textContent.firstSection} />
                 <SecondSection content={textContent.secondSection} />
+                <ThirdSection content={textContent.thirdSection} />
             </BrightnessLayout>
         </div>
     );

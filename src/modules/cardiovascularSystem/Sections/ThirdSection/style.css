@@ -1,0 +1,361 @@
+.cardiovascular-third-section {
+    --cardiovascular-third-pattern-size: 240px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 94px 0 32px;
+    box-sizing: border-box;
+    background: linear-gradient(to top right, #c34c67 0%, #e08b9e 100%);
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+.cardiovascular-third-section::before,
+.cardiovascular-third-section::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    pointer-events: none;
+}
+
+.cardiovascular-third-section::before {
+    z-index: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+    background-size:
+        var(--cardiovascular-third-pattern-size)
+        var(--cardiovascular-third-pattern-size);
+}
+
+.cardiovascular-third-section::after {
+    z-index: 0;
+    inset: calc(var(--cardiovascular-third-pattern-size) / -2);
+    opacity: 0.65;
+    background-color: rgba(255, 255, 255, 0.24);
+    -webkit-mask-image:
+        linear-gradient(45deg, transparent 47%, #000 47% 53%, transparent 53%),
+        linear-gradient(-45deg, transparent 47%, #000 47% 53%, transparent 53%);
+    -webkit-mask-size:
+        var(--cardiovascular-third-pattern-size)
+        var(--cardiovascular-third-pattern-size);
+    -webkit-mask-composite: source-in;
+    mask-image:
+        linear-gradient(45deg, transparent 47%, #000 47% 53%, transparent 53%),
+        linear-gradient(-45deg, transparent 47%, #000 47% 53%, transparent 53%);
+    mask-size:
+        var(--cardiovascular-third-pattern-size)
+        var(--cardiovascular-third-pattern-size);
+    mask-composite: intersect;
+}
+
+.cardiovascular-third-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.cardiovascular-third-intro {
+    width: min(calc(100% - 48px), 1008px);
+    margin: 0 auto;
+}
+
+.cardiovascular-third-title,
+.cardiovascular-third-subtitle,
+.cardiovascular-third-description,
+.cardiovascular-third-group-title,
+.cardiovascular-third-card-title,
+.cardiovascular-third-card-description {
+    margin: 0;
+}
+
+.cardiovascular-third-title {
+    max-width: 872px;
+    margin: 0 auto;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cardiovascular-third-subtitle {
+    margin-top: 24px;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.cardiovascular-third-description {
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.cardiovascular-third-groups {
+    width: 100%;
+}
+
+.cardiovascular-third-group {
+    width: 100%;
+}
+
+.cardiovascular-third-group:first-child {
+    margin-top: 48px;
+}
+
+.cardiovascular-third-group + .cardiovascular-third-group {
+    margin-top: 32px;
+}
+
+.cardiovascular-third-group-heading {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 122px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardiovascular-third-pulse {
+    position: absolute;
+    top: 0;
+    width: 453px;
+    height: 122px;
+    object-fit: fill;
+}
+
+.cardiovascular-third-pulse-left {
+    left: calc(50% - 759px);
+}
+
+.cardiovascular-third-pulse-right {
+    right: calc(50% - 759px);
+}
+
+.cardiovascular-third-group-title {
+    position: relative;
+    z-index: 1;
+    width: min(calc(100% - 520px), 672px);
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+}
+
+.cardiovascular-third-cards {
+    display: grid;
+    width: min(calc(100% - 48px), 1162px);
+    margin: 40px auto 0;
+    gap: 20px;
+    align-items: start;
+}
+
+.cardiovascular-third-group-1 .cardiovascular-third-cards {
+    grid-template-columns: 35fr 41fr 24fr;
+}
+
+.cardiovascular-third-group-2 .cardiovascular-third-cards {
+    grid-template-columns: 34fr 28fr 38fr;
+}
+
+.cardiovascular-third-card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #474747;
+}
+
+.cardiovascular-third-card-icon {
+    width: 73px;
+    height: 73px;
+    flex: 0 0 73px;
+}
+
+.cardiovascular-third-card-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cardiovascular-third-card-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+}
+
+.cardiovascular-third-card-description {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.cardiovascular-third-carousel {
+    display: none;
+}
+
+@media (max-width: 1200px) and (min-width: 769px) {
+    .cardiovascular-third-title {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .cardiovascular-third-description {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .cardiovascular-third-group-title {
+        width: min(calc(100% - 460px), 560px);
+        font-size: 38px;
+        line-height: 42px;
+    }
+
+    .cardiovascular-third-pulse-left {
+        left: calc(50% - 650px);
+    }
+
+    .cardiovascular-third-pulse-right {
+        right: calc(50% - 650px);
+    }
+
+    .cardiovascular-third-card-title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .cardiovascular-third-card-description {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardiovascular-third-section {
+        --cardiovascular-third-pattern-size: 70px;
+        padding: 32px 0;
+    }
+
+    .cardiovascular-third-intro {
+        width: min(calc(100% - 40px), 333px);
+        text-align: center;
+    }
+
+    .cardiovascular-third-title {
+        max-width: 100%;
+        font-size: 30px;
+        line-height: 36px;
+        overflow-wrap: anywhere;
+    }
+
+    .cardiovascular-third-subtitle,
+    .cardiovascular-third-description {
+        margin-top: 16px;
+    }
+
+    .cardiovascular-third-subtitle {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .cardiovascular-third-description {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .cardiovascular-third-group:first-child {
+        margin-top: 32px;
+    }
+
+    .cardiovascular-third-group + .cardiovascular-third-group {
+        margin-top: 32px;
+    }
+
+    .cardiovascular-third-group-heading {
+        display: flex;
+        min-height: 0;
+        flex-direction: column;
+    }
+
+    .cardiovascular-third-pulse {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 416px;
+        height: 112px;
+        max-width: none;
+        flex: 0 0 112px;
+    }
+
+    .cardiovascular-third-pulse-left {
+        transform: none;
+    }
+
+    .cardiovascular-third-pulse-right {
+        display: none;
+    }
+
+    .cardiovascular-third-group-title {
+        width: min(calc(100% - 34px), 356px);
+        margin-top: 16px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .cardiovascular-third-cards {
+        display: none;
+    }
+
+    .cardiovascular-third-carousel {
+        display: block;
+        margin-top: 16px;
+    }
+
+    .cardiovascular-third-carousel .kaz-tarih-carousel-container {
+        gap: 16px;
+        margin-left: 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .cardiovascular-third-carousel .kaz-tarih-carousel-card {
+        flex: 0 0 min(350px, calc(100vw - 40px));
+        margin-left: 0;
+    }
+
+    .cardiovascular-third-card {
+        gap: 12px;
+        padding: 24px;
+    }
+
+    .cardiovascular-third-card-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .cardiovascular-third-card-description {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 374px) {
+    .cardiovascular-third-title,
+    .cardiovascular-third-group-title,
+    .cardiovascular-third-card-title {
+        font-size: 27px;
+        line-height: 32px;
+    }
+}
