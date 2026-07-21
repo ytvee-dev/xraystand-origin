@@ -166,6 +166,15 @@ const pagesInfo: IPageInfo[] = [
         isClickable: true,
     },
     {
+        id: paths.CARDIOVASCULAR_SYSTEM.id,
+        path: paths.CARDIOVASCULAR_SYSTEM.path,
+        title: "Сердечно-сосудистая система",
+        description:
+            "Интерактивные материалы о здоровье сердца и сердечно-сосудистых заболеваниях",
+        status: "active",
+        isClickable: true,
+    },
+    {
         id: paths.IMPLEMENTATION.id,
         path: paths.IMPLEMENTATION.path,
         title: "Implementation",

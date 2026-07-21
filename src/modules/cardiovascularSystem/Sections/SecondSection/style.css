@@ -1,0 +1,368 @@
+.cardiovascular-second-section {
+    --cardiovascular-second-pattern-size: 240px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 94px 0 104px;
+    box-sizing: border-box;
+    background-color: #f0f1f6;
+    color: #474747;
+    font-family: "Roboto", sans-serif;
+}
+
+.cardiovascular-second-section::before,
+.cardiovascular-second-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.cardiovascular-second-section::before {
+    z-index: 0;
+    background-image:
+        linear-gradient(rgba(71, 71, 71, 0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(71, 71, 71, 0.055) 1px, transparent 1px);
+    background-size:
+        var(--cardiovascular-second-pattern-size)
+        var(--cardiovascular-second-pattern-size);
+}
+
+.cardiovascular-second-section::after {
+    z-index: 0;
+    inset: calc(var(--cardiovascular-second-pattern-size) / -2);
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-mask-image:
+        linear-gradient(45deg, transparent 47%, #000 47% 53%, transparent 53%),
+        linear-gradient(-45deg, transparent 47%, #000 47% 53%, transparent 53%);
+    -webkit-mask-size:
+        var(--cardiovascular-second-pattern-size)
+        var(--cardiovascular-second-pattern-size);
+    -webkit-mask-composite: source-in;
+    mask-image:
+        linear-gradient(45deg, transparent 47%, #000 47% 53%, transparent 53%),
+        linear-gradient(-45deg, transparent 47%, #000 47% 53%, transparent 53%);
+    mask-size:
+        var(--cardiovascular-second-pattern-size)
+        var(--cardiovascular-second-pattern-size);
+    mask-composite: intersect;
+}
+
+.cardiovascular-second-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.cardiovascular-second-intro {
+    width: min(calc(100% - 48px), 1008px);
+    margin: 0 auto;
+}
+
+.cardiovascular-second-title {
+    margin: 0 0 24px;
+    font-size: clamp(36px, 3.2vw, 46px);
+    font-weight: 700;
+    line-height: 1.09;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cardiovascular-second-intro-description {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    font-size: clamp(20px, 1.67vw, 24px);
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.cardiovascular-second-intro-description strong {
+    font-weight: 700;
+}
+
+.cardiovascular-second-risk-groups {
+    width: 100%;
+}
+
+.cardiovascular-second-risk-group {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.cardiovascular-second-risk-group + .cardiovascular-second-risk-group {
+    margin-top: 96px;
+}
+
+.cardiovascular-second-risk-heading {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.cardiovascular-second-pulse {
+    position: absolute;
+    top: 0;
+    width: 453px;
+    height: 122px;
+    object-fit: fill;
+}
+
+.cardiovascular-second-pulse-left {
+    left: calc(50% - 685px);
+}
+
+.cardiovascular-second-pulse-right {
+    right: calc(50% - 685px);
+}
+
+.cardiovascular-second-risk-heading-copy {
+    position: relative;
+    z-index: 1;
+    width: min(calc(100% - 48px), 853px);
+    margin: 0 auto;
+    color: #c85b72;
+    text-align: center;
+}
+
+.cardiovascular-second-risk-title,
+.cardiovascular-second-risk-subtitle,
+.cardiovascular-second-risk-description {
+    margin: 0;
+}
+
+.cardiovascular-second-risk-title {
+    font-size: clamp(36px, 3.2vw, 46px);
+    font-weight: 700;
+    line-height: 1.09;
+    text-transform: uppercase;
+}
+
+.cardiovascular-second-risk-subtitle,
+.cardiovascular-second-risk-description {
+    font-size: clamp(20px, 1.67vw, 24px);
+    line-height: 1.25;
+}
+
+.cardiovascular-second-risk-subtitle {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.cardiovascular-second-risk-description {
+    font-weight: 400;
+}
+
+.cardiovascular-second-cards {
+    width: min(calc(100% - 64px), 1346px);
+    margin: 0 auto;
+}
+
+.cardiovascular-second-cards-split {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+}
+
+.cardiovascular-second-card-column {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardiovascular-second-card-column-centered {
+    align-self: center;
+}
+
+.cardiovascular-second-card {
+    min-width: 0;
+    padding: 24px 36px 28px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: #c85b72;
+    color: #ffffff;
+}
+
+.cardiovascular-second-card-title {
+    margin: 0 0 34px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+}
+
+.cardiovascular-second-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cardiovascular-second-card-row {
+    margin: 0;
+    font-size: clamp(20px, 1.67vw, 24px);
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.cardiovascular-second-card-row strong {
+    font-weight: 700;
+}
+
+.cardiovascular-second-cards-single .cardiovascular-second-card {
+    width: 100%;
+}
+
+.cardiovascular-second-carousel,
+.cardiovascular-second-mobile-single {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .cardiovascular-second-section {
+        padding-top: 80px;
+    }
+
+    .cardiovascular-second-cards {
+        width: calc(100% - 40px);
+    }
+
+    .cardiovascular-second-card {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardiovascular-second-section {
+        --cardiovascular-second-pattern-size: 70px;
+        padding: 48px 0 64px;
+    }
+
+    .cardiovascular-second-intro {
+        width: min(calc(100% - 50px), 340px);
+    }
+
+    .cardiovascular-second-title {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .cardiovascular-second-intro-description {
+        font-size: 18px;
+        line-height: 1.12;
+    }
+
+    .cardiovascular-second-risk-group {
+        margin-top: 28px;
+    }
+
+    .cardiovascular-second-risk-group + .cardiovascular-second-risk-group {
+        margin-top: 82px;
+    }
+
+    .cardiovascular-second-risk-heading {
+        padding: 24px 0 40px;
+    }
+
+    .cardiovascular-second-pulse {
+        top: 13px;
+        width: 218px;
+        height: 59px;
+    }
+
+    .cardiovascular-second-pulse-left {
+        left: calc(50% - 345px);
+    }
+
+    .cardiovascular-second-pulse-right {
+        right: calc(50% - 345px);
+    }
+
+    .cardiovascular-second-risk-heading-copy {
+        width: min(calc(100% - 36px), 384px);
+    }
+
+    .cardiovascular-second-risk-title {
+        width: min(234px, calc(100% - 100px));
+        margin: 0 auto;
+        font-size: 30px;
+        line-height: 1;
+    }
+
+    .cardiovascular-second-risk-subtitle,
+    .cardiovascular-second-risk-description {
+        font-size: 18px;
+        line-height: 1.12;
+    }
+
+    .cardiovascular-second-risk-subtitle {
+        margin-top: 14px;
+    }
+
+    .cardiovascular-second-cards {
+        display: none;
+    }
+
+    .cardiovascular-second-carousel,
+    .cardiovascular-second-mobile-single {
+        display: block;
+    }
+
+    .cardiovascular-second-carousel .kaz-tarih-carousel-container {
+        gap: 16px;
+        margin-left: 0;
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+
+    .cardiovascular-second-carousel .kaz-tarih-carousel-card {
+        flex: 0 0 min(350px, calc(100vw - 50px));
+        margin-left: 0;
+    }
+
+    .cardiovascular-second-mobile-single {
+        width: min(calc(100% - 50px), 1314px);
+        margin: 0 auto;
+    }
+
+    .cardiovascular-second-card {
+        padding: 24px 32px;
+    }
+
+    .cardiovascular-second-card-title {
+        margin-bottom: 16px;
+        font-size: 28px;
+        line-height: 1.07;
+        white-space: normal;
+    }
+
+    .cardiovascular-second-card-content {
+        gap: 20px;
+    }
+
+    .cardiovascular-second-card-row {
+        font-size: 18px;
+        line-height: 1.12;
+    }
+}
+
+@media (max-width: 374px) {
+    .cardiovascular-second-title,
+    .cardiovascular-second-risk-title {
+        font-size: 27px;
+    }
+
+    .cardiovascular-second-card {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .cardiovascular-second-card-title {
+        font-size: 25px;
+    }
+}

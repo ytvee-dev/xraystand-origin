@@ -1,0 +1,491 @@
+.cardiovascular-fourth-section {
+    --cardiovascular-fourth-pattern-size: 240px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 82px 0 72px;
+    border-top: 12px solid #c85b72;
+    box-sizing: border-box;
+    background-color: #f0f1f6;
+    color: #474747;
+    font-family: "Roboto", sans-serif;
+}
+
+.cardiovascular-fourth-section::before,
+.cardiovascular-fourth-section::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    pointer-events: none;
+}
+
+.cardiovascular-fourth-section::before {
+    z-index: 0;
+    background-image:
+        linear-gradient(rgba(71, 71, 71, 0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(71, 71, 71, 0.055) 1px, transparent 1px);
+    background-size:
+        var(--cardiovascular-fourth-pattern-size)
+        var(--cardiovascular-fourth-pattern-size);
+}
+
+.cardiovascular-fourth-section::after {
+    z-index: 0;
+    inset: calc(var(--cardiovascular-fourth-pattern-size) / -2);
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-mask-image:
+        linear-gradient(45deg, transparent 47%, #000 47% 53%, transparent 53%),
+        linear-gradient(-45deg, transparent 47%, #000 47% 53%, transparent 53%);
+    -webkit-mask-size:
+        var(--cardiovascular-fourth-pattern-size)
+        var(--cardiovascular-fourth-pattern-size);
+    -webkit-mask-composite: source-in;
+    mask-image:
+        linear-gradient(45deg, transparent 47%, #000 47% 53%, transparent 53%),
+        linear-gradient(-45deg, transparent 47%, #000 47% 53%, transparent 53%);
+    mask-size:
+        var(--cardiovascular-fourth-pattern-size)
+        var(--cardiovascular-fourth-pattern-size);
+    mask-composite: intersect;
+}
+
+.cardiovascular-fourth-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.cardiovascular-fourth-intro {
+    width: min(calc(100% - 48px), 1008px);
+    margin: 0 auto;
+}
+
+.cardiovascular-fourth-title,
+.cardiovascular-fourth-subtitle,
+.cardiovascular-fourth-description,
+.cardiovascular-fourth-step-title,
+.cardiovascular-fourth-step-description,
+.cardiovascular-fourth-schedule-title,
+.cardiovascular-fourth-schedule-description,
+.cardiovascular-fourth-schedule-card-title,
+.cardiovascular-fourth-schedule-card-row {
+    margin: 0;
+}
+
+.cardiovascular-fourth-title {
+    max-width: 872px;
+    margin: 0 auto;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cardiovascular-fourth-subtitle {
+    margin-top: 24px;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.cardiovascular-fourth-description {
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.cardiovascular-fourth-steps-desktop {
+    display: grid;
+    width: min(calc(100% - 48px), 1346px);
+    min-height: 620px;
+    margin: 72px auto 0;
+    grid-template-columns: minmax(250px, 1fr) minmax(350px, 462px) minmax(250px, 1fr);
+    gap: 18px;
+    align-items: center;
+}
+
+.cardiovascular-fourth-step-column {
+    display: flex;
+    min-height: 580px;
+    min-width: 0;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.cardiovascular-fourth-heart {
+    display: block;
+    width: 462px;
+    height: 322px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.cardiovascular-fourth-step {
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    min-width: 230px;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background: linear-gradient(100deg, #e97c95 0%, #c34c67 100%);
+    color: #ffffff;
+}
+
+.cardiovascular-fourth-step-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+}
+
+.cardiovascular-fourth-step-description {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.cardiovascular-fourth-step-column-left .cardiovascular-fourth-step-1 {
+    width: min(100%, 363px);
+    align-self: flex-end;
+}
+
+.cardiovascular-fourth-step-column-left .cardiovascular-fourth-step-2 {
+    width: min(100%, 290px);
+    align-self: flex-start;
+}
+
+.cardiovascular-fourth-step-column-left .cardiovascular-fourth-step-3 {
+    width: min(100%, 363px);
+    align-self: center;
+}
+
+.cardiovascular-fourth-step-column-left .cardiovascular-fourth-step-4 {
+    width: min(100%, 331px);
+    align-self: flex-end;
+}
+
+.cardiovascular-fourth-step-column-right .cardiovascular-fourth-step-5 {
+    width: min(100%, 430px);
+    align-self: flex-start;
+}
+
+.cardiovascular-fourth-step-column-right .cardiovascular-fourth-step-6 {
+    width: min(100%, 280px);
+    align-self: flex-end;
+}
+
+.cardiovascular-fourth-step-column-right .cardiovascular-fourth-step-7 {
+    width: min(100%, 350px);
+    align-self: flex-start;
+}
+
+.cardiovascular-fourth-step-column-right .cardiovascular-fourth-step-8 {
+    width: min(100%, 331px);
+    align-self: center;
+}
+
+.cardiovascular-fourth-steps-mobile {
+    display: none;
+}
+
+.cardiovascular-fourth-schedule {
+    width: 100%;
+    margin-top: 54px;
+}
+
+.cardiovascular-fourth-schedule-heading {
+    position: relative;
+    min-height: 182px;
+    padding-top: 28px;
+    box-sizing: border-box;
+}
+
+.cardiovascular-fourth-pulse {
+    position: absolute;
+    top: 0;
+    width: 453px;
+    height: 122px;
+    object-fit: fill;
+}
+
+.cardiovascular-fourth-pulse-left {
+    left: calc(50% - 720px);
+}
+
+.cardiovascular-fourth-pulse-right {
+    right: calc(50% - 720px);
+}
+
+.cardiovascular-fourth-schedule-copy {
+    position: relative;
+    z-index: 1;
+    width: min(calc(100% - 48px), 1008px);
+    margin: 0 auto;
+}
+
+.cardiovascular-fourth-schedule-title {
+    max-width: 872px;
+    margin: 0 auto;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cardiovascular-fourth-schedule-description {
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.cardiovascular-fourth-schedule-cards {
+    display: grid;
+    width: min(calc(100% - 64px), 1346px);
+    margin: 40px auto 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+}
+
+.cardiovascular-fourth-schedule-column {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cardiovascular-fourth-schedule-card {
+    min-width: 0;
+    padding: 24px 36px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: #c85b72;
+    color: #ffffff;
+}
+
+.cardiovascular-fourth-schedule-card-title {
+    margin-bottom: 24px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+}
+
+.cardiovascular-fourth-schedule-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cardiovascular-fourth-schedule-card-row {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.cardiovascular-fourth-schedule-card-row strong {
+    font-weight: 700;
+}
+
+.cardiovascular-fourth-carousel {
+    display: none;
+}
+
+@media (max-width: 1100px) and (min-width: 769px) {
+    .cardiovascular-fourth-steps-desktop {
+        grid-template-columns: minmax(220px, 1fr) minmax(300px, 360px) minmax(220px, 1fr);
+    }
+
+    .cardiovascular-fourth-step-title,
+    .cardiovascular-fourth-schedule-card-title {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .cardiovascular-fourth-step-description,
+    .cardiovascular-fourth-schedule-card-row {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardiovascular-fourth-section {
+        --cardiovascular-fourth-pattern-size: 70px;
+        padding: 32px 0;
+        border-top-width: 12px;
+    }
+
+    .cardiovascular-fourth-intro {
+        width: min(calc(100% - 40px), 350px);
+        text-align: center;
+    }
+
+    .cardiovascular-fourth-title {
+        font-size: 30px;
+        line-height: 36px;
+        overflow-wrap: anywhere;
+    }
+
+    .cardiovascular-fourth-subtitle,
+    .cardiovascular-fourth-description {
+        margin-top: 16px;
+    }
+
+    .cardiovascular-fourth-subtitle {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .cardiovascular-fourth-description {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .cardiovascular-fourth-steps-desktop {
+        display: none;
+    }
+
+    .cardiovascular-fourth-steps-mobile {
+        display: block;
+        margin-top: 32px;
+    }
+
+    .cardiovascular-fourth-steps-mobile .cardiovascular-fourth-heart {
+        width: min(320px, calc(100% - 40px));
+        height: auto;
+        margin: 0 auto;
+        aspect-ratio: 320 / 223;
+    }
+
+    .cardiovascular-fourth-mobile-step-list {
+        display: flex;
+        width: min(calc(100% - 40px), 350px);
+        margin: 32px auto 0;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cardiovascular-fourth-step {
+        width: 100%;
+        min-width: 0;
+        gap: 8px;
+        padding: 12px 24px;
+    }
+
+    .cardiovascular-fourth-step-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .cardiovascular-fourth-step-description {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .cardiovascular-fourth-schedule {
+        margin-top: 32px;
+    }
+
+    .cardiovascular-fourth-schedule-heading {
+        display: flex;
+        min-height: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardiovascular-fourth-pulse {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 416px;
+        height: 112px;
+        max-width: none;
+        flex: 0 0 112px;
+    }
+
+    .cardiovascular-fourth-pulse-right {
+        display: none;
+    }
+
+    .cardiovascular-fourth-schedule-copy {
+        width: min(calc(100% - 40px), 350px);
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    .cardiovascular-fourth-schedule-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .cardiovascular-fourth-schedule-description {
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .cardiovascular-fourth-schedule-cards {
+        display: none;
+    }
+
+    .cardiovascular-fourth-carousel {
+        display: block;
+        margin-top: 16px;
+    }
+
+    .cardiovascular-fourth-carousel .kaz-tarih-carousel-container {
+        gap: 16px;
+        margin-left: 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .cardiovascular-fourth-carousel .kaz-tarih-carousel-card {
+        flex: 0 0 min(350px, calc(100vw - 40px));
+        margin-left: 0;
+    }
+
+    .cardiovascular-fourth-schedule-card {
+        padding: 24px;
+    }
+
+    .cardiovascular-fourth-schedule-card-title {
+        margin-bottom: 16px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .cardiovascular-fourth-schedule-card-content {
+        gap: 16px;
+    }
+
+    .cardiovascular-fourth-schedule-card-row {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 374px) {
+    .cardiovascular-fourth-title,
+    .cardiovascular-fourth-schedule-title {
+        font-size: 27px;
+        line-height: 32px;
+    }
+
+    .cardiovascular-fourth-step-title,
+    .cardiovascular-fourth-schedule-card-title {
+        font-size: 25px;
+        line-height: 31px;
+    }
+}

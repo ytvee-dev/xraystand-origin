@@ -1,4 +1,40 @@
 .cardiovascular-container {
+    --cardiovascular-header-inline-offset: 20px;
     width: 100%;
     overflow: hidden;
+}
+
+.cardiovascular-logo {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 103px;
+    height: 49px;
+    color: #c34c67;
+}
+
+.cardiovascular-logo svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .cardiovascular-container {
+        --cardiovascular-header-inline-offset: 21px;
+    }
+
+    .cardiovascular-container .centered-header-wrapper * {
+        transform: none;
+    }
+
+    .cardiovascular-container .centered-application-header {
+        padding-right: var(--cardiovascular-header-inline-offset);
+        padding-left: var(--cardiovascular-header-inline-offset);
+    }
+
+    .cardiovascular-logo {
+        width: 67px;
+        height: 30px;
+    }
 }
