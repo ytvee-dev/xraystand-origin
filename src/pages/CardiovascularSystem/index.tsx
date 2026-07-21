@@ -7,6 +7,7 @@ import CoverSection from "@modules/cardiovascularSystem/Sections/CoverSection";
 import FirstSection from "@modules/cardiovascularSystem/Sections/FirstSection";
 import SecondSection from "@modules/cardiovascularSystem/Sections/SecondSection";
 import ThirdSection from "@modules/cardiovascularSystem/Sections/ThirdSection";
+import FourthSection from "@modules/cardiovascularSystem/Sections/FourthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -62,6 +63,10 @@ const CardiovascularSystem: React.FC = () => {
                 <FirstSection content={textContent.firstSection} />
                 <SecondSection content={textContent.secondSection} />
                 <ThirdSection content={textContent.thirdSection} />
+                <FourthSection
+                    content={textContent.fourthSection}
+                    schedule={textContent.fifthSection}
+                />
             </BrightnessLayout>
         </div>
     );
