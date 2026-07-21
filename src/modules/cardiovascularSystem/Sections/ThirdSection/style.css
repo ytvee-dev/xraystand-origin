@@ -206,20 +206,8 @@
 }
 
 @media (max-width: 1200px) and (min-width: 769px) {
-    .cardiovascular-third-title {
-        font-size: 40px;
-        line-height: 44px;
-    }
-
-    .cardiovascular-third-description {
-        font-size: 22px;
-        line-height: 28px;
-    }
-
     .cardiovascular-third-group-title {
         width: min(calc(100% - 460px), 560px);
-        font-size: 38px;
-        line-height: 42px;
     }
 
     .cardiovascular-third-pulse-left {
@@ -230,15 +218,6 @@
         right: calc(50% - 650px);
     }
 
-    .cardiovascular-third-card-title {
-        font-size: 25px;
-        line-height: 30px;
-    }
-
-    .cardiovascular-third-card-description {
-        font-size: 20px;
-        line-height: 25px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -348,14 +327,5 @@
     .cardiovascular-third-card-description {
         font-size: 18px;
         line-height: 20px;
-    }
-}
-
-@media (max-width: 374px) {
-    .cardiovascular-third-title,
-    .cardiovascular-third-group-title,
-    .cardiovascular-third-card-title {
-        font-size: 27px;
-        line-height: 32px;
     }
 }
