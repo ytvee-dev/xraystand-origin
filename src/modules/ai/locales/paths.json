@@ -1,0 +1,27 @@
+{
+    "coverBg": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784749711/cover_bg_dvp4sp.webp",
+    "otherSectionsBg": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784751628/bg_1_z9fb7g.webp",
+    "yellowRobot": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784751767/yellow_robot_1_abpcvx.webp",
+    "figures": {
+        "brown": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784749979/brown_figure_rvc4rb.webp",
+        "purple": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784750116/purple_figure_yk8tiw.webp",
+        "green": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784751271/green_figure_nzsz2a.webp",
+        "blue": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784751461/blue_figure_ttusnc.webp"
+    },
+    "modernAiCards": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784751955/dna_1_tevvv9.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784752084/science_and_discoveries_1_egw1ag.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784752249/hard_games_1_jjvn4u.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784752393/art_of_communication_1_rsnkja.webp"
+    ],
+    "promtAnatomyCards": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784752827/role_ruzkbz.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784753265/task_ml4dtn.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784753524/context_1_vlgfky.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784753658/format_osdirq.webp"
+    ],
+    "rulesOfTheGameCards": {
+        "rlhf": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784753903/rlhf_fydubc.webp",
+        "liar": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1784754093/liar_nvjtxm.webp"
+    }
+}
