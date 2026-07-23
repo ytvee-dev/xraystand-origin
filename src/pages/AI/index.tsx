@@ -4,6 +4,7 @@ import * as paths from "@modules/ai/locales/paths.json";
 import * as contentRu from "@modules/ai/locales/rus.json";
 import * as contentKz from "@modules/ai/locales/kaz.json";
 import CoverSection from "@modules/ai/Sections/CoverSection";
+import FirstSection from "@modules/ai/Sections/FirstSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -55,6 +56,7 @@ const AI: React.FC = () => {
             >
                 {!isContentLoaded && <Spinner />}
                 <CoverSection content={textContent.coverSection} />
+                <FirstSection content={textContent.firstSection} />
             </BrightnessLayout>
         </div>
     );
