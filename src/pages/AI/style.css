@@ -1,0 +1,16 @@
+.ai-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ai-footer {
+    background: linear-gradient(#D0D6DC, #7282A2);
+}
+
+.ai-logo {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 103px;
+    height: 49px;
+}
