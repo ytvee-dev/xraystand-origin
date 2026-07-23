@@ -1,0 +1,57 @@
+.ai-first-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-first-bg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.ai-first-figure {
+    width: 697px;
+    height: 757px;
+    position: absolute;
+    top: -5%;
+    left: -15%;
+}
+
+.ai-first-yellow-robot {
+    width: 692px;
+    height: 692px;
+    position: absolute;
+    bottom: -8%;
+    left: 60%;
+}
+
+.ai-first-content-wrapper {
+    margin-top: 80px;
+    z-index: 2;
+}
+
+.ai-title-wrapper {
+    max-width: 1008px;
+    margin-inline: auto;
+    margin-bottom: 50px;
+}
+
+.ai-first-title {
+    font-size: 46px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--text-font);
+    color: #474747;
+    margin-bottom: 33px;
+    text-align: center;
+}
+
+.ai-first-subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    font-family: var(--text-font);
+    color: #474747;
+}
