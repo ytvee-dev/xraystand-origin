@@ -4,7 +4,7 @@ import "./style.css";
 
 interface TextFormatterProps {
     items: ICardsParagraphs[];
-    theme?: "light" | "dark";
+    theme?: "light" | "dark" | "other";
     className?: string;
     style?: CSSProperties;
 }

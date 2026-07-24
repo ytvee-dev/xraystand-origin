@@ -1,6 +1,6 @@
 import React, { type ReactElement } from "react";
 import * as paths from "@modules/ai/locales/paths.json";
-// import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard"
+import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard"
 import { type AiProps } from "@modules/ai/types/index";
 import "./style.css";
 
@@ -18,16 +18,16 @@ const FirstSection: React.FC<AiProps> = ({ content }): ReactElement => {
                     <p className="ai-first-subtitle">{content.subTitle}</p>
                 </div>
 
-                {/* <div className="ai-first-cards-wrapper">
-                    {content.content.map(card => (
+                <div className="ai-first-cards-wrapper">
+                    {content.content.map(card=> (
                         <TextFormatterCard 
                             items={card}
                             theme="other"
                             className="ai-first-section-cards"
-                            key={card.title}
+                            key={card[0].title}
                         />
                     ))}
-                </div> */}
+                </div>
             </div>
         </section>
     );

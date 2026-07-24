@@ -1,13 +1,9 @@
-export type AiCard = {
-    title: string;
-    description: string;
-    content: string[];
-};
+import { type ICardsParagraphs } from "@modules/kazTarih/types/index"
 
 export type AiContent = {
     title: string;
     subTitle: string;
-    content: AiCard[];
+    content: ICardsParagraphs[][];
 };
 
 export interface AiProps {
