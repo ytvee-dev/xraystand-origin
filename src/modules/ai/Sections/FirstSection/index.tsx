@@ -1,10 +1,14 @@
 import React, { type ReactElement } from "react";
 import * as paths from "@modules/ai/locales/paths.json";
-import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard"
+import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
+import Carousel from "@modules/kazTarih/components/Carousel";
 import { type AiProps } from "@modules/ai/types/index";
+import { usePageData } from "@hooks/usePageData";
 import "./style.css";
 
 const FirstSection: React.FC<AiProps> = ({ content }): ReactElement => {
+    const { isMobile } = usePageData();
+
     return (
         <section className="ai-first-section">
             <img src={paths.otherSectionsBg} alt="" className="ai-first-bg"/>
@@ -18,16 +22,29 @@ const FirstSection: React.FC<AiProps> = ({ content }): ReactElement => {
                     <p className="ai-first-subtitle">{content.subTitle}</p>
                 </div>
 
-                <div className="ai-first-cards-wrapper">
-                    {content.content.map(card=> (
-                        <TextFormatterCard 
-                            items={card}
-                            theme="other"
-                            className="ai-first-section-cards"
-                            key={card[0].title}
-                        />
-                    ))}
-                </div>
+                {isMobile ? ( 
+                    <Carousel className="ai-first-cards-carousel">
+                        {content.content.map(card=> (
+                            <TextFormatterCard 
+                                items={card}
+                                theme="other"
+                                className="ai-first-section-cards"
+                                key={card[0].title}
+                            />
+                        ))}
+                    </Carousel>
+                ) : (
+                    <div className="ai-first-cards-wrapper">
+                        {content.content.map(card=> (
+                            <TextFormatterCard 
+                                items={card}
+                                theme="other"
+                                className="ai-first-section-cards"
+                                key={card[0].title}
+                            />
+                        ))}
+                    </div>
+                )}
             </div>
         </section>
     );
