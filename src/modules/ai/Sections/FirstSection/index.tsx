@@ -17,7 +17,7 @@ const FirstSection: React.FC<AiProps> = ({ content }): ReactElement => {
             <img src={paths.yellowRobot} alt="" className="ai-first-yellow-robot"/>
 
             <div className="ai-first-content-wrapper">
-                <div className="ai-title-wrapper">
+                <div className="ai-first-title-wrapper">
                     <h2 className="ai-first-title">{content.title}</h2>
                     <p className="ai-first-subtitle">{content.subTitle}</p>
                 </div>

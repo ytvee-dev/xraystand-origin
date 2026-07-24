@@ -1,6 +1,7 @@
 .ai-container {
     width: 100%;
     overflow: hidden;
+    background: linear-gradient(180deg, #d0d6dc 0%, #e8e9eb 100%);
 }
 
 .ai-footer {
