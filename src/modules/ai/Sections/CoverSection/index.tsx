@@ -1,13 +1,12 @@
 import React from "react";
 import * as paths from "../../locales/paths.json";
-import { type ReactElement } from "react";
 import "./style.css";
 
 interface AiProps {
     title: string;
 }
 
-interface CoverSectionProps {
+export interface CoverSectionProps {
     content: AiProps;
 }
 
