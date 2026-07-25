@@ -1,35 +1,36 @@
 import React from "react";
 import Carousel from "@modules/kazTarih/components/Carousel";
+import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
 import * as paths from "../../locales/paths.json";
 import { type ReactElement } from "react";
 import "./style.css";
 
 interface ApplyInLifeItem {
-  description: string;
+    description: string;
 }
 
 interface AiCardContent {
-  title: string;
-  description: string;
-  applyInLifeDescription: string;
-  applyInLife: ApplyInLifeItem[];
+    title: string;
+    description: string;
+    applyInLifeDescription: string;
+    applyInLife: ApplyInLifeItem[];
 }
 
 interface AiThirdSectionStructure {
-  title: string;
-  subTitle: string;
-  content: AiCardContent[]; 
+    title: string;
+    subTitle: string;
+    content: AiCardContent[];
 }
 
 interface CoverSectionProps {
-  content: AiThirdSectionStructure;
+    content: AiThirdSectionStructure;
 }
 
 const ThirdSection: React.FC<CoverSectionProps> = ({ content }): ReactElement => {
     const { title, subTitle, content: cards } = content;
 
-    const subtitleParagraphs = subTitle 
-        ? subTitle.split(/\n+/).map((paragraph) => paragraph.trim()).filter(Boolean) 
+    const subtitleParagraphs = subTitle
+        ? subTitle.split(/\n+/).map((paragraph) => paragraph.trim()).filter(Boolean)
         : [];
 
     return (
@@ -47,19 +48,21 @@ const ThirdSection: React.FC<CoverSectionProps> = ({ content }): ReactElement =>
             </div>
 
             <div className="ai-third-cards">
+                
                 {cards && cards.length > 0 && (
                     <Carousel className="ai-third-carousel">
                         {cards.map((card, index) => (
-                            <div 
-                                className="kaz-tarih-carousel-card ai-third-card" 
-                                key={index}
-                            >
+                            <div className="kaz-tarih-carousel-card ai-third-card" key={index}>
                                 <div className="ai-card-header">
                                     <h2 className="ai-card-title">{card.title}</h2>
                                 </div>
 
                                 <div className="ai-card-body">
-                                    <p className="ai-card-description">{card.description}</p>
+                                    <p className="ai-card-description">
+                                        {card.description.split(/\*\*([\s\S]*?)\*\*/g).map((chunk, i) =>
+                                            i % 2 === 1 ? <strong key={i} className="ai-json-strong">{chunk}</strong> : chunk
+                                        )}
+                                    </p>
 
                                     <div className="ai-card-apply-section">
                                         <p className="ai-card-apply-title">{card.applyInLifeDescription}</p>
