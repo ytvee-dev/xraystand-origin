@@ -1,4 +1,4 @@
-import React from "react";
+import React, { type ReactElement } from "react";
 import * as paths from "../../locales/paths.json";
 import "./style.css";
 

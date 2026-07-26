@@ -57,8 +57,8 @@ const AI: React.FC = () => {
             >
                 {!isContentLoaded && <Spinner />}
                 <CoverSection content={textContent.coverSection} />
-                <ThirdSection content={textContent.thirdSection} />
                 <FirstSection content={textContent.firstSection} />
+                <ThirdSection content={textContent.thirdSection} />
             </BrightnessLayout>
         </div>
     );
