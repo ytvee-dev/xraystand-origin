@@ -74,7 +74,7 @@
 
 .ai-first-section-cards {
     background: rgba(255, 255, 255, 0.2);
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 10px;
     width: 630px;
     margin-bottom: 30px;
@@ -86,6 +86,7 @@
     text-transform: uppercase;
     font-family: var(--text-font);
     font-size: 30px;
+    font-weight: 400;
     text-align: center;
     border-radius: 10px;
     padding: 24px;
