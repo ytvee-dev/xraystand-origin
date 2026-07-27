@@ -112,9 +112,22 @@
     box-sizing: border-box;
     border: 1px solid #ffffff;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.34) 0%,
+            rgba(255, 255, 255, 0.12) 34%,
+            rgba(255, 255, 255, 0.22) 68%,
+            rgba(255, 255, 255, 0.14) 100%
+        ),
+        rgba(255, 255, 255, 0.2);
+    box-shadow:
+        inset 1px 1px 0 rgba(255, 255, 255, 0.8),
+        inset -1px -1px 0 rgba(116, 130, 151, 0.18),
+        inset 0 -14px 30px rgba(153, 173, 202, 0.05),
+        0 8px 24px rgba(75, 87, 108, 0.06);
+    -webkit-backdrop-filter: blur(4px) saturate(1.18);
+    backdrop-filter: blur(4px) saturate(1.18);
 }
 
 .ai-second-modern-grid .ai-second-modern-card,
@@ -145,12 +158,23 @@
     text-align: center;
     text-transform: uppercase;
     background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.22) 0%,
+            rgba(255, 255, 255, 0.02) 42%,
+            rgba(182, 135, 168, 0.12) 100%
+        ),
         radial-gradient(
             110% 160% at 0% 50%,
             #d6b2c8 0%,
             #c4a0b8 55%,
             #c9aac0 100%
         );
+    box-shadow:
+        inset 1px 1px 0 rgba(255, 255, 255, 0.56),
+        inset -1px -1px 0 rgba(123, 83, 112, 0.16);
+    -webkit-backdrop-filter: blur(4px) saturate(1.12);
+    backdrop-filter: blur(4px) saturate(1.12);
 }
 
 .ai-second-modern-card-body {
@@ -204,15 +228,28 @@
     padding: 12px 24px 24px;
     overflow: hidden;
     box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.62);
     border-radius: 10px;
     color: #ffffff;
     background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.22) 0%,
+            rgba(255, 255, 255, 0.02) 40%,
+            rgba(176, 129, 163, 0.12) 100%
+        ),
         radial-gradient(
             135% 170% at 0% 100%,
             #d6b2c8 0%,
             #c3a0b7 58%,
             #caaec0 100%
         );
+    box-shadow:
+        inset 1px 1px 0 rgba(255, 255, 255, 0.58),
+        inset -1px -1px 0 rgba(117, 79, 108, 0.18),
+        0 8px 24px rgba(75, 87, 108, 0.05);
+    -webkit-backdrop-filter: blur(4px) saturate(1.12);
+    backdrop-filter: blur(4px) saturate(1.12);
 }
 
 .ai-second-anatomy-card-image {
@@ -280,9 +317,22 @@
     font-style: normal;
     font-weight: 300;
     line-height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.34) 0%,
+            rgba(255, 255, 255, 0.12) 34%,
+            rgba(255, 255, 255, 0.22) 68%,
+            rgba(255, 255, 255, 0.14) 100%
+        ),
+        rgba(255, 255, 255, 0.2);
+    box-shadow:
+        inset 1px 1px 0 rgba(255, 255, 255, 0.8),
+        inset -1px -1px 0 rgba(116, 130, 151, 0.18),
+        inset 0 -12px 26px rgba(153, 173, 202, 0.05),
+        0 8px 24px rgba(75, 87, 108, 0.06);
+    -webkit-backdrop-filter: blur(4px) saturate(1.18);
+    backdrop-filter: blur(4px) saturate(1.18);
 }
 
 .ai-second-example strong {

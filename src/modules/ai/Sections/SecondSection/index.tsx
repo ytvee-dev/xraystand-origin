@@ -78,10 +78,10 @@ const splitAtFirstColon = (text: string): SplitText | null => {
 
 const splitAtApplicationLabel = (text: string): SplitText | null => {
     const normalizedText = normalizeContentText(text);
-    const label = APPLICATION_LABELS.find(
-        (applicationLabel): boolean =>
-            normalizedText.includes(applicationLabel),
-    );
+    const hasApplicationLabel = (applicationLabel: string): boolean => {
+        return normalizedText.includes(applicationLabel);
+    };
+    const label = APPLICATION_LABELS.find(hasApplicationLabel);
 
     if (!label) {
         return null;
