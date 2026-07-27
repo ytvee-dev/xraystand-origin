@@ -43,28 +43,28 @@
 }
 
 .ai-second-purple-figure {
-    z-index: 1;
-    width: clamp(500px, 48.4vw, 697px);
-    height: auto;
+    z-index: 2;
+    width: 697px;
+    height: 757px;
     object-fit: contain;
     opacity: 0.4;
 }
 
 .ai-second-purple-figure-top {
-    top: -18px;
-    right: min(-8vw, -80px);
+    top: -17px;
+    right: -313px;
     transform: rotate(180deg);
     transform-origin: center;
 }
 
 .ai-second-purple-figure-bottom {
-    bottom: -90px;
-    left: min(-10vw, -120px);
+    bottom: 24px;
+    left: -259px;
 }
 
 .ai-second-content {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     max-width: 1300px;
     margin-inline: auto;
@@ -386,14 +386,6 @@
         height: calc(100% + 720px);
     }
 
-    .ai-second-purple-figure-top {
-        right: -220px;
-    }
-
-    .ai-second-purple-figure-bottom {
-        left: -240px;
-    }
-
     .ai-second-modern-grid,
     .ai-second-anatomy-grid,
     .ai-second-template-grid {
@@ -430,17 +422,14 @@
         height: calc(100% + 500px);
     }
 
-    .ai-second-purple-figure {
-        width: 470px;
-    }
-
     .ai-second-purple-figure-top {
-        top: 0;
-        right: -310px;
+        top: 58px;
+        right: auto;
+        left: clamp(32px, 10.5vw, 42px);
     }
 
     .ai-second-purple-figure-bottom {
-        bottom: -20px;
+        bottom: 24px;
         left: -310px;
     }
 
