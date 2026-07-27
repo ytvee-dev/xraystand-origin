@@ -110,7 +110,7 @@
 .ai-second-template-card {
     overflow: hidden;
     box-sizing: border-box;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     background:
         linear-gradient(
@@ -310,7 +310,7 @@
     margin: 64px auto 0;
     padding: 24px 30px;
     box-sizing: border-box;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     font-size: 18px;
     font-style: normal;
