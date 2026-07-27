@@ -1,6 +1,8 @@
 .ai-first-section {
     position:   relative;
+    z-index: 2;
     overflow: hidden;
+    background: linear-gradient(180deg, #d0d6dc 0%, #e8e9eb 100%);
 }
 
 .ai-first-bg {
