@@ -1,5 +1,6 @@
 .ai-first-section {
     position:   relative;
+    z-index: 2;
     overflow: hidden;
 }
 
