@@ -27,6 +27,7 @@ const FourthSection: React.FC<AiProps> = ({ content }): ReactElement => {
             <img src={paths.otherSectionsBg} alt="" className="ai-fourth-bg"/>
             
             <img src={paths.figures.blue} alt="" className="ai-fourth-figure"/>
+            <img src={paths.rulesOfTheGameCards.rlhf} alt="" className="ai-fourth-lock"/>
 
             <div className="ai-fourth-content-wrapper">
                 <div className="ai-fourth-title-wrapper">

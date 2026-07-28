@@ -21,6 +21,17 @@
     left: -25%;
 }
 
+.ai-fourth-lock {
+    width: 308px;
+    height: 453px;
+    position: absolute;
+    z-index: 2;
+    top: 60%;
+    left: 60%;
+    display: none;
+    opacity: 0.5;
+}
+
 .ai-fourth-content-wrapper {
     margin-top: 80px;
     margin-bottom: 153px;
@@ -227,6 +238,10 @@
         height: 718px;
     }
 
+    .ai-fourth-lock {
+        display: block;
+    }
+
     .ai-fourth-content-wrapper {
         margin-top: 46px;
     }
@@ -260,5 +275,10 @@
     .ai-fourth-figure {
         height: 640px;
         left: -39%;
+    }
+    
+    .ai-fourth-lock {
+        top: 70%;
+        left: 35%;
     }
 }
