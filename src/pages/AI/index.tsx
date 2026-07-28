@@ -7,6 +7,7 @@ import CoverSection from "@modules/ai/Sections/CoverSection";
 import ThirdSection from "@modules/ai/Sections/ThirdSection";
 import FirstSection from "@modules/ai/Sections/FirstSection";
 import SecondSection from "@modules/ai/Sections/SecondSection";
+import FourthSection from "@modules/ai/Sections/FourthSection";
 import { collectFromPathsJson } from "@utils/collectAssetUrls";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
@@ -61,6 +62,7 @@ const AI: React.FC = () => {
                 <FirstSection content={textContent.firstSection} />
                 <SecondSection content={textContent.secondSection} />
                 <ThirdSection content={textContent.thirdSection} />
+                <FourthSection content={textContent.fourthSection} />
             </BrightnessLayout>
         </div>
     );
