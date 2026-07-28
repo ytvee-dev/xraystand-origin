@@ -2,7 +2,7 @@
     position:   relative;
     z-index: 2;
     overflow: hidden;
-    background: linear-gradient(180deg, #d0d6dc 0%, #e8e9eb 100%);
+    background: linear-gradient(180deg, #e8e9eb 0%, #d0d6dc 100%);
 }
 
 .ai-fourth-bg {
@@ -246,20 +246,13 @@
     }
 
     .ai-fourth-cards-carousel .kaz-tarih-carousel-container{
-        gap: 30px;
+        gap: 22px;
         margin-inline: 20px;
     }
-}
-
-@media (max-width: 650px) {
+    
     .ai-fourth-section-cards {
-        width: 520px;
-    }
-}
-
-@media (max-width: 550px) {
-    .ai-fourth-section-cards {
-        width: 470px;
+        width: 350px;
+        flex-shrink: 0;
     }
 }
 
@@ -267,21 +260,5 @@
     .ai-fourth-figure {
         height: 640px;
         left: -39%;
-    }
-
-    .ai-fourth-section-cards {
-        width: 400px;
-    }
-}
-
-@media (max-width: 420px) {
-    .ai-fourth-section-cards {
-        width: 350px;
-    }
-}
-
-@media (max-width: 370px) {
-    .ai-fourth-section-cards {
-        width: 320px;
     }
 }
