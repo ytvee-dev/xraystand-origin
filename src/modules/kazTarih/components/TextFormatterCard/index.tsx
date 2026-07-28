@@ -7,6 +7,8 @@ interface TextFormatterProps {
     theme?: "light" | "dark" | "other";
     className?: string;
     style?: CSSProperties;
+    img?: null | string;
+    imgClassName?: string;
 }
   
 interface CardsWithParagraphs {
@@ -21,6 +23,8 @@ const TextFormatterCard: React.FC<TextFormatterProps> = ({
   theme = "light",
   className,
   style,
+  img,
+  imgClassName
 }: TextFormatterProps) => {
   
   const itemsWithParagraphs: CardsWithParagraphs[] = items.map(item => ({
@@ -36,45 +40,53 @@ const TextFormatterCard: React.FC<TextFormatterProps> = ({
       style={style}
     >
       {itemsWithParagraphs.map((item, index) => (
-        <div key={index} className="text-formatter-block">
-          {item.title.trim().length > 0 && (
-            <p className={`text-formatter-title
-                ${index === 0 && "text-formatter-first-title"}`}>
-              {item.title}
-            </p>
-          )}
-          
-          {item.description.length > 0 &&
-            <div className="text-formatter-paragraph-wrapper">
-              {item.highlightedText && 
-                item.highlightedText.trim().length > 0 && 
-                  <strong className="text-formatter-highlighted-text">
-                    {item.highlightedText}
-                  </strong>
-              }
-                
-              {item.description.map(item => 
-                  <p key={item}>
-                    {item}
-                  </p>
-              )}
-            </div>
-          }
+          <div key={index} className="text-formatter-block">
+            {item.title.trim().length > 0 && (
+              <p className={`text-formatter-title
+                  ${index === 0 && "text-formatter-first-title"}`}>
+                {item.title}
+              </p>
+            )}
 
-          {item.content?.length > 0 && (
-            <ul className="text-formatter-list">
-              {item.content.map((contentItem, contentIndex) => (
-                <li
-                  key={contentIndex}
-                  className="text-formatter-list-item"
-                >
-                  {contentItem}
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      ))}
+            <div className="text-formatter-content-wrapper">
+              <div className="text-formatter-content">
+                {item.description.length > 0 &&
+                  <div className="text-formatter-paragraph-wrapper">
+                    {item.highlightedText && 
+                      item.highlightedText.trim().length > 0 && 
+                        <strong className="text-formatter-highlighted-text">
+                          {item.highlightedText}
+                        </strong>
+                    }
+                      
+                    {item.description.map(item => 
+                        <p key={item}>
+                          {item}
+                        </p>
+                    )}
+                  </div>
+                }
+
+                {item.content?.length > 0 && (
+                  <ul className="text-formatter-list">
+                    {item.content.map((contentItem, contentIndex) => (
+                      <li
+                        key={contentIndex}
+                        className="text-formatter-list-item"
+                      >
+                        {contentItem}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              
+              {img && img.trim().length > 0 &&
+                <img src={img} alt="" className={`text-formatter-img ${imgClassName}`}/>
+              }
+            </div>
+          </div>
+        ))}
     </div>
     );
 };
