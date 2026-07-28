@@ -56,6 +56,8 @@ const AI: React.FC = () => {
                     logoColorMode: "light",
                     madeByColorMode: "light",
                 }}
+                footerBgImage={paths.otherSectionsBg}
+                footerBgImageClass="ai-footer-bg-img"
             >
                 {!isContentLoaded && <Spinner />}
                 <CoverSection content={textContent.coverSection} />
