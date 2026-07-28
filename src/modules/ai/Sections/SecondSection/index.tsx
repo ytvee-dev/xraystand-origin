@@ -315,24 +315,7 @@ const SecondSection = ({
 
     return (
         <section className="ai-second-section">
-            <img
-                className="ai-second-background"
-                src={paths.otherSectionsBg}
-                alt=""
-                aria-hidden="true"
-            />
-            <img
-                className="ai-second-network ai-second-network-left"
-                src={leftNetwork}
-                alt=""
-                aria-hidden="true"
-            />
-            <img
-                className="ai-second-network ai-second-network-right"
-                src={rightNetwork}
-                alt=""
-                aria-hidden="true"
-            />
+            <img className="ai-second-bg" src={paths.otherSectionsBg} alt="" />
             <img
                 className="ai-second-purple-figure ai-second-purple-figure-top"
                 src={paths.figures.purple}
