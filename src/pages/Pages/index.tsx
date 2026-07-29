@@ -175,6 +175,15 @@ const pagesInfo: IPageInfo[] = [
         isClickable: true,
     },
     {
+        id: paths.AI.id,
+        path: paths.AI.path,
+        title: "Искусственный интеллект",
+        description:
+            "Интерактивные материалы об искусственном интеллекте и современных технологиях",
+        status: "active",
+        isClickable: true,
+    },
+    {
         id: paths.IMPLEMENTATION.id,
         path: paths.IMPLEMENTATION.path,
         title: "Implementation",

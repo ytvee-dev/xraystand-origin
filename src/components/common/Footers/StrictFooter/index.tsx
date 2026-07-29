@@ -20,6 +20,8 @@ interface IStrictFooterProps {
     meta: IStrictFooterContent;
     sx?: IStrictFooterSX;
     className?: string;
+    bgImage?: string;
+    bgImgClass?: string;
 }
 
 const Footer = ({
@@ -33,6 +35,8 @@ const Footer = ({
         madeByColorMode: "light",
     },
     className,
+    bgImage,
+    bgImgClass
 }: IStrictFooterProps): ReactElement => {
     const dispatch = useDispatch();
     const madeBySrc =
@@ -59,64 +63,70 @@ const Footer = ({
                 position: sx?.position,
             }}
         >
-            <div className="footer-content-wrapper">
-                <div className="footer-logo-container">
-                    <svg>
-                        <use href={logoHref} />
-                    </svg>
-                </div>
-                <div className="footer-information-container">
-                    <div
-                        className="footer-description-container"
-                        style={{ color: sx?.textColor }}
-                    >
-                        {meta.content.description}
+            <div className="footer-all-content-wrapper">
+                <div className="footer-content-wrapper">
+                    <div className="footer-logo-container">
+                        <svg>
+                            <use href={logoHref} />
+                        </svg>
                     </div>
-                    <div
-                        className="footer-links-container"
-                        style={{ color: sx?.boldTextColor }}
-                    >
-                        <p>{meta.content.buttonsText.support}</p>
-                        <p
-                            onClick={handlePolicyClick}
-                            style={{ cursor: "pointer" }}
-                            className="privacy-policy-link"
+                    <div className="footer-information-container">
+                        <div
+                            className="footer-description-container"
+                            style={{ color: sx?.textColor }}
                         >
-                            {meta.content.buttonsText.privacy}
-                        </p>
+                            {meta.content.description}
+                        </div>
+                        <div
+                            className="footer-links-container"
+                            style={{ color: sx?.boldTextColor }}
+                        >
+                            <p>{meta.content.buttonsText.support}</p>
+                            <p
+                                onClick={handlePolicyClick}
+                                style={{ cursor: "pointer" }}
+                                className="privacy-policy-link"
+                            >
+                                {meta.content.buttonsText.privacy}
+                            </p>
+                        </div>
+                    </div>
+                    <div className="footer-contacts-container">
+                        <p style={{ color: sx?.boldTextColor }}>Контакты</p>
+                        <span style={{ color: sx?.textColor }}>
+                            {meta.contacts.email}
+                        </span>
+                        <span style={{ color: sx?.textColor }}>
+                            {meta.contacts.phone}
+                        </span>
                     </div>
                 </div>
-                <div className="footer-contacts-container">
-                    <p style={{ color: sx?.boldTextColor }}>Контакты</p>
-                    <span style={{ color: sx?.textColor }}>
-                        {meta.contacts.email}
-                    </span>
-                    <span style={{ color: sx?.textColor }}>
-                        {meta.contacts.phone}
-                    </span>
-                </div>
-            </div>
-            <div
-                className="footer-divider"
-                style={{ borderColor: sx?.boldTextColor }}
-            ></div>
-            <div className="footer-labels-container">
                 <div
-                    className="footer-copyright"
-                    style={{ color: sx?.copyrightColor }}
-                >
-                    {meta.copyright}
-                </div>
-                <a
-                    href={meta.content.madeBy.link}
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <div className="footer-made-by">
-                        <img src={madeBySrc} />
+                    className="footer-divider"
+                    style={{ borderColor: sx?.boldTextColor }}
+                ></div>
+                <div className="footer-labels-container">
+                    <div
+                        className="footer-copyright"
+                        style={{ color: sx?.copyrightColor }}
+                    >
+                        {meta.copyright}
                     </div>
-                </a>
+                    <a
+                        href={meta.content.madeBy.link}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <div className="footer-made-by">
+                            <img src={madeBySrc} />
+                        </div>
+                    </a>
+                </div>
             </div>
+
+            {bgImage && 
+                <img src={bgImage} alt="" className={bgImgClass}/>
+            }
         </footer>
     );
 };

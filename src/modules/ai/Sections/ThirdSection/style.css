@@ -1,0 +1,339 @@
+.ai-third-section {
+    position: relative;
+    width: 100%;
+    min-height: 1398px;
+    background: linear-gradient(#D0D6DC, #E8E9EB);
+    overflow: hidden;
+}
+
+.ai-figure-green {
+    position: absolute;
+    top: 12%;
+    left: 58%;
+    width: 1011px;
+    z-index: 0;
+}
+
+.ai-third-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.ai-third-text-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 71px 216px 58px;
+    z-index: 1;
+    box-sizing: border-box;
+    gap: 40px;
+}
+
+.ai-third-title {
+    color: #474747;
+    font-family: "Roboto", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 46px;
+    max-width: 1000px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+}
+
+.ai-third-subtitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    white-space: pre-line;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.ai-third-cards {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ai-third-carousel {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.ai-third-carousel .kaz-tarih-carousel-container {
+    display: flex !important;
+    gap: 20px !important;
+    flex-wrap: nowrap !important;
+}
+
+.ai-third-carousel .kaz-tarih-carousel-card {
+    min-width: clamp(280px, 90vw, 630px) !important;
+}
+
+.ai-third-card {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.ai-card-header {
+    background: radial-gradient(#9BCFAF, #37AE6C);
+    border-radius: 10px 10px 0px 0px;
+    padding: 24px;
+}
+
+.ai-card-title {
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    white-space: pre-line;
+}
+
+.ai-card-body {
+    padding: 20px 57px 26px;
+    color: #474747;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    white-space: pre-line;
+    background: #ffffff20;
+    backdrop-filter: blur(2px);
+}
+
+.ai-card-description {
+    margin-top: 0;
+    white-space: pre-line;
+}
+
+.ai-card-apply-section {
+    margin-top: 25px;
+}
+
+.ai-card-apply-title {
+    font-weight: 700;
+    color: #474747;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.ai-bold-description {
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.ai-list-description {
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+.ai-card-apply-item {
+    list-style-type: circle;
+    margin-left: 15px;
+}
+
+
+@media (max-width: 1240px) {
+    .ai-third-text-content {
+        padding: 71px 150px 58px;
+    }
+
+    .ai-third-carousel {
+        max-width: 1100px;
+    }
+
+    .ai-third-subtitle {
+        padding-top: 20px;
+    }
+
+    .ai-figure-green {
+        left: 50%;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .ai-third-text-content {
+        padding: 71px 100px 40px;
+    }
+
+    .ai-third-carousel {
+        max-width: 900px;
+    }
+
+    .ai-third-subtitle {
+        font-size: 22px;
+    }
+
+    .ai-third-title {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .ai-figure-green {
+        left: 48%;
+    }
+}
+
+@media (max-width: 935px) {
+    .ai-third-text-content {
+        padding: 50px 80px 40px;
+    }
+
+    .ai-third-carousel {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .ai-third-subtitle {
+        font-size: 20px;
+    }
+
+    .ai-third-title {
+        font-size: 35px;
+        line-height: 44px;
+    }
+
+    .ai-figure-green {
+        left: 45%;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .ai-third-text-content {
+        padding: 50px 60px 40px;
+    }
+
+    .ai-third-carousel {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 18px 30px;
+        box-sizing: border-box;
+    }
+
+    .ai-third-subtitle {
+        font-size: 18px;
+    }
+
+    .ai-third-title {
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+    .ai-card-title {
+        font-size: 28px;
+    }
+
+    .ai-card-header {
+        padding: 20px;
+    }
+
+    .ai-figure-green {
+        left: 20%;
+    }
+}
+
+@media (max-width: 425px) {
+    .ai-third-text-content {
+        padding: 50px 40px;
+    }
+
+    .ai-third-title {
+        font-size: 28px;
+    }
+
+    .ai-third-carousel {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .ai-card-body {
+        padding: 20px;
+    }
+
+    .ai-figure-green {
+        left: -35%;
+        top: 24%;
+
+    }
+}
+
+@media (max-width: 375px) {
+    .ai-third-text-content {
+        padding: 50px 20px;
+    }
+
+    .ai-third-title {
+        font-size: 25px;
+    }
+
+    .ai-third-carousel {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .ai-card-body {
+        padding: 20px 30px;
+    }
+
+    .ai-third-subtitle {
+        font-size: 17px;
+    }
+
+    .ai-card-title {
+        font-size: 25px;
+    }
+
+    .ai-card-header {
+        padding: 15px;
+    }
+
+    .ai-figure-green {
+        left: -19%;
+    }
+}
+
+@media (max-width: 320px) {
+    .ai-card-body {
+        padding: 20px 15px;
+    }
+
+    .ai-figure-green {
+        left: -40%;
+    }
+}

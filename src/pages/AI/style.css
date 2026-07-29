@@ -1,0 +1,39 @@
+.ai-container {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #d0d6dc 0%, #e8e9eb 100%);
+}
+
+.ai-footer {
+    background: linear-gradient(#D0D6DC, #7282A2);
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-footer .footer-all-content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.ai-footer-bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150%;
+    z-index: 2;
+}
+
+.ai-logo {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 103px;
+    height: 49px;
+}
+
+@media (max-width: 800px) {
+    .ai-footer-bg-img {
+        display: none;
+    }
+}

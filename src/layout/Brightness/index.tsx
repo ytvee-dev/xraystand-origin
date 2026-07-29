@@ -22,6 +22,8 @@ export interface IDefaultLayoutProps {
     headerBackgroundColor?: string;
     languageSwitcherClassName?: string;
     footerClassName?: string;
+    footerBgImage?: string; 
+    footerBgImageClass?: string; 
 }
 
 export interface IBrightnessLayoutSX {
@@ -56,6 +58,8 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
     headerBackgroundColor,
     languageSwitcherClassName,
     footerClassName,
+    footerBgImage,
+    footerBgImageClass
 }: IDefaultLayoutProps) => {
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale,
@@ -85,6 +89,8 @@ const BrightnessLayout: React.FC<IDefaultLayoutProps> = ({
                 }
                 sx={sx}
                 className={footerClassName}
+                bgImage={footerBgImage}
+                bgImgClass={footerBgImageClass}
             />
 
             <PrivacyPolicyModal />
