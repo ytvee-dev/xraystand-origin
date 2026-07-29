@@ -57,6 +57,27 @@
     z-index: 2;
 }
 
+@media (min-width: 1540px) {
+  .cardiovascular-system-cover-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardiovascular-system-cover-title-container {
+    left: calc(50% - 770px + 92px); 
+  }
+  
+  .cardiovascular-system-cover-heart {
+    left: calc(50% - 770px + 792px);
+  }
+  
+  .cardiovascular-system-cover-pulse {
+    left: calc(50% - 770px + 586px);
+  }
+}
+
+
 @media (max-width: 1224px) {
     .cardiovascular-system-cover-title-container {
         top: 389px;
