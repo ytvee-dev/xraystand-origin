@@ -115,6 +115,10 @@
     background: radial-gradient(50.63% 50.63% at 47.54% 50%, #34b7dc 0%, #2496cd 100%);
 }
 
+.ai-fourth-hallucination-card .text-formatter-title {
+    overflow-wrap: anywhere;
+}
+
 .ai-fourth-section-cards .text-formatter-paragraph-wrapper p,
 .ai-fourth-section-cards .text-formatter-list-item {
     font-size: 18px;

@@ -8,6 +8,10 @@ import "./style.css";
 
 const FourthSection: React.FC<AiProps> = ({ content }): ReactElement => {
     const { isMobile } = usePageData();
+    const hallucinationCard = content.content[1];
+
+    const getCardClassName = (card: AiProps["content"]["content"][number]) =>
+        `ai-fourth-section-cards${card === hallucinationCard ? " ai-fourth-hallucination-card" : ""}`;
 
     const firstCardsImgArray = [
         '',
@@ -41,7 +45,7 @@ const FourthSection: React.FC<AiProps> = ({ content }): ReactElement => {
                             <TextFormatterCard 
                                 items={card}
                                 theme="other"
-                                className="ai-fourth-section-cards"
+                                className={getCardClassName(card)}
                                 key={card[0].title}
                             />
                         ))}
@@ -53,7 +57,7 @@ const FourthSection: React.FC<AiProps> = ({ content }): ReactElement => {
                             <TextFormatterCard 
                                 items={card}
                                 theme="other"
-                                className="ai-fourth-section-cards"
+                                className={getCardClassName(card)}
                                 key={card[0].title}
                                 img={firstCardsImgArray[index]}
                                 imgClassName="ai-fourth-img-rlhf"
@@ -65,7 +69,7 @@ const FourthSection: React.FC<AiProps> = ({ content }): ReactElement => {
                                 <TextFormatterCard 
                                     items={card}
                                     theme="other"
-                                    className="ai-fourth-section-cards"
+                                    className={getCardClassName(card)}
                                     key={card[0].title}
                                     img={secondCardsImgArray[index]}
                                     imgClassName="ai-fourth-img-liar"
