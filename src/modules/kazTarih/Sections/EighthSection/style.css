@@ -95,23 +95,6 @@
     padding: 1rem;
 }
 
-#kt-eighth-section-card-8,
-#kt-eighth-section-card-9 {
-    max-width: none;
-    width: 564px;
-}
-
-#kt-eighth-section-card-8 img,
-#kt-eighth-section-card-9 img {
-    width: 282px;
-    height: 300px;
-}
-
-#kt-eighth-section-card-8 .css-1kuwa16-MuiCardMedia-root,
-#kt-eighth-section-card-9 .css-1kuwa16-MuiCardMedia-root {
-    width: 50%;
-}
-
 .kt-eighth-section-ds .ds-notification-block-list {
     padding-left: 2rem;
 }

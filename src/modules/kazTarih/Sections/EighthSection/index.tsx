@@ -38,7 +38,6 @@ const EighthSection = ({
                         {content.cards.map(
                             (cardData: ICardData, index: number) => (
                                 <DSCard
-                                    id={`kt-eighth-section-card-${index}`}
                                     key={`kt-card-index-${index}`}
                                     className="kaz-tarih-carousel-card ub-font-family"
                                     imageName={paths.smallCards[index]}
@@ -63,7 +62,6 @@ const EighthSection = ({
                         {content.cards.map(
                             (cardData: ICardData, index: number) => (
                                 <DSCard
-                                    id={`kt-eighth-section-card-${index}`}
                                     key={`kt-card-index-${index}`}
                                     className="ub-font-family"
                                     imageName={paths.smallCards[index]}
