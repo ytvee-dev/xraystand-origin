@@ -7,49 +7,6 @@
     --sound-card-img-size: 242px;
 }
 
-.sound-card-button-wrapper {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.sound-card-button-wrapper:hover {
-    cursor: pointer;
-}
-
-.sound-card-button-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 100%;
-    background: linear-gradient(90deg,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 0.1) 20%,
-            rgba(255, 255, 255, 0.4) 50%,
-            rgba(255, 255, 255, 0.1) 80%,
-            rgba(255, 255, 255, 0) 100%);
-    transform: skewX(-25deg);
-    pointer-events: none;
-
-    animation: sheen 3.5s forwards;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-}
-
-@keyframes sheen {
-    0% {
-        left: -15%;
-    }
-
-    50%,
-    100% {
-        left: 100%;
-    }
-}
-
 .light h3,
 .light .sound-card-content>p {
     color: #522f1b;
@@ -62,6 +19,41 @@
 .sound-card-img {
     width: var(--sound-card-img-size);
     height: var(--sound-card-img-size);
+    cursor: pointer;
+}
+
+.sound-card-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.sound-card-img-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%; 
+    width: 40%;
+    height: 97%;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.1) 20%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.1) 80%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    pointer-events: none;
+    animation: sheen 3s forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sheen {
+    0% {
+        left: -20%;
+    }
+    50%, 100% {
+        left: 120%; 
+    }
 }
 
 .sound-card-content {
