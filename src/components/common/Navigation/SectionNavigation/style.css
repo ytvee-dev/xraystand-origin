@@ -12,8 +12,17 @@
     background: #ECEEE1 !important;
 }
 
+.drawer-default .MuiDrawer-paper {
+    margin-top: 72px;
+}
+
 @media (max-width: 600px) {
     .drawer-home .MuiDrawer-paper {
         margin-top: 54px;
     }
+    
+    .drawer-default .MuiDrawer-paper {
+        margin-top: 42px;
+    }
+
 }
