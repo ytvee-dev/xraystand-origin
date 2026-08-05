@@ -96,7 +96,7 @@ export const paths = {
     },
     CARDIOVASCULAR_SYSTEM: {
         id: "CardiovascularSystem",
-        path: "/med-cardiovascular",
+        path: "/cardiovascular",
     },
     AI: {
         id:"AI",

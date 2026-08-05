@@ -50,11 +50,14 @@ const SoundCards = ({
             className={`sound-card-wrapper ${theme == "light" ? "light" : ""} ${imgSide == "right" ? "img-right" : ""}`}
             key={cardContent.title}
         >
-            <img
-                className="sound-card-img"
-                src={cardContent.img}
-                alt={cardContent.title}
-            />
+                    
+            <div className="sound-card-img-container" onClick={handlePlaySound}>
+                <img
+                    className="sound-card-img"
+                    src={cardContent.img}
+                    alt={cardContent.title}
+                />
+            </div>
 
             <div className="sound-card-content">
                 <h3>{cardContent.title}</h3>
@@ -62,7 +65,6 @@ const SoundCards = ({
 
                 <div
                     className="sound-card-button-wrapper"
-                    onClick={handlePlaySound}
                 >
                     <DSNotification
                         content={cardContent.soundDescription}

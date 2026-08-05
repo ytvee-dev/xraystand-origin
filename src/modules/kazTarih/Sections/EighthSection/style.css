@@ -57,13 +57,20 @@
 }
 
 .kt-eighth-section-header .kt-description {
+    max-width: 1152px;
     width: 70%;
 
     color: #f9f8f7;
 }
 
+.kt-eighth-section-content .kaz-tarih-carousel {
+    margin-inline: 20px;
+}
+
 .kt-eighth-section-cards-container {
-    width: 80%;
+    max-width: 1152px;
+    width: fit-content;
+    margin-inline: 10px;
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -86,17 +93,6 @@
 
 .css-1kuwa16-MuiCardMedia-root {
     padding: 1rem;
-}
-
-#kt-eighth-section-card-8,
-#kt-eighth-section-card-9 {
-    max-width: none;
-    width: 564px;
-}
-
-#kt-eighth-section-card-8 .css-1kuwa16-MuiCardMedia-root,
-#kt-eighth-section-card-9 .css-1kuwa16-MuiCardMedia-root {
-    width: 50%;
 }
 
 .kt-eighth-section-ds .ds-notification-block-list {
