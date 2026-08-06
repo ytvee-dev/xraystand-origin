@@ -3,7 +3,6 @@
     gap: 24px;
     padding: 44px 0;
     color: #e6bb86;
-
     --sound-card-img-size: 242px;
 }
 
@@ -15,6 +14,11 @@
 .sound-card-wrapper.img-right {
     flex-direction: row-reverse;
 }
+
+ .ds-notification {
+    cursor:default;
+ }
+
 
 .sound-card-img {
     width: var(--sound-card-img-size);
@@ -28,13 +32,36 @@
     border-radius: 8px;
 }
 
+.sound-card-img-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(10);
+    opacity: 0;
+    transition: transform 0.4s, opacity 0.6s;
+    pointer-events: none;
+    z-index: 2; 
+}
+
+.sound-card-img-container:active::before {
+    transform: scale(0);
+    opacity: 1;
+    transition: 0s; 
+}
+
 .sound-card-img-container::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0%; 
     width: 40%;
-    height: 97%;
+    height: 98.5%; 
     background: linear-gradient(90deg,
             rgba(255, 255, 255, 0) 0%,
             rgba(255, 255, 255, 0.1) 20%,
@@ -45,6 +72,7 @@
     pointer-events: none;
     animation: sheen 3s forwards;
     animation-iteration-count: infinite;
+    z-index: 3; 
 }
 
 @keyframes sheen {
@@ -81,6 +109,11 @@
         width: 100%;
         height: auto;
     }
+
+    .sound-card-img-container::after {
+    width: 40%;
+    height: 100%;
+}
 }
 
 @media (max-width: 480px) {
