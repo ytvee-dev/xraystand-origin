@@ -1,0 +1,55 @@
+{
+    "backgrounds": {
+        "coverSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786442987/cover-bg_1_yhmx9g.webp"
+        ],
+        "firstSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786443140/ffirst-section-img_1_aw0seb.webp"
+        ],
+        "secondSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786466439/second-top-img_1_zuqkw3.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786466404/second-bottom-img_1_zvwy5c.webp"
+        ],
+        "thirdSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786466660/third-top-image_dozbvo.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786466643/third-bottom-image_1_qa2r3j.webp"
+        ],
+        "fourthSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786466667/fourth-top-image_1_ukx0hu.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786466724/fourth-bottom-image_1_afc9l6.webp"
+        ]
+    },
+    "images": {
+        "secondSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467383/second-img-cards-1_1_vuzsu4.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467387/second-img-cards-2_1_cztcqm.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467390/second-img-cards-3_1_awim8r.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467394/second-img-cards-4_1_yuimvl.webp"
+        ],
+        "fourthSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467917/fourth-img-1_1_kzrees.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786468212/fourth-img-2_1_kxxnfs.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786468454/fourth-img-3_1_izjszb.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467921/fourth-img-4_1_qgzmkk.webp"
+        ]
+    },
+    "cards": {
+        "firstSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467203/first-img-cards_wb0l6y.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467195/first-img-cards-2_1_mxlbtb.webp"
+        ],
+        "thirdSection": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467768/third-img-cards-1_1_jg4moe.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467776/third-img-cards-2_1_b7axlk.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467906/third-img-cards-3_1_xhbfod.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467773/third-img-cards-4_1_vbq9h3.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467910/third-img-cards-5_1_wnvipy.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786467929/third-img-cards-6_1_cubip9.webp"
+        ]
+    },
+    "coverSection": {
+        "aiIcon": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786468485/Ai-icon_am0idj.webp",
+        "userIcon": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786468481/icon_japblm.webp",
+        "checkmark": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1786468477/Done_all_alt_round_light_1_1_npx7ed.webp"
+    }
+}
