@@ -1,0 +1,135 @@
+.ai-profession-first-section-theory {
+    position: relative;
+    margin-top: 77px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-profession-first-section-theory-title {
+    background-color: #FFFFFF;
+    color: #EC9461;
+    max-width: 630px;
+    padding: 24px 99px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    font-style: bold;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.theory-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 69px;
+    row-gap: 20px;
+    align-items: start;
+    padding: 41px 56px;
+}
+
+.theory-card {
+    background-color: #D552064D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 24px;
+    white-space: pre-line;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF80;
+    backdrop-filter: blur(3px);
+}
+
+.theory-card-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+.theory-card-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 8px;
+    font-style: Regular;
+}
+
+
+@media (max-width: 1040px) {
+    .theory-cards {
+        column-gap: 35px;
+    }
+}
+
+@media (max-width: 900px) {
+    .theory-cards {
+        column-gap: 20px;
+        padding: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ai-profession-first-section-theory {
+        margin-top: 0px;
+    }
+
+    .ai-profession-first-section-title-container {
+        margin-bottom: 60px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .theory-cards-carousel {
+        width: 100%;
+    }
+
+    .theory-cards-carousel {
+        width: 620px;
+        box-sizing: border-box;
+        margin: 30px auto;
+    }
+
+    .theory-card {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    .ai-profession-first-section-theory-title {
+        font-size: 28px;
+        padding: 24px 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .theory-cards-carousel {
+        width: 580px;
+        margin: 30px auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .ai-profession-first-section-theory-title {
+        padding: 24px 15.5px;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        margin-top: 0px !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .theory-cards-carousel {
+        width: 350px;
+        margin: 30px auto;
+        padding: 10px;
+    }
+}
