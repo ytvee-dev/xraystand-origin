@@ -1,0 +1,223 @@
+.ai-profession-first-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #EC9461;
+}
+
+.ai-profession-first-section-title-container {
+    position: relative;
+    background-color: #FFFFFF;
+    padding: 24px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 10px;
+    margin: 90px 187px;
+}
+
+.ai-profession-first-section-title {
+    color: #474747;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 36px;
+    font-style: bold;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+}
+
+.ai-profession-first-section-subtitle {
+    color: #EC9461;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0;
+}
+
+.ai-profession-first-section-bg-1 {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    width: 1254px;
+    height: 1100px;
+    z-index: 0;
+}
+
+.ai-profession-first-section-bg-2 {
+    position: absolute;
+    top: 50.9%;
+    left: 24.5%;
+    width: 1254px;
+    height: 1254px;
+    z-index: 0;
+}
+
+.ai-profession-first-section-theory {
+    position: relative;
+    margin-top: 77px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-profession-first-section-theory-title {
+    background-color: #FFFFFF;
+    color: #EC9461;
+    width: 100%;
+    max-width: 630px;
+    padding: 24px 99px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    font-style: bold;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.theory-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 69px;
+    row-gap: 20px;
+    align-items: start;
+    padding: 41px 56px;
+}
+
+.theory-card {
+    background-color: #D552064D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 24px;
+    white-space: pre-line;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF80;
+    backdrop-filter: blur(3px);
+}
+
+.theory-card-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+.theory-card-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 8px;
+    font-style: Regular;
+}
+
+.ai-profession-first-section-planned {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding: 24px 56px;
+}
+
+.ai-profession-first-section-planned-title {
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #EC9461;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 1.67% 22.5%;
+    border-radius: 10px;
+}
+
+.ai-profession-methods {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 56px 80px;
+    gap: 37px;
+}
+
+.ai-profession-method {
+    width: 100%;
+    border: 1px solid #FFFFFF80;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ai-profession-method-title {
+    padding: 2% 22.5%;
+    background-color: #FFFFFF;
+    color: #EC9461;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+
+.ai-profession-method-content {
+    padding: 24px;
+    background-color: #D552064D;
+    color: #FFFFFF;
+     backdrop-filter: blur(3px);
+}
+
+.ai-profession-method-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    white-space: pre-line;
+}
+
+.ai-profession-method-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ai-profession-method-content.image-left p {
+    text-align: center;
+}
+
+.ai-profession-method-content.image-right {
+    flex-direction: row-reverse;
+    padding-left: 60px;
+    font-size: 18px;
+}
+
+.ai-profession-method-content.image-right ol {
+    padding-left: 20px;
+}
+
+.ai-profession-method-image {
+    height: auto;
+    object-fit: contain;
+}
+
+.method-image-0 {
+    width: 208px;
+}
+
+.method-image-1 {
+    width: 299px;
+    margin-right: 60px;
+}
