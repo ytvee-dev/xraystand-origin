@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "../../modules/aiProfession/Sections/CoverSection";
+import SecondSection from "../../modules/aiProfession/Sections/SecondSection";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -54,6 +55,7 @@ const AiProfession = () => {
         >
             {!isContentLoaded && <Spinner />}
             <CoverSection content={textContent.coverSection} />
+            <SecondSection content={textContent.secondSection} />
         </BrightnessLayout>
     );
 };

@@ -1,0 +1,283 @@
+.ai-profession-second-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 96px 120px;
+    background-color: #aa3240;
+    color: #ffffff;
+}
+
+.ai-profession-second-circuit {
+    position: absolute;
+    z-index: 0;
+    width: clamp(650px, 87.1vw, 1254px);
+    height: auto;
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+}
+
+.ai-profession-second-circuit-top {
+    top: 0;
+    left: 0;
+    transform: translate(-41.2%, -22.4%);
+}
+
+.ai-profession-second-circuit-bottom {
+    right: 0;
+    bottom: 0;
+    transform: translate(41.2%, 22.4%);
+}
+
+.ai-profession-second-circuit-top-mobile {
+    display: none;
+}
+
+.ai-profession-second-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1248px;
+    margin-inline: auto;
+}
+
+.ai-profession-second-intro-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 80px;
+}
+
+.ai-profession-second-intro {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1138px;
+    margin-inline: auto;
+    padding: 24px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.ai-profession-second-title {
+    margin-bottom: 24px;
+    color: #474747;
+    font-family: var(--text-font);
+    font-size: clamp(34px, 3.2vw, 46px);
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ai-profession-second-subtitle {
+    color: #aa3240;
+    font-family: var(--text-font);
+    font-size: clamp(20px, 1.67vw, 24px);
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.ai-profession-second-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.ai-profession-second-card {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+}
+
+.ai-profession-second-card-reverse {
+    flex-direction: row-reverse;
+}
+
+.ai-profession-second-image-wrapper {
+    display: flex;
+    flex: 0 0 31%;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+
+.ai-profession-second-card-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.ai-profession-second-card-image-1 {
+    width: 364px;
+}
+
+.ai-profession-second-card-image-2 {
+    width: 300px;
+}
+
+.ai-profession-second-card-image-3 {
+    width: 290px;
+}
+
+.ai-profession-second-card-image-4 {
+    width: 310px;
+}
+
+.ai-profession-second-card-text {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-family: var(--text-font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.ai-profession-second-card-text h3 {
+    margin-bottom: 12px;
+    font-family: var(--text-font);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.ai-profession-second-card-text p + p {
+    margin-top: 18px;
+}
+
+.ai-profession-second-card-text ul {
+    margin-top: 4px;
+    padding-left: 22px;
+}
+
+.ai-profession-second-card-text li::marker {
+    font-size: 1.25em;
+}
+
+.ai-profession-second-conclusion {
+    margin-top: 18px;
+}
+
+@media (max-width: 1100px) {
+    .ai-profession-second-section {
+        padding-inline: 56px;
+    }
+
+    .ai-profession-second-card {
+        gap: 32px;
+    }
+
+    .ai-profession-second-card-text {
+        font-size: 16px;
+    }
+
+    .ai-profession-second-card-text h3 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 800px) {
+    .ai-profession-second-section {
+        padding: 48px 20px 72px;
+    }
+
+    .ai-profession-second-circuit-top {
+        display: none;
+    }
+
+    .ai-profession-second-circuit-top-mobile {
+        display: block;
+        top: 100%;
+        left: -20px;
+        transform: translate(-41.2%, -25%);
+    }
+
+    .ai-profession-second-intro-wrapper {
+        margin-bottom: 42px;
+    }
+
+    .ai-profession-second-intro {
+        padding: 22px 16px;
+    }
+
+    .ai-profession-second-title {
+        margin-bottom: 14px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .ai-profession-second-subtitle {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .ai-profession-second-subtitle p + p {
+        margin-top: 10px;
+    }
+
+    .ai-profession-second-cards {
+        gap: 38px;
+    }
+
+    .ai-profession-second-card,
+    .ai-profession-second-card-reverse {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+    }
+
+    .ai-profession-second-image-wrapper {
+        flex: 0 0 auto;
+        width: 100%;
+        min-height: 0;
+    }
+
+    .ai-profession-second-card-image-1 {
+        width: min(100%, 330px);
+    }
+
+    .ai-profession-second-card-image-2 {
+        width: min(90%, 280px);
+    }
+
+    .ai-profession-second-card-image-3 {
+        width: min(86%, 270px);
+    }
+
+    .ai-profession-second-card-image-4 {
+        width: min(90%, 285px);
+    }
+
+    .ai-profession-second-card-text {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .ai-profession-second-card-text h3 {
+        margin-bottom: 10px;
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .ai-profession-second-card-text p + p,
+    .ai-profession-second-conclusion {
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 390px) {
+    .ai-profession-second-section {
+        padding-inline: 18px;
+    }
+
+    .ai-profession-second-intro {
+        padding-inline: 12px;
+    }
+
+    .ai-profession-second-circuit-top-mobile {
+        left: -18px;
+    }
+
+}
