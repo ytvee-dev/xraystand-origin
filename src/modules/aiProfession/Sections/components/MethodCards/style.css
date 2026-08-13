@@ -1,0 +1,187 @@
+.ai-profession-methods {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 56px 80px;
+    gap: 37px;
+}
+
+.ai-profession-method {
+    width: 100%;
+    border: 1px solid #FFFFFF80;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ai-profession-method-title {
+    padding: 2% 22.5%;
+    background-color: #FFFFFF;
+    color: #EC9461;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+
+.ai-profession-method-content {
+    padding: 24px;
+    background-color: #D552064D;
+    color: #FFFFFF;
+    backdrop-filter: blur(3px);
+}
+
+.ai-profession-method-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    white-space: pre-line;
+}
+
+.ai-profession-method-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ai-profession-method-content.image-left p {
+    text-align: center;
+}
+
+.ai-profession-method-content.image-right {
+    flex-direction: row-reverse;
+    padding-left: 60px;
+    font-size: 18px;
+}
+
+.ai-profession-method-content.image-right ol {
+    padding-left: 20px;
+}
+
+.ai-profession-method-image {
+    height: auto;
+    object-fit: contain;
+}
+
+.method-image-0 {
+    width: 208px;
+}
+
+.method-image-1 {
+    width: 299px;
+    margin-right: 60px;
+}
+
+@media (max-width: 970px) {
+    .ai-profession-method-content.image-right {
+        padding-left: 20px;
+    }
+
+    .method-image-1 {
+        margin-right: 20px;
+        width: 208px;
+    }
+}
+
+.ai-profession-method-button {
+    display: none;
+}
+
+.ai-profession-method-modal,
+.css-rvoa5x-MuiTypography-root-MuiDialogTitle-root {
+    color: #EC9461;
+}
+
+.ai-profession-method-modal-description,
+.ai-profession-method-modal-second-description,
+.ai-profession-method-modal-final {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+.ai-profession-method-modal-list {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.ai-profession-method-modal-list-item strong {
+    font-weight: 700;
+}
+
+@media (max-width: 780px) {
+    .ai-profession-method-content {
+        display: block;
+    }
+
+    .ai-profession-method-image {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ai-profession-method-button {
+        display: block;
+        width: 100%;
+        margin: 15px auto 0;
+        padding: 17px 5px;
+        background-color: #ffffff;
+        border: 2px solid #ec9461;
+        border-radius: 10px;
+        color: #ec9461;
+        font-family: "Roboto", sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .ai-profession-method-modal {
+        max-height: 500px;
+        overflow-y: auto;
+        padding-right: 8px;
+    }
+
+    .ai-profession-method-content.image-left p {
+        display: none;
+    }
+
+    .ai-profession-method-content.image-right p {
+        display: none;
+    }
+
+    .ai-profession-method-title {
+        padding: 20px 24px;
+    }
+
+    .ai-profession-methods {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ai-profession-method-title {
+        font-size: 28px;
+    }
+
+    .ai-profession-methods {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .ai-profession-method-title {
+        font-size: 22px;
+        padding: 20px;
+    }
+}
