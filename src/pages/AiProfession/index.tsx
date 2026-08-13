@@ -11,6 +11,7 @@ import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "../../modules/aiProfession/Sections/CoverSection";
 import FirstSection from "../../modules/aiProfession/Sections/FirstSection";
+import SecondSection from "../../modules/aiProfession/Sections/SecondSection";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -56,6 +57,7 @@ const AiProfession = () => {
             {!isContentLoaded && <Spinner />}
             <CoverSection content={textContent.coverSection} />
             <FirstSection title={textContent.firstSection.title} subtitle={textContent.firstSection.subTitle} content={textContent.firstSection.content} />
+            <SecondSection content={textContent.secondSection} />
         </BrightnessLayout>
     );
 };
