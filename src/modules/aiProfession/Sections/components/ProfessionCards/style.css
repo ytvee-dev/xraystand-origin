@@ -1,0 +1,76 @@
+.profession-card {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #CB635180;
+    padding: 24px;
+    align-self: start;
+    backdrop-filter: blur(3px);
+    border: 1px solid #ffffff4c;
+}
+
+.profession-card-title {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.profession-card-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: #ffffff;
+    margin-top: 10px;
+    white-space: pre-line;
+}
+
+.profession-card-image {
+    display: block;
+}
+
+.profession-card-trainer .profession-card-image {
+    width: auto;
+    max-width: 189px;
+    height: auto;
+    margin: 13px auto;
+    object-fit: contain;
+}
+
+
+.profession-card-profession .profession-card-image {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.profession-card-profession:nth-child(2) .profession-card-description {
+    padding: 0px 43px;
+}
+
+@media (max-width: 1220px) {
+    .profession-card-profession:nth-child(2) .profession-card-description {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 390px) {
+    .profession-card-trainer .profession-card-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .profession-card-profession .profession-card-image{
+        margin-bottom: 0;
+    }
+
+    .profession-card-profession .profession-card {
+        padding: 12px;
+    }
+}
