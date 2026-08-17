@@ -25,13 +25,8 @@
 }
 
 .ai-profession-third-title-container {
-    position: relative;
     z-index: 1;
     margin: 80px 187px 50px;
-    text-align: center;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    padding: 24px;
 }
 
 .ai-profession-third-title {
@@ -62,10 +57,7 @@
 }
 
 .ai-profession-third-block-title-container {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    padding: 24px;
-    text-align: center;
+    width: 100%;
 }
 
 .ai-profession-third-block-title {
@@ -101,15 +93,7 @@
 }
 
 .ai-profession-description {
-    color: #FFFFFF;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    background-color: #FFFFFF4D;
-    padding: 24px;
-    border-radius: 10px;
-    border: 1px solid #FFFFFF80;
     margin-bottom: 80px;
-    backdrop-filter: blur(4px);
 }
 
 @media (max-width: 1220px) {

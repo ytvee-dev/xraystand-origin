@@ -1,0 +1,395 @@
+.ai-profession-fourth-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 74px 56px 80px;
+    background-color: #9f1a4c;
+    color: #ffffff;
+}
+
+.ai-profession-fourth-background {
+    position: absolute;
+    z-index: 0;
+    width: min(87.1vw, 1254px);
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+.ai-profession-fourth-background-top {
+    top: 0;
+    left: 0;
+}
+
+.ai-profession-fourth-background-bottom {
+    right: 0;
+    bottom: 0;
+}
+
+.ai-profession-fourth-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.ai-profession-fourth-heading {
+    width: 100%;
+}
+
+.ai-profession-fourth-heading-title {
+    margin-bottom: 24px;
+    color: #474747;
+    font-family: "Roboto", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 46px;
+    text-transform: uppercase;
+}
+
+.ai-profession-fourth-heading-description {
+    color: #82153e;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.ai-profession-fourth-lead {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+    min-height: 420px;
+}
+
+.ai-profession-fourth-lead-text {
+    flex: 1 1 52%;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    white-space: pre-line;
+}
+
+.ai-profession-fourth-lead-image {
+    display: block;
+    flex: 0 1 496px;
+    width: min(38vw, 496px);
+    height: auto;
+    object-fit: contain;
+}
+
+.ai-profession-fourth-analogy {
+    margin-top: 8px;
+}
+
+.ai-profession-fourth-section-title {
+    margin-bottom: 18px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ai-profession-fourth-analogy .ai-profession-fourth-section-title {
+    text-align: left;
+}
+
+.ai-profession-fourth-section-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.ai-profession-fourth-analogy .ai-profession-fourth-section-description {
+    text-align: left;
+}
+
+.ai-profession-fourth-rules {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 34px;
+    margin: 40px 0 80px;
+}
+
+.ai-profession-fourth-rule-card {
+    min-height: 365px;
+    padding: 24px;
+    border: 1px solid #ffffff80;
+    border-radius: 10px;
+    background-color: #ffffff4d;
+    backdrop-filter: blur(4px);
+}
+
+.ai-profession-fourth-rule-title {
+    margin-bottom: 14px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.ai-profession-fourth-rule-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ai-profession-fourth-authorship-heading {
+    margin-bottom: 34px;
+}
+
+.ai-profession-fourth-copyright {
+    max-width: 1200px;
+    margin: 0 auto 42px;
+}
+
+.ai-profession-fourth-media-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-inline: 36px;
+}
+
+.ai-profession-fourth-media {
+    min-height: 230px;
+}
+
+.ai-profession-fourth-media.ai-profession-media-block-right .ai-profession-media-block-text {
+    text-align: right;
+}
+
+.ai-profession-fourth-media .ai-profession-media-block-title {
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.ai-profession-fourth-media .ai-profession-media-block-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ai-profession-fourth-media.ai-profession-media-block-left .ai-profession-media-block-text {
+    text-align: left;
+}
+
+.ai-profession-fourth-media-3 .ai-profession-media-block-image {
+    width: min(27vw, 350px);
+}
+
+.ai-profession-fourth-notice {
+    margin-top: 48px;
+}
+
+@media (max-width: 1100px) {
+    .ai-profession-fourth-section {
+        padding-inline: 40px;
+    }
+
+    .ai-profession-fourth-heading-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .ai-profession-fourth-rule-title,
+    .ai-profession-fourth-section-title,
+    .ai-profession-fourth-media .ai-profession-media-block-title {
+        font-size: 27px;
+    }
+
+    .ai-profession-fourth-lead {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .ai-profession-fourth-section {
+        padding-inline: 24px;
+    }
+
+    .ai-profession-fourth-rules {
+        gap: 20px;
+    }
+
+    .ai-profession-fourth-rule-card {
+        min-height: 390px;
+    }
+
+    .ai-profession-fourth-media-list {
+        padding-inline: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .ai-profession-fourth-section {
+        padding: 30px 20px 48px;
+    }
+
+    .ai-profession-fourth-background {
+        width: 700px;
+    }
+
+    .ai-profession-fourth-heading-title {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .ai-profession-fourth-heading-description {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .ai-profession-fourth-lead {
+        flex-direction: column;
+        gap: 18px;
+        min-height: 0;
+        padding: 20px 0 30px;
+    }
+
+    .ai-profession-fourth-lead-image {
+        order: -1;
+        flex: 0 0 auto;
+        width: min(92vw, 420px);
+    }
+
+    .ai-profession-fourth-lead-text {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .ai-profession-fourth-section-title,
+    .ai-profession-fourth-analogy .ai-profession-fourth-section-title {
+        margin-bottom: 12px;
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .ai-profession-fourth-section-description,
+    .ai-profession-fourth-analogy .ai-profession-fourth-section-description {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .ai-profession-fourth-rules-carousel {
+        width: 100%;
+        margin: 28px auto 44px;
+    }
+
+    .ai-profession-fourth-rules-carousel .kaz-tarih-carousel-container {
+        align-items: stretch;
+    }
+
+    .ai-profession-fourth-rule-card {
+        flex: 0 0 calc(100% - 24px);
+        min-width: 0;
+        min-height: 0;
+        margin-left: 24px;
+    }
+
+    .ai-profession-fourth-rule-title {
+        font-size: 24px;
+    }
+
+    .ai-profession-fourth-rule-description {
+        font-size: 16px;
+    }
+
+    .ai-profession-fourth-authorship-heading {
+        margin-bottom: 26px;
+    }
+
+    .ai-profession-fourth-copyright {
+        margin-bottom: 32px;
+    }
+
+    .ai-profession-fourth-media-list {
+        gap: 34px;
+    }
+
+    .ai-profession-fourth-media {
+        min-height: 0;
+    }
+
+    .ai-profession-fourth-media.ai-profession-media-block-right .ai-profession-media-block-text,
+    .ai-profession-fourth-media.ai-profession-media-block-left .ai-profession-media-block-text {
+        text-align: left;
+    }
+
+    .ai-profession-fourth-media .ai-profession-media-block-title {
+        font-size: 26px;
+    }
+
+    .ai-profession-fourth-media .ai-profession-media-block-description {
+        font-size: 16px;
+    }
+
+    .ai-profession-fourth-media-3 .ai-profession-media-block-image {
+        width: min(92vw, 340px);
+    }
+
+    .ai-profession-fourth-notice {
+        margin-top: 38px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 390px) {
+    .ai-profession-fourth-section {
+        padding-inline: 10px;
+    }
+
+    .ai-profession-fourth-heading {
+        padding: 20px 14px;
+    }
+
+    .ai-profession-fourth-heading-title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .ai-profession-fourth-heading-description {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .ai-profession-fourth-lead-text,
+    .ai-profession-fourth-section-description,
+    .ai-profession-fourth-analogy .ai-profession-fourth-section-description,
+    .ai-profession-fourth-rule-description,
+    .ai-profession-fourth-media .ai-profession-media-block-description {
+        font-size: 15px;
+    }
+
+    .ai-profession-fourth-section-title,
+    .ai-profession-fourth-analogy .ai-profession-fourth-section-title,
+    .ai-profession-fourth-media .ai-profession-media-block-title {
+        font-size: 24px;
+    }
+
+    .ai-profession-fourth-rule-card {
+        padding: 20px;
+    }
+
+    .ai-profession-fourth-rule-title {
+        font-size: 22px;
+    }
+
+    .ai-profession-fourth-notice {
+        padding: 20px;
+        font-size: 15px;
+    }
+}

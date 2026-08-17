@@ -1,4 +1,5 @@
 import React, { type ReactElement } from "react";
+import SectionHeadingPanel from "../components/SectionHeadingPanel";
 import * as paths from "../../locales/path.json";
 import "./style.css";
 
@@ -51,14 +52,13 @@ const SecondSection: React.FC<SecondSectionProps> = ({ content }): ReactElement 
                         alt=""
                         aria-hidden="true"
                     />
-                    <header className="ai-profession-second-intro">
-                        <h2 className="ai-profession-second-title">{content.title}</h2>
-                        <div className="ai-profession-second-subtitle">
-                            {content.subTitle.map((paragraph) => (
-                                <p key={paragraph}>{paragraph}</p>
-                            ))}
-                        </div>
-                    </header>
+                    <SectionHeadingPanel
+                        title={content.title}
+                        description={content.subTitle}
+                        className="ai-profession-second-intro"
+                        titleClassName="ai-profession-second-title"
+                        descriptionClassName="ai-profession-second-subtitle"
+                    />
                 </div>
 
                 <div className="ai-profession-second-cards">

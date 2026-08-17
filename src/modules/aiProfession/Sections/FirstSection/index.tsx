@@ -1,6 +1,7 @@
 import React, { type ReactElement } from "react";
 import MethodsCards from "../components/MethodCards";
 import TheoryCards from "../components/TheoryCards";
+import SectionHeadingPanel from "../components/SectionHeadingPanel";
 import * as paths from "../../locales/path.json";
 import "./style.css";
 
@@ -31,10 +32,14 @@ const FirstSection: React.FC<FirstSectionProps> = ({ title, subtitle, content,})
             <img className="ai-profession-first-section-bg-1" src={paths.backgrounds.firstSection[0]} alt=""/>
             <img className="ai-profession-first-section-bg-2" src={paths.backgrounds.firstSection[0]} alt=""/>
 
-            <div className="ai-profession-first-section-title-container">
-                <h1 className="ai-profession-first-section-title">{title}</h1>
-                <h2 className="ai-profession-first-section-subtitle">{subtitle}</h2>
-            </div>
+            <SectionHeadingPanel
+                title={title}
+                description={subtitle}
+                headingLevel="h1"
+                className="ai-profession-first-section-title-container"
+                titleClassName="ai-profession-first-section-title"
+                descriptionClassName="ai-profession-first-section-subtitle"
+            />
 
             
             <TheoryCards content={content[0]} />

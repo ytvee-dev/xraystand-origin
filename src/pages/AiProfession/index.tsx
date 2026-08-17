@@ -13,6 +13,7 @@ import CoverSection from "../../modules/aiProfession/Sections/CoverSection";
 import FirstSection from "../../modules/aiProfession/Sections/FirstSection";
 import SecondSection from "../../modules/aiProfession/Sections/SecondSection";
 import ThirdSection from "@modules/aiProfession/Sections/ThirdSection";
+import FourthSection from "@modules/aiProfession/Sections/FourthSection";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -60,6 +61,7 @@ const AiProfession = () => {
             <FirstSection title={textContent.firstSection.title} subtitle={textContent.firstSection.subTitle} content={textContent.firstSection.content} />
             <SecondSection content={textContent.secondSection} />
             <ThirdSection content={textContent.thirdSection}/>
+            <FourthSection content={textContent.fourthSection} />
         </BrightnessLayout>
     );
 };

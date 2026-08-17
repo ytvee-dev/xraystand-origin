@@ -1,6 +1,7 @@
 import React, { type ReactElement } from "react";
 import Carousel from "@modules/kazTarih/components/Carousel";
 import { usePageData } from "@hooks/usePageData";
+import SectionTextCard from "../SectionTextCard";
 import "./style.css";
 
 interface ContentItem {
@@ -20,10 +21,14 @@ const TheoryCards: React.FC<TheoryCardsProps> = ({content,}): ReactElement => {
             item.description?.split("\n") ?? [];
 
         return (
-            <div className="kaz-tarih-carousel-card theory-card" key={index}>
-                <h3 className="theory-card-title">{cardTitle}</h3>
-                <p className="theory-card-description">{cardText}</p>
-            </div>
+            <SectionTextCard
+                key={index}
+                title={cardTitle ?? ""}
+                description={cardText ?? ""}
+                className="kaz-tarih-carousel-card theory-card"
+                titleClassName="theory-card-title"
+                descriptionClassName="theory-card-description"
+            />
         );
     });
 
