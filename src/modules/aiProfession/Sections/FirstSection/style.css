@@ -8,7 +8,7 @@
 
 .ai-profession-first-section-title-container {
     z-index: 1;
-    margin: 90px 187px;
+    margin: 32px 187px 90px;
 }
 
 .ai-profession-first-section-title {
@@ -53,7 +53,7 @@
 
 @media (max-width: 1040px) {
     .ai-profession-first-section-title-container {
-        margin: 70px 80px;
+        margin: 32px 80px 70px;
     }
 
     .ai-profession-first-section-title {
@@ -68,17 +68,20 @@
     }
 
     .ai-profession-first-section-title-container {
-        margin-bottom: 60px;
-        margin-right: 50px;
-        margin-left: 50px;
+        margin: 32px 50px 60px;
+    }
+}
+
+@media (max-width: 800px) {
+    .ai-profession-first-section-title-container {
+        margin-right: 20px;
+        margin-left: 20px;
     }
 }
 
 @media (max-width: 700px) {
     .ai-profession-first-section-title-container {
-        margin-right: 30px;
-        margin-left: 30px;
-        margin-bottom: 28px;
+        margin: 32px 20px 28px;
     }
 
     .ai-profession-first-section-title {
@@ -91,17 +94,16 @@
     }
 
     .ai-profession-first-section-theory-title {
-        margin: 30px;
+        margin: 20px;
     }
 }
 
 @media (max-width: 420px) {
     .ai-profession-first-section-title-container {
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 }
-
 
 @media (max-width: 390px) {
     .ai-profession-first-section-subtitle {

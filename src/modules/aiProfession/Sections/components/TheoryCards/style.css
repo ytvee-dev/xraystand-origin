@@ -39,8 +39,6 @@
     padding: 24px;
     white-space: pre-line;
     border-radius: 10px;
-    border: 1px solid #FFFFFF80;
-    backdrop-filter: blur(3px);
 }
 
 .theory-card-title {
@@ -79,11 +77,6 @@
         margin-top: 0px;
     }
 
-    .ai-profession-first-section-title-container {
-        margin-bottom: 60px;
-        margin-right: 50px;
-        margin-left: 50px;
-    }
 }
 
 @media (max-width: 800px) {
@@ -117,8 +110,8 @@
 @media (max-width: 420px) {
     .ai-profession-first-section-theory-title {
         padding: 24px 15.5px;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
         margin-top: 0px !important;
     }
 }

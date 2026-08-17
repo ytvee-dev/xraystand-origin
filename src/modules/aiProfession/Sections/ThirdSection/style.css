@@ -180,6 +180,11 @@
 }
 
 @media (max-width: 768px) {
+    .ai-profession-third-title-container {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
     .ai-profession-third-block {
         padding-inline: 20px;
     }
@@ -215,7 +220,7 @@
 
 @media (max-width: 425px) {
     .ai-profession-third-title-container {
-        margin: 30px;
+        margin: 30px 20px;
     }
 
     .ai-profession-third-block {
@@ -241,7 +246,12 @@
     }
 
     .ai-profession-third-block {
-        padding-inline: 10px;
+        padding-inline: 20px;
+    }
+
+    .ai-profession-third-carousel {
+        width: calc(100% + 20px);
+        margin-left: -10px;
     }
 
 

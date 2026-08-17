@@ -13,7 +13,7 @@ const SectionNotice = ({
     className = "",
 }: ISectionNoticeProps): ReactElement => {
     return (
-        <aside className={`ai-profession-section-notice ${className}`}>
+        <aside className={`ai-profession-section-notice ai-profession-glass-surface ${className}`}>
             <strong className="ai-profession-section-notice-title">{title}</strong>
             <p className="ai-profession-section-notice-description">{description}</p>
         </aside>

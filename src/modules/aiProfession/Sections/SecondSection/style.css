@@ -264,16 +264,12 @@
 }
 
 @media (max-width: 390px) {
-    .ai-profession-second-section {
-        padding-inline: 18px;
-    }
-
     .ai-profession-second-intro {
         padding-inline: 12px;
     }
 
     .ai-profession-second-circuit-top-mobile {
-        left: -18px;
+        left: -20px;
     }
 
 }

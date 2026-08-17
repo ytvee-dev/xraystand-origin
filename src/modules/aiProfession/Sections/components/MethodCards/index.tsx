@@ -72,7 +72,7 @@ const MethodsCards: React.FC<MethodsCardsProps> = ({ content, }): ReactElement =
                     if (!item) return null;
 
                     return (
-                        <div className={`ai-profession-method ai-profession-method-${index}`} key={index}>
+                        <div className={`ai-profession-method ai-profession-method-${index} ai-profession-glass-surface`} key={index}>
                             {item.title && (
                                 <h2 className="ai-profession-method-title">{item.title}</h2>
                             )}

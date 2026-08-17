@@ -65,7 +65,7 @@ const FourthSection = ({ content }: IFourthSectionProps): ReactElement => {
             key={`${index}-${item.title}`}
             title={item.title}
             description={item.description ?? ""}
-            className="kaz-tarih-carousel-card ai-profession-fourth-rule-card"
+            className="kaz-tarih-carousel-card ai-profession-fourth-rule-card ai-profession-glass-surface"
             titleClassName="ai-profession-fourth-rule-title"
             descriptionClassName="ai-profession-fourth-rule-description"
         />

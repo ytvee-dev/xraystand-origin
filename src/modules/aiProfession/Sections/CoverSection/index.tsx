@@ -23,7 +23,7 @@ const CoverSection: React.FC<CoverSectionProps> = ({ content }): ReactElement =>
         <section className="ai-profession-cover-section">
             <img className="ai-profession-cover-bg" src={paths.backgrounds.coverSection[0]} alt="" />
 
-            <div className="ai-profession-chat-content">
+            <div className="ai-profession-chat-content ai-profession-glass-surface">
                 <div className="ai-profession-header">
                     <img className="ai-profession-ai-icon" src={paths.coverSection.aiIcon} alt="" />
                     <div className="ai-profession-text-header">
@@ -39,7 +39,7 @@ const CoverSection: React.FC<CoverSectionProps> = ({ content }): ReactElement =>
 
                 <div className="ai-profession-user-messages">
                     <div className="ai-profession-user">
-                        <p className="ai-profession-message-content">
+                        <p className="ai-profession-message-content ai-profession-glass-surface">
                             {content.content[0].description}
                             <span className="ai-profession-message">
                                 <span className="ai-profession-time">11:23</span>
@@ -50,7 +50,13 @@ const CoverSection: React.FC<CoverSectionProps> = ({ content }): ReactElement =>
                                 />
                             </span>
                         </p>
-                        <img className="ai-profession-user-icon" src={paths.coverSection.userIcon} alt="" />
+                        <div className="ai-profession-user-avatar" aria-hidden="true">
+                            <img
+                                className="ai-profession-user-icon"
+                                src={paths.coverSection.userIcon}
+                                alt=""
+                            />
+                        </div>
                     </div>
                 </div>
 
@@ -58,7 +64,7 @@ const CoverSection: React.FC<CoverSectionProps> = ({ content }): ReactElement =>
                     <div className="ai-profession-ai">
                         <img className="ai-profession-ai-icon ai-icon-message" src={paths.coverSection.aiIcon} alt="" />
 
-                        <div className="ai-profession-ai-message">
+                        <div className="ai-profession-ai-message ai-profession-glass-surface">
                             <p className="ai-profession-ai-description">{content.content[1].description}</p>
 
                             {content.content[1].list && (

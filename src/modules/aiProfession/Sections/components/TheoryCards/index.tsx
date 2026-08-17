@@ -25,7 +25,7 @@ const TheoryCards: React.FC<TheoryCardsProps> = ({content,}): ReactElement => {
                 key={index}
                 title={cardTitle ?? ""}
                 description={cardText ?? ""}
-                className="kaz-tarih-carousel-card theory-card"
+                className="kaz-tarih-carousel-card theory-card ai-profession-glass-surface"
                 titleClassName="theory-card-title"
                 descriptionClassName="theory-card-description"
             />

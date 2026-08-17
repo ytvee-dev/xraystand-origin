@@ -16,8 +16,6 @@
     justify-content: space-between;
     text-align: center;
     background-color: #cb635180;
-    backdrop-filter: blur(3px);
-    border: 1px solid #ffffff4c;
     border-radius: 10px;
     align-self: start;
 }
