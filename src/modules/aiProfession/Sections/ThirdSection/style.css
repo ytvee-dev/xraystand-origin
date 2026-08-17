@@ -146,50 +146,42 @@
 }
 
 @media (max-width: 900px) {
+    .ai-profession-third-block {
+        padding-inline: 20px;
+    }
+
     .ai-profession-third-cards {
+        display: block;
         width: 100%;
         box-sizing: border-box;
-        margin: 30px 20px;
-        gap: 15px;
+        margin: 30px 0;
+        gap: 0;
     }
 
     .ai-profession-third-carousel {
-        max-width: 100%;
         width: 100%;
         margin: 0 auto;
-        padding: 0 10px;
-        box-sizing: border-box;
+    }
+
+    .ai-profession-third-carousel .kaz-tarih-carousel-container {
+        align-items: stretch;
+        gap: 16px;
+        margin-left: 0;
     }
 
     .ai-profession-third-carousel .profession-card {
+        flex: 0 0 100%;
         width: 100%;
-        min-width: 100px;
-        max-width: 500px;
-        margin: 0 10px;
+        min-width: 0;
+        max-width: none;
+        margin: 0;
         box-sizing: border-box;
-        flex-shrink: 0;
     }
 }
 
 @media (max-width: 768px) {
-    .ai-profession-third-cards {
-        margin: 30px 20px;
-    }
-
-    .ai-profession-third-carousel {
-        max-width: 600px;
-    }
-
-    .ai-profession-third-carousel .profession-card {
-        max-width: 400px;
-    }
-
-    .ai-profession-third-carousel .profession-card:first-child {
-        margin-left: 30px;
-    }
-
-    .ai-profession-third-carousel .profession-card:last-child {
-        margin-right: 30px;
+    .ai-profession-third-block {
+        padding-inline: 20px;
     }
 }
 
@@ -197,29 +189,6 @@
     .ai-profession-third-cards {
         margin: 30px auto;
         box-sizing: border-box;
-    }
-
-    .ai-profession-third-carousel {
-        width: 450px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-
-    .ai-profession-third-carousel .profession-card {
-        width: 90%;
-        min-width: 90%;
-        max-width: 90%;
-        margin: 0px 10px;
-        margin-inline: 5%;
-    }
-
-    .ai-profession-third-carousel .profession-card:first-child {
-        margin-left: 30px;
-    }
-
-    .ai-profession-third-carousel .profession-card:last-child {
-        margin-right: 20px;
-        margin-left: 30px;
     }
 
     .ai-profession-third-bg-bottom {
@@ -244,24 +213,13 @@
     }
 }
 
-@media (max-width: 520px) {
-    .ai-profession-third-carousel {
-        max-width: 400px;
-        box-sizing: border-box;
-    }
-
-    .ai-profession-third-carousel .profession-card:first-child {
-        margin-left: 30px;
-    }
-}
-
 @media (max-width: 425px) {
     .ai-profession-third-title-container {
         margin: 30px;
     }
 
     .ai-profession-third-block {
-        padding: 0px 30px;
+        padding-inline: 20px;
     }
 
     .ai-profession-third-title,
@@ -283,7 +241,7 @@
     }
 
     .ai-profession-third-block {
-        padding: 0px 15px;
+        padding-inline: 10px;
     }
 
 
@@ -302,22 +260,6 @@
         line-height: 20px;
     }
 
-    .ai-profession-third-carousel .profession-card {
-        width: 82%;
-        min-width: 82%;
-        max-width: 82%;
-        margin-inline: 5%;
-    }
-
-    .ai-profession-third-carousel .profession-card:first-child {
-        margin-left: 20px;
-    }
-
-    .ai-profession-third-carousel {
-        max-width: 390px;
-        padding: 0px 20px;
-    }
-
     .ai-profession-third-bg-top {
         top: 900px;
         left: -50px;
@@ -333,18 +275,5 @@
     .ai-profession-third-block-title {
         font-size: 25px;
     }
-
-    .ai-profession-third-carousel {
-        max-width: 320px;
-        padding: 0px 20px;
-    }
-
-    .ai-profession-third-carousel .profession-card {
-        width: 80%;
-        min-width: 80%;
-        max-width: 80%;
-        margin-inline: 5%;
-    }
-
 
 }

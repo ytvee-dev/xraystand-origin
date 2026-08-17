@@ -291,13 +291,17 @@
 
     .ai-profession-fourth-rules-carousel .kaz-tarih-carousel-container {
         align-items: stretch;
+        gap: 16px;
+        margin-left: 0;
     }
 
     .ai-profession-fourth-rule-card {
-        flex: 0 0 calc(100% - 24px);
+        flex: 0 0 100%;
+        width: 100%;
         min-width: 0;
+        max-width: none;
         min-height: 0;
-        margin-left: 24px;
+        margin-left: 0;
     }
 
     .ai-profession-fourth-rule-title {
