@@ -1,6 +1,7 @@
 import React, { type ReactElement } from "react";
 import MethodsCards from "../components/MethodCards";
 import TheoryCards from "../components/TheoryCards";
+import SectionHeadingPanel from "../components/SectionHeadingPanel";
 import * as paths from "../../locales/path.json";
 import "./style.css";
 
@@ -18,27 +19,35 @@ interface ContentItem {
     list?: ListItem[];
 }
 
-interface FirstSectionProps {
+interface FirstSectionContent {
     title: string;
-    subtitle: string;
+    subTitle: string;
     content: ContentItem[][];
 }
 
-const FirstSection: React.FC<FirstSectionProps> = ({ title, subtitle, content,}): ReactElement => {
+interface FirstSectionProps {
+    content: FirstSectionContent;
+}
+
+const FirstSection: React.FC<FirstSectionProps> = ({ content }): ReactElement => {
 
     return (
         <section className="ai-profession-first-section">
             <img className="ai-profession-first-section-bg-1" src={paths.backgrounds.firstSection[0]} alt=""/>
             <img className="ai-profession-first-section-bg-2" src={paths.backgrounds.firstSection[0]} alt=""/>
 
-            <div className="ai-profession-first-section-title-container">
-                <h1 className="ai-profession-first-section-title">{title}</h1>
-                <h2 className="ai-profession-first-section-subtitle">{subtitle}</h2>
-            </div>
+            <SectionHeadingPanel
+                title={content.title}
+                description={content.subTitle}
+                headingLevel="h1"
+                className="ai-profession-first-section-title-container"
+                titleClassName="ai-profession-first-section-title"
+                descriptionClassName="ai-profession-first-section-subtitle"
+            />
 
             
-            <TheoryCards content={content[0]} />
-            <MethodsCards content={content.slice(1)} />
+            <TheoryCards content={content.content[0]} />
+            <MethodsCards content={content.content.slice(1)} />
         </section>
     );
 };

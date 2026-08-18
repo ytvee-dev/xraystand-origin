@@ -1,0 +1,34 @@
+.ai-profession-glass-surface {
+    position: relative;
+    box-sizing: border-box;
+    border: 0.5px solid rgba(255, 255, 255, 0.42);
+    background-image: none;
+    -webkit-backdrop-filter: blur(4px) saturate(115%) contrast(102%);
+    backdrop-filter: blur(4px) saturate(115%) contrast(102%);
+}
+
+@supports ((-webkit-mask-composite: xor) or (mask-composite: exclude)) {
+    .ai-profession-glass-surface::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 0.5px;
+        border-radius: inherit;
+        background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.92) 0%,
+            rgba(255, 255, 255, 0.62) 32%,
+            rgba(255, 255, 255, 0.24) 72%,
+            rgba(255, 255, 255, 0.4) 100%
+        );
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+    }
+}

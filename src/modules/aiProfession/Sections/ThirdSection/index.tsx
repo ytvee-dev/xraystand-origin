@@ -3,6 +3,8 @@ import Carousel from "@modules/kazTarih/components/Carousel";
 import { usePageData } from "@hooks/usePageData";
 import ProfessionCard from "../components/ProfessionCards";
 import PracticeCards from "../components/PracticeCards";
+import SectionHeadingPanel from "../components/SectionHeadingPanel";
+import SectionNotice from "../components/SectionNotice";
 import * as paths from "../../locales/path.json";
 import "./style.css";
 
@@ -72,20 +74,23 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ content }): ReactElement =>
             <img className="ai-profession-third-bg-top" src={paths.backgrounds.thirdSection[0]} alt="" />
             <img className="ai-profession-third-bg-bottom" src={paths.backgrounds.thirdSection[1]} alt="" />
 
-            <div className="ai-profession-third-title-container">
-                <h2 className="ai-profession-third-title">{content.title}</h2>
-                <div className="ai-profession-third-subtitles">
-                    {content.subTitle.map((subtitle, index) => (
-                        <p className="ai-profession-third-subtitle" key={index}>{subtitle}</p>
-                    ))}
-                </div>
-            </div>
+            <SectionHeadingPanel
+                title={content.title}
+                description={content.subTitle}
+                className="ai-profession-third-title-container"
+                titleClassName="ai-profession-third-title"
+                descriptionClassName="ai-profession-third-subtitles"
+                descriptionItemClassName="ai-profession-third-subtitle"
+            />
 
             <div className="ai-profession-third-block">
-                <div className="ai-profession-third-block-title-container">
-                    <h2 className="ai-profession-third-block-title">{content.trainer.title}</h2>
-                    <p className="ai-profession-third-block-subtitle">{content.trainer.subTitle}</p>
-                </div>
+                <SectionHeadingPanel
+                    title={content.trainer.title}
+                    description={content.trainer.subTitle}
+                    className="ai-profession-third-block-title-container"
+                    titleClassName="ai-profession-third-block-title"
+                    descriptionClassName="ai-profession-third-block-subtitle"
+                />
 
                 <div className="ai-profession-third-cards">
                     {isMobile ? (
@@ -115,10 +120,13 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ content }): ReactElement =>
             </div>
 
             <div className="ai-profession-third-block">
-                <div className="ai-profession-third-block-title-container">
-                    <h2 className="ai-profession-third-block-title">{content.professions.title}</h2>
-                    <p className="ai-profession-third-block-subtitle">{content.professions.subTitle}</p>
-                </div>
+                <SectionHeadingPanel
+                    title={content.professions.title}
+                    description={content.professions.subTitle}
+                    className="ai-profession-third-block-title-container"
+                    titleClassName="ai-profession-third-block-title"
+                    descriptionClassName="ai-profession-third-block-subtitle"
+                />
 
                 <div className="ai-profession-third-cards ai-profession-third-profession-cards">
                     {isMobile ? (
@@ -148,17 +156,21 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ content }): ReactElement =>
             </div>
 
             <div className="ai-profession-third-block">
-                <div className="ai-profession-third-block-title-container">
-                    <h2 className="ai-profession-third-block-title third-block-title-3">{content.practice.title}</h2>
-                    <p className="ai-profession-third-block-subtitle">{content.practice.subTitle}</p>
-                </div>
+                <SectionHeadingPanel
+                    title={content.practice.title}
+                    description={content.practice.subTitle}
+                    className="ai-profession-third-block-title-container"
+                    titleClassName="ai-profession-third-block-title third-block-title-3"
+                    descriptionClassName="ai-profession-third-block-subtitle"
+                />
 
                 <PracticeCards cards={content.practice.cards} />
 
-                <div className="ai-profession-description">
-                    <strong>{reminderTitle}</strong>
-                    <p>{reminderText}</p>
-                </div>
+                <SectionNotice
+                    title={reminderTitle}
+                    description={reminderText}
+                    className="ai-profession-description"
+                />
             </div>
         </section>
     );

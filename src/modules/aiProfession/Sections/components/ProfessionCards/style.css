@@ -5,8 +5,6 @@
     background-color: #CB635180;
     padding: 24px;
     align-self: start;
-    backdrop-filter: blur(3px);
-    border: 1px solid #ffffff4c;
 }
 
 .profession-card-title {

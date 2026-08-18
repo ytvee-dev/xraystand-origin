@@ -39,8 +39,6 @@
     padding: 24px;
     white-space: pre-line;
     border-radius: 10px;
-    border: 1px solid #FFFFFF80;
-    backdrop-filter: blur(3px);
 }
 
 .theory-card-title {
@@ -79,26 +77,26 @@
         margin-top: 0px;
     }
 
-    .ai-profession-first-section-title-container {
-        margin-bottom: 60px;
-        margin-right: 50px;
-        margin-left: 50px;
-    }
 }
 
 @media (max-width: 800px) {
     .theory-cards-carousel {
         width: 100%;
-    }
-
-    .theory-cards-carousel {
-        width: 620px;
-        box-sizing: border-box;
         margin: 30px auto;
     }
 
+    .theory-cards-carousel .kaz-tarih-carousel-container {
+        gap: 16px;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
     .theory-card {
-        min-width: 300px;
+        flex: 0 0 100%;
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        margin-left: 0;
     }
 }
 
@@ -109,27 +107,17 @@
     }
 }
 
-@media (max-width: 650px) {
-    .theory-cards-carousel {
-        width: 580px;
-        margin: 30px auto;
-        padding: 10px;
-    }
-}
-
 @media (max-width: 420px) {
     .ai-profession-first-section-theory-title {
         padding: 24px 15.5px;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
         margin-top: 0px !important;
     }
 }
 
 @media (max-width: 390px) {
-    .theory-cards-carousel {
-        width: 350px;
-        margin: 30px auto;
-        padding: 10px;
+    .theory-cards-carousel .kaz-tarih-carousel-container {
+        padding-inline: 10px;
     }
 }

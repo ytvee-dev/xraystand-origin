@@ -10,7 +10,7 @@ interface ProfessionCardProps {
 
 const ProfessionCard: React.FC<ProfessionCardProps> = ({ title, description, image, variant }): ReactElement => {
     return (
-        <div className={`profession-card profession-card-${variant}`}>
+        <div className={`profession-card profession-card-${variant} ai-profession-glass-surface`}>
             {variant === "trainer" ? (
                 <div>
                     <h3 className="profession-card-title">{title}</h3>

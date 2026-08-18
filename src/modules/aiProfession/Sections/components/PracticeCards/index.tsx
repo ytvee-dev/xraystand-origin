@@ -32,7 +32,7 @@ const PracticeCards: React.FC<PracticeCardsProps> = ({cards}): ReactElement => {
         <div>
             <div className="practice-cards">
                 {cards.map((card, index) => (
-                    <div className={`practice-card practice-card-${index}`} key={index}>
+                    <div className={`practice-card practice-card-${index} ai-profession-glass-surface`} key={index}>
                         <h3 className="practice-card-title">{card.title}</h3>
 
                         <button className="practice-card-button" onClick={() => openModal(index)}>

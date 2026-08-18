@@ -1,0 +1,35 @@
+.ai-profession-media-block {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    width: 100%;
+}
+
+.ai-profession-media-block-left {
+    flex-direction: row-reverse;
+}
+
+.ai-profession-media-block-text {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.ai-profession-media-block-image {
+    display: block;
+    flex: 0 0 auto;
+    width: min(25vw, 320px);
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 800px) {
+    .ai-profession-media-block,
+    .ai-profession-media-block-left {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .ai-profession-media-block-image {
+        width: min(86vw, 320px);
+    }
+}

@@ -13,6 +13,8 @@ import CoverSection from "../../modules/aiProfession/Sections/CoverSection";
 import FirstSection from "../../modules/aiProfession/Sections/FirstSection";
 import SecondSection from "../../modules/aiProfession/Sections/SecondSection";
 import ThirdSection from "@modules/aiProfession/Sections/ThirdSection";
+import FourthSection from "@modules/aiProfession/Sections/FourthSection";
+import "@modules/aiProfession/Sections/components/glass.css";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -31,7 +33,7 @@ const MainLogo = () => {
                 iconId="logo-color"
                 width="100%"
                 height="100%"
-                color="#ffffff"
+                color="#474747"
             />
         </div>
     );
@@ -51,15 +53,16 @@ const AiProfession = () => {
             logo={<MainLogo />}
             stickyHeader={true}
             isLanguageSwitcher={true}
-            switcherColor="#FFFFFF"
+            switcherColor="#474747"
             sx={pageLayoutSX}
             headerBackgroundColor="transparent"
         >
             {!isContentLoaded && <Spinner />}
             <CoverSection content={textContent.coverSection} />
-            <FirstSection title={textContent.firstSection.title} subtitle={textContent.firstSection.subTitle} content={textContent.firstSection.content} />
+            <FirstSection content={textContent.firstSection} />
             <SecondSection content={textContent.secondSection} />
             <ThirdSection content={textContent.thirdSection}/>
+            <FourthSection content={textContent.fourthSection} />
         </BrightnessLayout>
     );
 };
