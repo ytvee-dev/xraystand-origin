@@ -93,6 +93,8 @@
 .ai-profession-method-modal,
 .css-rvoa5x-MuiTypography-root-MuiDialogTitle-root {
     color: #EC9461;
+    max-width: 350px;
+    height: 450px;
 }
 
 .ai-profession-method-modal-description,
