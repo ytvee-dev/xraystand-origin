@@ -1,0 +1,75 @@
+.practice-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+    margin: 30px 0px;
+}
+
+.practice-card {
+    width: 100%;
+    min-height: 170px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #cb635180;
+    border-radius: 10px;
+    align-self: start;
+}
+
+.practice-card-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.practice-card-button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #E7986F;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+}
+.practice-card-modal-title,
+.practice-card-modal-description {
+    color: #EC9461;
+    padding: 10px;
+}
+
+.practice-card-modal-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.practice-card-modal-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.5;
+    
+}
+
+.practice-card-modal {
+    max-width: 350px;
+    height: 450px;
+}
+
+@media (max-width: 1024px) {
+    .practice-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

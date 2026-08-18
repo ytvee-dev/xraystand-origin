@@ -1,0 +1,12 @@
+.ai-profession-section-notice {
+    padding: 24px;
+    border-radius: 10px;
+    background-color: #ffffff4d;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.ai-profession-section-notice-title {
+    display: block;
+}

@@ -184,6 +184,15 @@ const pagesInfo: IPageInfo[] = [
         isClickable: true,
     },
     {
+        id: paths.AI_PROFESSION.id,
+        path: paths.AI_PROFESSION.path,
+        title: "ИИ и выбор профессии",
+        description:
+            "Как выбрать профессию и подготовиться к изменениям на рынке труда в эпоху искусственного интеллекта",
+        status: "active",
+        isClickable: true,
+    },
+    {
         id: paths.IMPLEMENTATION.id,
         path: paths.IMPLEMENTATION.path,
         title: "Implementation",
