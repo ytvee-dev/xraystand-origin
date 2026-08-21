@@ -1,0 +1,22 @@
+{
+    "coverBg": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787308223/cover_bg_2_hfwjb8.webp",
+    "firstPlant": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787308525/plant_1_1_njlaap.webp",
+    "secondPlant": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787308646/plant_2_1_tlevj6.webp",
+    "thirdPlant": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787308761/plant_3_1_kpothg.webp",
+    "cards": {
+        "firstPresidentPark": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787309020/First_President_s_Park_1_slu2to.webp",
+        "botanicalGargen": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787309229/botanical_garden_1_bhvboy.webp",
+        "almatyPreacher": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787312126/Almaty_preacher_1__11zon_wvcbft.webp",
+        "ileAlatau": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787309447/Ile-Alatau_National_Park_1_lwvk1n.webp",
+        "terrenkur": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787309900/terrenkur_2_vtoqdl.webp",
+        "esentay": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787309983/Esentay_1_czz9qq.webp",
+        "charin": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787311926/Charin_2__11zon_ldbs2s.webp",
+        "altynEmel": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787310368/Altyn_Emel_1_a1tt8l.webp",
+        "platAci": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787310535/plato_aci_1_ggxnzf.webp",
+        "kokZhailau": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787310621/kok_zhailau_1_vv6x0n.webp",
+        "shymBulak": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787310708/ShymBulak_1_ikrbvu.webp",
+        "medeu": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787311142/medeu_1__11zon_clwhwh.webp",
+        "lakeKaindy": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787311212/Lake_Kaindy_1__11zon_jgbeoj.webp",
+        "lakeKolsai": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1787311307/Lake_Kolsai_1__11zon_scg4lx.webp"
+    }
+}
