@@ -399,6 +399,20 @@
         padding: 20px;
         font-size: 15px;
     }
+
+    .ai-profession-fourth-rules-carousel .kaz-tarih-carousel-arrow-left {
+        left: 2px;
+    }
+
+    .ai-profession-fourth-rules-carousel .kaz-tarih-carousel-arrow-right {
+        right: 2px;
+    } 
+
+    .ai-profession-fourth-rules-carousel .kaz-tarih-carousel-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 320px) {
