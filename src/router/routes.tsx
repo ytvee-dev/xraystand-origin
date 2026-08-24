@@ -28,6 +28,7 @@ const EmotionalIntelligence = lazy(
 const CardiovascularSystem = lazy(() => import("@pages/CardiovascularSystem"))
 const AI = lazy(() => import("@pages/AI"))
 const AiProfession = lazy(() => import("@pages/AiProfession"))
+const SafetyInNature = lazy(() => import("@pages/SafetyInNature"))
 
 export const paths = {
     HOME: {
@@ -106,6 +107,10 @@ export const paths = {
     AI_PROFESSION: {
         id:"AI_PROFESSION",
         path: "/ai-pro",
+    },
+    SAFETY_IN_NATURE: {
+        id:"SAFETY_IN_NATURE",
+        path: "/safety-in-nature",
     },
     PAGES: {
         id: "pages",
@@ -202,6 +207,10 @@ const routes: RouteObject[] = [
     {
         ...paths.AI_PROFESSION,
         element: <AiProfession />,
+    },
+    {
+        ...paths.SAFETY_IN_NATURE,
+        element: <SafetyInNature />,
     },
     {
         ...paths.PAGES,
