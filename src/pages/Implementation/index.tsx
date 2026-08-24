@@ -20,39 +20,38 @@ const MainLogo = () => {
     );
 };
 
+const firstSectionIcons = [
+    "natureSafetyTrail",
+    "natureSafetyFire",
+    "natureSafetyTrash",
+    "natureSafetyFlora",
+    "natureSafetyPets",
+    "natureSafetyAnimals",
+    "natureSafetyTransport",
+];
+
+const secondSectionIcons = [
+    "natureSafetyPreparation",
+    "natureSafetyClothes",
+    "natureSafetyWeather",
+    "natureSafetyWildlife",
+    "natureSafetyNotification",
+    "natureSafetyNoise",
+];
+const firstSectionColumns = [
+    [0, 1],
+    [2, 3],
+    [4, 5, 6],
+];
+
+const secondSectionColumns = [
+    [0, 1],
+    [2, 3],
+    [4, 5],
+];
 
 const SeasonPage = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
-
-    const firstSectionIcons = [
-        "natureSafetyTrail",
-        "natureSafetyFire",
-        "natureSafetyTrash",
-        "natureSafetyFlora",
-        "natureSafetyPets",
-        "natureSafetyAnimals",
-        "natureSafetyTransport",
-    ];
-
-    const secondSectionIcons = [
-        "natureSafetyPreparation",
-        "natureSafetyClothes",
-        "natureSafetyWeather",
-        "natureSafetyWildlife",
-        "natureSafetyNotification",
-        "natureSafetyNoise",
-    ];
-    const firstSectionColumns = [
-        [0, 1],
-        [2, 3],
-        [4, 5, 6],
-    ];
-
-    const secondSectionColumns = [
-        [0, 1],
-        [2, 3],
-        [4, 5],
-    ];
 
     return (
         <BrightnessLayout
