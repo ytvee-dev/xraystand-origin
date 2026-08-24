@@ -1,11 +1,9 @@
 import "./style.css";
-import * as path from "../../modules/cardiovascularSystem/locales/path.json";
-import * as contentRu from "../../modules/cardiovascularSystem/locales/rus.json";
-import * as contentKz from "../../modules/cardiovascularSystem/locales/kaz.json";
+import * as contentKz from "../../modules/safetyInNature/locales/kaz.json";
+import * as contentRu from "../../modules/safetyInNature/locales/rus.json"
 import { useLocaleContent } from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
-import CoverSection from "../../modules/cardiovascularSystem/Sections/CoverSection"
-
+import SafetyNatureCard from "@modules/safetyInNature/components/Cards";
 
 const pageLayoutSX = {
     backgroundColor: "#181818",
@@ -25,6 +23,37 @@ const MainLogo = () => {
 
 const SeasonPage = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
+
+    const firstSectionIcons = [
+        "natureSafetyTrail",
+        "natureSafetyFire",
+        "natureSafetyTrash",
+        "natureSafetyFlora",
+        "natureSafetyPets",
+        "natureSafetyAnimals",
+        "natureSafetyTransport",
+    ];
+
+    const secondSectionIcons = [
+        "natureSafetyPreparation",
+        "natureSafetyClothes",
+        "natureSafetyWeather",
+        "natureSafetyWildlife",
+        "natureSafetyNotification",
+        "natureSafetyNoise",
+    ];
+    const firstSectionColumns = [
+        [0, 1],
+        [2, 3],
+        [4, 5, 6],
+    ];
+
+    const secondSectionColumns = [
+        [0, 1],
+        [2, 3],
+        [4, 5],
+    ];
+
     return (
         <BrightnessLayout
             logo={<MainLogo />}
@@ -34,9 +63,33 @@ const SeasonPage = () => {
             headerBackgroundColor="rgb(255, 255, 255)"
             languageSwitcherClassName="kaz-music-language-switcher"
         >
-            <div className="implementation">
-                <CoverSection content={textContent.coverSection} />
-            
+            <div className="container">
+                <div className="safety-nature-cards">
+                    {firstSectionColumns.map((column, columnIndex) =>
+                        <div className="first-section-cards" key={columnIndex}>
+                            {column.map((cardIndex) => (
+                                <SafetyNatureCard
+                                    key={textContent.firstSection.content[cardIndex].title}
+                                    cardContent={textContent.firstSection.content[cardIndex]}
+                                    iconId={firstSectionIcons[cardIndex]}
+                                />
+                            ))}
+                        </div>
+                    )}
+                </div>
+                <div className="second-section-cards">
+                    {secondSectionColumns.map((column, columnIndex) => (
+                        <div className="second-section-cards-column" key={columnIndex}>
+                            {column.map((cardIndex) => (
+                                <SafetyNatureCard
+                                    key={textContent.secondSection.content[cardIndex].title}
+                                    cardContent={textContent.secondSection.content[cardIndex]}
+                                    iconId={secondSectionIcons[cardIndex]}
+                                />
+                            ))}
+                        </div>
+                    ))}
+                </div>
             </div>
         </BrightnessLayout>
     );
