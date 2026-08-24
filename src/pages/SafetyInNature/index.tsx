@@ -2,6 +2,9 @@ import Spinner from "@components/common/Spinner";
 import SpriteIcon from "@components/common/Other/SpriteIcon";
 import * as contentRu from "../../modules/safetyInNature/locales/rus.json";
 import * as contentKz from "../../modules/safetyInNature/locales/kaz.json";
+import * as paths from "../../modules/safetyInNature/locales/paths.json";
+import { collectFromPathsJson } from "@utils/collectAssetUrls";
+import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
 import { useSelector } from "react-redux";
 import type { TRootState } from "@store/index";
@@ -20,12 +23,12 @@ const pageLayoutSX = {
 
 const MainLogo = () => {
     return (
-        <div className="ai-profession-logo">
+        <div className="safety-in-nature-logo">
             <SpriteIcon
                 iconId="logo-color"
                 width="100%"
                 height="100%"
-                color="#474747"
+                color="#FFFFFF"
             />
         </div>
     );
@@ -33,6 +36,9 @@ const MainLogo = () => {
 
 const SafetyInNature = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
+
+    const imgUrls = collectFromPathsJson(paths);
+    usePreloadImages(imgUrls);
 
     const isContentLoaded: boolean = useSelector(
         (state: TRootState) => state.application.isContentLoaded,
@@ -43,11 +49,11 @@ const SafetyInNature = () => {
             logo={<MainLogo />}
             stickyHeader={true}
             isLanguageSwitcher={true}
-            switcherColor="#474747"
+            switcherColor="#FFFFFF"
             sx={pageLayoutSX}
             headerBackgroundColor="transparent"
         >
-            {/* {!isContentLoaded && <Spinner />} */}
+            {!isContentLoaded && <Spinner />}
             <CoverSection content={textContent.coverSection} />
         </BrightnessLayout>
     );

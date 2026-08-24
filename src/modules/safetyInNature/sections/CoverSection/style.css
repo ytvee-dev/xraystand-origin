@@ -1,6 +1,7 @@
 .safety-in-nature-cover-section {
     position: relative;
     overflow: hidden;
+    padding-inline: 10px;
 }
 
 .safety-in-nature-cover-section::after {
@@ -15,25 +16,30 @@
 }
 
 .safety-in-nature-cover-bg {
-    width: 100%;
     position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: 1;
 }
 
 .safety-in-nature-content {
-    padding: 47px 54px 41px 54px;
+    position: relative;
+    z-index: 3;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 980px;
+    width: 100%;
+    margin: 300px 0 246px;
+    padding: 47px 54px 41px;
     color: #fff;
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255, 0.7);
     background: rgba(8, 120, 58, 0.3);
-    position: absolute;
-    z-index: 3;
-    margin-top: 300px;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
+    flex-direction: row;
     gap: 36px;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(10px); 
@@ -56,21 +62,36 @@
     font-size: 24px;
 }
 
-@media (max-width: 500px) {
-    .safety-in-nature-cover-bg {
-        height: 729px;
-        margin-top: 500px;
+@media (max-width: 768px) {
+    .safety-in-nature-cover-section {
+        box-sizing: border-box;
+    }
+
+    .safety-in-nature-cover-content-tree {
+        margin-inline: auto;
     }
 
     .safety-in-nature-content {
+        margin: 200px auto 40px;
+        padding: 13px 13px 54px;
         flex-direction: column;
-        margin-top: 200px;
+        gap: 13px
     }
 
     .safety-in-nature-text-wrapper h1 {
-        font-size: 30px;
+        font-size: 38px;
         letter-spacing: -0.02em;
         text-align: center;
+    }
+
+    .safety-in-nature-text-wrapper p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .safety-in-nature-text-wrapper h1 {
+        font-size: 30px;
     }
 
     .safety-in-nature-text-wrapper p {
