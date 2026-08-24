@@ -1,0 +1,36 @@
+.safety-nature-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 16px 24px;
+    border-radius: 10px;
+}
+
+.safety-nature-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.safety-nature-card-header svg {
+    flex-shrink: 0;
+}
+
+.safety-nature-card-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+
+.safety-nature-card-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 1;
+    color: #ffffff;
+}

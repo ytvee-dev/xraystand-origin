@@ -124,4 +124,11 @@
     .ai-profession-first-section-theory {
         margin-top: 0px;
     }
-} 
+
+    .theory-cards-carousel .kaz-tarih-carousel-arrow {
+        top: 30%;
+        width: 35px;
+        height: 35px;
+        font-size: 35px;
+    }
+}

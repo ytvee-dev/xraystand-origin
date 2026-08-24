@@ -14,8 +14,15 @@ const Carousel = ({
     className,
     style,
 }: ICarouselProps): ReactElement => {
-    const [emblaRef] = useEmblaCarousel();
+    const [emblaRef, emblaApi] = useEmblaCarousel();
 
+    const scrollPrev = () => {
+        emblaApi?.scrollPrev();
+    };
+
+    const scrollNext = () => {
+        emblaApi?.scrollNext();
+    };
     return (
         <div className={`kaz-tarih-carousel ${className || ""}`}>
             <div
@@ -25,6 +32,14 @@ const Carousel = ({
             >
                 <div className="kaz-tarih-carousel-container">{children}</div>
             </div>
+
+            <button className="kaz-tarih-carousel-arrow kaz-tarih-carousel-arrow-left" onClick={scrollPrev}>
+                <span>‹</span>
+            </button>
+
+            <button className="kaz-tarih-carousel-arrow kaz-tarih-carousel-arrow-right" onClick={scrollNext}>
+                <span>›</span>
+            </button>
         </div>
     );
 };

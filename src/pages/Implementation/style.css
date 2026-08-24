@@ -1,0 +1,40 @@
+.container {
+    padding: 30px;
+}
+
+.safety-nature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.first-section-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.first-section-cards .safety-nature-card {
+    background-color: #B9D28C;
+}
+
+.second-section-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.second-section-cards-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.second-section-cards .safety-nature-card {
+    background-color: #7EB2A9;
+}
+
