@@ -116,28 +116,38 @@
         width: 100%;
     }
 
-    .safety-nature-first-carousel {
+    .safety-nature-first-carousel, 
+    .safety-nature-blocks-carousel {
         width: 100%;
         margin: 0 auto;
     }
 
-    .safety-nature-first-carousel .kaz-tarih-carousel-container {
-        align-items: stretch;
+    .safety-nature-first-carousel .kaz-tarih-carousel-container,
+    .safety-nature-blocks-carousel .kaz-tarih-carousel-container {
         gap: 16px;
         margin-left: 0;
     }
 
-    .safety-nature-first-carousel .safety-nature-card {
+    .safety-nature-first-carousel .safety-nature-card,
+    .safety-nature-blocks-carousel .safety-nature-block{
         flex: 0 0 100%;
         width: 100%;
+        box-sizing: border-box;
     }
 
-    .safety-nature-first-carousel .kaz-tarih-carousel-arrow-left {
+    .kaz-tarih-carousel-arrow-left {
         left: -7%;
     }
 
     .kaz-tarih-carousel-arrow-right {
         right: -7%;
+    }
+
+    .safety-nature-third-plant-bg {
+        width: 500px;
+        height: 980px;
+        top: 740px;
+        right: -250px;
     }
 }
 
@@ -168,12 +178,18 @@
         margin: 0 auto;
     }
 
-    .safety-nature-first-carousel .kaz-tarih-carousel-arrow-left {
+    .safety-nature-first-carousel .kaz-tarih-carousel-arrow-left,
+    .safety-nature-blocks-carousel .kaz-tarih-carousel-arrow-left {
         left: -1%;
     }
 
-    .kaz-tarih-carousel-arrow-right {
+    .safety-nature-first-carousel .kaz-tarih-carousel-arrow-right,
+    .safety-nature-blocks-carousel .kaz-tarih-carousel-arrow-right {
         right: -1%;
+    }
+
+    .safety-nature-blocks-carousel .kaz-tarih-carousel-arrow {
+        top: 45%;
     }
 }
 
@@ -196,12 +212,36 @@
         left: -4%;
     }
 
-    .kaz-tarih-carousel-arrow-right {
+    .safety-nature-first-carousel .kaz-tarih-carousel-arrow-right {
         right: -4%;
     }
 
     .safety-nature-cards {
         align-items: flex-start !important;
+    }
+
+    .safety-nature-first-plant-bg {
+        display: none;
+    }
+
+    .safety-nature-third-plant-bg {
+        width: 399px;
+        height: 634px;
+        top: 211px;
+        left: 166px;
+    }
+
+    .safety-nature-second-plant-bg {
+        top: 1290px;
+        left: -500px;
+    }
+
+    .safety-nature-blocks-carousel .kaz-tarih-carousel-arrow {
+        top: 40%;
+    }
+
+    .safety-nature-first-carousel .kaz-tarih-carousel-arrow {
+        top: 45%;
     }
 }
 

@@ -103,8 +103,6 @@ const safetyNatureBlocks = [
     },
 ];
 
-
-
 const FirstSection: React.FC<IFirstSectionProps> = ({ content }): ReactElement => {
     const { screenWidth } = usePageData();
     const isMobile = screenWidth <= 900;
@@ -148,18 +146,35 @@ const FirstSection: React.FC<IFirstSectionProps> = ({ content }): ReactElement =
             </div>
 
             <div className="safety-nature-blocks">
-                {content.cards.map((block, index) => (
-                    <SafetyNatureBlocks
-                        key={block.title}
-                        title={block.title}
-                        content={block.content}
-                        iconId={safetyNatureBlocks[index].iconId}
-                        images={safetyNatureBlocks[index].images}
-                        contentSide={safetyNatureBlocks[index].contentSide}
-                        backgroundColor={safetyNatureBlocks[index].backgroundColor}
-                        titleBackgroundColor={safetyNatureBlocks[index].titleBackgroundColor}
-                    />
-                ))}
+                {isMobile ? (
+                    <Carousel className="safety-nature-blocks-carousel">
+                        {content.cards.map((block, index) => (
+                            <SafetyNatureBlocks
+                                key={block.title}
+                                title={block.title}
+                                content={block.content}
+                                iconId={safetyNatureBlocks[index].iconId}
+                                images={safetyNatureBlocks[index].images}
+                                contentSide={safetyNatureBlocks[index].contentSide}
+                                backgroundColor={safetyNatureBlocks[index].backgroundColor}
+                                titleBackgroundColor={safetyNatureBlocks[index].titleBackgroundColor}
+                            />
+                        ))}
+                    </Carousel>
+                ) : (
+                    content.cards.map((block, index) => (
+                        <SafetyNatureBlocks
+                            key={block.title}
+                            title={block.title}
+                            content={block.content}
+                            iconId={safetyNatureBlocks[index].iconId}
+                            images={safetyNatureBlocks[index].images}
+                            contentSide={safetyNatureBlocks[index].contentSide}
+                            backgroundColor={safetyNatureBlocks[index].backgroundColor}
+                            titleBackgroundColor={safetyNatureBlocks[index].titleBackgroundColor}
+                        />
+                    ))
+                )}
             </div>
         </section>
     );

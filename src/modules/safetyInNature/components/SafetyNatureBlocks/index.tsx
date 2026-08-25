@@ -32,6 +32,7 @@ const SafetyNatureBlocks: React.FC<ISafetyNatureBlocksProps> = ({
     const { screenWidth } = usePageData();
 
     const iconSize =
+        screenWidth <= 320 ? "50px" :
         screenWidth <= 390 ? "66px"
             : screenWidth <= 1024
                 ? "80px"
