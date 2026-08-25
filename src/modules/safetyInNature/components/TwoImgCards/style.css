@@ -62,3 +62,9 @@
         gap: 14px;
     }
 }
+
+@media (max-width: 360px) {
+    .two-img-cards-wrapper {
+        width: 300px;
+    }
+}
