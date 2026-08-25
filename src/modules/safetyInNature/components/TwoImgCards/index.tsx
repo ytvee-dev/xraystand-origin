@@ -11,16 +11,11 @@ interface ITwoImgCardsProps {
     content: ITwoImgCardsContent[];
     firstImg: string;
     secondImg: string;
-    bgColor: string;
-    className: string;
 }
 
-const TwoImgCards = ({ title, content, firstImg, secondImg, bgColor, className }: ITwoImgCardsProps): ReactElement => {
+const TwoImgCards = ({ title, content, firstImg, secondImg }: ITwoImgCardsProps): ReactElement => {
     return (
-        <div 
-            className={`two-img-cards-wrapper ${className}`}
-            style={{backgroundColor: bgColor}}
-        >
+        <div className="two-img-cards-wrapper">
             <p className="two-img-cards-title">{title}</p>
             
             <ul className="two-img-cards-list">
