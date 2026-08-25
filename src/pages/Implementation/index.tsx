@@ -1,9 +1,10 @@
 import "./style.css";
+import * as paths from "../../modules/safetyInNature/locales/paths.json";
 import * as contentKz from "../../modules/safetyInNature/locales/kaz.json";
 import * as contentRu from "../../modules/safetyInNature/locales/rus.json"
 import { useLocaleContent } from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
-import SafetyNatureCard from "@modules/safetyInNature/components/Cards";
+import SafetyNatureBlocks from "@modules/safetyInNature/components/SafetyNatureBlocks";
 
 const pageLayoutSX = {
     backgroundColor: "#181818",
@@ -20,35 +21,62 @@ const MainLogo = () => {
     );
 };
 
-const firstSectionIcons = [
-    "natureSafetyTrail",
-    "natureSafetyFire",
-    "natureSafetyTrash",
-    "natureSafetyFlora",
-    "natureSafetyPets",
-    "natureSafetyAnimals",
-    "natureSafetyTransport",
+const parksIcons = [
+    "natureSafetyTicks",
+    "natureSafetyAnimalInfections",
+    "natureSafetyQuiet",
+    "natureSafetyInfrastructure",
 ];
 
-const secondSectionIcons = [
-    "natureSafetyPreparation",
-    "natureSafetyClothes",
-    "natureSafetyWeather",
-    "natureSafetyWildlife",
-    "natureSafetyNotification",
-    "natureSafetyNoise",
-];
-const firstSectionColumns = [
-    [0, 1],
-    [2, 3],
-    [4, 5, 6],
+const reserveIcons = [
+    "natureSafetyTrailRule",
+    "natureSafetyDrone",
+    "natureSafetyWildlifeDistance",
+    "natureSafetyMicroclimate",
 ];
 
-const secondSectionColumns = [
-    [0, 1],
-    [2, 3],
-    [4, 5],
+const waterIcons = [
+    "natureSafetyConcreteBanks",
+    "natureSafetyCrossing",
+    "natureSafetyWaterRise",
+    "natureSafetySwimming",
 ];
+
+const parksImages = [
+    paths.cards.firstPresidentPark,
+    paths.cards.botanicalGargen,
+];
+
+const reserveImages = [
+    paths.cards.almatyPreacher,
+    paths.cards.ileAlatau,
+];
+
+const waterImages = [
+    paths.cards.terrenkur,
+    paths.cards.esentay,
+];
+
+interface ISafetyNatureBlockItem {
+    title: string;
+    description: string;
+}
+
+interface ISafetyNatureSectionContent {
+    title: string;
+    content: ISafetyNatureBlockItem[];
+}
+
+interface ISafetyInNatureContent {
+    parksSection: ISafetyNatureSectionContent;
+    reserveSection: ISafetyNatureSectionContent;
+    waterSection: ISafetyNatureSectionContent;
+}
+
+interface ISafetyInNatureProps {
+    content: ISafetyInNatureContent;
+}
+
 
 const SeasonPage = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
@@ -63,33 +91,37 @@ const SeasonPage = () => {
             languageSwitcherClassName="kaz-music-language-switcher"
         >
             <div className="container">
-                <div className="safety-nature-cards">
-                    {firstSectionColumns.map((column, columnIndex) =>
-                        <div className="first-section-cards" key={columnIndex}>
-                            {column.map((cardIndex) => (
-                                <SafetyNatureCard
-                                    key={textContent.firstSection.content[cardIndex].title}
-                                    cardContent={textContent.firstSection.content[cardIndex]}
-                                    iconId={firstSectionIcons[cardIndex]}
-                                />
-                            ))}
-                        </div>
-                    )}
-                </div>
-                <div className="second-section-cards">
-                    {secondSectionColumns.map((column, columnIndex) => (
-                        <div className="second-section-cards-column" key={columnIndex}>
-                            {column.map((cardIndex) => (
-                                <SafetyNatureCard
-                                    key={textContent.secondSection.content[cardIndex].title}
-                                    cardContent={textContent.secondSection.content[cardIndex]}
-                                    iconId={secondSectionIcons[cardIndex]}
-                                />
-                            ))}
-                        </div>
-                    ))}
-                </div>
+                <SafetyNatureBlocks
+                    title={textContent.firstSection.cards[0].title}
+                    content={textContent.firstSection.cards[0].content}
+                    iconId={parksIcons}
+                    images={parksImages}
+                    contentSide="left"
+                    backgroundColor="#77BA8FB2"
+                    titleBackgroundColor="#9CCFAE"
+                />
+
+                <SafetyNatureBlocks
+                    title={textContent.firstSection.cards[1].title}
+                    content={textContent.firstSection.cards[1].content}
+                    iconId={reserveIcons}
+                    images={reserveImages}
+                    contentSide="right"
+                    backgroundColor="#4DAC90B2"
+                    titleBackgroundColor="#6CC2B4"
+                />
+
+                <SafetyNatureBlocks
+                    title={textContent.firstSection.cards[2].title}
+                    content={textContent.firstSection.cards[2].content}
+                    iconId={waterIcons}
+                    images={waterImages}
+                    contentSide="left"
+                    backgroundColor="#348F91B2"
+                    titleBackgroundColor="#18AFAE"
+                />
             </div>
+
         </BrightnessLayout>
     );
 };
