@@ -91,3 +91,38 @@
 .safety-nature-block--right .safety-nature-block-text {
     text-align: right;
 }
+
+@media (max-width: 1024px) {
+    .safety-nature-block {
+        padding: 30px 20px;
+    }
+
+    .safety-nature-block-content {
+        flex-direction: column !important;
+        gap: 30px;
+    }
+
+    .safety-nature-block-items {
+        width: 100%;
+    }
+
+    .safety-nature-block-images {
+        width: 100%;
+        flex: none;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .safety-nature-block-images img {
+        width: calc(50% - 8px);
+    }
+
+    .safety-nature-block--right .safety-nature-block-item {
+        flex-direction: row;
+    }
+
+    .safety-nature-block--right .safety-nature-block-text {
+        text-align: left;
+    }
+
+}

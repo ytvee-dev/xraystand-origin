@@ -1,5 +1,6 @@
 import React from "react";
 import { type ReactElement } from "react";
+import { usePageData } from "@hooks/usePageData";
 import SpriteIcon from "@components/common/Other/SpriteIcon";
 import "./style.css";
 
@@ -27,6 +28,14 @@ const SafetyNatureBlocks: React.FC<ISafetyNatureBlocksProps> = ({
     backgroundColor,
     titleBackgroundColor,
 }): ReactElement => {
+
+    const { screenWidth } = usePageData();
+
+    const iconSize =
+        screenWidth <= 390 ? "66px"
+            : screenWidth <= 1024
+                ? "80px"
+                : "120px";
     return (
         <div className={`safety-nature-block safety-nature-block--${contentSide}`} style={{ backgroundColor }}>
             <h2 className="safety-nature-block-title" style={{ backgroundColor: titleBackgroundColor }}>{title}</h2>
@@ -37,8 +46,8 @@ const SafetyNatureBlocks: React.FC<ISafetyNatureBlocksProps> = ({
                         <div className="safety-nature-block-item" key={item.title}>
                             <SpriteIcon
                                 iconId={iconId[index]}
-                                width="120px"
-                                height="120px"
+                                width={iconSize}
+                                height={iconSize}
                             />
 
                             <div className="safety-nature-block-text">
@@ -51,7 +60,7 @@ const SafetyNatureBlocks: React.FC<ISafetyNatureBlocksProps> = ({
 
                 <div className="safety-nature-block-images">
                     {images.map((image) => (
-                        <img className="safety-nature-block-image safety-nature-block-image" key={image} src={image} alt=""/>
+                        <img className="safety-nature-block-image safety-nature-block-image" key={image} src={image} alt="" />
                     ))}
                 </div>
             </div>
