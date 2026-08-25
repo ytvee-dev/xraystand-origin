@@ -110,7 +110,7 @@ export const paths = {
     },
     SAFETY_IN_NATURE: {
         id:"SAFETY_IN_NATURE",
-        path: "/safety-in-nature",
+        path: "/safetyinnature-almaty",
     },
     PAGES: {
         id: "pages",
