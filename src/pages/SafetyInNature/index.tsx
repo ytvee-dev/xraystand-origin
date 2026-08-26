@@ -12,6 +12,7 @@ import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/safetyInNature/sections/CoverSection";
 import FirstSection from "@modules/safetyInNature/sections/FirstSection";
 import ThirdSection from "@modules/safetyInNature/sections/ThirdSection";
+import SecondSection from "@modules/safetyInNature/sections/SecondSection";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -61,6 +62,7 @@ const SafetyInNature = () => {
             <CoverSection content={textContent.coverSection} />
             <FirstSection content={textContent.firstSection} />
             <ThirdSection content={textContent.thirdSection} />
+            <SecondSection content={textContent.secondSection} />
         </BrightnessLayout>
     );
 };
