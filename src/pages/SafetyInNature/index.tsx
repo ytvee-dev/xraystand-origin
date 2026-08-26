@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/safetyInNature/sections/CoverSection";
+import FirstSection from "@modules/safetyInNature/sections/FirstSection";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -20,6 +21,8 @@ const pageLayoutSX = {
     logoColorMode: "light",
     madeByColorMode: "light",
 };
+
+
 
 const MainLogo = () => {
     return (
@@ -55,6 +58,7 @@ const SafetyInNature = () => {
         >
             {!isContentLoaded && <Spinner />}
             <CoverSection content={textContent.coverSection} />
+            <FirstSection content={textContent.firstSection} />
         </BrightnessLayout>
     );
 };
