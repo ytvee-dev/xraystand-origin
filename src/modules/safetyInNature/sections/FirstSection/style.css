@@ -35,42 +35,10 @@
     height: 1059px;
 }
 
-.safety-nature-first-section-heading,
 .safety-nature-cards,
 .safety-nature-blocks {
     position: relative;
     z-index: 1;
-}
-
-.safety-nature-first-section-heading {
-    padding: 24px;
-    border-radius: 10px;
-    background-color: #EEF5E6CC;
-    width: 100%;
-    max-width: 1066px;
-    margin: 0 auto;
-}
-
-.safety-nature-first-section-title {
-    color: #668D34;
-    font-family: "Roboto", sans-serif;
-    font-size: 46px;
-    font-weight: 700;
-    font-style: bold;
-    line-height: 40px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 16px;
-}
-
-.safety-nature-first-section-description {
-    color: #B9D28C;
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    font-style: bold;
-    line-height: 30px;
-    text-align: center;
 }
 
 .safety-nature-cards {
@@ -155,11 +123,6 @@
     .safety-nature-first-section {
         padding: 60px;
     }
-
-    .safety-nature-first-section-title {
-        font-size: 38px;
-        line-height: 40px;
-    }
 }
 
 @media (max-width: 595px) {
@@ -196,16 +159,6 @@
 @media (max-width: 390px) {
     .safety-nature-first-section {
         padding: 27px 15px;
-    }
-
-    .safety-nature-first-section-title {
-        font-size: 30px;
-        line-height: 32px;
-    }
-
-    .safety-nature-first-section-description {
-        line-height: 20px;
-        font-size: 18px;
     }
 
     .safety-nature-first-carousel .kaz-tarih-carousel-arrow-left {
@@ -245,16 +198,3 @@
     }
 }
 
-@media (max-width: 340px) {
-    .safety-nature-card-title {
-        font-size: 20px;
-    }
-
-    .safety-nature-card-description {
-        font-size: 16px;
-    }
-
-    .safety-nature-first-section-title {
-        font-size: 26px;
-    }
-}

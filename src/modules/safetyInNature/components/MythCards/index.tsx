@@ -8,27 +8,18 @@ export interface IMythCardItem {
 }
 
 interface IMythCardsProps {
-    title: string;
-    content: IMythCardItem[][];
+    content: IMythCardItem[];
 }
 
-const MythCards: React.FC<IMythCardsProps> = ({ title, content }): ReactElement => {
+const MythCards: React.FC<IMythCardsProps> = ({ content }): ReactElement => {
     return (
-        <div className="safety-nature-myth-block">
-            <h2 className="safety-nature-myth-block-title">{title}</h2>
-
-            <div className="safety-nature-myth-cards">
-                {content.map((card, index) => (
-                    <div className="safety-nature-myth-card" key={index}>
-                        {card.map((item) => (
-                            <div className="safety-nature-myth-card-item" key={item.title}>
-                                <h3 className="safety-nature-myth-card-title">{item.title}</h3>
-                                <p className="safety-nature-myth-card-description">{item.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                ))}
-            </div>
+        <div className="safety-nature-myth-card ai-profession-glass-surface">
+            {content.map((item) => (
+                <div className="safety-nature-myth-card-item" key={item.title}>
+                    <h3 className="safety-nature-myth-card-title">{item.title}</h3>
+                    <p className="safety-nature-myth-card-description">{item.description}</p>
+                </div>
+            ))}
         </div>
     );
 };

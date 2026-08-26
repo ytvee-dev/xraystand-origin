@@ -3,6 +3,7 @@ import { usePageData } from "@hooks/usePageData";
 import * as paths from "../../locales/paths.json";
 import SafetyNatureCard from "@modules/safetyInNature/components/SafetyNatureCards";
 import SafetyNatureBlocks from "@modules/safetyInNature/components/SafetyNatureBlocks";
+import SafetyNatureHeading from "@modules/safetyInNature/components/SafetyNatureHeading";
 import Carousel from "@modules/kazTarih/components/Carousel";
 import "./style.css";
 
@@ -114,10 +115,13 @@ const FirstSection: React.FC<IFirstSectionProps> = ({ content }): ReactElement =
             <img className="safety-nature-second-plant-bg" src={paths.firstPlant} alt="" />
             <img className="safety-nature-third-plant-bg" src={paths.thirdPlant} alt="" />
 
-            <div className="safety-nature-first-section-heading">
-                <h2 className="safety-nature-first-section-title">{content.title}</h2>
-                <p className="safety-nature-first-section-description">{content.description}</p>
-            </div>
+            <SafetyNatureHeading
+                title={content.title}
+                description={content.description}
+                titleColor="#668D34"
+                descriptionColor="#B9D28C"
+                backgroundColor="#EEF5E6CC"
+            />
 
             <div className="safety-nature-cards">
                 {isMobile ? (
