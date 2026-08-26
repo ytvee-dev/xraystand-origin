@@ -61,9 +61,6 @@ const SafetyInNature = () => {
             {!isContentLoaded && <Spinner />}
             <CoverSection content={textContent.coverSection} />
             <FirstSection content={textContent.firstSection} />
-            <ThirdSection content={textContent.thirdSection} />
-            <SecondSection content={textContent.secondSection} />
-            <FirstSection content={textContent.firstSection} />
             <SecondSection content={textContent.secondSection} />
             <ThirdSection content={textContent.thirdSection} />
         </BrightnessLayout>

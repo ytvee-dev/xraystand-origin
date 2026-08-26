@@ -1,7 +1,9 @@
 .safety-in-nature-second-section {
     overflow: hidden;
+    width: 100%;
     position: relative;
     background: linear-gradient(358.22deg, #62b3a3 3.44%, #d0dfa8 96.42%);
+    padding: 55px 65px;
 }
 
 .safety-in-nature-second-img {
@@ -18,30 +20,6 @@
     z-index: 1;
 }
 
-.safety-in-nature-second-title {
-    background-color: #E4ECEA;
-    padding: 24px;
-    margin-bottom: 43px;
-    margin-inline: auto;
-    width: 1018px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.safety-in-nature-second-title h2 {
-    color: #1B847C;
-    text-transform: uppercase;
-    font-size: 46px;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-
-.safety-in-nature-second-title p {
-    color: #B1D6CE;
-    font-size: 24px;
-    font-weight: 700;
-}
-
 .safety-in-nature-second-cards {
     margin: 0 auto 78px;
 }
@@ -52,5 +30,94 @@
 }
 
 .safety-in-nature-second-card-0 {
-    margin-left: 105px;
+    margin-left: 60px;
+}
+
+.safety-nature-cards {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 21px;
+    margin-bottom: 50px;
+}
+
+.second-section-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    flex: 1;
+}
+
+.safety-in-nature-second-section .safety-nature-card {
+    background-color: #7EB2A9;
+}
+
+@media (max-width: 900px) {
+    .safety-nature-second-cards-carousel .kaz-tarih-carousel-container {
+        display: flex;
+        gap: 16px;
+        margin-left: 0;
+    }
+
+    .safety-nature-second-cards-carousel .safety-nature-card {
+        flex: 0 0 calc(100% - 16px);
+        width: calc(100% - 16px);
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 595px) {
+    .safety-in-nature-second-section {
+        padding: 27px 15px;
+    }
+
+    .kaz-tarih-carousel-arrow-left {
+        left: 0%;
+    }
+
+    .kaz-tarih-carousel-arrow-right {
+        right: 0%;
+    }
+
+    .safety-nature-cards {
+        display: block;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .safety-nature-second-cards-carousel {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .safety-nature-second-cards-carousel .safety-nature-card {
+        flex: 0 0 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .safety-in-nature-second-img {
+        bottom: 32%;
+        right: -32%;
+    }
+}
+
+@media (max-width: 425px) {
+    .safety-in-nature-second-carousel .kaz-tarih-carousel-container,
+    .safety-nature-second-cards-carousel .kaz-tarih-carousel-container {
+        margin-left: 0;
+    }
+
+    .safety-in-nature-second-card-wrapper {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .safety-in-nature-second-carousel .two-img-cards-wrapper {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
 }
