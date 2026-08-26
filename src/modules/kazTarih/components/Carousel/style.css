@@ -28,7 +28,6 @@
     transform: translate3d(0, 0, 0);
     box-sizing: border-box;
 
-    margin-left: 1.5rem;
 }
 
 .kaz-tarih-carousel-arrow {
@@ -68,38 +67,6 @@
     background: rgba(255, 255, 255, 0.28);
 }
 
-.kaz-tarih-carousel-arrow:active {
-    transform: translateY(-50%) scale(0.94);
-}
-
-.kaz-tarih-carousel-arrow::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.65),
-        rgba(255, 255, 255, 0)
-    );
-    transform: skewX(-20deg);
-    pointer-events: none;
-    animation: carouselArrowSheen 3s infinite;
-}
-
-@keyframes carouselArrowSheen {
-    0% {
-        left: -100%;
-    }
-
-    50%,
-    100% {
-        left: 150%;
-    }
-}
 
 .kaz-tarih-carousel-arrow span {
     display: flex;
@@ -108,5 +75,12 @@
     width: 100%;
     height: 100%;
     line-height: 1;
-    transform: translateY(-2px);
+}
+
+@media (max-width: 390px) {
+    .kaz-tarih-carousel-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 35px;
+    }
 }
