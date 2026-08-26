@@ -1,9 +1,9 @@
 import { type ReactElement } from "react";
 import Carousel from "@modules/kazTarih/components/Carousel";
 import TwoImgCards from "@modules/safetyInNature/components/TwoImgCards";
-import SafetyNatureCard from "@modules/safetyInNature/components/SafetyNatureCards"
 import * as paths from "@modules/safetyInNature/locales/paths.json";
-import "./style.css";
+import "./style.css"
+import path from "path";
 
 interface ISecondSectionContent {
     title: string;
@@ -51,17 +51,13 @@ const SecondSection = ({ content }: ISecondSectionProps): ReactElement => {
                 </div>
 
                 <div className="safety-in-nature-second-cards">
-                    {content.content.map(card => (
-                        <div className="safety-in-nature-second-cards" key={card.title}>
-                            
-                        </div>
-                    ))}
+
                 </div>
 
                 <Carousel className="safety-in-nature-second-carousel">
-                    {content.cards.map((card, index) => 
+                    {content.cards.map((card, index)=> 
                         <div 
-                            className="safety-in-nature-second-carousel-card-wrapper"
+                            className="safety-in-nature-second-card-wrapper"
                             key={card.title}
                         >
                             <TwoImgCards 
@@ -70,7 +66,7 @@ const SecondSection = ({ content }: ISecondSectionProps): ReactElement => {
                                 bgColor={carouselCardsBgColor[index]}
                                 firstImg={paths.secondSectionCards[index]}
                                 secondImg={paths.secondSectionCards[index + 1]}
-                                className={`safety-in-nature-second-carousel-card-${index}`}
+                                className={`safety-in-nature-second-card-${index}`}
                             />
                         </div>
                     )}

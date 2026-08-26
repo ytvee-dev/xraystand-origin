@@ -23,7 +23,7 @@
     padding: 24px;
     margin-bottom: 43px;
     margin-inline: auto;
-    max-width: 1018px;
+    width: 1018px;
     border-radius: 10px;
     text-align: center;
 }
@@ -34,7 +34,6 @@
     font-size: 46px;
     font-weight: 700;
     margin-bottom: 16px;
-    line-height: 107%;
 }
 
 .safety-in-nature-second-title p {
@@ -43,7 +42,7 @@
     font-weight: 700;
 }
 
-.safety-in-nature-second-carousel-cards {
+.safety-in-nature-second-cards {
     margin: 0 auto 78px;
 }
 
@@ -52,47 +51,6 @@
     gap: 53px;
 }
 
-.safety-in-nature-second-carousel-card-0 {
+.safety-in-nature-second-card-0 {
     margin-left: 105px;
-}
-
-
-@media (max-width: 1024px) {
-    .safety-in-nature-second-carousel-card-0 {
-        margin-left: 45px;
-    }
-}
-
-@media (max-width: 880px) {
-    .safety-in-nature-second-title {
-        margin-inline: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .safety-in-nature-second-title h2 {
-        font-size: 38px;
-    }
-
-    .safety-in-nature-second-title p {
-        font-size: 20px;
-    }
-
-    .safety-in-nature-second-carousel .kaz-tarih-carousel-container {
-        gap: 41px;
-    }
-}
-
-@media (max-width: 500px) {
-    .safety-in-nature-second-carousel-card-0 {
-        margin-left: 35px;
-    }
-
-    .safety-in-nature-second-title h2 {
-        font-size: 30px;
-    }
-
-    .safety-in-nature-second-title p {
-        font-size: 18px;
-    }
 }

@@ -14,6 +14,7 @@ import FirstSection from "@modules/safetyInNature/sections/FirstSection";
 import ThirdSection from "@modules/safetyInNature/sections/ThirdSection";
 import SecondSection from "@modules/safetyInNature/sections/SecondSection";
 import FirstSection from "@modules/safetyInNature/sections/FirstSection";
+import SecondSection from "@modules/safetyInNature/sections/SecondSection";
 import ThirdSection from "@modules/safetyInNature/sections/ThirdSection";
 import "./style.css";
 
@@ -66,6 +67,7 @@ const SafetyInNature = () => {
             <ThirdSection content={textContent.thirdSection} />
             <SecondSection content={textContent.secondSection} />
             <FirstSection content={textContent.firstSection} />
+            <SecondSection content={textContent.secondSection} />
             <ThirdSection content={textContent.thirdSection} />
         </BrightnessLayout>
     );
