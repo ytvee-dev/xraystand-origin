@@ -11,6 +11,7 @@ import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/safetyInNature/sections/CoverSection";
 import FirstSection from "@modules/safetyInNature/sections/FirstSection";
+import ThirdSection from "@modules/safetyInNature/sections/ThirdSection";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -59,6 +60,7 @@ const SafetyInNature = () => {
             {!isContentLoaded && <Spinner />}
             <CoverSection content={textContent.coverSection} />
             <FirstSection content={textContent.firstSection} />
+            <ThirdSection content={textContent.thirdSection} />
         </BrightnessLayout>
     );
 };
