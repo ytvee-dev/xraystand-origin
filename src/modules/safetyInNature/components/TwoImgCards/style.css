@@ -8,6 +8,7 @@
     width: 600px;
     padding: 24px 43px;
     border-radius: 10px;
+     backdrop-filter: blur(20px);
 }
 
 .two-img-cards-title {
@@ -60,11 +61,5 @@
     .two-img-cards-images-wrapper {
         flex-direction: column;
         gap: 14px;
-    }
-}
-
-@media (max-width: 360px) {
-    .two-img-cards-wrapper {
-        width: 300px;
     }
 }
