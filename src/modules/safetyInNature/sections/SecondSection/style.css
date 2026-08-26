@@ -121,3 +121,9 @@
         box-sizing: border-box;
     }
 }
+
+@media (max-width: 390px) {
+    .safety-in-nature-second-card-0 {
+        margin-left: 0;
+    }
+}
