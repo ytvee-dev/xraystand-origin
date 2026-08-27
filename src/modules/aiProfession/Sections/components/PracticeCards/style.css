@@ -73,3 +73,9 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+@media (max-width: 320px) {
+    .practice-card-title {
+        font-size: 27px;
+    }
+}

@@ -193,6 +193,15 @@ const pagesInfo: IPageInfo[] = [
         isClickable: true,
     },
     {
+        id: paths.SAFETY_IN_NATURE.id,
+        path: paths.SAFETY_IN_NATURE.path,
+        title: "Безопасность на природе",
+        description: "Безопасность на природе",
+        status: "active",
+        isClickable: true,
+
+    },
+    {
         id: paths.IMPLEMENTATION.id,
         path: paths.IMPLEMENTATION.path,
         title: "Implementation",

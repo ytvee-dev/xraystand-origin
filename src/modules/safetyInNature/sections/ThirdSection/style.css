@@ -1,0 +1,133 @@
+.safety-nature-third-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(#62B3A3, #3F7B83);
+    padding: 56px 65px;
+}
+
+.third-section-first-img {
+    position: absolute;
+    z-index: 0;
+    width: 666px;
+    height: 1059px;
+    transform: rotate(28deg);
+    top: 5%;
+    left: -20%;
+}
+
+.third-section-second-img {
+    position: absolute;
+    z-index: 0;
+    width: 1112px;
+    height: 1194px;
+    transform: rotate(-40deg);
+    top: 43%;
+    right: -30%;
+}
+
+.safety-nature-third-section-group-title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 52px 0px 31px;
+}
+
+.safety-nature-third-section-cards {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: start;
+    z-index: 1;
+}
+
+@media (max-width: 1150px) {
+    .third-section-first-img {
+        width: 500px;
+        height: 900px;
+        top: 7%;
+    }
+
+    .third-section-second-img {
+        right: -50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .safety-nature-myth-carousel {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .safety-nature-myth-carousel .kaz-tarih-carousel-container {
+        gap: 16px;
+        margin-left: 0;
+    }
+
+    .safety-nature-myth-carousel .safety-nature-myth-card {
+        flex: 0 0 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+    .third-section-first-img {
+        top: 11%;
+        left: -22%;
+    }
+
+    .third-section-second-img {
+        right: -55%;
+    }
+}
+
+@media (max-width: 595px) {
+    .safety-nature-third-section {
+        padding: 27px 15px;
+    }
+
+    .safety-nature-myth-carousel .kaz-tarih-carousel-arrow-left {
+        left: 0%;
+    }
+
+    .safety-nature-myth-carousel .kaz-tarih-carousel-arrow-right {
+        right: 0%;
+    }
+
+    .third-section-first-img {
+        display: none;
+    }
+
+    .third-section-second-img {
+        transform: rotate(-35deg);
+        top: 35%;
+        right: -80%;
+    }
+}
+
+@media (max-width: 390px) {
+    .third-section-second-img {
+        transform: rotate(-38deg);
+        top: 33%;
+        left: -80%;
+        height: 1200px;
+    }
+}
+
+@media (max-width: 320px) {
+    .third-section-second-img {
+        transform: rotate(-30deg);
+        top: 40%;
+        left: -100%;
+        height: 1200px;
+    }
+}

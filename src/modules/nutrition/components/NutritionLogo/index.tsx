@@ -1,14 +1,12 @@
-import React, {useMemo} from "react";
+import React from "react";
 import {usePageData} from "@hooks/usePageData";
 import "./style.css";
 
 const NutritionLogo: React.FC = ()  => {
     const { currentLocale } = usePageData();
 
-    const { firstPart, secondPart } = useMemo(() => ({
-        firstPart: currentLocale === 'ru' ? "Здоровое" : "Дұрыс",
-        secondPart: currentLocale === 'ru' ? "Питание" : "Тамақтану"
-    }), [currentLocale]);
+    const firstPart = currentLocale === 'ru' ? "Здоровое" : "Дұрыс";
+    const secondPart = currentLocale === 'ru' ? "Питание" : "Тамақтану";
 
     return (
         <div className={'nutrition-logo'}>
