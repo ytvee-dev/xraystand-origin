@@ -12,16 +12,22 @@ import "./style.css";
 
 const DEFAULT_SX = {
     position: "relative",
-    backgroundColor: "#FFA726",
-    boldTextColor: "#000000",
-    textColor: "rgba(0,0,0,0.4)",
+    backgroundColor: "#404935",
+    boldTextColor: "#ffffff",
+    textColor: "rgba(250, 250, 250, 0.4)",
     copyrightColor: "#FFFFFF66",
-    logoColorMode: "dark",
-    madeByColorMode: "dark",
+    logoColorMode: "light",
+    madeByColorMode: "light",
     zIndex: "3",
 };
 
-const CustomLayout: React.FC<IDefaultLayoutProps> = ({
+interface ICustomLayoutFooter {
+    footerClassName?: string;
+    footerBgImage?: string; 
+    footerBgImageClass?: string; 
+}
+
+const CustomLayout: React.FC<IDefaultLayoutProps & ICustomLayoutFooter> = ({
     disabled,
     strictLanguage,
     children,
@@ -33,7 +39,10 @@ const CustomLayout: React.FC<IDefaultLayoutProps> = ({
     sx = DEFAULT_SX,
     headerBackgroundColor,
     languageSwitcherClassName,
-}: IDefaultLayoutProps) => {
+    footerClassName,
+    footerBgImage,
+    footerBgImageClass
+}: IDefaultLayoutProps & ICustomLayoutFooter) => {
     const currentLocale: Languages = useSelector(
         (state: TRootState) => state.locale.locale,
     );
@@ -66,6 +75,9 @@ const CustomLayout: React.FC<IDefaultLayoutProps> = ({
                         : trafficLawsFooterMeta.kz
                 }
                 sx={sx}
+                className={footerClassName}
+                bgImage={footerBgImage}
+                bgImgClass={footerBgImageClass}
             />
 
             <PrivacyPolicyModal />
