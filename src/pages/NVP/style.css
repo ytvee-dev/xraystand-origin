@@ -49,6 +49,26 @@
     border-right: 2px solid #ffffff;
 }
 
+.nvp-footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.nvp-footer .footer-all-content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.nvp-footer-bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    z-index: 1;
+}
+
 @media screen and (max-width: 1000px) {
     .nvp-first-section-flag {
         width: 35%;
