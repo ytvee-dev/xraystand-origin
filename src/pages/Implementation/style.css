@@ -1,6 +1,26 @@
 .container {
+    width: 100%;
     display: flex;
     gap: 60px;
     padding: 70px;
     background-color: #D7E2E9;
+}
+
+
+.ai-security-notification {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ai-security-notification-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.ai-security-notification-content p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }

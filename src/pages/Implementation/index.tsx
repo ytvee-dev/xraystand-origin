@@ -4,7 +4,7 @@ import * as contentKz from "../../modules/aiSecurity/locales/kaz.json";
 import * as contentRu from "../../modules/aiSecurity/locales/rus.json"
 import { useLocaleContent } from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
-import InfoBlock from "@modules/aiSecurity/components/InfoBlock";
+import DSNotification from "@components/common/DSNotification";
 
 const pageLayoutSX = {
     backgroundColor: "#181818",
@@ -21,6 +21,7 @@ const MainLogo = () => {
     );
 };
 
+
 const SeasonPage = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
 
@@ -34,10 +35,26 @@ const SeasonPage = () => {
             languageSwitcherClassName="kaz-music-language-switcher"
         >
             <div className="container">
-                <InfoBlock
-                    title={textContent.secondSection.topics[0].lawsCard.title}
-                    description={textContent.secondSection.topics[0].lawsCard.description}
-                    image={paths.infoBlockImages.scales}
+                <DSNotification
+                    content={
+                        <div className="ai-security-notification-content">
+                            <h3 className="ai-security-notification-title">{textContent.secondSection.topics[0].lawsCard.title}</h3>
+                            <p className="ai-security-notification-description">{textContent.secondSection.topics[0].lawsCard.description}</p>
+                        </div>
+                    }
+                    className="ai-security-notification"
+                    fullWidth={true}
+                    borderColor="rgba(255, 255, 255, 0.35)"
+                    textColor="#4390C0"
+                    iconName="aiSecurityScales"
+                    iconColor="#4EA4DA"
+                    backgroundColor="rgba(255, 255, 255, 0.55)"
+                    borderRadius="20px"
+                    iconWidth="87px"
+                    iconHeight="82px"
+                    imgPosition="flex-start"
+                    cardGap="24px"
+                    padding="24px 36px"
                 />
             </div>
 
