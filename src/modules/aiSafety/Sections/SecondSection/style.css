@@ -1,0 +1,32 @@
+.ai-security-second-section {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  width: 100%;
+  background-color: #D7E2E9;
+}
+
+.ai-security-notification {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 72px;
+}
+
+.ai-security-notification-title {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #4EA4DA;
+}
+
+.ai-security-notification-description {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+.topic-block {
+  padding: 0px 115px;
+  margin-top: 20px;
+}

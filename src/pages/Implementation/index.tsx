@@ -1,11 +1,11 @@
 import "./style.css";
-import * as paths from "../../modules/aiSecurity/locales/path.json";
-import * as contentKz from "../../modules/aiSecurity/locales/kaz.json";
-import * as contentRu from "../../modules/aiSecurity/locales/rus.json"
+import * as paths from "../../modules/aiSafety/locales/path.json";
+import * as contentKz from "../../modules/aiSafety/locales/kaz.json";
+import * as contentRu from "../../modules/aiSafety/locales/rus.json"
 import { useLocaleContent } from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
 import DSNotification from "@components/common/DSNotification";
-import TopicBlock from "@modules/aiSecurity/components/TopicBlock";
+import TopicBlock from "@modules/aiSafety/components/TopicBlock";
 
 const pageLayoutSX = {
     backgroundColor: "#181818",
