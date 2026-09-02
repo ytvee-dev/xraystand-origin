@@ -31,8 +31,11 @@ const NVP: React.FC = () => {
         <div className="nvp-container">
             <CustomLayout
                 isLanguageSwitcher={true}
-                headerBackgroundColor="#697855"
+                headerBackgroundColor="rgb(69, 85, 56, 0.8)"
+                footerClassName="nvp-footer"
                 languageSwitcherClassName="nvp-switcher"
+                footerBgImage={paths.background}
+                footerBgImageClass="nvp-footer-bg-img"
             >
                 {!isContentLoaded && <Spinner />}
 
