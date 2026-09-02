@@ -4,6 +4,7 @@ import TopicBlock from "@modules/aiSafety/components/TopicBlock";
 import DSNotification from "@components/common/DSNotification";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import "./style.css";
+import MythCards from "@modules/safetyInNature/components/MythCards";
 
 type TopicListItem = {
   highlightedText: string;
@@ -21,10 +22,21 @@ type Topic = {
   };
 };
 
-type SecondSectionContent = {
+type MythCardItem = {
   title: string;
   description: string;
+};
+
+type MythsCard = {
+  title: string;
+  card: MythCardItem[][];
+};
+
+type SecondSectionContent = {
+   title: string;
+  description: string;
   topics: Topic[];
+  mythsCard: MythsCard;
 };
 
 type SecondSectionProps = {
@@ -45,7 +57,7 @@ const SecondSection: React.FC<SecondSectionProps> = ({ textContent }): ReactElem
         descriptionSize="normal"
         className="ai-security-section-title"
       />
-      
+
       <TopicBlock
         title={section.topics[0].title}
         description={section.topics[0].description}
@@ -124,6 +136,21 @@ const SecondSection: React.FC<SecondSectionProps> = ({ textContent }): ReactElem
         image={paths.blockImages[3]}
         imagePosition="left"
       />
+
+      <div className="ai-security-myths">
+        <h2 className="ai-security-myths-title">
+          {section.mythsCard.title}
+        </h2>
+
+        <div className="ai-security-myths-cards">
+          {section.mythsCard.card.map((card, index) => (
+            <MythCards
+              key={index}
+              content={card}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
