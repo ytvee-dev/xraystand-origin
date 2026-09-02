@@ -45,12 +45,10 @@
     line-height: 1.35;
 }
 
-.topic-block-list-description {
-
-    margin: 0 0 8px;
+.topic-block-list li{
+    margin-bottom: 15px;
 }
 
 .topic-block-list {
-    margin: 0;
     padding-left: 15px;
 }

@@ -5,6 +5,7 @@ import * as contentRu from "../../modules/aiSecurity/locales/rus.json"
 import { useLocaleContent } from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
 import DSNotification from "@components/common/DSNotification";
+import TopicBlock from "@modules/aiSecurity/components/TopicBlock";
 
 const pageLayoutSX = {
     backgroundColor: "#181818",
@@ -21,9 +22,6 @@ const MainLogo = () => {
     );
 };
 
-const infoBlockIcons = [
-    "aiSecurityWarning"
-]
 
 const SeasonPage = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
@@ -38,27 +36,13 @@ const SeasonPage = () => {
             languageSwitcherClassName="kaz-music-language-switcher"
         >
             <div className="container">
-                <DSNotification
-                    content={
-                        <>
-                            <h3 className="ai-security-notification-title">{textContent.firstSection.warningCard.title}</h3>
-
-                            <p className="ai-security-notification-description">{textContent.firstSection.warningCard.description}</p>
-                        </>
-                    }
-                    className="ai-security-notification"
-                    fullWidth={true}
-                    borderColor="rgba(255, 255, 255, 0.35)"
-                    textColor="#4390C0"
-                    iconName="aiSecurityWarning"
-                    iconColor="#4EA4DA"
-                    backgroundColor="rgba(255, 255, 255, 0.55)"
-                    borderRadius="20px"
-                    iconWidth="87px"
-                    iconHeight="82px"
-                    imgPosition="flex-start"
-                    cardGap="24px"
-                    padding="24px 36px"
+                <TopicBlock
+                    title={textContent.secondSection.topics[1].title}
+                    description={textContent.secondSection.topics[1].description}
+                    listDescription={textContent.secondSection.topics[1].listDescription}
+                    list={textContent.secondSection.topics[1].list}
+                    image={paths.blockImages[1]}
+                    imagePosition="right"
                 />
             </div>
 
