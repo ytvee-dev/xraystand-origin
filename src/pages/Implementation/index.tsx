@@ -1,11 +1,6 @@
 import "./style.css";
-import * as paths from "../../modules/aiSecurity/locales/path.json";
-import * as contentKz from "../../modules/aiSecurity/locales/kaz.json";
-import * as contentRu from "../../modules/aiSecurity/locales/rus.json"
-import { useLocaleContent } from "@hooks/useLocale";
+// import { useLocaleContent } from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
-import DSNotification from "@components/common/DSNotification";
-import TopicBlock from "@modules/aiSecurity/components/TopicBlock";
 
 const pageLayoutSX = {
     backgroundColor: "#181818",
@@ -24,7 +19,6 @@ const MainLogo = () => {
 
 
 const SeasonPage = () => {
-    const textContent = useLocaleContent(contentRu, contentKz);
 
     return (
         <BrightnessLayout
@@ -36,14 +30,6 @@ const SeasonPage = () => {
             languageSwitcherClassName="kaz-music-language-switcher"
         >
             <div className="container">
-                <TopicBlock
-                    title={textContent.secondSection.topics[1].title}
-                    description={textContent.secondSection.topics[1].description}
-                    listDescription={textContent.secondSection.topics[1].listDescription}
-                    list={textContent.secondSection.topics[1].list}
-                    image={paths.blockImages[1]}
-                    imagePosition="right"
-                />
             </div>
 
         </BrightnessLayout>
