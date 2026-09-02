@@ -25,6 +25,10 @@
     margin-inline: 10%;
 }
 
+.bg-title-description.large {
+    font-size: 24px;
+}
+
 @media (max-width: 1024px) {
     .bg-title {
         padding: 12px 10px;
@@ -43,5 +47,9 @@
 
     .bg-title p {
         margin-inline: 0;
+    }
+
+    .bg-title-description.large {
+        font-size: 19px;
     }
 }
