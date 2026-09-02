@@ -4,12 +4,13 @@
   gap: 58px;
   width: 100%;
   background-color: #D7E2E9;
+  overflow: hidden;
+  padding: 58px 72px;
 }
 
 .ai-security-notification {
   width: 100%;
   box-sizing: border-box;
-  padding: 0px 72px;
 }
 
 .ai-security-notification-title {
@@ -27,6 +28,38 @@
 }
 
 .topic-block {
-  padding: 0px 115px;
+  padding: 0px 43px;
   margin-top: 20px;
+}
+
+.ai-security-section-title {
+  width: 100%;
+  padding: 24px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.ai-security-section-title h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #474747;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.ai-security-section-title .bg-title-description {
+  margin-top: 33px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4ea4da;
+  font-family: 'Roboto', sans-serif;
+  white-space: pre-line;
+  padding: 0px;
+}
+
+.bg-title p {
+  margin-inline: 0;
 }

@@ -35,7 +35,7 @@ const MainLogo = () => {
 };
 
 const AiSafety = () => {
-    const textContent = useLocaleContent(contentRu, contentKz);
+    const content = useLocaleContent(contentRu, contentKz);
 
     const imgUrls = collectFromPathsJson(paths);
     usePreloadImages(imgUrls);
@@ -53,7 +53,7 @@ const AiSafety = () => {
             headerBackgroundColor="transparent"
         >
             {!isContentLoaded && <Spinner />}
-           <SecondSection textContent={textContent.secondSection} />
+           <SecondSection textContent={content.secondSection} />
         </BrightnessLayout>
     );
 };

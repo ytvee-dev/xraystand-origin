@@ -2,6 +2,7 @@ import React, { type ReactElement } from "react";
 import * as paths from "../../locales/path.json";
 import TopicBlock from "@modules/aiSafety/components/TopicBlock";
 import DSNotification from "@components/common/DSNotification";
+import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import "./style.css";
 
 type TopicListItem = {
@@ -35,6 +36,16 @@ const SecondSection: React.FC<SecondSectionProps> = ({ textContent }): ReactElem
 
   return (
     <section className="ai-security-second-section">
+      <BackgroundedTitle
+        title={section.title}
+        description={section.description}
+        bgColor="rgb(255, 255, 255)"
+        titleFontWeight="700"
+        fullWidth={true}
+        descriptionSize="normal"
+        className="ai-security-section-title"
+      />
+      
       <TopicBlock
         title={section.topics[0].title}
         description={section.topics[0].description}
