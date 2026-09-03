@@ -25,14 +25,14 @@ const ImgTopicCard = ({ title, description, list, imgPath, className }: ImgCardC
                 <p key={text}>{text}</p>
             ))}
             
-            <ul className="img-topic-card-list">
+            <ol className="img-topic-card-list">
                 {list && list.map(item => (
                     <li className="img-topic-card-list-item" key={item.highlightedText}>
                         <p className="img-topic-card-highlighted-text">{item.highlightedText}</p>
                         <p className="img-topic-card-text">{item.text}</p>
                     </li>
                 ))}
-            </ul>
+            </ol>
         </div>
     )
 }

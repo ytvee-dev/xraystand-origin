@@ -34,12 +34,14 @@ const SeasonPage = () => {
             headerBackgroundColor="rgb(255, 255, 255)"
             languageSwitcherClassName="kaz-music-language-switcher"
         >
-            <ImgTopicCard
-                title={card.title}
-                description={card.description}
-                list={card.list}
-                imgPath={paths.cards[0]}
-            />
+            <div className="bgc">
+                <ImgTopicCard
+                    title={card.title}
+                    description={card.description}
+                    list={card.list}
+                    imgPath={paths.cards[0]}
+                />
+            </div>
         </BrightnessLayout>
     );
 };

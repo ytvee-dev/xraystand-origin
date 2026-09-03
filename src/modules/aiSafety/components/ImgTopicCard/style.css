@@ -18,6 +18,7 @@
     text-transform: uppercase;
     font-size: 28px;
     margin-bottom: 14px;
+    font-weight: 700;
 }
 
 .img-topic-card-list {
@@ -41,6 +42,14 @@
     margin-right: 0.35rem;
 }
 
+@media (max-width: 768px) {
+    .img-topic-card {
+        width: 500px;
+    }
+}
+
 @media (max-width: 500px) {
-    /* . */
+    .img-topic-card {
+        width: 300px;
+    }
 }
