@@ -25,7 +25,6 @@ const MainLogo = () => {
 const SeasonPage = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
     const card = textContent.fourthSection.cards[1]
-
     return (
         <BrightnessLayout
             logo={<MainLogo />}
@@ -41,7 +40,6 @@ const SeasonPage = () => {
                 list={card.list}
                 imgPath={paths.cards[0]}
             />
-
         </BrightnessLayout>
     );
 };
