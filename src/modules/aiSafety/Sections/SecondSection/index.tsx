@@ -3,8 +3,9 @@ import * as paths from "../../locales/path.json";
 import TopicBlock from "@modules/aiSafety/components/TopicBlock";
 import DSNotification from "@components/common/DSNotification";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
-import "./style.css";
 import MythCards from "@modules/safetyInNature/components/MythCards";
+import "./style.css";
+import '../../../aiProfession/Sections/components/glass.css';
 
 type TopicListItem = {
   highlightedText: string;
@@ -48,6 +49,7 @@ const SecondSection: React.FC<SecondSectionProps> = ({ textContent }): ReactElem
 
   return (
     <section className="ai-security-second-section">
+      <img className="ai-security-section-image" src={paths.backgroundImages.warning} alt="AI Security" />
       <BackgroundedTitle
         title={section.title}
         description={section.description}
@@ -142,7 +144,7 @@ const SecondSection: React.FC<SecondSectionProps> = ({ textContent }): ReactElem
           {section.mythsCard.title}
         </h2>
 
-        <div className="ai-security-myths-cards">
+        <div className="ai-security-myths-cards ">
           {section.mythsCard.card.map((card, index) => (
             <MythCards
               key={index}

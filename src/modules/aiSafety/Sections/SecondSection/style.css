@@ -1,4 +1,5 @@
 .ai-security-second-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 58px;
@@ -6,6 +7,17 @@
   background-color: #D7E2E9;
   overflow: hidden;
   padding: 58px 72px;
+  z-index: 1;
+}
+
+.ai-security-section-image {
+  position: absolute;
+  top: 2420px;
+  left: 1120px;
+  width: 394px;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .ai-security-notification {
@@ -65,9 +77,11 @@
 }
 
 .ai-security-myths {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .ai-security-myths-title {
@@ -92,8 +106,6 @@
 .safety-nature-myth-card {
   max-width: 515px !important;
   background: rgba(255, 255, 255, 0.55) !important;
-  backdrop-filter: blur(4px) saturate(150%) !important;
-  -webkit-backdrop-filter: blur(4px) saturate(150%) !important;
   border: 1px solid rgba(255, 255, 255, 0.35) !important;
 }
 
