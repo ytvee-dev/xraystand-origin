@@ -1,11 +1,13 @@
 import React, { type ReactElement } from "react";
+import { usePageData } from "@hooks/usePageData";
 import * as paths from "../../locales/path.json";
 import TopicBlock from "@modules/aiSafety/components/TopicBlock";
 import DSNotification from "@components/common/DSNotification";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import MythCards from "@modules/safetyInNature/components/MythCards";
-import "./style.css";
+import Carousel from "@modules/kazTarih/components/Carousel";
 import '../../../aiProfession/Sections/components/glass.css';
+import "./style.css";
 
 type TopicListItem = {
   highlightedText: string;
@@ -34,7 +36,7 @@ type MythsCard = {
 };
 
 type SecondSectionContent = {
-   title: string;
+  title: string;
   description: string;
   topics: Topic[];
   mythsCard: MythsCard;
@@ -46,6 +48,10 @@ type SecondSectionProps = {
 
 const SecondSection: React.FC<SecondSectionProps> = ({ textContent }): ReactElement => {
   const section = textContent;
+
+  const { screenWidth } = usePageData();
+
+  const isMobile = screenWidth <= 650;
 
   return (
     <section className="ai-security-second-section">
@@ -144,13 +150,24 @@ const SecondSection: React.FC<SecondSectionProps> = ({ textContent }): ReactElem
           {section.mythsCard.title}
         </h2>
 
-        <div className="ai-security-myths-cards ">
-          {section.mythsCard.card.map((card, index) => (
-            <MythCards
-              key={index}
-              content={card}
-            />
-          ))}
+        <div className="ai-security-myths-cards">
+          {isMobile ? (
+            <Carousel className="ai-security-myths-carousel">
+              {section.mythsCard.card.map((card, index) => (
+                <MythCards
+                  key={index}
+                  content={card}
+                />
+              ))}
+            </Carousel>
+          ) : (
+            section.mythsCard.card.map((card, index) => (
+              <MythCards
+                key={index}
+                content={card}
+              />
+            ))
+          )}
         </div>
       </div>
     </section>
