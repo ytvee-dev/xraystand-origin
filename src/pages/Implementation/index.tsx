@@ -1,6 +1,10 @@
 import "./style.css";
+import * as paths from "@modules/aiSafety/locales/path.json";
+import * as contentKz from "../../modules/aiSafety/locales/kaz.json";
+import * as contentRu from "../../modules/aiSafety/locales/rus.json"
 import { useLocaleContent } from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
+import ImgTopicCard from "@modules/aiSafety/components/ImgTopicCard";
 
 const pageLayoutSX = {
     backgroundColor: "#181818",
@@ -19,7 +23,8 @@ const MainLogo = () => {
 
 
 const SeasonPage = () => {
-
+    const textContent = useLocaleContent(contentRu, contentKz);
+    const card = textContent.fourthSection.cards[1]
     return (
         <BrightnessLayout
             logo={<MainLogo />}
@@ -29,9 +34,14 @@ const SeasonPage = () => {
             headerBackgroundColor="rgb(255, 255, 255)"
             languageSwitcherClassName="kaz-music-language-switcher"
         >
-            <div className="container">
+            <div className="bgc">
+                <ImgTopicCard
+                    title={card.title}
+                    description={card.description}
+                    list={card.list}
+                    imgPath={paths.cards[0]}
+                />
             </div>
-
         </BrightnessLayout>
     );
 };
