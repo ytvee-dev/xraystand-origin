@@ -6,7 +6,7 @@ interface ImgCardList {
     text: string;
 }
 
-interface ImgCardContent {
+export interface ImgCardContent {
     title: string;
     description: string;
     list?: ImgCardList[];

@@ -1,0 +1,11 @@
+.ai-safety-title-wrapper {
+    max-width: 1296px;
+    margin-inline: 21px 19px;
+}
+
+@media (max-width: 500) {
+    .ai-safety-title-wrapper {
+        max-width: 0;
+        width: 100%;
+    }
+}
