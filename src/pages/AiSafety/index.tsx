@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/aiSafety/Sections/CoverSection";
+import SecondSection from "@modules/aiSafety/Sections/SecondSection";
 import FourthSection from "@modules/aiSafety/Sections/FourthSection";
 import "./style.css";
 
@@ -36,7 +37,7 @@ const MainLogo = () => {
 };
 
 const AiSafety = () => {
-    const textContent = useLocaleContent(contentRu, contentKz);
+    const content = useLocaleContent(contentRu, contentKz);
 
     const imgUrls = collectFromPathsJson(paths);
     usePreloadImages(imgUrls);
@@ -54,8 +55,9 @@ const AiSafety = () => {
             headerBackgroundColor="transparent"
         >
             {!isContentLoaded && <Spinner />}
-           <CoverSection сontent={textContent.coverSection} />
-           <FourthSection content={textContent.fourthSection} />
+           <CoverSection сontent={content.coverSection} />
+           <SecondSection textContent={content.secondSection} />
+           <FourthSection content={content.fourthSection} />
         </BrightnessLayout>
     );
 };
