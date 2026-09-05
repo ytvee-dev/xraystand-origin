@@ -52,3 +52,27 @@
 .topic-block-list {
     padding-left: 15px;
 }
+
+@media (max-width: 900px) {
+    .topic-block {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .topic-block-image {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 390px) {
+    .topic-block {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .topic-block-image {
+        width: 100%;
+        max-width: 280px;
+    }
+}

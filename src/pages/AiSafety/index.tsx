@@ -9,8 +9,7 @@ import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useSelector } from "react-redux";
 import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
-import CoverSection from "@modules/aiSafety/Sections/CoverSection";
-// import SecondSection from "@modules/aiSafety/Sections/SecondSection";
+import SecondSection from "@modules/aiSafety/Sections/SecondSection";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -36,7 +35,7 @@ const MainLogo = () => {
 };
 
 const AiSafety = () => {
-    const textContent = useLocaleContent(contentRu, contentKz);
+    const content = useLocaleContent(contentRu, contentKz);
 
     const imgUrls = collectFromPathsJson(paths);
     usePreloadImages(imgUrls);
@@ -54,8 +53,7 @@ const AiSafety = () => {
             headerBackgroundColor="transparent"
         >
             {!isContentLoaded && <Spinner />}
-           {/* <SecondSection textContent={textContent.secondSection} /> */}
-           <CoverSection сontent={textContent.coverSection} />
+           <SecondSection textContent={content.secondSection} />
         </BrightnessLayout>
     );
 };
