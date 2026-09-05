@@ -1,12 +1,12 @@
 import splitString from "@utils/splitString";
 import "./style.css";
 
-interface ImgCardList {
+export interface ImgCardList {
     highlightedText: string;
     text: string;
 }
 
-export interface ImgCardContent {
+interface ImgCardContent {
     title: string;
     description: string;
     list?: ImgCardList[];

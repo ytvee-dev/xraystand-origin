@@ -9,7 +9,7 @@ export interface IMythCardItem {
 
 interface IMythCardsProps {
     content: IMythCardItem[];
-    className: string;
+    className?: string;
 }
 
 const MythCards: React.FC<IMythCardsProps> = ({ content, className }): ReactElement => {
