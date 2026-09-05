@@ -1,7 +1,7 @@
 import splitString from "@utils/splitString";
 import "./style.css";
 
-interface ImgCardList {
+export interface ImgCardList {
     highlightedText: string;
     text: string;
 }

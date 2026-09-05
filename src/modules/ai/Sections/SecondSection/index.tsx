@@ -2,8 +2,6 @@ import { type ReactElement } from "react";
 import Carousel from "@modules/kazTarih/components/Carousel";
 import { usePageData } from "@hooks/usePageData";
 import * as paths from "@modules/ai/locales/paths.json";
-import leftNetwork from "@modules/ai/locales/left_network.svg";
-import rightNetwork from "@modules/ai/locales/right_network.svg";
 import "./style.css";
 
 interface SecondSectionContentItem {

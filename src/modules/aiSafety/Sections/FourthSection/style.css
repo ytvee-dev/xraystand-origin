@@ -1,0 +1,273 @@
+.ai-safety-fourth-section {
+    background-color: #D7E2E9;
+    overflow: hidden;
+    position: relative;
+}
+
+.ai-safety-fourth-content {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.ai-safety-fourth-bg-img {
+    width: 418px;
+    height: 425px;
+    position: absolute;
+    z-index: 1;
+}
+
+.ai-safety-fourth-bg-processing {
+    left: 2%;
+    bottom: 15%;
+}
+
+.ai-safety-fourth-bg-footprint {
+    right: 2%;
+    bottom: 0;
+}
+
+.ai-safety-fourth-content {
+  position: relative;
+    z-index: 2;
+}
+
+.ai-safety-fourth-topic-title {
+    color: #4EA4DA;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-inline: auto;
+    font-size: 28px;
+    text-align: center;
+    padding-inline: 20px;
+}
+
+.ai-safety-fourth-title {
+  width: 100%;
+  padding: 24px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.ai-safety-fourth-title h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #474747;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.ai-safety-fourth-title .bg-title-description {
+  margin-top: 33px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4ea4da;
+  font-family: 'Roboto', sans-serif;
+  white-space: pre-line;
+  padding: 0px;
+}
+
+.ai-safety-fourth-carousel-imgtopiccard .kaz-tarih-carousel-container {
+    display: flex;
+    gap: 12px;
+}
+
+.ai-safety-fourth-imgtopiccard-0 {
+    margin-left: 78px;
+}
+
+.ai-safety-fourth-notification-wrapper {
+    margin-inline: 20px;
+}
+
+.ai-safety-fourth-notification {
+    max-width: 1269px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-safety-fourth-myths-cards-wrapper {
+    display: flex;
+    gap: 36px;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 20px;
+}
+
+.ai-safety-fourth-myths-cards-mobile .kaz-tarih-carousel-container {
+    display: flex;
+    gap: 24px;
+}
+
+.ai-safety-fourth-myths-cards {
+    padding: 24px 36px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.ai-safety-fourth-myths-cards * {
+    color: #474747 !important;
+}
+
+.ai-safety-fourth-myths-cards .safety-nature-myth-card-description {
+    font-weight: 400;
+}
+
+.ai-safety-fourth-myths-cards-mobile .ai-safety-fourth-myths-cards {
+    width: 400px;
+}
+
+.ai-safety-fourth-myths-cards-wrapper.safety-nature-myth-card-description {
+    font-weight: 400;
+}
+
+.ai-safety-fourth-myths-0 {
+    margin-left: 30px;
+}
+
+.ai-safety-step-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px 33px;
+    width: 700px;
+    margin-inline: auto;
+    margin-bottom: 30px;
+}
+
+.ai-safety-fourth-step-cards-mobile {
+    margin-bottom: 60px;
+}
+
+.ai-step-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 330px;
+    padding: 24px 36px;
+    border-radius: 1px solid #FFF;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(4px);
+    flex-shrink: 0;
+}
+
+.ai-step-card-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ai-safety-fourth-step-cards-mobile .kaz-tarih-carousel-container{
+    display: flex;
+    gap: 24px;
+}
+
+.ai-safety-step-card-0 {
+    margin-left: 40px;
+}
+
+@media (max-width: 1200px) {
+    .ai-safety-fourth-title-wrapper {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 900px) {
+    .ai-safety-fourth-title-wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ai-safety-fourth-title-wrapper {
+        max-width: none;
+        margin-inline: 16px;
+    }
+
+    .ai-safety-fourth-topic-title {
+        font-size: 24px;
+    }
+
+    .ai-safety-fourth-title {
+        font-size: 24px !important;
+    }
+
+    .ai-safety-fourth-title.bg-title p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .ai-safety-fourth-imgtopiccard-0 {
+        margin-left: 40px;
+    }
+    
+    .ai-safety-fourth-bg-img {
+        width: 300px;
+        height: 315px;
+    }
+
+    .ai-safety-fourth-bg-footprint {
+        right: -5%;
+    }
+}
+
+@media (max-width: 680px) {
+    .ai-safety-fourth-bg-footprint {
+        right: -15%;
+    }
+        
+    .ai-safety-fourth-title h2 {
+        font-size: 30px;
+    }
+
+    .ai-safety-fourth-notification .ds-mui-alert {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 500) {
+    .ai-safety-fourth-section {
+        padding-top: 24px;
+    }
+    
+    .ai-safety-title-wrapper {
+        max-width: 0;
+        margin-inline: 21px 19px;
+    }
+
+    .ai-safety-fourth-bg-img {
+        width: 246px;
+        height: 250px;
+    }
+
+    .ai-safety-fourth-bg-footprint {
+        right: -25%;
+    }
+       
+    .ai-safety-fourth-title h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 390px) {
+    .ai-safety-fourth-title {
+        padding: 24px 20px;
+    }
+
+    .ai-safety-fourth-title h2 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .ai-safety-fourth-title .bg-title-description {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
