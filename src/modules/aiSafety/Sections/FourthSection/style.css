@@ -30,6 +30,7 @@
 }
 
 .ai-safety-fourth-content {
+  position: relative;
     z-index: 2;
 }
 
@@ -69,13 +70,18 @@
 }
 
 .ai-safety-fourth-imgtopiccard-0 {
-    margin-left: 108px;
+    margin-left: 78px;
+}
+
+.ai-safety-fourth-notification-wrapper {
+    margin-inline: 20px;
 }
 
 .ai-safety-fourth-notification {
     max-width: 1269px;
     margin-inline: auto;
-    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .ai-safety-fourth-myths-cards-wrapper {
@@ -133,6 +139,10 @@
     margin-bottom: 30px;
 }
 
+.ai-safety-fourth-step-cards-mobile {
+    margin-bottom: 60px;
+}
+
 .ai-step-card {
     background-color: rgba(255, 255, 255, 0.5);
     width: 330px;
@@ -152,9 +162,13 @@
     font-weight: 700;
 }
 
-.ai-safety-fourth-stepcards-mobile .kaz-tarih-carousel-container{
+.ai-safety-fourth-step-cards-mobile .kaz-tarih-carousel-container{
     display: flex;
     gap: 24px;
+}
+
+.ai-safety-step-card-0 {
+    margin-left: 40px;
 }
 
 @media (max-width: 1200px) {
@@ -187,13 +201,28 @@
         font-size: 18px;
         line-height: 20px;
     }
+
     .ai-safety-fourth-imgtopiccard-0 {
-        margin-left: 16px;
+        margin-left: 40px;
     }
     
     .ai-safety-fourth-bg-img {
         width: 300px;
         height: 315px;
+    }
+
+    .ai-safety-fourth-bg-footprint {
+        right: -5%;
+    }
+}
+
+@media (max-width: 680px) {
+    .ai-safety-fourth-bg-footprint {
+        right: -15%;
+    }
+        
+    .ai-safety-fourth-title h2 {
+        font-size: 30px;
     }
 }
 
@@ -210,5 +239,13 @@
     .ai-safety-fourth-bg-img {
         width: 246px;
         height: 250px;
+    }
+
+    .ai-safety-fourth-bg-footprint {
+        right: -25%;
+    }
+       
+    .ai-safety-fourth-title h2 {
+        font-size: 28px;
     }
 }

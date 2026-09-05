@@ -42,9 +42,15 @@ interface FourthSectionProps {
     content: FourthSection;
 }
 
-const StepCard = ({ title, description }: TitleWithDescriptionObj) => {
+
+
+const StepCard = ({ 
+    title,
+    description,
+    className 
+    }: TitleWithDescriptionObj & { className?: string }) => {
     return (
-        <div className="ai-step-card">
+        <div className={`ai-step-card ${className}`}>
             <p className="ai-step-card-title">{title}</p>
             <p className="ai-step-card-description">{description}</p>
         </div>
@@ -95,31 +101,33 @@ const FourthSection = ({content}: FourthSectionProps) => {
                     )}
                 </Carousel>
 
-                <DSNotification
-                    content={
-                        <>
-                            <h3 className="ai-security-notification-title">
-                                {content.lawsCards.title}
-                            </h3>
+                <div className="ai-safety-fourth-notification-wrapper">
+                    <DSNotification
+                        content={
+                            <>
+                                <h3 className="ai-security-notification-title">
+                                    {content.lawsCards.title}
+                                </h3>
 
-                            <p className="ai-security-notification-description">
-                                {content.lawsCards.description}
-                            </p>
-                        </>
-                    }
-                    className="ai-safety-fourth-notification"
-                    fullWidth={true}
-                    borderColor="rgba(255, 255, 255, 0.35)"
-                    iconName="aiSecurityScales"
-                    iconColor="#4EA4DA"
-                    backgroundColor="rgba(255, 255, 255, 0.55)"
-                    borderRadius="20px"
-                    iconWidth="87px"
-                    iconHeight="82px"
-                    imgPosition="flex-start"
-                    cardGap="24px"
-                    padding="24px 36px"
-                />
+                                <p className="ai-security-notification-description">
+                                    {content.lawsCards.description}
+                                </p>
+                            </>
+                        }
+                        className="ai-safety-fourth-notification"
+                        fullWidth={true}
+                        borderColor="rgba(255, 255, 255, 0.35)"
+                        iconName="aiSecurityScales"
+                        iconColor="#4EA4DA"
+                        backgroundColor="rgba(255, 255, 255, 0.55)"
+                        borderRadius="20px"
+                        iconWidth="87px"
+                        iconHeight="82px"
+                        imgPosition="flex-start"
+                        cardGap="24px"
+                        padding="24px 36px"
+                    />
+                </div>
 
                 <h3 className="ai-safety-fourth-topic-title">
                     {content.mythsCards.title}
@@ -155,12 +163,13 @@ const FourthSection = ({content}: FourthSectionProps) => {
                     {content.stepCards.title}
                 </h3>
                 {isMobile ? (
-                    <Carousel className="ai-safety-fourth-stepcards-mobile">
-                        {stepCards.map(card => 
+                    <Carousel className="ai-safety-fourth-step-cards-mobile">
+                        {stepCards.map((card, index)=> 
                             <StepCard
                                 key={card.title}
                                 title={card.title}
                                 description={card.description}
+                                className={`ai-safety-step-card-${index}`}
                             />
                         )}
                     </Carousel>
