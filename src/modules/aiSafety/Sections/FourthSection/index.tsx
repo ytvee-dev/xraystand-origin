@@ -1,10 +1,11 @@
 import BackgroundedTitle from '@modules/physics/components/BackgroundedTitle';
-import { type ImgCardContent } from '@modules/aiSafety/components/ImgTopicCard';
+import { type ImgCardList } from '@modules/aiSafety/components/ImgTopicCard';
 import Carousel from '@modules/kazTarih/components/Carousel';
 import * as paths from "@modules/aiSafety/locales/path.json";
 import DSNotification from '@components/common/DSNotification';
 import ImgTopicCard from '@modules/aiSafety/components/ImgTopicCard';
 import MythCards from '@modules/safetyInNature/components/MythCards';
+import { usePageData } from '@hooks/usePageData';
 import './style.css';
 
 interface TitleWithDescriptionObj {
@@ -12,19 +13,29 @@ interface TitleWithDescriptionObj {
     description: string;
 }
 
+interface ImgCardContent {
+    title: string;
+    description: string;
+    list?: ImgCardList[];
+}
+
+interface MythCard {
+    title: string;
+    cards: TitleWithDescriptionObj[][];
+}
+
+interface StepCard {
+    title: string;
+    cards: TitleWithDescriptionObj[];
+}
+
 interface FourthSection {
     title: string;
     description: string;
     cards: ImgCardContent[];
-    lawsCard: TitleWithDescriptionObj;
-    mythsCard:  {
-        title: string;
-        cards: TitleWithDescriptionObj[][]
-    }
-    stepCards: {
-        title: string;
-        cards: TitleWithDescriptionObj[]
-    }
+    lawsCards: TitleWithDescriptionObj;
+    mythsCards: MythCard;
+    stepCards: StepCard;
 }
 
 interface FourthSectionProps {
@@ -41,12 +52,13 @@ const StepCard = ({ title, description }: TitleWithDescriptionObj) => {
 }
 
 const FourthSection = ({content}: FourthSectionProps) => {
-    const mythCards = content.mythsCard.cards;
+    const mythCards = content.mythsCards.cards;
     const stepCards = content.stepCards.cards;
+    const { isMobile } = usePageData();
 
     return (
         <section className="ai-safety-fourth-section">
-            <div className="ai-safety-title-wrapper">
+            <div className="ai-safety-fourth-title-wrapper">
                 <BackgroundedTitle
                     title={content.title}
                     description={content.description}
@@ -58,44 +70,80 @@ const FourthSection = ({content}: FourthSectionProps) => {
                 />
             </div>
 
-            <Carousel>
+            <Carousel className="ai-safety-fourth-carousel-imgtopiccard">
                 {content.cards.map((card, index) =>
-                        <ImgTopicCard
-                            key={card.title}
-                            title={card.title}
-                            description={card.description}
-                            list={card.list}
-                            imgPath={paths.cards[index]}
-                        />
+                    <ImgTopicCard
+                        key={card.title}
+                        title={card.title}
+                        description={card.description}
+                        list={card.list}
+                        imgPath={paths.cards[index]}
+                        className={`ai-safety-fourth-imgtopiccard-${index}`}
+                    />
                 )}
             </Carousel>
 
             <DSNotification
-                content={content.lawsCard.description}
+                content={content.lawsCards.description}
                 backgroundColor="#FFFFFF"
                 textColor="#474747"
+                className="ai-safety-fourth-law-card"
             />
 
-            <h3>{content.mythsCard.title}</h3>
+            <h3 className="ai-safety-fourth-topic-title">
+                {content.mythsCards.title}
+            </h3>
             <div className="ai-safety-fourth-myths-cards-wrapper">
-                {mythCards.map(card => 
-                    <MythCards
-                        key={card[0].title}
-                        content={card}
-                    />
+                {isMobile ? (
+                    <Carousel className="ai-safety-fourth-myths-cards-mobile">
+                        {mythCards.map((card, index )=> 
+                            <MythCards
+                                key={card[0].title}
+                                content={card}
+                                className={`
+                                    ai-safety-fourth-myths-${index}
+                                    ai-safety-fourth-myths-cards
+                                `}
+                            />
+                        )}
+                    </Carousel>
+                ) : (
+                    <div className="ai-safety-fourth-myths-cards-wrapper">
+                        {mythCards.map(card => 
+                            <MythCards
+                                key={card[0].title}
+                                content={card}
+                                className="ai-safety-fourth-myths-cards"
+                            />
+                        )}
+                    </div>
                 )}
             </div>
 
-            <h3>{content.stepCards.title}</h3>
-            <div className="ai-safety-step-cards-wrapper">
-                {stepCards.map(card => 
-                    <StepCard
-                        key={card.title}
-                        title={card.title}
-                        description={card.description}
-                    />
-                )}
-            </div>
+            <h3  className="ai-safety-fourth-topic-title">
+                {content.stepCards.title}
+            </h3>
+            {isMobile ? (
+                <Carousel className="ai-safety-fourth-stepcards-mobile">
+                    {stepCards.map(card => 
+                        <StepCard
+                            key={card.title}
+                            title={card.title}
+                            description={card.description}
+                        />
+                    )}
+                </Carousel>
+            ) : (
+                <div className="ai-safety-step-cards-wrapper">
+                    {stepCards.map(card => 
+                        <StepCard
+                            key={card.title}
+                            title={card.title}
+                            description={card.description}
+                        />
+                    )}
+                </div>
+            )}
         </section>
     )
 }

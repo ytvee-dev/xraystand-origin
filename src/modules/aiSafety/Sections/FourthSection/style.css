@@ -1,11 +1,172 @@
-.ai-safety-title-wrapper {
-    max-width: 1296px;
-    margin-inline: 21px 19px;
+.ai-safety-fourth-section {
+    background-color: #D7E2E9;
+    padding-top: 60px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.ai-safety-fourth-topic-title {
+    color: #4EA4DA;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-inline: auto;
+    font-size: 28px;
+    text-align: center;
+    padding-inline: 20px;
+}
+
+.ai-safety-fourth-title-wrapper {
+    max-width: 1190px;
+    margin-inline: auto;
+}
+
+.ai-safety-fourth-title {
+    border-radius: 10px;
+    color: #4EA4DA;
+}
+
+.ai-safety-fourth-title h2 {
+    color: #474747;
+    text-transform: uppercase;
+}
+
+.ai-safety-fourth-title.bg-title p {
+    margin-inline: 0;
+    line-height: 30px;
+}
+
+.ai-safety-fourth-carousel-imgtopiccard .kaz-tarih-carousel-container {
+    display: flex;
+    gap: 12px;
+}
+
+.ai-safety-fourth-imgtopiccard-0 {
+    margin-left: 108px;
+}
+
+.ai-safety-fourth-myths-cards-wrapper {
+    display: flex;
+    gap: 36px;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 20px;
+}
+
+.ai-safety-fourth-myths-cards-mobile .kaz-tarih-carousel-container {
+    display: flex;
+    gap: 24px;
+}
+
+.ai-safety-fourth-myths-cards {
+    padding: 24px 36px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.ai-safety-fourth-myths-cards * {
+    color: #474747 !important;
+}
+
+.ai-safety-fourth-myths-cards .safety-nature-myth-card-title {
+    text-transform: none;
+    margin: 0;
+    font-size: 24px;
+}
+
+.ai-safety-fourth-myths-cards .safety-nature-myth-card-description {
+    font-weight: 400;
+}
+
+.ai-safety-fourth-myths-cards-mobile .ai-safety-fourth-myths-cards {
+    flex-shrink: 0;
+    width: 350px;
+}
+
+.ai-safety-fourth-myths-cards-wrapper.safety-nature-myth-card-description {
+    font-weight: 400;
+}
+
+.ai-safety-fourth-myths-0 {
+    margin-left: 30px;
+}
+
+.ai-safety-step-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px 33px;
+    width: 700px;
+    margin-inline: auto;
+    margin-bottom: 30px;
+}
+
+.ai-step-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 330px;
+    padding: 24px 36px;
+    border-radius: 1px solid #FFF;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(4px);
+    flex-shrink: 0;
+}
+
+.ai-step-card-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ai-safety-fourth-stepcards-mobile .kaz-tarih-carousel-container{
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width: 1200px) {
+    .ai-safety-fourth-title-wrapper {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 900px) {
+    .ai-safety-fourth-title-wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ai-safety-fourth-title-wrapper {
+        max-width: none;
+        margin-inline: 16px;
+    }
+
+    .ai-safety-fourth-topic-title {
+        font-size: 24px;
+    }
+
+    .ai-safety-fourth-title {
+        font-size: 24px !important;
+    }
+
+    .ai-safety-fourth-title.bg-title p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .ai-safety-fourth-imgtopiccard-0 {
+        margin-left: 16px;
+    }
 }
 
 @media (max-width: 500) {
+    .ai-safety-fourth-section {
+        padding-top: 24px;
+    }
+    
     .ai-safety-title-wrapper {
         max-width: 0;
-        width: 100%;
+        margin-inline: 21px 19px;
     }
 }
