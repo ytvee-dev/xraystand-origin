@@ -104,19 +104,19 @@
   width: 100%;
 }
 
-.safety-nature-myth-card {
-  max-width: 515px !important;
-  background: rgba(255, 255, 255, 0.55) !important;
-  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+.ai-security-myths .safety-nature-myth-card {
+  max-width: 515px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
-.safety-nature-myth-card-title,
-.safety-nature-myth-card-description {
-  color: #474747 !important;
+.ai-security-myths .safety-nature-myth-card-title,
+.ai-security-myths .safety-nature-myth-card-description {
+  color: #474747;
 }
 
-.safety-nature-myth-card-description {
-  font-weight: 400 !important;
+.ai-security-myths .safety-nature-myth-card-description {
+  font-weight: 400;
 }
 
 @media (max-width: 1024px) {

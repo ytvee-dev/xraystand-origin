@@ -9,42 +9,43 @@ import Carousel from "@modules/kazTarih/components/Carousel";
 import '../../../aiProfession/Sections/components/glass.css';
 import "./style.css";
 
-type TopicListItem = {
+interface TopicListItem {
   highlightedText: string;
   text: string;
-};
+}
 
-type Topic = {
+interface Topic {
   title: string;
   description: string;
   listDescription: string;
   list: TopicListItem[];
+
   lawsCard: {
     title: string;
     description: string;
   };
-};
+}
 
-type MythCardItem = {
+interface MythCardItem {
   title: string;
   description: string;
-};
+}
 
-type MythsCard = {
+interface MythsCard {
   title: string;
   card: MythCardItem[][];
-};
+}
 
-type SecondSectionContent = {
+interface SecondSectionContent {
   title: string;
   description: string;
   topics: Topic[];
   mythsCard: MythsCard;
-};
+}
 
-type SecondSectionProps = {
+interface SecondSectionProps {
   textContent: SecondSectionContent;
-};
+}
 
 const SecondSection: React.FC<SecondSectionProps> = ({ textContent }): ReactElement => {
   const section = textContent;
