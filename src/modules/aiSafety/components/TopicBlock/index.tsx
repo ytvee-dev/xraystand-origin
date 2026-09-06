@@ -22,10 +22,20 @@ const TopicBlock = ({
   listDescription,
   list,
 }: TopicBlockProps): ReactElement => {
+  const filteredList = list?.filter(
+    (item) =>
+      item.highlightedText.trim() !== "" ||
+      item.text.trim() !== ""
+  );
+
   return (
     <div className={`topic-block topic-block--${imagePosition}`}>
       {image && (
-        <img className="topic-block-image" src={image} alt=""/>
+        <img
+          className="topic-block-image"
+          src={image}
+          alt=""
+        />
       )}
 
       <div className="topic-block-content">
@@ -34,12 +44,14 @@ const TopicBlock = ({
         <p className="topic-block-description">{description}</p>
 
         {listDescription && (
-          <p className="topic-block-list-description">{listDescription}</p>
+          <p className="topic-block-list-description">
+            {listDescription}
+          </p>
         )}
 
-        {list && (
+        {filteredList && filteredList.length > 0 && (
           <ul className="topic-block-list">
-            {list.map((item, index) => (
+            {filteredList.map((item, index) => (
               <li key={index}>
                 <strong>{item.highlightedText}</strong>{" "}
                 {item.text}

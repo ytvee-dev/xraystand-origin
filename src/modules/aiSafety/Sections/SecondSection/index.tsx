@@ -95,9 +95,9 @@ const SecondSection: React.FC<SecondSectionProps> = ({ textContent }): ReactElem
         iconColor="#4EA4DA"
         backgroundColor="rgba(255, 255, 255, 0.55)"
         borderRadius="20px"
-        iconWidth="137px"
-        iconHeight="140px"
-        imgPosition="center"
+        iconWidth="95px"
+        iconHeight="97px"
+        imgPosition={isMobile ? "flex-start" : "center"}
         cardGap="24px"
         padding="24px 36px"
       />
@@ -130,9 +130,9 @@ const SecondSection: React.FC<SecondSectionProps> = ({ textContent }): ReactElem
         iconColor="#4EA4DA"
         backgroundColor="rgba(255, 255, 255, 0.55)"
         borderRadius="20px"
-        iconWidth="137px"
-        iconHeight="140px"
-        imgPosition="center"
+        iconWidth="95px"
+        iconHeight="97px"
+        imgPosition={isMobile ? "flex-start" : "center"}
         cardGap="24px"
         padding="24px 36px"
       />

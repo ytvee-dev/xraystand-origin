@@ -56,6 +56,7 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ textContent }): ReactElemen
 
     return (
         <section className="ai-security-third-section">
+            <img className="ai-security-third-section-image" src={paths.backgroundImages.privacySecurity} alt="AI Security" />
             <BackgroundedTitle
                 title={section.title}
                 description={section.description}
@@ -94,13 +95,12 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ textContent }): ReactElemen
                 iconColor="#4EA4DA"
                 backgroundColor="rgba(255, 255, 255, 0.55)"
                 borderRadius="20px"
-                iconWidth="137px"
-                iconHeight="140px"
-                imgPosition="center"
+                iconWidth={isMobile ? "95px" : "137px"}
+                iconHeight={isMobile ? "97px" : "140px"}
+                imgPosition={isMobile ? "flex-start" : "center"}
                 cardGap="24px"
                 padding="24px 36px"
             />
-
             <TopicBlock
                 title={section.topics[1].title}
                 description={section.topics[1].description}
@@ -129,9 +129,9 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ textContent }): ReactElemen
                 iconColor="#4EA4DA"
                 backgroundColor="rgba(255, 255, 255, 0.55)"
                 borderRadius="20px"
-                iconWidth="137px"
-                iconHeight="140px"
-                imgPosition="center"
+                iconWidth={isMobile ? "95px" : "137px"}
+                iconHeight={isMobile ? "97px" : "140px"}
+                imgPosition={isMobile ? "flex-start" : "center"}
                 cardGap="24px"
                 padding="24px 36px"
             />

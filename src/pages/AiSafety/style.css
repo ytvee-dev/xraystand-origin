@@ -64,6 +64,7 @@
   box-sizing: border-box;
 }
 
+
 @media (max-width: 768px) {
   .ai-security-section-title h2 {
     font-size: 40px;
@@ -125,5 +126,15 @@
     padding: 24px 20px !important;
     gap: 9px !important;
     box-sizing: border-box;
+  }
+}
+
+@media(max-width: 320px) {
+  .ai-security-section-title h2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .ai-security-myths-cards .safety-nature-myth-card-title{
+    font-size: 20px;
   }
 }
