@@ -9,8 +9,10 @@ import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useSelector } from "react-redux";
 import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
+import CoverSection from "@modules/aiSafety/Sections/CoverSection";
 import SecondSection from "@modules/aiSafety/Sections/SecondSection";
 import ThirdSection from "@modules/aiSafety/Sections/ThirdSection";
+import FourthSection from "@modules/aiSafety/Sections/FourthSection";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -54,8 +56,10 @@ const AiSafety = () => {
             headerBackgroundColor="transparent"
         >
             {!isContentLoaded && <Spinner />}
+           <CoverSection сontent={content.coverSection} />
            <SecondSection textContent={content.secondSection} />
            <ThirdSection textContent={content.thirdSection} />
+           <FourthSection content={content.fourthSection} />
         </BrightnessLayout>
     );
 };
