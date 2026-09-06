@@ -57,12 +57,11 @@ const AiSafety = () => {
             headerBackgroundColor="transparent"
         >
             {!isContentLoaded && <Spinner />}
-           <CoverSection сontent={content.coverSection} />
-           <SecondSection textContent={content.secondSection} />
-           <ThirdSection textContent={content.thirdSection} />
-           <FirstSection content={content.firstSection} />
-           <SecondSection content={content.secondSection} />
-           <FourthSection content={content.fourthSection} />
+            <CoverSection сontent={content.coverSection} />
+            <FirstSection content={content.firstSection} />
+            <SecondSection content={content.secondSection} />
+            <ThirdSection textContent={content.thirdSection} />
+            <FourthSection content={content.fourthSection} />
         </BrightnessLayout>
     );
 };
