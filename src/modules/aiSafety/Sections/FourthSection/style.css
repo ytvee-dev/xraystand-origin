@@ -17,6 +17,10 @@
     margin-inline: 58px;
 }
 
+.ai-safety-fourth-subtitles {
+    margin-block-end: 0 !important;
+}
+
 .ai-safety-fourth-bg-img {
     width: 418px;
     height: 425px;
@@ -62,9 +66,8 @@
 .ai-safety-fourth-myths-cards-wrapper {
     display: flex;
     gap: 36px;
-    width: fit-content;
     margin-inline: auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .ai-safety-fourth-myths-cards-mobile .kaz-tarih-carousel-container {
@@ -130,7 +133,7 @@
     font-weight: 700;
 }
 
-.ai-safety-fourth-step-cards-mobile .kaz-tarih-carousel-container{
+.ai-safety-fourth-step-cards-mobile .kaz-tarih-carousel-container {
     display: flex;
     gap: 24px;
 }
@@ -148,7 +151,7 @@
     .ai-safety-fourth-imgtopiccard-0 {
         margin-left: 40px;
     }
-    
+
     .ai-safety-fourth-bg-img {
         width: 300px;
         height: 315px;
@@ -156,6 +159,46 @@
 
     .ai-safety-fourth-bg-footprint {
         right: -5%;
+    }
+
+    .ai-safety-fourth-myths-cards-wrapper {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .ai-safety-fourth-myths-cards-mobile {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .ai-safety-fourth-myths-cards-mobile .kaz-tarih-carousel-container {
+        display: flex;
+        gap: 16px;
+        margin-left: 0;
+    }
+
+    .ai-safety-fourth-myths-cards-mobile .ai-safety-fourth-myths-cards {
+        flex: 0 0 100%;
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    .ai-safety-fourth-myths-0 {
+        margin-left: 0;
+    }
+
+    .ai-safety-fourth-carousel-imgtopiccard .kaz-tarih-carousel-container> :last-child {
+        margin-right: 10px;
+    }
+
+    .ai-safety-fourth-step-cards-mobile .kaz-tarih-carousel-container> :last-child {
+        margin-right: 20px;
     }
 }
 

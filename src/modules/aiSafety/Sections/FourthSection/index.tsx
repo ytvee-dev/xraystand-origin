@@ -159,9 +159,9 @@ const FourthSection = ({content}: FourthSectionProps) => {
                     )}
                 </div>
 
-                <h3 className="ai-safety-fourth-topic-title">
+                <h2 className="ai-safety-fourth-topic-title ai-safety-fourth-subtitles">
                     {content.stepCards.title}
-                </h3>
+                </h2>
                 {isMobile ? (
                     <Carousel className="ai-safety-fourth-step-cards-mobile">
                         {stepCards.map((card, index)=> 
