@@ -59,10 +59,6 @@
     gap: 12px;
 }
 
-.ai-safety-fourth-imgtopiccard-0 {
-
-}
-
 .ai-safety-fourth-myths-cards-wrapper {
     display: flex;
     gap: 36px;
@@ -228,5 +224,15 @@
     .ai-safety-notifivation-wrapper,
     .ai-safety-fourth-subtitles {
         margin-inline: 20px;
+    }
+
+    .ai-step-card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .ai-step-card {
+        width: 290px;
     }
 }

@@ -6,6 +6,11 @@
   height: 49px;
 }
 
+.ai-safety-section .kaz-tarih-carousel-arrow {
+  color: #4EA4DA;
+  border: 1px solid #4EA4DA;
+}
+
 .ai-security-section-title {
   width: 100%;
   padding: 24px;

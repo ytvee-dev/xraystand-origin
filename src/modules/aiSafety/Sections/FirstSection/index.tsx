@@ -47,7 +47,7 @@ const FirstSection = ({content}: FirstSectionProps) => {
     const descriptionArr = splitString(topicCard.description);
 
     return (
-        <section className="ai-safety-first-section">
+        <section className="ai-safety-first-section ai-safety-section">
             <img 
                 src={paths.backgroundImages.digitalLaw} 
                 alt="" 
