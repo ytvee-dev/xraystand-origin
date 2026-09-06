@@ -84,7 +84,7 @@ const FourthSection = ({content}: FourthSectionProps) => {
                         titleFontWeight="700"
                         fullWidth
                         descriptionSize="large"
-                        className="ai-safety-fourth-title"
+                        className="ai-security-section-title"
                     />
                 </div>
 
@@ -101,20 +101,20 @@ const FourthSection = ({content}: FourthSectionProps) => {
                     )}
                 </Carousel>
 
-                <div className="ai-safety-fourth-notification-wrapper">
+               <div className="ai-safety-notifivation-wrapper">
                     <DSNotification
                         content={
-                            <>
-                                <h3 className="ai-security-notification-title">
-                                    {content.lawsCards.title}
-                                </h3>
+                        <>
+                            <h3 className="ai-security-notification-title">
+                            {content.lawsCards.title}
+                            </h3>
 
-                                <p className="ai-security-notification-description">
-                                    {content.lawsCards.description}
-                                </p>
-                            </>
+                            <p className="ai-security-notification-description">
+                            {content.lawsCards.description}
+                            </p>
+                        </>
                         }
-                        className="ai-safety-fourth-notification"
+                        className="ai-security-notification"
                         fullWidth={true}
                         borderColor="rgba(255, 255, 255, 0.35)"
                         iconName="aiSecurityScales"
@@ -127,11 +127,11 @@ const FourthSection = ({content}: FourthSectionProps) => {
                         cardGap="24px"
                         padding="24px 36px"
                     />
-                </div>
+               </div>
 
-                <h3 className="ai-safety-fourth-topic-title">
+                <h2 className="ai-security-myths-title ai-safety-fourth-subtitles">
                     {content.mythsCards.title}
-                </h3>
+                </h2>
                 <div className="ai-safety-fourth-myths-cards-wrapper">
                     {isMobile ? (
                         <Carousel className="ai-safety-fourth-myths-cards-mobile">
@@ -159,7 +159,7 @@ const FourthSection = ({content}: FourthSectionProps) => {
                     )}
                 </div>
 
-                <h3  className="ai-safety-fourth-topic-title">
+                <h3 className="ai-safety-fourth-topic-title">
                     {content.stepCards.title}
                 </h3>
                 {isMobile ? (
