@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
 import SecondSection from "@modules/aiSafety/Sections/SecondSection";
+import ThirdSection from "@modules/aiSafety/Sections/ThirdSection";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -54,6 +55,7 @@ const AiSafety = () => {
         >
             {!isContentLoaded && <Spinner />}
            <SecondSection textContent={content.secondSection} />
+           <ThirdSection textContent={content.thirdSection} />
         </BrightnessLayout>
     );
 };

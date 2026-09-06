@@ -1,0 +1,19 @@
+.ai-security-third-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  width: 100%;
+  background-color: #D7E2E9;
+  overflow: hidden;
+  padding: 71px 72px;
+  z-index: 1;
+}
+
+.topic-block {
+  padding: 0px 100px;
+}
+
+.ai-security-notification-title {
+  white-space: pre-line;
+}
