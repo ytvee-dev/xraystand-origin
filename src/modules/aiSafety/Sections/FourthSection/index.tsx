@@ -42,9 +42,7 @@ interface FourthSectionProps {
     content: FourthSection;
 }
 
-
-
-const StepCard = ({
+const StepCard = ({ 
     title,
     description,
     className
@@ -63,10 +61,10 @@ const FourthSection = ({ content }: FourthSectionProps) => {
     const { isMobile } = usePageData();
 
     return (
-        <section className="ai-safety-fourth-section">
-            <img
-                src={paths.backgroundImages.dataProcessing}
-                alt=""
+        <section className="ai-safety-fourth-section ai-safety-section">
+            <img 
+                src={paths.backgroundImages.dataProcessing} 
+                alt="" 
                 className="ai-safety-fourth-bg-img ai-safety-fourth-bg-processing"
             />
             <img

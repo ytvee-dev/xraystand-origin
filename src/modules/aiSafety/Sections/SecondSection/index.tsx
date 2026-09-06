@@ -44,11 +44,11 @@ interface SecondSectionContent {
 }
 
 interface SecondSectionProps {
-  textContent: SecondSectionContent;
+  content: SecondSectionContent;
 }
 
-const SecondSection: React.FC<SecondSectionProps> = ({ textContent }): ReactElement => {
-  const section = textContent;
+const SecondSection: React.FC<SecondSectionProps> = ({ content }): ReactElement => {
+  const section = content;
 
   const { screenWidth } = usePageData();
 

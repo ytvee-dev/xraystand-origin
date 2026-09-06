@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/aiSafety/Sections/CoverSection";
+import FirstSection from "@modules/aiSafety/Sections/FirstSection";
 import SecondSection from "@modules/aiSafety/Sections/SecondSection";
 import ThirdSection from "@modules/aiSafety/Sections/ThirdSection";
 import FourthSection from "@modules/aiSafety/Sections/FourthSection";
@@ -59,6 +60,8 @@ const AiSafety = () => {
            <CoverSection сontent={content.coverSection} />
            <SecondSection textContent={content.secondSection} />
            <ThirdSection textContent={content.thirdSection} />
+           <FirstSection content={content.firstSection} />
+           <SecondSection content={content.secondSection} />
            <FourthSection content={content.fourthSection} />
         </BrightnessLayout>
     );
