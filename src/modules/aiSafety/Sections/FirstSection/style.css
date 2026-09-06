@@ -1,0 +1,175 @@
+.ai-safety-first-section {
+    background-color: #D7E2E9;
+    overflow: hidden;
+    position: relative;
+}
+
+.ai-safety-first-bg-law {
+    width: 352px;
+    height: 551px;
+    position: absolute;
+    z-index: 1;
+    bottom: 20%;
+}
+
+.ai-safety-first-content {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.ai-safety-first-title-wrapper {
+    margin-inline: 58px;
+}
+
+.ai-safety-first-content {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    padding: 80px 0 67px 0;
+}
+
+.ai-first-topic-card {
+    max-width: 1240px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.ai-first-topic-card-content {
+    display: flex;
+    gap: 80px;
+}
+
+.ai-first-topic-card h3 {
+    color: #4EA4DA;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.ai-first-topic-card-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ai-first-topic-card-text {
+    font-size: 18px;
+}
+
+.ai-first-topic-card-img {
+    width: 272px;
+    height: 272px;
+}
+
+.ai-first-law-cards-carousel .kaz-tarih-carousel-container {
+    display: flex;
+    gap: 20px;
+    padding-inline: 40px;
+}
+
+.ai-first-law-card-1 {
+    margin-right: 30px;
+}
+
+.ai-first-law-cards-wrapper {
+    display: flex;
+    gap: 17px;
+    margin-inline: auto;
+}
+
+.ai-law-card {
+    background-color: rgb(255, 255, 255, 0.5);
+    color: #474747;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    padding: 24px 36px;
+    width: 620px;
+    flex-shrink: 0;
+}
+
+.ai-law-card-title {
+    font-size: 28px;
+    color: #4EA4DA;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.ai-law-card-description {
+    margin-bottom: 20px;
+}
+
+.ai-law-card-subtitle {
+    font-weight: 700;
+}
+
+@media (max-width: 1280px) {
+    .ai-first-topic-card-content {
+        gap: 20px;
+    }
+
+    .ai-law-card {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ai-law-card {
+        width: 400px;
+    }
+}
+
+@media (max-width: 840px) {
+    .ai-law-card {
+        width: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+    .ai-first-topic-card-content {
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .ai-first-topic-card-img {
+        margin-inline: auto;
+    }
+
+    .ai-law-card {
+        padding: 24px 20px 30px 24px;
+        width: 600px;
+    }
+
+    .ai-law-card-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 620px) {
+    .ai-law-card {
+        width: 500px;
+    }
+}
+
+@media (max-width: 520px) {
+    .ai-law-card {
+        width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .ai-law-card {
+        width: 350px;
+    }
+}
+
+@media (max-width: 380px) {
+    .ai-law-card {
+        width: 290px;
+    }
+}

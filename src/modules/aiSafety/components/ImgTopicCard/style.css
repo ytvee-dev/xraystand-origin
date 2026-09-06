@@ -46,11 +46,25 @@
 @media (max-width: 768px) {
     .img-topic-card {
         width: 500px;
+        padding: 24px 16px;
     }
 }
 
 @media (max-width: 500px) {
     .img-topic-card {
         width: 350px;
+        overflow-wrap: break-word;
+    }
+}
+
+@media (max-width: 390px) {
+    .img-topic-card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .img-topic-card {
+        width: 290px;
     }
 }
