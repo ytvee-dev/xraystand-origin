@@ -6,6 +6,7 @@
     border-radius: 20px;
     color: #474747;
     font-size: 18px;
+    flex-shrink: 0;
 }
 
 .img-topic-card-img {
@@ -50,6 +51,6 @@
 
 @media (max-width: 500px) {
     .img-topic-card {
-        width: 300px;
+        width: 350px;
     }
 }
