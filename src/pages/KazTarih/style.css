@@ -52,7 +52,7 @@
         font-size: 1.7rem;
     }
 
-    .kt-eleventh-section .kaz-tarih-carousel-viewport {
+    .kt-eleventh-section .carousel-viewport {
         padding: 0 2rem 0 7rem !important;
     }
 }
@@ -75,7 +75,7 @@
         line-height: 1.8rem;
     }
 
-    .kt-eleventh-section .kaz-tarih-carousel-viewport {
+    .kt-eleventh-section .carousel-viewport {
         padding: 0 2rem 0 5rem !important;
     }
 }
@@ -166,8 +166,8 @@
         flex: 0 0 344px !important;
     }
 
-    .kt-seventh-section .kaz-tarih-carousel-viewport,
-    .kt-ninth-section .kaz-tarih-carousel-viewport {
+    .kt-seventh-section .carousel-viewport,
+    .kt-ninth-section .carousel-viewport {
         padding: 0 1rem !important;
     }
 
@@ -192,7 +192,7 @@
         width: 80%;
     }
 
-    .kt-eleventh-section .kaz-tarih-carousel-viewport {
+    .kt-eleventh-section .carousel-viewport {
         padding: 0 2rem 0 3rem !important;
     }
 
@@ -242,7 +242,7 @@
         width: 70%;
     }
 
-    .kt-eleventh-section .kaz-tarih-carousel-viewport {
+    .kt-eleventh-section .carousel-viewport {
         padding: 0 2rem 0 2rem !important;
     }
 

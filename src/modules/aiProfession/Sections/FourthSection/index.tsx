@@ -1,4 +1,4 @@
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import { usePageData } from "@hooks/usePageData";
 import { type ReactElement } from "react";
 import SectionHeadingPanel from "../components/SectionHeadingPanel";
@@ -65,7 +65,7 @@ const FourthSection = ({ content }: IFourthSectionProps): ReactElement => {
             key={`${index}-${item.title}`}
             title={item.title}
             description={item.description ?? ""}
-            className="kaz-tarih-carousel-card ai-profession-fourth-rule-card ai-profession-glass-surface"
+            className="carousel-card ai-profession-fourth-rule-card ai-profession-glass-surface"
             titleClassName="ai-profession-fourth-rule-title"
             descriptionClassName="ai-profession-fourth-rule-description"
         />

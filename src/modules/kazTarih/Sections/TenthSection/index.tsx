@@ -6,7 +6,7 @@ import type { ICardsParagraphs } from "@modules/kazTarih/types";
 import { usePageData } from "@hooks/usePageData";
 import type { ReactElement } from "react";
 import "./style.css";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 
 const TenthSection = ({
     className,
@@ -36,7 +36,7 @@ const TenthSection = ({
                             (cardData: ICardsParagraphs[], index: number) => (
                                 <TextFormatterCard
                                     key={`kt-tenth-section-card-index-${index}`}
-                                    className="kt-tenth-section-card kaz-tarih-carousel-card"
+                                    className="kt-tenth-section-card carousel-card"
                                     items={cardData}
                                 />
                             ),

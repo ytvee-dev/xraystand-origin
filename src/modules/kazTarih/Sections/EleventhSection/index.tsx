@@ -1,4 +1,4 @@
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import * as paths from "@modules/kazTarih/locales/paths.json";
 import DSNotification from "@components/common/DSNotification";
 import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
@@ -38,7 +38,7 @@ const EleventhSection = ({
                     {content.cards.map(
                         (cardData: ICardsParagraphs[], index: number) => (
                             <TextFormatterCard
-                                className="kaz-tarih-carousel-card"
+                                className="carousel-card"
                                 key={`kt-eleventh-section-${index}`}
                                 items={cardData}
                                 theme="light"

@@ -3,7 +3,7 @@ import type { IEnglishSectionProps } from "@modules/english/types";
 import { usePageData } from "@hooks/usePageData";
 import type { ReactElement } from "react";
 import "./style.css";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 
 const FourthSection = ({
     className,
@@ -46,7 +46,7 @@ const FourthSection = ({
                                                 index: number,
                                             ) => (
                                                 <div
-                                                    className="nvp-fourth-section-card kaz-tarih-carousel-card"
+                                                    className="nvp-fourth-section-card carousel-card"
                                                     key={`nvp-fourth-section-${index}`}
                                                     style={{ flex: "0 0 20%" }}
                                                 >

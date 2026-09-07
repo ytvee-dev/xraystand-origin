@@ -1,4 +1,4 @@
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import type { ICardData, IParagraphData } from "@modules/nvp/types";
 import type { IEnglishSectionProps } from "@modules/english/types";
 import { usePageData } from "@hooks/usePageData";
@@ -47,7 +47,7 @@ const SecondSection = ({
                                                 index: number,
                                             ) => (
                                                 <div
-                                                    className="nvp-second-section-card kaz-tarih-carousel-card"
+                                                    className="nvp-second-section-card carousel-card"
                                                     key={`nvp-second-section-${index}`}
                                                     style={{ flex: "0 0 30%" }}
                                                 >

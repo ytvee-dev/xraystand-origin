@@ -1,5 +1,5 @@
 import DSCard from "@components/common/Cards/DSCard";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import * as paths from "@modules/kazTarih/locales/paths.json";
 import DSNotification from "@components/common/DSNotification";
 import type { IEnglishSectionProps } from "@modules/english/types";
@@ -39,7 +39,7 @@ const EighthSection = ({
                             (cardData: ICardData, index: number) => (
                                 <DSCard
                                     key={`kt-card-index-${index}`}
-                                    className="kaz-tarih-carousel-card ub-font-family"
+                                    className="carousel-card ub-font-family"
                                     imageName={paths.smallCards[index]}
                                     title={cardData.title}
                                     label={cardData.description}

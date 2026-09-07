@@ -1,5 +1,5 @@
 import React, { type ReactElement } from "react";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import { usePageData } from "@hooks/usePageData";
 import ProfessionCard from "../components/ProfessionCards";
 import PracticeCards from "../components/PracticeCards";

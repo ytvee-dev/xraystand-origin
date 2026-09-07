@@ -1,5 +1,5 @@
 import BackgroundedTitle from '@modules/physics/components/BackgroundedTitle';
-import Carousel from '@modules/kazTarih/components/Carousel';
+import Carousel from "@components/common/Carousel";
 import * as paths from "@modules/aiSafety/locales/path.json";
 import DSNotification from '@components/common/DSNotification';
 import splitString from '@utils/splitString';

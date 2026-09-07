@@ -1,6 +1,6 @@
 import DSNotification from "@components/common/DSNotification";
 import { usePageData } from "@hooks/usePageData";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import { SvgSpriteIds } from "@utils/constants";
 import type { ReactElement } from "react";
 import * as imagePaths from "@modules/emotionalIntelligence/locales/path.json";
@@ -182,7 +182,7 @@ const MobileCards = ({
         <Carousel className="ei-competencies-carousel" style={{ padding: "0 24px" }}>
             {mobileCards.map((card) => (
                 <div
-                    className="ei-competencies-slide kaz-tarih-carousel-card"
+                    className="ei-competencies-slide carousel-card"
                     key={card.title}
                 >
                     <CompetencyCard card={card} />

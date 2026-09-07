@@ -1,4 +1,4 @@
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import type {
     INvpEquipmentCardContent,
     INvpEquipmentHotspotContent,
@@ -216,7 +216,7 @@ const FifthSection = ({
                             index: number,
                         ) => (
                             <div
-                                className="nvp-equipment-card kaz-tarih-carousel-card"
+                                className="nvp-equipment-card carousel-card"
                                 key={`${card.title}-${index}`}
                                 style={{
                                     flex: isMobile

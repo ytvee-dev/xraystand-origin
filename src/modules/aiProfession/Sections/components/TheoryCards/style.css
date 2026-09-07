@@ -85,7 +85,7 @@
         margin: 30px auto;
     }
 
-    .theory-cards-carousel .kaz-tarih-carousel-container {
+    .theory-cards-carousel .carousel-container {
         gap: 16px;
         margin-left: 0;
         padding: 0 20px;
@@ -117,7 +117,7 @@
 }
 
 @media (max-width: 390px) {
-    .theory-cards-carousel .kaz-tarih-carousel-container {
+    .theory-cards-carousel .carousel-container {
         padding-inline: 10px;
     }
 
@@ -125,7 +125,7 @@
         margin-top: 0px;
     }
 
-    .theory-cards-carousel .kaz-tarih-carousel-arrow {
+    .theory-cards-carousel .carousel-arrow {
         top: 30%;
     }
 }

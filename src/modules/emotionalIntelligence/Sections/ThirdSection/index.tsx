@@ -1,5 +1,5 @@
 import { usePageData } from "@hooks/usePageData";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import type { ReactElement } from "react";
 import * as imagePaths from "@modules/emotionalIntelligence/locales/path.json";
 import "./style.css";
@@ -157,7 +157,7 @@ const DesktopCards = ({
 const createGrowthCardSlide = (card: IGrowthCard): ReactElement => {
     return (
         <div
-            className="ei-growth-card-slide kaz-tarih-carousel-card"
+            className="ei-growth-card-slide carousel-card"
             key={card.id}
         >
             <GrowthCard card={card} />

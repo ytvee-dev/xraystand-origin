@@ -231,7 +231,7 @@
         font-size: 16px;
     }
 
-    .nvp-emblem-card.kaz-tarih-carousel-card {
+    .nvp-emblem-card .carousel-card {
         flex: 0 0 30% !important;
     }
 
@@ -303,7 +303,7 @@
         gap: 1rem;
     }
 
-    .nvp-emblem-card.kaz-tarih-carousel-card {
+    .nvp-emblem-card .carousel-card {
         flex: 0 0 40% !important;
     }
 
@@ -381,7 +381,7 @@
 }
 
 @media screen and (max-width: 390px) {
-    .nvp-emblem-card.kaz-tarih-carousel-card {
+    .nvp-emblem-card .carousel-card {
         flex: 0 0 60% !important;
     }
 

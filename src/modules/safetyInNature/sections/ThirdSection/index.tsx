@@ -2,7 +2,7 @@ import React, { type ReactElement } from "react";
 import { usePageData } from "@hooks/usePageData";
 import * as paths from "../../locales/paths.json";
 import MythCards from "@modules/safetyInNature/components/MythCards";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import SafetyNatureHeading from "@modules/safetyInNature/components/SafetyNatureHeading";
 import "./style.css";
 

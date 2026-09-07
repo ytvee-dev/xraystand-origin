@@ -1,7 +1,7 @@
 import React, { type ReactElement } from "react";
 import * as paths from "@modules/ai/locales/paths.json";
 import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import { type AiProps } from "@modules/ai/types/index";
 import { usePageData } from "@hooks/usePageData";
 import "./style.css";

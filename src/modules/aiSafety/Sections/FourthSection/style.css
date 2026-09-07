@@ -54,7 +54,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.ai-safety-fourth-carousel-imgtopiccard .kaz-tarih-carousel-container {
+.ai-safety-fourth-carousel-imgtopiccard .carousel-container {
     display: flex;
     gap: 12px;
 }
@@ -66,7 +66,7 @@
     padding: 0 20px;
 }
 
-.ai-safety-fourth-myths-cards-mobile .kaz-tarih-carousel-container {
+.ai-safety-fourth-myths-cards-mobile .carousel-container {
     display: flex;
     gap: 24px;
 }
@@ -129,7 +129,7 @@
     font-weight: 700;
 }
 
-.ai-safety-fourth-step-cards-mobile .kaz-tarih-carousel-container {
+.ai-safety-fourth-step-cards-mobile .carousel-container {
     display: flex;
     gap: 24px;
 }
@@ -171,7 +171,7 @@
         min-width: 0;
     }
 
-    .ai-safety-fourth-myths-cards-mobile .kaz-tarih-carousel-container {
+    .ai-safety-fourth-myths-cards-mobile .carousel-container {
         display: flex;
         gap: 16px;
         margin-left: 0;
@@ -189,11 +189,11 @@
         margin-left: 0;
     }
 
-    .ai-safety-fourth-carousel-imgtopiccard .kaz-tarih-carousel-container> :last-child {
+    .ai-safety-fourth-carousel-imgtopiccard .carousel-container> :last-child {
         margin-right: 10px;
     }
 
-    .ai-safety-fourth-step-cards-mobile .kaz-tarih-carousel-container> :last-child {
+    .ai-safety-fourth-step-cards-mobile .carousel-container> :last-child {
         margin-right: 20px;
     }
 }
