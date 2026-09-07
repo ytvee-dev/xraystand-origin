@@ -43,6 +43,7 @@
 .topic-block-description {
     margin: 0 0 16px;
     line-height: 1.35;
+    white-space: pre-line;
 }
 
 .topic-block-list li{

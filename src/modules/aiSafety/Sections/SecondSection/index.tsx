@@ -55,7 +55,7 @@ const SecondSection: React.FC<SecondSectionProps> = ({ content }): ReactElement 
   const isMobile = screenWidth <= 650;
 
   return (
-    <section className="ai-security-second-section">
+    <section className="ai-security-second-section  ai-safety-section">
       <img className="ai-security-section-image" src={paths.backgroundImages.warning} alt="AI Security" />
       <BackgroundedTitle
         title={section.title}
@@ -95,9 +95,9 @@ const SecondSection: React.FC<SecondSectionProps> = ({ content }): ReactElement 
         iconColor="#4EA4DA"
         backgroundColor="rgba(255, 255, 255, 0.55)"
         borderRadius="20px"
-        iconWidth="87px"
-        iconHeight="82px"
-        imgPosition="flex-start"
+        iconWidth="95px"
+        iconHeight="97px"
+        imgPosition={isMobile ? "flex-start" : "center"}
         cardGap="24px"
         padding="24px 36px"
       />
@@ -130,9 +130,9 @@ const SecondSection: React.FC<SecondSectionProps> = ({ content }): ReactElement 
         iconColor="#4EA4DA"
         backgroundColor="rgba(255, 255, 255, 0.55)"
         borderRadius="20px"
-        iconWidth="87px"
-        iconHeight="82px"
-        imgPosition="flex-start"
+        iconWidth="95px"
+        iconHeight="97px"
+        imgPosition={isMobile ? "flex-start" : "center"}
         cardGap="24px"
         padding="24px 36px"
       />

@@ -12,6 +12,7 @@ import BrightnessLayout from "@layout/Brightness";
 import CoverSection from "@modules/aiSafety/Sections/CoverSection";
 import FirstSection from "@modules/aiSafety/Sections/FirstSection";
 import SecondSection from "@modules/aiSafety/Sections/SecondSection";
+import ThirdSection from "@modules/aiSafety/Sections/ThirdSection";
 import FourthSection from "@modules/aiSafety/Sections/FourthSection";
 import "./style.css";
 
@@ -56,10 +57,11 @@ const AiSafety = () => {
             headerBackgroundColor="transparent"
         >
             {!isContentLoaded && <Spinner />}
-           <CoverSection сontent={content.coverSection} />
-           <FirstSection content={content.firstSection} />
-           <SecondSection content={content.secondSection} />
-           <FourthSection content={content.fourthSection} />
+            <CoverSection сontent={content.coverSection} />
+            <FirstSection content={content.firstSection} />
+            <SecondSection content={content.secondSection} />
+            <ThirdSection textContent={content.thirdSection} />
+            <FourthSection content={content.fourthSection} />
         </BrightnessLayout>
     );
 };

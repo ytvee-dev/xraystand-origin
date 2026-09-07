@@ -77,10 +77,6 @@
     line-height: 1;
 }
 
-@media (max-width: 390px) {
-    .kaz-tarih-carousel-arrow {
-        width: 35px;
-        height: 35px;
-        font-size: 35px;
-    }
+.kaz-tarih-carousel-arrow-icon {
+    stroke: currentColor;
 }
