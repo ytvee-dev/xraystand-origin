@@ -55,7 +55,7 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({ textContent }): ReactElemen
     const isMobile = screenWidth <= 650;
 
     return (
-        <section className="ai-security-third-section">
+        <section className="ai-security-third-section  ai-safety-section">
             <img className="ai-security-third-section-image" src={paths.backgroundImages.privacySecurity} alt="AI Security" />
             <BackgroundedTitle
                 title={section.title}

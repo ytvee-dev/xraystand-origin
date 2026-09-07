@@ -44,6 +44,10 @@
     padding: 58px;
     gap: 20px;
   }
+
+  .ai-safety-first-title-wrapper {
+    margin-inline: 58px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -55,6 +59,10 @@
     bottom: 11%;
     left: 60%;
   }
+
+   .ai-safety-first-title-wrapper {
+        margin-inline: 30px;
+    }
 }
 
 @media (max-width: 600px) {

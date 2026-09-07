@@ -11,6 +11,16 @@
   border: 1px solid #4EA4DA;
 }
 
+/* 
+.ai-safety-section .kaz-tarih-carousel-arrow svg {
+  color: #4EA4DA;
+  stroke: #4EA4DA;
+  border: none;
+  width: 12px;
+  height: 35px;
+  display: block;
+} */
+
 .ai-security-section-title {
   width: 100%;
   padding: 24px;

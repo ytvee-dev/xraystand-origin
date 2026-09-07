@@ -55,7 +55,7 @@ const SecondSection: React.FC<SecondSectionProps> = ({ content }): ReactElement 
   const isMobile = screenWidth <= 650;
 
   return (
-    <section className="ai-security-second-section">
+    <section className="ai-security-second-section  ai-safety-section">
       <img className="ai-security-section-image" src={paths.backgroundImages.warning} alt="AI Security" />
       <BackgroundedTitle
         title={section.title}

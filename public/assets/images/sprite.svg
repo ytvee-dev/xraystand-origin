@@ -765,4 +765,20 @@
       </symbol>
 
 
+     <symbol id="carouselArrowLeft" viewBox="0 0 12 35" fill="none">
+            <path
+            d="M9.5 2.5L2.59794 16.635C2.46569 16.9058 2.46265 17.2218 2.58966 17.4951L9.5 32.3667"
+            stroke-width="5"
+            stroke-linecap="round"
+            />
+      </symbol>
+
+      <symbol id="carouselArrowRight" viewBox="0 0 12 35" fill="none">
+            <path
+            d="M2.5 2.5L9.40206 16.635C9.53431 16.9058 9.53735 17.2218 9.41034 17.4951L2.5 32.3667"
+            stroke-width="5"
+            stroke-linecap="round"
+            />
+      </symbol>
+
 </svg>

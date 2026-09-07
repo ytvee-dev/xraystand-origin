@@ -124,6 +124,12 @@
     }
 }
 
+@media (max-width: 900px) {
+    .ai-first-topic-card {
+        padding-inline: 58px;
+    }
+}
+
 @media (max-width: 840px) {
     .ai-law-card {
         width: 350px;
@@ -148,6 +154,10 @@
     .ai-law-card-title {
         font-size: 24px;
     }
+
+    .ai-first-topic-card {
+        padding-inline: 30px;
+    }
 }
 
 @media (max-width: 620px) {
@@ -168,8 +178,16 @@
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 390px) {
     .ai-law-card {
         width: 290px;
+    }
+
+    .ai-safety-first-title-wrapper {
+        margin-inline: 20px;
+    }
+
+    .ai-first-topic-card {
+        padding-inline: 20px;
     }
 }
