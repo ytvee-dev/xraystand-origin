@@ -50,13 +50,7 @@ const Carousel = ({ children, className, style }: ICarouselProps): ReactElement 
                         onClick={scrollPrev}
                         aria-label="Previous slide"
                     >
-                        <svg
-                            width="25"
-                            height="25"
-                            viewBox="0 0 12 35"
-                            fill="none"
-                            aria-hidden="true"
-                        >
+                        <svg width="25" height="25" viewBox="0 0 12 35" fill="none" aria-hidden="true">
                             <path
                                 d="M9.5 2.5L2.59794 16.635C2.46569 16.9058 2.46265 17.2218 2.58966 17.4951L9.5 32.3667"
                                 stroke="currentColor"
@@ -72,13 +66,7 @@ const Carousel = ({ children, className, style }: ICarouselProps): ReactElement 
                         onClick={scrollNext}
                         aria-label="Next slide"
                     >
-                        <svg
-                            width="25"
-                            height="25"
-                            viewBox="0 0 12 35"
-                            fill="none"
-                            aria-hidden="true"
-                        >
+                        <svg width="25" height="25" viewBox="0 0 12 35" fill="none" aria-hidden="true">
                             <path
                                 d="M2.5 2.5L9.40206 16.635C9.53431 16.9058 9.53735 17.2218 9.41034 17.4951L2.5 32.3667"
                                 stroke="currentColor"
