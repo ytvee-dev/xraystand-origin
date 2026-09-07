@@ -1,0 +1,136 @@
+.ai-security-second-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  width: 100%;
+  background-color: #D7E2E9;
+  overflow: hidden;
+  padding: 58px 72px;
+  z-index: 1;
+}
+
+.ai-security-section-image {
+  position: absolute;
+  bottom: 0%;
+  left: 77.78%;
+  width: 394px;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.topic-block {
+  padding: 0px 43px;
+  margin-top: 20px;
+}
+
+.bg-title p {
+  margin-inline: 0;
+}
+
+.ai-security-myths {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.ai-security-myths-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 65px;
+  width: 100%;
+}
+
+.ai-security-myths .safety-nature-myth-card {
+  max-width: 515px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 24px 36px;
+}
+
+.ai-security-myths .safety-nature-myth-card-title,
+.ai-security-myths .safety-nature-myth-card-description {
+  color: #474747;
+}
+
+.ai-security-myths .safety-nature-myth-card-description {
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .ai-security-section-image {
+    left: 70%;
+  }
+}
+
+@media (max-width: 900px) {
+  .ai-security-second-section {
+    padding: 58px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-security-second-section {
+    padding: 30px;
+  }
+
+  .ai-security-section-image {
+    width: 300px;
+  }
+}
+
+@media (max-width: 650px) {
+  .ai-security-myths-cards {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 30px 0;
+    gap: 0;
+  }
+
+  .ai-security-section-image {
+    width: 250px;
+    left: 60%;
+  }
+
+  .ai-security-myths-carousel {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .ai-security-myths-carousel .carousel-container {
+    align-items: stretch;
+    gap: 16px;
+    margin-left: 0;
+  }
+
+  .ai-security-myths-carousel .safety-nature-myth-card {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width:390px) {
+  .ai-security-second-section {
+    padding: 24px 20px;
+  }
+
+  .ai-security-section-image {
+    left: 43%;
+  }
+
+  .topic-block {
+    padding: 0px;
+    margin-top: 0;
+  }
+}

@@ -3,7 +3,7 @@ import type { IEnglishSectionProps } from "@modules/english/types";
 import { usePageData } from "@hooks/usePageData";
 import type { ReactElement } from "react";
 import "./style.css";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 
 const FirstSection = ({
     className,
@@ -61,7 +61,7 @@ const FirstSection = ({
                             {paths.emblems.map((src: string, index: number) => (
                                 <div
                                     id={`nvp-emblem-card-${index}`}
-                                    className="nvp-emblem-card kaz-tarih-carousel-card"
+                                    className="nvp-emblem-card carousel-card"
                                     key={`nvp-emblem-${index}`}
                                     style={{ flex: "0 0 20%" }}
                                 >

@@ -73,13 +73,13 @@
     position: relative;
 }
 
-.ai-third-carousel .kaz-tarih-carousel-container {
+.ai-third-carousel .carousel-container {
     display: flex !important;
     gap: 20px !important;
     flex-wrap: nowrap !important;
 }
 
-.ai-third-carousel .kaz-tarih-carousel-card {
+.ai-third-carousel .carousel-card {
     min-width: clamp(280px, 90vw, 630px) !important;
 }
 

@@ -67,7 +67,7 @@
         margin: 0 auto;
     }
 
-    .safety-nature-myth-carousel .kaz-tarih-carousel-container {
+    .safety-nature-myth-carousel .carousel-container {
         gap: 16px;
         margin-left: 0;
     }
@@ -95,11 +95,11 @@
         padding: 27px 15px;
     }
 
-    .safety-nature-myth-carousel .kaz-tarih-carousel-arrow-left {
+    .safety-nature-myth-carousel .carousel-arrow-left {
         left: 0%;
     }
 
-    .safety-nature-myth-carousel .kaz-tarih-carousel-arrow-right {
+    .safety-nature-myth-carousel .carousel-arrow-right {
         right: 0%;
     }
 

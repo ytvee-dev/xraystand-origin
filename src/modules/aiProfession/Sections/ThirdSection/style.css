@@ -161,7 +161,7 @@
         margin: 0 auto;
     }
 
-    .ai-profession-third-carousel .kaz-tarih-carousel-container {
+    .ai-profession-third-carousel .carousel-container {
         align-items: stretch;
         gap: 16px;
         margin-left: 0;
@@ -273,16 +273,16 @@
         left: -50px;
     }
 
-    .kaz-tarih-carousel-arrow {
+    .carousel-arrow {
         width: 35px;
         height: 35px;
     }
 
-    .ai-profession-third-carousel .kaz-tarih-carousel-arrow {
+    .ai-profession-third-carousel .carousel-arrow {
         top: 40%;
     }
 
-    .ai-profession-third-profession-carousel .kaz-tarih-carousel-arrow {
+    .ai-profession-third-profession-carousel .carousel-arrow {
         top: 50%;
     }
 }
@@ -297,7 +297,7 @@
         font-size: 25px;
     }
 
-    .ai-profession-third-carousel .kaz-tarih-carousel-arrow {
+    .ai-profession-third-carousel .carousel-arrow {
         top: 44%;
         width: 35px;
         height: 35px;

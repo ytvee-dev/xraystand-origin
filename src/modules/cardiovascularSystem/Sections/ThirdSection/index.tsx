@@ -1,5 +1,5 @@
 import useScreenWidth from "@hooks/useScreenWidth";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import type { ReactElement } from "react";
 import * as paths from "../../locales/path.json";
 import "./style.css";
@@ -108,7 +108,7 @@ const ThirdSection = ({ content }: ThirdSectionProps): ReactElement => {
                                     <Carousel className="cardiovascular-third-carousel">
                                         {cards.map((card, cardIndex) => (
                                             <FactorCard
-                                                className="kaz-tarih-carousel-card cardiovascular-third-carousel-card"
+                                                className="carousel-card cardiovascular-third-carousel-card"
                                                 content={card}
                                                 iconSource={
                                                     paths.cards[

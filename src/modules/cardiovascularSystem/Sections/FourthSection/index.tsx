@@ -1,5 +1,5 @@
 import useScreenWidth from "@hooks/useScreenWidth";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import type { ReactElement } from "react";
 import * as paths from "../../locales/path.json";
 import "./style.css";
@@ -135,7 +135,7 @@ const MobileScheduleCards = ({
         <Carousel className="cardiovascular-fourth-carousel">
             {orderedCards.map((card, index) => (
                 <ScheduleCard
-                    className="kaz-tarih-carousel-card cardiovascular-fourth-carousel-card"
+                    className="carousel-card cardiovascular-fourth-carousel-card"
                     content={card}
                     key={`${card[0]?.title}-${index}`}
                 />

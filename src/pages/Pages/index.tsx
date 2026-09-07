@@ -202,6 +202,15 @@ const pagesInfo: IPageInfo[] = [
 
     },
     {
+        id: paths.AI_SAFETY.id,
+        path: paths.AI_SAFETY.path,
+        title: "ИИ и Безопасность",
+        description: "ИИ и Безопасность",
+        status: "active",
+        isClickable: true,
+
+    },
+    {
         id: paths.IMPLEMENTATION.id,
         path: paths.IMPLEMENTATION.path,
         title: "Implementation",

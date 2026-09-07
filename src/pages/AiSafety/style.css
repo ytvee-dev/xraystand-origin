@@ -1,0 +1,145 @@
+.ai-safety-logo {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 103px;
+  height: 49px;
+}
+
+.ai-safety-section .carousel-arrow {
+  color: #4EA4DA;
+  border: 1px solid #4EA4DA;
+}
+
+.ai-security-section-title {
+  width: 100%;
+  padding: 24px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.ai-security-section-title h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #474747;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.ai-security-section-title .bg-title-description {
+  margin-top: 33px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4ea4da;
+  font-family: 'Roboto', sans-serif;
+  white-space: pre-line;
+  padding: 0px;
+}
+
+.ai-security-notification-title {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #4EA4DA;
+}
+
+.ai-security-notification-description {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ai-security-myths-title {
+  margin-bottom: 36px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4ea4da;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ai-security-notification {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+  .ai-security-section-title h2 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 650px) {   
+  .ai-security-section-title h2 {
+    font-size: 34px;
+    line-height: 36px;
+  }
+  
+  .ai-security-notification .ds-mui-alert {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width:390px) {
+  .ai-security-section-title {
+    padding: 24px 20px;
+  }
+
+  .ai-security-section-title h2 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .ai-security-section-title .bg-title-description {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .ai-security-notification-title {
+    margin-bottom: 9px;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .ai-security-notification-description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .ai-security-myths-title {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+  
+  .ai-security-notification {
+    width: 100%;
+  }
+
+  .ai-security-notification .ds-mui-alert {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px !important;
+    gap: 9px !important;
+    box-sizing: border-box;
+  }
+}
+
+@media(max-width: 320px) {
+  .ai-security-section-title h2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .ai-security-myths-cards .safety-nature-myth-card-title{
+    font-size: 20px;
+  }
+}

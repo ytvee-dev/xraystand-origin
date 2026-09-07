@@ -9,11 +9,12 @@ export interface IMythCardItem {
 
 interface IMythCardsProps {
     content: IMythCardItem[];
+    className?: string;
 }
 
-const MythCards: React.FC<IMythCardsProps> = ({ content }): ReactElement => {
+const MythCards: React.FC<IMythCardsProps> = ({ content, className }): ReactElement => {
     return (
-        <div className="safety-nature-myth-card ai-profession-glass-surface">
+        <div className={`safety-nature-myth-card ai-profession-glass-surface ${className}`}>
             {content.map((item) => (
                 <div className="safety-nature-myth-card-item" key={item.title}>
                     <h3 className="safety-nature-myth-card-title">{item.title}</h3>

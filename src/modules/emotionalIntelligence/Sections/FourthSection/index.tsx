@@ -1,5 +1,5 @@
 import { usePageData } from "@hooks/usePageData";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import type { ReactElement } from "react";
 import * as imagePaths from "@modules/emotionalIntelligence/locales/path.json";
 import "./style.css";
@@ -159,7 +159,7 @@ const DesktopCards = ({ cards }: { cards: IChildCard[] }): ReactElement => {
 
 const createChildCardSlide = (card: IChildCard): ReactElement => {
     return (
-        <div className="ei-child-card-slide kaz-tarih-carousel-card" key={card.id}>
+        <div className="ei-child-card-slide carousel-card" key={card.id}>
             <ChildCard card={card} />
         </div>
     );

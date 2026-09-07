@@ -90,8 +90,8 @@
         margin: 0 auto;
     }
 
-    .safety-nature-first-carousel .kaz-tarih-carousel-container,
-    .safety-nature-blocks-carousel .kaz-tarih-carousel-container {
+    .safety-nature-first-carousel .carousel-container,
+    .safety-nature-blocks-carousel .carousel-container {
         gap: 16px;
         margin-left: 0;
     }
@@ -103,11 +103,11 @@
         box-sizing: border-box;
     }
 
-    .kaz-tarih-carousel-arrow-left {
+    .carousel-arrow-left {
         left: -7%;
     }
 
-    .kaz-tarih-carousel-arrow-right {
+    .carousel-arrow-right {
         right: -7%;
     }
 
@@ -141,17 +141,17 @@
         margin: 0 auto;
     }
 
-    .safety-nature-first-carousel .kaz-tarih-carousel-arrow-left,
-    .safety-nature-blocks-carousel .kaz-tarih-carousel-arrow-left {
+    .safety-nature-first-carousel .carousel-arrow-left,
+    .safety-nature-blocks-carousel .carousel-arrow-left {
         left: -1%;
     }
 
-    .safety-nature-first-carousel .kaz-tarih-carousel-arrow-right,
-    .safety-nature-blocks-carousel .kaz-tarih-carousel-arrow-right {
+    .safety-nature-first-carousel .carousel-arrow-right,
+    .safety-nature-blocks-carousel .carousel-arrow-right {
         right: -1%;
     }
 
-    .safety-nature-blocks-carousel .kaz-tarih-carousel-arrow {
+    .safety-nature-blocks-carousel .carousel-arrow {
         top: 45%;
     }
 }
@@ -161,11 +161,11 @@
         padding: 27px 15px;
     }
 
-    .safety-nature-first-carousel .kaz-tarih-carousel-arrow-left {
+    .safety-nature-first-carousel .carousel-arrow-left {
         left: -4%;
     }
 
-    .safety-nature-first-carousel .kaz-tarih-carousel-arrow-right {
+    .safety-nature-first-carousel .carousel-arrow-right {
         right: -4%;
     }
 
@@ -189,11 +189,11 @@
         left: -500px;
     }
 
-    .safety-nature-blocks-carousel .kaz-tarih-carousel-arrow {
+    .safety-nature-blocks-carousel .carousel-arrow {
         top: 40%;
     }
 
-    .safety-nature-first-carousel .kaz-tarih-carousel-arrow {
+    .safety-nature-first-carousel .carousel-arrow {
         top: 45%;
     }
 }

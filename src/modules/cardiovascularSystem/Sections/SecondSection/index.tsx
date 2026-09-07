@@ -1,4 +1,4 @@
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import useScreenWidth from "@hooks/useScreenWidth";
 import type { ReactElement } from "react";
 import * as paths from "../../locales/path.json";
@@ -151,7 +151,7 @@ const MobileRiskCards = ({
         <Carousel className="cardiovascular-second-carousel">
             {cards.map((card, index) => (
                 <RiskCard
-                    className="kaz-tarih-carousel-card cardiovascular-second-carousel-card"
+                    className="carousel-card cardiovascular-second-carousel-card"
                     content={card}
                     key={`${card[0]?.title}-${index}`}
                 />

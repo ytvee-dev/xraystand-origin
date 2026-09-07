@@ -4,7 +4,7 @@ import * as paths from "../../locales/paths.json";
 import SafetyNatureCard from "@modules/safetyInNature/components/SafetyNatureCards";
 import SafetyNatureBlocks from "@modules/safetyInNature/components/SafetyNatureBlocks";
 import SafetyNatureHeading from "@modules/safetyInNature/components/SafetyNatureHeading";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import "./style.css";
 
 interface ISafetyNatureItem {

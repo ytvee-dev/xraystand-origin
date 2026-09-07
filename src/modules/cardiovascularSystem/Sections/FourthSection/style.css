@@ -444,14 +444,14 @@
         margin-top: 16px;
     }
 
-    .cardiovascular-fourth-carousel .kaz-tarih-carousel-container {
+    .cardiovascular-fourth-carousel .carousel-container {
         gap: 16px;
         margin-left: 0;
         padding: 0 20px;
         box-sizing: border-box;
     }
 
-    .cardiovascular-fourth-carousel .kaz-tarih-carousel-card {
+    .cardiovascular-fourth-carousel .carousel-card {
         flex: 0 0 min(350px, calc(100vw - 40px));
         margin-left: 0;
     }
