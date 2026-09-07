@@ -43,7 +43,7 @@ const ThirdSection = ({
                                                 index: number,
                                             ) => (
                                                 <div
-                                                    className="nvp-third-section-card kaz-tarih-carousel-card"
+                                                    className="nvp-third-section-card carousel-card"
                                                     key={`nvp-third-section-${index}`}
                                                     style={{ flex: "0 0 25%" }}
                                                 >

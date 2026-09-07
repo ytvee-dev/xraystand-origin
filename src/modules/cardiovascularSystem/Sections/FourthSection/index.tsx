@@ -135,7 +135,7 @@ const MobileScheduleCards = ({
         <Carousel className="cardiovascular-fourth-carousel">
             {orderedCards.map((card, index) => (
                 <ScheduleCard
-                    className="kaz-tarih-carousel-card cardiovascular-fourth-carousel-card"
+                    className="carousel-card cardiovascular-fourth-carousel-card"
                     content={card}
                     key={`${card[0]?.title}-${index}`}
                 />

@@ -118,7 +118,7 @@ const ModernAiCard = ({ item, image }: CardProps): ReactElement => {
     const description = normalizeContentText(item.description ?? "");
 
     return (
-        <article className="ai-second-modern-card kaz-tarih-carousel-card">
+        <article className="ai-second-modern-card carousel-card">
             <h3 className="ai-second-card-heading">{title}</h3>
             <div className="ai-second-modern-card-body">
                 <p className="ai-second-modern-card-text">{description}</p>
@@ -208,7 +208,7 @@ const PromptTemplateCard = ({
 
     if (!splitDescription) {
         return (
-            <article className="ai-second-template-card kaz-tarih-carousel-card">
+            <article className="ai-second-template-card carousel-card">
                 <h3 className="ai-second-card-heading">{title}</h3>
                 <p className="ai-second-template-card-text">
                     {normalizeContentText(description)}
@@ -222,7 +222,7 @@ const PromptTemplateCard = ({
     const applicationLabel = labelParts[1] ?? "";
 
     return (
-        <article className="ai-second-template-card kaz-tarih-carousel-card">
+        <article className="ai-second-template-card carousel-card">
             <h3 className="ai-second-card-heading">{title}</h3>
             <div className="ai-second-template-card-text">
                 <p>{introduction}</p>

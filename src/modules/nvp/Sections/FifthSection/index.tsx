@@ -216,7 +216,7 @@ const FifthSection = ({
                             index: number,
                         ) => (
                             <div
-                                className="nvp-equipment-card kaz-tarih-carousel-card"
+                                className="nvp-equipment-card carousel-card"
                                 key={`${card.title}-${index}`}
                                 style={{
                                     flex: isMobile

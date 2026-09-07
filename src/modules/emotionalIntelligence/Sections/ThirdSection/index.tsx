@@ -157,7 +157,7 @@ const DesktopCards = ({
 const createGrowthCardSlide = (card: IGrowthCard): ReactElement => {
     return (
         <div
-            className="ei-growth-card-slide kaz-tarih-carousel-card"
+            className="ei-growth-card-slide carousel-card"
             key={card.id}
         >
             <GrowthCard card={card} />

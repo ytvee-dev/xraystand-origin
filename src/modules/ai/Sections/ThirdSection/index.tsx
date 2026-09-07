@@ -64,7 +64,7 @@ const ThirdSection: React.FC<CoverSectionProps> = ({ content }): ReactElement =>
                 {cards && cards.length > 0 && (
                     <Carousel className="ai-third-carousel">
                         {cards.map((card, index) => (
-                            <div className="kaz-tarih-carousel-card ai-third-card" key={index}>
+                            <div className="carousel-card ai-third-card" key={index}>
                                 <div className="ai-card-header">
                                     <h2 className="ai-card-title">{card.title}</h2>
                                 </div>

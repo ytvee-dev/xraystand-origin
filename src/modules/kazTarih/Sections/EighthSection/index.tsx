@@ -39,7 +39,7 @@ const EighthSection = ({
                             (cardData: ICardData, index: number) => (
                                 <DSCard
                                     key={`kt-card-index-${index}`}
-                                    className="kaz-tarih-carousel-card ub-font-family"
+                                    className="carousel-card ub-font-family"
                                     imageName={paths.smallCards[index]}
                                     title={cardData.title}
                                     label={cardData.description}

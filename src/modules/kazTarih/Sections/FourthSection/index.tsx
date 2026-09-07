@@ -30,7 +30,7 @@ const FourthSection = ({
                         <TextFormatterCard
                             items={card}
                             key={index}
-                            className="kt-formatter-card kaz-tarih-carousel-card"
+                            className="kt-formatter-card carousel-card"
                         />
                     ))}
                 </Carousel>

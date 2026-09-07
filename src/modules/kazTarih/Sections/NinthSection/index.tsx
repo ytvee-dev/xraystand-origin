@@ -49,7 +49,7 @@ const NinthSection = ({
                             (cardData: ICardData, index: number) => (
                                 <DSCard
                                     key={`kt-ninth-section-card-index-${index}`}
-                                    className="kaz-tarih-carousel-card"
+                                    className="carousel-card"
                                     title={cardData.title}
                                     label={cardData.description}
                                     backgroundColor="#C1B399"
@@ -111,7 +111,7 @@ const NinthSection = ({
                     {content.secondCards.map(
                         (cardData: ICardsParagraphs[], index: number) => (
                             <TextFormatterCard
-                                className="kaz-tarih-carousel-card"
+                                className="carousel-card"
                                 key={`kt-ninth-section-${index}`}
                                 items={cardData}
                                 style={{

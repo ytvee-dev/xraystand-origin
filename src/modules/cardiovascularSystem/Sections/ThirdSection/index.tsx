@@ -108,7 +108,7 @@ const ThirdSection = ({ content }: ThirdSectionProps): ReactElement => {
                                     <Carousel className="cardiovascular-third-carousel">
                                         {cards.map((card, cardIndex) => (
                                             <FactorCard
-                                                className="kaz-tarih-carousel-card cardiovascular-third-carousel-card"
+                                                className="carousel-card cardiovascular-third-carousel-card"
                                                 content={card}
                                                 iconSource={
                                                     paths.cards[

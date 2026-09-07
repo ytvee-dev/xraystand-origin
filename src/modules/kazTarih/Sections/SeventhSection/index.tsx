@@ -67,7 +67,7 @@ const SeventhSection = ({
                     {content.cards.map(
                         (cardData: ICardsParagraphs[], index: number) => (
                             <TextFormatterCard
-                                className="kaz-tarih-carousel-card"
+                                className="carousel-card"
                                 key={`kt-seventh-section-${index}`}
                                 items={cardData}
                                 theme="light"

@@ -61,7 +61,7 @@ const FirstSection = ({
                             {paths.emblems.map((src: string, index: number) => (
                                 <div
                                     id={`nvp-emblem-card-${index}`}
-                                    className="nvp-emblem-card kaz-tarih-carousel-card"
+                                    className="nvp-emblem-card carousel-card"
                                     key={`nvp-emblem-${index}`}
                                     style={{ flex: "0 0 20%" }}
                                 >

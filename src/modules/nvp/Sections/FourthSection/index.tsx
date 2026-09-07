@@ -46,7 +46,7 @@ const FourthSection = ({
                                                 index: number,
                                             ) => (
                                                 <div
-                                                    className="nvp-fourth-section-card kaz-tarih-carousel-card"
+                                                    className="nvp-fourth-section-card carousel-card"
                                                     key={`nvp-fourth-section-${index}`}
                                                     style={{ flex: "0 0 20%" }}
                                                 >

@@ -182,7 +182,7 @@ const MobileCards = ({
         <Carousel className="ei-competencies-carousel" style={{ padding: "0 24px" }}>
             {mobileCards.map((card) => (
                 <div
-                    className="ei-competencies-slide kaz-tarih-carousel-card"
+                    className="ei-competencies-slide carousel-card"
                     key={card.title}
                 >
                     <CompetencyCard card={card} />

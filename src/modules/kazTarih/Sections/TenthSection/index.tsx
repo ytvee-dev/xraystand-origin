@@ -36,7 +36,7 @@ const TenthSection = ({
                             (cardData: ICardsParagraphs[], index: number) => (
                                 <TextFormatterCard
                                     key={`kt-tenth-section-card-index-${index}`}
-                                    className="kt-tenth-section-card kaz-tarih-carousel-card"
+                                    className="kt-tenth-section-card carousel-card"
                                     items={cardData}
                                 />
                             ),

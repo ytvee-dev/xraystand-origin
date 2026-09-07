@@ -159,7 +159,7 @@ const DesktopCards = ({ cards }: { cards: IChildCard[] }): ReactElement => {
 
 const createChildCardSlide = (card: IChildCard): ReactElement => {
     return (
-        <div className="ei-child-card-slide kaz-tarih-carousel-card" key={card.id}>
+        <div className="ei-child-card-slide carousel-card" key={card.id}>
             <ChildCard card={card} />
         </div>
     );
