@@ -6,7 +6,7 @@ import type { ICardsParagraphs } from "@modules/kazTarih/types";
 import { usePageData } from "@hooks/usePageData";
 import type { ReactElement } from "react";
 import "./style.css";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 
 const TenthSection = ({
     className,

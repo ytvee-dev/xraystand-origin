@@ -5,7 +5,7 @@ import TopicBlock from "@modules/aiSafety/components/TopicBlock";
 import DSNotification from "@components/common/DSNotification";
 import BackgroundedTitle from "@modules/physics/components/BackgroundedTitle";
 import MythCards from "@modules/safetyInNature/components/MythCards";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import '../../../aiProfession/Sections/components/glass.css';
 import "./style.css";
 

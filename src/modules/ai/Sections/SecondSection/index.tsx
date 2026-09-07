@@ -1,5 +1,5 @@
 import { type ReactElement } from "react";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import { usePageData } from "@hooks/usePageData";
 import * as paths from "@modules/ai/locales/paths.json";
 import "./style.css";

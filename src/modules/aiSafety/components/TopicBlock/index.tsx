@@ -1,6 +1,10 @@
 import type { ReactElement } from "react";
-
 import "./style.css";
+
+type TopicListItem = {
+  highlightedText: string;
+  text: string;
+};
 
 type TopicBlockProps = {
   title: string;
@@ -8,11 +12,15 @@ type TopicBlockProps = {
   image?: string;
   imagePosition?: "left" | "right";
   listDescription?: string;
-  list?: {
-    highlightedText: string;
-    text: string;
-  }[];
+  list?: TopicListItem[];
 };
+
+function hasListContent(item: TopicListItem): boolean {
+  return (
+    item.highlightedText.trim() !== "" ||
+    item.text.trim() !== ""
+  );
+}
 
 const TopicBlock = ({
   title,
@@ -22,34 +30,24 @@ const TopicBlock = ({
   listDescription,
   list,
 }: TopicBlockProps): ReactElement => {
-  const filteredList = list?.filter(
-    (item) =>
-      item.highlightedText.trim() !== "" ||
-      item.text.trim() !== ""
-  );
+
+  const filteredList = list?.filter(hasListContent) ?? [];
 
   return (
     <div className={`topic-block topic-block--${imagePosition}`}>
       {image && (
-        <img
-          className="topic-block-image"
-          src={image}
-          alt=""
-        />
+        <img className="topic-block-image" src={image} alt={title} />
       )}
 
       <div className="topic-block-content">
         <h3 className="topic-block-title">{title}</h3>
-
         <p className="topic-block-description">{description}</p>
 
         {listDescription && (
-          <p className="topic-block-list-description">
-            {listDescription}
-          </p>
+          <p className="topic-block-list-description">{listDescription}</p>
         )}
 
-        {filteredList && filteredList.length > 0 && (
+        {filteredList.length > 0 && (
           <ul className="topic-block-list">
             {filteredList.map((item, index) => (
               <li key={index}>

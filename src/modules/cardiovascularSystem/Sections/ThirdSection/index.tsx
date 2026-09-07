@@ -1,5 +1,5 @@
 import useScreenWidth from "@hooks/useScreenWidth";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import type { ReactElement } from "react";
 import * as paths from "../../locales/path.json";
 import "./style.css";

@@ -1,6 +1,6 @@
 import * as paths from "@modules/kazTarih/locales/paths.json";
 import { type IKazTarihProps } from "@modules/kazTarih/types/index";
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import TextFormatterCard from "@modules/kazTarih/components/TextFormatterCard";
 import DSNotification from "@components/common/DSNotification";
 import { type ReactElement } from "react";

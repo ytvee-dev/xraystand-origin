@@ -24,7 +24,7 @@
     margin: 0 auto 78px;
 }
 
-.safety-in-nature-second-carousel .kaz-tarih-carousel-container {
+.safety-in-nature-second-carousel .carousel-container {
     display: flex;
     gap: 53px;
 }
@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 900px) {
-    .safety-nature-second-cards-carousel .kaz-tarih-carousel-container {
+    .safety-nature-second-cards-carousel .carousel-container {
         display: flex;
         gap: 16px;
         margin-left: 0;
@@ -73,11 +73,11 @@
         padding: 27px 15px;
     }
 
-    .kaz-tarih-carousel-arrow-left {
+    .carousel-arrow-left {
         left: 0%;
     }
 
-    .kaz-tarih-carousel-arrow-right {
+    .carousel-arrow-right {
         right: 0%;
     }
 
@@ -105,8 +105,8 @@
 }
 
 @media (max-width: 425px) {
-    .safety-in-nature-second-carousel .kaz-tarih-carousel-container,
-    .safety-nature-second-cards-carousel .kaz-tarih-carousel-container {
+    .safety-in-nature-second-carousel .carousel-container,
+    .safety-nature-second-cards-carousel .carousel-container {
         margin-left: 0;
     }
 

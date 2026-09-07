@@ -313,14 +313,14 @@
         display: block;
     }
 
-    .cardiovascular-second-carousel .kaz-tarih-carousel-container {
+    .cardiovascular-second-carousel .carousel-container {
         gap: 16px;
         margin-left: 0;
         padding: 0 25px;
         box-sizing: border-box;
     }
 
-    .cardiovascular-second-carousel .kaz-tarih-carousel-card {
+    .cardiovascular-second-carousel .carousel-card {
         flex: 0 0 min(350px, calc(100vw - 50px));
         margin-left: 0;
     }

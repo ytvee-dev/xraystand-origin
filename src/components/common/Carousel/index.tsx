@@ -1,79 +1,52 @@
 import useEmblaCarousel from "embla-carousel-react";
 import {
+    type CSSProperties,
     type ReactElement,
     type ReactNode,
     useEffect,
     useState,
 } from "react";
-import type { CSSProperties } from "@mui/material";
-
 import "./style.css";
 
 interface ICarouselProps {
+    children: ReactNode;
     className?: string;
-    children?: ReactNode | ReactElement;
     style?: CSSProperties;
 }
 
-const Carousel = ({
-    children,
-    className,
-    style,
-}: ICarouselProps): ReactElement => {
+const Carousel = ({ children, className, style }: ICarouselProps): ReactElement => {
     const [emblaRef, emblaApi] = useEmblaCarousel();
     const [isDragging, setIsDragging] = useState(false);
 
-    function scrollPrev() {
-        emblaApi?.scrollPrev();
-    }
+    const scrollPrev = () => emblaApi?.scrollPrev();
+    const scrollNext = () => emblaApi?.scrollNext();
 
-    function scrollNext() {
-        emblaApi?.scrollNext();
-    }
+    useEffect(() => {
+        if (!emblaApi) return;
 
-    function subscribeToPointerEvents() {
-        const api = emblaApi;
+        const handlePointerDown = () => setIsDragging(true);
+        const handlePointerUp = () => setIsDragging(false);
 
-        if (!api) return;
+        emblaApi.on("pointerDown", handlePointerDown);
+        emblaApi.on("pointerUp", handlePointerUp);
 
-        function handlePointerDown() {
-            setIsDragging(true);
-        }
-
-        function handlePointerUp() {
-            setIsDragging(false);
-        }
-
-        api.on("pointerDown", handlePointerDown);
-        api.on("pointerUp", handlePointerUp);
-
-        function unsubscribeFromPointerEvents() {
-            api?.off("pointerDown", handlePointerDown);
-            api?.off("pointerUp", handlePointerUp);
-        }
-
-        return unsubscribeFromPointerEvents;
-    }
-
-    useEffect(subscribeToPointerEvents, [emblaApi]);
+        return () => {
+            emblaApi.off("pointerDown", handlePointerDown);
+            emblaApi.off("pointerUp", handlePointerUp);
+        };
+    }, [emblaApi]);
 
     return (
-        <div className={`kaz-tarih-carousel ${className || ""}`}>
-            <div
-                className="kaz-tarih-carousel-viewport"
-                ref={emblaRef}
-                style={style}
-            >
-                <div className="kaz-tarih-carousel-container">
-                    {children}
-                </div>
+        <div className={`carousel ${className || ""}`}>
+            <div className="carousel-viewport" ref={emblaRef} style={style}>
+                <div className="carousel-container">{children}</div>
             </div>
 
             {!isDragging && (
                 <>
                     <button
                         type="button"
-                        className="kaz-tarih-carousel-arrow kaz-tarih-carousel-arrow-left"
+                        className="carousel-arrow carousel-arrow-left"
                         onClick={scrollPrev}
                         aria-label="Previous slide"
                     >
@@ -95,7 +68,7 @@ const Carousel = ({
 
                     <button
                         type="button"
-                        className="kaz-tarih-carousel-arrow kaz-tarih-carousel-arrow-right"
+                        className="carousel-arrow carousel-arrow-right"
                         onClick={scrollNext}
                         aria-label="Next slide"
                     >

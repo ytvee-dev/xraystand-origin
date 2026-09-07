@@ -1,4 +1,4 @@
-import Carousel from "@modules/kazTarih/components/Carousel";
+import Carousel from "@components/common/Carousel";
 import type {
     INvpEquipmentCardContent,
     INvpEquipmentHotspotContent,
