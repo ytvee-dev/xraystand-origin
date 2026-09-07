@@ -23,37 +23,47 @@ const Carousel = ({
     const [emblaRef, emblaApi] = useEmblaCarousel();
     const [isDragging, setIsDragging] = useState(false);
 
-    const scrollPrev = () => {
+    function scrollPrev() {
         emblaApi?.scrollPrev();
-    };
+    }
 
-    const scrollNext = () => {
+    function scrollNext() {
         emblaApi?.scrollNext();
-    };
+    }
 
-    useEffect(() => {
-        if (!emblaApi) return;
+    function subscribeToPointerEvents() {
+        const api = emblaApi;
 
-        const handlePointerDown = () => {
+        if (!api) return;
+
+        function handlePointerDown() {
             setIsDragging(true);
-        };
+        }
 
-        const handlePointerUp = () => {
+        function handlePointerUp() {
             setIsDragging(false);
-        };
+        }
 
-        emblaApi.on("pointerDown", handlePointerDown);
-        emblaApi.on("pointerUp", handlePointerUp);
+        api.on("pointerDown", handlePointerDown);
+        api.on("pointerUp", handlePointerUp);
 
-        return () => {
-            emblaApi.off("pointerDown", handlePointerDown);
-            emblaApi.off("pointerUp", handlePointerUp);
-        };
-    }, [emblaApi]);
+        function unsubscribeFromPointerEvents() {
+            api?.off("pointerDown", handlePointerDown);
+            api?.off("pointerUp", handlePointerUp);
+        }
+
+        return unsubscribeFromPointerEvents;
+    }
+
+    useEffect(subscribeToPointerEvents, [emblaApi]);
 
     return (
         <div className={`kaz-tarih-carousel ${className || ""}`}>
-            <div className="kaz-tarih-carousel-viewport" ref={emblaRef} style={style}>
+            <div
+                className="kaz-tarih-carousel-viewport"
+                ref={emblaRef}
+                style={style}
+            >
                 <div className="kaz-tarih-carousel-container">
                     {children}
                 </div>
@@ -62,6 +72,7 @@ const Carousel = ({
             {!isDragging && (
                 <>
                     <button
+                        type="button"
                         className="kaz-tarih-carousel-arrow kaz-tarih-carousel-arrow-left"
                         onClick={scrollPrev}
                         aria-label="Previous slide"
@@ -83,6 +94,7 @@ const Carousel = ({
                     </button>
 
                     <button
+                        type="button"
                         className="kaz-tarih-carousel-arrow kaz-tarih-carousel-arrow-right"
                         onClick={scrollNext}
                         aria-label="Next slide"
