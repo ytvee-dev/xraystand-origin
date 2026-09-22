@@ -113,6 +113,11 @@
     padding: 0 0 29px 0;
 }
 
+.ai-first-cards-carousel button {
+    color: #dbb14b;
+    border: 1px solid #dbb14b;
+}
+
 @media (max-width: 1240px) {
     .ai-first-yellow-robot {
         width: 600px;

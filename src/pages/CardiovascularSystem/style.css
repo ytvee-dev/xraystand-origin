@@ -19,6 +19,11 @@
     height: 100%;
 }
 
+.cardiovascular-carousel button {
+    color: #fb0036;
+    border: 1px solid #ff0037;
+}
+
 @media (max-width: 600px) {
     .cardiovascular-container {
         --cardiovascular-header-inline-offset: 21px;

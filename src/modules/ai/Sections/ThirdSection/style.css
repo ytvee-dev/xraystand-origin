@@ -157,6 +157,10 @@
     margin-left: 15px;
 }
 
+.ai-third-carousel button {
+    color: #37AE6C;
+    border: 1px solid #37AE6C;
+}
 
 @media (max-width: 1240px) {
     .ai-third-text-content {

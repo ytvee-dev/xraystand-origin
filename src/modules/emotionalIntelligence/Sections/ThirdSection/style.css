@@ -190,6 +190,11 @@
     opacity: 0.5;
 }
 
+.ei-growth-carousel button {
+    color: rgb(219, 75, 75);
+    border: 1px solid #d96052;
+}
+
 @media screen and (max-width: 1200px) {
     .ei-growth-section-header h2 {
         font-size: 40px;

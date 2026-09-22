@@ -356,6 +356,11 @@
     z-index: 2;
 }
 
+.ai-second-carousel button {
+    color: #c54bdb;
+    border: 1px solid #c54bdb;
+}
+
 @media (max-width: 1199px) {
     .ai-second-section {
         padding-inline: 40px;
