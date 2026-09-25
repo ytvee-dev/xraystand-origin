@@ -104,6 +104,12 @@
     margin-bottom: 2rem;
 }
 
+.nvp-first-section-content .carousel-container {
+    display: flex;
+    gap: 14px;
+    padding-inline: 40px;
+}
+
 .nvp-emblem-card {
     width: 15%;
 
