@@ -245,6 +245,11 @@
     bottom: 232px;
 }
 
+.ei-competencies-carousel button {
+    color: #00984c;
+    border: 1px solid #00984c;
+}
+
 @media screen and (max-width: 1200px) {
     .ei-competencies-column {
         width: calc((100% - 32px) / 2);

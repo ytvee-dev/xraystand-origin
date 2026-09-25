@@ -148,7 +148,7 @@ const MobileRiskCards = ({
     }
 
     return (
-        <Carousel className="cardiovascular-second-carousel">
+        <Carousel className="cardiovascular-second-carousel cardiovascular-carousel">
             {cards.map((card, index) => (
                 <RiskCard
                     className="carousel-card cardiovascular-second-carousel-card"

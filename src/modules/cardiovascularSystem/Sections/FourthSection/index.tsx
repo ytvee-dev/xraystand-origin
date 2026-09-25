@@ -132,7 +132,7 @@ const MobileScheduleCards = ({
     );
 
     return (
-        <Carousel className="cardiovascular-fourth-carousel">
+        <Carousel className="cardiovascular-fourth-carousel cardiovascular-carousel">
             {orderedCards.map((card, index) => (
                 <ScheduleCard
                     className="carousel-card cardiovascular-fourth-carousel-card"
