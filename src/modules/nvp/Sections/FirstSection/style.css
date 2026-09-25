@@ -111,8 +111,6 @@
 }
 
 .nvp-emblem-card {
-    width: 15%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,6 +118,14 @@
     background-color: #ffffff;
 
     z-index: 3;
+}
+
+.nvp-first-section-emblem-container .nvp-emblem-card {
+    width: 15%;
+}
+
+.nvp-first-section-carousel .nvp-emblem-card {
+    min-width: 30%;
 }
 
 .nvp-first-section-emblem-img {
@@ -141,7 +147,7 @@
 }
 
 #nvp-emblem-card-3 .nvp-first-section-emblem-img {
-    width: 60%;
+    width: 70%;
 }
 
 #nvp-emblem-card-10 {
@@ -149,5 +155,16 @@
 }
 
 #nvp-emblem-card-10 .nvp-first-section-emblem-img {
-    width: 60%;
+    width: 70%;
+}
+
+.nvp-first-section-carousel button {
+    color: #212320;
+    border: 1px solid #212320;
+}
+
+@media (max-width: 500px) {
+    .nvp-first-section-carousel .nvp-emblem-card {
+        min-width: 150px;
+    }
 }
