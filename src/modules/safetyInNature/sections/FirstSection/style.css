@@ -66,6 +66,12 @@
     gap: 44px;
 }
 
+
+.safety-nature-first-carousel button {
+    color: rgb(102, 141, 52);
+    border: 1px solid  rgb(102, 141, 52);
+}
+
 @media (max-width: 1050px) {
     .safety-nature-cards {
         display: grid;
