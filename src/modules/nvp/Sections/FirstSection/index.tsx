@@ -57,7 +57,10 @@ const FirstSection = ({
                     </div>
 
                     {isMobile ? (
-                        <Carousel style={{ padding: "0 1rem" }}>
+                        <Carousel 
+                            style={{ padding: "0 1rem" }}
+                            className="nvp-first-section-carousel"
+                        >
                             {paths.emblems.map((src: string, index: number) => (
                                 <div
                                     id={`nvp-emblem-card-${index}`}

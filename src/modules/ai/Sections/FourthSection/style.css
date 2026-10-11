@@ -138,6 +138,11 @@
     padding: 0 0 29px 0;
 }
 
+.ai-fourth-cards-carousel button {
+    color: #2496cd;
+    border: 1px solid #2496cd;
+}
+
 @media (max-width: 1240px) {
     .ai-fourth-subtitle {
         max-width: 900px;

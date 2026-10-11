@@ -105,7 +105,7 @@ const ThirdSection = ({ content }: ThirdSectionProps): ReactElement => {
                                 <FactorGroupHeading title={heading.title} />
 
                                 {isMobile ? (
-                                    <Carousel className="cardiovascular-third-carousel">
+                                    <Carousel className="cardiovascular-third-carousel cardiovascular-carousel">
                                         {cards.map((card, cardIndex) => (
                                             <FactorCard
                                                 className="carousel-card cardiovascular-third-carousel-card"

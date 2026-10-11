@@ -14,7 +14,7 @@
     background-clip: padding-box;
     opacity: 1; visibility: visible;
     transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-    z-index: 200;
+    z-index: 6000;
 }
 
 .spinner-wrapper .percent {
