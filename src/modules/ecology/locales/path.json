@@ -1,0 +1,34 @@
+{
+    "coverBg": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792061462/CoverBg_1_xsnjfx.webp",
+    "firstSectionThreeBg": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792061469/bgFirstSection_1_yiveit.webp",
+    "thirdSectionThreeBg": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792061591/bgTree_1_raz40b.webp",
+    "secondSectionCards": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792061481/jeansWaterConsumption_1_sewub8.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792061475/plasticBottleRecycling_1_gzrbvm.webp"
+    ],
+    "recycleCard": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062344/plastic_pp_1_sswpph.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062340/plastic_ldpe_1_bekuj1.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062342/plastic_pet_1_cl2jtd.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062338/plastic_hdpe_1_umchyh.webp",
+
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062591/paper_pap20_1_jfs6kr.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062593/paper_pap21_1_rp12jb.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062595/paper_pap22_1_b8xzpx.webp",
+
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062597/glass_gl70_1_sv3xhk.webp",
+
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062600/metal_alu41_1_nopjds.webp"
+    ],
+    "fourthSectionCards": [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062013/save_water_1_gfvjur.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062011/sort_waste_1_uc2ov2.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062008/plant_trees_1_elzqu7.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062010/reusable_items_1_puh9fh.webp"
+    ],
+    "mythCards" : [
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062009/paper_vs_plastic_1_fzxnej.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062067/greenwashing_1_dfwjua.webp",
+        "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1792062014/recycling_wash_1_wpkbug.webp"
+    ]
+}
