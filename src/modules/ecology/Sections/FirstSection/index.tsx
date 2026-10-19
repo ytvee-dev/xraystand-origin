@@ -76,7 +76,7 @@ export default function FirstSection({
             <div className="ecology-first-math-card">
                 <div className="ecology-first-math-card-block">
                     <div id="number-one-block">1</div>
-                    <div id="multiplication-block">x</div>
+                    <div id="multiplication-block">×</div>
                     <div id="million-block">1 000 000</div>
                 </div>
 
