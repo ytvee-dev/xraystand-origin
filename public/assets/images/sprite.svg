@@ -781,4 +781,7 @@
             />
       </symbol>
 
+      <symbol id="ecologyLeaf" width="52" height="42" viewBox="0 0 52 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 37.5353C2.16667 2.79777 28.1667 -7.28733 52 5.0389C46.5833 36.4148 26 48.741 0 37.5353ZM5.41667 37.5353L41.1667 10.6417L8.66667 39.7765L5.41667 37.5353Z" fill-rule="evenodd" clip-rule="evenodd" fill="#83B746"/>
+      </symbol>
 </svg>

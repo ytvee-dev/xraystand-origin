@@ -1,0 +1,113 @@
+.ecology-first-section {
+    padding: 80px 10px 28px 10px;
+    margin-inline: auto;
+    width: fit-content;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    --max-width: 1260px;
+}
+
+.ecology-first-section * {
+    font-family: "Roboto", sans-serif;
+    color: #3D602C;
+}
+
+.ecology-first-section p {
+    line-height: 140%;
+}
+
+.ecology-first-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    margin-bottom: 32px;
+    max-width: var(--max-width);
+}
+
+.ecology-first-math-card, .ecology-first-section-cards {
+    background-color: #FCFCF5;
+    box-shadow: 0 5px 2px 0 rgba(195, 211, 170, 0.37);
+    border-radius: 32px;
+    padding: 36px;
+}
+
+.ecology-first-card-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.ecology-first-section h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.ecology-first-section-cards h2 {
+    flex-grow: 1;
+}
+
+.ecology-first-section-cards svg {
+    flex-shrink: 0;
+}
+
+.ecology-first-section-cards p {
+    font-size: 22px;
+}
+
+.ecology-first-section img {
+    max-width: var(--max-width);
+}
+
+.ecology-first-math-card {
+    max-width: var(--max-width);
+    display: flex;
+    gap: 36px;
+}
+
+.ecology-first-math-card-block {
+    background-color: #E5EECB;
+    border-radius: 100px 44px 100px 28px;
+    text-align: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 276px;
+    height: auto;
+    padding: 133px 56px;
+}
+
+.ecology-first-math-card-block #number-one-block {
+    font-size: 124px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.ecology-first-math-card-block #multiplication-block {
+    color: #83B844;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.ecology-first-math-card-block #million-block {
+    color: #3D602C;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.ecology-first-math-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ecology-first-math-card p {
+    font-size: 22px;
+}
+
+#ecology-first-math-card-accent-text {
+    border-left: 4px solid #83b844;
+    padding: 22px;
+    background: #edf3e0;
+}
