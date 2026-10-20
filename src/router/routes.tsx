@@ -30,6 +30,7 @@ const AI = lazy(() => import("@pages/AI"))
 const AiProfession = lazy(() => import("@pages/AiProfession"))
 const SafetyInNature = lazy(() => import("@pages/SafetyInNature"))
 const AiSafety = lazy(() => import("@pages/AiSafety"))
+const Ecology = lazy(() => import("@pages/Ecology"))
 
 export const paths = {
     HOME: {
@@ -116,6 +117,10 @@ export const paths = {
     AI_SAFETY: {
         id:"AI_SAFETY",
         path: "/ai-safety",
+    },
+    ECOLOGY: {
+        id:"ECOLOGY",
+        path: "/ecology",
     },
     PAGES: {
         id: "pages",
@@ -220,6 +225,10 @@ const routes: RouteObject[] = [
     {
         ...paths.AI_SAFETY,
         element: <AiSafety />,
+    },
+    {
+        ...paths.ECOLOGY,
+        element: <Ecology />,
     },
     {
         ...paths.PAGES,

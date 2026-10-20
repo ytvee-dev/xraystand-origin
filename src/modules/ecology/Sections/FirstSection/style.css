@@ -1,0 +1,200 @@
+.ecology-first-section {
+    padding: 80px 20px 28px 20px;
+    margin-inline: auto;
+    max-width: 1260px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.ecology-first-section * {
+    font-family: "Roboto", sans-serif;
+    color: #3D602C;
+}
+
+.ecology-first-section p {
+    line-height: 140%;
+}
+
+.ecology-first-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    max-width: 100%;
+}
+
+.ecology-first-math-card, .ecology-first-section-cards {
+    background-color: #FCFCF5;
+    box-shadow: 0 5px 2px 0 rgba(195, 211, 170, 0.37);
+    border-radius: 32px;
+    padding: 36px;
+}
+
+.ecology-first-card-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.ecology-first-section h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.ecology-first-section-cards h2 {
+    flex-grow: 1;
+}
+
+.ecology-first-section-cards svg {
+    flex-shrink: 0;
+}
+
+.ecology-first-section-cards p {
+    font-size: 22px;
+}
+
+.ecology-first-math-card {
+    display: flex;
+    gap: 36px;
+}
+
+.ecology-first-math-card-block {
+    background-color: #E5EECB;
+    border-radius: 100px 44px 100px 28px;
+    text-align: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 290px;
+    height: auto;
+    padding: 133px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ecology-first-math-card-block #number-one-block {
+    font-size: 124px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.ecology-first-math-card-block #multiplication-block {
+    color: #83B844;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.ecology-first-math-card-block #million-block {
+    color: #3D602C;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.ecology-first-math-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ecology-first-math-card p {
+    font-size: 22px;
+}
+
+#ecology-first-math-card-accent-text {
+    border-left: 4px solid #83b844;
+    padding: 22px;
+    background: #edf3e0;
+}
+
+@media (max-width: 960px) {
+    .ecology-first-cards-wrapper, .ecology-first-math-card {
+        flex-direction: column;
+    }
+
+    .ecology-first-math-card-block {
+        width: 100%;
+        height: 123px;
+        gap: 16px;
+        flex-direction: row;
+    }
+
+    .ecology-first-math-card-block #number-one-block, 
+    .ecology-first-math-card-block #multiplication-block {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .ecology-first-section h2 {
+        font-size: 30px;
+    }
+
+    .ecology-first-section-cards p,
+    .ecology-first-math-card p {
+        font-size: 19px;
+    }
+
+    .ecology-first-math-card-block {
+        border-radius: 56px 24px 56px 20px;
+        padding: 70px 40px;
+    }
+
+    .ecology-first-math-card-block #number-one-block {
+        font-size: 96px;
+    }
+
+    .ecology-first-math-card-block #multiplication-block, 
+    .ecology-first-math-card-block #million-block {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ecology-first-section {
+        gap: 24px;
+        padding-top: 48px;
+    }
+
+    .ecology-first-section h2 {
+        font-size: 23px;
+        line-height: 120%;
+    }
+
+    .ecology-first-section p {
+        font-size: 16px;
+        line-height: 145%;
+    }
+    
+    .ecology-first-math-card, .ecology-first-section-cards {
+        border-radius: 24px;
+        padding: 22px;
+    }
+
+    .ecology-first-card-title-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .ecology-first-math-card-block {
+        padding: 24px 22px;
+    }
+
+    .ecology-first-math-card-block #number-one-block {
+        font-size: 74px;
+    }
+
+    .ecology-first-math-card-block #multiplication-block, 
+    .ecology-first-math-card-block #million-block {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 390px) {
+    .ecology-first-math-card-block #number-one-block {
+        font-size: 64px;
+    }
+}
