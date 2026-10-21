@@ -1,0 +1,371 @@
+.ecology-second-section {
+    background: #f3f1e7;
+    padding: 84px 90px;
+    color: #3D602C;
+}
+
+.ecology-container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.ecology-second-section .number-title-wrapper {
+    margin-bottom: 36px;
+}
+
+.ecology-card {
+    padding: 36px;
+    background: #fffef8;
+    border-radius: 24px;
+    box-shadow: 0 3px 0 #dfe7cc;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.jeans-card {
+    border-top: 3px solid #64AFB5;
+}
+
+.ecology-intro {
+    display: grid;
+    grid-template-columns: minmax(323px, 323px) minmax(0, 1fr);
+    align-items: center;
+    gap: 36px;
+}
+
+.ecology-card-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ecology-tips h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ecology-paragraph {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    white-space: pre-line;
+}
+
+.ecology-description {
+    display: grid;
+    gap: 20px;
+}
+
+.jeans-image,
+.recycling-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.ecology-card h3 {
+    line-height: 1.17;
+}
+
+.ecology-tip p,
+.ecology-step p {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+.ecology-tips {
+    margin-top: 26px;
+    padding-top: 24px;
+    border-top: 1px solid #e6e8db;
+}
+
+.ecology-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.ecology-tip h4 {
+    font-size: 17px;
+    line-height: 1.35;
+    margin: 0 0 14px;
+}
+
+.bottle-card-title {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.recycling-image {
+    margin: 28px auto 18px;
+}
+
+.ecology-steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ecology-step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #83B844;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.ecology-step h3 {
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+@media (max-width: 1024px) {
+    .ecology-second-section {
+        padding: 60px 40px;
+    }
+
+    .ecology-card {
+        padding: 28px;
+    }
+
+    .ecology-intro {
+        grid-template-columns: minmax(200px, 280px) minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .ecology-card-title {
+        font-size: 30px;
+    }
+
+    .ecology-tips h3 {
+        font-size: 26px;
+    }
+
+    .ecology-paragraph {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .ecology-tip p,
+    .ecology-step p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .ecology-tips-grid,
+    .ecology-steps {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ecology-second-section {
+        padding: 40px 24px;
+    }
+
+    .ecology-card {
+        padding: 24px;
+        border-radius: 20px;
+    }
+
+    .ecology-intro {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .jeans-image {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .ecology-tips-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .ecology-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .ecology-card-title {
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+
+    .ecology-tips h3 {
+        font-size: 24px;
+    }
+
+    .ecology-paragraph {
+        font-size: 17px;
+    }
+
+    .ecology-tip p,
+    .ecology-step p {
+        font-size: 16px;
+    }
+
+    .recycling-image {
+        margin: 24px auto;
+    }
+}
+
+@media (max-width: 480px) {
+       .ecology-second-section {
+        padding: 48px 20px;
+    }
+
+    .ecology-container {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .ecology-card {
+        padding: 22px;
+    }
+
+    .ecology-card-title {
+        font-size: 23px;
+        text-align: left;
+        margin: 0 0 20px;
+    }
+
+    .ecology-description {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ecology-paragraph {
+        font-size: 16px;
+    }
+
+    .recycling-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin: 26px auto 24px;
+    }
+
+    .ecology-steps {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .ecology-step {
+        min-width: 0;
+    }
+
+    .ecology-step-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #83b844;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 14px;
+    }
+
+    .ecology-step p {
+        font-size: 15px;
+        line-height: 1.35;
+        margin: 0;
+    }
+
+    .ecology-step h3 {
+        font-size: 15px;
+        margin: 0 0 8px;
+    }
+
+     .ecology-tips h3 {
+        text-align: left;
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+     .ecology-tips-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .ecology-tip {
+        width: 100%;
+    }
+
+    .ecology-tip h4 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .ecology-tip p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+   .jeans-image {
+        display: block;
+        width: 170px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin: 0 0 16px 0;
+        justify-self: start;
+    }
+
+    .ecology-intro {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .ecology-second-section {
+        padding: 24px 12px;
+    }
+
+    .ecology-card {
+        padding: 18px 14px;
+    }
+
+    .ecology-card-title {
+        font-size: 20px;
+    }
+
+    .ecology-tips h3 {
+        font-size: 19px;
+    }
+
+    .ecology-steps {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+}
