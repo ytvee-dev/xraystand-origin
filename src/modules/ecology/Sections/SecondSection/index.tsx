@@ -22,15 +22,13 @@ interface SecondSectionContent {
 }
 
 interface SecondSectionProps {
-    content: {
-        secondSection: SecondSectionContent;
-    };
+    content: SecondSectionContent;
 }
 
 const SecondSection = ({
     content,
 }: SecondSectionProps): ReactElement => {
-    const { title, cards } = content.secondSection;
+    const { title, cards } = content;
 
     const jeans = cards[0];
     const bottle = cards[1];
