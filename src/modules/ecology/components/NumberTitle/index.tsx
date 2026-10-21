@@ -4,14 +4,16 @@ import './style.css'
 interface NumberTitleProps {
     number: string;
     title: string;
+    className?: string;
 }
 
 const NumberTitle: React.FC<NumberTitleProps> = ({
     number,
-    title
+    title,
+    className
 }: NumberTitleProps): ReactNode => {
     return(
-        <div className="number-title-wrapper">
+        <div className={`number-title-wrapper ${className}`}>
             <span>{number}</span>
             <h1>{title}</h1>
         </div>
