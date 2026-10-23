@@ -9,15 +9,15 @@ interface CoverSectionProps {
 
 export default function CoverSection({ content }: CoverSectionProps) {
   return (
-    <section className="coverSection">
+    <section className="ecology-cover-section">
         <img
-          className="coverImage"
+          className="ecology-cover-image"
           src={paths.coverBg}
           alt=""
         />
 
-        <div className="coverContent">
-          <h1 className="title">{content.title}</h1>
+        <div className="ecology-cover-content">
+          <h1 className="ecology-cover-title">{content.title}</h1>
         </div>
     </section>
   );
