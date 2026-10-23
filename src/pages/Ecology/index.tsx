@@ -3,6 +3,8 @@ import { usePageData } from "@hooks/usePageData";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
 import CoverSection from "@modules/ecology/Sections/CoverSection";
+import FirstSection from "@modules/ecology/Sections/FirstSection";
+import SecondSection from "@modules/ecology/Sections/SecondSection";
 import * as contentKz from "@modules/ecology/locales/kaz.json";
 import * as pathData from "@modules/ecology/locales/path.json";
 import * as contentRu from "@modules/ecology/locales/rus.json";
@@ -34,7 +36,7 @@ const Ecology = (): ReactElement => {
     const imgUrls = useMemo(() => collectFromPathsJson(pathData), []);
     usePreloadImages(imgUrls);
 
-    const { isContentLoaded } = usePageData();
+    const { isContentLoaded, isMobile } = usePageData();
     const content = useLocaleContent(contentRu, contentKz);
     return (
         <BrightnessLayout
@@ -57,6 +59,8 @@ const Ecology = (): ReactElement => {
             <div className="ecology-page">
                 {!isContentLoaded && <Spinner />}
                 <CoverSection content={content.coverSection}/>
+                <FirstSection content={content.firstSection} isMobile={isMobile}/>
+                <SecondSection content={content.secondSection} />
             </div>
         </BrightnessLayout>
     );
