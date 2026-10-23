@@ -5,6 +5,7 @@ import { useLocaleContent } from "@hooks/useLocale";
 import CoverSection from "@modules/ecology/Sections/CoverSection";
 import FirstSection from "@modules/ecology/Sections/FirstSection";
 import SecondSection from "@modules/ecology/Sections/SecondSection";
+import ThirdSection from "@modules/ecology/Sections/ThirdSection";
 import FourthSection from "@modules/ecology/Sections/FourthSection";
 import * as contentKz from "@modules/ecology/locales/kaz.json";
 import * as pathData from "@modules/ecology/locales/path.json";
@@ -62,6 +63,7 @@ const Ecology = (): ReactElement => {
                 <CoverSection content={content.coverSection}/>
                 <FirstSection content={content.firstSection} isMobile={isMobile}/>
                 <SecondSection content={content.secondSection} />
+                <ThirdSection content={content.thirdSection} />
                 <FourthSection content={content.fourthSection} isMobile={isMobile}/>
             </div>
         </BrightnessLayout>
