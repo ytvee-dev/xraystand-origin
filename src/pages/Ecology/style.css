@@ -1,6 +1,11 @@
 .ecology-page {
     background-color: #F2F1E8;
-    padding: 50px 0 ;
+    padding: 50px 0;
+    color: #3D602C;
+}
+
+.ecology-page * {
+    font-family: "Roboto", sans-serif;
 }
 
 .ecology-footer {
