@@ -2,6 +2,7 @@ import Spinner from "@components/common/Spinner";
 import { usePageData } from "@hooks/usePageData";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
+import CoverSection from "@modules/ecology/Sections/CoverSection";
 import FirstSection from "@modules/ecology/Sections/FirstSection";
 import SecondSection from "@modules/ecology/Sections/SecondSection";
 import FourthSection from "@modules/ecology/Sections/FourthSection";
@@ -58,6 +59,7 @@ const Ecology = (): ReactElement => {
         >
             <div className="ecology-page">
                 {!isContentLoaded && <Spinner />}
+                <CoverSection content={content.coverSection}/>
                 <FirstSection content={content.firstSection} isMobile={isMobile}/>
                 <SecondSection content={content.secondSection} />
                 <FourthSection content={content.fourthSection} isMobile={isMobile}/>
