@@ -4,6 +4,7 @@ import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
 import FirstSection from "@modules/ecology/Sections/FirstSection";
 import SecondSection from "@modules/ecology/Sections/SecondSection";
+import ThirdSection from "@modules/ecology/Sections/ThirdSection";
 import * as contentKz from "@modules/ecology/locales/kaz.json";
 import * as pathData from "@modules/ecology/locales/path.json";
 import * as contentRu from "@modules/ecology/locales/rus.json";
@@ -59,6 +60,7 @@ const Ecology = (): ReactElement => {
                 {!isContentLoaded && <Spinner />}
                 <FirstSection content={content.firstSection} isMobile={isMobile}/>
                 <SecondSection content={content.secondSection} />
+                <ThirdSection content={content.thirdSection} />
             </div>
         </BrightnessLayout>
     );
