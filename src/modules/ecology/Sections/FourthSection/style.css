@@ -1,0 +1,262 @@
+.ecology-fourth-section {
+    padding: 80px 20px 93px 20px;
+    margin-inline: auto;
+    max-width: 1300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ecology-fourth-section p {
+    line-height: 140%;
+    font-size: 22px;
+}
+
+.ecology-split-card {
+    border-radius: 32px;
+    padding: 36px 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 42px;
+    box-shadow: 0 5px 2px 0 rgba(195, 211, 170, 0.38);
+    background: #fcfcf5;
+}
+
+.ecology-split-card h2 {
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.ecology-split-card-0 {
+    border-left: 6px solid #80a86a;
+}
+
+.ecology-split-card-0 .ecology-split-card-accent-block {
+    background-color: #e9f0d8;
+}
+
+.ecology-split-card-1 {
+    border-left: 6px solid #58acb6;
+}
+
+.ecology-split-card-1 .ecology-split-card-accent-block {
+    background-color: #E7F2F0;
+}
+
+.ecology-split-card-2 {
+    border-left: 6px solid #b89656;
+}
+
+.ecology-split-card-2 .ecology-split-card-accent-block {
+    background-color: #F2EEDF;
+}
+
+.ecology-split-card-accent-block {
+    border-radius: 22px;
+    padding: 24px;
+}
+
+.ecology-split-card-accent-bold-text {
+    float: left;
+    width: fit-content;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+.ecology-fourth-section-second-title {
+    background: #3d602c;
+    border-radius: 48px 80px 32px 42px;
+    padding: 36px 42px;
+    text-align: center;
+}
+
+.ecology-fourth-section-second-title p {
+    font-size: 24px;
+    color: #cce68c;
+    margin-bottom: 20px;
+}
+
+.ecology-fourth-section-second-title h2 {
+    font-size: 36px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #fcfcf5;
+}
+
+.ecology-fourth-section-card-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #3d602c;
+}
+
+.ecology-main-conclusion-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.ecology-main-conclusion-card-carousel .carousel-container {
+    gap: 20px;
+    margin-inline: 20px;
+    margin-bottom: 15px;
+}
+
+.ecology-main-conclusion-card-carousel button {
+    color: #3d602c;
+    border: 1px solid #3d602c;
+}
+
+.ecology-main-conclusion-card {
+    box-shadow: 0 5px 2px 0 rgba(195, 211, 170, 0.38);
+    background: #fcfcf5;
+    border-radius: 32px;
+    padding: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.ecology-main-conclusion-card img {
+    width: 195px;
+    object-fit: contain;
+}
+
+.ecology-main-conclusion-card-title {
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 1024px) {
+    .ecology-main-conclusion-card-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .ecology-fourth-section {
+        padding-top: 48px;
+        padding-bottom: 0;
+    }
+
+    .ecology-fourth-section p {
+        line-height: 145%;
+        font-size: 19px;
+    }
+    
+    .ecology-fourth-section-card-title {
+        font-size: 30px;
+    }
+
+    .ecology-split-card {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+    .ecology-split-card h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .ecology-fourth-section-second-title {
+        padding: 28px 24px;
+    }
+
+    .ecology-fourth-section-second-title h2 {
+        font-size: 32px;
+    }
+
+    .ecology-fourth-section-second-title p {
+        font-size: 20px;
+    }
+
+    .ecology-main-conclusion-card {
+        padding: 22px;
+        width: 560px;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .ecology-fourth-section {
+        gap: 24px;
+    }
+
+    .ecology-fourth-section p {
+        line-height: 145%;
+        font-size: 16px;
+    }
+
+    .ecology-split-card {
+        padding: 22px;
+        gap: 20px;
+    }
+
+    .ecology-split-card h2 {
+        font-size: 23px;
+    }
+    
+    .ecology-fourth-section-card-title {
+        font-size: 23px;
+    }
+
+    .ecology-fourth-section-second-title h2 {
+        font-size: 24px;
+    }
+
+    .ecology-fourth-section-second-title p {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    
+    .ecology-main-conclusion-card {
+        width: 470px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ecology-main-conclusion-card img {
+        margin-left: auto;
+        width: 160px;
+    }
+}
+
+@media (max-width: 520px) {
+    .ecology-main-conclusion-card {
+        width: 390px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ecology-main-conclusion-card img {
+        width: 136px;
+    }
+
+    .ecology-main-conclusion-card {
+        width: 340px;
+    }
+}
+
+@media (max-width: 420px) {
+    .ecology-main-conclusion-card-carousel .carousel-container {
+        gap: 16px;
+        margin-inline: 16px;
+    }
+    .ecology-main-conclusion-card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 390px) {
+    .ecology-main-conclusion-card {
+        width: 260px;
+    }
+}
+
+@media (max-width: 320px) {
+    .ecology-main-conclusion-card {
+        width: 220px;
+    }
+}
