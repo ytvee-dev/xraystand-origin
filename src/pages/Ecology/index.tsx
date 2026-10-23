@@ -3,6 +3,7 @@ import { usePageData } from "@hooks/usePageData";
 import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useLocaleContent } from "@hooks/useLocale";
 import FirstSection from "@modules/ecology/Sections/FirstSection";
+import FourthSection from "@modules/ecology/Sections/FourthSection";
 import * as contentKz from "@modules/ecology/locales/kaz.json";
 import * as pathData from "@modules/ecology/locales/path.json";
 import * as contentRu from "@modules/ecology/locales/rus.json";
@@ -57,6 +58,7 @@ const Ecology = (): ReactElement => {
             <div className="ecology-page">
                 {!isContentLoaded && <Spinner />}
                 <FirstSection content={content.firstSection} isMobile={isMobile}/>
+                <FourthSection content={content.fourthSection}/>
             </div>
         </BrightnessLayout>
     );

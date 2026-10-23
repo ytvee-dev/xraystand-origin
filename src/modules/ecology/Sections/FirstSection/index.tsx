@@ -2,12 +2,8 @@ import type { ReactElement } from 'react';
 import * as paths from "@modules/ecology/locales/path.json"
 import NumberTitle from '@modules/ecology/components/NumberTitle';
 import SpriteIcon from "@components/common/Other/SpriteIcon";
+import type { BaseCards } from "@modules/ecology/types";
 import './style.css'
-
-interface BaseCards {
-    title: string;
-    description: string;
-}
 
 interface MathEcologyCards {
     title: string;

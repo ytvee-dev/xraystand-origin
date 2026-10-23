@@ -8,11 +8,6 @@
     gap: 32px;
 }
 
-.ecology-first-section * {
-    font-family: "Roboto", sans-serif;
-    color: #3D602C;
-}
-
 .ecology-first-section p {
     line-height: 140%;
 }
