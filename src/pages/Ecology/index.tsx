@@ -58,7 +58,7 @@ const Ecology = (): ReactElement => {
             <div className="ecology-page">
                 {!isContentLoaded && <Spinner />}
                 <FirstSection content={content.firstSection} isMobile={isMobile}/>
-                <FourthSection content={content.fourthSection}/>
+                <FourthSection content={content.fourthSection} isMobile={isMobile}/>
             </div>
         </BrightnessLayout>
     );

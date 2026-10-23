@@ -2,6 +2,7 @@ import type { ReactElement } from 'react';
 import * as paths from "@modules/ecology/locales/path.json"
 import NumberTitle from '@modules/ecology/components/NumberTitle';
 import type { BaseCards } from "@modules/ecology/types";
+import Carousel from '@components/common/Carousel';
 import './style.css'
 
 interface FourthSectionCards {
@@ -26,6 +27,7 @@ interface FourthSection {
 
 interface FourthSectionProps {
     content: FourthSection;
+    isMobile: boolean;
 } 
 
 function SplitCard({
@@ -41,14 +43,17 @@ function SplitCard({
                 <p>{description}</p>
             </div>
             <div className="ecology-split-card-accent-block">
-                <p className="ecology-split-card-accent-bold-text">{solutionСard.title}</p>
+                <p className="ecology-split-card-accent-bold-text">
+                    {solutionСard.title}
+                </p>
                 <p>{solutionСard.description}</p>
             </div>
         </div>
 )}
 
 export default function FourthSection({ 
-    content
+    content,
+    isMobile
 }: FourthSectionProps): ReactElement {
     const mainConclusion = content.mainConclusion;
     return(
@@ -78,20 +83,41 @@ export default function FourthSection({
                 {mainConclusion.cardsTitle}
             </h2>
 
-            <div className="ecology-main-conclusion-card-wrapper">
-                {mainConclusion.cards.map((card, index) => (
-                    <div
-                        className="ecology-main-conclusion-card"
-                        key={card.title}
-                    >
-                        <div>
-                            <p className="ecology-main-conclusion-card-title">{card.title}</p>
-                            <p>{card.description}</p>
+            {isMobile ? (
+                <Carousel className="ecology-main-conclusion-card-carousel">
+                    {mainConclusion.cards.map((card, index) => (
+                        <div
+                            className="ecology-main-conclusion-card"
+                            key={card.title}
+                        >
+                            <div>
+                                <p className="ecology-main-conclusion-card-title">
+                                    {card.title}
+                                </p>
+                                <p>{card.description}</p>
+                            </div>
+                            <img src={paths.fourthSectionCards[index]} alt="" />
                         </div>
-                        <img src={paths.fourthSectionCards[index]} alt="" />
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </Carousel>
+            ) : (
+                <div className="ecology-main-conclusion-card-wrapper">
+                    {mainConclusion.cards.map((card, index) => (
+                        <div
+                            className="ecology-main-conclusion-card"
+                            key={card.title}
+                        >
+                            <div>
+                                <p className="ecology-main-conclusion-card-title">
+                                    {card.title}
+                                </p>
+                                <p>{card.description}</p>
+                            </div>
+                            <img src={paths.fourthSectionCards[index]} alt="" />
+                        </div>
+                    ))}
+                </div>
+            )}
         </section>
     )
 }
