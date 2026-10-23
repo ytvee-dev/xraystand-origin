@@ -7,6 +7,7 @@ import FirstSection from "@modules/ecology/Sections/FirstSection";
 import SecondSection from "@modules/ecology/Sections/SecondSection";
 import ThirdSection from "@modules/ecology/Sections/ThirdSection";
 import FourthSection from "@modules/ecology/Sections/FourthSection";
+import FifthSection from "@modules/ecology/Sections/FifthSection";
 import * as contentKz from "@modules/ecology/locales/kaz.json";
 import * as pathData from "@modules/ecology/locales/path.json";
 import * as contentRu from "@modules/ecology/locales/rus.json";
@@ -65,6 +66,7 @@ const Ecology = (): ReactElement => {
                 <SecondSection content={content.secondSection} />
                 <ThirdSection content={content.thirdSection} />
                 <FourthSection content={content.fourthSection} isMobile={isMobile}/>
+                <FifthSection content={content.fifthSection} isMobile={isMobile} />
             </div>
         </BrightnessLayout>
     );
