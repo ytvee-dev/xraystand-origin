@@ -1,0 +1,120 @@
+.ecology-fifth-section {
+    padding: 80px 90px;
+    background-color: #F2F1E8;
+    color: #3D602C;
+}
+
+.ecology-fifth-section * {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.ecology-fifth-container {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.ecology-fifth-section .number-title-wrapper {
+    margin-bottom: 42px;
+}
+
+.ecology-fifth-cards {
+    display: flex;
+    gap: 28px;
+}
+
+.ecology-fifth-cards .ecology-myth-card {
+    flex: 1 1 0;
+}
+
+.ecology-fifth-carousel .carousel-container {
+    gap: 20px;
+    margin-left: 0;
+}
+
+.ecology-fifth-carousel .ecology-myth-card {
+    flex: 0 0 100%;
+}
+
+.ecology-fifth-carousel .carousel-arrow {
+    border-color: #3D602C;
+    background-color: rgba(252, 252, 245, 0.88);
+    color: #3D602C;
+}
+
+.ecology-fifth-notification {
+    margin-top: 48px;
+}
+
+.ecology-fifth-notification .ds-mui-alert {
+    align-items: flex-start;
+}
+
+@media (max-width: 1100px) {
+    .ecology-fifth-section {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .ecology-fifth-cards {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .ecology-fifth-section {
+        padding: 48px 24px;
+    }
+
+    .ecology-fifth-section .number-title-wrapper {
+        margin-bottom: 28px;
+    }
+
+    .ecology-fifth-notification .ds-mui-alert {
+        gap: 20px !important;
+        padding: 36px 32px !important;
+        font-size: 21px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .ecology-fifth-section {
+        padding: 40px 20px;
+    }
+
+    .ecology-fifth-cards {
+        gap: 24px;
+    }
+
+    .ecology-fifth-notification {
+        margin-top: 24px;
+    }
+
+    .ecology-fifth-notification .ds-mui-alert {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px !important;
+        padding: 30px 24px !important;
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .ecology-fifth-section {
+        padding: 48px 20px 32px;
+    }
+
+    .ecology-fifth-section .number-title-wrapper h1 {
+        font-size: 24px;
+    }
+
+    .ecology-fifth-carousel .carousel-arrow-left {
+        left: -14px;
+    }
+
+    .ecology-fifth-carousel .carousel-arrow-right {
+        right: -14px;
+    }
+}

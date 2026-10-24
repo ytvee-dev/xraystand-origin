@@ -219,6 +219,14 @@ const pagesInfo: IPageInfo[] = [
         isClickable: true,
     },
     {
+        id: paths.ECOLOGY.id,
+        path: paths.ECOLOGY.path,
+        title: "Экология",
+        description: "Экология",
+        status: "active",
+        isClickable: true,
+    },
+    {
         id: paths.DEMO.id,
         path: paths.DEMO.path,
         title: "Демонстрация",

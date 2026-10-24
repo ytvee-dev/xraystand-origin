@@ -1,0 +1,87 @@
+.ecology-myth-card {
+    display: flex;
+    flex-direction: column;
+    padding: 42px;
+    border-radius: 32px;
+    background-color: #FCFCF5;
+    box-shadow: 0 5px 2px rgba(195, 211, 170, 0.3765);
+}
+
+.ecology-myth-card h2 {
+    margin: 0;
+    color: #3D602C;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.ecology-myth-card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    margin: 24px 0;
+    object-fit: contain;
+}
+
+.ecology-myth-card p {
+    color: #3D602C;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+@media (max-width: 1100px) {
+    .ecology-myth-card img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ecology-myth-card {
+        padding: 28px;
+        border-radius: 24px;
+    }
+
+    .ecology-myth-card h2 {
+        font-size: 30px;
+    }
+
+    .ecology-myth-card p {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ecology-myth-card {
+        padding: 22px;
+    }
+
+    .ecology-myth-card h2 {
+        font-size: 23px;
+    }
+
+    .ecology-myth-card img {
+        height: 150px;
+        margin: 20px 0;
+    }
+
+    .ecology-myth-card p {
+        font-size: 16px;
+        line-height: 1.45;
+    }
+}
+
+@media (max-width: 390px) {
+    .ecology-myth-card h2 {
+        font-size: 24px;
+    }
+
+    .ecology-myth-card img {
+        width: 100%;
+        height: 175px;
+    }
+
+    .ecology-myth-card p {
+        font-size: 16px;
+    }
+}
