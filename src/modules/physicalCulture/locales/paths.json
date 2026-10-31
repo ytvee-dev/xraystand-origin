@@ -1,0 +1,65 @@
+{
+    "coverBg": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793213393/cover_bg_1_wffit8.webp",
+    "firstSection": {
+        "manOnTheSofa": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793213583/man_on_the_sofa_1_rhgebn.webp",
+        "cards": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793213713/muscles_1_ferhoa.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793213759/heart_1_hn5xn6.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793213866/stomach_1_crbuea.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793213940/bone_1_q3wk1y.webp"
+        ],
+        "filledCards": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793349173/fitness_load-_1__qqworl.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793349156/fitness_goal-_2__nq6c0u.webp"
+        ]
+    },
+    "secondSection": {
+        "strongWoman": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793214131/strong_woman_1_ik3xek.webp",
+        "goodPosture": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793214261/good_posture_1_uygzd8.webp",
+        "bonesAndJoints": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793214531/bones_and_joints_1_wo6moc.webp",
+        "immunity": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793214912/immunity_2_dlvsr9.webp",
+        "antistress": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793215104/antistress_1_zndr7e.webp",
+        "sleepingMan": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793215255/sleeping_man_1_mqdcok.webp",
+        "BrainLearning": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793215484/brain_learning_1_ahirz1.webp"
+    },
+    "thirdSection": {
+        "threePillarsCards": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793215638/cardio_1_tnw9lu.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793215731/strength_training_1_tgvpbb.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793215820/flexibility_exercises_1_tlaoh7.webp"
+        ],
+        "muscleMapCards": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793216293/core_muscles_1_jq0qb5.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793216033/lower_body_1_r2nk9s.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793216093/upper_body_1_aazk80.webp"
+        ],
+        "cycle": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793349456/cycle-_3__qbwtgr.webp"
+    },
+    "fourthSection": {
+        "safetyPrecautions": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793216487/safety_precautions-_1__enrhv4.webp",
+        "cards": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793223187/shirt-_1__orlzal.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793223278/water-_1__p9dnsw.webp"
+        ],
+        "tick": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793350144/circle-check_1_as2mzi.webp",
+        "cross": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793350255/circle_x_1_oldktj.webp",
+        "rest": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793223390/rest-_1__bfet9k.webp",
+        "blueHeart": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793350900/blue_heart_1_wcoyqa.webp"
+    },
+    "fifthSection": {
+        "left": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793223536/sport_left-_1__bvbakt.webp",
+        "right": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793223616/sport_right-_1__qjtmvd.webp",
+        "firstCard": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793351047/target_1_pwq1xw.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793351095/lightning_1_czc0mk.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793351200/risk_sign_1_otpv4m.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793351408/character_1_f2zhpe.webp"
+        ],
+        "secondCard": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793349156/fitness_goal-_2__nq6c0u.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793349173/fitness_load-_1__qqworl.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793351417/minimal_risk_1_aiwlqm.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793351559/character_and_person_1_gadvo8.webp"
+        ]
+    }
+}
