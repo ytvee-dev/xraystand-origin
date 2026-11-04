@@ -1,0 +1,130 @@
+.physical-third-section {
+    background-color: #F9FFF4;
+    overflow: hidden;
+
+    /* --accent-color: #C21E24; */
+}
+
+.physical-third-content {
+    max-width: 1388px;
+    padding: 40px 16px;
+    margin-inline: auto;
+}
+
+.physical-third-section p {
+    color: #595b5c;
+}
+
+.physical-third-title {
+    margin-bottom: 28px;
+}
+
+.physics-third-description {
+    padding-inline: 32px;
+    margin-bottom: 31px;
+}
+
+.physical-third-training-block-wrapper {
+    margin-bottom: 20px;
+}
+
+.physical-third-training-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.physical-third-training-block img {
+    margin-inline: auto;
+}
+
+.physical-third-training-img-0 {
+    height: 294px;
+}
+
+.physical-third-training-img-1 {
+    height: 271px;
+}
+
+.physical-third-training-img-2 {
+    height: 236px;
+}
+
+.physical-third-training-1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.physical-third-training-card {
+    border: 1.50px solid #b3d391;
+    border-radius: 12px;
+    width: 700px;
+    height: fit-content;
+    background: #edf8db;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.physical-third-training-card h3 {
+    background-color: #4c9f2d;
+    color: white;
+    font-size: 28px;
+    line-height: 113%;
+    padding: 12px;
+}
+
+.physical-third-training-card p {
+    padding-inline: 12px;
+    font-size: 18px;
+}
+
+.physical-third-training-bold-text {
+    font-weight: 700;
+    font-size: 20px;
+    color: #4c9f2d !important;
+}
+
+@media (max-width: 900px) {
+    .physical-third-training-block-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 680px) {
+    .physical-third-training-block {
+        flex-direction: column;
+    }
+
+    .physical-third-training-card {
+        width: 100%;
+    }
+        
+    .physical-third-title {
+        margin-bottom: 20px;
+    }
+
+    .physics-third-description {
+        padding: 0;
+        text-align: center;
+    }
+
+    .physical-third-training-img-1 {
+        margin-bottom: 10px;
+    }
+    
+    .physical-third-training-card h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .physical-third-training-img-2 {
+        height: auto;
+        width: 100%;
+    }
+}

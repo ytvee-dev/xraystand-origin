@@ -1,0 +1,19 @@
+.physical-culture-logo {
+    padding: 10px 42px 10px 36px;
+    margin-top: 22px;
+    box-sizing: content-box;
+    border-radius: 16px;
+    background-color: #FDFEFD;
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 103px;
+    height: 49px;
+}
+
+@media (max-width: 768px) {
+    .physical-culture-logo {
+        padding: 7px 17px 7px 16px;
+        margin-top: 12px;
+    }
+}
