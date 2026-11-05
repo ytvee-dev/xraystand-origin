@@ -19,7 +19,8 @@
     margin-bottom: 28px;
 }
 
-.physics-third-description {
+.physics-third-description,
+.physics-third-muscle-description {
     padding-inline: 32px;
     margin-bottom: 31px;
 }
@@ -32,6 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .physical-third-training-block img {
@@ -40,6 +42,7 @@
 
 .physical-third-training-img-0 {
     height: 294px;
+    margin-bottom: 10px;
 }
 
 .physical-third-training-img-1 {
@@ -87,17 +90,62 @@
     color: #4c9f2d !important;
 }
 
+.physics-third-muscle-card-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.physics-third-muscle-card {
+    max-width: 451px;
+    border: 1px solid #b3d391;
+    border-radius: 12px;
+    padding: 12px 16px;
+    background: #edf8db;
+    display: grid;
+    gap: 10px;
+}
+
+.physics-third-muscle-card h3 {
+    font-size: 28px;
+    line-height: 113%;
+    text-align: center;
+    color: #4c9f2d;
+}
+
+.physics-third-muscle-card img {
+    height: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (max-width: 900px) {
     .physical-third-training-block-wrapper {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+    
+    .physics-third-muscle-card-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .physics-third-muscle-card {
+        width: 400px;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .physics-third-muscle-card {
+        width: 370px;
+    }
 }
 
 @media (max-width: 680px) {
     .physical-third-training-block {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .physical-third-training-card {
@@ -111,13 +159,33 @@
     .physics-third-description {
         padding: 0;
         text-align: center;
+        margin-bottom: 20px;
     }
 
-    .physical-third-training-img-1 {
-        margin-bottom: 10px;
+    .physics-third-muscle-description {
+        padding: 0;
+        margin-bottom: 20px;
     }
     
     .physical-third-training-card h3 {
+        font-size: 18px;
+    }
+
+    .physics-third-muscle-card-wrapper {
+        gap: 8px;
+    }
+    
+    .physics-third-muscle-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .physics-third-muscle-card h3 {
+        font-size: 24px;
+        line-height: 140%;
+    }
+
+    .physical-third-training-bold-text {
         font-size: 18px;
     }
 }
@@ -126,5 +194,9 @@
     .physical-third-training-img-2 {
         height: auto;
         width: 100%;
+    }
+    
+    .physics-third-muscle-card h3 {
+        font-size: 18px;
     }
 }

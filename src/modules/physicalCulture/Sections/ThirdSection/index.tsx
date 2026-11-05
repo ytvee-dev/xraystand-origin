@@ -87,6 +87,31 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({
                         </div>
                     ))}
                 </div>
+
+                <FilledTitle 
+                    title={content.muscleGroups.title}
+                    bgColor="#4C9F2D"
+                    className="physical-third-title"
+                    variant="h2"
+                />
+                <p className="physics-third-muscle-description">
+                    {content.muscleGroups.description}
+                </p>
+                
+                <div className="physics-third-muscle-card-wrapper">
+                    {content.muscleGroups.cards.map((card, index) => (
+                        <div 
+                            className="physics-third-muscle-card"
+                            key={card.title}
+                        >
+                            <h3>{card.title}</h3>
+                            <img src={paths.thirdSection.muscleMapCards[index]} alt="" />
+                            <p>{card.description}</p>
+                            <p className="physical-third-training-bold-text">{card.roleTitle}</p>
+                            <p>{card.roleDescription}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     )
