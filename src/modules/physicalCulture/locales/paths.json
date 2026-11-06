@@ -41,8 +41,10 @@
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793223187/shirt-_1__orlzal.webp",
             "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793223278/water-_1__p9dnsw.webp"
         ],
-        "tick": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793350144/circle-check_1_as2mzi.webp",
-        "cross": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793350255/circle_x_1_oldktj.webp",
+        "icons": [
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793350144/circle-check_1_as2mzi.webp",
+            "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793350255/circle_x_1_oldktj.webp"
+        ],
         "rest": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793223390/rest-_1__bfet9k.webp",
         "blueHeart": "https://res.cloudinary.com/dy6zg8dhs/image/upload/v1793350900/blue_heart_1_wcoyqa.webp"
     },

@@ -1,5 +1,4 @@
 import React, { type ReactElement } from "react";
-import SectionMediaBlock from "@modules/aiProfession/Sections/components/SectionMediaBlock"
 import FilledTitle from "@modules/physicalCulture/components/FilledTitle"
 import * as paths from "@modules/physicalCulture/locales/paths.json"
 import splitString from "@utils/splitString"
@@ -86,6 +85,8 @@ const LineCards: React.FC<FourthLineCardsComponent> = ({
 const FourthSection: React.FC<FourthSectionProps> = ({ 
     content
  }): ReactElement => {
+    const painSignals = content.painSignals
+
     return(
         <section className="physical-fourth-section">
         <div  className="physical-fourth-content">
@@ -112,7 +113,51 @@ const FourthSection: React.FC<FourthSectionProps> = ({
                 ))}
             </div>
 
-            
+            <h2>{painSignals.title}</h2>
+            <p className="physical-pain-signals-description">{painSignals.description}</p>
+
+            <div className="physical-pain-signals-card-wrapper">
+                {painSignals.cards.map((card, cardIndex)=> (
+                    <div 
+                        key={card.title}
+                        className={`physical-pain-signals-card physical-pain-signals-${cardIndex}`}
+                    >
+                        <h3 className="physical-pain-signal-title">
+                            {card.title}
+                        </h3>
+
+                        <ul className="physical-pain-signals-list">
+                            {card.list.map((item, index) => (
+                                <li
+                                    className="physical-pain-signals-item"
+                                    key={`${item}-${index}`}
+                                >
+                                    <img src={paths.fourthSection.icons[cardIndex]} alt="" />
+                                    <p>{item}</p>
+                                </li>
+                            ))}
+                        </ul>
+                </div>
+                ))}
+            </div>
+
+            <div className="physical-fourth-contraindications-wrapper">
+                <div className="physical-fourth-contraindications">
+                    <h3>{painSignals.contraindications.title}</h3>
+                    <p>{painSignals.contraindications.description}</p>
+                    <ul>
+                        {painSignals.contraindications.list.map(text => (
+                            <li key={text}>{text}</li>
+                        ))}
+                    </ul>
+                </div>
+                <img src={paths.fourthSection.rest} alt="" />
+            </div>
+
+            <div className="physical-fourth-activity-notifications">
+                <img src={paths.fourthSection.blueHeart} alt="" />
+                <p>{painSignals.activityNotifications}</p>
+            </div>
         </div>
     </section>
     )
