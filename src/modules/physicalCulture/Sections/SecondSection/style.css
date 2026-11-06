@@ -1,0 +1,84 @@
+.physical-culture-second-section {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    padding: 20px 24px 32px;
+    background-color: #F5F5F5;
+}
+
+.physical-culture-benefit-group {
+    min-width: 0;
+}
+
+.physical-culture-second-section .physical-culture-title {
+    background-color: #A44BB6;
+}
+
+.physical-culture-second-section .physical-culture-title h2 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.physical-culture-physical-main-row {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    margin-top: 31px;
+}
+
+.physical-culture-organs-card {
+    flex: 1 1 50%;
+    min-height: 330px;
+    align-items: flex-start;
+    padding: 24px 38px;
+}
+
+.physical-culture-strong-woman {
+    flex: 0 1 48%;
+    width: 48%;
+    height: 330px;
+    object-fit: contain;
+}
+
+.physical-culture-physical-cards,
+.physical-culture-mental-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.physical-culture-physical-cards > .physical-culture-benefit-card,
+.physical-culture-mental-cards > .physical-culture-benefit-card {
+    flex: 1 1 480px;
+}
+
+.physical-culture-physical-cards > .physical-culture-wide-benefit-card {
+    flex-basis: 100%;
+    min-height: 136px;
+}
+
+.physical-culture-mental-main-row {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    margin-top: 31px;
+}
+
+.physical-culture-antistress-image {
+    flex: 1 1 48%;
+    width: 48%;
+    height: 290px;
+    object-fit: contain;
+}
+
+.physical-culture-antistress-card {
+    flex: 1 1 50%;
+    min-height: 264px;
+    align-items: flex-start;
+}
+
+.physical-culture-mental-cards > .physical-culture-benefit-card {
+    min-height: 224px;
+}

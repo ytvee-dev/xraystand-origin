@@ -1,10 +1,9 @@
 import "./style.css";
-import * as paths from "@modules/aiSafety/locales/path.json";
-import * as contentKz from "../../modules/aiSafety/locales/kaz.json";
-import * as contentRu from "../../modules/aiSafety/locales/rus.json"
+import * as contentKz from "@modules/physicalCulture/locales/kaz.json";
+import * as contentRu from "@modules/physicalCulture/locales/rus.json";
 import { useLocaleContent } from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
-import ImgTopicCard from "@modules/aiSafety/components/ImgTopicCard";
+import SecondSection from "@modules/physicalCulture/Sections/SecondSection";
 
 const pageLayoutSX = {
     backgroundColor: "#181818",
@@ -17,14 +16,14 @@ const pageLayoutSX = {
 
 const MainLogo = () => {
     return (
-        <div className="kaz-music-logo">Сердечно сосудистая система</div>
+        <div className="kaz-music-logo">Физическая культура</div>
     );
 };
 
 
 const SeasonPage = () => {
     const textContent = useLocaleContent(contentRu, contentKz);
-    const card = textContent.fourthSection.cards[1]
+
     return (
         <BrightnessLayout
             logo={<MainLogo />}
@@ -35,12 +34,7 @@ const SeasonPage = () => {
             languageSwitcherClassName="kaz-music-language-switcher"
         >
             <div className="bgc">
-                <ImgTopicCard
-                    title={card.title}
-                    description={card.description}
-                    list={card.list}
-                    imgPath={paths.cards[0]}
-                />
+                <SecondSection content={textContent.secondSection} />
             </div>
         </BrightnessLayout>
     );
