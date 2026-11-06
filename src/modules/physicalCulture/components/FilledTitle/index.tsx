@@ -5,7 +5,7 @@ interface FilledTitleProps {
     title: string,
     bgColor: string,
     variant?: 'h1' | 'h2',
-    className: string
+    className?: string
 }
 const FilledTitle: React.FC<FilledTitleProps> = ({
     title,

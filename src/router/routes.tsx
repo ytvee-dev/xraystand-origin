@@ -123,7 +123,7 @@ export const paths = {
         id:"ECOLOGY",
         path: "/ecology",
     },
-     PHYSICAL_CULTURE: {
+    PHYSICAL_CULTURE: {
         id:"PHYSICAL_CULTURE",
         path: "/physical-culture",
     },
