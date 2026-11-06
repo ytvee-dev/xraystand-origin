@@ -112,6 +112,10 @@ const ThirdSection: React.FC<ThirdSectionProps> = ({
                         </div>
                     ))}
                 </div>
+                <div className="physics-third-activity-notifications">
+                    <img src={paths.thirdSection.cycle} alt=""/>
+                    <p>{content.muscleGroups.activityNotifications}</p>
+                </div>
             </div>
         </section>
     )

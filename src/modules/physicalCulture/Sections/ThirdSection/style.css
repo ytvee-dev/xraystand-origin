@@ -1,8 +1,6 @@
 .physical-third-section {
     background-color: #F9FFF4;
     overflow: hidden;
-
-    /* --accent-color: #C21E24; */
 }
 
 .physical-third-content {
@@ -93,6 +91,7 @@
 .physics-third-muscle-card-wrapper {
     display: flex;
     gap: 15px;
+    margin-bottom: 15px;
 }
 
 .physics-third-muscle-card {
@@ -117,6 +116,28 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.physics-third-activity-notifications {
+    border: 1.50px solid #b3d391;
+    border-radius: 20px;
+    padding: 17px 14px;
+    background: #def3c7;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.physics-third-activity-notifications img {
+    width: 153px;
+    height: 151px;
+}
+
+.physics-third-activity-notifications p {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 113%;
+    color: #595b5c;
 }
 
 @media (max-width: 900px) {
@@ -188,7 +209,15 @@
     .physical-third-training-bold-text {
         font-size: 18px;
     }
-}
+    
+    .physics-third-activity-notifications {
+        flex-direction: column;
+    }
+
+    .physics-third-activity-notifications p {
+        font-size: 20px;
+    }
+}  
 
 @media (max-width: 400px) {
     .physical-third-training-img-2 {

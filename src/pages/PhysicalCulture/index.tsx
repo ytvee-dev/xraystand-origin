@@ -1,4 +1,4 @@
-  import Spinner from "@components/common/Spinner";
+import Spinner from "@components/common/Spinner";
 import SpriteIcon from "@components/common/Other/SpriteIcon";
 import * as paths from "@modules/physicalCulture/locales/paths.json";
 import * as contentRu from "@modules/physicalCulture/locales/rus.json";
@@ -9,6 +9,7 @@ import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useSelector } from "react-redux";
 import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
+import FirstSection from "@modules/physicalCulture/Sections/FirstSection";
 import ThirdSection from "@modules/physicalCulture/Sections/ThirdSection";
 import "./style.css";
 
@@ -52,6 +53,7 @@ const PhysicalCulture = () => {
             headerBackgroundColor="transparent"
         >
             {!isContentLoaded && <Spinner />}
+            <FirstSection content={textContent.firstSection} />
             <ThirdSection content={textContent.thirdSection} />
         </BrightnessLayout>
     );
