@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
 import FirstSection from "@modules/physicalCulture/Sections/FirstSection";
+import ThirdSection from "@modules/physicalCulture/Sections/ThirdSection";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -53,6 +54,7 @@ const PhysicalCulture = () => {
         >
             {!isContentLoaded && <Spinner />}
             <FirstSection content={textContent.firstSection} />
+            <ThirdSection content={textContent.thirdSection} />
         </BrightnessLayout>
     );
 };
