@@ -1,5 +1,6 @@
 import React, { type ReactElement } from "react";
 import FilledTitle from "@modules/physicalCulture/components/FilledTitle"
+import IconListCard from "@modules/physicalCulture/components/IconListCard"
 import * as paths from "@modules/physicalCulture/locales/paths.json"
 import splitString from "@utils/splitString"
 import type { CardItem } from "@modules/aiProfession/Sections/ThirdSection"
@@ -118,26 +119,14 @@ const FourthSection: React.FC<FourthSectionProps> = ({
 
             <div className="physical-pain-signals-card-wrapper">
                 {painSignals.cards.map((card, cardIndex)=> (
-                    <div 
+                    <IconListCard
                         key={card.title}
+                        title={card.title}
+                        list={card.list}
+                        icons={[paths.fourthSection.icons[cardIndex]]}
                         className={`physical-pain-signals-card physical-pain-signals-${cardIndex}`}
-                    >
-                        <h3 className="physical-pain-signal-title">
-                            {card.title}
-                        </h3>
-
-                        <ul className="physical-pain-signals-list">
-                            {card.list.map((item, index) => (
-                                <li
-                                    className="physical-pain-signals-item"
-                                    key={`${item}-${index}`}
-                                >
-                                    <img src={paths.fourthSection.icons[cardIndex]} alt="" />
-                                    <p>{item}</p>
-                                </li>
-                            ))}
-                        </ul>
-                </div>
+                        rowClassName="physical-pain-signals-item"
+                    />
                 ))}
             </div>
 
