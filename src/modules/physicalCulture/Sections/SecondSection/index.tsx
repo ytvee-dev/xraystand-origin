@@ -6,7 +6,8 @@ import "./style.css";
 
 interface BenefitText {
     title: string;
-    description: string;
+    description?: string;
+    list?: BenefitListItem[];
 }
 
 interface MainBenefitCard extends BenefitText {
@@ -48,7 +49,10 @@ const SecondSection = ({ content }: SecondSectionProps): ReactElement => {
 
                 <div className="physical-culture-physical-main-row">
                     <BenefitCard
-                        {...physicalHealth.mainCard}
+                        title={physicalHealth.mainCard.title}
+                        description={physicalHealth.mainCard.description}
+                        list={physicalHealth.mainCard.list}
+                        conclusion={physicalHealth.mainCard.conclusion}
                         className="physical-culture-organs-card"
                     />
                     <img
@@ -61,24 +65,32 @@ const SecondSection = ({ content }: SecondSectionProps): ReactElement => {
                 <div className="physical-culture-physical-cards">
                     {postureCard && (
                         <BenefitCard
-                            {...postureCard}
+                            title={postureCard.title}
+                            description={postureCard.description}
+                            list={postureCard.list}
                             image={paths.secondSection.goodPosture}
                             imageAlt={postureCard.title}
+                            className="physical-culture-secondary-card"
                         />
                     )}
                     {bonesCard && (
                         <BenefitCard
-                            {...bonesCard}
+                            title={bonesCard.title}
+                            description={bonesCard.description}
+                            list={bonesCard.list}
                             image={paths.secondSection.bonesAndJoints}
                             imageAlt={bonesCard.title}
+                            className="physical-culture-secondary-card"
                         />
                     )}
                     {immunityCard && (
                         <BenefitCard
-                            {...immunityCard}
+                            title={immunityCard.title}
+                            description={immunityCard.description}
+                            list={immunityCard.list}
                             image={paths.secondSection.immunity}
                             imageAlt={immunityCard.title}
-                            className="physical-culture-wide-benefit-card"
+                            className="physical-culture-secondary-card physical-culture-wide-benefit-card"
                         />
                     )}
                 </div>
@@ -98,7 +110,10 @@ const SecondSection = ({ content }: SecondSectionProps): ReactElement => {
                         alt=""
                     />
                     <BenefitCard
-                        {...mentalHealth.mainCard}
+                        title={mentalHealth.mainCard.title}
+                        description={mentalHealth.mainCard.description}
+                        list={mentalHealth.mainCard.list}
+                        conclusion={mentalHealth.mainCard.conclusion}
                         className="physical-culture-antistress-card"
                     />
                 </div>
@@ -106,16 +121,22 @@ const SecondSection = ({ content }: SecondSectionProps): ReactElement => {
                 <div className="physical-culture-mental-cards">
                     {brainCard && (
                         <BenefitCard
-                            {...brainCard}
+                            title={brainCard.title}
+                            description={brainCard.description}
+                            list={brainCard.list}
                             image={paths.secondSection.sleepingMan}
                             imageAlt={brainCard.title}
+                            className="physical-culture-secondary-card physical-culture-mental-card"
                         />
                     )}
                     {sleepCard && (
                         <BenefitCard
-                            {...sleepCard}
+                            title={sleepCard.title}
+                            description={sleepCard.description}
+                            list={sleepCard.list}
                             image={paths.secondSection.BrainLearning}
                             imageAlt={sleepCard.title}
+                            className="physical-culture-secondary-card physical-culture-mental-card"
                         />
                     )}
                 </div>

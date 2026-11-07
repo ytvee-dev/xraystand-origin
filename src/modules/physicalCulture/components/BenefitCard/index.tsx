@@ -8,7 +8,7 @@ export interface BenefitListItem {
 
 interface BenefitCardProps {
     title: string;
-    description: string;
+    description?: string;
     image?: string;
     imageAlt?: string;
     list?: BenefitListItem[];
@@ -50,7 +50,7 @@ const BenefitCard = ({
             )}
             <div className="physical-culture-benefit-card-content">
                 <h3>{title}</h3>
-                <p>{description}</p>
+                {description && <p>{description}</p>}
                 {list && (
                     <ul className="physical-culture-benefit-list">
                         {list.map(toBenefitListRow)}
