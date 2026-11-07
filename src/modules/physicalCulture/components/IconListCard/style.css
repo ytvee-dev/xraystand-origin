@@ -1,0 +1,23 @@
+.physical-culture-icon-list-card {
+    overflow: hidden;
+}
+
+.physical-culture-icon-list-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.physical-culture-icon-list-row {
+    display: flex;
+    align-items: center;
+}
+
+.physical-culture-icon-list-row img {
+    flex: 0 0 auto;
+    object-fit: contain;
+}
+
+.physical-culture-icon-list-row span {
+    min-width: 0;
+}

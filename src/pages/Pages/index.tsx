@@ -209,6 +209,22 @@ const pagesInfo: IPageInfo[] = [
         status: "active",
         isClickable: true,
 
+    }, 
+    {
+        id: paths.ECOLOGY.id,
+        path: paths.ECOLOGY.path,
+        title: "Экология",
+        description: "Экология",
+        status: "active",
+        isClickable: true,
+    },
+    {
+        id: paths.PHYSICAL_CULTURE.id,
+        path: paths.PHYSICAL_CULTURE.path,
+        title: "Физическая культура",
+        description: "Физическая культура",
+        status: "active",
+        isClickable: true,
     },
     {
         id: paths.IMPLEMENTATION.id,
@@ -218,14 +234,7 @@ const pagesInfo: IPageInfo[] = [
         status: "in-progress",
         isClickable: true,
     },
-    {
-        id: paths.ECOLOGY.id,
-        path: paths.ECOLOGY.path,
-        title: "Экология",
-        description: "Экология",
-        status: "active",
-        isClickable: true,
-    },
+ 
     {
         id: paths.DEMO.id,
         path: paths.DEMO.path,

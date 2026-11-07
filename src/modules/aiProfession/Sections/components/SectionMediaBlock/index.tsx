@@ -4,7 +4,7 @@ import "./style.css";
 export type TSectionMediaPosition = "left" | "right";
 
 interface ISectionMediaBlockProps {
-    title: string;
+    title?: string;
     description: string;
     image: string;
     imagePosition: TSectionMediaPosition;
@@ -23,8 +23,14 @@ const SectionMediaBlock = ({
             className={`ai-profession-media-block ai-profession-media-block-${imagePosition} ${className}`}
         >
             <div className="ai-profession-media-block-text">
-                <h3 className="ai-profession-media-block-title">{title}</h3>
-                <p className="ai-profession-media-block-description">{description}</p>
+                {title && 
+                    <h3 className="ai-profession-media-block-title">
+                        {title}
+                    </h3>
+                }
+                <p className="ai-profession-media-block-description">
+                    {description}
+                </p>
             </div>
             <img
                 className="ai-profession-media-block-image"
