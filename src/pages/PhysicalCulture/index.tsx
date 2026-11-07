@@ -13,6 +13,7 @@ import FirstSection from "@modules/physicalCulture/Sections/FirstSection";
 import SecondSection from "@modules/physicalCulture/Sections/SecondSection";
 import ThirdSection from "@modules/physicalCulture/Sections/ThirdSection";
 import FourthSection from "@modules/physicalCulture/Sections/FourthSection";
+import FifthSection from "@modules/physicalCulture/Sections/FifthSection";
 import "./style.css";
 
 const pageLayoutSX = {
@@ -59,6 +60,7 @@ const PhysicalCulture = () => {
             <SecondSection content={textContent.secondSection} />
             <ThirdSection content={textContent.thirdSection} />
             <FourthSection content={textContent.fourthSection} />
+            <FifthSection content={textContent.fifthSection} />
         </BrightnessLayout>
     );
 };
