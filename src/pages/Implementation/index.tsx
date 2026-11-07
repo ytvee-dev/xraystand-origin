@@ -3,7 +3,6 @@ import * as contentKz from "@modules/physicalCulture/locales/kaz.json";
 import * as contentRu from "@modules/physicalCulture/locales/rus.json";
 import { useLocaleContent } from "@hooks/useLocale";
 import BrightnessLayout from "@layout/Brightness";
-import SecondSection from "@modules/physicalCulture/Sections/SecondSection";
 
 const pageLayoutSX = {
     backgroundColor: "#181818",
@@ -34,7 +33,6 @@ const SeasonPage = () => {
             languageSwitcherClassName="kaz-music-language-switcher"
         >
             <div className="bgc">
-                <SecondSection content={textContent.secondSection} />
             </div>
         </BrightnessLayout>
     );
