@@ -8,7 +8,7 @@ import SectionNotice from "../components/SectionNotice";
 import * as paths from "../../locales/path.json";
 import "./style.css";
 
-interface CardItem {
+export interface CardItem {
     title: string;
     description: string;
 }

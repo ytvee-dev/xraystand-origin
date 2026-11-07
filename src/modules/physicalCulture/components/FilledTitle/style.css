@@ -1,0 +1,61 @@
+.physical-culture-title {
+    border-radius: 20px 20px 0 0;
+    text-transform: uppercase;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+}
+
+.physical-culture-title h1 {
+    font-size: 38px;
+    padding: 12px 36px 12px 32px;
+    min-width: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.physical-culture-title h2 {
+    font-size: 31px;
+    padding: 12px 36px 12px 32px;
+    min-width: 0;
+}
+
+.physical-culture-title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100px;
+    background-image: url('/assets/images/title-stripes.svg');
+    background-position: center;
+}
+
+@media (max-width: 1380px) {
+    .physical-culture-title::after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .physical-culture-title h1 {
+        font-size: 32px;
+    }
+    
+    .physical-culture-title h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 440px) {
+    .physical-culture-title h1 {
+        padding: 12px;
+        font-size: 24px;
+    }
+
+    .physical-culture-title h2 {
+        padding: 12px;
+        font-size: 24px;
+    }
+}
