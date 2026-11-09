@@ -9,6 +9,7 @@ import { usePreloadImages } from "@hooks/usePreloadImages";
 import { useSelector } from "react-redux";
 import type { TRootState } from "@store/index";
 import BrightnessLayout from "@layout/Brightness";
+import CoverSection from "@modules/physicalCulture/Sections/CoverSection";
 import FirstSection from "@modules/physicalCulture/Sections/FirstSection";
 import SecondSection from "@modules/physicalCulture/Sections/SecondSection";
 import ThirdSection from "@modules/physicalCulture/Sections/ThirdSection";
@@ -51,11 +52,12 @@ const PhysicalCulture = () => {
         <BrightnessLayout
             logo={<MainLogo />}
             isLanguageSwitcher={true}
-            switcherColor="#0DC5FD"
+            switcherColor="#C21E23"
             sx={pageLayoutSX}
             headerBackgroundColor="transparent"
         >
             {!isContentLoaded && <Spinner />}
+            <CoverSection content={textContent.coverSection} />
             <FirstSection content={textContent.firstSection} />
             <SecondSection content={textContent.secondSection} />
             <ThirdSection content={textContent.thirdSection} />
