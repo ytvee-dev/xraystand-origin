@@ -14,8 +14,6 @@
     height: 100%;
     width: 90%;
 
-    position: relative;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,11 +29,11 @@
 }
 
 .cover-section-nvp-logo {
-    width: 292px;
-
-    padding: 0.375rem 0;
+    max-width: 292px;
+    padding: 0.375rem 0.625rem;
 
     margin-top: 1rem;
+	margin-inline: auto;
     background-color: #3a3f34;
     border-radius: 1rem;
 
@@ -106,4 +104,11 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 1.4px;
+}
+
+@media (max-width: 320px) {
+	.cover-section-nvp-logo {
+		width: 70%;
+		border-radius: 1.5rem;
+	}
 }
