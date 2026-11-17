@@ -27,6 +27,10 @@
     gap: 2rem;
 }
 
+.nvp-second-section-paragraphs-container .carousel-arrow {
+	display: none;
+}
+
 .nvp-second-section-header-block {
     width: 40%;
 

@@ -48,7 +48,6 @@ const FourthSection = ({
                                                 <div
                                                     className="nvp-fourth-section-card carousel-card"
                                                     key={`nvp-fourth-section-${index}`}
-                                                    style={{ flex: "0 0 20%" }}
                                                 >
                                                     <img
                                                         className="nvp-fourth-section-card-img"

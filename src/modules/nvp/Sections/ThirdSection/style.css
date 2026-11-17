@@ -44,6 +44,10 @@
     z-index: 3;
 }
 
+.nvp-third-section-paragraphs-container .carousel-arrow {
+	display: none;
+}
+
 .nvp-third-section-header-block .nvp-description {
     width: 100%;
     line-height: 28px;

@@ -160,10 +160,6 @@
         width: 100%;
     }
 
-    .nvp-fourth-section-card {
-        flex: 0 0 30% !important;
-    }
-
     .nvp-sixth-section-blocks-container {
         align-items: center;
         flex-direction: column;
@@ -327,10 +323,6 @@
     .nvp-third-section-header-block .nvp-description,
     .nvp-fourth-section-header-block .nvp-description {
         line-height: normal;
-    }
-
-    .nvp-fourth-section-card {
-        flex: 0 0 40% !important;
     }
 
     .nvp-sixth-section-part-header .nvp-description {
