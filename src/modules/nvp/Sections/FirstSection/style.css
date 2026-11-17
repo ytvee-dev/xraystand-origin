@@ -174,8 +174,14 @@
 	}
 }
 
+@media (max-width: 800px) {
+	.nvp-first-section-carousel .carousel-container {
+    	padding-inline: 10px;
+	}
+}
+
 @media (max-width: 500px) {
     .nvp-first-section-carousel .nvp-emblem-card {
-        min-width: 150px;
+        min-width: 170px;
     }
 }
