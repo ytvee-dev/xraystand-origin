@@ -92,6 +92,12 @@
     gap: 1rem;
 }
 
+
+.nvp-second-section-paragraphs-container .carousel-container {
+	margin-inline: 0;
+}
+
+
 .nvp-second-section-paragraph-title {
     padding: 0.5rem;
 
