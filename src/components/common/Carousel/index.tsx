@@ -11,10 +11,16 @@ import "./style.css";
 interface ICarouselProps {
     children: ReactNode;
     className?: string;
+    showArrows?: boolean;
     style?: CSSProperties;
 }
 
-const Carousel = ({ children, className, style }: ICarouselProps): ReactElement => {
+const Carousel = ({
+    children,
+    className,
+    showArrows = true,
+    style,
+}: ICarouselProps): ReactElement => {
     const [emblaRef, emblaApi] = useEmblaCarousel();
     const [isDragging, setIsDragging] = useState(false);
 
@@ -42,7 +48,7 @@ const Carousel = ({ children, className, style }: ICarouselProps): ReactElement 
                 <div className="carousel-container">{children}</div>
             </div>
 
-            {!isDragging && (
+            {showArrows && !isDragging && (
                 <>
                     <button
                         type="button"
