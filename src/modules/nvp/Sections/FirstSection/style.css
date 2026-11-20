@@ -1,46 +1,32 @@
 .nvp-first-section {
-    width: 100%;
-
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-
     background-color: #697855;
     color: #ffffff;
+	padding-bottom: 2rem;
 }
 
 .nvp-first-section-content {
     height: 100%;
     width: 90%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
+	gap:  1.75rem;
     border: 0.0625rem solid #ffffff;
     background-color: #414838;
-
-    margin-bottom: 1rem;
-
-    gap: 2rem;
+	margin-inline: auto;
+	overflow: hidden;
 }
 
 .nvp-first-section-header-block {
     width: 60%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     padding: 0.5rem 3rem;
     background-color: #60654d;
-
     margin-top: 2rem;
     gap: 1rem;
-
     z-index: 3;
 }
 
@@ -52,24 +38,21 @@
 .nvp-first-section-first-part,
 .nvp-first-section-second-part {
     width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     gap: 1rem;
 }
 
 .nvp-first-section-part-header {
-    width: 50%;
-
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     gap: 0.5rem;
+	margin-bottom: 1.75rem;
 }
 
 .nvp-first-section-part-header .nvp-description {
@@ -78,29 +61,23 @@
 
 .nvp-first-section-flags-container {
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 6%;
 }
 
 .nvp-first-section-flag {
     width: 30%;
-
     z-index: 3;
 }
 
 .nvp-first-section-emblem-container {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
     gap: 2rem;
-
     margin-bottom: 2rem;
 }
 
@@ -116,8 +93,15 @@
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-
+	height: 255px;
+	overflow: hidden;
     z-index: 3;
+}
+
+.nvp-emblem-card img {
+	flex: 1;
+	min-height: 0;
+	width: 150px;
 }
 
 .nvp-first-section-emblem-container .nvp-emblem-card {
@@ -138,20 +122,11 @@
     padding: 0.5rem;
     background-color: #8a9066;
     overflow-wrap: break-word;
-
     text-align: center;
-}
-
-#nvp-emblem-card-3 {
-    width: 20%;
 }
 
 #nvp-emblem-card-3 .nvp-first-section-emblem-img {
     width: 70%;
-}
-
-#nvp-emblem-card-10 {
-    width: 20%;
 }
 
 #nvp-emblem-card-10 .nvp-first-section-emblem-img {
@@ -163,8 +138,50 @@
     border: 1px solid #212320;
 }
 
+@media (max-width: 1240px) {
+	.nvp-first-section-content {
+		padding: 24px;
+	}
+	
+	.nvp-first-section-emblem-container .nvp-emblem-card {
+		width: 18%;
+	}
+}
+
+@media (max-width: 1240px) {
+    .nvp-first-section-emblem-container {
+		gap: 1.5rem;
+	}
+	
+	.nvp-first-section-emblem-container .nvp-emblem-card {
+		width: 20.5%;
+	}
+}
+
+@media (max-width: 900px) {
+    .nvp-first-section-emblem-container {
+		gap: 1rem;
+	}
+}
+
+@media (max-width: 835px) {
+    .nvp-first-section-emblem-container {
+		width: 90%;
+	}
+
+	.nvp-first-section-emblem-container .nvp-emblem-card {
+		width: 27%;
+	}
+}
+
+@media (max-width: 800px) {
+	.nvp-first-section-carousel .carousel-container {
+    	padding-inline: 10px;
+	}
+}
+
 @media (max-width: 500px) {
     .nvp-first-section-carousel .nvp-emblem-card {
-        min-width: 150px;
+        min-width: 170px;
     }
 }
