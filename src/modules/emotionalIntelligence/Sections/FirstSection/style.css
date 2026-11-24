@@ -251,6 +251,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .ei-first-section {
+    --ei-section-top-padding: 80px;
+    }
     .ei-competencies-column {
         width: calc((100% - 32px) / 2);
     }
@@ -263,6 +266,16 @@
     .ei-competency-list {
         font-size: 20px;
         line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ei-first-section {
+        --ei-section-top-padding: 30px;
+    }
+
+    .ei-first-section-content {
+        padding-bottom: 20px;
     }
 }
 

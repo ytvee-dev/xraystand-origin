@@ -149,6 +149,12 @@
     background-color: #FEF8F5;
 }
 
+@media (max-width: 1200px) {
+    .ei-second-section {
+        min-height: 13  00px;
+    }
+}
+
 @media (max-width: 1024px) {
     .ei-second-section-cards {
         display: grid;
@@ -169,6 +175,14 @@
         height: 388px;
         top: -120px;
         right: -150px;
+    }
+
+    .ei-second-section-title {
+        font-size: 40px;
+    }
+
+    .ei-second-section-content {
+        padding-bottom: 60px;
     }
 }
 
