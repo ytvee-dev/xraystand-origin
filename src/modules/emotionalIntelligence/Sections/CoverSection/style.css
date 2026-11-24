@@ -99,7 +99,7 @@
 
 @media screen and (max-width: 1200px) {
     .ei-cover-section {
-        min-height: 800px;
+        min-height: 700px;
         padding: 132px 0 96px;
     }
 
@@ -119,10 +119,16 @@
     }
 }
 
+@media(max-width: 1024px) {
+    .ei-cover-section {
+        padding-bottom: 50px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .ei-cover-section {
         min-height: 0;
-        padding: 92px 0 88px;
+        padding: 92px 0 40px;
     }
 
     .ei-cover-section::before {

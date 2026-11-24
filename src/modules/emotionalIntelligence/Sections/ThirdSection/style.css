@@ -44,6 +44,7 @@
     font-size: 46px;
     font-weight: 700;
     line-height: 36px;
+    text-transform: uppercase;
 }
 
 .ei-growth-section-header p {
@@ -196,6 +197,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .ei-third-section {
+        padding: 60px 0px 0px; 
+    }   
+
     .ei-growth-section-header h2 {
         font-size: 40px;
         line-height: 1.05;
@@ -215,6 +220,8 @@
         gap: 10px;
     }
 }
+
+
 
 @media screen and (max-width: 800px) {
     .ei-third-section {
